@@ -356,6 +356,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/payment-cryptography/?icmpid=docs\_homepage\_security](../services/payment-cryptography/index.md)
 - [/ARG/?icmpid=docs\_homepage\_security](../services/arg/index.md)
 - [/secretsmanager/?icmpid=docs\_homepage\_security](../services/secretsmanager/index.md)
+- [/kms/?icmpid=docs\_homepage\_security](../services/kms/index.md)
 - [/privateca/?icmpid=docs\_homepage\_security](../services/privateca/index.md)
 - [/security/?icmpid=docs\_homepage\_addtlrcs](../services/security/index.md)
 - [/securityhub/?icmpid=docs\_homepage\_security](../services/securityhub/index.md)
