@@ -109,7 +109,6 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/kms/?icmpid=docs\_homepage\_crypto](../services/kms/index.md)
 - [/privateca/?icmpid=docs\_homepage\_crypto](../services/privateca/index.md)
 - [/signer/?icmpid=docs\_homepage\_crypto](../services/signer/index.md)
-- [/aws-iq/?icmpid=docs\_homepage\_custenable](../services/aws-iq/index.md)
 - [/aws-support/?icmpid=docs\_homepage\_custenable](../services/aws-support/index.md)
 - [/managedservices/?icmpid=docs\_homepage\_custenable](../services/managedservices/index.md)
 - [https://aws.amazon.com/professional-services/?icmpid=docs\_homepage\_custenable](https://aws.amazon.com/professional-services?icmpid=docs_homepage_custenable)
