@@ -22,7 +22,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [https://aws.amazon.com/security/](https://aws.amazon.com/security)
 - [https://aws.amazon.com/getting-started/hands-on/](https://aws.amazon.com/getting-started/hands-on)
 - [https://aws.amazon.com/prescriptive-guidance](https://aws.amazon.com/prescriptive-guidance)
-- [https://aws.amazon.com/architecture/](https://aws.amazon.com/architecture)
+- [/decision-guides/](../services/decision-guides/index.md)
 - [https://aws.amazon.com/solutions/](https://aws.amazon.com/solutions)
 - [/decision-guides/latest/analytics-on-aws-how-to-choose/analytics-on-aws-how-to-choose.html?icmpid=docs\_homepage\_analytics](../services/decision-guides/latest/analytics-on-aws-how-to-choose/analytics-on-aws-how-to-choose.md)
 - [/next-generation-sagemaker/?icmpid=docs\_homepage\_analytics](../services/next-generation-sagemaker/index.md)
