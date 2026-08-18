@@ -179,6 +179,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/sdk-for-kotlin/?icmpid=docs\_homepage\_devtools](../reference/sdk-for-kotlin.md)
 - [/sdk-for-php/?icmpid=docs\_homepage\_devtools](../reference/sdk-for-php.md)
 - [/pythonsdk/?icmpid=docs\_homepage\_devtools](../reference/pythonsdk.md)
+- [/sdk-for-python/?icmpid=docs\_homepage\_devtools](../reference/sdk-for-python.md)
 - [/sdk-for-ruby/?icmpid=docs\_homepage\_devtools](../reference/sdk-for-ruby.md)
 - [/sdk-for-rust/?icmpid=docs\_homepage\_devtools](../reference/sdk-for-rust.md)
 - [/sdk-for-sapabap/?icmpid=docs\_homepage\_devtools](../reference/sdk-for-sapabap.md)
