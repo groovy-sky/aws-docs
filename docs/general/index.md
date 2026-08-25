@@ -269,7 +269,6 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/cloudwatch/?icmpid=docs\_homepage\_mgmtgov](../services/cloudwatch/index.md)
 - [/autoscaling/?icmpid=docs\_homepage\_mgmtgov](../services/autoscaling/index.md)
 - [/securityagent/?icmpid=docs\_homepage\_mgmtgov](../services/securityagent/index.md)
-- [/assurance/?icmpid=docs\_homepage\_mgmtgov](../services/assurance/index.md)
 - [/cli/?icmpid=docs\_homepage\_mgmtgov](../services/cli/index.md)
 - [/compute-optimizer/?icmpid=docs\_homepage\_mgmtgov](../services/compute-optimizer/index.md)
 - [/config/?icmpid=docs\_homepage\_mgmtgov](../services/config/index.md)
