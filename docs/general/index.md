@@ -15,7 +15,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/lambda/?icmpid=docs\_homepage\_featuredsvcs](../services/lambda/index.md)
 - [/vpc/?icmpid=docs\_homepage\_featuredsvcs](../services/vpc/index.md)
 - [/next-generation-sagemaker/?icmpid=docs\_homepage\_featuredsvcs](../services/next-generation-sagemaker/index.md)
-- [/decision-guides/latest/ec2-purchasing-options-aws-how-to-choose/ec2-purchasing-options-aws-how-to-choose.html?icmpid=docs\_homepage\_featuredsvcs](../services/decision-guides/latest/ec2-purchasing-options-aws-how-to-choose/ec2-purchasing-options-aws-how-to-choose.md)
+- [/reference-architecture-diagrams/?icmpid=docs\_homepage\_featuredsvcs](../services/reference-architecture-diagrams/index.md)
 - [https://kiro.dev/docs/?icmpid=docs\_homepage\_featuredsvcs](https://kiro.dev/docs?icmpid=docs_homepage_featuredsvcs)
 - [https://aws.amazon.com/getting-started/guides/setup-environment/](https://aws.amazon.com/getting-started/guides/setup-environment)
 - [https://aws.amazon.com/getting-started/?ref=docs\_gateway](https://aws.amazon.com/getting-started?ref=docs_gateway)
