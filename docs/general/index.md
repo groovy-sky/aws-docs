@@ -18,7 +18,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/reference-architecture-diagrams/?icmpid=docs\_homepage\_featuredsvcs](../services/reference-architecture-diagrams/index.md)
 - [https://kiro.dev/docs/?icmpid=docs\_homepage\_featuredsvcs](https://kiro.dev/docs?icmpid=docs_homepage_featuredsvcs)
 - [https://aws.amazon.com/getting-started/guides/setup-environment/](https://aws.amazon.com/getting-started/guides/setup-environment)
-- [https://aws.amazon.com/getting-started/?ref=docs\_gateway](https://aws.amazon.com/getting-started?ref=docs_gateway)
+- [/getting-started/?ref=docs\_homepage](../services/getting-started/index.md)
 - [https://aws.amazon.com/security/](https://aws.amazon.com/security)
 - [https://aws.amazon.com/getting-started/hands-on/](https://aws.amazon.com/getting-started/hands-on)
 - [https://aws.amazon.com/prescriptive-guidance](https://aws.amazon.com/prescriptive-guidance)
