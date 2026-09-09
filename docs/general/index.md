@@ -370,7 +370,6 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/eventbridge/?icmpid=docs\_homepage\_serverless](../services/eventbridge/index.md)
 - [/AmazonECS/latest/developerguide/AWS\_Fargate.html?icmpid=docs\_homepage\_serverless](../services/amazonecs/latest/developerguide/aws-fargate.md)
 - [/lambda/?icmpid=docs\_homepage\_serverless](../services/lambda/index.md)
-- [/serverless/?icmpid=docs\_homepage\_serverless](../services/serverless/index.md)
 - [/sns/?icmpid=docs\_homepage\_serverless](../services/sns/index.md)
 - [/s3/?icmpid=docs\_homepage\_serverless](../services/s3/index.md)
 - [/step-functions/?icmpid=docs\_homepage\_serverless](../services/step-functions/index.md)
