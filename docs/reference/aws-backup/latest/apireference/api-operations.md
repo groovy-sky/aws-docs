@@ -3,309 +3,164 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported by AWS Backup:
-
-- [AssociateBackupVaultMpaApprovalTeam](api-associatebackupvaultmpaapprovalteam.md)
-
-- [CancelLegalHold](api-cancellegalhold.md)
-
-- [CreateBackupPlan](api-createbackupplan.md)
-
-- [CreateBackupSelection](api-createbackupselection.md)
-
-- [CreateBackupVault](api-createbackupvault.md)
-
-- [CreateFramework](api-createframework.md)
-
-- [CreateLegalHold](api-createlegalhold.md)
-
-- [CreateLogicallyAirGappedBackupVault](api-createlogicallyairgappedbackupvault.md)
-
-- [CreateReportPlan](api-createreportplan.md)
-
-- [CreateRestoreAccessBackupVault](api-createrestoreaccessbackupvault.md)
-
-- [CreateRestoreTestingPlan](api-createrestoretestingplan.md)
-
-- [CreateRestoreTestingSelection](api-createrestoretestingselection.md)
-
-- [CreateTieringConfiguration](api-createtieringconfiguration.md)
-
-- [DeleteBackupPlan](api-deletebackupplan.md)
-
-- [DeleteBackupSelection](api-deletebackupselection.md)
-
-- [DeleteBackupVault](api-deletebackupvault.md)
-
-- [DeleteBackupVaultAccessPolicy](api-deletebackupvaultaccesspolicy.md)
-
-- [DeleteBackupVaultLockConfiguration](api-deletebackupvaultlockconfiguration.md)
-
-- [DeleteBackupVaultNotifications](api-deletebackupvaultnotifications.md)
-
-- [DeleteFramework](api-deleteframework.md)
-
-- [DeleteRecoveryPoint](api-deleterecoverypoint.md)
-
-- [DeleteReportPlan](api-deletereportplan.md)
-
-- [DeleteRestoreTestingPlan](api-deleterestoretestingplan.md)
-
-- [DeleteRestoreTestingSelection](api-deleterestoretestingselection.md)
-
-- [DeleteTieringConfiguration](api-deletetieringconfiguration.md)
-
-- [DescribeBackupJob](api-describebackupjob.md)
-
-- [DescribeBackupVault](api-describebackupvault.md)
-
-- [DescribeCopyJob](api-describecopyjob.md)
-
-- [DescribeFramework](api-describeframework.md)
-
-- [DescribeGlobalSettings](api-describeglobalsettings.md)
-
-- [DescribeProtectedResource](api-describeprotectedresource.md)
-
-- [DescribeRecoveryPoint](api-describerecoverypoint.md)
-
-- [DescribeRegionSettings](api-describeregionsettings.md)
-
-- [DescribeReportJob](api-describereportjob.md)
-
-- [DescribeReportPlan](api-describereportplan.md)
-
-- [DescribeRestoreJob](api-describerestorejob.md)
-
-- [DescribeScanJob](api-describescanjob.md)
-
-- [DisassociateBackupVaultMpaApprovalTeam](api-disassociatebackupvaultmpaapprovalteam.md)
-
-- [DisassociateRecoveryPoint](api-disassociaterecoverypoint.md)
-
-- [DisassociateRecoveryPointFromParent](api-disassociaterecoverypointfromparent.md)
-
-- [ExportBackupPlanTemplate](api-exportbackupplantemplate.md)
-
-- [GetBackupPlan](api-getbackupplan.md)
-
-- [GetBackupPlanFromJSON](api-getbackupplanfromjson.md)
-
-- [GetBackupPlanFromTemplate](api-getbackupplanfromtemplate.md)
-
-- [GetBackupSelection](api-getbackupselection.md)
-
-- [GetBackupVaultAccessPolicy](api-getbackupvaultaccesspolicy.md)
-
-- [GetBackupVaultNotifications](api-getbackupvaultnotifications.md)
-
-- [GetLegalHold](api-getlegalhold.md)
-
-- [GetPITRMalwareScanResults](api-getpitrmalwarescanresults.md)
-
-- [GetRecoveryPointIndexDetails](api-getrecoverypointindexdetails.md)
-
-- [GetRecoveryPointRestoreMetadata](api-getrecoverypointrestoremetadata.md)
-
-- [GetRestoreJobMetadata](api-getrestorejobmetadata.md)
-
-- [GetRestoreTestingInferredMetadata](api-getrestoretestinginferredmetadata.md)
-
-- [GetRestoreTestingPlan](api-getrestoretestingplan.md)
-
-- [GetRestoreTestingSelection](api-getrestoretestingselection.md)
-
-- [GetSupportedResourceTypes](api-getsupportedresourcetypes.md)
-
-- [GetTieringConfiguration](api-gettieringconfiguration.md)
-
-- [ListBackupJobs](api-listbackupjobs.md)
-
-- [ListBackupJobSummaries](api-listbackupjobsummaries.md)
-
-- [ListBackupPlans](api-listbackupplans.md)
-
-- [ListBackupPlanTemplates](api-listbackupplantemplates.md)
-
-- [ListBackupPlanVersions](api-listbackupplanversions.md)
-
-- [ListBackupSelections](api-listbackupselections.md)
-
-- [ListBackupVaults](api-listbackupvaults.md)
-
-- [ListCopyJobs](api-listcopyjobs.md)
-
-- [ListCopyJobSummaries](api-listcopyjobsummaries.md)
-
-- [ListFrameworks](api-listframeworks.md)
-
-- [ListIndexedRecoveryPoints](api-listindexedrecoverypoints.md)
-
-- [ListLegalHolds](api-listlegalholds.md)
-
-- [ListProtectedResources](api-listprotectedresources.md)
-
-- [ListProtectedResourcesByBackupVault](api-listprotectedresourcesbybackupvault.md)
-
-- [ListRecoveryPointsByBackupVault](api-listrecoverypointsbybackupvault.md)
-
-- [ListRecoveryPointsByLegalHold](api-listrecoverypointsbylegalhold.md)
-
-- [ListRecoveryPointsByResource](api-listrecoverypointsbyresource.md)
-
-- [ListReportJobs](api-listreportjobs.md)
-
-- [ListReportPlans](api-listreportplans.md)
-
-- [ListRestoreAccessBackupVaults](api-listrestoreaccessbackupvaults.md)
-
-- [ListRestoreJobs](api-listrestorejobs.md)
-
-- [ListRestoreJobsByProtectedResource](api-listrestorejobsbyprotectedresource.md)
-
-- [ListRestoreJobSummaries](api-listrestorejobsummaries.md)
-
-- [ListRestoreTestingPlans](api-listrestoretestingplans.md)
-
-- [ListRestoreTestingSelections](api-listrestoretestingselections.md)
-
-- [ListScanJobs](api-listscanjobs.md)
-
-- [ListScanJobSummaries](api-listscanjobsummaries.md)
-
-- [ListTags](api-listtags.md)
-
-- [ListTieringConfigurations](api-listtieringconfigurations.md)
-
-- [PutBackupVaultAccessPolicy](api-putbackupvaultaccesspolicy.md)
-
-- [PutBackupVaultLockConfiguration](api-putbackupvaultlockconfiguration.md)
-
-- [PutBackupVaultNotifications](api-putbackupvaultnotifications.md)
-
-- [PutRestoreValidationResult](api-putrestorevalidationresult.md)
-
-- [RevokeRestoreAccessBackupVault](api-revokerestoreaccessbackupvault.md)
-
-- [StartBackupJob](api-startbackupjob.md)
-
-- [StartCopyJob](api-startcopyjob.md)
-
-- [StartReportJob](api-startreportjob.md)
-
-- [StartRestoreJob](api-startrestorejob.md)
-
-- [StartScanJob](api-startscanjob.md)
-
-- [StopBackupJob](api-stopbackupjob.md)
-
-- [TagResource](api-tagresource.md)
-
-- [UntagResource](api-untagresource.md)
-
-- [UpdateBackupPlan](api-updatebackupplan.md)
-
-- [UpdateFramework](api-updateframework.md)
-
-- [UpdateGlobalSettings](api-updateglobalsettings.md)
-
-- [UpdateRecoveryPointIndexSettings](api-updaterecoverypointindexsettings.md)
-
-- [UpdateRecoveryPointLifecycle](api-updaterecoverypointlifecycle.md)
-
-- [UpdateRegionSettings](api-updateregionsettings.md)
-
-- [UpdateReportPlan](api-updatereportplan.md)
-
-- [UpdateRestoreTestingPlan](api-updaterestoretestingplan.md)
-
-- [UpdateRestoreTestingSelection](api-updaterestoretestingselection.md)
-
-- [UpdateTieringConfiguration](api-updatetieringconfiguration.md)
++  [AssociateBackupVaultMpaApprovalTeam](API_AssociateBackupVaultMpaApprovalTeam.md)
++  [CancelLegalHold](API_CancelLegalHold.md)
++  [CreateBackupAccessPoint](API_CreateBackupAccessPoint.md)
++  [CreateBackupPlan](API_CreateBackupPlan.md)
++  [CreateBackupSelection](API_CreateBackupSelection.md)
++  [CreateBackupVault](API_CreateBackupVault.md)
++  [CreateFramework](API_CreateFramework.md)
++  [CreateLegalHold](API_CreateLegalHold.md)
++  [CreateLogicallyAirGappedBackupVault](API_CreateLogicallyAirGappedBackupVault.md)
++  [CreateReportPlan](API_CreateReportPlan.md)
++  [CreateRestoreAccessBackupVault](API_CreateRestoreAccessBackupVault.md)
++  [CreateRestoreTestingPlan](API_CreateRestoreTestingPlan.md)
++  [CreateRestoreTestingSelection](API_CreateRestoreTestingSelection.md)
++  [CreateTieringConfiguration](API_CreateTieringConfiguration.md)
++  [DeleteBackupAccessPoint](API_DeleteBackupAccessPoint.md)
++  [DeleteBackupPlan](API_DeleteBackupPlan.md)
++  [DeleteBackupSelection](API_DeleteBackupSelection.md)
++  [DeleteBackupVault](API_DeleteBackupVault.md)
++  [DeleteBackupVaultAccessPolicy](API_DeleteBackupVaultAccessPolicy.md)
++  [DeleteBackupVaultLockConfiguration](API_DeleteBackupVaultLockConfiguration.md)
++  [DeleteBackupVaultNotifications](API_DeleteBackupVaultNotifications.md)
++  [DeleteFramework](API_DeleteFramework.md)
++  [DeleteRecoveryPoint](API_DeleteRecoveryPoint.md)
++  [DeleteReportPlan](API_DeleteReportPlan.md)
++  [DeleteRestoreTestingPlan](API_DeleteRestoreTestingPlan.md)
++  [DeleteRestoreTestingSelection](API_DeleteRestoreTestingSelection.md)
++  [DeleteTieringConfiguration](API_DeleteTieringConfiguration.md)
++  [DescribeBackupAccessPoint](API_DescribeBackupAccessPoint.md)
++  [DescribeBackupJob](API_DescribeBackupJob.md)
++  [DescribeBackupVault](API_DescribeBackupVault.md)
++  [DescribeCopyJob](API_DescribeCopyJob.md)
++  [DescribeFramework](API_DescribeFramework.md)
++  [DescribeGlobalSettings](API_DescribeGlobalSettings.md)
++  [DescribeProtectedResource](API_DescribeProtectedResource.md)
++  [DescribeRecoveryPoint](API_DescribeRecoveryPoint.md)
++  [DescribeRegionSettings](API_DescribeRegionSettings.md)
++  [DescribeReportJob](API_DescribeReportJob.md)
++  [DescribeReportPlan](API_DescribeReportPlan.md)
++  [DescribeRestoreJob](API_DescribeRestoreJob.md)
++  [DescribeScanJob](API_DescribeScanJob.md)
++  [DisassociateBackupVaultMpaApprovalTeam](API_DisassociateBackupVaultMpaApprovalTeam.md)
++  [DisassociateRecoveryPoint](API_DisassociateRecoveryPoint.md)
++  [DisassociateRecoveryPointFromParent](API_DisassociateRecoveryPointFromParent.md)
++  [ExportBackupPlanTemplate](API_ExportBackupPlanTemplate.md)
++  [GetBackupPlan](API_GetBackupPlan.md)
++  [GetBackupPlanFromJSON](API_GetBackupPlanFromJSON.md)
++  [GetBackupPlanFromTemplate](API_GetBackupPlanFromTemplate.md)
++  [GetBackupSelection](API_GetBackupSelection.md)
++  [GetBackupVaultAccessPolicy](API_GetBackupVaultAccessPolicy.md)
++  [GetBackupVaultNotifications](API_GetBackupVaultNotifications.md)
++  [GetLegalHold](API_GetLegalHold.md)
++  [GetPITRMalwareScanResults](API_GetPITRMalwareScanResults.md)
++  [GetRecoveryPointIndexDetails](API_GetRecoveryPointIndexDetails.md)
++  [GetRecoveryPointRestoreMetadata](API_GetRecoveryPointRestoreMetadata.md)
++  [GetRestoreJobMetadata](API_GetRestoreJobMetadata.md)
++  [GetRestoreTestingInferredMetadata](API_GetRestoreTestingInferredMetadata.md)
++  [GetRestoreTestingPlan](API_GetRestoreTestingPlan.md)
++  [GetRestoreTestingSelection](API_GetRestoreTestingSelection.md)
++  [GetSupportedResourceTypes](API_GetSupportedResourceTypes.md)
++  [GetTieringConfiguration](API_GetTieringConfiguration.md)
++  [ListBackupAccessPoints](API_ListBackupAccessPoints.md)
++  [ListBackupAccessPointsByRecoveryPoint](API_ListBackupAccessPointsByRecoveryPoint.md)
++  [ListBackupAccessPointsByResource](API_ListBackupAccessPointsByResource.md)
++  [ListBackupJobs](API_ListBackupJobs.md)
++  [ListBackupJobSummaries](API_ListBackupJobSummaries.md)
++  [ListBackupPlans](API_ListBackupPlans.md)
++  [ListBackupPlanTemplates](API_ListBackupPlanTemplates.md)
++  [ListBackupPlanVersions](API_ListBackupPlanVersions.md)
++  [ListBackupSelections](API_ListBackupSelections.md)
++  [ListBackupVaults](API_ListBackupVaults.md)
++  [ListCopyJobs](API_ListCopyJobs.md)
++  [ListCopyJobSummaries](API_ListCopyJobSummaries.md)
++  [ListFrameworks](API_ListFrameworks.md)
++  [ListIndexedRecoveryPoints](API_ListIndexedRecoveryPoints.md)
++  [ListLegalHolds](API_ListLegalHolds.md)
++  [ListProtectedResources](API_ListProtectedResources.md)
++  [ListProtectedResourcesByBackupVault](API_ListProtectedResourcesByBackupVault.md)
++  [ListRecoveryPointsByBackupVault](API_ListRecoveryPointsByBackupVault.md)
++  [ListRecoveryPointsByLegalHold](API_ListRecoveryPointsByLegalHold.md)
++  [ListRecoveryPointsByResource](API_ListRecoveryPointsByResource.md)
++  [ListReportJobs](API_ListReportJobs.md)
++  [ListReportPlans](API_ListReportPlans.md)
++  [ListRestoreAccessBackupVaults](API_ListRestoreAccessBackupVaults.md)
++  [ListRestoreJobs](API_ListRestoreJobs.md)
++  [ListRestoreJobsByProtectedResource](API_ListRestoreJobsByProtectedResource.md)
++  [ListRestoreJobSummaries](API_ListRestoreJobSummaries.md)
++  [ListRestoreTestingPlans](API_ListRestoreTestingPlans.md)
++  [ListRestoreTestingSelections](API_ListRestoreTestingSelections.md)
++  [ListScanJobs](API_ListScanJobs.md)
++  [ListScanJobSummaries](API_ListScanJobSummaries.md)
++  [ListTags](API_ListTags.md)
++  [ListTieringConfigurations](API_ListTieringConfigurations.md)
++  [PutBackupVaultAccessPolicy](API_PutBackupVaultAccessPolicy.md)
++  [PutBackupVaultLockConfiguration](API_PutBackupVaultLockConfiguration.md)
++  [PutBackupVaultNotifications](API_PutBackupVaultNotifications.md)
++  [PutRestoreValidationResult](API_PutRestoreValidationResult.md)
++  [RevokeRestoreAccessBackupVault](API_RevokeRestoreAccessBackupVault.md)
++  [StartBackupJob](API_StartBackupJob.md)
++  [StartCopyJob](API_StartCopyJob.md)
++  [StartReportJob](API_StartReportJob.md)
++  [StartRestoreJob](API_StartRestoreJob.md)
++  [StartScanJob](API_StartScanJob.md)
++  [StopBackupJob](API_StopBackupJob.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateBackupPlan](API_UpdateBackupPlan.md)
++  [UpdateFramework](API_UpdateFramework.md)
++  [UpdateGlobalSettings](API_UpdateGlobalSettings.md)
++  [UpdateRecoveryPointIndexSettings](API_UpdateRecoveryPointIndexSettings.md)
++  [UpdateRecoveryPointLifecycle](API_UpdateRecoveryPointLifecycle.md)
++  [UpdateRegionSettings](API_UpdateRegionSettings.md)
++  [UpdateReportPlan](API_UpdateReportPlan.md)
++  [UpdateRestoreTestingPlan](API_UpdateRestoreTestingPlan.md)
++  [UpdateRestoreTestingSelection](API_UpdateRestoreTestingSelection.md)
++  [UpdateTieringConfiguration](API_UpdateTieringConfiguration.md)
 
 The following actions are supported by AWS Backup gateway:
-
-- [AssociateGatewayToServer](api-bgw-associategatewaytoserver.md)
-
-- [CreateGateway](api-bgw-creategateway.md)
-
-- [DeleteGateway](api-bgw-deletegateway.md)
-
-- [DeleteHypervisor](api-bgw-deletehypervisor.md)
-
-- [DisassociateGatewayFromServer](api-bgw-disassociategatewayfromserver.md)
-
-- [GetBandwidthRateLimitSchedule](api-bgw-getbandwidthratelimitschedule.md)
-
-- [GetGateway](api-bgw-getgateway.md)
-
-- [GetHypervisor](api-bgw-gethypervisor.md)
-
-- [GetHypervisorPropertyMappings](api-bgw-gethypervisorpropertymappings.md)
-
-- [GetVirtualMachine](api-bgw-getvirtualmachine.md)
-
-- [ImportHypervisorConfiguration](api-bgw-importhypervisorconfiguration.md)
-
-- [ListGateways](api-bgw-listgateways.md)
-
-- [ListHypervisors](api-bgw-listhypervisors.md)
-
-- [ListTagsForResource](api-bgw-listtagsforresource.md)
-
-- [ListVirtualMachines](api-bgw-listvirtualmachines.md)
-
-- [PutBandwidthRateLimitSchedule](api-bgw-putbandwidthratelimitschedule.md)
-
-- [PutHypervisorPropertyMappings](api-bgw-puthypervisorpropertymappings.md)
-
-- [PutMaintenanceStartTime](api-bgw-putmaintenancestarttime.md)
-
-- [StartVirtualMachinesMetadataSync](api-bgw-startvirtualmachinesmetadatasync.md)
-
-- [TagResource](api-bgw-tagresource.md)
-
-- [TestHypervisorConfiguration](api-bgw-testhypervisorconfiguration.md)
-
-- [UntagResource](api-bgw-untagresource.md)
-
-- [UpdateGatewayInformation](api-bgw-updategatewayinformation.md)
-
-- [UpdateGatewaySoftwareNow](api-bgw-updategatewaysoftwarenow.md)
-
-- [UpdateHypervisor](api-bgw-updatehypervisor.md)
++  [AssociateGatewayToServer](API_BGW_AssociateGatewayToServer.md)
++  [CreateGateway](API_BGW_CreateGateway.md)
++  [DeleteGateway](API_BGW_DeleteGateway.md)
++  [DeleteHypervisor](API_BGW_DeleteHypervisor.md)
++  [DisassociateGatewayFromServer](API_BGW_DisassociateGatewayFromServer.md)
++  [GetBandwidthRateLimitSchedule](API_BGW_GetBandwidthRateLimitSchedule.md)
++  [GetGateway](API_BGW_GetGateway.md)
++  [GetHypervisor](API_BGW_GetHypervisor.md)
++  [GetHypervisorPropertyMappings](API_BGW_GetHypervisorPropertyMappings.md)
++  [GetVirtualMachine](API_BGW_GetVirtualMachine.md)
++  [ImportHypervisorConfiguration](API_BGW_ImportHypervisorConfiguration.md)
++  [ListGateways](API_BGW_ListGateways.md)
++  [ListHypervisors](API_BGW_ListHypervisors.md)
++  [ListTagsForResource](API_BGW_ListTagsForResource.md)
++  [ListVirtualMachines](API_BGW_ListVirtualMachines.md)
++  [PutBandwidthRateLimitSchedule](API_BGW_PutBandwidthRateLimitSchedule.md)
++  [PutHypervisorPropertyMappings](API_BGW_PutHypervisorPropertyMappings.md)
++  [PutMaintenanceStartTime](API_BGW_PutMaintenanceStartTime.md)
++  [StartVirtualMachinesMetadataSync](API_BGW_StartVirtualMachinesMetadataSync.md)
++  [TagResource](API_BGW_TagResource.md)
++  [TestHypervisorConfiguration](API_BGW_TestHypervisorConfiguration.md)
++  [UntagResource](API_BGW_UntagResource.md)
++  [UpdateGatewayInformation](API_BGW_UpdateGatewayInformation.md)
++  [UpdateGatewaySoftwareNow](API_BGW_UpdateGatewaySoftwareNow.md)
++  [UpdateHypervisor](API_BGW_UpdateHypervisor.md)
 
 The following actions are supported by AWS Backup search:
-
-- [GetSearchJob](api-bks-getsearchjob.md)
-
-- [GetSearchResultExportJob](api-bks-getsearchresultexportjob.md)
-
-- [ListSearchJobBackups](api-bks-listsearchjobbackups.md)
-
-- [ListSearchJobResults](api-bks-listsearchjobresults.md)
-
-- [ListSearchJobs](api-bks-listsearchjobs.md)
-
-- [ListSearchResultExportJobs](api-bks-listsearchresultexportjobs.md)
-
-- [ListTagsForResource](api-bks-listtagsforresource.md)
-
-- [StartSearchJob](api-bks-startsearchjob.md)
-
-- [StartSearchResultExportJob](api-bks-startsearchresultexportjob.md)
-
-- [StopSearchJob](api-bks-stopsearchjob.md)
-
-- [TagResource](api-bks-tagresource.md)
-
-- [UntagResource](api-bks-untagresource.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-AWS Backup
++  [GetSearchJob](API_BKS_GetSearchJob.md)
++  [GetSearchResultExportJob](API_BKS_GetSearchResultExportJob.md)
++  [ListSearchJobBackups](API_BKS_ListSearchJobBackups.md)
++  [ListSearchJobResults](API_BKS_ListSearchJobResults.md)
++  [ListSearchJobs](API_BKS_ListSearchJobs.md)
++  [ListSearchResultExportJobs](API_BKS_ListSearchResultExportJobs.md)
++  [ListTagsForResource](API_BKS_ListTagsForResource.md)
++  [StartSearchJob](API_BKS_StartSearchJob.md)
++  [StartSearchResultExportJob](API_BKS_StartSearchResultExportJob.md)
++  [StopSearchJob](API_BKS_StopSearchJob.md)
++  [TagResource](API_BKS_TagResource.md)
++  [UntagResource](API_BKS_UntagResource.md)
 
 All content copied from https://docs.aws.amazon.com/.

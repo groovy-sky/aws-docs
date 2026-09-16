@@ -3,30 +3,39 @@ title: "Viewing resource-based policies"
 ---
 
 # Viewing resource-based policies
+<a name="rbp-view-policy"></a>
 
 You can view resource-based policies attached to your clusters to understand the current access controls in place.
 
-###### To view resource-based policies
+## AWS Management Console
+<a name="rbp-view-console"></a>
+
+**To view resource-based policies**
 
 1. Sign in to the AWS Management Console and open the Aurora DSQL console at [https://console.aws.amazon.com/dsql/](https://console.aws.amazon.com/dsql).
 
-2. Choose your cluster from the cluster list to open the cluster details page.
+1. Choose your cluster from the cluster list to open the cluster details page.
 
-3. Choose the **Permissions** tab.
+1. Choose the **Permissions** tab.
 
-4. View the attached policy in the **Resource-based policy** section.
+1. View the attached policy in the **Resource-based policy** section.
+
+## AWS CLI
+<a name="rbp-view-cli"></a>
 
 Use the `get-cluster-policy` command to view a cluster's resource-based policy:
 
-```nohighlight
-
-aws dsql get-cluster-policy --identifier your_cluster_id
+```
+aws dsql get-cluster-policy --identifier {{your_cluster_id}}
 ```
 
-Python
+## AWS SDKs
+<a name="rbp-view-sdk"></a>
 
-```python
+------
+#### [ Python ]
 
+```
 import boto3
 import json
 
@@ -39,13 +48,12 @@ response = client.get_cluster_policy(
 # Parse and pretty-print the policy
 policy = json.loads(response['policy'])
 print(json.dumps(policy, indent=2))
-
 ```
 
-Java
+------
+#### [ Java ]
 
-```java
-
+```
 import software.amazon.awssdk.services.dsql.DsqlClient;
 import software.amazon.awssdk.services.dsql.model.GetClusterPolicyRequest;
 import software.amazon.awssdk.services.dsql.model.GetClusterPolicyResponse;
@@ -58,13 +66,8 @@ GetClusterPolicyRequest request = GetClusterPolicyRequest.builder()
 
 GetClusterPolicyResponse response = client.getClusterPolicy(request);
 System.out.println("Policy: " + response.policy());
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Add and edit policies
-
-Remove Policy
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,81 +3,63 @@ title: "UpdateRecoveryPointIndexSettings"
 ---
 
 # UpdateRecoveryPointIndexSettings
+<a name="API_UpdateRecoveryPointIndexSettings"></a>
 
 This operation updates the settings of a recovery point index.
 
 Required: BackupVaultName, RecoveryPointArn, and IAMRoleArn
 
 ## Request Syntax
+<a name="API_UpdateRecoveryPointIndexSettings_RequestSyntax"></a>
 
-```nohighlight
-
-POST /backup-vaults/backupVaultName/recovery-points/recoveryPointArn/index HTTP/1.1
+```
+POST /backup-vaults/{{backupVaultName}}/recovery-points/{{recoveryPointArn}}/index HTTP/1.1
 Content-type: application/json
 
 {
-   "IamRoleArn": "string",
-   "Index": "string"
+   "IamRoleArn": "{{string}}",
+   "Index": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_UpdateRecoveryPointIndexSettings_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[backupVaultName](#API_UpdateRecoveryPointIndexSettings_RequestSyntax)**
-
-The name of a logical container where backups are stored. Backup vaults are identified
-by names that are unique to the account used to create them and the Region where they are
-created.
-
+ ** [backupVaultName](#API_UpdateRecoveryPointIndexSettings_RequestSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-request-uri-BackupVaultName"></a>
+The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Region where they are created.
 Accepted characters include lowercase letters, numbers, and hyphens.
-
 Pattern: `^[a-zA-Z0-9\-\_]{2,50}$`
-
 Required: Yes
 
-**[recoveryPointArn](#API_UpdateRecoveryPointIndexSettings_RequestSyntax)**
-
-An ARN that uniquely identifies a recovery point; for example,
-`arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45`.
-
+ ** [recoveryPointArn](#API_UpdateRecoveryPointIndexSettings_RequestSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-request-uri-RecoveryPointArn"></a>
+An ARN that uniquely identifies a recovery point; for example, `arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45`.
 Required: Yes
 
 ## Request Body
+<a name="API_UpdateRecoveryPointIndexSettings_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[IamRoleArn](#API_UpdateRecoveryPointIndexSettings_RequestSyntax)**
-
+ ** [IamRoleArn](#API_UpdateRecoveryPointIndexSettings_RequestSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-request-IamRoleArn"></a>
 This specifies the IAM role ARN used for this operation.
-
 For example, arn:aws:iam::123456789012:role/S3Access
-
 Type: String
-
 Required: No
 
-**[Index](#API_UpdateRecoveryPointIndexSettings_RequestSyntax)**
-
-Index can have 1 of 2 possible values, either `ENABLED` or
-`DISABLED`.
-
-To create a backup index for an eligible `ACTIVE` recovery point
-that does not yet have a backup index, set value to `ENABLED`.
-
+ ** [Index](#API_UpdateRecoveryPointIndexSettings_RequestSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-request-Index"></a>
+Index can have 1 of 2 possible values, either `ENABLED` or `DISABLED`.
+To create a backup index for an eligible `ACTIVE` recovery point that does not yet have a backup index, set value to `ENABLED`.
 To delete a backup index, set value to `DISABLED`.
-
 Type: String
-
 Valid Values: `ENABLED | DISABLED`
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_UpdateRecoveryPointIndexSettings_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -90,140 +72,93 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_UpdateRecoveryPointIndexSettings_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[BackupVaultName](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax)**
-
-The name of a logical container where backups are stored. Backup vaults are identified
-by names that are unique to the account used to create them and the Region where they are
-created.
-
+ ** [BackupVaultName](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-response-BackupVaultName"></a>
+The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Region where they are created.
 Type: String
-
 Pattern: `^[a-zA-Z0-9\-\_]{2,50}$`
 
-**[Index](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax)**
-
-Index can have 1 of 2 possible values, either `ENABLED` or
-`DISABLED`.
-
-A value of `ENABLED` means a backup index for an eligible `ACTIVE`
-recovery point has been created.
-
+ ** [Index](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-response-Index"></a>
+Index can have 1 of 2 possible values, either `ENABLED` or `DISABLED`.
+A value of `ENABLED` means a backup index for an eligible `ACTIVE` recovery point has been created.
 A value of `DISABLED` means a backup index was deleted.
-
 Type: String
-
 Valid Values: `ENABLED | DISABLED`
 
-**[IndexStatus](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax)**
-
-This is the current status for the backup index associated
-with the specified recovery point.
-
+ ** [IndexStatus](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-response-IndexStatus"></a>
+This is the current status for the backup index associated with the specified recovery point.
 Statuses are: `PENDING` \| `ACTIVE` \| `FAILED` \| `DELETING`
-
-A recovery point with an index that has the status of `ACTIVE`
-can be included in a search.
-
+A recovery point with an index that has the status of `ACTIVE` can be included in a search.
 Type: String
-
 Valid Values: `PENDING | ACTIVE | FAILED | DELETING`
 
-**[RecoveryPointArn](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax)**
-
-An ARN that uniquely identifies a recovery point; for example,
-`arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45`.
-
+ ** [RecoveryPointArn](#API_UpdateRecoveryPointIndexSettings_ResponseSyntax) **   <a name="Backup-UpdateRecoveryPointIndexSettings-response-RecoveryPointArn"></a>
+An ARN that uniquely identifies a recovery point; for example, `arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45`.
 Type: String
 
 ## Errors
+<a name="API_UpdateRecoveryPointIndexSettings_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidParameterValueException**
+ ** InvalidParameterValueException **
+Indicates that something is wrong with a parameter's value. For example, the value is out of range.
+ ** Context **
 
-Indicates that something is wrong with a parameter's value. For example, the value is
-out of range.
-
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**InvalidRequestException**
+ ** InvalidRequestException **
+Indicates that something is wrong with the input to the request. For example, a parameter is of the wrong type.
+ ** Context **
 
-Indicates that something is wrong with the input to the request. For example, a
-parameter is of the wrong type.
-
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**MissingParameterValueException**
-
+ ** MissingParameterValueException **
 Indicates that a required parameter is missing.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource that is required for the action doesn't exist.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ServiceUnavailableException**
-
+ ** ServiceUnavailableException **
 The request failed due to a temporary failure of the server.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 500
 
 ## See Also
+<a name="API_UpdateRecoveryPointIndexSettings_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateGlobalSettings
-
-UpdateRecoveryPointLifecycle
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/UpdateRecoveryPointIndexSettings)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,40 +3,36 @@ title: "GetBackupVaultAccessPolicy"
 ---
 
 # GetBackupVaultAccessPolicy
+<a name="API_GetBackupVaultAccessPolicy"></a>
 
-Returns the access policy document that is associated with the named backup
-vault.
+Returns the access policy document that is associated with the named backup vault.
 
 ## Request Syntax
+<a name="API_GetBackupVaultAccessPolicy_RequestSyntax"></a>
 
-```nohighlight
-
-GET /backup-vaults/backupVaultName/access-policy HTTP/1.1
-
+```
+GET /backup-vaults/{{backupVaultName}}/access-policy HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetBackupVaultAccessPolicy_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[backupVaultName](#API_GetBackupVaultAccessPolicy_RequestSyntax)**
-
-The name of a logical container where backups are stored. Backup vaults are identified
-by names that are unique to the account used to create them and the AWS
-Region where they are created.
-
+ ** [backupVaultName](#API_GetBackupVaultAccessPolicy_RequestSyntax) **   <a name="Backup-GetBackupVaultAccessPolicy-request-uri-BackupVaultName"></a>
+The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created.
 Pattern: `^[a-zA-Z0-9\-\_]{2,50}$`
-
 Required: Yes
 
 ## Request Body
+<a name="API_GetBackupVaultAccessPolicy_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetBackupVaultAccessPolicy_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -48,107 +44,75 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetBackupVaultAccessPolicy_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[BackupVaultArn](#API_GetBackupVaultAccessPolicy_ResponseSyntax)**
-
-An Amazon Resource Name (ARN) that uniquely identifies a backup vault; for example,
-`arn:aws:backup:us-east-1:123456789012:backup-vault:aBackupVault`.
-
+ ** [BackupVaultArn](#API_GetBackupVaultAccessPolicy_ResponseSyntax) **   <a name="Backup-GetBackupVaultAccessPolicy-response-BackupVaultArn"></a>
+An Amazon Resource Name (ARN) that uniquely identifies a backup vault; for example, `arn:aws:backup:us-east-1:123456789012:backup-vault:aBackupVault`.
 Type: String
 
-**[BackupVaultName](#API_GetBackupVaultAccessPolicy_ResponseSyntax)**
-
-The name of a logical container where backups are stored. Backup vaults are identified
-by names that are unique to the account used to create them and the Region where they are
-created.
-
+ ** [BackupVaultName](#API_GetBackupVaultAccessPolicy_ResponseSyntax) **   <a name="Backup-GetBackupVaultAccessPolicy-response-BackupVaultName"></a>
+The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Region where they are created.
 Type: String
-
 Pattern: `^[a-zA-Z0-9\-\_]{2,50}$`
 
-**[Policy](#API_GetBackupVaultAccessPolicy_ResponseSyntax)**
-
+ ** [Policy](#API_GetBackupVaultAccessPolicy_ResponseSyntax) **   <a name="Backup-GetBackupVaultAccessPolicy-response-Policy"></a>
 The backup vault access policy document in JSON format.
-
 Type: String
 
 ## Errors
+<a name="API_GetBackupVaultAccessPolicy_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidParameterValueException**
+ ** InvalidParameterValueException **
+Indicates that something is wrong with a parameter's value. For example, the value is out of range.
+ ** Context **
 
-Indicates that something is wrong with a parameter's value. For example, the value is
-out of range.
-
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**MissingParameterValueException**
-
+ ** MissingParameterValueException **
 Indicates that a required parameter is missing.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource that is required for the action doesn't exist.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ServiceUnavailableException**
-
+ ** ServiceUnavailableException **
 The request failed due to a temporary failure of the server.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 500
 
 ## See Also
+<a name="API_GetBackupVaultAccessPolicy_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/GetBackupVaultAccessPolicy)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetBackupSelection
-
-GetBackupVaultNotifications
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/GetBackupVaultAccessPolicy)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/GetBackupVaultAccessPolicy)
 
 All content copied from https://docs.aws.amazon.com/.

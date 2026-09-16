@@ -3,57 +3,46 @@ title: "ListSearchResultExportJobs"
 ---
 
 # ListSearchResultExportJobs
+<a name="API_BKS_ListSearchResultExportJobs"></a>
 
-This operation exports search results of a search job
-to a specified destination S3 bucket.
+This operation exports search results of a search job to a specified destination S3 bucket.
 
 ## Request Syntax
+<a name="API_BKS_ListSearchResultExportJobs_RequestSyntax"></a>
 
-```nohighlight
-
-GET /export-search-jobs?MaxResults=MaxResults&NextToken=NextToken&SearchJobIdentifier=SearchJobIdentifier&Status=Status HTTP/1.1
-
+```
+GET /export-search-jobs?MaxResults={{MaxResults}}&NextToken={{NextToken}}&SearchJobIdentifier={{SearchJobIdentifier}}&Status={{Status}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_BKS_ListSearchResultExportJobs_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[MaxResults](#API_BKS_ListSearchResultExportJobs_RequestSyntax)**
-
+ ** [MaxResults](#API_BKS_ListSearchResultExportJobs_RequestSyntax) **   <a name="Backup-BKS_ListSearchResultExportJobs-request-uri-MaxResults"></a>
 The maximum number of resource list items to be returned.
-
 Valid Range: Minimum value of 1. Maximum value of 1000.
 
-**[NextToken](#API_BKS_ListSearchResultExportJobs_RequestSyntax)**
+ ** [NextToken](#API_BKS_ListSearchResultExportJobs_RequestSyntax) **   <a name="Backup-BKS_ListSearchResultExportJobs-request-uri-NextToken"></a>
+The next item following a partial list of returned backups included in a search job.
+For example, if a request is made to return `MaxResults` number of backups, `NextToken` allows you to return more items in your list starting at the location pointed to by the next token.
 
-The next item following a partial list of returned backups
-included in a search job.
-
-For example, if a request
-is made to return `MaxResults` number of backups, `NextToken`
-allows you to return more items in your list starting at the location pointed to by the
-next token.
-
-**[SearchJobIdentifier](#API_BKS_ListSearchResultExportJobs_RequestSyntax)**
-
+ ** [SearchJobIdentifier](#API_BKS_ListSearchResultExportJobs_RequestSyntax) **   <a name="Backup-BKS_ListSearchResultExportJobs-request-uri-SearchJobIdentifier"></a>
 The unique string that specifies the search job.
 
-**[Status](#API_BKS_ListSearchResultExportJobs_RequestSyntax)**
-
-The search jobs to be included in the export job
-can be filtered by including this parameter.
-
+ ** [Status](#API_BKS_ListSearchResultExportJobs_RequestSyntax) **   <a name="Backup-BKS_ListSearchResultExportJobs-request-uri-Status"></a>
+The search jobs to be included in the export job can be filtered by including this parameter.
 Valid Values: `RUNNING | FAILED | COMPLETED`
 
 ## Request Body
+<a name="API_BKS_ListSearchResultExportJobs_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_BKS_ListSearchResultExportJobs_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -74,164 +63,96 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_BKS_ListSearchResultExportJobs_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[ExportJobs](#API_BKS_ListSearchResultExportJobs_ResponseSyntax)**
-
+ ** [ExportJobs](#API_BKS_ListSearchResultExportJobs_ResponseSyntax) **   <a name="Backup-BKS_ListSearchResultExportJobs-response-ExportJobs"></a>
 The operation returns the included export jobs.
+Type: Array of [ExportJobSummary](API_BKS_ExportJobSummary.md) objects
 
-Type: Array of [ExportJobSummary](api-bks-exportjobsummary.md) objects
-
-**[NextToken](#API_BKS_ListSearchResultExportJobs_ResponseSyntax)**
-
-The next item following a partial list of returned backups
-included in a search job.
-
-For example, if a request
-is made to return `MaxResults` number of backups, `NextToken`
-allows you to return more items in your list starting at the location pointed to by the
-next token.
-
+ ** [NextToken](#API_BKS_ListSearchResultExportJobs_ResponseSyntax) **   <a name="Backup-BKS_ListSearchResultExportJobs-response-NextToken"></a>
+The next item following a partial list of returned backups included in a search job.
+For example, if a request is made to return `MaxResults` number of backups, `NextToken` allows you to return more items in your list starting at the location pointed to by the next token.
 Type: String
 
 ## Errors
+<a name="API_BKS_ListSearchResultExportJobs_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AccessDeniedException**
-
+ ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-
-**message**
-
+ ** message **
 User does not have sufficient access to perform this action.
-
 HTTP Status Code: 403
 
-**InternalServerException**
-
+ ** InternalServerException **
 An internal server error occurred. Retry your request.
-
-**message**
-
+ ** message **
 Unexpected error during processing of request.
-
-**retryAfterSeconds**
-
+ ** retryAfterSeconds **
 Retry the call after number of seconds.
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The resource was not found for this request.
-
-Confirm the resource information, such as the ARN or type is correct
-and exists, then retry the request.
-
-**message**
-
+Confirm the resource information, such as the ARN or type is correct and exists, then retry the request.
+ ** message **
 Request references a resource which does not exist.
-
-**resourceId**
-
+ ** resourceId **
 Hypothetical identifier of the resource affected.
-
-**resourceType**
-
+ ** resourceType **
 Hypothetical type of the resource affected.
-
 HTTP Status Code: 404
 
-**ServiceQuotaExceededException**
-
+ ** ServiceQuotaExceededException **
 The request denied due to exceeding the quota limits permitted.
-
-**message**
-
+ ** message **
 This request was not successful due to a service quota exceeding limits.
-
-**quotaCode**
-
+ ** quotaCode **
 This is the code specific to the quota type.
-
-**resourceId**
-
+ ** resourceId **
 Identifier of the resource.
-
-**resourceType**
-
+ ** resourceType **
 Type of resource.
-
-**serviceCode**
-
+ ** serviceCode **
 This is the code unique to the originating service with the quota.
-
 HTTP Status Code: 402
 
-**ThrottlingException**
-
+ ** ThrottlingException **
 The request was denied due to request throttling.
-
-**message**
-
+ ** message **
 Request was unsuccessful due to request throttling.
-
-**quotaCode**
-
+ ** quotaCode **
 This is the code unique to the originating service with the quota.
-
-**retryAfterSeconds**
-
+ ** retryAfterSeconds **
 Retry the call after number of seconds.
-
-**serviceCode**
-
+ ** serviceCode **
 This is the code unique to the originating service.
-
 HTTP Status Code: 429
 
-**ValidationException**
-
+ ** ValidationException **
 The input fails to satisfy the constraints specified by a service.
-
-**message**
-
+ ** message **
 The input fails to satisfy the constraints specified by an Amazon service.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_BKS_ListSearchResultExportJobs_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backupsearch-2018-05-10/ListSearchResultExportJobs)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListSearchJobs
-
-ListTagsForResource
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/backupsearch-2018-05-10/ListSearchResultExportJobs)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backupsearch-2018-05-10/ListSearchResultExportJobs)
 
 All content copied from https://docs.aws.amazon.com/.

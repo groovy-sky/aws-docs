@@ -3,13 +3,8 @@ title: "Aurora DSQL Connectors for Node.js"
 ---
 
 # Aurora DSQL Connectors for Node.js
+<a name="SECTION_Node-js-connectors"></a>
 
 The Aurora DSQL Connector for node-postgres and the Aurora DSQL Connector for Postgres.js are authentication plugins that extend the functionality of the node-postgres and Postgres.js clients to enable applications to authenticate with Aurora DSQL using IAM credentials.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Go connector
-
-node-postgres connector
 
 All content copied from https://docs.aws.amazon.com/.

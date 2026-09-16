@@ -3,26 +3,29 @@ title: "Creating clusters with resource-based policies"
 ---
 
 # Creating clusters with resource-based policies
+<a name="rbp-create-cluster"></a>
 
 You can attach resource-based policies when creating a new cluster to ensure access controls are in place from the start. Each cluster can have a single inline policy attached directly to the cluster.
 
-###### To add a resource-based policy during cluster creation
+## AWS Management Console
+<a name="rbp-create-cluster-console"></a>
+
+**To add a resource-based policy during cluster creation**
 
 1. Sign in to the AWS Management Console and open the Aurora DSQL console at [https://console.aws.amazon.com/dsql/](https://console.aws.amazon.com/dsql).
 
-2. Choose **Create cluster**.
+1. Choose **Create cluster**.
 
-3. Configure your cluster name, tags, and multi-region settings as needed.
+1. Configure your cluster name, tags, and multi-region settings as needed.
 
-4. In the **Cluster settings** section, locate the **Resource-based policy** option.
+1. In the **Cluster settings** section, locate the **Resource-based policy** option.
 
-5. Turn on **Add resource-based policy**.
+1. Turn on **Add resource-based policy**.
 
-6. Enter your policy document in the JSON editor. For example, to block public internet access:
+1. Enter your policy document in the JSON editor. For example, to block public internet access:
 
-```
-
-{
+   ```
+   {
      "Version": "2012-10-17",
      "Statement": [
        {
@@ -42,17 +45,19 @@ You can attach resource-based policies when creating a new cluster to ensure acc
          }
        }
      ]
-}
-```
+   }
+   ```
 
-7. You can use **Edit statement** or **Add new statement** to build your policy.
+1. You can use **Edit statement** or **Add new statement** to build your policy.
 
-8. Complete the remaining cluster configuration and choose **Create cluster**.
+1. Complete the remaining cluster configuration and choose **Create cluster**.
+
+## AWS CLI
+<a name="rbp-create-cluster-cli"></a>
 
 Use the `--policy` parameter when creating a cluster to attach an inline policy:
 
 ```
-
 aws dsql create-cluster --policy '{
     "Version": "2012-10-17",
     "Statement": [{
@@ -61,16 +66,19 @@ aws dsql create-cluster --policy '{
         "Resource": "*",
         "Action": ["dsql:DbConnect", "dsql:DbConnectAdmin"],
         "Condition": {
-            "StringNotEquals": { "aws:SourceVpc": "vpc-123456" }
+            "StringNotEquals": { "aws:SourceVpc": "vpc-1a2b3c4d5e6f7a8b9" }
         }
     }]
 }'
 ```
 
-Python
+## AWS SDKs
+<a name="rbp-create-cluster-sdk"></a>
 
-```python
+------
+#### [ Python ]
 
+```
 import boto3
 import json
 
@@ -84,7 +92,7 @@ policy = {
         "Resource": "*",
         "Action": ["dsql:DbConnect", "dsql:DbConnectAdmin"],
         "Condition": {
-            "StringNotEquals": { "aws:SourceVpc": "vpc-123456" }
+            "StringNotEquals": { "aws:SourceVpc": "vpc-1a2b3c4d5e6f7a8b9" }
         }
     }]
 }
@@ -96,10 +104,10 @@ response = client.create_cluster(
 print(f"Cluster created: {response['identifier']}")
 ```
 
-Java
+------
+#### [ Java ]
 
-```java
-
+```
 import software.amazon.awssdk.services.dsql.DsqlClient;
 import software.amazon.awssdk.services.dsql.model.CreateClusterRequest;
 import software.amazon.awssdk.services.dsql.model.CreateClusterResponse;
@@ -115,7 +123,7 @@ String policy = """
     "Resource": "*",
     "Action": ["dsql:DbConnect", "dsql:DbConnectAdmin"],
     "Condition": {
-      "StringNotEquals": { "aws:SourceVpc": "vpc-123456" }
+      "StringNotEquals": { "aws:SourceVpc": "vpc-1a2b3c4d5e6f7a8b9" }
     }
   }]
 }
@@ -129,10 +137,6 @@ CreateClusterResponse response = client.createCluster(request);
 System.out.println("Cluster created: " + response.identifier());
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Resource-based policies
-
-Add and edit policies
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,118 +3,71 @@ title: "Logging AWS Backup API calls with CloudTrail"
 ---
 
 # Logging AWS Backup API calls with CloudTrail
+<a name="logging-using-cloudtrail"></a>
 
-AWS Backup is integrated with [AWS CloudTrail](../../../awscloudtrail/latest/userguide/cloudtrail-user-guide.md) a service that provides a record of actions taken by a user, role, or an
-AWS service service. CloudTrail captures all API calls for AWS Backup as events. The calls captured
-include calls from the AWS Backup console and code calls to the AWS Backup API operations. Using the
-information collected by CloudTrail, you can determine the request that was made to AWS Backup, the
-IP address from which the request was made, when it was made, and additional details.
+AWS Backup is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) a service that provides a record of actions taken by a user, role, or an AWS service service. CloudTrail captures all API calls for AWS Backup as events. The calls captured include calls from the AWS Backup console and code calls to the AWS Backup API operations. Using the information collected by CloudTrail, you can determine the request that was made to AWS Backup, the IP address from which the request was made, when it was made, and additional details.
 
-Every event or log entry contains information about who generated the request. The identity
-information helps you determine the following:
+Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
++ Whether the request was made with root user or user credentials.
++ Whether the request was made on behalf of an IAM Identity Center user.
++ Whether the request was made with temporary security credentials for a role or federated user.
++ Whether the request was made by another AWS service.
 
-- Whether the request was made with root user or user credentials.
+CloudTrail is active in your AWS account when you create the account and you automatically have access to the CloudTrail **Event history**. The CloudTrail **Event history** provides a viewable, searchable, downloadable, and immutable record of the past 90 days of recorded management events in an AWS Region. For more information, see [Working with CloudTrail Event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html) in the *AWS CloudTrail User Guide*. There are no CloudTrail charges for viewing the **Event history**.
 
-- Whether the request was made on behalf of an IAM Identity Center user.
-
-- Whether the request was made with temporary security credentials for a role or federated
-user.
-
-- Whether the request was made by another AWS service.
-
-CloudTrail is active in your AWS account when you create the account and you automatically have
-access to the CloudTrail **Event history**. The CloudTrail **Event**
-**history** provides a viewable, searchable, downloadable, and immutable record of the
-past 90 days of recorded management events in an AWS Region. For more information, see [Working\
-with CloudTrail Event history](../../../awscloudtrail/latest/userguide/view-cloudtrail-events.md) in the _AWS CloudTrail User Guide_. There are no CloudTrail
-charges for viewing the **Event history**.
-
-For an ongoing record of events in your AWS account past 90 days, create a trail or a
-[CloudTrail\
-Lake](../../../awscloudtrail/latest/userguide/cloudtrail-lake.md) event data store.
+For an ongoing record of events in your AWS account past 90 days, create a trail or a [CloudTrail Lake](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html) event data store.
 
 **CloudTrail trails**
-
-A _trail_ enables CloudTrail to deliver log files to an Amazon S3 bucket. All trails created using the AWS Management Console are multi-Region. You can create a single-Region or a multi-Region trail by using the AWS CLI. Creating a multi-Region trail is recommended because you capture activity in all AWS Regions in your account. If you create a single-Region trail, you can view only the events logged in the trail's AWS Region. For more information about trails, see [Creating a trail for your AWS account](../../../awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.md) and [Creating a trail for an organization](../../../awscloudtrail/latest/userguide/creating-trail-organization.md) in the _AWS CloudTrail User Guide_.
-
-You can deliver one copy of your ongoing management events to your Amazon S3 bucket at no charge from CloudTrail by creating a trail, however, there are Amazon S3 storage charges. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing). For information about Amazon S3 pricing, see [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing).
+A *trail* enables CloudTrail to deliver log files to an Amazon S3 bucket. All trails created using the AWS Management Console are multi-Region. You can create a single-Region or a multi-Region trail by using the AWS CLI. Creating a multi-Region trail is recommended because you capture activity in all AWS Regions in your account. If you create a single-Region trail, you can view only the events logged in the trail's AWS Region. For more information about trails, see [Creating a trail for your AWS account](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html) and [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html) in the *AWS CloudTrail User Guide*.
+You can deliver one copy of your ongoing management events to your Amazon S3 bucket at no charge from CloudTrail by creating a trail, however, there are Amazon S3 storage charges. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/). For information about Amazon S3 pricing, see [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/).
 
 **CloudTrail Lake event data stores**
-
-_CloudTrail Lake_ lets you run SQL-based queries on your events. CloudTrail Lake converts existing events in row-based JSON format to [Apache ORC](https://orc.apache.org/) format. ORC is a columnar storage format that is optimized for fast retrieval of data. Events are aggregated into _event data stores_, which are immutable collections of events based on criteria that you select by applying [advanced event selectors](../../../awscloudtrail/latest/userguide/cloudtrail-lake-concepts.md#adv-event-selectors). The selectors that you apply to an event data store control which events persist and are available for you to query. For more information about CloudTrail Lake, see [Working with AWS CloudTrail Lake](../../../awscloudtrail/latest/userguide/cloudtrail-lake.md) in the _AWS CloudTrail User Guide_.
-
-CloudTrail Lake event data stores and queries incur costs. When you create an event data store, you choose the [pricing option](../../../awscloudtrail/latest/userguide/cloudtrail-lake-manage-costs.md#cloudtrail-lake-manage-costs-pricing-option) you want to use for the event data store. The pricing option determines the cost for ingesting and storing events, and the default and maximum retention period for the event data store. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing).
+*CloudTrail Lake* lets you run SQL-based queries on your events. CloudTrail Lake converts existing events in row-based JSON format to [ Apache ORC](https://orc.apache.org/) format. ORC is a columnar storage format that is optimized for fast retrieval of data. Events are aggregated into *event data stores*, which are immutable collections of events based on criteria that you select by applying [advanced event selectors](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-concepts.html#adv-event-selectors). The selectors that you apply to an event data store control which events persist and are available for you to query. For more information about CloudTrail Lake, see [Working with AWS CloudTrail Lake](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html) in the *AWS CloudTrail User Guide*.
+CloudTrail Lake event data stores and queries incur costs. When you create an event data store, you choose the [pricing option](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-manage-costs.html#cloudtrail-lake-manage-costs-pricing-option) you want to use for the event data store. The pricing option determines the cost for ingesting and storing events, and the default and maximum retention period for the event data store. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
 
 ## AWS Backup events in CloudTrail
+<a name="service-name-info-in-cloudtrail"></a>
 
-AWS Backup generates these CloudTrail events when it performs backups, restores, copies, scans or
-notifications. These events are not necessarily generated by use of the AWS Backup public APIs.
-For more information, see [AWS service \
-events](../../../awscloudtrail/latest/userguide/non-api-aws-service-events.md) in the _AWS CloudTrail User Guide_.
-
-- `AssociateBackupVaultMpaApprovalTeamCompleted`
-
-- `AssociateBackupVaultMpaApprovalTeamFailed`
-
-- `BackupDeleted`
-
-- `BackupJobCompleted`
-
-- `BackupJobStarted`
-
-- `BackupSelectionDeletedDueToSLRDeletion`
-
-- `BackupTransitionedToCold`
-
-- `CopyJobCompleted`
-
-- `CopyJobStarted`
-
-- `CreateRestoreAccessBackupVaultFailed`
-
-- `DisassociateBackupVaultMpaApprovalTeamFailed`
-
-- `PutBackupVaultNotifications`
-
-- `ProcessBackupPlanSelection`
-
-- `RecoveryPointCreated`
-
-- `ReportJobCompleted`
-
-- `ReportJobStarted`
-
-- `RestoreAccessBackupVaultDeleted`
-
-- `RestoreCompleted`
-
-- `RestoreStarted`
-
-- `RevokeRestoreAccessBackupVaultFailed`
-
-- `ScanJobCompleted`
-
-- `ScanJobCreated`
-
-- `ScanJobFailed`
-
-- `ScanJobStarted`
+AWS Backup generates these CloudTrail events when it performs backups, restores, copies, scans, notifications, or access point operations. These events are not necessarily generated by use of the AWS Backup public APIs. For more information, see [AWS service events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/non-api-aws-service-events.html) in the *AWS CloudTrail User Guide*.
++ `AssociateBackupVaultMpaApprovalTeamCompleted`
++ `AssociateBackupVaultMpaApprovalTeamFailed`
++ `BackupAccessPointCreated`
++ `BackupAccessPointCreationFailed`
++ `BackupAccessPointDeleted`
++ `BackupAccessPointDeletionFailed`
++ `BackupAccessPointExpired`
++ `BackupAccessPointDisassociated`
++ `BackupDeleted`
++ `BackupJobCompleted`
++ `BackupJobStarted`
++ `BackupSelectionDeletedDueToSLRDeletion`
++ `BackupTransitionedToCold`
++ `CopyJobCompleted`
++ `CopyJobStarted`
++ `CreateRestoreAccessBackupVaultFailed`
++ `DisassociateBackupVaultMpaApprovalTeamFailed`
++ `PutBackupVaultNotifications`
++ `ProcessBackupPlanSelection`
++ `RecoveryPointCreated`
++ `ReportJobCompleted`
++ `ReportJobStarted`
++ `RestoreAccessBackupVaultDeleted`
++ `RestoreCompleted`
++ `RestoreStarted`
++ `RevokeRestoreAccessBackupVaultFailed`
++ `ScanJobCompleted`
++ `ScanJobCreated`
++ `ScanJobFailed`
++ `ScanJobStarted`
 
 ## Understanding AWS Backup log file entries
+<a name="understanding-service-name-entries"></a>
 
-A trail is a configuration that enables delivery of events as log files to an Amazon S3
-bucket that you specify. CloudTrail log files contain one or more log entries. An event represents
-a single request from any source and includes information about the requested action, the
-date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered
-stack trace of the public API calls, so they don't appear in any specific order.
+A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
-The following example shows a CloudTrail log entry that demonstrates the
-`StartBackupJob`, `StartRestoreJob`, and
-`DeleteRecoveryPoint` actions and also the `BackupJobCompleted`
-event.
+The following example shows a CloudTrail log entry that demonstrates the `StartBackupJob`, `StartRestoreJob`, and `DeleteRecoveryPoint` actions and also the `BackupJobCompleted` event.
 
-```json
-
+```
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -263,34 +216,22 @@ event.
 ```
 
 ## Logging cross-account management events
+<a name="logging-cam-events"></a>
 
-With AWS Backup, you can manage your backups across all AWS accounts inside your [AWS Organizations](../../../organizations/latest/userguide/orgs-introduction.md) structure. AWS Backup generates these CloudTrail events in your member account
-when you create, update, or
-delete an AWS Organizations backup policy (that applies backup plans to your member accounts) or when
-there is an invalid organization backup plan:
-
-- `CreateOrganizationalBackupPlan`
-
-- `UpdateOrganizationalBackupPlan`
-
-- `DeleteOrganizationalBackupPlan`
-
-- `InvalidOrganizationBackupPlan`
+With AWS Backup, you can manage your backups across all AWS accounts inside your [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) structure. AWS Backup generates these CloudTrail events in your member account when you create, update, or delete an AWS Organizations backup policy (that applies backup plans to your member accounts) or when there is an invalid organization backup plan:
++ `CreateOrganizationalBackupPlan`
++ `UpdateOrganizationalBackupPlan`
++ `DeleteOrganizationalBackupPlan`
++ `InvalidOrganizationBackupPlan`
 
 ### Example: AWS Backup log file entries for cross-account management
+<a name="cam-log-examples"></a>
 
-A trail is a configuration that enables delivery of events as log files to an Amazon S3
-bucket that you specify. CloudTrail log files contain one or more log entries. An event
-represents a single request from any source and includes information about the requested
-action, the date and time of the action, request parameters, and so on. CloudTrail log files
-aren't an ordered stack trace of the public API calls, so they don't appear in any
-specific order.
+ A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
-The following example shows a CloudTrail log entry that demonstrates the
-`CreateOrganizationalBackupPlan` action.
+The following example shows a CloudTrail log entry that demonstrates the `CreateOrganizationalBackupPlan` action.
 
-```json
-
+```
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -325,11 +266,9 @@ The following example shows a CloudTrail log entry that demonstrates the
 }
 ```
 
-The following example shows a CloudTrail log entry that demonstrates the
-`DeleteOrganizationalBackupPlan` action.
+The following example shows a CloudTrail log entry that demonstrates the `DeleteOrganizationalBackupPlan` action.
 
-```json
-
+```
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -363,12 +302,9 @@ The following example shows a CloudTrail log entry that demonstrates the
 }
 ```
 
-The following example shows a CloudTrail log entry that demonstrates the event
-`InvalidOrganizationBackupPlan`, which is sent when AWS Backup receives an invalid
-backup plan from Organizations.
+The following example shows a CloudTrail log entry that demonstrates the event `InvalidOrganizationBackupPlan`, which is sent when AWS Backup receives an invalid backup plan from Organizations.
 
-```json
-
+```
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -433,11 +369,5 @@ backup plan from Organizations.
     "eventCategory": "Management"
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Backup metrics with Amazon CloudWatch
-
-Notification options with AWS Backup
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,15 +3,16 @@ title: "Common resource-based policy examples"
 ---
 
 # Common resource-based policy examples
+<a name="rbp-examples"></a>
 
 These examples show common patterns for controlling access to your Aurora DSQL clusters. You can combine and modify these patterns to meet your specific access requirements.
 
 ## Block public internet access
+<a name="rbp-example-block-public"></a>
 
 This policy blocks connections to your Aurora DSQL clusters from the public internet (non-VPC). The policy doesn't specify which VPC customers can connect from—only that they must connect from a VPC. To limit access to a specific VPC, use `aws:SourceVpc` with the `StringEquals` condition operator.
 
 ```
-
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -35,14 +36,12 @@ This policy blocks connections to your Aurora DSQL clusters from the public inte
 }
 ```
 
-###### Note
-
+**Note**
 This example uses only `aws:SourceVpc` to check for VPC connections. The `aws:VpcSourceIp` and `aws:SourceVpce` condition keys provide additional granularity but are not required for basic VPC-only access control.
 
 To provide an exception for specific roles, use this policy instead:
 
 ```
-
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -74,11 +73,11 @@ To provide an exception for specific roles, use this policy instead:
 ```
 
 ## Restrict access to AWS Organization
+<a name="rbp-example-org-access"></a>
 
 This policy restricts access to principals within an AWS Organization:
 
 ```
-
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -103,11 +102,11 @@ This policy restricts access to principals within an AWS Organization:
 ```
 
 ## Restrict access to specific Organizational Unit
+<a name="rbp-example-ou-access"></a>
 
 This policy restricts access to principals within a specific Organizational Unit (OU) in an AWS Organization, providing more granular control than organization-wide access:
 
 ```
-
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -121,7 +120,7 @@ This policy restricts access to principals within a specific Organizational Unit
       ],
       "Resource": "arn:aws:dsql:us-east-1:123456789012:cluster/mydsqlclusterid0123456789a",
       "Condition": {
-        "StringNotLike": {
+        "ForAnyValue:StringNotLike": {
           "aws:PrincipalOrgPaths": "o-exampleorgid/r-examplerootid/ou-exampleouid/*"
         }
       }
@@ -131,13 +130,13 @@ This policy restricts access to principals within a specific Organizational Unit
 ```
 
 ## Multi-Region cluster policies
+<a name="rbp-example-multi-region"></a>
 
 For multi-Region clusters, each regional cluster maintains its own resource policy, allowing for Region-specific controls. Here's an example with different policies per region:
 
-_us-east-1 policy:_
+*us-east-1 policy:*
 
 ```
-
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -152,7 +151,7 @@ _us-east-1 policy:_
       ],
       "Condition": {
         "StringNotEquals": {
-          "aws:SourceVpc": "vpc-east1-id"
+          "aws:SourceVpc": "vpc-0a1b2c3d4e5f67890"
         },
         "Null": {
           "aws:SourceVpc": "true"
@@ -163,10 +162,9 @@ _us-east-1 policy:_
 }
 ```
 
-_us-east-2 policy:_
+*us-east-2 policy:*
 
 ```
-
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -181,7 +179,7 @@ _us-east-2 policy:_
       ],
       "Condition": {
         "StringEquals": {
-          "aws:SourceVpc": "vpc-east2-id"
+          "aws:SourceVpc": "vpc-0f9e8d7c6b5a43210"
         }
       }
     }
@@ -189,14 +187,7 @@ _us-east-2 policy:_
 }
 ```
 
-###### Note
-
+**Note**
 Condition context keys may vary between AWS Regions (such as VPC IDs).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Remove Policy
-
-Block public access
 
 All content copied from https://docs.aws.amazon.com/.

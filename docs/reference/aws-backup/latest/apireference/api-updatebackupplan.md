@@ -3,14 +3,15 @@ title: "UpdateBackupPlan"
 ---
 
 # UpdateBackupPlan
+<a name="API_UpdateBackupPlan"></a>
 
 Updates the specified backup plan. The new version is uniquely identified by its ID.
 
 ## Request Syntax
+<a name="API_UpdateBackupPlan_RequestSyntax"></a>
 
-```nohighlight
-
-POST /backup/plans/backupPlanId HTTP/1.1
+```
+POST /backup/plans/{{backupPlanId}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -18,60 +19,60 @@ Content-type: application/json
       "AdvancedBackupSettings": [
          {
             "BackupOptions": {
-               "string" : "string"
+               "{{string}}" : "{{string}}"
             },
-            "ResourceType": "string"
+            "ResourceType": "{{string}}"
          }
       ],
-      "BackupPlanName": "string",
+      "BackupPlanName": "{{string}}",
       "Rules": [
          {
-            "CompletionWindowMinutes": number,
+            "CompletionWindowMinutes": {{number}},
             "CopyActions": [
                {
-                  "DestinationBackupVaultArn": "string",
+                  "DestinationBackupVaultArn": "{{string}}",
                   "Lifecycle": {
-                     "DeleteAfterDays": number,
-                     "DeleteAfterEvent": "string",
-                     "MoveToColdStorageAfterDays": number,
-                     "OptInToArchiveForSupportedResources": boolean
+                     "DeleteAfterDays": {{number}},
+                     "DeleteAfterEvent": "{{string}}",
+                     "MoveToColdStorageAfterDays": {{number}},
+                     "OptInToArchiveForSupportedResources": {{boolean}}
                   }
                }
             ],
-            "EnableContinuousBackup": boolean,
+            "EnableContinuousBackup": {{boolean}},
             "IndexActions": [
                {
-                  "ResourceTypes": [ "string" ]
+                  "ResourceTypes": [ "{{string}}" ]
                }
             ],
             "Lifecycle": {
-               "DeleteAfterDays": number,
-               "DeleteAfterEvent": "string",
-               "MoveToColdStorageAfterDays": number,
-               "OptInToArchiveForSupportedResources": boolean
+               "DeleteAfterDays": {{number}},
+               "DeleteAfterEvent": "{{string}}",
+               "MoveToColdStorageAfterDays": {{number}},
+               "OptInToArchiveForSupportedResources": {{boolean}}
             },
             "RecoveryPointTags": {
-               "string" : "string"
+               "{{string}}" : "{{string}}"
             },
-            "RuleName": "string",
+            "RuleName": "{{string}}",
             "ScanActions": [
                {
-                  "MalwareScanner": "string",
-                  "ScanMode": "string"
+                  "MalwareScanner": "{{string}}",
+                  "ScanMode": "{{string}}"
                }
             ],
-            "ScheduleExpression": "string",
-            "ScheduleExpressionTimezone": "string",
-            "StartWindowMinutes": number,
-            "TargetBackupVaultName": "string",
-            "TargetLogicallyAirGappedBackupVaultArn": "string"
+            "ScheduleExpression": "{{string}}",
+            "ScheduleExpressionTimezone": "{{string}}",
+            "StartWindowMinutes": {{number}},
+            "TargetBackupVaultName": "{{string}}",
+            "TargetLogicallyAirGappedBackupVaultArn": "{{string}}"
          }
       ],
       "ScanSettings": [
          {
-            "MalwareScanner": "string",
-            "ResourceTypes": [ "string" ],
-            "ScannerRoleArn": "string"
+            "MalwareScanner": "{{string}}",
+            "ResourceTypes": [ "{{string}}" ],
+            "ScannerRoleArn": "{{string}}"
          }
       ]
    }
@@ -79,32 +80,28 @@ Content-type: application/json
 ```
 
 ## URI Request Parameters
+<a name="API_UpdateBackupPlan_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[backupPlanId](#API_UpdateBackupPlan_RequestSyntax)**
-
+ ** [backupPlanId](#API_UpdateBackupPlan_RequestSyntax) **   <a name="Backup-UpdateBackupPlan-request-uri-BackupPlanId"></a>
 The ID of the backup plan.
-
 Required: Yes
 
 ## Request Body
+<a name="API_UpdateBackupPlan_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[BackupPlan](#API_UpdateBackupPlan_RequestSyntax)**
-
-The body of a backup plan. Includes a `BackupPlanName` and one or
-more sets of `Rules`.
-
-Type: [BackupPlanInput](api-backupplaninput.md) object
-
+ ** [BackupPlan](#API_UpdateBackupPlan_RequestSyntax) **   <a name="Backup-UpdateBackupPlan-request-BackupPlan"></a>
+The body of a backup plan. Includes a `BackupPlanName` and one or more sets of `Rules`.
+Type: [BackupPlanInput](API_BackupPlanInput.md) object
 Required: Yes
 
 ## Response Syntax
+<a name="API_UpdateBackupPlan_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -132,125 +129,86 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_UpdateBackupPlan_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[AdvancedBackupSettings](#API_UpdateBackupPlan_ResponseSyntax)**
-
+ ** [AdvancedBackupSettings](#API_UpdateBackupPlan_ResponseSyntax) **   <a name="Backup-UpdateBackupPlan-response-AdvancedBackupSettings"></a>
 Contains a list of `BackupOptions` for each resource type.
+Type: Array of [AdvancedBackupSetting](API_AdvancedBackupSetting.md) objects
 
-Type: Array of [AdvancedBackupSetting](api-advancedbackupsetting.md) objects
-
-**[BackupPlanArn](#API_UpdateBackupPlan_ResponseSyntax)**
-
-An Amazon Resource Name (ARN) that uniquely identifies a backup plan; for example,
-`arn:aws:backup:us-east-1:123456789012:plan:8F81F553-3A74-4A3F-B93D-B3360DC80C50`.
-
+ ** [BackupPlanArn](#API_UpdateBackupPlan_ResponseSyntax) **   <a name="Backup-UpdateBackupPlan-response-BackupPlanArn"></a>
+An Amazon Resource Name (ARN) that uniquely identifies a backup plan; for example, `arn:aws:backup:us-east-1:123456789012:plan:8F81F553-3A74-4A3F-B93D-B3360DC80C50`.
 Type: String
 
-**[BackupPlanId](#API_UpdateBackupPlan_ResponseSyntax)**
-
+ ** [BackupPlanId](#API_UpdateBackupPlan_ResponseSyntax) **   <a name="Backup-UpdateBackupPlan-response-BackupPlanId"></a>
 Uniquely identifies a backup plan.
-
 Type: String
 
-**[CreationDate](#API_UpdateBackupPlan_ResponseSyntax)**
-
-The date and time a backup plan is created, in Unix format and Coordinated Universal
-Time (UTC). The value of `CreationDate` is accurate to milliseconds. For
-example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087
-AM.
-
+ ** [CreationDate](#API_UpdateBackupPlan_ResponseSyntax) **   <a name="Backup-UpdateBackupPlan-response-CreationDate"></a>
+The date and time a backup plan is created, in Unix format and Coordinated Universal Time (UTC). The value of `CreationDate` is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
 Type: Timestamp
 
-**[ScanSettings](#API_UpdateBackupPlan_ResponseSyntax)**
-
+ ** [ScanSettings](#API_UpdateBackupPlan_ResponseSyntax) **   <a name="Backup-UpdateBackupPlan-response-ScanSettings"></a>
 Contains your scanning configuration for the backup plan and includes the Malware scanner, your selected resources, and scanner role.
+Type: Array of [ScanSetting](API_ScanSetting.md) objects
 
-Type: Array of [ScanSetting](api-scansetting.md) objects
-
-**[VersionId](#API_UpdateBackupPlan_ResponseSyntax)**
-
-Unique, randomly generated, Unicode, UTF-8 encoded strings that are at most 1,024 bytes
-long. Version Ids cannot be edited.
-
+ ** [VersionId](#API_UpdateBackupPlan_ResponseSyntax) **   <a name="Backup-UpdateBackupPlan-response-VersionId"></a>
+Unique, randomly generated, Unicode, UTF-8 encoded strings that are at most 1,024 bytes long. Version Ids cannot be edited.
 Type: String
 
 ## Errors
+<a name="API_UpdateBackupPlan_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidParameterValueException**
+ ** InvalidParameterValueException **
+Indicates that something is wrong with a parameter's value. For example, the value is out of range.
+ ** Context **
 
-Indicates that something is wrong with a parameter's value. For example, the value is
-out of range.
-
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**MissingParameterValueException**
-
+ ** MissingParameterValueException **
 Indicates that a required parameter is missing.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource that is required for the action doesn't exist.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ServiceUnavailableException**
-
+ ** ServiceUnavailableException **
 The request failed due to a temporary failure of the server.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 500
 
 ## See Also
+<a name="API_UpdateBackupPlan_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/UpdateBackupPlan)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/UpdateBackupPlan)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UntagResource
-
-UpdateFramework
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/UpdateBackupPlan)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/UpdateBackupPlan)
 
 All content copied from https://docs.aws.amazon.com/.

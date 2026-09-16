@@ -3,163 +3,113 @@ title: "PutBandwidthRateLimitSchedule"
 ---
 
 # PutBandwidthRateLimitSchedule
+<a name="API_BGW_PutBandwidthRateLimitSchedule"></a>
 
-This action sets the bandwidth rate limit schedule for a specified gateway.
-By default, gateways do not have a bandwidth rate limit schedule, which means
-no bandwidth rate limiting is in effect. Use this to initiate a
-gateway's bandwidth rate limit schedule.
+This action sets the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have a bandwidth rate limit schedule, which means no bandwidth rate limiting is in effect. Use this to initiate a gateway's bandwidth rate limit schedule.
 
 ## Request Syntax
+<a name="API_BGW_PutBandwidthRateLimitSchedule_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
    "BandwidthRateLimitIntervals": [
       {
-         "AverageUploadRateLimitInBitsPerSec": number,
-         "DaysOfWeek": [ number ],
-         "EndHourOfDay": number,
-         "EndMinuteOfHour": number,
-         "StartHourOfDay": number,
-         "StartMinuteOfHour": number
+         "AverageUploadRateLimitInBitsPerSec": {{number}},
+         "DaysOfWeek": [ {{number}} ],
+         "EndHourOfDay": {{number}},
+         "EndMinuteOfHour": {{number}},
+         "StartHourOfDay": {{number}},
+         "StartMinuteOfHour": {{number}}
       }
    ],
-   "GatewayArn": "string"
+   "GatewayArn": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_BGW_PutBandwidthRateLimitSchedule_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[BandwidthRateLimitIntervals](#API_BGW_PutBandwidthRateLimitSchedule_RequestSyntax)**
-
-An array containing bandwidth rate limit schedule intervals for a gateway.
-When no bandwidth rate limit intervals have been scheduled, the array is empty.
-
-Type: Array of [BandwidthRateLimitInterval](api-bgw-bandwidthratelimitinterval.md) objects
-
+ ** [BandwidthRateLimitIntervals](#API_BGW_PutBandwidthRateLimitSchedule_RequestSyntax) **   <a name="Backup-BGW_PutBandwidthRateLimitSchedule-request-BandwidthRateLimitIntervals"></a>
+An array containing bandwidth rate limit schedule intervals for a gateway. When no bandwidth rate limit intervals have been scheduled, the array is empty.
+Type: Array of [BandwidthRateLimitInterval](API_BGW_BandwidthRateLimitInterval.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
-
 Required: Yes
 
-**[GatewayArn](#API_BGW_PutBandwidthRateLimitSchedule_RequestSyntax)**
-
-The Amazon Resource Name (ARN) of the gateway. Use the
-[`ListGateways`](../../../../services/aws-backup/latest/devguide/api-bgw-listgateways.md) operation to return a list of gateways
-for your account and AWS Region.
-
+ ** [GatewayArn](#API_BGW_PutBandwidthRateLimitSchedule_RequestSyntax) **   <a name="Backup-BGW_PutBandwidthRateLimitSchedule-request-GatewayArn"></a>
+The Amazon Resource Name (ARN) of the gateway. Use the [`ListGateways`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html) operation to return a list of gateways for your account and AWS Region.
 Type: String
-
 Length Constraints: Minimum length of 50. Maximum length of 180.
-
 Pattern: `arn:(aws|aws-cn|aws-us-gov):backup-gateway(:[a-zA-Z-0-9]+){3}\/[a-zA-Z-0-9]+`
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_BGW_PutBandwidthRateLimitSchedule_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "GatewayArn": "string"
 }
 ```
 
 ## Response Elements
+<a name="API_BGW_PutBandwidthRateLimitSchedule_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[GatewayArn](#API_BGW_PutBandwidthRateLimitSchedule_ResponseSyntax)**
-
-The Amazon Resource Name (ARN) of the gateway. Use the
-[`ListGateways`](../../../../services/aws-backup/latest/devguide/api-bgw-listgateways.md) operation to return a list of gateways
-for your account and AWS Region.
-
+ ** [GatewayArn](#API_BGW_PutBandwidthRateLimitSchedule_ResponseSyntax) **   <a name="Backup-BGW_PutBandwidthRateLimitSchedule-response-GatewayArn"></a>
+The Amazon Resource Name (ARN) of the gateway. Use the [`ListGateways`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html) operation to return a list of gateways for your account and AWS Region.
 Type: String
-
 Length Constraints: Minimum length of 50. Maximum length of 180.
-
 Pattern: `arn:(aws|aws-cn|aws-us-gov):backup-gateway(:[a-zA-Z-0-9]+){3}\/[a-zA-Z-0-9]+`
 
 ## Errors
+<a name="API_BGW_PutBandwidthRateLimitSchedule_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
+ ** InternalServerException **
 The operation did not succeed because an internal error occurred. Try again later.
-
-**ErrorCode**
-
+ ** ErrorCode **
 A description of which internal error occured.
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource that is required for the action wasn't found.
-
-**ErrorCode**
-
+ ** ErrorCode **
 A description of which resource wasn't found.
-
 HTTP Status Code: 400
 
-**ThrottlingException**
-
-TPS has been limited to protect against intentional or unintentional
-high request volumes.
-
-**ErrorCode**
-
-Error: TPS has been limited to protect against intentional or unintentional
-high request volumes.
-
+ ** ThrottlingException **
+TPS has been limited to protect against intentional or unintentional high request volumes.
+ ** ErrorCode **
+Error: TPS has been limited to protect against intentional or unintentional high request volumes.
 HTTP Status Code: 400
 
-**ValidationException**
-
+ ** ValidationException **
 The operation did not succeed because a validation error occurred.
-
-**ErrorCode**
-
+ ** ErrorCode **
 A description of what caused the validation error.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_BGW_PutBandwidthRateLimitSchedule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListVirtualMachines
-
-PutHypervisorPropertyMappings
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-gateway-2021-01-01/PutBandwidthRateLimitSchedule)
 
 All content copied from https://docs.aws.amazon.com/.

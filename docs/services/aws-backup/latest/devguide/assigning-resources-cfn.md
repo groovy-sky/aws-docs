@@ -3,36 +3,21 @@ title: "Assign AWS Backup resources through CloudFormation"
 ---
 
 # Assign AWS Backup resources through CloudFormation
+<a name="assigning-resources-cfn"></a>
 
-This end-to-end CloudFormation template creates a resource assignment, a backup plan, and a
-destination backup vault:
+This end-to-end CloudFormation template creates a resource assignment, a backup plan, and a destination backup vault:
++ A backup vault named {{CloudFormationTestBackupVault}}.
++ A backup plan named {{CloudFormationTestBackupPlan}}. This plan will run two contains two backup rules, both of which take backups daily at 12 noon UTC and retain them for 210 days.
++ A resource selection named {{BackupSelectionName}}.
++
+  + The resource assignment backs up the following resources:
+    + Any resource tagged with the key-value pair `backupplan:dsi-sandbox-daily`.
+    + Any resource tagged with the value `prod` or values beginning with `prod/`.
+  + The resource assignment does not back up the following resources:
+    + Any RDS, Aurora, Neptune, or DocumentDB cluster.
+    + Any resource tagged with the value `test` or values beginning with `test/`.
 
-- A backup vault named
-`CloudFormationTestBackupVault`.
-
-- A backup plan named `CloudFormationTestBackupPlan`. This
-plan will run two contains two backup rules, both of which take backups daily at 12 noon
-UTC and retain them for 210 days.
-
-- A resource selection named `BackupSelectionName`.
-
-- - The resource assignment backs up the following resources:
-
-- Any resource tagged with the key-value pair
-`backupplan:dsi-sandbox-daily`.
-
-- Any resource tagged with the value `prod` or values beginning
-with `prod/`.
-
-- The resource assignment does not back up the following resources:
-
-- Any RDS, Aurora, Neptune, or DocumentDB cluster.
-
-- Any resource tagged with the value `test` or values beginning
-with `test/`.
-
-```yml
-
+```
 Description: "Template that creates Backup Selection and its dependencies"
 Parameters:
   BackupVaultName:
@@ -119,7 +104,7 @@ Resources:
             Action:
               - "sts:AssumeRole"
       ManagedPolicyArns:
-        - !Sub "arn:${AWS::Partition}:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForBackup"
+        - !Sub "arn:{{${AWS::Partition}}}:iam::aws:policy/service-role/{{AWSBackupServiceRolePolicyForBackup}}"
   BasicBackupSelection:
     Type: 'AWS::Backup::BackupSelection'
     Properties:
@@ -147,11 +132,5 @@ Resources:
             - ConditionKey: 'aws:ResourceTag/path'
               ConditionValue: test/*
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Assign resources with AWS CLI
-
-Backup vaults
 
 All content copied from https://docs.aws.amazon.com/.

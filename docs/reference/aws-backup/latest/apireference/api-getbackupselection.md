@@ -3,43 +3,39 @@ title: "GetBackupSelection"
 ---
 
 # GetBackupSelection
+<a name="API_GetBackupSelection"></a>
 
-Returns selection metadata and a document in JSON format that specifies a list of
-resources that are associated with a backup plan.
+Returns selection metadata and a document in JSON format that specifies a list of resources that are associated with a backup plan.
 
 ## Request Syntax
+<a name="API_GetBackupSelection_RequestSyntax"></a>
 
-```nohighlight
-
-GET /backup/plans/backupPlanId/selections/selectionId HTTP/1.1
-
+```
+GET /backup/plans/{{backupPlanId}}/selections/{{selectionId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetBackupSelection_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[backupPlanId](#API_GetBackupSelection_RequestSyntax)**
-
+ ** [backupPlanId](#API_GetBackupSelection_RequestSyntax) **   <a name="Backup-GetBackupSelection-request-uri-BackupPlanId"></a>
 Uniquely identifies a backup plan.
-
 Required: Yes
 
-**[selectionId](#API_GetBackupSelection_RequestSyntax)**
-
-Uniquely identifies the body of a request to assign a set of resources to a backup
-plan.
-
+ ** [selectionId](#API_GetBackupSelection_RequestSyntax) **   <a name="Backup-GetBackupSelection-request-uri-SelectionId"></a>
+Uniquely identifies the body of a request to assign a set of resources to a backup plan.
 Required: Yes
 
 ## Request Body
+<a name="API_GetBackupSelection_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetBackupSelection_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -91,119 +87,82 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetBackupSelection_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[BackupPlanId](#API_GetBackupSelection_ResponseSyntax)**
-
+ ** [BackupPlanId](#API_GetBackupSelection_ResponseSyntax) **   <a name="Backup-GetBackupSelection-response-BackupPlanId"></a>
 Uniquely identifies a backup plan.
-
 Type: String
 
-**[BackupSelection](#API_GetBackupSelection_ResponseSyntax)**
-
+ ** [BackupSelection](#API_GetBackupSelection_ResponseSyntax) **   <a name="Backup-GetBackupSelection-response-BackupSelection"></a>
 Specifies the body of a request to assign a set of resources to a backup plan.
+Type: [BackupSelection](API_BackupSelection.md) object
 
-Type: [BackupSelection](api-backupselection.md) object
-
-**[CreationDate](#API_GetBackupSelection_ResponseSyntax)**
-
-The date and time a backup selection is created, in Unix format and Coordinated
-Universal Time (UTC). The value of `CreationDate` is accurate to milliseconds.
-For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087
-AM.
-
+ ** [CreationDate](#API_GetBackupSelection_ResponseSyntax) **   <a name="Backup-GetBackupSelection-response-CreationDate"></a>
+The date and time a backup selection is created, in Unix format and Coordinated Universal Time (UTC). The value of `CreationDate` is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
 Type: Timestamp
 
-**[CreatorRequestId](#API_GetBackupSelection_ResponseSyntax)**
-
-A unique string that identifies the request and allows failed requests to be retried
-without the risk of running the operation twice.
-
+ ** [CreatorRequestId](#API_GetBackupSelection_ResponseSyntax) **   <a name="Backup-GetBackupSelection-response-CreatorRequestId"></a>
+A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice.
 Type: String
 
-**[SelectionId](#API_GetBackupSelection_ResponseSyntax)**
-
-Uniquely identifies the body of a request to assign a set of resources to a backup
-plan.
-
+ ** [SelectionId](#API_GetBackupSelection_ResponseSyntax) **   <a name="Backup-GetBackupSelection-response-SelectionId"></a>
+Uniquely identifies the body of a request to assign a set of resources to a backup plan.
 Type: String
 
 ## Errors
+<a name="API_GetBackupSelection_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidParameterValueException**
+ ** InvalidParameterValueException **
+Indicates that something is wrong with a parameter's value. For example, the value is out of range.
+ ** Context **
 
-Indicates that something is wrong with a parameter's value. For example, the value is
-out of range.
-
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**MissingParameterValueException**
-
+ ** MissingParameterValueException **
 Indicates that a required parameter is missing.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource that is required for the action doesn't exist.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 400
 
-**ServiceUnavailableException**
-
+ ** ServiceUnavailableException **
 The request failed due to a temporary failure of the server.
+ ** Context **
 
-**Context**
-
-**Type**
+ ** Type **
 
 HTTP Status Code: 500
 
 ## See Also
+<a name="API_GetBackupSelection_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/GetBackupSelection)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/GetBackupSelection)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetBackupPlanFromTemplate
-
-GetBackupVaultAccessPolicy
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/GetBackupSelection)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/GetBackupSelection)
 
 All content copied from https://docs.aws.amazon.com/.

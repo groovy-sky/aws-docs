@@ -3,19 +3,21 @@ title: "Using AWS SDKs"
 ---
 
 # Using AWS SDKs
+<a name="multi-region-aws-sdks"></a>
 
 The AWS SDKs provide programmatic access to Aurora DSQL in your preferred programming language. The following sections show how to perform common cluster operations using different programming languages.
 
 ## Create cluster
+<a name="multi-region-create-cluster-sdk"></a>
 
 The following examples show how to create a multi-Region cluster using different programming languages.
 
-Python
+------
+#### [ Python ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```python
-
+```
 import boto3
 
 def create_multi_region_clusters(region_1, region_2, witness_region):
@@ -83,15 +85,14 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
-C++
+------
+#### [ C\+\+ ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```cpp
-
+```
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -230,12 +231,12 @@ int main() {
 }
 ```
 
-JavaScript
+------
+#### [ JavaScript ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```JavaScript
-
+```
 import { DSQLClient, CreateClusterCommand, UpdateClusterCommand, waitUntilClusterActive } from "@aws-sdk/client-dsql";
 
 async function createMultiRegionCluster(region1, region2, witnessRegion) {
@@ -327,12 +328,12 @@ async function main() {
 main();
 ```
 
-Java
+------
+#### [ Java ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```java
-
+```
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -419,15 +420,14 @@ public class CreateMultiRegionCluster {
         }
     }
 }
-
 ```
 
-Rust
+------
+#### [ Rust ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```rust
-
+```
 use aws_config::{BehaviorVersion, Region, load_defaults};
 use aws_sdk_dsql::client::Waiters;
 use aws_sdk_dsql::operation::get_cluster::GetClusterOutput;
@@ -557,15 +557,14 @@ pub async fn main() -> anyhow::Result<()> {
 
     Ok(())
 }
-
 ```
 
-Ruby
+------
+#### [ Ruby ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```ruby
-
+```
 require "aws-sdk-dsql"
 require "pp"
 
@@ -643,15 +642,14 @@ def main
 end
 
 main if $PROGRAM_NAME == __FILE__
-
 ```
 
-Golang
+------
+#### [ Golang ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```go
-
+```
 package main
 
 import (
@@ -803,15 +801,14 @@ func main() {
 	}
 
 }
-
 ```
 
-.NET
+------
+#### [ .NET ]
 
 To create a multi-Region cluster, use the following example. Creating a multi-Region cluster might take some time.
 
-```dotnet
-
+```
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -917,19 +914,21 @@ namespace DSQLExamples.examples
         }
     }
 }
-
 ```
 
+------
+
 ## Get cluster
+<a name="multi-region-get-cluster-sdk"></a>
 
 The following examples show how to get information about a multi-Region cluster using different programming languages.
 
-Python
+------
+#### [ Python ]
 
 To get information about a multi-Region cluster, use the following example.
 
-```python
-
+```
 import boto3
 from datetime import datetime
 import json
@@ -951,15 +950,14 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
-C++
+------
+#### [ C\+\+ ]
 
 Use the following example to get information about a multi-Region cluster.
 
-```C++
-
+```
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -1016,15 +1014,14 @@ int main() {
     Aws::ShutdownAPI(options);
     return 0;
 }
-
 ```
 
-JavaScript
+------
+#### [ JavaScript ]
 
 To get information about a multi-Region cluster, use the following example.
 
 ```
-
 import { DSQLClient, GetClusterCommand } from "@aws-sdk/client-dsql";
 
 async function getCluster(region, clusterId) {
@@ -1054,15 +1051,14 @@ async function main() {
 }
 
 main();
-
 ```
 
-Java
+------
+#### [ Java ]
 
 The following example lets you get information about a multi-Region cluster.
 
-```java
-
+```
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1090,15 +1086,14 @@ public class GetCluster {
         }
     }
 }
-
 ```
 
-Rust
+------
+#### [ Rust ]
 
 The following example lets you get information about a multi-Region cluster.
 
-```rust
-
+```
 use aws_config::load_defaults;
 use aws_sdk_dsql::operation::get_cluster::GetClusterOutput;
 use aws_sdk_dsql::{
@@ -1144,15 +1139,14 @@ pub async fn main() -> anyhow::Result<()> {
 
     Ok(())
 }
-
 ```
 
-Ruby
+------
+#### [ Ruby ]
 
 The following example lets you get information about a multi-Region cluster.
 
-```ruby
-
+```
 require "aws-sdk-dsql"
 require "pp"
 
@@ -1171,15 +1165,14 @@ def main
 end
 
 main if $PROGRAM_NAME == __FILE__
-
 ```
 
-.NET
+------
+#### [ .NET ]
 
 The following example lets you get information about a multi-Region cluster.
 
-```dotnet
-
+```
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -1230,15 +1223,14 @@ namespace DSQLExamples.examples
         }
     }
 }
-
 ```
 
-Golang
+------
+#### [ Golang ]
 
 The following example lets you get information about a multi-Region cluster.
 
-```go
-
+```
 package main
 
 import (
@@ -1290,16 +1282,19 @@ func main() {
 }
 ```
 
+------
+
 ## Update cluster
+<a name="multi-region-update-cluster-sdk"></a>
 
 The following examples show how to update a multi-Region cluster using different programming languages.
 
-Python
+------
+#### [ Python ]
 
 To update a multi-Region cluster, use the following example.
 
-```python
-
+```
 import boto3
 
 def update_cluster(region, cluster_id, deletion_protection_enabled):
@@ -1319,15 +1314,14 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
-C++
+------
+#### [ C\+\+ ]
 
 Use the following example to update a multi-Region cluster.
 
-```C++
-
+```
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -1399,15 +1393,14 @@ int main() {
     Aws::ShutdownAPI(options);
     return 0;
 }
-
 ```
 
-JavaScript
+------
+#### [ JavaScript ]
 
 To update a multi-Region cluster, use the following example.
 
-```JavaScript
-
+```
 import { DSQLClient, UpdateClusterCommand } from "@aws-sdk/client-dsql";
 
 export async function updateCluster(region, clusterId, deletionProtectionEnabled) {
@@ -1439,12 +1432,12 @@ async function main() {
 main();
 ```
 
-Java
+------
+#### [ Java ]
 
 Use the following example to update a multi-Region cluster.
 
-```java
-
+```
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1476,12 +1469,12 @@ public class UpdateCluster {
 }
 ```
 
-Rust
+------
+#### [ Rust ]
 
 Use the following example to update a multi-Region cluster.
 
-```rust
-
+```
 use aws_config::load_defaults;
 use aws_sdk_dsql::operation::update_cluster::UpdateClusterOutput;
 use aws_sdk_dsql::{
@@ -1533,12 +1526,12 @@ pub async fn main() -> anyhow::Result<()> {
 }
 ```
 
-Ruby
+------
+#### [ Ruby ]
 
 Use the following example to update a multi-Region cluster.
 
-```ruby
-
+```
 require "aws-sdk-dsql"
 
 def update_cluster(region, update_params)
@@ -1559,15 +1552,14 @@ def main
 end
 
 main if $PROGRAM_NAME == __FILE__
-
 ```
 
-.NET
+------
+#### [ .NET ]
 
 Use the following example to update a multi-Region cluster.
 
-```dotnet
-
+```
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -1623,12 +1615,12 @@ namespace DSQLExamples.examples
 }
 ```
 
-Golang
+------
+#### [ Golang ]
 
 Use the following example to update a multi-Region cluster.
 
-```go
-
+```
 package main
 
 import (
@@ -1681,17 +1673,19 @@ func main() {
 }
 ```
 
+------
+
 ## Delete cluster
+<a name="multi-region-delete-cluster-sdk"></a>
 
 The following examples show how to delete a multi-Region cluster using different programming languages.
 
-Python
+------
+#### [ Python ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```python
-
+```
 import boto3
 
 def delete_multi_region_clusters(region_1, cluster_id_1, region_2, cluster_id_2):
@@ -1745,13 +1739,12 @@ if __name__ == "__main__":
     main()
 ```
 
-C++
+------
+#### [ C\+\+ ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```C++
-
+```
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -1836,13 +1829,12 @@ int main() {
 }
 ```
 
-JavaScript
+------
+#### [ JavaScript ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```bash,sh,zsh
-
+```
 import { DSQLClient, DeleteClusterCommand, waitUntilClusterNotExists } from "@aws-sdk/client-dsql";
 
 async function deleteMultiRegionClusters(region1, cluster1_id, region2, cluster2_id) {
@@ -1908,13 +1900,12 @@ async function main() {
 main();
 ```
 
-Java
+------
+#### [ Java ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```java
-
+```
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1978,13 +1969,12 @@ public class DeleteMultiRegionClusters {
 }
 ```
 
-Rust
+------
+#### [ Rust ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```rust
-
+```
 use aws_config::{BehaviorVersion, Region, load_defaults};
 use aws_sdk_dsql::client::Waiters;
 use aws_sdk_dsql::{Client, Config};
@@ -2067,13 +2057,12 @@ pub async fn main() -> anyhow::Result<()> {
 }
 ```
 
-Ruby
+------
+#### [ Ruby ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```ruby
-
+```
 require "aws-sdk-dsql"
 
 def delete_multi_region_clusters(region_1, cluster_id_1, region_2, cluster_id_2)
@@ -2117,16 +2106,14 @@ def main
 end
 
 main if $PROGRAM_NAME == __FILE__
-
 ```
 
-.NET
+------
+#### [ .NET ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```dotnet
-
+```
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -2196,13 +2183,12 @@ namespace DSQLExamples.examples
 }
 ```
 
-Golang
+------
+#### [ Golang ]
 
-To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster
-might take some time.
+To delete a multi-Region cluster, use the following example. Deleting a multi-Region cluster might take some time.
 
-```go
-
+```
 package main
 
 import (
@@ -2305,12 +2291,8 @@ func main() {
 }
 ```
 
+------
+
 For more code samples and examples, visit the [Aurora DSQL Samples GitHub repository](https://github.com/aws-samples/aurora-dsql-samples).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Multi-Region clusters
-
-Using AWS CLI
 
 All content copied from https://docs.aws.amazon.com/.

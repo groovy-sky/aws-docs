@@ -3,88 +3,62 @@ title: "Restoring a DocumentDB cluster"
 ---
 
 # Restoring a DocumentDB cluster
+<a name="restoring-docdb"></a>
 
 ## Use the AWS Backup console to restore Amazon DocumentDB recovery points
+<a name="docdb-restore-console"></a>
 
-Restoring a Amazon DocumentDB cluster requires that you specify multiple restore options. For
-information about these options, see [Restoring from a Cluster Snapshot](../../../documentdb/latest/developerguide/backup-restore-restore-from-snapshot.md) in the
-_Amazon DocumentDB Developer Guide_.
+Restoring a Amazon DocumentDB cluster requires that you specify multiple restore options. For information about these options, see [ Restoring from a Cluster Snapshot](https://docs.aws.amazon.com/documentdb/latest/developerguide/backup_restore-restore_from_snapshot.html) in the *Amazon DocumentDB Developer Guide*.
 
-###### To restore a Amazon DocumentDB cluster
+**To restore a Amazon DocumentDB cluster**
 
-01. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
+1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
 
-02. In the navigation pane, choose **Protected resources** and the
-     Amazon DocumentDB resource ID that you want to restore.
+1. In the navigation pane, choose **Protected resources** and the Amazon DocumentDB resource ID that you want to restore.
 
-03. On the **Resource details** page, a list of recovery points for
-     the selected resource ID is shown. To restore a resource, in the
-     **Backups** pane, choose the radio button next to the recovery
-     point ID of the resource. In the upper-right corner of the pane, choose
-     **Restore**.
+1. On the **Resource details** page, a list of recovery points for the selected resource ID is shown. To restore a resource, in the **Backups** pane, choose the radio button next to the recovery point ID of the resource. In the upper-right corner of the pane, choose **Restore**.
 
-04. Ensure you are on the console page **Restore Amazon DocumentDB cluster**
-    **snapshots**.
+1. Ensure you are on the console page **Restore Amazon DocumentDB cluster snapshots**.
 
-05. For **Restore options**, you can configure the following:
-
-- **Engine version** \- Select the DocumentDB engine version for the restored cluster.
-
-###### Note
-
+1. For **Restore options**, you can configure the following:
+   + **Engine version** - Select the DocumentDB engine version for the restored cluster.
+**Note**
 Instance class and number of instances cannot be configured during the restore process. The restored DocumentDB cluster will use the default instance configuration. You can modify the instance class and add or remove instances after the restore completes by using the Amazon DocumentDB console or API.
 
-06. In the **Settings** pane, input a unique name for your DB cluster
-     identifier.
+1. In the **Settings** pane, input a unique name for your DB cluster identifier.
 
-    You can use letters, numbers, and hyphens, though you cannot have two consecutive
-     hyphens or end the name with a hyphen. The final name will be all lowercase.
+   You can use letters, numbers, and hyphens, though you cannot have two consecutive hyphens or end the name with a hyphen. The final name will be all lowercase.
 
-07. In the **Database options** pane, select the database
-     port.
+1. In the **Database options** pane, select the database port.
 
-    This is the TCP/IP port that the DB instance or cluster will use for application
-     connections. The connection string of any application connecting to the DB instance or
-     cluster must specify its port number. Both the security group applied to the DB
-     instance or cluster and your organization firewalls must allow connections to the
-     port. All DB instances in a DB cluster use the same port.
+   This is the TCP/IP port that the DB instance or cluster will use for application connections. The connection string of any application connecting to the DB instance or cluster must specify its port number. Both the security group applied to the DB instance or cluster and your organization firewalls must allow connections to the port. All DB instances in a DB cluster use the same port.
 
-08. Also in the **Database options** pane, select the DB cluster
-     parameter group.
+1. Also in the **Database options** pane, select the DB cluster parameter group.
 
-    This is the parameter group associated with this instance's DB cluster. The DB
-     cluster parameter group acts as a container for engine configuration values that are
-     applied to every DB instance in the cluster.
+   This is the parameter group associated with this instance's DB cluster. The DB cluster parameter group acts as a container for engine configuration values that are applied to every DB instance in the cluster.
 
-09. In the **Encryption** pane, select the key that will be used to
-     encrypt this database volume. The default is `aws/rds`. You may
-     alternatively use a customer managed key (CMK).
+1. In the **Encryption** pane, select the key that will be used to encrypt this database volume. The default is `aws/rds`. You may alternatively use a customer managed key (CMK).
 
-10. In the **Log exports** pane, choose the log types to publish to
-     Amazon CloudWatch Logs. The **IAM role** is already defined.
+1. In the **Log exports** pane, choose the log types to publish to Amazon CloudWatch Logs. The **IAM role** is already defined.
 
-11. In the **Restore role** pane, choose either the default IAM role
-     for the restore job or a different IAM role.
+1. In the **Restore role** pane, choose either the default IAM role for the restore job or a different IAM role.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
-12. In the Protected resource tags pane, you may optionally choose to copy tags from
-     the backup to the restored database cluster.
+1. In the Protected resource tags pane, you may optionally choose to copy tags from the backup to the restored database cluster.
 
-13. After specifying all your settings, choose **Restore**
-    **backup**.
+1. After specifying all your settings, choose **Restore backup**.
 
-    The **Restore jobs** pane appears. A message at the top of the
-     page provides information about the restore job.
+   The **Restore jobs** pane appears. A message at the top of the page provides information about the restore job.
 
-14. After your restore finishes, attach your restored Amazon DocumentDB cluster to an Amazon RDS
-     instance.
+1. After your restore finishes, attach your restored Amazon DocumentDB cluster to an Amazon RDS instance.
 
 ## Use the AWS Backup API, CLI, or SDK to restore Amazon DocumentDB recovery points
+<a name="docdb-restore-cli"></a>
 
-First, restore your cluster. Use `StartRestoreJob`. You can specify the following metadata during Amazon DocumentDB
-restores:
+First, restore your cluster. Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. You can specify the following metadata during Amazon DocumentDB restores:
 
-```json
-
+```
 availabilityZones
 backtrackWindow
 copyTagsToSnapshot // Boolean
@@ -102,32 +76,20 @@ port // integer
 optionGroupName // string
 scalingConfiguration
 vpcSecurityGroupIds // string
-
 ```
 
-Then, attach your restored Amazon DocumentDB cluster to an Amazon RDS instance using
-`create-db-instance`.
+ Then, attach your restored Amazon DocumentDB cluster to an Amazon RDS instance using `create-db-instance`.
++ For Linux, macOS, or Unix:
 
-- For Linux, macOS, or Unix:
+  ```
+  aws docdb create-db-instance --db-instance-identifier {{sample-instance}} /
+                    --db-cluster-identifier {{sample-cluster}} --engine docdb --db-instance-class {{db.r5.large}}
+  ```
++ For Windows:
 
-```sh
-
-aws docdb create-db-instance --db-instance-identifier sample-instance /
-                    --db-cluster-identifier sample-cluster --engine docdb --db-instance-class db.r5.large
-```
-
-- For Windows:
-
-```sh
-
-aws docdb create-db-instance --db-instance-identifier sample-instance ^
-                    --db-cluster-identifier sample-cluster --engine docdb --db-instance-class db.r5.large
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudFormation restore
-
-DynamoDB restore
+  ```
+  aws docdb create-db-instance --db-instance-identifier {{sample-instance}} ^
+                    --db-cluster-identifier {{sample-cluster}} --engine docdb --db-instance-class {{db.r5.large}}
+  ```
 
 All content copied from https://docs.aws.amazon.com/.

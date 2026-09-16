@@ -3,53 +3,36 @@ title: "Vault access policies"
 ---
 
 # Vault access policies
+<a name="create-a-vault-access-policy"></a>
 
-With AWS Backup, you can assign policies to backup vaults and the resources they contain.
-Assigning policies allows you to do things like grant access to users to create backup plans
-and on-demand backups, but limit their ability to delete recovery points after they're
-created.
+With AWS Backup, you can assign policies to backup vaults and the resources they contain. Assigning policies allows you to do things like grant access to users to create backup plans and on-demand backups, but limit their ability to delete recovery points after they're created.
 
-For information about using policies to grant or restrict access to resources, see [Identity-Based Policies and\
-Resource-Based Policies](../../../iam/latest/userguide/access-policies-identity-vs-resource.md) in the _IAM User Guide_. You can also
-control access using tags.
+For information about using policies to grant or restrict access to resources, see [Identity-Based Policies and Resource-Based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the *IAM User Guide*. You can also control access using tags.
 
-You can use the following example policies as a guide to limit access to resources when
-you are working with AWS Backup vaults. Unlike other IAM-based policies, AWS Backup access policies
-don't support a wildcard in the `Action` key.
+You can use the following example policies as a guide to limit access to resources when you are working with AWS Backup vaults. Unlike other IAM-based policies, AWS Backup access policies don't support a wildcard in the `Action` key.
 
-For a list of Amazon Resource Names (ARNs) that you can use to identify recovery points
-for different resource types, see [AWS Backup resource ARNs](access-control.md#resource-arns-table) for resource-specific recovery point ARNs.
+For a list of Amazon Resource Names (ARNs) that you can use to identify recovery points for different resource types, see [AWS Backup resource ARNs](access-control.md#resource-arns-table) for resource-specific recovery point ARNs.
 
-Vault access policies only control user access to AWS Backup APIs. Some backup types, such as
-Amazon Elastic Block Store (Amazon EBS) and Amazon Relational Database Service (Amazon RDS) snapshots, can also be accessed using the APIs of
-those services. You can create separate access policies in IAM that control access to
-those APIs to fully control the access to those backup types.
+Vault access policies only control user access to AWS Backup APIs. Some backup types, such as Amazon Elastic Block Store (Amazon EBS) and Amazon Relational Database Service (Amazon RDS) snapshots, can also be accessed using the APIs of those services. You can create separate access policies in IAM that control access to those APIs to fully control the access to those backup types.
 
-Regardless of the AWS Backup vault's access policy, cross-account access for any action other
-than `backup:CopyIntoBackupVault` will be rejected; that is, AWS Backup will reject any
-other request from an account that is different from the account of the resource that is being
-referenced. This restriction applies to vault access policies on both standard and logically
-air-gapped backup vaults. Logically air-gapped vaults additionally support cross-account
-sharing through AWS Resource Access Manager (RAM), which enables operations such as restore through a separate
-mechanism outside of vault access policies. For more information, see [Logically air-gapped vault](logicallyairgappedvault.md).
+Regardless of the AWS Backup vault's access policy, cross-account access for any action other than `backup:CopyIntoBackupVault` will be rejected; that is, AWS Backup will reject any other request from an account that is different from the account of the resource that is being referenced. This restriction applies to vault access policies on both standard and logically air-gapped backup vaults. Logically air-gapped vaults additionally support cross-account sharing through AWS Resource Access Manager (RAM), which enables operations such as restore through a separate mechanism outside of vault access policies. For more information, see [Logically air-gapped vault](logicallyairgappedvault.md).
 
-###### Topics
-
-- [Deny access to a resource type in a backup vault](#deny-access-to-ebs-snapshots)
-
-- [Deny access to a backup vault](#deny-access-to-a-backup-vault)
-
-- [Deny access to delete recovery points in a backup vault](#deny-access-to-delete-recovery-points)
+**Topics**
++ [Deny access to a resource type in a backup vault](#deny-access-to-ebs-snapshots)
++ [Deny access to a backup vault](#deny-access-to-a-backup-vault)
++ [Deny access to delete recovery points in a backup vault](#deny-access-to-delete-recovery-points)
 
 ## Deny access to a resource type in a backup vault
+<a name="deny-access-to-ebs-snapshots"></a>
 
-This policy denies access to the specified API operations for all Amazon EBS snapshots in a
-backup vault.
+This policy denies access to the specified API operations for all Amazon EBS snapshots in a backup vault.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -57,7 +40,7 @@ JSON
       "Sid": "DenyRecoveryPointOperations",
       "Effect": "Deny",
       "Principal": {
-        "AWS": "arn:aws:iam::111122223333:role/MyRole"
+        "AWS": "arn:aws:iam::{{111122223333}}:role/{{MyRole}}"
       },
       "Action": [
         "backup:UpdateRecoveryPointLifecycle",
@@ -72,18 +55,21 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Deny access to a backup vault
+<a name="deny-access-to-a-backup-vault"></a>
 
-This policy denies access to the specified API operations targeting a backup
-vault.
+This policy denies access to the specified API operations targeting a backup vault.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -91,7 +77,7 @@ JSON
       "Sid": "DenyBackupVaultOperations",
       "Effect": "Deny",
       "Principal": {
-        "AWS": "arn:aws:iam::123456789012:role/MyRole"
+        "AWS": "arn:aws:iam::{{123456789012}}:role/{{MyRole}}"
       },
       "Action": [
         "backup:DescribeBackupVault",
@@ -105,38 +91,38 @@ JSON
         "backup:DeleteBackupVaultNotifications",
         "backup:ListRecoveryPointsByBackupVault"
       ],
-      "Resource": "arn:aws:backup:us-east-1:123456789012:backup-vault:backup vault name"
+      "Resource": "arn:aws:backup:{{us-east-1}}:{{123456789012}}:backup-vault:{{backup vault name}}"
     }
   ]
 }
-
 ```
 
+------
+
 ## Deny access to delete recovery points in a backup vault
+<a name="deny-access-to-delete-recovery-points"></a>
 
-Access to vaults and the ability to delete recovery points stored in them is determined
-by the access that you grant your users.
+Access to vaults and the ability to delete recovery points stored in them is determined by the access that you grant your users.
 
-Follow these steps to create a resource-based access policy on a backup vault that
-prevents the deletion of any backups in the backup vault.
+Follow these steps to create a resource-based access policy on a backup vault that prevents the deletion of any backups in the backup vault.
 
-###### To create a resource-based access policy on a backup vault
+**To create a resource-based access policy on a backup vault**
 
 1. Sign in to the AWS Management Console, and open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
 
-2. In the navigation pane on the left, choose **Backup**
-**vaults**.
+1. In the navigation pane on the left, choose **Backup vaults**.
 
-3. Choose a backup vault in the list.
+1. Choose a backup vault in the list.
 
-4. In the **Access policy** section, paste the following JSON example.
-    This policy prevents anyone who is not the principal from deleting a recovery point in
-    the target backup vault.
-JSON
+1. In the **Access policy** section, paste the following JSON example. This policy prevents anyone who is not the principal from deleting a recovery point in the target backup vault.
 
-```json
+------
+#### [ JSON ]
 
-{
+****
+
+   ```
+   {
        "Version":"2012-10-17",
        "Statement": [
            {
@@ -147,26 +133,29 @@ JSON
                "Condition": {
                    "StringNotEquals": {
                        "aws:userId": [
-                          "AWS_ACCESS_KEY_ID_REDACTED",
-                          "AWS_ACCESS_KEY_ID_REDACTED:my-role-session",
-                          "AWS_ACCESS_KEY_ID_REDACTED:*",
-                          "112233445566"
+                          "{{AWS_ACCESS_KEY_ID_REDACTED}}",
+                          "{{AWS_ACCESS_KEY_ID_REDACTED:my-role-session}}",
+                          "{{AWS_ACCESS_KEY_ID_REDACTED:*}}",
+                          "{{112233445566}}"
                        ]
                    }
                }
            }
        ]
-}
+   }
+   ```
 
-```
+------
 
-To allow list IAM identities using their ARN, use the `aws:PrincipalArn`
-    global condition key in the following example.
-JSON
+   To allow list IAM identities using their ARN, use the `aws:PrincipalArn` global condition key in the following example.
 
-```json
+------
+#### [ JSON ]
 
-{
+****
+
+   ```
+   {
      "Version":"2012-10-17",
      "Statement": [
        {
@@ -178,36 +167,27 @@ JSON
          "Condition": {
            "ArnNotEquals": {
              "aws:PrincipalArn": [
-               "arn:aws:iam::112233445566:role/mys3role",
-               "arn:aws:iam::112233445566:user/shaheer",
-               "arn:aws:iam::112233445566:root"
+               "arn:aws:iam::{{112233445566}}:role/{{mys3role}}",
+               "arn:aws:iam::{{112233445566}}:user/{{shaheer}}",
+               "arn:aws:iam::{{112233445566}}:root"
              ]
            }
          }
        }
      ]
-}
+   }
+   ```
 
-```
+------
 
-For information about getting a unique ID for an IAM entity, see [Getting the\
-    unique identifier](../../../iam/latest/userguide/reference-identifiers.md#identifiers-get-unique-id) in the _IAM User Guide_.
+   For information about getting a unique ID for an IAM entity, see [Getting the unique identifier](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-get-unique-id) in the *IAM User Guide*.
 
-If you want to limit this to specific resource types, instead of `"Resource":
-                 "*"`, you can explicitly include the recovery point types to deny. For example,
-    for Amazon EBS snapshots, change the resource type to the following.
+   If you want to limit this to specific resource types, instead of `"Resource": "*"`, you can explicitly include the recovery point types to deny. For example, for Amazon EBS snapshots, change the resource type to the following.
 
-```json
+   ```
+   "Resource": ["arn:aws:ec2:*:*:snapshot/*"]
+   ```
 
-"Resource": ["arn:aws:ec2:*:*:snapshot/*"]
-```
-
-5. Choose **Attach policy**.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Approver tasks
-
-Vault Lock
+1. Choose **Attach policy**.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,99 +3,69 @@ title: "Notification options with AWS Backup"
 ---
 
 # Notification options with AWS Backup
+<a name="backup-notifications"></a>
 
 There are two ways to receive notifications about AWS Backup:
-
-- User Notifications can send notifications, including Amazon CloudWatch alarms, AWS Support,
-and other services' notifications.
-
-- Amazon Simple Notification Service can notify you of AWS Backup events.
++ User Notifications can send notifications, including Amazon CloudWatch alarms, AWS Support, and other services' notifications.
++ Amazon Simple Notification Service can notify you of AWS Backup events.
 
 ## User Notifications and AWS Backup
+<a name="aws-backup-uno"></a>
 
-AWS Backup supports management of your backup notifications from the [User Notifications \
-console](https://console.aws.amazon.com/notifications/home?notifications=). With [User Notifications](../../../notifications/latest/userguide/getting-started.md), you can view the progress of your backup, copy, and restore jobs
-and changes to your backup policies, vaults, recovery points, and settings from the User
-Notifications Notification Center.
+AWS Backup supports management of your backup notifications from the [User Notifications console](https://console.aws.amazon.com/notifications/home?notifications#/notifications). With [User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/getting-started.html), you can view the progress of your backup, copy, and restore jobs and changes to your backup policies, vaults, recovery points, and settings from the User Notifications Notification Center.
 
-Amazon CloudWatch, Amazon EventBridge alarms, and AWS Support case updates are among other types of
-notifications you can manage from the console. Additionally, you can set up several delivery
-options, including email, Amazon Q Developer in chat applications notifications, and AWS Console Mobile Application push notifications.
+Amazon CloudWatch, Amazon EventBridge alarms, and AWS Support case updates are among other types of notifications you can manage from the console. Additionally, you can set up several delivery options, including email, Amazon Q Developer in chat applications notifications, and AWS Console Mobile Application push notifications.
 
 ## Amazon SNS and AWS Backup events
+<a name="backup-notifications-section"></a>
 
-AWS Backup takes advantage of the robust notifications delivered by Amazon Simple Notification Service (Amazon SNS). You
-can configure Amazon SNS to notify you of AWS Backup events from the Amazon SNS console.
+AWS Backup takes advantage of the robust notifications delivered by Amazon Simple Notification Service (Amazon SNS). You can configure Amazon SNS to notify you of AWS Backup events from the Amazon SNS console.
 
-###### Limitations
-
-- While the Amazon SNS service allows cross-account notifications, AWS Backup does not currently
-support this feature. You must specify your own AWS account ID and the resource ARN of
-your topic.
-
-- AWS Backup supports Standard topics for SNS best-effort deduplication, but AWS Backup does not
-currently support SNS FIFO topics for Strict deduplication.
+**Limitations**
++ While the Amazon SNS service allows cross-account notifications, AWS Backup does not currently support this feature. You must specify your own AWS account ID and the resource ARN of your topic.
++ AWS Backup supports Standard topics for SNS best-effort deduplication, but AWS Backup does not currently support SNS FIFO topics for Strict deduplication.
 
 ### Common use cases
+<a name="aws-backup-sns-console"></a>
++ Set up notifications for failed backup jobs by following the steps in [How can I get notifications for AWS Backup jobs that failed?](https://repost.aws/knowledge-center/aws-backup-failed-job-notification) from AWS Premium Support.
++ Review sample Amazon SNS notification JSONs for completed, failed, and expired backup jobs in the Examples of events table below.
 
-- Set up notifications for failed backup jobs by following the steps in [How can I\
-get notifications for AWS Backup jobs that failed?](https://repost.aws/knowledge-center/aws-backup-failed-job-notification) from AWS Premium
-Support.
-
-- Review sample Amazon SNS notification JSONs for completed, failed, and expired backup
-jobs in the Examples of events table below.
-
-For more information about Amazon SNS generally, see [Getting Started with Amazon SNS](../../../sns/latest/dg/sns-getting-started.md) in the
-_Amazon Simple Notification Service Developer Guide_.
+For more information about Amazon SNS generally, see [Getting Started with Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) in the *Amazon Simple Notification Service Developer Guide*.
 
 ### AWS Backup notification APIs
+<a name="aws-backup-sns-apis"></a>
 
-After creating your topics using the Amazon SNS console or AWS Command Line Interface (AWS CLI), you can use
-the following AWS Backup API operations to manage your backup notifications.
-
-- [DeleteBackupVaultNotifications](../../../../reference/aws-backup/latest/apireference/api-deletebackupvaultnotifications.md) — Deletes event
-notifications for the specified backup vault.
-
-- [GetBackupVaultNotifications](../../../../reference/aws-backup/latest/apireference/api-getbackupvaultnotifications.md) — Lists all event
-notifications for the specified backup vault.
-
-- [PutBackupVaultNotifications](../../../../reference/aws-backup/latest/apireference/api-putbackupvaultnotifications.md) — Turns on notifications
-for the specified topic and events.
+After creating your topics using the Amazon SNS console or AWS Command Line Interface (AWS CLI), you can use the following AWS Backup API operations to manage your backup notifications.
++ [DeleteBackupVaultNotifications](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DeleteBackupVaultNotifications.html) — Deletes event notifications for the specified backup vault.
++ [GetBackupVaultNotifications](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBackupVaultNotifications.html) — Lists all event notifications for the specified backup vault.
++ [PutBackupVaultNotifications](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_PutBackupVaultNotifications.html) — Turns on notifications for the specified topic and events.
 
 AWS Backup supports the following events:
 
-Job typeEventBackup job`BACKUP_JOB_STARTED` \| `BACKUP_JOB_COMPLETED` \|
-`BACKUP_JOB_SUCCESSFUL` \| `BACKUP_JOB_FAILED` \|
-`BACKUP_JOB_EXPIRED` \| `CONTINUOUS_BACKUP_INTERRUPTED`Copy job`COPY_JOB_STARTED` \| `COPY_JOB_SUCCESSFUL` \|
-`COPY_JOB_FAILED`Restore job`RESTORE_JOB_STARTED` \| `RESTORE_JOB_COMPLETED` \|
-`RESTORE_JOB_SUCCESSFUL` \| `RESTORE_JOB_FAILED`Recovery point`RECOVERY_POINT_MODIFIED`Recovery point indexing`RECOVERY_POINT_INDEX_COMPLETED` \| `RECOVERY_POINT_INDEX_DELETED` \|
-`RECOVERY_POINT_INDEXING_FAILED`
+| Job type | Event |
+| --- | --- |
+| Backup job | BACKUP\_JOB\_STARTED \| BACKUP\_JOB\_COMPLETED \| BACKUP\_JOB\_SUCCESSFUL \| BACKUP\_JOB\_FAILED \| BACKUP\_JOB\_EXPIRED \| CONTINUOUS\_BACKUP\_INTERRUPTED |
+| Copy job | COPY\_JOB\_STARTED \| COPY\_JOB\_SUCCESSFUL \| COPY\_JOB\_FAILED |
+| Restore job | RESTORE\_JOB\_STARTED \| RESTORE\_JOB\_COMPLETED \| RESTORE\_JOB\_SUCCESSFUL \| RESTORE\_JOB\_FAILED |
+| Recovery point | RECOVERY\_POINT\_MODIFIED |
+| Recovery point indexing | RECOVERY\_POINT\_INDEX\_COMPLETED \| RECOVERY\_POINT\_INDEX\_DELETED \| RECOVERY\_POINT\_INDEXING\_FAILED |
+| Access point | ACCESS\_POINT\_AVAILABLE \| ACCESS\_POINT\_CREATION\_FAILED \| ACCESS\_POINT\_DELETED \| ACCESS\_POINT\_DELETION\_FAILED \| ACCESS\_POINT\_EXPIRED \| ACCESS\_POINT\_DISASSOCIATED |
 
 AWS Backup for S3 supports two additional events:
-
-- `S3_BACKUP_OBJECT_FAILED` notifies you of any S3 object that AWS Backup
-failed to back up during a backup job.
-
-- `S3_RESTORE_OBJECT_FAILED` notifies you of any S3 object that AWS Backup
-failed to restore during a restore job.
++ `S3_BACKUP_OBJECT_FAILED` notifies you of any S3 object that AWS Backup failed to back up during a backup job.
++ `S3_RESTORE_OBJECT_FAILED` notifies you of any S3 object that AWS Backup failed to restore during a restore job.
 
 AWS Backup for EKS supports three additional events:
-
-- `EKS_BACKUP_OBJECT_FAILED` notifies you of any EKS objects that AWS Backup
-failed to back up during a backup job.
-
-- `EKS_RESTORE_OBJECT_FAILED` notifies you of any EKS objects that AWS Backup
-failed to restore during a restore job.
-
-- `EKS_RESTORE_OBJECT_SKIPPED` notifies you of any EKS objects that AWS Backup
-skipped during a restore job.
++ `EKS_BACKUP_OBJECT_FAILED` notifies you of any EKS objects that AWS Backup failed to back up during a backup job.
++ `EKS_RESTORE_OBJECT_FAILED` notifies you of any EKS objects that AWS Backup failed to restore during a restore job.
++ `EKS_RESTORE_OBJECT_SKIPPED` notifies you of any EKS objects that AWS Backup skipped during a restore job.
 
 ### Examples of events
+<a name="sns-completed-backup-events"></a>
 
-###### Example: Backup job completed
+**Example: Backup job completed**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -121,10 +91,9 @@ skipped during a restore job.
 }
 ```
 
-###### Example: Backup job failed
+**Example: Backup job failed**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -150,10 +119,9 @@ skipped during a restore job.
 }
 ```
 
-###### Example: Backup job could not complete during the backup window
+**Example: Backup job could not complete during the backup window**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -179,10 +147,9 @@ skipped during a restore job.
 }
 ```
 
-###### Example: Recovery point indexing completed
+**Example: Recovery point indexing completed**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -208,10 +175,9 @@ skipped during a restore job.
 }
 ```
 
-###### Example: EKS backup object failed
+**Example: EKS backup object failed**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -237,10 +203,9 @@ skipped during a restore job.
 }
 ```
 
-###### Example: EKS restore object failed
+**Example: EKS restore object failed**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -268,10 +233,9 @@ skipped during a restore job.
 }
 ```
 
-###### Example: EKS restore object skipped
+**Example: EKS restore object skipped**
 
-```JSON
-
+```
 {
     "Records": [{
         "EventSource": "aws:sns",
@@ -299,40 +263,96 @@ skipped during a restore job.
 }
 ```
 
-### AWS Backup notification command examples
+**Example: Access point available**
 
-You can use AWS CLI commands to subscribe to, list, and delete Amazon SNS notifications for
-your AWS Backup events.
+```
+{
+    "Type": "Notification",
+    "MessageId": "dd7579e6-47bb-51af-866c-1b36e07d9aaa",
+    "TopicArn": "arn:aws:sns:us-east-1:123456789012:my-backup-topic",
+    "Subject": "Notification from AWS Backup",
+    "Message": "An AWS Backup access point was created successfully. Access point ARN: arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point. S3 access point ARN: arn:aws:s3:us-east-1:123456789012:accesspoint/my-access-point. Recovery point ARN: arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0.",
+    "Timestamp": "2026-07-28T12:00:26.426Z",
+    "MessageAttributes": {
+        "EventType": {"Type":"String","Value":"ACCESS_POINT_AVAILABLE"},
+        "Status": {"Type":"String","Value":"AVAILABLE"},
+        "AccountId": {"Type":"String","Value":"123456789012"},
+        "AccessPointArn": {"Type":"String","Value":"arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"},
+        "CreationTime": {"Type":"String","Value":"2026-07-28T12:00:25.938846787Z"}
+    }
+}
+```
+
+**Example: Access point creation failed**
+
+```
+{
+    "Type": "Notification",
+    "MessageId": "abcdef01-2345-6789-abcd-ef0123456789",
+    "TopicArn": "arn:aws:sns:us-east-1:123456789012:my-backup-topic",
+    "Subject": "Notification from AWS Backup",
+    "Message": "An AWS Backup access point failed to create. Access point ARN: arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point. Recovery point ARN: arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0.",
+    "Timestamp": "2026-07-28T12:05:10.123Z",
+    "MessageAttributes": {
+        "EventType": {"Type":"String","Value":"ACCESS_POINT_CREATION_FAILED"},
+        "Status": {"Type":"String","Value":"FAILED"},
+        "AccountId": {"Type":"String","Value":"123456789012"},
+        "AccessPointArn": {"Type":"String","Value":"arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"},
+        "CreationTime": {"Type":"String","Value":"2026-07-28T12:04:55.123456789Z"}
+    }
+}
+```
+
+**Example: Access point expired**
+
+```
+{
+    "Type": "Notification",
+    "MessageId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "TopicArn": "arn:aws:sns:us-east-1:123456789012:my-backup-topic",
+    "Subject": "Notification from AWS Backup",
+    "Message": "An AWS Backup access point expired. Access point ARN: arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point. Recovery point ARN: arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0.",
+    "Timestamp": "2026-07-28T18:30:05.789Z",
+    "MessageAttributes": {
+        "EventType": {"Type":"String","Value":"ACCESS_POINT_EXPIRED"},
+        "Status": {"Type":"String","Value":"EXPIRED"},
+        "AccountId": {"Type":"String","Value":"123456789012"},
+        "AccessPointArn": {"Type":"String","Value":"arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"},
+        "CreationTime": {"Type":"String","Value":"2026-07-28T12:00:25.938846787Z"}
+    }
+}
+```
+
+### AWS Backup notification command examples
+<a name="sns-cli-commands"></a>
+
+You can use AWS CLI commands to subscribe to, list, and delete Amazon SNS notifications for your AWS Backup events.
 
 #### Example put backup vault notification
+<a name="cli-put-vault-notification"></a>
 
-The following command subscribes to an Amazon SNS topic for the specified backup vault
-that notifies you when a restore job is started or completed, or when a recovery point
-is modified.
+The following command subscribes to an Amazon SNS topic for the specified backup vault that notifies you when a restore job is started or completed, or when a recovery point is modified.
 
-```sh
-
+```
 aws backup put-backup-vault-notifications
-    --backup-vault-name myBackupVault
-    --sns-topic-arn arn:aws:sns:region:account-id:myBackupTopic
+    --backup-vault-name {{myBackupVault}}
+    --sns-topic-arn arn:aws:sns:{{region}}:{{account-id}}:{{myBackupTopic}}
     --backup-vault-events RESTORE_JOB_STARTED RESTORE_JOB_COMPLETED RECOVERY_POINT_MODIFIED
 ```
 
 #### Example get backup vault notification
+<a name="w2aac32c15b9c13b7"></a>
 
-The following command lists all events currently subscribed to an Amazon SNS topic for
-the specified backup vault.
+The following command lists all events currently subscribed to an Amazon SNS topic for the specified backup vault.
 
-```sh
-
+```
 aws backup get-backup-vault-notifications
-    --backup-vault-name myVault
+    --backup-vault-name {{myVault}}
 ```
 
 The sample output is as follows:
 
-```JSON
-
+```
 {
     "SNSTopicArn": "arn:aws:sns:region:account-id:myBackupTopic",
     "BackupVaultEvents": [
@@ -346,29 +366,24 @@ The sample output is as follows:
 ```
 
 #### Example delete backup vault notification
+<a name="w2aac32c15b9c13b9"></a>
 
-The following command unsubscribes from an Amazon SNS topic for the specified backup
-vault.
+The following command unsubscribes from an Amazon SNS topic for the specified backup vault.
 
-```nohighlight
-
+```
 aws backup delete-backup-vault-notifications
-    --backup-vault-name myVault
+    --backup-vault-name {{myVault}}
 ```
 
 ### Specifying AWS Backup as a service principal
+<a name="specifying-aws-backup-as-a-service-principal"></a>
 
-###### Note
+**Note**
+To allow AWS Backup to publish SNS topics on your behalf, you must specify AWS Backup as a service principal.
 
-To allow AWS Backup to publish SNS topics on your behalf, you must specify AWS Backup as a
-service principal.
+Include the following JSON in the access policy of the Amazon SNS topic that you use to track AWS Backup events. You must specify the resource Amazon Resource Name (ARN) of your topic.
 
-Include the following JSON in the access policy of the Amazon SNS topic that you use to
-track AWS Backup events. You must specify the resource Amazon Resource Name (ARN) of your
-topic.
-
-```JSON
-
+```
 {
       "Sid": "My-statement-id",
       "Effect": "Allow",
@@ -376,26 +391,13 @@ topic.
         "Service": "backup.amazonaws.com"
       },
       "Action": "SNS:Publish",
-      "Resource": "arn:aws:sns:region:account-id:myTopic"
+      "Resource": "arn:aws:sns:{{region}}:{{account-id}}:{{myTopic}}"
 }
 ```
 
-For more information about specifying a service principal in an Amazon SNS access policy,
-see [Allowing Any AWS Resource to Publish to a Topic](../../../sns/latest/dg/accesspolicylanguage-usecases-sns.md#AccessPolicyLanguage_UseCase4_Sns) in the
-_Amazon Simple Notification Service Developer Guide_.
+For more information about specifying a service principal in an Amazon SNS access policy, see [Allowing Any AWS Resource to Publish to a Topic](https://docs.aws.amazon.com/sns/latest/dg/AccessPolicyLanguage_UseCases_Sns.html#AccessPolicyLanguage_UseCase4_Sns) in the *Amazon Simple Notification Service Developer Guide*.
 
-###### Note
-
-If your topic is encrypted, you must include additional permissions in your policy
-to allow AWS Backup to publish to it. For more information about enabling services to publish
-to encrypted topics, see [Enable\
-Compatibility between Event Sources from AWS Services and Encrypted Topics](../../../sns/latest/dg/sns-key-management.md#sns-what-permissions-for-sse)
-in the _Amazon Simple Notification Service Developer Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Logging AWS Backup API calls with CloudTrail
-
-Troubleshooting AWS Backup
+**Note**
+If your topic is encrypted, you must include additional permissions in your policy to allow AWS Backup to publish to it. For more information about enabling services to publish to encrypted topics, see [Enable Compatibility between Event Sources from AWS Services and Encrypted Topics](https://docs.aws.amazon.com/sns/latest/dg/sns-key-management.html#sns-what-permissions-for-sse) in the *Amazon Simple Notification Service Developer Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,45 +3,31 @@ title: "ClusterSummary"
 ---
 
 # ClusterSummary
+<a name="API_ClusterSummary"></a>
 
 A summary of the properties of a cluster.
 
 ## Contents
+<a name="API_ClusterSummary_Contents"></a>
 
-**arn**
-
+ ** arn **   <a name="auroradsql-Type-ClusterSummary-arn"></a>
 The ARN of the cluster.
-
 Type: String
-
 Pattern: `arn:aws(-[^:]+)?:dsql:[a-z0-9-]{1,20}:[0-9]{12}:cluster/[a-z0-9]{26}`
-
 Required: Yes
 
-**identifier**
-
+ ** identifier **   <a name="auroradsql-Type-ClusterSummary-identifier"></a>
 The ID of the cluster.
-
 Type: String
-
 Pattern: `[a-z0-9]{26}`
-
 Required: Yes
 
 ## See Also
+<a name="API_ClusterSummary_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/dsql-2018-05-10/clustersummary.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dsql-2018-05-10/clustersummary.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dsql-2018-05-10/clustersummary.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Data Types
-
-EncryptionDetails
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dsql-2018-05-10/ClusterSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dsql-2018-05-10/ClusterSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dsql-2018-05-10/ClusterSummary)
 
 All content copied from https://docs.aws.amazon.com/.
