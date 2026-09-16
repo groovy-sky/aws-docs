@@ -3,42 +3,28 @@ title: "Example IAM policies for AWS Artifact in commercial AWS Regions"
 ---
 
 # Example IAM policies for AWS Artifact in commercial AWS Regions
+<a name="example-iam-policies"></a>
 
-You can create permissions policies that grant permissions to IAM users. You can
-grant users access to AWS Artifact reports and the ability to accept and download agreements
-on behalf of either a single account or an organization.
+You can create permissions policies that grant permissions to IAM users. You can grant users access to AWS Artifact reports and the ability to accept and download agreements on behalf of either a single account or an organization.
 
-The following example policies show permissions that you can assign to IAM users
-based on the level of access that they need.
+The following example policies show permissions that you can assign to IAM users based on the level of access that they need.
 
-These policies are applicable in commercial AWS [Regions](../../../glossary/latest/reference/glos-chap.md#region). For policies applicable to AWS GovCloud (US) Regions,
-see [Example IAM policies for AWS Artifact in AWS GovCloud (US) Regions](example-govcloud-iam-policies.md)
+These policies are applicable in commercial AWS [Regions](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs#region). For policies applicable to AWS GovCloud (US) Regions, see [Example IAM policies for AWS Artifact in AWS GovCloud (US) Regions](https://docs.aws.amazon.com/artifact/latest/ug/example-govcloud-iam-policies.html)
++  [Example policies to manage AWS reports with fine-grained permissions](#example-policy-manage-aws-reports-with-finegrained-permissions)
++  [Example policies to manage third-party reports](#example-policy-manage-third-party-reports)
++  [Example policies to manage agreements](#example-policy-manage-agreements)
++  [Example policies to integrate with AWS Organizations](#example-policy-integrate-with-organizations)
++  [Example policies to manage agreements for the management account](#example-policy-agreements-master)
++  [Example policies to manage organizational agreements](#example-policy-organizational-agreements)
++  [Example policies to manage compliance inquiries](#example-policy-compliance-inquiries)
++  [Example policies to manage notifications](#example-policy-notifications) <a name="example-policy-manage-aws-reports-with-finegrained-permissions"></a>
 
-- [Example policies to manage AWS reports with fine-grained permissions](#example-policy-manage-aws-reports-with-finegrained-permissions)
-
-- [Example policies to manage third-party reports](#example-policy-manage-third-party-reports)
-
-- [Example policies to manage agreements](#example-policy-manage-agreements)
-
-- [Example policies to integrate with AWS Organizations](#example-policy-integrate-with-organizations)
-
-- [Example policies to manage agreements for the management account](#example-policy-agreements-master)
-
-- [Example policies to manage organizational agreements](#example-policy-organizational-agreements)
-
-- [Example policies to manage notifications](#example-policy-notifications)
-
-###### Example policies to manage AWS reports through fine-grained permissions
-
-###### Tip
-
-You should consider using the
-[AWSArtifactReportsReadOnlyAccess managed policy](security-iam-awsmanpol.md) instead of defining your own policy.
-
+**Example policies to manage AWS reports through fine-grained permissions**
+ You should consider using the [AWSArtifactReportsReadOnlyAccess managed policy](security-iam-awsmanpol.html) instead of defining your own policy.
 The following policy grants permission to download all AWS reports through fine-grained permissions.
+****
 
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -55,13 +41,11 @@ The following policy grants permission to download all AWS reports through fine-
     }
   ]
 }
+```
+The following policy grants permission to download only the AWS SOC, PCI, and ISO reports through fine-grained permissions.
+****
 
 ```
-
-The following policy grants permission to download only the AWS SOC, PCI, and ISO reports through fine-grained permissions.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -96,23 +80,15 @@ The following policy grants permission to download only the AWS SOC, PCI, and IS
     }
   ]
 }
+```<a name="example-policy-manage-third-party-reports"></a>
+
+**Example policies to manage third-party reports**
+ You should consider using the [AWSArtifactReportsReadOnlyAccess managed policy](security-iam-awsmanpol.html) instead of defining your own policy.
+Third-party reports are denoted by the IAM resource `report`.
+The following policy grants permission to all third-party report functionality.
+****
 
 ```
-
-###### Example policies to manage third-party reports
-
-###### Tip
-
-You should consider using the
-[AWSArtifactReportsReadOnlyAccess managed policy](security-iam-awsmanpol.md) instead of defining your own policy.
-
-Third-party reports are denoted by the IAM resource
-`report`.
-
-The following policy grants permission to all third-party report functionality.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -128,13 +104,11 @@ The following policy grants permission to all third-party report functionality.
     }
   ]
 }
+```
+The following policy grants permission to download third-party reports.
+****
 
 ```
-
-The following policy grants permission to download third-party reports.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -148,13 +122,11 @@ The following policy grants permission to download third-party reports.
     }
   ]
 }
+```
+The following policy grants permission to list third-party reports.
+****
 
 ```
-
-The following policy grants permission to list third-party reports.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -167,13 +139,11 @@ The following policy grants permission to list third-party reports.
     }
   ]
 }
+```
+The following policy grants permission to view a third-party report's details for all versions.
+****
 
 ```
-
-The following policy grants permission to view a third-party report's details for all versions.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -188,13 +158,11 @@ The following policy grants permission to view a third-party report's details fo
     }
   ]
 }
+```
+The following policy grants permission to view a third-party report's details for a specific version.
+****
 
 ```
-
-The following policy grants permission to view a third-party report's details for a specific version.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -209,20 +177,16 @@ The following policy grants permission to view a third-party report's details fo
     }
   ]
 }
+```<a name="example-policy-manage-agreements"></a>
+
+**Tip**
+ You should consider using the [AWSArtifactAgreementsReadOnlyAccess or AWSArtifactAgreementsFullAccess managed policy](security-iam-awsmanpol.html) instead of defining your own policy.
+
+**Example policies to manage agreements**
+The following policy grants permission to download all agreements.
+****
 
 ```
-
-###### Tip
-
-You should consider using the
-[AWSArtifactAgreementsReadOnlyAccess or AWSArtifactAgreementsFullAccess managed policy](security-iam-awsmanpol.md) instead of defining your own policy.
-
-###### Example policies to manage agreements
-
-The following policy grants permission to download all agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -256,13 +220,11 @@ The following policy grants permission to download all agreements.
     }
   ]
 }
+```
+The following policy grants permission to accept all agreements.
+****
 
 ```
-
-The following policy grants permission to accept all agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -288,13 +250,11 @@ The following policy grants permission to accept all agreements.
     }
   ]
 }
+```
+The following policy grants permission to terminate all agreements.
+****
 
 ```
-
-The following policy grants permission to terminate all agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -318,13 +278,11 @@ The following policy grants permission to terminate all agreements.
     }
   ]
 }
+```
+The following policy grants permissions to view and execute account level agreements.
+****
 
 ```
-
-The following policy grants permissions to view and execute account level agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -359,17 +317,13 @@ The following policy grants permissions to view and execute account level agreem
     }
   ]
 }
+```<a name="example-policy-integrate-with-organizations"></a>
+
+**Example policies to integrate with AWS Organizations**
+The following policy grants permission to create the IAM role that AWS Artifact uses to integrate with AWS Organizations. Your organization's management account must have these permissions to get started with organizational agreements.
+****
 
 ```
-
-###### Example policies to integrate with AWS Organizations
-
-The following policy grants permission to create the IAM role that AWS Artifact uses
-to integrate with AWS Organizations. Your organization's management account must have these
-permissions to get started with organizational agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -391,15 +345,11 @@ permissions to get started with organizational agreements.
     }
   ]
 }
+```
+The following policy grants permission to grant AWS Artifact the permissions to use AWS Organizations. Your organization's management account must have these permissions to get started with organizational agreements.
+****
 
 ```
-
-The following policy grants permission to grant AWS Artifact the permissions to
-use AWS Organizations. Your organization's management account must have these permissions
-to get started with organizational agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -428,15 +378,13 @@ to get started with organizational agreements.
     }
  ]
 }
+```<a name="example-policy-agreements-master"></a>
+
+**Example policies to manage agreements for the management account**
+The following policy grants permissions to manage agreements for the management account.
+****
 
 ```
-
-###### Example policies to manage agreements for the management account
-
-The following policy grants permissions to manage agreements for the management account.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -511,16 +459,13 @@ The following policy grants permissions to manage agreements for the management 
     }
   ]
 }
+```<a name="example-policy-organizational-agreements"></a>
+
+**Example policies to manage organizational agreements**
+The following policy grants permissions to manage organizational agreements. Another user with the required permissions must set up the organizational agreements.
+****
 
 ```
-
-###### Example policies to manage organizational agreements
-
-The following policy grants permissions to manage organizational agreements. Another user
-with the required permissions must set up the organizational agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -562,13 +507,11 @@ with the required permissions must set up the organizational agreements.
     }
   ]
 }
+```
+The following policy grants permissions to view organizational agreements.
+****
 
 ```
-
-The following policy grants permissions to view organizational agreements.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -608,15 +551,77 @@ The following policy grants permissions to view organizational agreements.
     }
   ]
 }
+```<a name="example-policy-compliance-inquiries"></a>
+
+**Example policies to manage compliance inquiries**
+ We recommend using the [AWSArtifactComplianceInquiriesReadOnlyAccess](security-iam-awsmanpol.html) or [AWSArtifactComplianceInquiriesFullAccess](security-iam-awsmanpol.html) managed policy instead of defining your own policy.
+The following policy grants read-only permission to list, view, export compliance inquiries, and list tags for compliance inquiry resources.
+****
 
 ```
+{
+  "Version":"2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListComplianceInquiries",
+      "Effect": "Allow",
+      "Action": [
+        "artifact:ListComplianceInquiries"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ViewAndExportComplianceInquiries",
+      "Effect": "Allow",
+      "Action": [
+        "artifact:GetComplianceInquiryMetadata",
+        "artifact:ListComplianceInquiryQueries",
+        "artifact:ExportComplianceInquiry",
+        "artifact:ListTagsForResource"
+      ],
+      "Resource": "arn:aws:artifact:*:*:compliance-inquiry/*"
+    }
+  ]
+}
+```
+The following policy grants full permission to create, list, view, export compliance inquiries, and manage tags for compliance inquiry resources.
+****
 
-###### Example policies to manage notifications
+```
+{
+  "Version":"2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListAndCreateComplianceInquiries",
+      "Effect": "Allow",
+      "Action": [
+        "artifact:ListComplianceInquiries",
+        "artifact:CreateComplianceInquiry"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ViewExportAndTagComplianceInquiries",
+      "Effect": "Allow",
+      "Action": [
+        "artifact:GetComplianceInquiryMetadata",
+        "artifact:ListComplianceInquiryQueries",
+        "artifact:ExportComplianceInquiry",
+        "artifact:TagResource",
+        "artifact:UntagResource",
+        "artifact:ListTagsForResource"
+      ],
+      "Resource": "arn:aws:artifact:*:*:compliance-inquiry/*"
+    }
+  ]
+}
+```<a name="example-policy-notifications"></a>
 
-The following policy grants complete permissions to use AWS Artifact notifications.
+**Example policies to manage notifications**
+ The following policy grants complete permissions to use AWS Artifact notifications.
+****
 
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -654,13 +659,11 @@ The following policy grants complete permissions to use AWS Artifact notificatio
     }
   ]
 }
+```
+ The following policy grants permission to list all configurations.
+****
 
 ```
-
-The following policy grants permission to list all configurations.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -680,13 +683,11 @@ The following policy grants permission to list all configurations.
     }
   ]
 }
+```
+ The following policy grants permission to create a configuration.
+****
 
 ```
-
-The following policy grants permission to create a configuration.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -711,13 +712,11 @@ The following policy grants permission to create a configuration.
     }
   ]
 }
+```
+ The following policy grants permission to edit a configuration.
+****
 
 ```
-
-The following policy grants permission to edit a configuration.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -745,13 +744,11 @@ The following policy grants permission to edit a configuration.
     }
   ]
 }
+```
+ The following policy grants permission to delete a configuration.
+****
 
 ```
-
-The following policy grants permission to delete a configuration.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -767,13 +764,11 @@ The following policy grants permission to delete a configuration.
     }
   ]
 }
+```
+ The following policy grants permission to view details of a configuration.
+****
 
 ```
-
-The following policy grants permission to view details of a configuration.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -792,13 +787,11 @@ The following policy grants permission to view details of a configuration.
     }
   ]
 }
+```
+ The following policy grants permission to register or deregister notification hubs.
+****
 
 ```
-
-The following policy grants permission to register or deregister notification hubs.
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -814,13 +807,6 @@ The following policy grants permission to register or deregister notification hu
     }
   ]
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Granting user access
-
-Example IAM policies in AWS GovCloud (US) Regions
 
 All content copied from https://docs.aws.amazon.com/.
