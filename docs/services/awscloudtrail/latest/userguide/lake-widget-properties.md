@@ -3,25 +3,22 @@ title: "View properties for widgets"
 ---
 
 # View properties for widgets
+<a name="lake-widget-properties"></a>
 
 This section describes the configurable view properties for the 4 view types: table, line chart, pie chart, and bar chart.
 
-###### View types:
-
-- [Table](#lake-widget-table)
-
-- [Line chart](#lake-widget-linechart)
-
-- [Pie chart](#lake-widget-piechart)
-
-- [Bar chart](#lake-widget-barchart)
+**Topics**
++ [Table](#lake-widget-table)
++ [Line chart](#lake-widget-linechart)
++ [Pie chart](#lake-widget-piechart)
++ [Bar chart](#lake-widget-barchart)
 
 ## Table
+<a name="lake-widget-table"></a>
 
 The following example shows a widget configured as a table.
 
-```JSON
-
+```
 {
     "ViewProperties": {
        "Height": "2",
@@ -36,38 +33,19 @@ The following example shows a widget configured as a table.
 
 The following table describes the configurable view properties for a table.
 
-ParameterRequiredValue
-
-`Height`
-
-Yes
-
-The height of the table in inches.
-
-`Width`
-
-Yes
-
-The width of the table in inches.
-
-`Title`
-
-Yes
-
-The title of the table.
-
-`View`
-
-Yes
-
-The widget view type. For a table, the value is `Table`.
+| Parameter | Required | Value |
+| --- | --- | --- |
+| `Height` | Yes | The height of the table in inches. |
+| `Width` | Yes | The width of the table in inches. |
+| `Title` | Yes | The title of the table. |
+| `View` | Yes | The widget view type. For a table, the value is `Table`. |
 
 ## Line chart
+<a name="lake-widget-linechart"></a>
 
 The following example shows a widget configured as a line chart.
 
-```JSON
-
+```
 {
     "ViewProperties": {
        "Height": "2",
@@ -85,56 +63,22 @@ The following example shows a widget configured as a line chart.
 
 The following table describes the configurable view properties for a line chart.
 
-ParameterRequiredValue
-
-`Height`
-
-Yes
-
-The height of the line chart in inches.
-
-`Width`
-
-Yes
-
-The width of the line chart in inches.
-
-`Title`
-
-Yes
-
-The title of the line chart.
-
-`View`
-
-Yes
-
-The widget view type. For a line chart, the value is `LineChart`.
-
-`YAxisColumn`
-
-Yes
-
-The field from the query results that you want to use for the Y axis column. For example, `eventCount`.
-
-`XAxisColumn`
-
-Yes
-
-The field from the query results that you want to use for the X axis column. For example, `eventDate`.
-
-`FilterColumn`
-
-No
-
-The field from the query results that you want to filter on. For example, `readOnly`.
+| Parameter | Required | Value |
+| --- | --- | --- |
+| `Height` | Yes | The height of the line chart in inches. |
+| `Width` | Yes | The width of the line chart in inches. |
+| `Title` | Yes | The title of the line chart. |
+| `View` | Yes | The widget view type. For a line chart, the value is `LineChart`. |
+| `YAxisColumn` | Yes | The field from the query results that you want to use for the Y axis column. For example, `eventCount`. |
+| `XAxisColumn` | Yes | The field from the query results that you want to use for the X axis column. For example, `eventDate`. |
+| `FilterColumn` | No | The field from the query results that you want to filter on. For example, `readOnly`. |
 
 ## Pie chart
+<a name="lake-widget-piechart"></a>
 
 The following example shows a widget configured as a pie chart.
 
-```JSON
-
+```
 {
     "ViewProperties": {
        "Height": "2",
@@ -152,56 +96,22 @@ The following example shows a widget configured as a pie chart.
 
 The following table describes configurable view properties for a pie chart.
 
-ParameterRequiredValue
-
-`Height`
-
-Yes
-
-The height of the pie chart in inches.
-
-`Width`
-
-Yes
-
-The width of the pie chart in inches.
-
-`Title`
-
-Yes
-
-The title of the pie chart.
-
-`View`
-
-Yes
-
-The widget view type. For a pie chart, the value is `PieChart`.
-
-`LabelColumn`
-
-Yes
-
-The label for segments in the pie chart. For example, `awsRegion`.
-
-`ValueColumn`
-
-Yes
-
-The value for the segments in the pie chart. For example, `ValueColumn`.
-
-`FilterColumn`
-
-No
-
-The field from the query results that you want to filter on. For example, `awsRegion`.
+| Parameter | Required | Value |
+| --- | --- | --- |
+| `Height` | Yes | The height of the pie chart in inches. |
+| `Width` | Yes | The width of the pie chart in inches. |
+| `Title` | Yes | The title of the pie chart. |
+| `View` | Yes | The widget view type. For a pie chart, the value is `PieChart`. |
+| `LabelColumn` | Yes | The label for segments in the pie chart. For example, `awsRegion`. |
+| `ValueColumn` | Yes | The value for the segments in the pie chart. For example, `ValueColumn`. |
+| `FilterColumn` | No | The field from the query results that you want to filter on. For example, `awsRegion`. |
 
 ## Bar chart
+<a name="lake-widget-barchart"></a>
 
 The following example shows a widget configured as a bar chart.
 
-```JSON
-
+```
 {
     "ViewProperties": {
        "Height": "2",
@@ -220,60 +130,15 @@ The following example shows a widget configured as a bar chart.
 
 The following table describes the configurable view properties for a bar chart.
 
-ParameterRequiredValue
-
-`Height`
-
-Yes
-
-The height of the bar chart in inches.
-
-`Width`
-
-Yes
-
-The width of the bar chart in inches.
-
-`Title`
-
-Yes
-
-The title of the bar chart.
-
-`View`
-
-Yes
-
-The widget view type. For a bar chart, the value is `BarChart`.
-
-`LabelColumn`
-
-Yes
-
-The label for bars in the bar chart. For example, `service`.
-
-`ValueColumn`
-
-Yes
-
-The value for the bars in the bar chart. For example, `eventCount`.
-
-`FilterColumn`
-
-No
-
-The field from the query results that you want to filter on. For example, `service`.
-
-`Orientation`
-
-No
-
-The orientation of the bar chart, either `Horizontal` or `Vertical`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create a dashboard with the AWS CLI
-
-Manage dashboards with the AWS CLI
+| Parameter | Required | Value |
+| --- | --- | --- |
+| `Height` | Yes | The height of the bar chart in inches. |
+| `Width` | Yes | The width of the bar chart in inches. |
+| `Title` | Yes | The title of the bar chart. |
+| `View` | Yes | The widget view type. For a bar chart, the value is `BarChart`. |
+| `LabelColumn` | Yes | The label for bars in the bar chart. For example, `service`. |
+| `ValueColumn` | Yes | The value for the bars in the bar chart. For example, `eventCount`. |
+| `FilterColumn` | No | The field from the query results that you want to filter on. For example, `service`. |
+| `Orientation` | No | The orientation of the bar chart, either `Horizontal` or `Vertical`. |
 
 All content copied from https://docs.aws.amazon.com/.

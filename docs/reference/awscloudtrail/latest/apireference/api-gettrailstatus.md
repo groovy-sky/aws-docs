@@ -3,49 +3,37 @@ title: "GetTrailStatus"
 ---
 
 # GetTrailStatus
+<a name="API_GetTrailStatus"></a>
 
-Returns a JSON-formatted list of information about the specified trail. Fields include
-information on delivery errors, Amazon SNS and Amazon S3 errors, and start
-and stop logging times for each trail. This operation returns trail status from a single
-Region. To return trail status from all Regions, you must call the operation on each
-Region.
+Returns a JSON-formatted list of information about the specified trail. Fields include information on delivery errors, Amazon SNS and Amazon S3 errors, and start and stop logging times for each trail. This operation returns trail status from a single Region. To return trail status from all Regions, you must call the operation on each Region.
 
 ## Request Syntax
+<a name="API_GetTrailStatus_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "Name": "string"
+   "Name": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_GetTrailStatus_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[Name](#API_GetTrailStatus_RequestSyntax)**
-
-Specifies the name or the CloudTrail ARN of the trail for which you are
-requesting status. To get the status of a shadow trail (a replication of the trail in
-another Region), you must specify its ARN.
-
-The following is the format of a trail
-ARN: `arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail`
-
-###### Note
-
+ ** [Name](#API_GetTrailStatus_RequestSyntax) **   <a name="awscloudtrail-GetTrailStatus-request-Name"></a>
+Specifies the name or the CloudTrail ARN of the trail for which you are requesting status. To get the status of a shadow trail (a replication of the trail in another Region), you must specify its ARN.
+ The following is the format of a trail ARN: `arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail`
 If the trail is an organization trail and you are a member account in the organization in AWS Organizations, you must provide the full ARN of that trail, and not just the name.
-
 Type: String
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_GetTrailStatus_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "IsLogging": boolean,
    "LatestCloudWatchLogsDeliveryError": "string",
@@ -68,227 +56,129 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_GetTrailStatus_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[IsLogging](#API_GetTrailStatus_ResponseSyntax)**
-
-Whether the CloudTrail trail is currently logging AWS API
-calls.
-
+ ** [IsLogging](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-IsLogging"></a>
+Whether the CloudTrail trail is currently logging AWS API calls.
 Type: Boolean
 
-**[LatestCloudWatchLogsDeliveryError](#API_GetTrailStatus_ResponseSyntax)**
-
-Displays any CloudWatch Logs error that CloudTrail encountered when attempting
-to deliver logs to CloudWatch Logs.
-
+ ** [LatestCloudWatchLogsDeliveryError](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestCloudWatchLogsDeliveryError"></a>
+Displays any CloudWatch Logs error that CloudTrail encountered when attempting to deliver logs to CloudWatch Logs.
 Type: String
 
-**[LatestCloudWatchLogsDeliveryTime](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [LatestCloudWatchLogsDeliveryTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestCloudWatchLogsDeliveryTime"></a>
 Displays the most recent date and time when CloudTrail delivered logs to CloudWatch Logs.
-
 Type: Timestamp
 
-**[LatestDeliveryAttemptSucceeded](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [LatestDeliveryAttemptSucceeded](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestDeliveryAttemptSucceeded"></a>
 This field is no longer in use.
-
 Type: String
 
-**[LatestDeliveryAttemptTime](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [LatestDeliveryAttemptTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestDeliveryAttemptTime"></a>
 This field is no longer in use.
-
 Type: String
 
-**[LatestDeliveryError](#API_GetTrailStatus_ResponseSyntax)**
-
-Displays any Amazon S3 error that CloudTrail encountered when attempting
-to deliver log files to the designated bucket. For more information, see [Error\
-Responses](../../../../services/s3/latest/api/errorresponses.md) in the Amazon S3 API Reference.
-
-###### Note
-
-This error occurs only when there is a problem with the destination S3 bucket, and
-does not occur for requests that time out. To resolve the issue,
-fix the [bucket policy](../../../../services/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.md) so that CloudTrail
-can write to the bucket; or create a new bucket and call `UpdateTrail` to specify the new bucket.
-
+ ** [LatestDeliveryError](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestDeliveryError"></a>
+Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket. For more information, see [Error Responses](https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html) in the Amazon S3 API Reference.
+This error occurs only when there is a problem with the destination S3 bucket, and does not occur for requests that time out. To resolve the issue, fix the [bucket policy](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html) so that CloudTrail can write to the bucket; or create a new bucket and call `UpdateTrail` to specify the new bucket.
 Type: String
 
-**[LatestDeliveryTime](#API_GetTrailStatus_ResponseSyntax)**
-
-Specifies the date and time that CloudTrail last delivered log files to an
-account's Amazon S3 bucket.
-
+ ** [LatestDeliveryTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestDeliveryTime"></a>
+Specifies the date and time that CloudTrail last delivered log files to an account's Amazon S3 bucket.
 Type: Timestamp
 
-**[LatestDigestDeliveryError](#API_GetTrailStatus_ResponseSyntax)**
-
-Displays any Amazon S3 error that CloudTrail encountered when attempting
-to deliver a digest file to the designated bucket. For more information, see [Error\
-Responses](../../../../services/s3/latest/api/errorresponses.md) in the Amazon S3 API Reference.
-
-###### Note
-
-This error occurs only when there is a problem with the destination S3 bucket, and
-does not occur for requests that time out. To resolve the issue,
-fix the [bucket policy](../../../../services/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.md) so that CloudTrail
-can write to the bucket; or create a new bucket and call `UpdateTrail` to specify the new bucket.
-
+ ** [LatestDigestDeliveryError](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestDigestDeliveryError"></a>
+Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver a digest file to the designated bucket. For more information, see [Error Responses](https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html) in the Amazon S3 API Reference.
+This error occurs only when there is a problem with the destination S3 bucket, and does not occur for requests that time out. To resolve the issue, fix the [bucket policy](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html) so that CloudTrail can write to the bucket; or create a new bucket and call `UpdateTrail` to specify the new bucket.
 Type: String
 
-**[LatestDigestDeliveryTime](#API_GetTrailStatus_ResponseSyntax)**
-
-Specifies the date and time that CloudTrail last delivered a digest file to an
-account's Amazon S3 bucket.
-
+ ** [LatestDigestDeliveryTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestDigestDeliveryTime"></a>
+Specifies the date and time that CloudTrail last delivered a digest file to an account's Amazon S3 bucket.
 Type: Timestamp
 
-**[LatestNotificationAttemptSucceeded](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [LatestNotificationAttemptSucceeded](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestNotificationAttemptSucceeded"></a>
 This field is no longer in use.
-
 Type: String
 
-**[LatestNotificationAttemptTime](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [LatestNotificationAttemptTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestNotificationAttemptTime"></a>
 This field is no longer in use.
-
 Type: String
 
-**[LatestNotificationError](#API_GetTrailStatus_ResponseSyntax)**
-
-Displays any Amazon SNS error that CloudTrail encountered when attempting
-to send a notification. For more information about Amazon SNS errors, see the
-[Amazon SNS\
-Developer Guide](../../../../services/sns/latest/dg/welcome.md).
-
+ ** [LatestNotificationError](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestNotificationError"></a>
+Displays any Amazon SNS error that CloudTrail encountered when attempting to send a notification. For more information about Amazon SNS errors, see the [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
 Type: String
 
-**[LatestNotificationTime](#API_GetTrailStatus_ResponseSyntax)**
-
-Specifies the date and time of the most recent Amazon SNS notification that
-CloudTrail has written a new log file to an account's Amazon S3
-bucket.
-
+ ** [LatestNotificationTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-LatestNotificationTime"></a>
+Specifies the date and time of the most recent Amazon SNS notification that CloudTrail has written a new log file to an account's Amazon S3 bucket.
 Type: Timestamp
 
-**[StartLoggingTime](#API_GetTrailStatus_ResponseSyntax)**
-
-Specifies the most recent date and time when CloudTrail started recording API
-calls for an AWS account.
-
+ ** [StartLoggingTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-StartLoggingTime"></a>
+Specifies the most recent date and time when CloudTrail started recording API calls for an AWS account.
 Type: Timestamp
 
-**[StopLoggingTime](#API_GetTrailStatus_ResponseSyntax)**
-
-Specifies the most recent date and time when CloudTrail stopped recording API
-calls for an AWS account.
-
+ ** [StopLoggingTime](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-StopLoggingTime"></a>
+Specifies the most recent date and time when CloudTrail stopped recording API calls for an AWS account.
 Type: Timestamp
 
-**[TimeLoggingStarted](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [TimeLoggingStarted](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-TimeLoggingStarted"></a>
 This field is no longer in use.
-
 Type: String
 
-**[TimeLoggingStopped](#API_GetTrailStatus_ResponseSyntax)**
-
+ ** [TimeLoggingStopped](#API_GetTrailStatus_ResponseSyntax) **   <a name="awscloudtrail-GetTrailStatus-response-TimeLoggingStopped"></a>
 This field is no longer in use.
-
 Type: String
 
 ## Errors
+<a name="API_GetTrailStatus_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**CloudTrailARNInvalidException**
-
+ ** CloudTrailARNInvalidException **
 This exception is thrown when an operation is called with an ARN that is not valid.
-
 The following is the format of a trail ARN: `arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail`
-
-The following is the format of an event data store ARN:
-`arn:aws:cloudtrail:us-east-2:123456789012:eventdatastore/EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE`
-
+The following is the format of an event data store ARN: `arn:aws:cloudtrail:us-east-2:123456789012:eventdatastore/EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE`
 The following is the format of a dashboard ARN: `arn:aws:cloudtrail:us-east-1:123456789012:dashboard/exampleDash`
-
-The following is the format of a channel ARN:
-`arn:aws:cloudtrail:us-east-2:123456789012:channel/01234567890`
-
+The following is the format of a channel ARN: `arn:aws:cloudtrail:us-east-2:123456789012:channel/01234567890`
 HTTP Status Code: 400
 
-**InvalidTrailNameException**
-
-This exception is thrown when the provided trail name is not valid. Trail names must
-meet the following requirements:
-
-- Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores
-(\_), or dashes (-)
-
-- Start with a letter or number, and end with a letter or number
-
-- Be between 3 and 128 characters
-
-- Have no adjacent periods, underscores or dashes. Names like
-`my-_namespace` and `my--namespace` are not valid.
-
-- Not be in IP address format (for example, 192.168.5.4)
-
+ ** InvalidTrailNameException **
+This exception is thrown when the provided trail name is not valid. Trail names must meet the following requirements:
++ Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), or dashes (-)
++ Start with a letter or number, and end with a letter or number
++ Be between 3 and 128 characters
++ Have no adjacent periods, underscores or dashes. Names like `my-_namespace` and `my--namespace` are not valid.
++ Not be in IP address format (for example, 192.168.5.4)
 HTTP Status Code: 400
 
-**OperationNotPermittedException**
-
+ ** OperationNotPermittedException **
 This exception is thrown when the requested operation is not permitted.
-
 HTTP Status Code: 400
 
-**TrailNotFoundException**
-
+ ** TrailNotFoundException **
 This exception is thrown when the trail with the given name is not found.
-
 HTTP Status Code: 400
 
-**UnsupportedOperationException**
-
+ ** UnsupportedOperationException **
 This exception is thrown when the requested operation is not supported.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_GetTrailStatus_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/cloudtrail-2013-11-01/gettrailstatus.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudtrail-2013-11-01/gettrailstatus.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetTrail
-
-ListChannels
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/cloudtrail-2013-11-01/GetTrailStatus)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-2013-11-01/GetTrailStatus)
 
 All content copied from https://docs.aws.amazon.com/.

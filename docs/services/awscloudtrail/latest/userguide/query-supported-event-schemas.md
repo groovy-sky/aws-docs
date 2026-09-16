@@ -3,34 +3,26 @@ title: "Supported SQL schemas for event data stores"
 ---
 
 # Supported SQL schemas for event data stores
+<a name="query-supported-event-schemas"></a>
 
-###### Note
-
-AWS CloudTrail Lake will no longer be open to new customers starting May 31, 2026.
-If you would like to use CloudTrail Lake, sign up prior to that date. Existing customers
-can continue to use the service as normal. For more information, see
-[CloudTrail Lake availability change](cloudtrail-lake-service-availability-change.md).
+**Note**
+AWS CloudTrail Lake will no longer be open to new customers starting May 31, 2026. If you would like to use CloudTrail Lake, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [CloudTrail Lake availability change](cloudtrail-lake-service-availability-change.md).
 
 The following sections provide the supported SQL schema for each event data store type.
 
-###### Topics
-
-- [Supported schema for CloudTrail event record ﬁelds](#query-supported-event-schema)
-
-- [Supported schema for CloudTrail Insights event record fields](#query-supported-insights-schema)
-
-- [Supported schema for AWS Config configuration item record ﬁelds](#query-supported-config-items-schema)
-
-- [Supported schema for AWS Audit Manager evidence record ﬁelds](#query-supported-event-schema-audit-manager)
-
-- [Supported schema for non-AWS event ﬁelds](#query-supported-event-schema-integration)
+**Topics**
++ [Supported schema for CloudTrail event record ﬁelds](#query-supported-event-schema)
++ [Supported schema for CloudTrail Insights event record fields](#query-supported-insights-schema)
++ [Supported schema for AWS Config configuration item record ﬁelds](#query-supported-config-items-schema)
++ [Supported schema for AWS Audit Manager evidence record ﬁelds](#query-supported-event-schema-audit-manager)
++ [Supported schema for non-AWS event ﬁelds](#query-supported-event-schema-integration)
 
 ## Supported schema for CloudTrail event record ﬁelds
+<a name="query-supported-event-schema"></a>
 
 The following is the valid SQL schema for CloudTrail management, data, and network activity event record fields. For more information about CloudTrail event record fields, see [CloudTrail record contents for management, data, and network activity events](cloudtrail-event-reference-record-contents.md).
 
-```nohighlight
-
+```
 [
     {
         "Name": "eventversion",
@@ -179,19 +171,14 @@ The following is the valid SQL schema for CloudTrail management, data, and netwo
 ```
 
 ## Supported schema for CloudTrail Insights event record fields
+<a name="query-supported-insights-schema"></a>
 
-The following is the valid SQL schema for Insights event record fields. For
-Insights events, the value of `eventcategory` is
-`Insight`, and the value of `eventtype` is
-`AwsCloudTrailInsight`. For descriptions of these fields, see [CloudTrail record contents for Insights events for event data stores](cloudtrail-insights-fields-lake.md).
+The following is the valid SQL schema for Insights event record fields. For Insights events, the value of `eventcategory` is `Insight`, and the value of `eventtype` is `AwsCloudTrailInsight`. For descriptions of these fields, see [CloudTrail record contents for Insights events for event data stores](cloudtrail-insights-fields-lake.md).
 
-###### Note
+**Note**
+The `insightvalue`, `insightaverage`, `baselinevalue`, and `baselineaverage` fields within the `attributions` field of `insightContext` will begin to be deprecated on June 23, 2025.
 
-The `insightvalue`, `insightaverage`, `baselinevalue`, and `baselineaverage` fields
-within the `attributions` field of `insightContext` will begin to be deprecated on June 23, 2025.
-
-```nohighlight
-
+```
 [
     {
         "Name": "eventversion",
@@ -265,14 +252,11 @@ within the `attributions` field of `insightContext` will begin to be deprecated 
 ```
 
 ## Supported schema for AWS Config configuration item record ﬁelds
+<a name="query-supported-config-items-schema"></a>
 
-The following is the valid SQL schema for configuration item record fields. For
-configuration items, the value of `eventcategory` is
-`ConfigurationItem`, and the value of `eventtype` is
-`AwsConfigurationItem`.
+The following is the valid SQL schema for configuration item record fields. For configuration items, the value of `eventcategory` is `ConfigurationItem`, and the value of `eventtype` is `AwsConfigurationItem`.
 
-```nohighlight
-
+```
 [
     {
         "Name": "eventversion",
@@ -319,15 +303,11 @@ configuration items, the value of `eventcategory` is
 ```
 
 ## Supported schema for AWS Audit Manager evidence record ﬁelds
+<a name="query-supported-event-schema-audit-manager"></a>
 
-The following is the valid SQL schema for Audit Manager evidence record fields. For Audit Manager
-evidence record fields, the value of `eventcategory` is
-`Evidence`, and the value of `eventtype` is
-`AwsAuditManagerEvidence`. For more information about aggregating evidence in CloudTrail Lake using Audit Manager, see [Evidence finder](../../../audit-manager/latest/userguide/evidence-finder.md) in
-the _AWS Audit Manager User Guide_.
+The following is the valid SQL schema for Audit Manager evidence record fields. For Audit Manager evidence record fields, the value of `eventcategory` is `Evidence`, and the value of `eventtype` is `AwsAuditManagerEvidence`. For more information about aggregating evidence in CloudTrail Lake using Audit Manager, see [Evidence finder](https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-finder.html) in the *AWS Audit Manager User Guide*.
 
-```nohighlight
-
+```
 [
     {
         "Name": "eventversion",
@@ -375,13 +355,11 @@ the _AWS Audit Manager User Guide_.
 ```
 
 ## Supported schema for non-AWS event ﬁelds
+<a name="query-supported-event-schema-integration"></a>
 
-The following is the valid SQL schema for non-AWS events. For non-AWS events, the value of `eventcategory` is
-`ActivityAuditLog`, and the value of `eventtype` is
-`ActivityLog`.
+The following is the valid SQL schema for non-AWS events. For non-AWS events, the value of `eventcategory` is `ActivityAuditLog`, and the value of `eventtype` is `ActivityLog`.
 
-```nohighlight
-
+```
 [
     {
         "Name": "eventversion",
@@ -428,11 +406,5 @@ The following is the valid SQL schema for non-AWS events. For non-AWS events, th
     }
 ]
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudTrail Lake SQL constraints
-
-Supported CloudWatch metrics
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,25 +3,53 @@ title: "CloudTrail supported Regions"
 ---
 
 # CloudTrail supported Regions
+<a name="cloudtrail-supported-regions"></a>
 
-###### Note
-
+**Note**
 For information about Regions supported by CloudTrail Lake, see [CloudTrail Lake supported Regions](cloudtrail-lake-supported-regions.md).
+For information about data plane endpoints, see [Data plane endpoints](https://docs.aws.amazon.com/general/latest/gr/ct.html#ct_region_data_plane) in the *AWS General Reference*.
 
-For information about data plane endpoints, see [Data plane endpoints](../../../../general/latest/gr/ct.md#ct_region_data_plane) in the _AWS General Reference_.
+| Region name | Region | Control plane endpoint | Protocol | Support date |
+| --- | --- | --- | --- | --- |
+| US East (N. Virginia) | us-east-1 | cloudtrail.us-east-1.amazonaws.com | HTTPS | 11/13/2013 |
+| US East (Ohio) | us-east-2 | cloudtrail.us-east-2.amazonaws.com | HTTPS | 10/17/2016 |
+| US West (N. California) | us-west-1 | cloudtrail.us-west-1.amazonaws.com | HTTPS | 05/13/2014 |
+| US West (Oregon) | us-west-2 | cloudtrail.us-west-2.amazonaws.com | HTTPS | 11/13/2013 |
+| Africa (Cape Town) | af-south-1 | cloudtrail.af-south-1.amazonaws.com | HTTPS | 04/22/2020 |
+| Asia Pacific (Hong Kong) | ap-east-1 | cloudtrail.ap-east-1.amazonaws.com | HTTPS | 04/24/2019 |
+| Asia Pacific (Hyderabad) | ap-south-2 | cloudtrail.ap-south-2.amazonaws.com | HTTPS | 11/22/2022 |
+| Asia Pacific (Jakarta) | ap-southeast-3 | cloudtrail.ap-southeast-3.amazonaws.com | HTTPS | 12/13/2021 |
+| Asia Pacific (Malaysia) | ap-southeast-5 | cloudtrail.ap-southeast-5.amazonaws.com | HTTPS | 08/22/2024 |
+| Asia Pacific (Melbourne) | ap-southeast-4 | cloudtrail.ap-southeast-4.amazonaws.com | HTTPS | 01/23/2023 |
+| Asia Pacific (Mumbai) | ap-south-1 | cloudtrail.ap-south-1.amazonaws.com | HTTPS | 06/27/2016 |
+| Asia Pacific (Osaka) | ap-northeast-3 | cloudtrail.ap-northeast-3.amazonaws.com | HTTPS | 02/12/2018 |
+| Asia Pacific (Seoul) | ap-northeast-2 | cloudtrail.ap-northeast-2.amazonaws.com | HTTPS | 01/06/2016 |
+| Asia Pacific (Singapore) | ap-southeast-1 | cloudtrail.ap-southeast-1.amazonaws.com | HTTPS | 06/30/2014 |
+| Asia Pacific (Sydney) | ap-southeast-2 | cloudtrail.ap-southeast-2.amazonaws.com | HTTPS | 05/13/2014 |
+| Asia Pacific (Thailand) | ap-southeast-7 | cloudtrail.ap-southeast-7.amazonaws.com | HTTPS | 01/07/2025 |
+| Asia Pacific (Tokyo) | ap-northeast-1 | cloudtrail.ap-northeast-1.amazonaws.com | HTTPS | 06/30/2014 |
+| Canada (Central) | ca-central-1 | cloudtrail.ca-central-1.amazonaws.com | HTTPS | 12/08/2016 |
+| Canada West (Calgary) | ca-west-1 | cloudtrail.ca-west-1.amazonaws.com | HTTPS | 12/20/2023 |
+| China (Beijing) | cn-north-1 | cloudtrail.cn-north-1.amazonaws.com.cn | HTTPS | 03/01/2014 |
+| China (Ningxia) | cn-northwest-1 | cloudtrail.cn-northwest-1.amazonaws.com.cn | HTTPS | 12/11/2017 |
+| Europe (Frankfurt) | eu-central-1 | cloudtrail.eu-central-1.amazonaws.com | HTTPS | 10/23/2014 |
+| Europe (Ireland) | eu-west-1 | cloudtrail.eu-west-1.amazonaws.com | HTTPS | 05/13/2014 |
+| Europe (London) | eu-west-2 | cloudtrail.eu-west-2.amazonaws.com | HTTPS | 12/13/2016 |
+| Europe (Milan) | eu-south-1 | cloudtrail.eu-south-1.amazonaws.com | HTTPS | 04/27/2020 |
+| Europe (Paris) | eu-west-3 | cloudtrail.eu-west-3.amazonaws.com | HTTPS | 12/18/2017 |
+| Europe (Spain) | eu-south-2 | cloudtrail.eu-south-2.amazonaws.com | HTTPS | 11/16/2022 |
+| Europe (Stockholm) | eu-north-1 | cloudtrail.eu-north-1.amazonaws.com | HTTPS | 12/11/2018 |
+| Europe (Zurich) | eu-central-2 | cloudtrail.eu-central-2.amazonaws.com | HTTPS | 11/09/2022 |
+| Israel (Tel Aviv) | il-central-1 | cloudtrail.il-central-1.amazonaws.com | HTTPS | 07/31/2023 |
+| Mexico (Central) | mx-central-1 | cloudtrail.mx-central-1.amazonaws.com | HTTPS | 01/13/2025 |
+| Middle East (Bahrain) | me-south-1 | cloudtrail.me-south-1.amazonaws.com | HTTPS | 07/29/2019 |
+| Middle East (UAE) | me-central-1 | cloudtrail.me-central-1.amazonaws.com | HTTPS | 08/30/2022 |
+| South America (São Paulo) | sa-east-1 | cloudtrail.sa-east-1.amazonaws.com | HTTPS | 06/30/2014 |
+| AWS GovCloud (US-East) | us-gov-east-1 | cloudtrail.us-gov-east-1.amazonaws.com | HTTPS | 11/12/2018 |
+| AWS GovCloud (US-West) | us-gov-west-1 | cloudtrail.us-gov-west-1.amazonaws.com | HTTPS | 08/16/2011 |
 
-Region nameRegionControl plane endpointProtocolSupport dateUS East (N. Virginia)us-east-1cloudtrail.us-east-1.amazonaws.comHTTPS11/13/2013US East (Ohio)us-east-2cloudtrail.us-east-2.amazonaws.comHTTPS10/17/2016US West (N. California)us-west-1cloudtrail.us-west-1.amazonaws.comHTTPS05/13/2014US West (Oregon)us-west-2cloudtrail.us-west-2.amazonaws.comHTTPS11/13/2013Africa (Cape Town)af-south-1cloudtrail.af-south-1.amazonaws.comHTTPS04/22/2020Asia Pacific (Hong Kong)ap-east-1cloudtrail.ap-east-1.amazonaws.comHTTPS04/24/2019Asia Pacific (Hyderabad)ap-south-2cloudtrail.ap-south-2.amazonaws.comHTTPS11/22/2022Asia Pacific (Jakarta)ap-southeast-3cloudtrail.ap-southeast-3.amazonaws.comHTTPS12/13/2021Asia Pacific (Malaysia)ap-southeast-5cloudtrail.ap-southeast-5.amazonaws.comHTTPS08/22/2024Asia Pacific (Melbourne)ap-southeast-4cloudtrail.ap-southeast-4.amazonaws.comHTTPS01/23/2023Asia Pacific (Mumbai)ap-south-1cloudtrail.ap-south-1.amazonaws.comHTTPS06/27/2016Asia Pacific (Osaka)ap-northeast-3cloudtrail.ap-northeast-3.amazonaws.comHTTPS02/12/2018Asia Pacific (Seoul)ap-northeast-2cloudtrail.ap-northeast-2.amazonaws.comHTTPS01/06/2016Asia Pacific (Singapore)ap-southeast-1cloudtrail.ap-southeast-1.amazonaws.comHTTPS06/30/2014Asia Pacific (Sydney)ap-southeast-2cloudtrail.ap-southeast-2.amazonaws.comHTTPS05/13/2014Asia Pacific (Thailand)ap-southeast-7cloudtrail.ap-southeast-7.amazonaws.comHTTPS01/07/2025Asia Pacific (Tokyo)ap-northeast-1cloudtrail.ap-northeast-1.amazonaws.comHTTPS06/30/2014Canada (Central)ca-central-1cloudtrail.ca-central-1.amazonaws.comHTTPS12/08/2016Canada West (Calgary)ca-west-1cloudtrail.ca-west-1.amazonaws.comHTTPS12/20/2023China (Beijing)cn-north-1cloudtrail.cn-north-1.amazonaws.com.cnHTTPS03/01/2014China (Ningxia)cn-northwest-1cloudtrail.cn-northwest-1.amazonaws.com.cnHTTPS12/11/2017Europe (Frankfurt)eu-central-1cloudtrail.eu-central-1.amazonaws.comHTTPS10/23/2014Europe (Ireland)eu-west-1cloudtrail.eu-west-1.amazonaws.comHTTPS05/13/2014Europe (London)eu-west-2cloudtrail.eu-west-2.amazonaws.comHTTPS12/13/2016Europe (Milan)eu-south-1cloudtrail.eu-south-1.amazonaws.comHTTPS04/27/2020Europe (Paris)eu-west-3cloudtrail.eu-west-3.amazonaws.comHTTPS12/18/2017Europe (Spain)eu-south-2cloudtrail.eu-south-2.amazonaws.comHTTPS11/16/2022Europe (Stockholm)eu-north-1cloudtrail.eu-north-1.amazonaws.comHTTPS12/11/2018Europe (Zurich)eu-central-2cloudtrail.eu-central-2.amazonaws.comHTTPS11/09/2022Israel (Tel Aviv)il-central-1cloudtrail.il-central-1.amazonaws.comHTTPS07/31/2023Mexico (Central)mx-central-1cloudtrail.mx-central-1.amazonaws.comHTTPS01/13/2025Middle East (Bahrain)me-south-1cloudtrail.me-south-1.amazonaws.comHTTPS07/29/2019Middle East (UAE)me-central-1cloudtrail.me-central-1.amazonaws.comHTTPS08/30/2022South America (São Paulo)sa-east-1cloudtrail.sa-east-1.amazonaws.comHTTPS06/30/2014AWS GovCloud (US-East)us-gov-east-1cloudtrail.us-gov-east-1.amazonaws.comHTTPS11/12/2018AWS GovCloud (US-West)us-gov-west-1cloudtrail.us-gov-west-1.amazonaws.comHTTPS08/16/2011
+For more information about using CloudTrail in the AWS GovCloud (US) Regions, see [Service Endpoints](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/using-govcloud-endpoints.html) in the *AWS GovCloud (US) User Guide*.
 
-For more information about using CloudTrail in the AWS GovCloud (US) Regions, see [Service Endpoints](../../../govcloud-us/latest/userguide/using-govcloud-endpoints.md) in the _AWS GovCloud (US) User Guide_.
-
-For more information about using CloudTrail in the China (Beijing) Region, see
-[Endpoints \
-and ARNs for AWS in China](https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-arns.html) in the _Amazon Web Services General Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Concepts
-
-Supported services and integrations
+For more information about using CloudTrail in the China (Beijing) Region, see [Endpoints and ARNs for AWS in China](https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-arns.html#cnnorth_region) in the *Amazon Web Services General Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,83 +3,55 @@ title: "CloudTrail log file examples"
 ---
 
 # CloudTrail log file examples
+<a name="cloudtrail-log-file-examples"></a>
 
-CloudTrail monitors events for your account. If you create a trail, it delivers those events as
-log files to your Amazon S3 bucket. If you create an event data store in CloudTrail Lake, events are
-logged to your event data store. Event data stores do not use S3 buckets.
+CloudTrail monitors events for your account. If you create a trail, it delivers those events as log files to your Amazon S3 bucket. If you create an event data store in CloudTrail Lake, events are logged to your event data store. Event data stores do not use S3 buckets.
 
-###### Topics
-
-- [CloudTrail log file name format](#cloudtrail-log-filename-format)
-
-- [Log file examples](#cloudtrail-log-file-examples-section)
+**Topics**
++ [CloudTrail log file name format](#cloudtrail-log-filename-format)
++ [Log file examples](#cloudtrail-log-file-examples-section)
 
 ## CloudTrail log file name format
+<a name="cloudtrail-log-filename-format"></a>
 
-CloudTrail uses the following file name format for the log file objects that it delivers to
-your Amazon S3 bucket:
+CloudTrail uses the following file name format for the log file objects that it delivers to your Amazon S3 bucket:
 
-```nohighlight
-
+```
 AccountID_CloudTrail_RegionName_YYYYMMDDTHHmmZ_UniqueString.FileNameFormat
 ```
++ The `YYYY`, `MM`, `DD`, `HH`, and `mm` are the digits of the year, month, day, hour, and minute when the log file was delivered. Hours are in 24-hour format. The `Z` indicates that the time is in UTC.
+**Note**
+A log file delivered at a specific time can contain records written at any point before that time.
++ The 16-character `UniqueString` component of the log file name is there to prevent overwriting of files. It has no meaning, and log processing software should ignore it.
++ `FileNameFormat` is the encoding of the file. Currently, this is `json.gz`, which is a JSON text file in compressed gzip format.
 
-- The `YYYY`, `MM`, `DD`, `HH`, and
-`mm` are the digits of the year, month, day, hour, and minute
-when the log file was delivered. Hours are in 24-hour format. The `Z`
-indicates that the time is in UTC.
+ **Example CloudTrail Log File Name**
 
-###### Note
-
-A log file delivered at a specific time can contain records written at any
-point before that time.
-
-- The 16-character `UniqueString` component of the log file name is
-there to prevent overwriting of files. It has no meaning, and log processing
-software should ignore it.
-
-- `FileNameFormat` is the encoding of the file. Currently, this is
-`json.gz`, which is a JSON text file in compressed gzip
-format.
-
-**Example CloudTrail Log File Name**
-
-```nohighlight
-
+```
 111122223333_CloudTrail_us-east-2_20150801T0210Z_Mu0KsOhtH1ar15ZZ.json.gz
 ```
 
 ## Log file examples
+<a name="cloudtrail-log-file-examples-section"></a>
 
-A log file contains one or more records. The following examples are snippets of logs
-that show the records for an action that started the creation of a log file.
+A log file contains one or more records. The following examples are snippets of logs that show the records for an action that started the creation of a log file.
 
 For information about CloudTrail event record fields, see [CloudTrail record contents for management, data, and network activity events](cloudtrail-event-reference-record-contents.md).
 
-###### Contents
-
-- [Amazon EC2 log examples](cloudtrail-log-file-examples.md#cloudtrail-log-file-examples-ec2)
-
-- [IAM log examples](cloudtrail-log-file-examples.md#cloudtrail-log-file-examples-iam)
-
-- [Error code and message log example](cloudtrail-log-file-examples.md#error-code-and-error-message)
-
-- [CloudTrail Insights event log example](cloudtrail-log-file-examples.md#insights-event-example)
+**Contents**
++ [Amazon EC2 log examples](#cloudtrail-log-file-examples-ec2)
++ [IAM log examples](#cloudtrail-log-file-examples-iam)
++ [Error code and message log example](#error-code-and-error-message)
++ [CloudTrail Insights event log example](#insights-event-example)
 
 ### Amazon EC2 log examples
+<a name="cloudtrail-log-file-examples-ec2"></a>
 
-Amazon Elastic Compute Cloud (Amazon EC2) provides resizeable computing capacity in the AWS Cloud. You
-can launch virtual servers, configure security and networking, and manage storage.
-Amazon EC2 can also scale up or down quickly to handle changes in requirements or spikes
-in popularity, thereby reducing your need to forecast server traffic. For more
-information, see the [Amazon EC2 User Guide](../../../ec2/latest/userguide.md).
+Amazon Elastic Compute Cloud (Amazon EC2) provides resizeable computing capacity in the AWS Cloud. You can launch virtual servers, configure security and networking, and manage storage. Amazon EC2 can also scale up or down quickly to handle changes in requirements or spikes in popularity, thereby reducing your need to forecast server traffic. For more information, see the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/).
 
-The following example shows that an IAM user named `Mateo` ran the **aws ec2 start-instances** command to call
-the Amazon EC2 [`StartInstances`](../../../../reference/awsec2/latest/apireference/api-startinstances.md) action for instances
-`i-EXAMPLE56126103cb` and `i-EXAMPLEaff4840c22`.
+The following example shows that an IAM user named `Mateo` ran the **aws ec2 start-instances** command to call the Amazon EC2 [`StartInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html) action for instances `i-EXAMPLE56126103cb` and `i-EXAMPLEaff4840c22`.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -161,11 +133,9 @@ the Amazon EC2 [`StartInstances`](../../../../reference/awsec2/latest/apireferen
 }]}
 ```
 
-The following example shows that an IAM user named `Nikki` ran the **aws ec2 stop-instances** command to call
-the Amazon EC2 [`StopInstances`](../../../../reference/awsec2/latest/apireference/api-stopinstances.md) action to stop two instances.
+The following example shows that an IAM user named `Nikki` ran the **aws ec2 stop-instances** command to call the Amazon EC2 [`StopInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) action to stop two instances.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -248,12 +218,9 @@ the Amazon EC2 [`StopInstances`](../../../../reference/awsec2/latest/apireferenc
 }]}
 ```
 
-The following example shows that an IAM user named `Arnav` ran the **aws ec2 create-key-pair** command to call the
-[`CreateKeyPair`](../../../../reference/awsec2/latest/apireference/api-createkeypair.md) action. Note that the `responseElements` contain a hash of the
-key pair and that AWS removed the key material.
+The following example shows that an IAM user named `Arnav` ran the **aws ec2 create-key-pair** command to call the [`CreateKeyPair`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) action. Note that the `responseElements` contain a hash of the key pair and that AWS removed the key material.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -304,22 +271,16 @@ key pair and that AWS removed the key material.
     },
     "sessionCredentialFromConsole": "true"
 }]}
-
 ```
 
 ### IAM log examples
+<a name="cloudtrail-log-file-examples-iam"></a>
 
-AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS
-resources. With IAM, you can centrally manage permissions that control which AWS
-resources users can access. You use IAM to control who is authenticated (signed
-in) and authorized (has permissions) to use resources. For more information, see the
-[IAM User Guide](../../../iam/latest/userguide.md).
+AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. With IAM, you can centrally manage permissions that control which AWS resources users can access. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources. For more information, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
 
-The following example shows that the IAM user named `Mary` ran the **aws iam create-user** command to call the
-[`CreateUser`](../../../../reference/iam/latest/apireference/api-createuser.md) action to create a new user named `Richard`.
+The following example shows that the IAM user named `Mary` ran the **aws iam create-user** command to call the [`CreateUser`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html) action to create a new user named `Richard`.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -372,11 +333,9 @@ The following example shows that the IAM user named `Mary` ran the **aws iam cre
 }]}
 ```
 
-The following example shows that the IAM user named `Paulo` ran the **aws iam add-user-to-group** command to call
-the [`AddUserToGroup`](../../../../reference/iam/latest/apireference/api-addusertogroup.md) action to add a user named `Jane` to the `Admin` group.
+The following example shows that the IAM user named `Paulo` ran the **aws iam add-user-to-group** command to call the [`AddUserToGroup`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) action to add a user named `Jane` to the `Admin` group.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -422,11 +381,9 @@ the [`AddUserToGroup`](../../../../reference/iam/latest/apireference/api-adduser
 }]}
 ```
 
-The following example shows that the IAM user named `Saanvi` ran the **aws iam create-role** command to call
-the [`CreateRole`](../../../../reference/iam/latest/apireference/api-createrole.md) action to create a role.
+The following example shows that the IAM user named `Saanvi` ran the **aws iam create-role** command to call the [`CreateRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) action to create a role.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.08",
     "userIdentity": {
@@ -454,11 +411,11 @@ the [`CreateRole`](../../../../reference/iam/latest/apireference/api-createrole.
     "requestParameters": {
         "roleName": "TestRole",
         "description": "Allows EC2 instances to call AWS services on your behalf.",
-        "assumeRolePolicyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"sts:AssumeRole\"],\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}]}"
+        "assumeRolePolicyDocument": "{\"Version\":\"2012-10-17\",		 	 	 \"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"sts:AssumeRole\"],\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}]}"
     },
     "responseElements": {
         "role": {
-            "assumeRolePolicyDocument": "policy-statement",
+            "assumeRolePolicyDocument": "{{policy-statement}}",
             "arn": "arn:aws:iam::777777777777:role/TestRole",
             "roleId": "AWS_ACCESS_KEY_ID_REDACTED",
             "createDate": "Jul 19, 2023 9:29:12 PM",
@@ -483,14 +440,11 @@ the [`CreateRole`](../../../../reference/iam/latest/apireference/api-createrole.
 ```
 
 ### Error code and message log example
+<a name="error-code-and-error-message"></a>
 
-The following example shows that the IAM user named `Terry` ran the **aws cloudtrail update-trail** command to call the
-[`UpdateTrail`](../../../../reference/awscloudtrail/latest/apireference/api-updatetrail.md) action to update a trail named `myTrail2`,
-but the trail name was not found. The log shows this error in the
-`errorCode` and `errorMessage` elements.
+The following example shows that the IAM user named `Terry` ran the **aws cloudtrail update-trail** command to call the [`UpdateTrail`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) action to update a trail named `myTrail2`, but the trail name was not found. The log shows this error in the `errorCode` and `errorMessage` elements.
 
-```JSON
-
+```
 {"Records": [{
     "eventVersion": "1.09",
     "userIdentity": {
@@ -537,23 +491,11 @@ but the trail name was not found. The log shows this error in the
 ```
 
 ### CloudTrail Insights event log example
+<a name="insights-event-example"></a>
 
-The following example shows a CloudTrail Insights event log. An Insights event is actually a
-pair of events that mark the start and end of a period of unusual write management
-API activity or error response activity. The `state` field shows whether
-the event was logged at the start or end of the period of unusual activity. The
-event name, `UpdateInstanceInformation`, is the same name as the
-AWS Systems Manager API for which CloudTrail analyzed management events to determine that unusual
-activity occurred. Although the start and end events have unique
-`eventID` values, they also have a `sharedEventID` value
-that is used by the pair. The Insights event shows the `baseline`, or the
-normal pattern of activity, the `insight`, or average unusual activity
-that triggered the start Insights event, and in the end event, the
-`insight` value for the average unusual activity over the duration of
-the Insights event. For more information about CloudTrail Insights, see [Working with CloudTrail Insights](logging-insights-events-with-cloudtrail.md).
+The following example shows a CloudTrail Insights event log. An Insights event is actually a pair of events that mark the start and end of a period of unusual write management API activity or error response activity. The `state` field shows whether the event was logged at the start or end of the period of unusual activity. The event name, `UpdateInstanceInformation`, is the same name as the AWS Systems Manager API for which CloudTrail analyzed management events to determine that unusual activity occurred. Although the start and end events have unique `eventID` values, they also have a `sharedEventID` value that is used by the pair. The Insights event shows the `baseline`, or the normal pattern of activity, the `insight`, or average unusual activity that triggered the start Insights event, and in the end event, the `insight` value for the average unusual activity over the duration of the Insights event. For more information about CloudTrail Insights, see [Working with CloudTrail Insights](logging-insights-events-with-cloudtrail.md).
 
-```JSON
-
+```
 {
     "Records": [{
         "eventVersion": "1.08",
@@ -610,11 +552,5 @@ the Insights event. For more information about CloudTrail Insights, see [Working
     }]
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Custom implementations of CloudTrail log file integrity validation
-
-Using the CloudTrail Processing Library
 
 All content copied from https://docs.aws.amazon.com/.

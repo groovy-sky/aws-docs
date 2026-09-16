@@ -3,19 +3,17 @@ title: "Manage payment method access using tags"
 ---
 
 # Manage payment method access using tags
+<a name="manage-payments-tags"></a>
 
 You can use attribute-based access control (ABAC) to manage access to your purchase methods. When you create your payment methods, you can tags with key-value pairs. You can then create IAM policies and specify the tags. For example, if you add the `project` key and assign it a value of `test`, your IAM policies can explicitly allow or deny access to any payment instruments that has this tag.
 
-To add tags to new payment instruments or update existing ones, see [Managing credit card and ACH direct debit](manage-cc.md).
+To add tags to new payment instruments or update existing ones, see [Managing credit cards](manage-cc.md).
 
-###### Example Use tags to allow access
-
+**Example Use tags to allow access**
 The following policy allows the IAM entity to access payment instruments that have the `creditcard` key and a value of visa.
+****
 
-JSON
-
-```json
-
+```
 {
 "Version":"2012-10-17",
     "Statement": [{
@@ -33,17 +31,13 @@ JSON
         }
     }]
 }
-
 ```
 
-###### Example Use tags to deny access
-
+**Example Use tags to deny access**
 The following policy denies the IAM entity from completing any payment action on payment methods that have the `creditcard` key and a value of `visa`.
+****
 
-JSON
-
-```json
-
+```
 {
 "Version":"2012-10-17",
     "Statement": [{
@@ -62,19 +56,10 @@ JSON
         }
     }]
 }
-
 ```
 
-For more information, see the following topics in the _IAM User Guide_:
-
-- [What is ABAC for AWS?](../../../iam/latest/userguide/introduction-attribute-based-access-control.md)
-
-- [Controlling access to AWS resources using tags](../../../iam/latest/userguide/access-tags.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Managing your payments
-
-Making payments
+For more information, see the following topics in the *IAM User Guide*:
++ [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html)
++ [Controlling access to AWS resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html)
 
 All content copied from https://docs.aws.amazon.com/.

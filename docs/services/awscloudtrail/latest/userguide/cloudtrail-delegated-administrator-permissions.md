@@ -3,14 +3,13 @@ title: "Required permissions to assign a delegated administrator"
 ---
 
 # Required permissions to assign a delegated administrator
+<a name="cloudtrail-delegated-administrator-permissions"></a>
 
-When assigning a CloudTrail delegated administrator, you must have the permissions to add and remove the delegated administrator in CloudTrail, as well as certain
-AWS Organizations API actions and IAM permissions listed in the following policy statement.
+When assigning a CloudTrail delegated administrator, you must have the permissions to add and remove the delegated administrator in CloudTrail, as well as certain AWS Organizations API actions and IAM permissions listed in the following policy statement.
 
 You can add the following statement to the end of an IAM policy to grant these permissions:
 
-```json
-
+```
 {
     "Sid": "Permissions",
     "Effect": "Allow",
@@ -28,12 +27,11 @@ You can add the following statement to the end of an IAM policy to grant these p
 ```
 
 ## Considerations when using condition keys with policy statements for delegated administrator permissions
+<a name="cloudtrail-delegated-administrator-permissions-condition-keys-spn"></a>
 
-You might consider using IAM global condition keys when adding policy statements to add and remove the delegated administrator in CloudTrail for additional security.
-When doing so, remember to include both service principal names (SPNs) to the condition. For example:
+You might consider using IAM global condition keys when adding policy statements to add and remove the delegated administrator in CloudTrail for additional security. When doing so, remember to include both service principal names (SPNs) to the condition. For example:
 
-```nohighlight
-
+```
 {
       "Condition": {
         "StringLike": {
@@ -47,15 +45,8 @@ When doing so, remember to include both service principal names (SPNs) to the co
       "Resource": "*",
       "Effect": "Allow"
 }
-
 ```
 
 For more information, see [Identity and Access Management for AWS CloudTrail](security-iam.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Organization delegated administrator
-
-Add a CloudTrail delegated administrator
 
 All content copied from https://docs.aws.amazon.com/.

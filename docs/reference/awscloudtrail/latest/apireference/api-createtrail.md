@@ -3,195 +3,126 @@ title: "CreateTrail"
 ---
 
 # CreateTrail
+<a name="API_CreateTrail"></a>
 
 Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket.
 
 ## Request Syntax
+<a name="API_CreateTrail_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "CloudWatchLogsLogGroupArn": "string",
-   "CloudWatchLogsRoleArn": "string",
-   "EnableLogFileValidation": boolean,
-   "IncludeGlobalServiceEvents": boolean,
-   "IsMultiRegionTrail": boolean,
-   "IsOrganizationTrail": boolean,
-   "KmsKeyId": "string",
-   "Name": "string",
-   "S3BucketName": "string",
-   "S3KeyPrefix": "string",
-   "SnsTopicName": "string",
+   "CloudWatchLogsLogGroupArn": "{{string}}",
+   "CloudWatchLogsRoleArn": "{{string}}",
+   "EnableLogFileValidation": {{boolean}},
+   "IncludeGlobalServiceEvents": {{boolean}},
+   "IsMultiRegionTrail": {{boolean}},
+   "IsOrganizationTrail": {{boolean}},
+   "KmsKeyId": "{{string}}",
+   "Name": "{{string}}",
+   "RecursiveLogging": {{boolean}},
+   "S3BucketName": "{{string}}",
+   "S3KeyPrefix": "{{string}}",
+   "SnsTopicName": "{{string}}",
    "TagsList": [
       {
-         "Key": "string",
-         "Value": "string"
+         "Key": "{{string}}",
+         "Value": "{{string}}"
       }
    ]
 }
 ```
 
 ## Request Parameters
+<a name="API_CreateTrail_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[CloudWatchLogsLogGroupArn](#API_CreateTrail_RequestSyntax)**
-
-Specifies a log group name using an Amazon Resource Name (ARN), a unique identifier that
-represents the log group to which CloudTrail logs will be delivered. You must use a
-log group that exists in your account.
-
+ ** [CloudWatchLogsLogGroupArn](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-CloudWatchLogsLogGroupArn"></a>
+Specifies a log group name using an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered. You must use a log group that exists in your account.
 Not required unless you specify `CloudWatchLogsRoleArn`.
-
 Type: String
-
 Required: No
 
-**[CloudWatchLogsRoleArn](#API_CreateTrail_RequestSyntax)**
-
-Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's
-log group. You must use a role that exists in your account.
-
+ ** [CloudWatchLogsRoleArn](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-CloudWatchLogsRoleArn"></a>
+Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group. You must use a role that exists in your account.
 Type: String
-
 Required: No
 
-**[EnableLogFileValidation](#API_CreateTrail_RequestSyntax)**
-
+ ** [EnableLogFileValidation](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-EnableLogFileValidation"></a>
 Specifies whether log file integrity validation is enabled. The default is false.
-
-###### Note
-
-When you disable log file integrity validation, the chain of digest files is broken
-after one hour. CloudTrail does not create digest files for log files that were
-delivered during a period in which log file integrity validation was disabled. For
-example, if you enable log file integrity validation at noon on January 1, disable it at
-noon on January 2, and re-enable it at noon on January 10, digest files will not be
-created for the log files delivered from noon on January 2 to noon on January 10. The
-same applies whenever you stop CloudTrail logging or delete a trail.
-
+When you disable log file integrity validation, the chain of digest files is broken after one hour. CloudTrail does not create digest files for log files that were delivered during a period in which log file integrity validation was disabled. For example, if you enable log file integrity validation at noon on January 1, disable it at noon on January 2, and re-enable it at noon on January 10, digest files will not be created for the log files delivered from noon on January 2 to noon on January 10. The same applies whenever you stop CloudTrail logging or delete a trail.
 Type: Boolean
-
 Required: No
 
-**[IncludeGlobalServiceEvents](#API_CreateTrail_RequestSyntax)**
-
-Specifies whether the trail is publishing events from global services such as IAM to the
-log files.
-
+ ** [IncludeGlobalServiceEvents](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-IncludeGlobalServiceEvents"></a>
+Specifies whether the trail is publishing events from global services such as IAM to the log files. Setting this value to `true` only delivers global service events to the trail if the trail is multi-Region or if the trail's home Region is the partition leader Region (for example, us-east-1).
 Type: Boolean
-
 Required: No
 
-**[IsMultiRegionTrail](#API_CreateTrail_RequestSyntax)**
-
-Specifies whether the trail is created in the current Region or in all Regions. The
-default is false, which creates a trail only in the Region where you are signed in. As a
-best practice, consider creating trails that log events in all Regions.
-
+ ** [IsMultiRegionTrail](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-IsMultiRegionTrail"></a>
+Specifies whether the trail is created in the current Region or in all Regions. The default is false, which creates a trail only in the Region where you are signed in. As a best practice, consider creating trails that log events in all Regions.
 Type: Boolean
-
 Required: No
 
-**[IsOrganizationTrail](#API_CreateTrail_RequestSyntax)**
-
-Specifies whether the trail is created for all accounts in an organization in AWS Organizations, or only for the current AWS account. The default is false,
-and cannot be true unless the call is made on behalf of an AWS account that
-is the management account or delegated administrator account for an organization in AWS Organizations.
-
+ ** [IsOrganizationTrail](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-IsOrganizationTrail"></a>
+Specifies whether the trail is created for all accounts in an organization in AWS Organizations, or only for the current AWS account. The default is false, and cannot be true unless the call is made on behalf of an AWS account that is the management account or delegated administrator account for an organization in AWS Organizations.
 Type: Boolean
-
 Required: No
 
-**[KmsKeyId](#API_CreateTrail_RequestSyntax)**
-
-Specifies the AWS KMS key ID to use to encrypt the logs and digest files delivered by CloudTrail. The value can be an alias name prefixed by `alias/`, a fully
-specified ARN to an alias, a fully specified ARN to a key, or a globally unique
-identifier.
-
-CloudTrail also supports AWS KMS multi-Region keys. For more
-information about multi-Region keys, see [Using multi-Region\
-keys](../../../../services/kms/latest/developerguide/multi-region-keys-overview.md) in the _AWS Key Management Service Developer Guide_.
-
+ ** [KmsKeyId](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-KmsKeyId"></a>
+Specifies the AWS KMS key ID to use to encrypt the logs and digest files delivered by CloudTrail. The value can be an alias name prefixed by `alias/`, a fully specified ARN to an alias, a fully specified ARN to a key, or a globally unique identifier.
+CloudTrail also supports AWS KMS multi-Region keys. For more information about multi-Region keys, see [Using multi-Region keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html) in the * AWS Key Management Service Developer Guide*.
 Examples:
-
-- `alias/MyAliasName`
-
-- `arn:aws:kms:us-east-2:123456789012:alias/MyAliasName`
-
-- `arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012`
-
-- `12345678-1234-1234-1234-123456789012`
-
++  `alias/MyAliasName`
++  `arn:aws:kms:us-east-2:123456789012:alias/MyAliasName`
++  `arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012`
++  `12345678-1234-1234-1234-123456789012`
 Type: String
-
 Required: No
 
-**[Name](#API_CreateTrail_RequestSyntax)**
-
+ ** [Name](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-Name"></a>
 Specifies the name of the trail. The name must meet the following requirements:
-
-- Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores
-(\_), or dashes (-)
-
-- Start with a letter or number, and end with a letter or number
-
-- Be between 3 and 128 characters
-
-- Have no adjacent periods, underscores or dashes. Names like
-`my-_namespace` and `my--namespace` are not valid.
-
-- Not be in IP address format (for example, 192.168.5.4)
-
++ Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), or dashes (-)
++ Start with a letter or number, and end with a letter or number
++ Be between 3 and 128 characters
++ Have no adjacent periods, underscores or dashes. Names like `my-_namespace` and `my--namespace` are not valid.
++ Not be in IP address format (for example, 192.168.5.4)
 Type: String
-
 Required: Yes
 
-**[S3BucketName](#API_CreateTrail_RequestSyntax)**
+ ** [RecursiveLogging](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-RecursiveLogging"></a>
+Specifies whether recursive logging is enabled for the trail. If you set `RecursiveLogging` to `false`, CloudTrail suppresses events generated by CloudTrail when it delivers log files to your trail's destinations, including Amazon S3 and CloudWatch Logs. The default value is `true`.
+Type: Boolean
+Required: No
 
-Specifies the name of the Amazon S3 bucket designated for publishing log files.
-For information about bucket naming rules, see [Bucket naming rules](../../../../services/s3/latest/userguide/bucketnamingrules.md)
-in the _Amazon Simple Storage Service User Guide_.
-
+ ** [S3BucketName](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-S3BucketName"></a>
+Specifies the name of the Amazon S3 bucket designated for publishing log files. For information about bucket naming rules, see [Bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html) in the *Amazon Simple Storage Service User Guide*.
 Type: String
-
 Required: Yes
 
-**[S3KeyPrefix](#API_CreateTrail_RequestSyntax)**
-
-Specifies the Amazon S3 key prefix that comes after the name of the bucket you
-have designated for log file delivery. For more information, see [Finding Your CloudTrail Log Files](../../../../services/awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.md#cloudtrail-find-log-files). The maximum length is 200
-characters.
-
+ ** [S3KeyPrefix](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-S3KeyPrefix"></a>
+Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see [Finding Your CloudTrail Log Files](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.html#cloudtrail-find-log-files). The maximum length is 200 characters.
 Type: String
-
 Required: No
 
-**[SnsTopicName](#API_CreateTrail_RequestSyntax)**
-
-Specifies the name or ARN of the Amazon SNS topic defined for notification of log file
-delivery. The maximum length is 256 characters.
-
+ ** [SnsTopicName](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-SnsTopicName"></a>
+Specifies the name or ARN of the Amazon SNS topic defined for notification of log file delivery. The maximum length is 256 characters.
 Type: String
-
 Required: No
 
-**[TagsList](#API_CreateTrail_RequestSyntax)**
-
+ ** [TagsList](#API_CreateTrail_RequestSyntax) **   <a name="awscloudtrail-CreateTrail-request-TagsList"></a>
 A list of tags.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Array Members: Maximum number of 200 items.
-
 Required: No
 
 ## Response Syntax
+<a name="API_CreateTrail_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "CloudWatchLogsLogGroupArn": "string",
    "CloudWatchLogsRoleArn": "string",
@@ -201,6 +132,7 @@ Required: No
    "KmsKeyId": "string",
    "LogFileValidationEnabled": boolean,
    "Name": "string",
+   "RecursiveLogging": boolean,
    "S3BucketName": "string",
    "S3KeyPrefix": "string",
    "SnsTopicARN": "string",
@@ -210,376 +142,229 @@ Required: No
 ```
 
 ## Response Elements
+<a name="API_CreateTrail_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[CloudWatchLogsLogGroupArn](#API_CreateTrail_ResponseSyntax)**
-
-Specifies the Amazon Resource Name (ARN) of the log group to which CloudTrail
-logs will be delivered.
-
+ ** [CloudWatchLogsLogGroupArn](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-CloudWatchLogsLogGroupArn"></a>
+Specifies the Amazon Resource Name (ARN) of the log group to which CloudTrail logs will be delivered.
 Type: String
 
-**[CloudWatchLogsRoleArn](#API_CreateTrail_ResponseSyntax)**
-
-Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's
-log group.
-
+ ** [CloudWatchLogsRoleArn](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-CloudWatchLogsRoleArn"></a>
+Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
 Type: String
 
-**[IncludeGlobalServiceEvents](#API_CreateTrail_ResponseSyntax)**
-
-Specifies whether the trail is publishing events from global services such as IAM to the
-log files.
-
+ ** [IncludeGlobalServiceEvents](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-IncludeGlobalServiceEvents"></a>
+Specifies whether the trail is publishing events from global services such as IAM to the log files. Setting this value to `true` only delivers global service events to the trail if the trail is multi-Region or if the trail's home Region is the partition leader Region (for example, us-east-1).
 Type: Boolean
 
-**[IsMultiRegionTrail](#API_CreateTrail_ResponseSyntax)**
-
+ ** [IsMultiRegionTrail](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-IsMultiRegionTrail"></a>
 Specifies whether the trail exists in one Region or in all Regions.
-
 Type: Boolean
 
-**[IsOrganizationTrail](#API_CreateTrail_ResponseSyntax)**
-
+ ** [IsOrganizationTrail](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-IsOrganizationTrail"></a>
 Specifies whether the trail is an organization trail.
-
 Type: Boolean
 
-**[KmsKeyId](#API_CreateTrail_ResponseSyntax)**
-
-Specifies the AWS KMS key ID that encrypts the events delivered by CloudTrail. The value is a fully specified ARN to a AWS KMS key in the
-following format.
-
-`arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012`
-
+ ** [KmsKeyId](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-KmsKeyId"></a>
+Specifies the AWS KMS key ID that encrypts the events delivered by CloudTrail. The value is a fully specified ARN to a AWS KMS key in the following format.
+ `arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012`
 Type: String
 
-**[LogFileValidationEnabled](#API_CreateTrail_ResponseSyntax)**
-
+ ** [LogFileValidationEnabled](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-LogFileValidationEnabled"></a>
 Specifies whether log file integrity validation is enabled.
-
 Type: Boolean
 
-**[Name](#API_CreateTrail_ResponseSyntax)**
-
+ ** [Name](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-Name"></a>
 Specifies the name of the trail.
-
 Type: String
 
-**[S3BucketName](#API_CreateTrail_ResponseSyntax)**
+ ** [RecursiveLogging](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-RecursiveLogging"></a>
+Specifies whether recursive logging is enabled for the trail.
+Type: Boolean
 
-Specifies the name of the Amazon S3 bucket designated for publishing log
-files.
-
+ ** [S3BucketName](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-S3BucketName"></a>
+Specifies the name of the Amazon S3 bucket designated for publishing log files.
 Type: String
 
-**[S3KeyPrefix](#API_CreateTrail_ResponseSyntax)**
-
-Specifies the Amazon S3 key prefix that comes after the name of the bucket you
-have designated for log file delivery. For more information, see [Finding Your CloudTrail Log Files](../../../../services/awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.md#cloudtrail-find-log-files).
-
+ ** [S3KeyPrefix](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-S3KeyPrefix"></a>
+Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see [Finding Your CloudTrail Log Files](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.html#cloudtrail-find-log-files).
 Type: String
 
-**[SnsTopicARN](#API_CreateTrail_ResponseSyntax)**
-
-Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send
-notifications when log files are delivered. The format of a topic ARN is:
-
-`arn:aws:sns:us-east-2:123456789012:MyTopic`
-
+ ** [SnsTopicARN](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-SnsTopicARN"></a>
+Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:
+ `arn:aws:sns:us-east-2:123456789012:MyTopic`
 Type: String
 
-**[SnsTopicName](#API_CreateTrail_ResponseSyntax)**
-
-_This parameter has been deprecated._
-
+ ** [SnsTopicName](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-SnsTopicName"></a>
+ *This parameter has been deprecated.*
 This field is no longer in use. Use `SnsTopicARN`.
-
 Type: String
 
-**[TrailARN](#API_CreateTrail_ResponseSyntax)**
-
+ ** [TrailARN](#API_CreateTrail_ResponseSyntax) **   <a name="awscloudtrail-CreateTrail-response-TrailARN"></a>
 Specifies the ARN of the trail that was created. The format of a trail ARN is:
-
-`arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail`
-
+ `arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail`
 Type: String
 
 ## Errors
+<a name="API_CreateTrail_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**CloudTrailAccessNotEnabledException**
-
-This exception is thrown when trusted access has not been enabled between AWS CloudTrail and AWS Organizations. For more information, see [How to enable or disable trusted access](../../../../services/organizations/latest/userguide/orgs-integrate-services.md#orgs_how-to-enable-disable-trusted-access) in the _AWS Organizations User Guide_ and [Prepare For Creating a Trail For Your Organization](../../../../services/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.md) in the _AWS CloudTrail User Guide_.
-
+ ** CloudTrailAccessNotEnabledException **
+This exception is thrown when trusted access has not been enabled between AWS CloudTrail and AWS Organizations. For more information, see [How to enable or disable trusted access](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html#orgs_how-to-enable-disable-trusted-access) in the * AWS Organizations User Guide* and [Prepare For Creating a Trail For Your Organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.html) in the * AWS CloudTrail User Guide*.
 HTTP Status Code: 400
 
-**CloudTrailInvalidClientTokenIdException**
-
-This exception is thrown when a call results in the `InvalidClientTokenId`
-error code. This can occur when you are creating or updating a trail to send notifications
-to an Amazon SNS topic that is in a suspended AWS account.
-
+ ** CloudTrailInvalidClientTokenIdException **
+This exception is thrown when a call results in the `InvalidClientTokenId` error code. This can occur when you are creating or updating a trail to send notifications to an Amazon SNS topic that is in a suspended AWS account.
 HTTP Status Code: 400
 
-**CloudWatchLogsDeliveryUnavailableException**
-
+ ** CloudWatchLogsDeliveryUnavailableException **
 Cannot set a CloudWatch Logs delivery for this Region.
-
 HTTP Status Code: 400
 
-**ConflictException**
-
-This exception is thrown when the specified resource is not ready for an operation. This
-can occur when you try to run an operation on a resource before CloudTrail has time
-to fully load the resource, or because another operation is modifying the resource. If this exception occurs, wait a few minutes, and then try the
-operation again.
-
+ ** ConflictException **
+This exception is thrown when the specified resource is not ready for an operation. This can occur when you try to run an operation on a resource before CloudTrail has time to fully load the resource, or because another operation is modifying the resource. If this exception occurs, wait a few minutes, and then try the operation again.
 HTTP Status Code: 400
 
-**InsufficientDependencyServiceAccessPermissionException**
-
-This exception is thrown when the IAM identity that is used to create
-the organization resource lacks one or more required permissions for creating an
-organization resource in a required service.
-
+ ** InsufficientDependencyServiceAccessPermissionException **
+This exception is thrown when the IAM identity that is used to create the organization resource lacks one or more required permissions for creating an organization resource in a required service.
 HTTP Status Code: 400
 
-**InsufficientEncryptionPolicyException**
-
-For the `CreateTrail` `PutInsightSelectors`, `UpdateTrail`, `StartQuery`, and `StartImport` operations, this exception is thrown
-when the policy on the S3 bucket or AWS KMS key does
-not have sufficient permissions for the operation.
-
-For all other operations, this exception is thrown when the policy for the AWS KMS key does
-not have sufficient permissions for the operation.
-
+ ** InsufficientEncryptionPolicyException **
+For the `CreateTrail` `PutInsightSelectors`, `UpdateTrail`, `StartQuery`, and `StartImport` operations, this exception is thrown when the policy on the S3 bucket or AWS KMS key does not have sufficient permissions for the operation.
+For all other operations, this exception is thrown when the policy for the AWS KMS key does not have sufficient permissions for the operation.
 HTTP Status Code: 400
 
-**InsufficientS3BucketPolicyException**
-
+ ** InsufficientS3BucketPolicyException **
 This exception is thrown when the policy on the S3 bucket is not sufficient.
-
 HTTP Status Code: 400
 
-**InsufficientSnsTopicPolicyException**
-
-This exception is thrown when the policy on the Amazon SNS topic is not
-sufficient.
-
+ ** InsufficientSnsTopicPolicyException **
+This exception is thrown when the policy on the Amazon SNS topic is not sufficient.
 HTTP Status Code: 400
 
-**InvalidCloudWatchLogsLogGroupArnException**
-
-This exception is thrown when the provided CloudWatch Logs log group is not
-valid.
-
+ ** InvalidCloudWatchLogsLogGroupArnException **
+This exception is thrown when the provided CloudWatch Logs log group is not valid.
 HTTP Status Code: 400
 
-**InvalidCloudWatchLogsRoleArnException**
-
+ ** InvalidCloudWatchLogsRoleArnException **
 This exception is thrown when the provided role is not valid.
-
 HTTP Status Code: 400
 
-**InvalidKmsKeyIdException**
-
+ ** InvalidKmsKeyIdException **
 This exception is thrown when the AWS KMS key ARN is not valid.
-
 HTTP Status Code: 400
 
-**InvalidParameterCombinationException**
-
-This exception is thrown when the combination of parameters provided is not
-valid.
-
+ ** InvalidParameterCombinationException **
+This exception is thrown when the combination of parameters provided is not valid.
 HTTP Status Code: 400
 
-**InvalidParameterException**
-
+ ** InvalidParameterException **
 The request includes a parameter that is not valid.
-
 HTTP Status Code: 400
 
-**InvalidS3BucketNameException**
-
+ ** InvalidS3BucketNameException **
 This exception is thrown when the provided S3 bucket name is not valid.
-
 HTTP Status Code: 400
 
-**InvalidS3PrefixException**
-
+ ** InvalidS3PrefixException **
 This exception is thrown when the provided S3 prefix is not valid.
-
 HTTP Status Code: 400
 
-**InvalidSnsTopicNameException**
-
+ ** InvalidSnsTopicNameException **
 This exception is thrown when the provided SNS topic name is not valid.
-
 HTTP Status Code: 400
 
-**InvalidTagParameterException**
-
-This exception is thrown when the specified tag key or values are not valid. It can also
-occur if there are duplicate tags or too many tags on the resource.
-
+ ** InvalidTagParameterException **
+This exception is thrown when the specified tag key or values are not valid. It can also occur if there are duplicate tags or too many tags on the resource.
 HTTP Status Code: 400
 
-**InvalidTrailNameException**
-
-This exception is thrown when the provided trail name is not valid. Trail names must
-meet the following requirements:
-
-- Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores
-(\_), or dashes (-)
-
-- Start with a letter or number, and end with a letter or number
-
-- Be between 3 and 128 characters
-
-- Have no adjacent periods, underscores or dashes. Names like
-`my-_namespace` and `my--namespace` are not valid.
-
-- Not be in IP address format (for example, 192.168.5.4)
-
+ ** InvalidTrailNameException **
+This exception is thrown when the provided trail name is not valid. Trail names must meet the following requirements:
++ Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), or dashes (-)
++ Start with a letter or number, and end with a letter or number
++ Be between 3 and 128 characters
++ Have no adjacent periods, underscores or dashes. Names like `my-_namespace` and `my--namespace` are not valid.
++ Not be in IP address format (for example, 192.168.5.4)
 HTTP Status Code: 400
 
-**KmsException**
-
-This exception is thrown when there is an issue with the specified AWS KMS
-key and the trail or event data store can't be updated.
-
+ ** KmsException **
+This exception is thrown when there is an issue with the specified AWS KMS key and the trail or event data store can't be updated.
 HTTP Status Code: 400
 
-**KmsKeyDisabledException**
-
-_This error has been deprecated._
-
+ ** KmsKeyDisabledException **
+ *This error has been deprecated.*
 This exception is no longer in use.
-
 HTTP Status Code: 400
 
-**KmsKeyNotFoundException**
-
-This exception is thrown when the AWS KMS key does not exist, when the S3
-bucket and the AWS KMS key are not in the same Region, or when the AWS KMS key associated with the Amazon SNS topic either does not exist or is
-not in the same Region.
-
+ ** KmsKeyNotFoundException **
+This exception is thrown when the AWS KMS key does not exist, when the S3 bucket and the AWS KMS key are not in the same Region, or when the AWS KMS key associated with the Amazon SNS topic either does not exist or is not in the same Region.
 HTTP Status Code: 400
 
-**MaximumNumberOfTrailsExceededException**
-
+ ** MaximumNumberOfTrailsExceededException **
 This exception is thrown when the maximum number of trails is reached.
-
 HTTP Status Code: 400
 
-**NoManagementAccountSLRExistsException**
-
-This exception is thrown when the management account does not have a service-linked
-role.
-
+ ** NoManagementAccountSLRExistsException **
+ This exception is thrown when the management account does not have a service-linked role.
 HTTP Status Code: 400
 
-**NotOrganizationMasterAccountException**
-
-This exception is thrown when the AWS account making the request to
-create or update an organization trail or event data store is not the management account
-for an organization in AWS Organizations. For more information, see [Prepare For Creating a Trail For Your Organization](../../../../services/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.md) or [Organization event data stores](../../../../services/awscloudtrail/latest/userguide/cloudtrail-lake-organizations.md).
-
+ ** NotOrganizationMasterAccountException **
+This exception is thrown when the AWS account making the request to create or update an organization trail or event data store is not the management account for an organization in AWS Organizations. For more information, see [Prepare For Creating a Trail For Your Organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.html) or [Organization event data stores](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-organizations.html).
 HTTP Status Code: 400
 
-**OperationNotPermittedException**
-
+ ** OperationNotPermittedException **
 This exception is thrown when the requested operation is not permitted.
-
 HTTP Status Code: 400
 
-**OrganizationNotInAllFeaturesModeException**
-
-This exception is thrown when AWS Organizations is not configured to support all
-features. All features must be enabled in Organizations to support creating an
-organization trail or event data store.
-
+ ** OrganizationNotInAllFeaturesModeException **
+This exception is thrown when AWS Organizations is not configured to support all features. All features must be enabled in Organizations to support creating an organization trail or event data store.
 HTTP Status Code: 400
 
-**OrganizationsNotInUseException**
-
-This exception is thrown when the request is made from an AWS account
-that is not a member of an organization. To make this request, sign in using the
-credentials of an account that belongs to an organization.
-
+ ** OrganizationsNotInUseException **
+This exception is thrown when the request is made from an AWS account that is not a member of an organization. To make this request, sign in using the credentials of an account that belongs to an organization.
 HTTP Status Code: 400
 
-**S3BucketDoesNotExistException**
-
+ ** S3BucketDoesNotExistException **
 This exception is thrown when the specified S3 bucket does not exist.
-
 HTTP Status Code: 400
 
-**TagsLimitExceededException**
-
-The number of tags per trail, event data store, dashboard, or channel has exceeded the permitted amount. Currently, the limit is
-50.
-
+ ** TagsLimitExceededException **
+The number of tags per trail, event data store, dashboard, or channel has exceeded the permitted amount. Currently, the limit is 50.
 HTTP Status Code: 400
 
-**ThrottlingException**
-
-This exception is thrown when the request rate exceeds the limit.
-
+ ** ThrottlingException **
+ This exception is thrown when the request rate exceeds the limit.
 HTTP Status Code: 400
 
-**TrailAlreadyExistsException**
-
+ ** TrailAlreadyExistsException **
 This exception is thrown when the specified trail already exists.
-
 HTTP Status Code: 400
 
-**TrailNotProvidedException**
-
+ ** TrailNotProvidedException **
 This exception is no longer in use.
-
 HTTP Status Code: 400
 
-**UnsupportedOperationException**
-
+ ** UnsupportedOperationException **
 This exception is thrown when the requested operation is not supported.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_CreateTrail_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/cloudtrail-2013-11-01/createtrail.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudtrail-2013-11-01/createtrail.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateEventDataStore
-
-DeleteChannel
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/cloudtrail-2013-11-01/CreateTrail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-2013-11-01/CreateTrail)
 
 All content copied from https://docs.aws.amazon.com/.

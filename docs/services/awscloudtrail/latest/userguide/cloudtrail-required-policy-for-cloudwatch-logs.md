@@ -3,22 +3,18 @@ title: "Role policy document for CloudTrail to use CloudWatch Logs for monitorin
 ---
 
 # Role policy document for CloudTrail to use CloudWatch Logs for monitoring
+<a name="cloudtrail-required-policy-for-cloudwatch-logs"></a>
 
-This section describes the permissions policy required for the CloudTrail role to send log events to
-CloudWatch Logs. You can attach a policy document to a role when you configure CloudTrail to send events, as
-described in [Sending events to CloudWatch Logs](send-cloudtrail-events-to-cloudwatch-logs.md). You can
-also create a role using IAM. For more information, see [Creating a role to delegate permissions to an AWS service](../../../iam/latest/userguide/id-roles-create-for-service.md) or
-[Creating an IAM role (AWS CLI)](../../../iam/latest/userguide/id-roles-create-for-user.md#roles-creatingrole-user-cli).
+This section describes the permissions policy required for the CloudTrail role to send log events to CloudWatch Logs. You can attach a policy document to a role when you configure CloudTrail to send events, as described in [Sending events to CloudWatch Logs](send-cloudtrail-events-to-cloudwatch-logs.md). You can also create a role using IAM. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) or [Creating an IAM role (AWS CLI)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html#roles-creatingrole-user-cli).
 
-The following example policy document contains the permissions required to create a CloudWatch log
-stream in the log group that you specify and to deliver CloudTrail events to that log
-stream in the US East (Ohio) Region. (This is the default policy for the default IAM role
-`CloudTrail_CloudWatchLogs_Role`.)
+The following example policy document contains the permissions required to create a CloudWatch log stream in the log group that you specify and to deliver CloudTrail events to that log stream in the US East (Ohio) Region. (This is the default policy for the default IAM role `CloudTrail_CloudWatchLogs_Role`.)
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -29,7 +25,7 @@ JSON
                 "logs:CreateLogStream"
             ],
             "Resource": [
-                "arn:aws:logs:us-east-2:111122223333:log-group:log_group_name:log-stream:CloudTrail_log_stream_name_prefix*"
+                "arn:aws:logs:{{us-east-2}}:{{111122223333}}:log-group:{{log_group_name}}:log-stream:{{CloudTrail_log_stream_name_prefix}}*"
             ]
         },
         {
@@ -39,26 +35,23 @@ JSON
                 "logs:PutLogEvents"
             ],
             "Resource": [
-                "arn:aws:logs:us-east-2:111122223333:log-group:log_group_name:log-stream:CloudTrail_log_stream_name_prefix*"
+                "arn:aws:logs:{{us-east-2}}:{{111122223333}}:log-group:{{log_group_name}}:log-stream:{{CloudTrail_log_stream_name_prefix}}*"
             ]
         }
     ]
 }
-
 ```
 
-If you're creating a policy that might be used for organization trails as well, you will
-need to modify it from the default policy created for the role. For example, the following
-policy grants CloudTrail the permissions required to create a CloudWatch Logs log stream in the log group
-you specify as the value of `log_group_name`, and to deliver CloudTrail
-events to that log stream for both trails in the AWS account 111111111111 and for
-organization trails created in the 111111111111 account that are applied to the
-AWS Organizations organization with the ID of `o-exampleorgid`:
+------
 
-JSON
+If you're creating a policy that might be used for organization trails as well, you will need to modify it from the default policy created for the role. For example, the following policy grants CloudTrail the permissions required to create a CloudWatch Logs log stream in the log group you specify as the value of {{log\_group\_name}}, and to deliver CloudTrail events to that log stream for both trails in the AWS account 111111111111 and for organization trails created in the 111111111111 account that are applied to the AWS Organizations organization with the ID of {{o-exampleorgid}}:
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,8 +62,8 @@ JSON
                 "logs:CreateLogStream"
             ],
             "Resource": [
-                "arn:aws:logs:us-east-2:111111111111:log-group:log_group_name:log-stream:111111111111_CloudTrail_us-east-2*",
-                "arn:aws:logs:us-east-2:111111111111:log-group:log_group_name:log-stream:o-exampleorgid_*"
+                "arn:aws:logs:us-east-2:111111111111:log-group:{{log_group_name}}:log-stream:111111111111_CloudTrail_us-east-2*",
+                "arn:aws:logs:us-east-2:111111111111:log-group:{{log_group_name}}:log-stream:{{o-exampleorgid}}_*"
             ]
         },
         {
@@ -80,21 +73,16 @@ JSON
                 "logs:PutLogEvents"
             ],
             "Resource": [
-                "arn:aws:logs:us-east-2:111111111111:log-group:log_group_name:log-stream:111111111111_CloudTrail_us-east-2*",
-                "arn:aws:logs:us-east-2:111111111111:log-group:log_group_name:log-stream:o-exampleorgid_*"
+                "arn:aws:logs:us-east-2:111111111111:log-group:{{log_group_name}}:log-stream:111111111111_CloudTrail_us-east-2*",
+                "arn:aws:logs:us-east-2:111111111111:log-group:{{log_group_name}}:log-stream:{{o-exampleorgid}}_*"
             ]
         }
     ]
 }
-
 ```
 
+------
+
 For more information about organization trails, see [Creating a trail for an organization](creating-trail-organization.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatch log group and log stream naming for CloudTrail
-
-Receiving CloudTrail log files from multiple accounts
 
 All content copied from https://docs.aws.amazon.com/.

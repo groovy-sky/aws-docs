@@ -3,49 +3,33 @@ title: "PartitionKey"
 ---
 
 # PartitionKey
+<a name="API_PartitionKey"></a>
 
 Contains information about a partition key for an event data store.
 
 ## Contents
+<a name="API_PartitionKey_Contents"></a>
 
-**Name**
-
+ ** Name **   <a name="awscloudtrail-Type-PartitionKey-Name"></a>
 The name of the partition key.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 255.
-
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
 Required: Yes
 
-**Type**
-
+ ** Type **   <a name="awscloudtrail-Type-PartitionKey-Type"></a>
 The data type of the partition key. For example, `bigint` or `string`.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 255.
-
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
 Required: Yes
 
 ## See Also
+<a name="API_PartitionKey_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/cloudtrail-2013-11-01/partitionkey.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudtrail-2013-11-01/partitionkey.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudtrail-2013-11-01/partitionkey.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LookupAttribute
-
-PublicKey
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudtrail-2013-11-01/PartitionKey)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudtrail-2013-11-01/PartitionKey)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-2013-11-01/PartitionKey)
 
 All content copied from https://docs.aws.amazon.com/.
