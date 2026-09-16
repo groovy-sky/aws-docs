@@ -3,49 +3,34 @@ title: "DocumentationVersion"
 ---
 
 # DocumentationVersion
+<a name="API_DocumentationVersion"></a>
 
 A snapshot of the documentation of an API.
 
 ## Contents
+<a name="API_DocumentationVersion_Contents"></a>
 
-**createdDate**
-
+ ** createdDate **   <a name="apigw-Type-DocumentationVersion-createdDate"></a>
 The date when the API documentation snapshot is created.
-
 Type: Timestamp
-
 Required: No
 
-**description**
-
+ ** description **   <a name="apigw-Type-DocumentationVersion-description"></a>
 The description of the API documentation snapshot.
-
 Type: String
-
 Required: No
 
-**version**
-
+ ** version **   <a name="apigw-Type-DocumentationVersion-version"></a>
 The version identifier of the API documentation snapshot.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_DocumentationVersion_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/documentationversion.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/documentationversion.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/documentationversion.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentationPartLocation
-
-DomainName
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/DocumentationVersion)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/DocumentationVersion)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/DocumentationVersion)
 
 All content copied from https://docs.aws.amazon.com/.

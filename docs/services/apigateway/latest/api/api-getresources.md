@@ -3,47 +3,44 @@ title: "GetResources"
 ---
 
 # GetResources
+<a name="API_GetResources"></a>
 
 Lists information about a collection of Resource resources.
 
 ## Request Syntax
+<a name="API_GetResources_RequestSyntax"></a>
 
-```nohighlight
-
-GET /restapis/restapi_id/resources?embed=embed&limit=limit&position=position HTTP/1.1
-
+```
+GET /restapis/{{restapi_id}}/resources?embed={{embed}}&limit={{limit}}&position={{position}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetResources_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[embed](#API_GetResources_RequestSyntax)**
-
+ ** [embed](#API_GetResources_RequestSyntax) **   <a name="apigw-GetResources-request-uri-embed"></a>
 A query parameter used to retrieve the specified resources embedded in the returned Resources resource in the response. This `embed` parameter value is a list of comma-separated strings. Currently, the request supports only retrieval of the embedded Method resources this way. The query parameter value must be a single-valued list and contain the `"methods"` string. For example, `GET /restapis/{restapi_id}/resources?embed=methods`.
 
-**[limit](#API_GetResources_RequestSyntax)**
-
+ ** [limit](#API_GetResources_RequestSyntax) **   <a name="apigw-GetResources-request-uri-limit"></a>
 The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
 
-**[position](#API_GetResources_RequestSyntax)**
-
+ ** [position](#API_GetResources_RequestSyntax) **   <a name="apigw-GetResources-request-uri-position"></a>
 The current pagination position in the paged result set.
 
-**[restapi\_id](#API_GetResources_RequestSyntax)**
-
+ ** [restapi\_id](#API_GetResources_RequestSyntax) **   <a name="apigw-GetResources-request-uri-restApiId"></a>
 The string identifier of the associated RestApi.
-
 Required: Yes
 
 ## Request Body
+<a name="API_GetResources_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetResources_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -126,74 +123,65 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetResources_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[item](#API_GetResources_ResponseSyntax)**
-
+ ** [item](#API_GetResources_ResponseSyntax) **   <a name="apigw-GetResources-response-item"></a>
 The current page of elements from this collection.
+Type: Array of [Resource](API_Resource.md) objects
 
-Type: Array of [Resource](api-resource.md) objects
-
-**[position](#API_GetResources_ResponseSyntax)**
-
+ ** [position](#API_GetResources_ResponseSyntax) **   <a name="apigw-GetResources-response-position"></a>
 The current pagination position in the paged result set.
-
 Type: String
 
 ## Errors
+<a name="API_GetResources_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The submitted request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.
-
 HTTP Status Code: 400
 
-**NotFoundException**
-
+ ** NotFoundException **
 The requested resource is not found. Make sure that the request URI is correct.
-
 HTTP Status Code: 404
 
-**TooManyRequestsException**
-
+ ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
-
 HTTP Status Code: 401
 
 ## Examples
+<a name="API_GetResources_Examples"></a>
 
 ### Get an API resource collection
+<a name="API_GetResources_Example_1"></a>
 
 This example illustrates one usage of GetResources.
 
 #### Sample Request
+<a name="API_GetResources_Example_1_Request"></a>
 
 ```
-
 GET /restapis/fugvjdxtri/resources HTTP/1.1
 Content-Type: application/json
 Host: apigateway.us-east-1.amazonaws.com
 X-Amz-Date: 20160602T173305Z
 Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160602/us-east-1/apigateway/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature={sig4_hash}
 Response
-
 ```
 
 #### Sample Response
+<a name="API_GetResources_Example_1_Response"></a>
 
 ```
-
 {
   "_links": {
     "curies": [
@@ -252,33 +240,18 @@ Response
 ```
 
 ## See Also
+<a name="API_GetResources_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for Python](../../../goto/boto3/apigateway-2015-07-09/getresources.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/getresources.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetResource
-
-GetRestApi
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/GetResources)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/GetResources)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/GetResources)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/GetResources)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/GetResources)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/GetResources)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/GetResources)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/GetResources)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/GetResources)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/GetResources)
 
 All content copied from https://docs.aws.amazon.com/.

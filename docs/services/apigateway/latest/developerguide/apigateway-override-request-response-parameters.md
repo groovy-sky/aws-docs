@@ -3,134 +3,113 @@ title: "Override your API's request and response parameters and status codes for
 ---
 
 # Override your API's request and response parameters and status codes for REST APIs in API Gateway
+<a name="apigateway-override-request-response-parameters"></a>
 
-You can use mapping template transformations to override any type of request parameter, response header, or response status
-code. You use a mapping template to do the following:
+You can use mapping template transformations to override any type of request parameter, response header, or response status code. You use a mapping template to do the following:
++ Perform many-to-one parameter mappings
++ Override parameters after standard API Gateway mappings have been applied
++ Conditionally map parameters based on body content or other parameter values
++ Programmatically create new parameters
++ Override status codes returned by your integration endpoint
 
-- Perform many-to-one parameter mappings
-
-- Override parameters after standard API Gateway mappings have been applied
-
-- Conditionally map parameters based on body content or other parameter values
-
-- Programmatically create new parameters
-
-- Override status codes returned by your integration endpoint
-
-Overrides are final. An override may only be applied to each parameter once. If you try to override the same
-parameter multiple times, API Gateway returns a `5XX` response. If you must override the same
-parameter multiple times throughout the template, we recommend creating a variable and applying the override at
-the end of the template. The template is applied only after the entire template is parsed.
+Overrides are final. An override may only be applied to each parameter once. If you try to override the same parameter multiple times, API Gateway returns a `5XX` response. If you must override the same parameter multiple times throughout the template, we recommend creating a variable and applying the override at the end of the template. The template is applied only after the entire template is parsed.
 
 ## Example 1: Override the status code based on the integration body
+<a name="apigateway-override-request-response-examples"></a>
 
-The following example use the [example API](api-gateway-create-api-from-example.md) to
-override the status code based on the integration response body.
+The following example use the [example API](api-gateway-create-api-from-example.md) to override the status code based on the integration response body.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To override a status code based on the integration response body
+**To override a status code based on the integration response body**
 
-01. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-02. Choose **Create API**.
+1. Choose **Create API**.
 
-03. For **REST API**, choose **Build**.
+1. For **REST API**, choose **Build**.
 
-04. For **API details**, choose **Example API**.
+1. For **API details**, choose **Example API**.
 
-05. Choose **Create API**.
+1. Choose **Create API**.
 
-    API Gateway creates an example pet store API. To retrieve information about a pet, you use the API method request of `GET
-                 /pets/{petId}`, where `{petId}` is a path parameter corresponding to an ID number for a pet.
+   API Gateway creates an example pet store API. To retrieve information about a pet, you use the API method request of `GET /pets/{petId}`, where `{petId}` is a path parameter corresponding to an ID number for a pet.
 
-    In this example, you override the `GET` method's response code to `400` when an
-     error condition is detected.
+   In this example, you override the `GET` method's response code to `400` when an error condition is detected.
 
-06. In the **Resources** tree, choose the `GET` method under
-     `/{petId}`.
+1. In the **Resources** tree, choose the `GET` method under `/{petId}`.
 
-07. First, you test the current implementation of the API.
+1. First, you test the current implementation of the API.
 
-    Choose the **Test** tab. You might need to choose the right arrow button to show the
-     tab.
+   Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
 
-08. For **petId**, enter `-1`, and then choose
-     **Test**.
+1. For **petId**, enter **-1**, and then choose **Test**.
 
-    The **Response body** indicates an out-of-range error:
+   The **Response body** indicates an out-of-range error:
 
-    ```nohighlight
+   ```
+   {
+     "errors": [
+       {
+         "key": "GetPetRequest.petId",
+         "message": "The value is out of range."
+       }
+     ]
+   }
+   ```
 
-    {
-      "errors": [
-        {
-          "key": "GetPetRequest.petId",
-          "message": "The value is out of range."
-        }
-      ]
-    }
-    ```
+   In addition, the last line under **Logs** ends with: `Method completed with status: 200`.
 
-    In addition, the last line under **Logs** ends with: `Method completed with status:
-                 200`.
+   The integration was completed successfully, but there was an error. Now you'll override the status code based on the integration response.
 
-    The integration was completed successfully, but there was an error. Now you'll override the status
-     code based on the integration response.
+1. On the **Integration response** tab, for the **Default - Response**, choose **Edit**.
 
-09. On the **Integration response** tab, for the **Default - Response**,
-     choose **Edit**.
+1. Choose **Mapping templates**.
 
-10. Choose **Mapping templates**.
+1. Choose **Add mapping template**.
 
-11. Choose **Add mapping template**.
+1. For **Content type**, enter **application/json**.
 
-12. For **Content type**, enter `application/json`.
+1. For **Template body**, enter the following:
 
-13. For **Template body**, enter the following:
+   ```
+   #set($inputRoot = $input.path('$'))
+   $input.json("$")
+   #if($inputRoot.toString().contains("error"))
+   #set($context.responseOverride.status = 400)
+   #end
+   ```
 
-    ```nohighlight
+   This mapping template uses the `$context.responseOverride.status` variable to override the status code to `400` if the integration response contains the string `error`.
 
-    #set($inputRoot = $input.path('$'))
-    $input.json("$")
-    #if($inputRoot.toString().contains("error"))
-    #set($context.responseOverride.status = 400)
-    #end
-    ```
+1. Choose **Save**.
 
-    This mapping template uses the `$context.responseOverride.status` variable to override the
-     status code to `400` if the integration response contains the string `error`.
+1. Choose the **Test** tab.
 
-14. Choose **Save**.
+1. For **petId**, enter **-1**.
 
-15. Choose the **Test** tab.
+1. In the results, the **Response Body** indicates an out-of-range error:
 
-16. For **petId**, enter `-1`.
+   ```
+   {
+     "errors": [
+       {
+         "key": "GetPetRequest.petId",
+         "message": "The value is out of range."
+       }
+     ]
+   }
+   ```
 
-17. In the results, the **Response Body** indicates an out-of-range error:
+   However, the last line under **Logs** now ends with: `Method completed with status: 400`.
 
-    ```nohighlight
+------
+#### [ CloudFormation ]
 
-    {
-      "errors": [
-        {
-          "key": "GetPetRequest.petId",
-          "message": "The value is out of range."
-        }
-      ]
-    }
-    ```
+ In this example, you use the [body](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
 
-    However, the last line under **Logs** now ends with: `Method completed with
-                 status: 400`.
-
-CloudFormation
-
-In this example, you use the
-[body](../../../cloudformation/latest/userguide/aws-resource-apigateway-restapi.md#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
-
-```nohighlight
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -200,13 +179,12 @@ Resources:
        StageName: prod
 ```
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
-The following OpenAPI definition creates the `GET pets/{petId}` resource and overrides the
-status code based on the integration body.
+The following OpenAPI definition creates the `GET pets/{petId}` resource and overrides the status code based on the integration body.
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -271,94 +249,86 @@ status code based on the integration body.
 }
 ```
 
+------
+
 ## Example 2: Override the request header and create new headers
+<a name="apigateway-override-request-response-examples-2"></a>
 
-The following example uses the [example API](api-gateway-create-api-from-example.md) to
-override the request header and create new headers.
+The following example uses the [example API](api-gateway-create-api-from-example.md) to override the request header and create new headers.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To override a method's request header by creating a new header
+**To override a method's request header by creating a new header**
 
-01. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-02. Choose the example API you created in the previous tutorial. The name of the API should be **PetStore**.
+1. Choose the example API you created in the previous tutorial. The name of the API should be **PetStore**.
 
-03. In the **Resources** tree, choose the `GET` method under
-     `/pet`.
+1. In the **Resources** tree, choose the `GET` method under `/pet`.
 
-04. On the **Method request** tab, for **Method request settings**, choose
-     **Edit**.
+1. On the **Method request** tab, for **Method request settings**, choose **Edit**.
 
-05. Choose **HTTP request headers**, and then choose **Add**
-    **header**.
+1. Choose **HTTP request headers**, and then choose **Add header**.
 
-06. For **Name**, enter `header1`.
+1. For **Name**, enter **header1**.
 
-07. Choose **Add header**, and then create a second header called
-     `header2`.
+1. Choose **Add header**, and then create a second header called **header2**.
 
-08. Choose **Save**.
+1. Choose **Save**.
 
-    Now, you combine these headers into one header value using a mapping template.
+   Now, you combine these headers into one header value using a mapping template.
 
-09. On the **Integration request** tab, for **Integration request**
-    **settings**, choose **Edit**.
+1. On the **Integration request** tab, for **Integration request settings**, choose **Edit**.
 
-10. For **Request body passthrough**, select **When there are no templates defined**
-    **(recommended)**.
+1. For **Request body passthrough**, select **When there are no templates defined (recommended)**.
 
-11. Choose **Mapping templates**, and then do the following:
-    1. Choose **Add mapping template**.
+1. Choose **Mapping templates**, and then do the following:
 
-    2. For **Content type**, enter `application/json`.
+   1. Choose **Add mapping template**.
 
-    3. For **Template body**, enter the following:
+   1. For **Content type**, enter **application/json**.
 
-       ```nohighlight
+   1. For **Template body**, enter the following:
 
-       #set($header1Override = "pets")
-       #set($header3Value = "$input.params('header1')$input.params('header2')")
-       $input.json("$")
-       #set($context.requestOverride.header.header3 = $header3Value)
-       #set($context.requestOverride.header.header1 = $header1Override)
-       #set($context.requestOverride.header.multivalueheader=[$header1Override, $header3Value])
-       ```
+      ```
+      #set($header1Override = "pets")
+      #set($header3Value = "$input.params('header1')$input.params('header2')")
+      $input.json("$")
+      #set($context.requestOverride.header.header3 = $header3Value)
+      #set($context.requestOverride.header.header1 = $header1Override)
+      #set($context.requestOverride.header.multivalueheader=[$header1Override, $header3Value])
+      ```
 
-       This mapping template overrides `header1` with the string `pets` and creates a
-        multi-value header called `$header3Value` that combines `header1` and
-        `header2`.
-12. Choose **Save**.
+      This mapping template overrides `header1` with the string `pets` and creates a multi-value header called `$header3Value` that combines `header1` and `header2`.
 
-13. Choose the **Test** tab.
+1. Choose **Save**.
 
-14. Under **Headers**, copy the following code:
+1. Choose the **Test** tab.
 
-    ```nohighlight
+1. Under **Headers**, copy the following code:
 
-    header1:header1Val
-    header2:header2Val
-    ```
+   ```
+   header1:header1Val
+   header2:header2Val
+   ```
 
-15. Choose **Test**.
+1. Choose **Test**.
 
-    In the
-     **Logs**, you should see an entry that includes this text:
+   In the **Logs**, you should see an entry that includes this text:
 
-    ```nohighlight
+   ```
+   Endpoint request headers: {header3=header1Valheader2Val,
+   header2=header2Val, header1=pets, x-amzn-apigateway-api-id={{api-id}},
+   Accept=application/json, multivalueheader=pets,header1Valheader2Val}
+   ```
 
-    Endpoint request headers: {header3=header1Valheader2Val,
-    header2=header2Val, header1=pets, x-amzn-apigateway-api-id=api-id,
-    Accept=application/json, multivalueheader=pets,header1Valheader2Val}
-    ```
+------
+#### [ CloudFormation ]
 
-CloudFormation
+ In this example, you use the [body](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
 
-In this example, you use the
-[body](../../../cloudformation/latest/userguide/aws-resource-apigateway-restapi.md#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
-
-```nohighlight
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -443,13 +413,12 @@ Resources:
        StageName: prod
 ```
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
-The following OpenAPI definition creates the `GET pets` resource and overrides the
-request header and create new headers.
+ The following OpenAPI definition creates the `GET pets` resource and overrides the request header and create new headers.
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -516,13 +485,8 @@ request header and create new headers.
 }
 ```
 
-To use a mapping template override, add one or more of the following `$context` variables. For a list of
-`$context` variables, see [Context variables for data transformations](api-gateway-mapping-template-reference.md#context-variable-reference).
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Additional mapping template example
-
-Tutorial: Modify the integration request and response for integrations to AWS services
+To use a mapping template override, add one or more of the following `$context` variables. For a list of `$context` variables, see [Context variables for data transformations](api-gateway-mapping-template-reference.md#context-variable-reference).
 
 All content copied from https://docs.aws.amazon.com/.

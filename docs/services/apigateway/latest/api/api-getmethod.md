@@ -3,47 +3,43 @@ title: "GetMethod"
 ---
 
 # GetMethod
+<a name="API_GetMethod"></a>
 
 Describe an existing Method resource.
 
 ## Request Syntax
+<a name="API_GetMethod_RequestSyntax"></a>
 
-```nohighlight
-
-GET /restapis/restapi_id/resources/resource_id/methods/http_method HTTP/1.1
-
+```
+GET /restapis/{{restapi_id}}/resources/{{resource_id}}/methods/{{http_method}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetMethod_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[http\_method](#API_GetMethod_RequestSyntax)**
-
+ ** [http\_method](#API_GetMethod_RequestSyntax) **   <a name="apigw-GetMethod-request-uri-httpMethod"></a>
 Specifies the method request's HTTP method type.
-
 Required: Yes
 
-**[resource\_id](#API_GetMethod_RequestSyntax)**
-
+ ** [resource\_id](#API_GetMethod_RequestSyntax) **   <a name="apigw-GetMethod-request-uri-resourceId"></a>
 The Resource identifier for the Method resource.
-
 Required: Yes
 
-**[restapi\_id](#API_GetMethod_RequestSyntax)**
-
+ ** [restapi\_id](#API_GetMethod_RequestSyntax) **   <a name="apigw-GetMethod-request-uri-restApiId"></a>
 The string identifier of the associated RestApi.
-
 Required: Yes
 
 ## Request Body
+<a name="API_GetMethod_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetMethod_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -113,122 +109,97 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetMethod_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[apiKeyRequired](#API_GetMethod_ResponseSyntax)**
-
+ ** [apiKeyRequired](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-apiKeyRequired"></a>
 A boolean flag specifying whether a valid ApiKey is required to invoke this method.
-
 Type: Boolean
 
-**[authorizationScopes](#API_GetMethod_ResponseSyntax)**
-
+ ** [authorizationScopes](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-authorizationScopes"></a>
 A list of authorization scopes configured on the method. The scopes are used with a `COGNITO_USER_POOLS` authorizer to authorize the method invocation. The authorization works by matching the method scopes against the scopes parsed from the access token in the incoming request. The method invocation is authorized if any method scopes matches a claimed scope in the access token. Otherwise, the invocation is not authorized. When the method scope is configured, the client must provide an access token instead of an identity token for authorization purposes.
-
 Type: Array of strings
 
-**[authorizationType](#API_GetMethod_ResponseSyntax)**
-
+ ** [authorizationType](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-authorizationType"></a>
 The method's authorization type. Valid values are `NONE` for open access, `AWS_IAM` for using AWS IAM permissions, `CUSTOM` for using a custom authorizer, or `COGNITO_USER_POOLS` for using a Cognito user pool.
-
 Type: String
 
-**[authorizerId](#API_GetMethod_ResponseSyntax)**
-
+ ** [authorizerId](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-authorizerId"></a>
 The identifier of an authorizer to use on this method. The method's authorization type must be `CUSTOM` or `COGNITO_USER_POOLS`.
-
 Type: String
 
-**[httpMethod](#API_GetMethod_ResponseSyntax)**
-
+ ** [httpMethod](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-httpMethod"></a>
 The method's HTTP verb.
-
 Type: String
 
-**[methodIntegration](#API_GetMethod_ResponseSyntax)**
-
+ ** [methodIntegration](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-methodIntegration"></a>
 Gets the method's integration responsible for passing the client-submitted request to the back end and performing necessary transformations to make the request compliant with the back end.
+Type: [Integration](API_Integration.md) object
 
-Type: [Integration](api-integration.md) object
-
-**[methodResponses](#API_GetMethod_ResponseSyntax)**
-
+ ** [methodResponses](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-methodResponses"></a>
 Gets a method response associated with a given HTTP status code.
+Type: String to [MethodResponse](API_MethodResponse.md) object map
 
-Type: String to [MethodResponse](api-methodresponse.md) object map
-
-**[operationName](#API_GetMethod_ResponseSyntax)**
-
+ ** [operationName](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-operationName"></a>
 A human-friendly operation identifier for the method. For example, you can assign the `operationName` of `ListPets` for the `GET /pets` method in the `PetStore` example.
-
 Type: String
 
-**[requestModels](#API_GetMethod_ResponseSyntax)**
-
+ ** [requestModels](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-requestModels"></a>
 A key-value map specifying data schemas, represented by Model resources, (as the mapped value) of the request payloads of given content types (as the mapping key).
-
 Type: String to string map
 
-**[requestParameters](#API_GetMethod_ResponseSyntax)**
-
-A key-value map defining required or optional method request parameters that can be accepted by API Gateway. A key is a method request parameter name matching the pattern of `method.request.{location}.{name}`, where `location` is `querystring`, `path`, or `header` and `name` is a valid and unique parameter name. The value associated with the key is a Boolean flag indicating whether the parameter is required ( `true`) or optional ( `false`). The method request parameter names defined here are available in Integration to be mapped to integration request parameters or templates.
-
+ ** [requestParameters](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-requestParameters"></a>
+A key-value map defining required or optional method request parameters that can be accepted by API Gateway. A key is a method request parameter name matching the pattern of `method.request.{location}.{name}`, where `location` is `querystring`, `path`, or `header` and `name` is a valid and unique parameter name. The value associated with the key is a Boolean flag indicating whether the parameter is required (`true`) or optional (`false`). The method request parameter names defined here are available in Integration to be mapped to integration request parameters or templates.
 Type: String to boolean map
 
-**[requestValidatorId](#API_GetMethod_ResponseSyntax)**
-
+ ** [requestValidatorId](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-requestValidatorId"></a>
 The identifier of a RequestValidator for request validation.
-
 Type: String
 
 ## Errors
+<a name="API_GetMethod_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**NotFoundException**
-
+ ** NotFoundException **
 The requested resource is not found. Make sure that the request URI is correct.
-
 HTTP Status Code: 404
 
-**TooManyRequestsException**
-
+ ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
-
 HTTP Status Code: 401
 
 ## Examples
+<a name="API_GetMethod_Examples"></a>
 
 ### View the detailed information about the GET method on an API resource
+<a name="API_GetMethod_Example_1"></a>
 
 This example illustrates one usage of GetMethod.
 
 #### Sample Request
+<a name="API_GetMethod_Example_1_Request"></a>
 
 ```
-
 GET /restapis/uojnr9hd57/resources/0cjtch/methods/GET HTTP/1.1
 Content-Type: application/json
 Host: apigateway.us-east-1.amazonaws.com
 Content-Length: 117
 X-Amz-Date: 20160613T205752Z
 Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160613/us-east-1/apigateway/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature={sig4_hash}
-
 ```
 
 #### Sample Response
+<a name="API_GetMethod_Example_1_Response"></a>
 
 ```
-
 {
   "_links": {
     "curies": [
@@ -377,33 +348,18 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160613/us-east-1/ap
 ```
 
 ## See Also
+<a name="API_GetMethod_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for Python](../../../goto/boto3/apigateway-2015-07-09/getmethod.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/getmethod.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetIntegrationResponse
-
-GetMethodResponse
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/GetMethod)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/GetMethod)
 
 All content copied from https://docs.aws.amazon.com/.

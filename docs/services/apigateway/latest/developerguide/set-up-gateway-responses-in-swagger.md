@@ -3,14 +3,11 @@ title: "Set up gateway response customization in OpenAPI"
 ---
 
 # Set up gateway response customization in OpenAPI
+<a name="set-up-gateway-responses-in-swagger"></a>
 
-You can use the `x-amazon-apigateway-gateway-responses` extension at the
-API root level to customize gateway responses in OpenAPI. The following OpenAPI
-definition shows an example for customizing the [GatewayResponse](../api/api-gatewayresponse.md) of the
-`MISSING_AUTHENTICATION_TOKEN` type.
+ You can use the `x-amazon-apigateway-gateway-responses` extension at the API root level to customize gateway responses in OpenAPI. The following OpenAPI definition shows an example for customizing the [GatewayResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_GatewayResponse.html) of the `MISSING_AUTHENTICATION_TOKEN` type.
 
-```nohighlight
-
+```
   "x-amazon-apigateway-gateway-responses": {
     "MISSING_AUTHENTICATION_TOKEN": {
       "statusCode": 404,
@@ -24,18 +21,8 @@ definition shows an example for customizing the [GatewayResponse](../api/api-gat
         "application/json": "{\n     \"message\": $context.error.messageString,\n     \"type\":  \"$context.error.responseType\",\n     \"stage\":  \"$context.stage\",\n     \"resourcePath\":  \"$context.resourcePath\",\n     \"stageVariables.a\":  \"$stageVariables.a\",\n     \"statusCode\": \"'404'\"\n}"
       }
     }
-
 ```
 
-In this example, the customization changes the status code from the default
-( `403`) to `404`. It also adds to the gateway response four
-header parameters and one body mapping template for the `application/json`
-media type.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Set up a gateway response using the API Gateway REST API
-
-Gateway response types for API Gateway
+In this example, the customization changes the status code from the default (`403`) to `404`. It also adds to the gateway response four header parameters and one body mapping template for the `application/json` media type.
 
 All content copied from https://docs.aws.amazon.com/.

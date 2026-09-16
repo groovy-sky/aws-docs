@@ -3,18 +3,15 @@ title: "Test CORS for an API Gateway API"
 ---
 
 # Test CORS for an API Gateway API
+<a name="apigateway-test-cors"></a>
 
-You can test your API's CORS configuration by invoking your API, and checking the CORS
-headers in the response. The following `curl` command sends an OPTIONS
-request to a deployed API.
+You can test your API's CORS configuration by invoking your API, and checking the CORS headers in the response. The following `curl` command sends an OPTIONS request to a deployed API.
 
-```nohighlight
-
-curl -v -X OPTIONS https://{restapi_id}.execute-api.{region}.amazonaws.com/{stage_name}
+```
+curl -v -X {{OPTIONS}} https://{{{restapi_id}}}.execute-api.{{{region}}}.amazonaws.com/{{{stage_name}}}
 ```
 
 ```
-
 < HTTP/1.1 200 OK
 < Date: Tue, 19 May 2020 00:55:22 GMT
 < Content-Type: application/json
@@ -27,15 +24,6 @@ curl -v -X OPTIONS https://{restapi_id}.execute-api.{region}.amazonaws.com/{stag
 < Access-Control-Allow-Methods: DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT
 ```
 
-The `Access-Control-Allow-Origin`,
-`Access-Control-Allow-Headers`, and
-`Access-Control-Allow-Methods` headers in the response show that the API
-supports CORS. For more information, see [CORS for REST APIs in API Gateway](how-to-cors.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Enable CORS using OpenAPI definition
-
-Binary media types
+The `Access-Control-Allow-Origin`, `Access-Control-Allow-Headers`, and `Access-Control-Allow-Methods` headers in the response show that the API supports CORS. For more information, see [CORS for REST APIs in API Gateway](how-to-cors.md).
 
 All content copied from https://docs.aws.amazon.com/.

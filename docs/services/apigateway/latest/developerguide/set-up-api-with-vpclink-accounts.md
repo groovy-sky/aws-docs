@@ -3,20 +3,37 @@ title: "API Gateway accounts used for private integrations (legacy)"
 ---
 
 # API Gateway accounts used for private integrations (legacy)
+<a name="set-up-api-with-vpclink-accounts"></a>
 
-The following region-specific API Gateway account IDs are automatically added to your VPC endpoint service as
-`AllowedPrincipals` when you create a `VpcLink`.
+The following region-specific API Gateway account IDs are automatically added to your VPC endpoint service as `AllowedPrincipals` when you create a `VpcLink`.
 
-**Region**
-
-**Account ID**
-
-us-east-1392220576650us-east-2718770453195us-west-1968246515281us-west-2109351309407ca-central-1796887884028eu-west-1631144002099eu-west-2544388816663eu-west-3061510835048eu-central-1474240146802eu-central-2166639821150eu-north-1394634713161eu-south-1753362059629eu-south-2359345898052ap-northeast-1969236854626ap-northeast-2020402002396ap-northeast-3360671645888ap-southeast-1195145609632ap-southeast-2798376113853ap-southeast-3652364314486ap-southeast-4849137399833ap-south-1507069717855ap-south-2644042651268ap-east-1174803364771sa-east-1287228555773me-south-1855739686837me-central-1614065512851
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Set up an API with private integrations using AWS CLI (legacy)
-
-Mock integration
+| **Region** | **Account ID** |
+| --- | --- |
+| us-east-1 | 392220576650 |
+| us-east-2 | 718770453195 |
+| us-west-1 | 968246515281 |
+| us-west-2 | 109351309407 |
+| ca-central-1 | 796887884028 |
+| eu-west-1 | 631144002099 |
+| eu-west-2 | 544388816663 |
+| eu-west-3 | 061510835048 |
+| eu-central-1 | 474240146802 |
+| eu-central-2 | 166639821150 |
+| eu-north-1 | 394634713161 |
+| eu-south-1 | 753362059629 |
+| eu-south-2 | 359345898052 |
+| ap-northeast-1 | 969236854626 |
+| ap-northeast-2 | 020402002396 |
+| ap-northeast-3 | 360671645888 |
+| ap-southeast-1 | 195145609632 |
+| ap-southeast-2 | 798376113853 |
+| ap-southeast-3 | 652364314486 |
+| ap-southeast-4 | 849137399833 |
+| ap-south-1 | 507069717855 |
+| ap-south-2 | 644042651268 |
+| ap-east-1 | 174803364771 |
+| sa-east-1 | 287228555773 |
+| me-south-1 | 855739686837 |
+| me-central-1 | 614065512851 |
 
 All content copied from https://docs.aws.amazon.com/.

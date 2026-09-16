@@ -3,55 +3,39 @@ title: "Document an API using the API Gateway console"
 ---
 
 # Document an API using the API Gateway console
+<a name="api-gateway-documenting-api-quick-start-with-console"></a>
 
-In this section, we describe how to create and maintain documentation parts of an API
-using the API Gateway console.
+In this section, we describe how to create and maintain documentation parts of an API using the API Gateway console.
 
-A prerequisite for creating and editing the documentation of an API is that you must
-have already created the API. In this section, we use the [PetStore](http://petstore-demo-endpoint.execute-api.com/petstore/pets)
-API as an example. To create an API using the API Gateway console, follow the instructions in
-[Tutorial: Create a REST API by importing an example](api-gateway-create-api-from-example.md).
+A prerequisite for creating and editing the documentation of an API is that you must have already created the API. In this section, we use the [PetStore](http://petstore-demo-endpoint.execute-api.com/petstore/pets) API as an example. To create an API using the API Gateway console, follow the instructions in [Tutorial: Create a REST API by importing an example](api-gateway-create-api-from-example.md).
 
-###### Topics
-
-- [Document the API entity](#api-gateway-document-api-add-document-part-for-api-entity-with-console)
-
-- [Document a RESOURCE entity](#api-gateway-document-api-add-document-part-for-resource-entity-with-console)
-
-- [Document a METHOD entity](#api-gateway-document-api-add-document-part-for-method-entity-with-console)
-
-- [Document a QUERY\_PARAMETER entity](#api-gateway-document-api-add-document-part-for-request-query-entity-with-console)
-
-- [Document a PATH\_PARAMETER entity](#api-gateway-document-api-add-document-part-for-path-parameter-entity-with-console)
-
-- [Document a REQUEST\_HEADER entity](#api-gateway-document-api-add-document-part-for-request-header-entity-with-console)
-
-- [Document a REQUEST\_BODY entity](#api-gateway-document-api-add-document-part-for-request-body-entity-with-console)
-
-- [Document a RESPONSE entity](#api-gateway-document-api-add-document-part-for-response-with-console)
-
-- [Document a RESPONSE\_HEADER entity](#api-gateway-document-api-add-document-part-for-response-header-entity-with-console)
-
-- [Document a RESPONSE\_BODY entity](#api-gateway-document-api-add-document-part-for-response-body-entity-with-console)
-
-- [Document a MODEL entity](#api-gateway-document-api-add-document-part-for-model-entity-with-console)
-
-- [Document an AUTHORIZER entity](#api-gateway-document-api-add-document-part-for-authorizer-entity-with-console)
+**Topics**
++ [Document the `API` entity](#api-gateway-document-api-add-document-part-for-api-entity-with-console)
++ [Document a `RESOURCE` entity](#api-gateway-document-api-add-document-part-for-resource-entity-with-console)
++ [Document a `METHOD` entity](#api-gateway-document-api-add-document-part-for-method-entity-with-console)
++ [Document a `QUERY_PARAMETER` entity](#api-gateway-document-api-add-document-part-for-request-query-entity-with-console)
++ [Document a `PATH_PARAMETER` entity](#api-gateway-document-api-add-document-part-for-path-parameter-entity-with-console)
++ [Document a `REQUEST_HEADER` entity](#api-gateway-document-api-add-document-part-for-request-header-entity-with-console)
++ [Document a `REQUEST_BODY` entity](#api-gateway-document-api-add-document-part-for-request-body-entity-with-console)
++ [Document a `RESPONSE` entity](#api-gateway-document-api-add-document-part-for-response-with-console)
++ [Document a `RESPONSE_HEADER` entity](#api-gateway-document-api-add-document-part-for-response-header-entity-with-console)
++ [Document a `RESPONSE_BODY` entity](#api-gateway-document-api-add-document-part-for-response-body-entity-with-console)
++ [Document a `MODEL` entity](#api-gateway-document-api-add-document-part-for-model-entity-with-console)
++ [Document an `AUTHORIZER` entity](#api-gateway-document-api-add-document-part-for-authorizer-entity-with-console)
 
 ## Document the `API` entity
+<a name="api-gateway-document-api-add-document-part-for-api-entity-with-console"></a>
 
 To add a new documentation part for the `API` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **API**.
+1. For **Documentation type**, select **API**.
 
-If a documentation part was not created for the `API`, you get the documentation part's `properties` map editor. Enter the following `properties` map in the text editor.
+   If a documentation part was not created for the `API`, you get the documentation part's `properties` map editor. Enter the following `properties` map in the text editor.
 
-```nohighlight
-
-{
+   ```
+   {
      "info": {
        "description": "Your first API Gateway API.",
        "contact": {
@@ -59,341 +43,313 @@ If a documentation part was not created for the `API`, you get the documentation
            "email": "john.doe@api.com"
        }
      }
-}
-```
+   }
+   ```
+**Note**
+ You do not need to encode the `properties` map into a JSON string. The API Gateway console stringifies the JSON object for you.
 
-###### Note
-
-You do not need to encode the `properties` map into a JSON string.
-The API Gateway console stringifies the JSON object for you.
-
-3. Choose **Create documentation part**.
+1. Choose **Create documentation part**.
 
 To add a new documentation part for the `API` entity in the **Resources** pane, do the following:
 
 1. In the main navigation pane, choose **Resources**.
 
-2. Choose the **API actions** menu, and then choose **Update API documentation**.
+1. Choose the **API actions** menu, and then choose **Update API documentation**.
 
-![Edit documentation for the API entity in the API Gateway console](https://docs.aws.amazon.com/images/apigateway/latest/developerguide/images/document-api-entity-using-new-console.png)
+![Edit documentation for the API entity in the API Gateway console](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/document-api-entity-using-new-console.png)
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. Select the name of your API, and then on the API card, choose
-    **Edit**.
+1. Select the name of your API, and then on the API card, choose **Edit**.
 
 ## Document a `RESOURCE` entity
+<a name="api-gateway-document-api-add-document-part-for-resource-entity-with-console"></a>
 
-To add a new documentation part for a `RESOURCE` entity, do the following:
+ To add a new documentation part for a `RESOURCE` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Resource**.
+1. For **Documentation type**, select **Resource**.
 
-3. For **Path**, enter a path.
+1. For **Path**, enter a path.
 
-4. Enter a description in the text
-    editor, for example:
+1. Enter a description in the text editor, for example:
 
-```nohighlight
-
-{
+   ```
+   {
        "description": "The PetStore's root resource."
-}
-```
+   }
+   ```
 
-5. Choose **Create documentation part**. You can create documentation for an unlisted resource.
+1. Choose **Create documentation part**. You can create documentation for an unlisted resource.
 
-6. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To add a new documentation part for a `RESOURCE` entity in the **Resources** pane, do the following:
 
 1. In the main navigation pane, choose **Resources**.
 
-2. Choose the resource, and then choose **Update documentation**.
+1. Choose the resource, and then choose **Update documentation**.
 
-![Edit documentation for the resource entity in the API Gateway console](https://docs.aws.amazon.com/images/apigateway/latest/developerguide/images/document-resource-entity-using-new-console.png)
+![Edit documentation for the resource entity in the API Gateway console](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/document-resource-entity-using-new-console.png)
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. Select the resource containing your documentation part, and then choose
-    **Edit**.
+1. Select the resource containing your documentation part, and then choose **Edit**.
 
 ## Document a `METHOD` entity
+<a name="api-gateway-document-api-add-document-part-for-method-entity-with-console"></a>
 
-To add a new documentation part for a `METHOD` entity, do the following:
+ To add a new documentation part for a `METHOD` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Method**.
+1. For **Documentation type**, select **Method**.
 
-3. For **Path**, enter a path.
+1. For **Path**, enter a path.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. Enter a description in the text
-    editor, for example:
+1. Enter a description in the text editor, for example:
 
-```nohighlight
-
-{
+   ```
+   {
      "tags" : [ "pets" ],
      "summary" : "List all pets"
-}
-```
+   }
+   ```
 
-6. Choose **Create documentation part**. You can create documentation for an unlisted method.
+1. Choose **Create documentation part**. You can create documentation for an unlisted method.
 
-7. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To add a new documentation part for a `METHOD` entity in the **Resources** pane, do the following:
 
 1. In the main navigation pane, choose **Resources**.
 
-2. Choose the method, and then choose **Update documentation**.
+1. Choose the method, and then choose **Update documentation**.
 
-![Edit documentation for the method entity in the API Gateway console](https://docs.aws.amazon.com/images/apigateway/latest/developerguide/images/document-method-entity-using-new-console.png)
+![Edit documentation for the method entity in the API Gateway console](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/document-method-entity-using-new-console.png)
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the method or select the resource containing the method, and then use the search bar to find and select your documentation part.
+1. You can select the method or select the resource containing the method, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1.  Choose **Edit**.
 
 ## Document a `QUERY_PARAMETER` entity
+<a name="api-gateway-document-api-add-document-part-for-request-query-entity-with-console"></a>
 
-To add a new documentation part for a `QUERY_PARAMETER` entity, do the following:
+ To add a new documentation part for a `QUERY_PARAMETER` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Query parameter**.
+1. For **Documentation type**, select **Query parameter**.
 
-3. For **Path**, enter a path.
+1. For **Path**, enter a path.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. For **Name**, enter a name.
+1. For **Name**, enter a name.
 
-6. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-7. Choose **Create documentation part**. You can create documentation for an unlisted query parameter.
+1. Choose **Create documentation part**. You can create documentation for an unlisted query parameter.
 
-8. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the query parameter or select the resource containing the query parameter, and then use the search bar to find and select your documentation part.
+1. You can select the query parameter or select the resource containing the query parameter, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `PATH_PARAMETER` entity
+<a name="api-gateway-document-api-add-document-part-for-path-parameter-entity-with-console"></a>
 
-To add a new documentation part for a `PATH_PARAMETER` entity, do the following:
+ To add a new documentation part for a `PATH_PARAMETER` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Path parameter**.
+1. For **Documentation type**, select **Path parameter**.
 
-3. For **Path**, enter a path.
+1. For **Path**, enter a path.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. For **Name**, enter a name.
+1. For **Name**, enter a name.
 
-6. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-7. Choose **Create documentation part**. You can create documentation for an unlisted path parameter.
+1. Choose **Create documentation part**. You can create documentation for an unlisted path parameter.
 
-8. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the path parameter or select the resource containing the path parameter, and then use the search bar to find and select your documentation part.
+1. You can select the path parameter or select the resource containing the path parameter, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `REQUEST_HEADER` entity
+<a name="api-gateway-document-api-add-document-part-for-request-header-entity-with-console"></a>
 
-To add a new documentation part for a `REQUEST_HEADER` entity, do the following:
+ To add a new documentation part for a `REQUEST_HEADER` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Request header**.
+1. For **Documentation type**, select **Request header**.
 
-3. For **Path**, enter a path for the request header.
+1. For **Path**, enter a path for the request header.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. For **Name**, enter a name.
+1. For **Name**, enter a name.
 
-6. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-7. Choose **Create documentation part**. You can create documentation for an unlisted request header.
+1. Choose **Create documentation part**. You can create documentation for an unlisted request header.
 
-8. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the request header or select the resource containing the request header, and then use the search bar to find and select your documentation part.
+1. You can select the request header or select the resource containing the request header, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `REQUEST_BODY` entity
+<a name="api-gateway-document-api-add-document-part-for-request-body-entity-with-console"></a>
 
-To add a new documentation part for a `REQUEST_BODY` entity, do the following:
+ To add a new documentation part for a `REQUEST_BODY` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Request body**.
+1. For **Documentation type**, select **Request body**.
 
-3. For **Path**, enter a path for the request body.
+1. For **Path**, enter a path for the request body.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-6. Choose **Create documentation part**. You can create documentation for an unlisted request body.
+1. Choose **Create documentation part**. You can create documentation for an unlisted request body.
 
-7. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the request body or select the resource containing the request body, and then use the search bar to find and select your documentation part.
+1. You can select the request body or select the resource containing the request body, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `RESPONSE` entity
+<a name="api-gateway-document-api-add-document-part-for-response-with-console"></a>
 
-To add a new documentation part for a `RESPONSE` entity, do the following:
+ To add a new documentation part for a `RESPONSE` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Response (status code)**.
+1. For **Documentation type**, select **Response (status code)**.
 
-3. For **Path**, enter a path for the response.
+1. For **Path**, enter a path for the response.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. For **Status code**, enter an HTTP status code.
+1. For **Status code**, enter an HTTP status code.
 
-6. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-7. Choose **Create documentation part**. You can create documentation for an unlisted response status code.
+1. Choose **Create documentation part**. You can create documentation for an unlisted response status code.
 
-8. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the response status code or select the resource containing the response status code, and then use the search bar to find and select your documentation part.
+1. You can select the response status code or select the resource containing the response status code, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `RESPONSE_HEADER` entity
+<a name="api-gateway-document-api-add-document-part-for-response-header-entity-with-console"></a>
 
-To add a new documentation part for a `RESPONSE_HEADER` entity, do the following:
+ To add a new documentation part for a `RESPONSE_HEADER` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Response header**.
+1. For **Documentation type**, select **Response header**.
 
-3. For **Path**, enter a path for the response header.
+1. For **Path**, enter a path for the response header.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. For **Status code**, enter an HTTP status code.
+1. For **Status code**, enter an HTTP status code.
 
-6. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-7. Choose **Create documentation part**. You can create documentation for an unlisted response header.
+1. Choose **Create documentation part**. You can create documentation for an unlisted response header.
 
-8. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the response header or select the resource containing the response header, and then use the search bar to find and select your documentation part.
+1. You can select the response header or select the resource containing the response header, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `RESPONSE_BODY` entity
+<a name="api-gateway-document-api-add-document-part-for-response-body-entity-with-console"></a>
 
-To add a new documentation part for a `RESPONSE_BODY` entity, do the following:
+ To add a new documentation part for a `RESPONSE_BODY` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Response body**.
+1. For **Documentation type**, select **Response body**.
 
-3. For **Path**, enter a path for the response body.
+1. For **Path**, enter a path for the response body.
 
-4. For **Method**, select an HTTP verb.
+1. For **Method**, select an HTTP verb.
 
-5. For **Status code**, enter an HTTP status code.
+1. For **Status code**, enter an HTTP status code.
 
-6. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-7. Choose **Create documentation part**. You can create documentation for an unlisted response body.
+1. Choose **Create documentation part**. You can create documentation for an unlisted response body.
 
-8. If required, repeat these steps to add or edit another documentation part.
+1.  If required, repeat these steps to add or edit another documentation part.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Resources and methods** tab.
 
-2. You can select the response body or select the resource containing the response body, and then use the search bar to find and select your documentation part.
+1. You can select the response body or select the resource containing the response body, and then use the search bar to find and select your documentation part.
 
-3. Choose
-    **Edit**.
+1. Choose **Edit**.
 
 ## Document a `MODEL` entity
+<a name="api-gateway-document-api-add-document-part-for-model-entity-with-console"></a>
 
-Documenting a `MODEL` entity involves creating and
-managing `DocumentPart` instances for the model and
-each of the model's `properties`'. For example, for
-the `Error` model that comes with every API by default
-has the following schema definition,
+Documenting a `MODEL` entity involves creating and managing `DocumentPart` instances for the model and each of the model's `properties`'. For example, for the `Error` model that comes with every API by default has the following schema definition,
 
-```nohighlight
-
+```
 {
   "$schema" : "http://json-schema.org/draft-04/schema#",
   "title" : "Error Schema",
@@ -404,11 +360,9 @@ has the following schema definition,
 }
 ```
 
-and requires two `DocumentationPart` instances, one
-for the `Model` and the other for its `message` property:
+ and requires two `DocumentationPart` instances, one for the `Model` and the other for its `message` property:
 
-```nohighlight
-
+```
 {
   "location": {
     "type": "MODEL",
@@ -419,13 +373,11 @@ for the `Model` and the other for its `message` property:
     "description": "A description of the Error model"
   }
 }
-
 ```
 
 and
 
-```nohighlight
-
+```
 {
   "location": {
     "type": "MODEL",
@@ -435,73 +387,59 @@ and
     "description": "An error message."
   }
 }
-
 ```
 
-When the API is exported, the `DocumentationPart`'s
-properties will override the values in the original schema.
+When the API is exported, the `DocumentationPart`'s properties will override the values in the original schema.
 
-To add a new documentation part for a `MODEL` entity, do the following:
+ To add a new documentation part for a `MODEL` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Model**.
+1. For **Documentation type**, select **Model**.
 
-3. For **Name**, enter a name for the model.
+1. For **Name**, enter a name for the model.
 
-4. Enter a description in the text
-    editor.
+1. Enter a description in the text editor.
 
-5. Choose **Create documentation part**. You can create documentation for unlisted models.
+1. Choose **Create documentation part**. You can create documentation for unlisted models.
 
-6. If required, repeat these steps to add or edit a documentation part to other models.
+1.  If required, repeat these steps to add or edit a documentation part to other models.
 
 To add a new documentation part for a `MODEL` entity in the **Models** pane, do the following:
 
 1. In the main navigation pane, choose **Models**.
 
-2. Choose the model, and then choose **Update documentation**.
+1. Choose the model, and then choose **Update documentation**.
 
-![Edit documentation for the model entity in the API Gateway console](https://docs.aws.amazon.com/images/apigateway/latest/developerguide/images/document-model-entity-using-new-console.png)
+![Edit documentation for the model entity in the API Gateway console](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/document-model-entity-using-new-console.png)
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Models** tab.
 
-2. Use the search bar or select the model, and then choose
-    **Edit**.
+1. Use the search bar or select the model, and then choose **Edit**.
 
 ## Document an `AUTHORIZER` entity
+<a name="api-gateway-document-api-add-document-part-for-authorizer-entity-with-console"></a>
 
-To add a new documentation part for an `AUTHORIZER` entity, do the following:
+ To add a new documentation part for an `AUTHORIZER` entity, do the following:
 
 1. In the main navigation pane, choose **Documentation**, and then choose **Create documentation part**.
 
-2. For **Documentation type**, select
-    **Authorizer**.
+1. For **Documentation type**, select **Authorizer**.
 
-3. For **Name**, enter the name of your authorizer.
+1. For **Name**, enter the name of your authorizer.
 
-4. Enter a description in the text
-    editor. Specify a value for the valid `location`
-    field for the authorizer.
+1. Enter a description in the text editor. Specify a value for the valid `location` field for the authorizer.
 
-5. Choose **Create documentation part**. You can create documentation for unlisted authorizers.
+1. Choose **Create documentation part**. You can create documentation for unlisted authorizers.
 
-6. If required, repeat these steps to add or edit a documentation part to other authorizers.
+1.  If required, repeat these steps to add or edit a documentation part to other authorizers.
 
 To edit an existing documentation part, do the following:
 
 1. In the **Documentation** pane, choose the **Authorizers** tab.
 
-2. Use the search bar or select the authorizer, and then choose
-    **Edit**.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Representation of API documentation in API Gateway
-
-Publish API documentation using the API Gateway console
+1. Use the search bar or select the authorizer, and then choose **Edit**.
 
 All content copied from https://docs.aws.amazon.com/.

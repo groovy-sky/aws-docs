@@ -3,65 +3,52 @@ title: "PutRestApi"
 ---
 
 # PutRestApi
+<a name="API_PutRestApi"></a>
 
-A feature of the API Gateway control service for updating an existing API with an input of external API definitions.
-The update can take the form of merging the supplied definition into the existing API or overwriting the existing API.
+A feature of the API Gateway control service for updating an existing API with an input of external API definitions. The update can take the form of merging the supplied definition into the existing API or overwriting the existing API.
 
 ## Request Syntax
+<a name="API_PutRestApi_RequestSyntax"></a>
 
-```nohighlight
+```
+PUT /restapis/{{restapi_id}}?{{parameters}}&failonwarnings={{failOnWarnings}}&mode={{mode}} HTTP/1.1
 
-PUT /restapis/restapi_id?parameters&failonwarnings=failOnWarnings&mode=mode HTTP/1.1
-
-body
+{{body}}
 ```
 
 ## URI Request Parameters
+<a name="API_PutRestApi_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[failOnWarnings](#API_PutRestApi_RequestSyntax)**
+ ** [failOnWarnings](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-uri-failOnWarnings"></a>
+A query parameter to indicate whether to rollback the API update (`true`) or not (`false`) when a warning is encountered. The default value is `false`.
 
-A query parameter to indicate whether to rollback the API update ( `true`) or not ( `false`)
-when a warning is encountered. The default value is `false`.
-
-**[mode](#API_PutRestApi_RequestSyntax)**
-
-The `mode` query parameter to specify the update mode. Valid values are "merge" and "overwrite". By default,
-the update mode is "merge".
-
-###### Important
-
-When you use `overwrite` mode, the entire API definition is replaced.
-Any API configurations not explicitly included in the import body are reset to their default values.
-To preserve existing configurations, use `merge` mode, or ensure that your OpenAPI definition includes all desired API configuration settings, such as API Gateway extensions.
-
+ ** [mode](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-uri-mode"></a>
+The `mode` query parameter to specify the update mode. Valid values are "merge" and "overwrite". By default, the update mode is "merge".
+When you use `overwrite` mode, the entire API definition is replaced. Any API configurations not explicitly included in the import body are reset to their default values. To preserve existing configurations, use `merge` mode, or ensure that your OpenAPI definition includes all desired API configuration settings, such as API Gateway extensions.
 Valid Values: `merge | overwrite`
 
-**[parameters](#API_PutRestApi_RequestSyntax)**
-
+ ** [parameters](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-uri-parameters"></a>
 Custom header parameters as part of the request. For example, to exclude DocumentationParts from an imported API, set `ignore=documentation` as a `parameters` value, as in the AWS CLI command of `aws apigateway import-rest-api --parameters ignore=documentation --body 'file:///path/to/imported-api-body.json'`.
 
-**[restapi\_id](#API_PutRestApi_RequestSyntax)**
-
+ ** [restapi\_id](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-uri-restApiId"></a>
 The string identifier of the associated RestApi.
-
 Required: Yes
 
 ## Request Body
+<a name="API_PutRestApi_RequestBody"></a>
 
 The request accepts the following binary data.
 
-**[body](#API_PutRestApi_RequestSyntax)**
-
+ ** [body](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-body"></a>
 The PUT request body containing external API definitions. Currently, only OpenAPI definition JSON/YAML files are supported. The maximum size of the API definition file is 6MB.
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_PutRestApi_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -94,177 +81,125 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_PutRestApi_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[apiKeySource](#API_PutRestApi_ResponseSyntax)**
-
-The source of the API key for metering requests according to a usage plan. Valid values
-are: > `HEADER` to read the API key from the `X-API-Key` header of a
-request. `AUTHORIZER` to read the API key from the `UsageIdentifierKey`
-from a custom authorizer.
-
+ ** [apiKeySource](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-apiKeySource"></a>
+The source of the API key for metering requests according to a usage plan. Valid values are: >`HEADER` to read the API key from the `X-API-Key` header of a request. `AUTHORIZER` to read the API key from the `UsageIdentifierKey` from a custom authorizer.
 Type: String
-
 Valid Values: `HEADER | AUTHORIZER`
 
-**[apiStatus](#API_PutRestApi_ResponseSyntax)**
-
+ ** [apiStatus](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-apiStatus"></a>
 The ApiStatus of the RestApi.
-
 Type: String
-
 Valid Values: `UPDATING | AVAILABLE | PENDING | FAILED`
 
-**[apiStatusMessage](#API_PutRestApi_ResponseSyntax)**
-
-The status message of the RestApi. When the status message is `UPDATING` you can still invoke it.
-
+ ** [apiStatusMessage](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-apiStatusMessage"></a>
+ The status message of the RestApi. When the status message is `UPDATING` you can still invoke it.
 Type: String
 
-**[binaryMediaTypes](#API_PutRestApi_ResponseSyntax)**
-
+ ** [binaryMediaTypes](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-binaryMediaTypes"></a>
 The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
-
 Type: Array of strings
 
-**[createdDate](#API_PutRestApi_ResponseSyntax)**
-
+ ** [createdDate](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-createdDate"></a>
 The timestamp when the API was created.
-
 Type: Timestamp
 
-**[description](#API_PutRestApi_ResponseSyntax)**
-
+ ** [description](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-description"></a>
 The API's description.
-
 Type: String
 
-**[disableExecuteApiEndpoint](#API_PutRestApi_ResponseSyntax)**
-
-Specifies whether clients can invoke your API by using the default `execute-api` endpoint.
-By default, clients can invoke your API with the default
-`https://{api_id}.execute-api.{region}.amazonaws.com` endpoint. To require that clients use a
-custom domain name to invoke your API, disable the default endpoint.
-
+ ** [disableExecuteApiEndpoint](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-disableExecuteApiEndpoint"></a>
+Specifies whether clients can invoke your API by using the default `execute-api` endpoint. By default, clients can invoke your API with the default `https://{api_id}.execute-api.{region}.amazonaws.com` endpoint. To require that clients use a custom domain name to invoke your API, disable the default endpoint.
 Type: Boolean
 
-**[endpointAccessMode](#API_PutRestApi_ResponseSyntax)**
-
-The endpoint access mode of the RestApi.
-
+ ** [endpointAccessMode](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-endpointAccessMode"></a>
+ The endpoint access mode of the RestApi.
 Type: String
-
 Valid Values: `BASIC | STRICT`
 
-**[endpointConfiguration](#API_PutRestApi_ResponseSyntax)**
-
+ ** [endpointConfiguration](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-endpointConfiguration"></a>
 The endpoint configuration of this RestApi showing the endpoint types and IP address types of the API.
+Type: [EndpointConfiguration](API_EndpointConfiguration.md) object
 
-Type: [EndpointConfiguration](api-endpointconfiguration.md) object
-
-**[id](#API_PutRestApi_ResponseSyntax)**
-
+ ** [id](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-id"></a>
 The API's identifier. This identifier is unique across all of your APIs in API Gateway.
-
 Type: String
 
-**[minimumCompressionSize](#API_PutRestApi_ResponseSyntax)**
-
+ ** [minimumCompressionSize](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-minimumCompressionSize"></a>
 A nullable integer that is used to enable compression (with non-negative between 0 and 10485760 (10M) bytes, inclusive) or disable compression (with a null value) on an API. When compression is enabled, compression or decompression is not applied on the payload if the payload size is smaller than this value. Setting it to zero allows compression for any payload size.
-
 Type: Integer
 
-**[name](#API_PutRestApi_ResponseSyntax)**
-
+ ** [name](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-name"></a>
 The API's name.
-
 Type: String
 
-**[policy](#API_PutRestApi_ResponseSyntax)**
-
+ ** [policy](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-policy"></a>
 A stringified JSON policy document that applies to this RestApi regardless of the caller and Method configuration.
-
 Type: String
 
-**[rootResourceId](#API_PutRestApi_ResponseSyntax)**
-
+ ** [rootResourceId](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-rootResourceId"></a>
 The API's root resource ID.
-
 Type: String
 
-**[securityPolicy](#API_PutRestApi_ResponseSyntax)**
-
-The Transport Layer Security (TLS) version + cipher suite for this RestApi.
-
+ ** [securityPolicy](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-securityPolicy"></a>
+ The Transport Layer Security (TLS) version \+ cipher suite for this RestApi.
 Type: String
-
 Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
 
-**[tags](#API_PutRestApi_ResponseSyntax)**
-
+ ** [tags](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
-
 Type: String to string map
 
-**[version](#API_PutRestApi_ResponseSyntax)**
-
+ ** [version](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-version"></a>
 A version identifier for the API.
-
 Type: String
 
-**[warnings](#API_PutRestApi_ResponseSyntax)**
-
+ ** [warnings](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-warnings"></a>
 The warning messages reported when `failonwarnings` is turned on during API import.
-
 Type: Array of strings
 
 ## Errors
+<a name="API_PutRestApi_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The submitted request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.
-
 HTTP Status Code: 400
 
-**ConflictException**
-
+ ** ConflictException **
 The request configuration has conflicts. For details, see the accompanying error message.
-
 HTTP Status Code: 409
 
-**LimitExceededException**
-
+ ** LimitExceededException **
 The request exceeded the rate limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**TooManyRequestsException**
-
+ ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
-
 HTTP Status Code: 401
 
 ## Examples
+<a name="API_PutRestApi_Examples"></a>
 
 ### Merge a supplied OpenAPI API definition with an existing API
+<a name="API_PutRestApi_Example_1"></a>
 
 This example illustrates one usage of PutRestApi.
 
 #### Sample Request
+<a name="API_PutRestApi_Example_1_Request"></a>
 
 ```
-
 PUT /restapis/wn611yeyp3?mode=merge HTTP/1.1
 Content-Type: application/json
 Host: apigateway.us-east-1.amazonaws.com
@@ -427,9 +362,9 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160607/us-east-1/ap
 ```
 
 #### Sample Response
+<a name="API_PutRestApi_Example_1_Response"></a>
 
 ```
-
 {
   "_links": {
     "curies": [
@@ -534,33 +469,18 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160607/us-east-1/ap
 ```
 
 ## See Also
+<a name="API_PutRestApi_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/PutRestApi)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/PutRestApi)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PutMethodResponse
-
-RejectDomainNameAccessAssociation
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/PutRestApi)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/PutRestApi)
 
 All content copied from https://docs.aws.amazon.com/.

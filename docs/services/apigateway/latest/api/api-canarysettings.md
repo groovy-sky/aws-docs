@@ -3,57 +3,39 @@ title: "CanarySettings"
 ---
 
 # CanarySettings
+<a name="API_CanarySettings"></a>
 
 Configuration settings of a canary deployment.
 
 ## Contents
+<a name="API_CanarySettings_Contents"></a>
 
-**deploymentId**
-
+ ** deploymentId **   <a name="apigw-Type-CanarySettings-deploymentId"></a>
 The ID of the canary deployment.
-
 Type: String
-
 Required: No
 
-**percentTraffic**
-
+ ** percentTraffic **   <a name="apigw-Type-CanarySettings-percentTraffic"></a>
 The percent (0-100) of traffic diverted to a canary deployment.
-
 Type: Double
-
 Required: No
 
-**stageVariableOverrides**
-
+ ** stageVariableOverrides **   <a name="apigw-Type-CanarySettings-stageVariableOverrides"></a>
 Stage variables overridden for a canary release deployment, including new stage variables introduced in the canary. These stage variables are represented as a string-to-string map between stage variable names and their values.
-
 Type: String to string map
-
 Required: No
 
-**useStageCache**
-
+ ** useStageCache **   <a name="apigw-Type-CanarySettings-useStageCache"></a>
 A Boolean flag to indicate whether the canary deployment uses the stage cache or not.
-
 Type: Boolean
-
 Required: No
 
 ## See Also
+<a name="API_CanarySettings_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/canarysettings.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/canarysettings.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/canarysettings.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BasePathMapping
-
-ClientCertificate
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/CanarySettings)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/CanarySettings)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/CanarySettings)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,35 +3,35 @@ title: "GetUsagePlan"
 ---
 
 # GetUsagePlan
+<a name="API_GetUsagePlan"></a>
 
 Gets a usage plan of a given plan identifier.
 
 ## Request Syntax
+<a name="API_GetUsagePlan_RequestSyntax"></a>
 
-```nohighlight
-
-GET /usageplans/usageplanId HTTP/1.1
-
+```
+GET /usageplans/{{usageplanId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetUsagePlan_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[usageplanId](#API_GetUsagePlan_RequestSyntax)**
-
+ ** [usageplanId](#API_GetUsagePlan_RequestSyntax) **   <a name="apigw-GetUsagePlan-request-uri-usagePlanId"></a>
 The identifier of the UsagePlan resource to be retrieved.
-
 Required: Yes
 
 ## Request Body
+<a name="API_GetUsagePlan_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetUsagePlan_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -68,110 +68,89 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetUsagePlan_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[apiStages](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [apiStages](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-apiStages"></a>
 The associated API stages of a usage plan.
+Type: Array of [ApiStage](API_ApiStage.md) objects
 
-Type: Array of [ApiStage](api-apistage.md) objects
-
-**[description](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [description](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-description"></a>
 The description of a usage plan.
-
 Type: String
 
-**[id](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [id](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-id"></a>
 The identifier of a UsagePlan resource.
-
 Type: String
 
-**[name](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [name](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-name"></a>
 The name of a usage plan.
-
 Type: String
 
-**[productCode](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [productCode](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-productCode"></a>
 The AWS Marketplace product identifier to associate with the usage plan as a SaaS product on the AWS Marketplace.
-
 Type: String
 
-**[quota](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [quota](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-quota"></a>
 The target maximum number of permitted requests per a given unit time interval.
+Type: [QuotaSettings](API_QuotaSettings.md) object
 
-Type: [QuotaSettings](api-quotasettings.md) object
-
-**[tags](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [tags](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
-
 Type: String to string map
 
-**[throttle](#API_GetUsagePlan_ResponseSyntax)**
-
+ ** [throttle](#API_GetUsagePlan_ResponseSyntax) **   <a name="apigw-GetUsagePlan-response-throttle"></a>
 A map containing method level throttling information for API stage in a usage plan.
-
-Type: [ThrottleSettings](api-throttlesettings.md) object
+Type: [ThrottleSettings](API_ThrottleSettings.md) object
 
 ## Errors
+<a name="API_GetUsagePlan_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The submitted request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.
-
 HTTP Status Code: 400
 
-**NotFoundException**
-
+ ** NotFoundException **
 The requested resource is not found. Make sure that the request URI is correct.
-
 HTTP Status Code: 404
 
-**TooManyRequestsException**
-
+ ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
-
 HTTP Status Code: 401
 
 ## Examples
+<a name="API_GetUsagePlan_Examples"></a>
 
 ### Retrieve information about a usage plan
+<a name="API_GetUsagePlan_Example_1"></a>
 
 This example illustrates one usage of GetUsagePlan.
 
 #### Sample Request
+<a name="API_GetUsagePlan_Example_1_Request"></a>
 
 ```
-
 GET /usageplans/n371pt HTTP/1.1
 Content-Type: application/json
 Host: apigateway.us-east-1.amazonaws.com
 X-Amz-Date: 20160805T012305Z
 Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160805/us-east-1/apigateway/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature={sigvv4_hash}
 Response
-
 ```
 
 #### Sample Response
+<a name="API_GetUsagePlan_Example_1_Response"></a>
 
 ```
-
 {
   "_links": {
     "curies": [
@@ -229,33 +208,18 @@ Response
 ```
 
 ## See Also
+<a name="API_GetUsagePlan_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for Python](../../../goto/boto3/apigateway-2015-07-09/getusageplan.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/getusageplan.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetUsage
-
-GetUsagePlanKey
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/GetUsagePlan)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/GetUsagePlan)
 
 All content copied from https://docs.aws.amazon.com/.

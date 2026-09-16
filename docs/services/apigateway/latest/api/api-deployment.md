@@ -3,57 +3,39 @@ title: "Deployment"
 ---
 
 # Deployment
+<a name="API_Deployment"></a>
 
 An immutable representation of a RestApi resource that can be called by users using Stages. A deployment must be associated with a Stage for it to be callable over the Internet.
 
 ## Contents
+<a name="API_Deployment_Contents"></a>
 
-**apiSummary**
-
+ ** apiSummary **   <a name="apigw-Type-Deployment-apiSummary"></a>
 A summary of the RestApi at the date and time that the deployment resource was created.
-
-Type: String to string to [MethodSnapshot](api-methodsnapshot.md) object map map
-
+Type: String to string to [MethodSnapshot](API_MethodSnapshot.md) object map map
 Required: No
 
-**createdDate**
-
+ ** createdDate **   <a name="apigw-Type-Deployment-createdDate"></a>
 The date and time that the deployment resource was created.
-
 Type: Timestamp
-
 Required: No
 
-**description**
-
+ ** description **   <a name="apigw-Type-Deployment-description"></a>
 The description for the deployment resource.
-
 Type: String
-
 Required: No
 
-**id**
-
+ ** id **   <a name="apigw-Type-Deployment-id"></a>
 The identifier for the deployment resource.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_Deployment_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/deployment.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/deployment.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/deployment.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClientCertificate
-
-DeploymentCanarySettings
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/Deployment)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/Deployment)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/Deployment)
 
 All content copied from https://docs.aws.amazon.com/.

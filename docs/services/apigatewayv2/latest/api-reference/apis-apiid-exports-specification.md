@@ -3,88 +3,86 @@ title: "ExportedAPI"
 ---
 
 # ExportedAPI
+<a name="apis-apiid-exports-specification"></a>
 
 Represents an exported definition of an API in a particular output format, for example, YAML. The API is serialized to the requested specification, for example, OpenAPI 3.0.
 
 ## URI
+<a name="apis-apiid-exports-specification-url"></a>
 
-`/v2/apis/apiId/exports/specification`
+`/v2/apis/{{apiId}}/exports/{{specification}}`
 
 ## HTTP methods
+<a name="apis-apiid-exports-specification-http-methods"></a>
 
 ### GET
+<a name="apis-apiid-exports-specificationget"></a>
 
 **Operation ID:** `ExportApi`
 
 Exports a definition of an API in a particular output format and specification.
 
-Path parametersNameTypeRequiredDescription`specification`StringTrue
+**Path parameters**
 
-The version of the API specification to use. `OAS30`, for OpenAPI 3.0, is the only supported value.
+| Name | Type | Required | Description |
+| --- |--- |--- |--- |
+| {{specification}} | String | True | The version of the API specification to use. `OAS30`, for OpenAPI 3.0, is the only supported value. |
+| {{apiId}} | String | True | The API identifier. |
 
-`apiId`StringTrue
+**Query parameters**
 
-The API identifier.
+| Name | Type | Required | Description |
+| --- |--- |--- |--- |
+| includeExtensions | String | False | Specifies whether to include [ API Gateway extensions](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions.html) in the exported API definition. API Gateway extensions are included by default.  |
+| stageName | String | False | The name of the API stage to export. If you don't specify this property, a representation of the latest API configuration is exported. |
+| exportVersion | String | False | The version of the API Gateway export algorithm. API Gateway uses the latest version by default. Currently, the only supported version is `1.0`. |
+| outputType | String | True | The output type of the exported definition file. Valid values are `JSON` and `YAML`. |
 
-Query parametersNameTypeRequiredDescription`includeExtensions`StringFalse
+**Responses**
 
-Specifies whether to include
-[API Gateway extensions](../../../apigateway/latest/developerguide/api-gateway-swagger-extensions.md) in the exported API definition. API Gateway extensions are included by default.
-
-`stageName`StringFalse
-
-The name of the API stage to export. If you don't specify this property, a representation of the latest API configuration is exported.
-
-`exportVersion`StringFalse
-
-The version of the API Gateway export algorithm. API Gateway uses the latest version by default. Currently, the only supported version is `1.0`.
-
-`outputType`StringTrue
-
-The output type of the exported definition file. Valid values are `JSON` and `YAML`.
-
-ResponsesStatus codeResponse modelDescription`200``ExportedApi`
-
-Success
-
-`400``BadRequestException`
-
-One of the parameters in the request is invalid.
-
-`404``NotFoundException`
-
-The resource specified in the request was not found.
-
-`429``LimitExceededException`
-
-The client is sending more than the allowed number of requests per unit of time.
+| Status code | Response model | Description |
+| --- |--- |--- |
+| 200 | ExportedApi | Success |
+| 400 | BadRequestException | One of the parameters in the request is invalid. |
+| 404 | NotFoundException | The resource specified in the request was not found. |
+| 429 | LimitExceededException | The client is sending more than the allowed number of requests per unit of time. |
 
 ## Schemas
+<a name="apis-apiid-exports-specification-schemas"></a>
 
 ### Response bodies
+<a name="apis-apiid-exports-specification-response-examples"></a>
 
-```json
+#### ExportedApi schema
+<a name="apis-apiid-exports-specification-response-body-exportedapi-example"></a>
 
+```
 "string"
 ```
 
-```json
+#### BadRequestException schema
+<a name="apis-apiid-exports-specification-response-body-badrequestexception-example"></a>
 
+```
 {
   "message": "string"
 }
 ```
 
-```json
+#### NotFoundException schema
+<a name="apis-apiid-exports-specification-response-body-notfoundexception-example"></a>
 
+```
 {
   "message": "string",
   "resourceType": "string"
 }
 ```
 
-```json
+#### LimitExceededException schema
+<a name="apis-apiid-exports-specification-response-body-limitexceededexception-example"></a>
 
+```
 {
   "message": "string",
   "limitType": "string"
@@ -92,89 +90,53 @@ The client is sending more than the allowed number of requests per unit of time.
 ```
 
 ## Properties
+<a name="apis-apiid-exports-specification-properties"></a>
 
 ### BadRequestException
+<a name="apis-apiid-exports-specification-model-badrequestexception"></a>
 
 The request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.
 
-PropertyTypeRequiredDescription`message`
-
-string
-
-False
-
-Describes the error encountered.
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | Describes the error encountered. |
 
 ### LimitExceededException
+<a name="apis-apiid-exports-specification-model-limitexceededexception"></a>
 
 A limit has been exceeded. See the accompanying error message for details.
 
-PropertyTypeRequiredDescription`limitType`
-
-string
-
-False
-
-The limit type.
-
-`message`
-
-string
-
-False
-
-Describes the error encountered.
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| limitType | string | False | The limit type. |
+| message | string | False | Describes the error encountered. |
 
 ### NotFoundException
+<a name="apis-apiid-exports-specification-model-notfoundexception"></a>
 
 The resource specified in the request was not found. See the `message` field for more information.
 
-PropertyTypeRequiredDescription`message`
-
-string
-
-False
-
-Describes the error encountered.
-
-`resourceType`
-
-string
-
-False
-
-The resource type.
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | Describes the error encountered. |
+| resourceType | string | False | The resource type. |
 
 ## See also
+<a name="apis-apiid-exports-specification-see-also"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs and references, see the following:
 
 ### ExportApi
-
-- [AWS Command Line Interface V2](../../../goto/cli2/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for Python](../../../goto/boto3/apigatewayv2-2018-11-29/exportapi.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigatewayv2-2018-11-29/exportapi.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DomainNames
-
-Integration
+<a name="ExportApi-see-also"></a>
++ [AWS Command Line Interface V2](/goto/cli2/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for .NET V4](/goto/DotNetSDKV4/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for C\+\+](/goto/SdkForCpp/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for Go v2](/goto/SdkForGoV2/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for Java V2](/goto/SdkForJavaV2/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/ExportApi)
++ [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/ExportApi)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,32 +3,29 @@ title: "Configure logging for HTTP APIs in API Gateway"
 ---
 
 # Configure logging for HTTP APIs in API Gateway
+<a name="http-api-logging"></a>
 
-You can turn on logging to write logs to CloudWatch Logs. You can use [logging variables](http-api-logging-variables.md) to customize the
-content of your logs.
+You can turn on logging to write logs to CloudWatch Logs. You can use [logging variables](http-api-logging-variables.md) to customize the content of your logs.
 
-To improve your security posture, we recommend that you write logs to CloudWatch Logs for all stages of your HTTP API.
-You might need to do this to comply with various compliance frameworks. For more information, see [Amazon API Gateway controls](../../../securityhub/latest/userguide/apigateway-controls.md) in
-the _AWS Security Hub User Guide_.
+To improve your security posture, we recommend that you write logs to CloudWatch Logs for all stages of your HTTP API. You might need to do this to comply with various compliance frameworks. For more information, see [Amazon API Gateway controls](https://docs.aws.amazon.com/securityhub/latest/userguide/apigateway-controls.html) in the *AWS Security Hub User Guide*.
 
 To turn on logging for an HTTP API, you must do the following.
 
 1. Ensure that your user has the required permissions to activate logging.
 
-2. Create a CloudWatch Logs log group.
+1. Create a CloudWatch Logs log group.
 
-3. Provide the ARN of the CloudWatch Logs log group for a stage of your API.
+1. Provide the ARN of the CloudWatch Logs log group for a stage of your API.
 
 ## Permissions to activate logging
+<a name="http-api-logging.permissions"></a>
 
 To turn on logging for an API, your user must have the following permissions.
 
-###### Example
+**Example**
+****
 
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -40,7 +37,7 @@ JSON
                 "logs:GetLogEvents",
                 "logs:FilterLogEvents"
             ],
-            "Resource": "arn:aws:logs:us-east-2:123456789012:log-group:*"
+            "Resource": "arn:aws:logs:{{us-east-2}}:{{123456789012}}:log-group:*"
         },
         {
             "Effect": "Allow",
@@ -58,92 +55,78 @@ JSON
         }
     ]
 }
-
 ```
 
 ## Create a log group and activate logging for HTTP APIs
+<a name="http-api-enable-logging"></a>
 
 You can create a log group and activate access logging using the AWS Management Console or the AWS CLI.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-1. Create a log group.
+1.  Create a log group.
 
-To learn how to create a log group using the console, see [Create a Log Group in Amazon CloudWatch Logs User Guide](../../../amazoncloudwatch/latest/logs/working-with-log-groups-and-streams.md).
+   To learn how to create a log group using the console, see [Create a Log Group in Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html).
 
-2. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-3. Choose an HTTP API.
+1. Choose an HTTP API.
 
-4. Under the **Monitor** tab in the primary navigation panel, choose **Logging**.
+1. Under the **Monitor** tab in the primary navigation panel, choose **Logging**.
 
-5. Select a stage to activate logging and choose **Select**.
+1. Select a stage to activate logging and choose **Select**.
 
-6. Choose **Edit** to activate access logging.
+1. Choose **Edit** to activate access logging.
 
-7. Turn on **Access logging**, enter a CloudWatch Logs, and select a log format.
+1. Turn on **Access logging**, enter a CloudWatch Logs, and select a log format.
 
-8. Choose **Save**.
+1. Choose **Save**.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-The following [create-log-group](../../../cli/latest/reference/logs/create-log-group.md) command creates a log group:
+The following [create-log-group](https://docs.aws.amazon.com/cli/latest/reference/logs/create-log-group.html) command creates a log group:
 
-```nohighlight
-
-aws logs create-log-group --log-group-name my-log-group
+```
+aws logs create-log-group --log-group-name {{my-log-group}}
 ```
 
-You need the Amazon Resource Name (ARN) for your log group to turn on logging. The ARN format is
-arn:aws:logs: `region`: `account-id`:log-group: `log-group-name`.
+You need the Amazon Resource Name (ARN) for your log group to turn on logging. The ARN format is arn:aws:logs:{{region}}:{{account-id}}:log-group:{{log-group-name}}.
 
-The following [update-stage](../../../cli/latest/reference/apigatewayv2/update-stage.md) command turns on logging for the `$default` stage of an HTTP API:
+The following [update-stage](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/update-stage.html) command turns on logging for the `$default` stage of an HTTP API:
 
-```nohighlight
-
-aws apigatewayv2 update-stage --api-id abcdef \
-    --stage-name '$default' \
-    --access-log-settings '{"DestinationArn": "arn:aws:logs:region:account-id:log-group:log-group-name", "Format": "$context.identity.sourceIp - - [$context.requestTime] \"$context.httpMethod $context.routeKey $context.protocol\" $context.status $context.responseLength $context.requestId"}'
 ```
+aws apigatewayv2 update-stage --api-id {{abcdef}} \
+    --stage-name '{{$default}}' \
+    --access-log-settings '{"DestinationArn": "arn:aws:logs:{{region}}:{{account-id}}:log-group:{{log-group-name}}", "Format": "$context.identity.sourceIp - - [$context.requestTime] \"$context.httpMethod $context.routeKey $context.protocol\" $context.status $context.responseLength $context.requestId"}'
+```
+
+------
 
 ## Example log formats
+<a name="http-api-enable-logging.examples"></a>
 
-Examples of some common access log formats are available in the API Gateway console and are
-listed as follows.
+Examples of some common access log formats are available in the API Gateway console and are listed as follows.
++ `CLF` ([Common Log Format](https://httpd.apache.org/docs/current/logs.html#common)):
 
-- `CLF` ( [Common Log\
-Format](https://httpd.apache.org/docs/current/logs.html)):
+  ```
+  $context.identity.sourceIp - - [$context.requestTime] "$context.httpMethod $context.routeKey $context.protocol" $context.status $context.responseLength $context.requestId $context.extendedRequestId
+  ```
++  `JSON`:
 
-```nohighlight
+  ```
+  { "requestId":"$context.requestId", "ip": "$context.identity.sourceIp", "requestTime":"$context.requestTime", "httpMethod":"$context.httpMethod","routeKey":"$context.routeKey", "status":"$context.status","protocol":"$context.protocol", "responseLength":"$context.responseLength", "extendedRequestId": "$context.extendedRequestId" }
+  ```
++ `XML`:
 
-$context.identity.sourceIp - - [$context.requestTime] "$context.httpMethod $context.routeKey $context.protocol" $context.status $context.responseLength $context.requestId $context.extendedRequestId
-```
+  ```
+  <request id="$context.requestId"> <ip>$context.identity.sourceIp</ip> <requestTime>$context.requestTime</requestTime> <httpMethod>$context.httpMethod</httpMethod> <routeKey>$context.routeKey</routeKey> <status>$context.status</status> <protocol>$context.protocol</protocol> <responseLength>$context.responseLength</responseLength> <extendedRequestId>$context.extendedRequestId</extendedRequestId> </request>
+  ```
++ `CSV` (comma-separated values):
 
-- `JSON`:
-
-```json
-
-{ "requestId":"$context.requestId", "ip": "$context.identity.sourceIp", "requestTime":"$context.requestTime", "httpMethod":"$context.httpMethod","routeKey":"$context.routeKey", "status":"$context.status","protocol":"$context.protocol", "responseLength":"$context.responseLength", "extendedRequestId": "$context.extendedRequestId" }
-```
-
-- `XML`:
-
-```xml
-
-<request id="$context.requestId"> <ip>$context.identity.sourceIp</ip> <requestTime>$context.requestTime</requestTime> <httpMethod>$context.httpMethod</httpMethod> <routeKey>$context.routeKey</routeKey> <status>$context.status</status> <protocol>$context.protocol</protocol> <responseLength>$context.responseLength</responseLength> <extendedRequestId>$context.extendedRequestId</extendedRequestId> </request>
-```
-
-- `CSV` (comma-separated values):
-
-```nohighlight
-
-$context.identity.sourceIp,$context.requestTime,$context.httpMethod,$context.routeKey,$context.protocol,$context.status,$context.responseLength,$context.requestId,$context.extendedRequestId
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Metrics
-
-Logging variables
+  ```
+  $context.identity.sourceIp,$context.requestTime,$context.httpMethod,$context.routeKey,$context.protocol,$context.status,$context.responseLength,$context.requestId,$context.extendedRequestId
+  ```
 
 All content copied from https://docs.aws.amazon.com/.

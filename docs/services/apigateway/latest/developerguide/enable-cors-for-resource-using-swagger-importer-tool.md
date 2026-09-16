@@ -3,28 +3,22 @@ title: "Enable CORS on a resource using the API Gateway import API"
 ---
 
 # Enable CORS on a resource using the API Gateway import API
+<a name="enable-cors-for-resource-using-swagger-importer-tool"></a>
 
-If you are using the [API Gateway Import API](api-gateway-import-api.md),
-you can set up CORS support using an OpenAPI file. You must first define an
-`OPTIONS` method in your resource that returns the required
-headers.
+If you are using the [API Gateway Import API](api-gateway-import-api.md), you can set up CORS support using an OpenAPI file. You must first define an `OPTIONS` method in your resource that returns the required headers.
 
-###### Note
-
-Web browsers expect Access-Control-Allow-Headers, and Access-Control-Allow-Origin
-headers to be set up in each API method that accepts CORS requests. In addition,
-some browsers first make an HTTP request to an `OPTIONS` method in the
-same resource, and then expect to receive the same headers.
+**Note**
+Web browsers expect Access-Control-Allow-Headers, and Access-Control-Allow-Origin headers to be set up in each API method that accepts CORS requests. In addition, some browsers first make an HTTP request to an `OPTIONS` method in the same resource, and then expect to receive the same headers.
 
 ## Example `Options` method
+<a name="enable-cors-for-resource-using-swagger-importer-tool-options"></a>
 
-The following example creates an `OPTIONS` method for a mock
-integration.
+The following example creates an `OPTIONS` method for a mock integration.
 
-OpenAPI 3.0
+------
+#### [ OpenAPI 3.0 ]
 
-```nohighlight
-
+```
 /users:
   options:
     summary: CORS support
@@ -58,13 +52,12 @@ OpenAPI 3.0
             method.response.header.Access-Control-Allow-Headers: "'Content-Type,X-Amz-Date,Authorization,X-Api-Key'"
             method.response.header.Access-Control-Allow-Methods: "'*'"
             method.response.header.Access-Control-Allow-Origin: "'*'"
-
 ```
 
-OpenAPI 2.0
+------
+#### [ OpenAPI 2.0 ]
 
-```nohighlight
-
+```
 /users:
    options:
       summary: CORS support
@@ -99,16 +92,16 @@ OpenAPI 2.0
               type: "string"
 ```
 
-Once you have configured the `OPTIONS` method for your resource, you can
-add the required headers to the other methods in the same resource that need to accept
-CORS requests.
+------
 
-1. Declare the **Access-Control-Allow-Origin** and
-    **Headers** to the response types.
-OpenAPI 3.0
+Once you have configured the `OPTIONS` method for your resource, you can add the required headers to the other methods in the same resource that need to accept CORS requests.
 
-```nohighlight
+1. Declare the **Access-Control-Allow-Origin** and **Headers** to the response types.
 
+------
+#### [ OpenAPI 3.0 ]
+
+   ```
        responses:
          200:
            description: Default response for CORS method
@@ -123,12 +116,12 @@ OpenAPI 3.0
                schema:
                  type: "string"
            content: {}
-```
+   ```
 
-OpenAPI 2.0
+------
+#### [ OpenAPI 2.0 ]
 
-```nohighlight
-
+   ```
        responses:
            200:
              description: Default response for CORS method
@@ -139,14 +132,16 @@ OpenAPI 2.0
                  type: "string"
                Access-Control-Allow-Origin:
                  type: "string"
-```
+   ```
 
-2. In the `x-amazon-apigateway-integration` tag, set up the mapping
-    for those headers to your static values:
-OpenAPI 3.0
+------
 
-```nohighlight
+1. In the `x-amazon-apigateway-integration` tag, set up the mapping for those headers to your static values:
 
+------
+#### [ OpenAPI 3.0 ]
+
+   ```
        responses:
            default:
              statusCode: "200"
@@ -157,12 +152,12 @@ OpenAPI 3.0
              responseTemplates:
                application/json: |
                  {}
-```
+   ```
 
-OpenAPI 2.0
+------
+#### [ OpenAPI 2.0 ]
 
-```nohighlight
-
+   ```
        responses:
              "default":
                statusCode: "200"
@@ -170,16 +165,19 @@ OpenAPI 2.0
                  method.response.header.Access-Control-Allow-Headers : "'Content-Type,X-Amz-Date,Authorization,X-Api-Key'"
                  method.response.header.Access-Control-Allow-Methods : "'*'"
                  method.response.header.Access-Control-Allow-Origin : "'*'"
-```
+   ```
+
+------
 
 ## Example API
+<a name="enable-cors-for-resource-using-swagger-importer-tool-complete-example"></a>
 
 The following example creates a complete API with an `OPTIONS` method and a `GET` method with an `HTTP` integration.
 
-OpenAPI 3.0
+------
+#### [ OpenAPI 3.0 ]
 
-```nohighlight
-
+```
 openapi: "3.0.1"
 info:
   title: "cors-api"
@@ -248,10 +246,10 @@ components:
       type: "object"
 ```
 
-OpenAPI 2.0
+------
+#### [  OpenAPI 2.0  ]
 
-```nohighlight
-
+```
 swagger: "2.0"
 info:
   description: "cors-api"
@@ -316,10 +314,6 @@ definitions:
     type: "object"
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Enable CORS using the console
-
-Test CORS for an API Gateway API
+------
 
 All content copied from https://docs.aws.amazon.com/.

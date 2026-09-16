@@ -3,43 +3,21 @@ title: "x-amazon-apigateway-integration.tlsConfig object"
 ---
 
 # x-amazon-apigateway-integration.tlsConfig object
+<a name="api-gateway-extensions-integration-tls-config"></a>
 
 Specifies the TLS configuration for an integration.
 
-Property nameTypeDescription`insecureSkipVerification``Boolean`
-
-Supported only for REST APIs. Specifies whether or not API Gateway skips verification that the certificate for an integration endpoint is
-issued by a [supported certificate authority](api-gateway-supported-certificate-authorities-for-http-endpoints.md). This isn’t recommended, but it enables you to
-use certificates that are signed by private certificate authorities, or certificates
-that are self-signed. If enabled, API Gateway still performs basic certificate
-validation, which includes checking the certificate's expiration date, hostname, and
-presence of a root certificate authority. The root certificate belonging to the private authority must satisfy the following constraints:
-
-- x509 extension `keyUsage` must have `keyCertSign`.
-
-- x509 extension `basicConstraints` must have `CA:TRUE`.
-
-Supported only for `HTTP` and
-`HTTP_PROXY` integrations.
-
-###### Warning
-
-Enabling `insecureSkipVerification` isn't recommended, especially for integrations with public
-HTTPS endpoints. If you enable `insecureSkipVerification`, you increase the risk of man-in-the-middle attacks.
-
-`serverNameToVerify``string`
-
-Supported only for HTTP API private integrations. If you specify a server name,
-API Gateway uses it to verify the hostname on the integration's
-certificate. The server name is also included in the TLS handshake
-to support Server Name Indication (SNI) or virtual hosting.
+| Property name | Type | Description |
+| --- | --- | --- |
+| insecureSkipVerification | Boolean | Supported only for REST APIs. Specifies whether or not API Gateway skips verification that the certificate for an integration endpoint is issued by a [supported certificate authority](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-supported-certificate-authorities-for-http-endpoints.html). This isn’t recommended, but it enables you to use certificates that are signed by private certificate authorities, or certificates that are self-signed. If enabled, API Gateway still performs basic certificate validation, which includes checking the certificate's expiration date, hostname, presence of a root certificate authority, and certificate chain integrity. Certificate chain validation includes X509v3 Name Constraints enforcement. If you experience validation errors with `insecureSkipVerification` enabled, verify that your CA certificates do not include Name Constraints extensions, or reissue them without that extension. The root certificate belonging to the private authority must satisfy the following constraints:+  x509 extension `keyUsage` must have `keyCertSign`. <br />+  x509 extension `basicConstraints` must have `CA:TRUE`. <br /> Supported only for `HTTP` and `HTTP_PROXY` integrations. Enabling `insecureSkipVerification` isn't recommended, especially for integrations with public HTTPS endpoints. If you enable `insecureSkipVerification`, you increase the risk of man-in-the-middle attacks.  |
+| serverNameToVerify | string | Supported only for HTTP API private integrations. If you specify a server name, API Gateway uses it to verify the hostname on the integration's certificate. The server name is also included in the TLS handshake to support Server Name Indication (SNI) or virtual hosting. |
 
 ## x-amazon-apigateway-integration.tlsConfig examples
+<a name="api-gateway-extensions-integration-tls-config-example"></a>
 
 The following OpenAPI 3.0 example enables `insecureSkipVerification` for a REST API HTTP proxy integration.
 
-```nohighlight
-
+```
 "x-amazon-apigateway-integration": {
   "uri": "http://petstore-demo-endpoint.execute-api.com/petstore/pets",
   "responses": {
@@ -58,8 +36,7 @@ The following OpenAPI 3.0 example enables `insecureSkipVerification` for a REST 
 
 The following OpenAPI 3.0 example specifies a `serverNameToVerify` for an HTTP API private integration.
 
-```nohighlight
-
+```
 "x-amazon-apigateway-integration" : {
   "payloadFormatVersion" : "1.0",
   "connectionId" : "abc123",
@@ -72,11 +49,5 @@ The following OpenAPI 3.0 example specifies a `serverNameToVerify` for an HTTP A
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-x-amazon-apigateway-integration.responseParameters
-
-x-amazon-apigateway-minimum-compression-size
 
 All content copied from https://docs.aws.amazon.com/.

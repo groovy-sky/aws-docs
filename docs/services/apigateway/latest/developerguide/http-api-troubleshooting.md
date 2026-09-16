@@ -3,20 +3,12 @@ title: "Troubleshooting issues with HTTP APIs in API Gateway"
 ---
 
 # Troubleshooting issues with HTTP APIs in API Gateway
+<a name="http-api-troubleshooting"></a>
 
-The following topics provide troubleshooting advice for errors and issues that you might
-encounter when using HTTP APIs.
+The following topics provide troubleshooting advice for errors and issues that you might encounter when using HTTP APIs.
 
-###### Topics
-
-- [Troubleshooting issues with HTTP API Lambda integrations](http-api-troubleshooting-lambda.md)
-
-- [Troubleshooting issues with HTTP API JWT authorizers](http-api-troubleshooting-jwt.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Logging variables
-
-Lambda integrations
+**Topics**
++ [Troubleshooting issues with HTTP API Lambda integrations](http-api-troubleshooting-lambda.md)
++ [Troubleshooting issues with HTTP API JWT authorizers](http-api-troubleshooting-jwt.md)
 
 All content copied from https://docs.aws.amazon.com/.

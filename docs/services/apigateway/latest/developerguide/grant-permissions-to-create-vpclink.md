@@ -3,25 +3,24 @@ title: "Grant permissions for API Gateway to create a VPC link (legacy)"
 ---
 
 # Grant permissions for API Gateway to create a VPC link (legacy)
+<a name="grant-permissions-to-create-vpclink"></a>
 
-###### Note
+**Note**
+The following implementation of private integrations uses VPC links V1. VPC links V1 are legacy resources. We recommend that you use [VPC links V2 for REST APIs](apigateway-vpc-links-v2.md).
 
-The following implementation of private integrations uses VPC links V1. VPC links V1 are legacy resources. We recommend
-that you use [VPC links V2 for REST APIs](apigateway-vpc-links-v2.md).
+For you or a user in your account to create and maintain a VPC link, you or the user must have permissions to create, delete, and view VPC endpoint service configurations, change VPC endpoint service permissions, and examine load balancers. To grant such permissions, use the following steps.
 
-For you or a user in your account to create and maintain a VPC link, you or the user
-must have permissions to create, delete, and view VPC endpoint service configurations,
-change VPC endpoint service permissions, and examine load balancers. To grant such
-permissions, use the following steps.
-
-###### To grant permissions to create, update, and delete a VPC link
+**To grant permissions to create, update, and delete a VPC link**
 
 1. Create an IAM policy similar to the following:
-JSON
 
-```json
+------
+#### [ JSON ]
 
-{
+****
+
+   ```
+   {
        "Version":"2012-10-17",
        "Statement": [
            {
@@ -33,8 +32,8 @@ JSON
                    "apigateway:DELETE"
                ],
                "Resource": [
-                   "arn:aws:apigateway:us-east-1::/vpclinks",
-                   "arn:aws:apigateway:us-east-1::/vpclinks/*"
+                   "arn:aws:apigateway:{{us-east-1}}::/vpclinks",
+                   "arn:aws:apigateway:{{us-east-1}}::/vpclinks/*"
                ]
            },
            {
@@ -55,23 +54,15 @@ JSON
                "Resource": "*"
            }
        ]
-}
+   }
+   ```
 
-```
+------
 
-If you want to enable tagging for your VPC link, make sure to allow tagging operations. For more
-    information, see [Allow tagging operations](apigateway-tagging-iam-policy.md#allow-tagging).
+   If you want to enable tagging for your VPC link, make sure to allow tagging operations. For more information, see [Allow tagging operations](apigateway-tagging-iam-policy.md#allow-tagging).
 
-2. Create or choose an IAM role and attach the preceding policy to the
-    role.
+1. Create or choose an IAM role and attach the preceding policy to the role.
 
-3. Assign the IAM role to you or a user in your account who is creating VPC
-    links.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Set up a Network Load Balancer for private integrations (legacy)
-
-Set up an API with private integrations using AWS CLI (legacy)
+1. Assign the IAM role to you or a user in your account who is creating VPC links.
 
 All content copied from https://docs.aws.amazon.com/.

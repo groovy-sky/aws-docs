@@ -3,27 +3,20 @@ title: "x-amazon-apigateway-importexport-version"
 ---
 
 # x-amazon-apigateway-importexport-version
+<a name="api-gateway-extensions-importexport-version"></a>
 
-Specifies the version of the API Gateway import and export algorithm for HTTP APIs.
-Currently, the only supported value is `1.0`. To learn more, see [exportVersion](../../../apigatewayv2/latest/api-reference/apis-apiid-exports-specification.md#w125aab9c10b3b1b4) in the _API Gateway Version 2 API Reference_.
+Specifies the version of the API Gateway import and export algorithm for HTTP APIs. Currently, the only supported value is `1.0`. To learn more, see [exportVersion](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-exports-specification.html#w125aab9c10b3b1b4) in the *API Gateway Version 2 API Reference*.
 
 ## x-amazon-apigateway-importexport-version example
+<a name="api-gateway-extensions-importexport-version-example"></a>
 
 The following example sets the import and export version to `1.0`.
 
-```nohighlight
-
+```
 {
     "openapi": "3.0.1",
     "x-amazon-apigateway-importexport-version": "1.0",
     "info": { ...
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-x-amazon-apigateway-gateway-responses.responseTemplates
-
-x-amazon-apigateway-integration
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,40 +3,43 @@ title: "Enable mock integration using the API Gateway console"
 ---
 
 # Enable mock integration using the API Gateway console
+<a name="how-to-mock-integration-console"></a>
 
 You must have a method available in API Gateway. Follow the instructions in [Tutorial: Create a REST API with an HTTP non-proxy integration](api-gateway-create-api-step-by-step.md).
 
 1. Choose an API resource and choose **Create method**.
 
-To create the method, do the following:
-1. For **Method type**, select a method.
+   To create the method, do the following:
 
-2. For **Integration type**, select **Mock**.
+   1. For **Method type**, select a method.
 
-3. Choose **Create method**.
+   1. For **Integration type**, select **Mock**.
 
-4. On the **Method request** tab, for **Method request settings**, choose **Edit**.
+   1. Choose **Create method**.
 
-5. Choose **URL query string parameters**. Choose **Add query string** and for **Name**, enter `scope`. This query
-       parameter determines if the caller is internal or otherwise.
+   1. On the **Method request** tab, for **Method request settings**, choose **Edit**.
 
-6. Choose **Save**.
-2. On the **Method**
-**response** tab, choose **Create response**, and then do the following:
-1. For **HTTP Status**, enter `500`.
+   1. Choose **URL query string parameters**. Choose **Add query string** and for **Name**, enter **scope**. This query parameter determines if the caller is internal or otherwise.
 
-2. Choose **Save**.
-3. On the **Integration request** tab, for **Integration request settings**, choose **Edit**.
+   1. Choose **Save**.
 
-4. Choose **Mapping templates**, and then do the following:
-1. Choose **Add mapping template**.
+1. On the **Method response** tab, choose **Create response**, and then do the following:
 
-2. For **Content type**, enter `application/json`.
+   1. For **HTTP Status**, enter **500**.
 
-3. For **Template body**, enter the following:
+   1. Choose **Save**.
 
-      ```nohighlight
+1. On the **Integration request** tab, for **Integration request settings**, choose **Edit**.
 
+1. Choose **Mapping templates**, and then do the following:
+
+   1. Choose **Add mapping template**.
+
+   1. For **Content type**, enter **application/json**.
+
+   1. For **Template body**, enter the following:
+
+      ```
       {
         #if( $input.params('scope') == "internal" )
           "statusCode": 200
@@ -46,58 +49,57 @@ To create the method, do the following:
       }
       ```
 
-4. Choose **Save**.
-5. On the **Integration response** tab, for the **Default - Response** choose **Edit**.
+   1. Choose **Save**.
 
-6. Choose **Mapping templates**, and then do the following:
-1. For **Content type**, enter `application/json`.
+1. On the **Integration response** tab, for the **Default - Response** choose **Edit**.
 
-2. For **Template body**, enter the following:
+1. Choose **Mapping templates**, and then do the following:
 
-      ```nohighlight
+   1. For **Content type**, enter **application/json**.
 
+   1. For **Template body**, enter the following:
+
+      ```
       {
           "statusCode": 200,
           "message": "Go ahead without me"
       }
       ```
 
-3. Choose **Save**.
-7. Choose **Create response**.
+   1. Choose **Save**.
 
-To create a 500 response, do the following:
-1. For **HTTP status regex**, enter `5\d{2}`.
+1. Choose **Create response**.
 
-2. For
-       **Method response status**, select
-       `500`.
+   To create a 500 response, do the following:
 
-3. Choose
-       **Save**.
+   1. For **HTTP status regex**, enter **5\\d{2}**.
 
-4. For **5\\d{2} - Response**, choose **Edit**.
+   1. For **Method response status**, select **500**.
 
-5. Choose **Mapping templates**, and then choose **Add mapping template**.
+   1. Choose **Save**.
 
-6. For **Content type**, enter `application/json`.
+   1. For **5\\d{2} - Response**, choose **Edit**.
 
-7. For **Template body**, enter the following:
+   1. Choose **Mapping templates**, and then choose **Add mapping template**.
 
-      ```nohighlight
+   1. For **Content type**, enter **application/json**.
 
+   1. For **Template body**, enter the following:
+
+      ```
       {
           "statusCode": 500,
           "message": "The invoked method is not supported on the API resource."
       }
       ```
 
-8. Choose **Save**.
-8. Choose the **Test** tab. You might need to choose the right arrow button to show the tab. To test your mock integration, do the following:
-1. Enter `scope=internal` under **Query strings**. Choose
-       **Test**. The test result shows:
+   1. Choose **Save**.
 
-      ```nohighlight
+1.  Choose the **Test** tab. You might need to choose the right arrow button to show the tab. To test your mock integration, do the following:
 
+   1. Enter `scope=internal` under **Query strings**. Choose **Test**. The test result shows:
+
+      ```
       Request: /?scope=internal
       Status: 200
       Latency: 26 ms
@@ -111,14 +113,11 @@ To create a 500 response, do the following:
       Response Headers
 
       {"Content-Type":"application/json"}
-
       ```
 
-2. Enter `scope=public` under `Query strings` or leave it blank.
-       Choose **Test**. The test result shows:
+   1. Enter `scope=public` under `Query strings` or leave it blank. Choose **Test**. The test result shows:
 
-      ```nohighlight
-
+      ```
       Request: /
       Status: 500
       Latency: 16 ms
@@ -132,18 +131,8 @@ To create a 500 response, do the following:
       Response Headers
 
       {"Content-Type":"application/json"}
-
       ```
 
-You can also return headers in a mock integration response by first adding a header to
-the method response and then setting up a header mapping in the integration response. In
-fact, this is how the API Gateway console enables CORS support by returning CORS required
-headers.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Mock integration
-
-Request validation
+You can also return headers in a mock integration response by first adding a header to the method response and then setting up a header mapping in the integration response. In fact, this is how the API Gateway console enables CORS support by returning CORS required headers.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,32 +3,19 @@ title: "Monitor HTTP APIs in API Gateway"
 ---
 
 # Monitor HTTP APIs in API Gateway
+<a name="http-api-monitor"></a>
 
-You can use CloudWatch metrics and CloudWatch Logs to monitor HTTP APIs. By combining logs and
-metrics, you can log errors and monitor your API's performance.
+You can use CloudWatch metrics and CloudWatch Logs to monitor HTTP APIs. By combining logs and metrics, you can log errors and monitor your API's performance.
 
-###### Note
-
+**Note**
 API Gateway might not generate logs and metrics in the following cases:
+413 Request Entity Too Large errors
+Excessive 429 Too Many Requests errors
+400 series errors from requests sent to a custom domain that has no API mapping
+500 series errors caused by internal failures
 
-- 413 Request Entity Too Large errors
-
-- Excessive 429 Too Many Requests errors
-
-- 400 series errors from requests sent to a custom domain that has no API mapping
-
-- 500 series errors caused by internal failures
-
-###### Topics
-
-- [Monitor CloudWatch metrics for HTTP APIs in API Gateway](http-api-metrics.md)
-
-- [Configure logging for HTTP APIs in API Gateway](http-api-logging.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Mutual TLS
-
-Metrics
+**Topics**
++ [Monitor CloudWatch metrics for HTTP APIs in API Gateway](http-api-metrics.md)
++ [Configure logging for HTTP APIs in API Gateway](http-api-logging.md)
 
 All content copied from https://docs.aws.amazon.com/.

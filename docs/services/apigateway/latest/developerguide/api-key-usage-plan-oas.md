@@ -3,20 +3,18 @@ title: "Configure a method to use API keys with an OpenAPI definition"
 ---
 
 # Configure a method to use API keys with an OpenAPI definition
+<a name="api-key-usage-plan-oas"></a>
 
 You can use an OpenAPI definition to require API keys on a method.
 
-For each method, create a security
-requirement object to require an API key to invoke that method. Then, define `api_key` in the security
-definition. After you create your API, add the new API stage to your usage plan.
+For each method, create a security requirement object to require an API key to invoke that method. Then, define `api_key` in the security definition. After you create your API, add the new API stage to your usage plan.
 
-The following example creates an API and requires an API key for the `POST` and
-`GET` methods:
+The following example creates an API and requires an API key for the `POST` and `GET` methods:
 
-OpenAPI 2.0
+------
+#### [ OpenAPI 2.0 ]
 
-```nohighlight
-
+```
 {
   "swagger" : "2.0",
   "info" : {
@@ -63,10 +61,10 @@ OpenAPI 2.0
 }
 ```
 
-OpenAPI 3.0
+------
+#### [ OpenAPI 3.0 ]
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -119,10 +117,6 @@ OpenAPI 3.0
 }
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create and configure API keys and usage plans with CloudFormation
-
-Test usage plans for REST APIs in API Gateway
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,83 +3,41 @@ title: "Amazon API Gateway identity-based policy examples"
 ---
 
 # Amazon API Gateway identity-based policy examples
+<a name="security_iam_id-based-policy-examples"></a>
 
-By default, IAM users and roles don't have permission to create or modify
-API Gateway resources. They also can't perform tasks using the AWS Management Console, AWS CLI, or
-AWS SDKs. An IAM administrator must create IAM policies that grant users and roles
-permission to perform specific API operations on the specified resources they need. The
-administrator must then attach those policies to the IAM users or groups that require
-those permissions.
+By default, IAM users and roles don't have permission to create or modify API Gateway resources. They also can't perform tasks using the AWS Management Console, AWS CLI, or AWS SDKs. An IAM administrator must create IAM policies that grant users and roles permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the IAM users or groups that require those permissions.
 
-For information about how to create IAM policies, see [Creating Policies on the JSON\
-Tab](../../../iam/latest/userguide/access-policies-create.md#access_policies_create-json-editor) in the _IAM User Guide_. For information about the actions, resources, and conditions specific to API Gateway, see
-[Actions, resources, and condition keys for Amazon API Gateway Management](../../../service-authorization/latest/reference/list-amazonapigatewaymanagement.md) and
-[Actions, resources, and condition keys for Amazon API Gateway Management V2](../../../service-authorization/latest/reference/list-amazonapigatewaymanagementv2.md).
+For information about how to create IAM policies, see [Creating Policies on the JSON Tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*. For information about the actions, resources, and conditions specific to API Gateway, see [Actions, resources, and condition keys for Amazon API Gateway Management](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigatewaymanagement.html) and [Actions, resources, and condition keys for Amazon API Gateway Management V2](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigatewaymanagementv2.html).
 
-###### Topics
-
-- [Policy best practices](#security_iam_service-with-iam-policy-best-practices)
-
-- [Allow users to view their own permissions](#security_iam_id-based-policy-examples-view-own-permissions)
-
-- [Simple read permissions](#api-gateway-policy-example-apigateway-general)
-
-- [Create only REQUEST or JWT authorizers](#security_iam_id-based-policy-examples-v2-import)
-
-- [Require that the default execute-api endpoint is disabled](#security_iam_id-based-policy-examples-v2-endpoint-status)
-
-- [Allow users to create or update only private REST APIs](#security_iam_id-based-policy-examples-private-api)
-
-- [Require that API routes have authorization](#security_iam_id-based-policy-examples-require-authorization)
-
-- [Prevent a user from creating or updating a VPC link](#security_iam_id-based-policy-examples-deny-vpc-link)
-
-- [Example policies for using routing rules](#security_iam_id-based-policy-examples-routing-mode)
+**Topics**
++ [Policy best practices](#security_iam_service-with-iam-policy-best-practices)
++ [Allow users to view their own permissions](#security_iam_id-based-policy-examples-view-own-permissions)
++ [Simple read permissions](#api-gateway-policy-example-apigateway-general)
++ [Create only REQUEST or JWT authorizers](#security_iam_id-based-policy-examples-v2-import)
++ [Require that the default `execute-api` endpoint is disabled](#security_iam_id-based-policy-examples-v2-endpoint-status)
++ [Allow users to create or update only private REST APIs](#security_iam_id-based-policy-examples-private-api)
++ [Require that API routes have authorization](#security_iam_id-based-policy-examples-require-authorization)
++ [Prevent a user from creating or updating a VPC link](#security_iam_id-based-policy-examples-deny-vpc-link)
++ [Example policies for using routing rules](#security_iam_id-based-policy-examples-routing-mode)
 
 ## Policy best practices
+<a name="security_iam_service-with-iam-policy-best-practices"></a>
 
-Identity-based policies determine whether someone can create, access, or delete API Gateway resources in your
-account. These actions can incur costs for your AWS account. When you create or edit identity-based policies, follow these guidelines and
-recommendations:
+Identity-based policies determine whether someone can create, access, or delete API Gateway resources in your account. These actions can incur costs for your AWS account. When you create or edit identity-based policies, follow these guidelines and recommendations:
++ **Get started with AWS managed policies and move toward least-privilege permissions** – To get started granting permissions to your users and workloads, use the *AWS managed policies* that grant permissions for many common use cases. They are available in your AWS account. We recommend that you reduce permissions further by defining AWS customer managed policies that are specific to your use cases. For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) or [AWS managed policies for job functions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) in the *IAM User Guide*.
++ **Apply least-privilege permissions** – When you set permissions with IAM policies, grant only the permissions required to perform a task. You do this by defining the actions that can be taken on specific resources under specific conditions, also known as *least-privilege permissions*. For more information about using IAM to apply permissions, see [ Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *IAM User Guide*.
++ **Use conditions in IAM policies to further restrict access** – You can add a condition to your policies to limit access to actions and resources. For example, you can write a policy condition to specify that all requests must be sent using SSL. You can also use conditions to grant access to service actions if they are used through a specific AWS service, such as CloudFormation. For more information, see [ IAM JSON policy elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
++ **Use IAM Access Analyzer to validate your IAM policies to ensure secure and functional permissions** – IAM Access Analyzer validates new and existing policies so that the policies adhere to the IAM policy language (JSON) and IAM best practices. IAM Access Analyzer provides more than 100 policy checks and actionable recommendations to help you author secure and functional policies. For more information, see [Validate policies with IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-validation.html) in the *IAM User Guide*.
++ **Require multi-factor authentication (MFA)** – If you have a scenario that requires IAM users or a root user in your AWS account, turn on MFA for additional security. To require MFA when API operations are called, add MFA conditions to your policies. For more information, see [ Secure API access with MFA](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html) in the *IAM User Guide*.
 
-- **Get started with AWS managed policies and move toward least-privilege permissions**
-– To get started granting permissions to your users and workloads, use the _AWS_
-_managed policies_ that grant permissions for many common use cases. They are
-available in your AWS account. We recommend that you reduce permissions further by
-defining AWS customer managed policies that are specific to your use cases. For more information, see
-[AWS managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies) or [AWS managed policies for job functions](../../../iam/latest/userguide/access-policies-job-functions.md) in the _IAM User Guide_.
-
-- **Apply least-privilege permissions** –
-When you set permissions with IAM policies, grant only the permissions required to
-perform a task. You do this by defining the actions that can be taken on specific resources
-under specific conditions, also known as _least-privilege permissions_.
-For more information about using IAM to apply permissions, see [Policies and permissions in IAM](../../../iam/latest/userguide/access-policies.md) in the _IAM User Guide_.
-
-- **Use conditions in IAM policies to further restrict access**
-– You can add a condition to your policies to limit access to actions and resources. For example, you can write a policy condition to specify that all requests must
-be sent using SSL. You can also use conditions to grant access to service actions
-if they are used through a specific AWS service, such as CloudFormation. For more information, see
-[IAM JSON policy elements: Condition](../../../iam/latest/userguide/reference-policies-elements-condition.md) in the _IAM User Guide_.
-
-- **Use IAM Access Analyzer to validate your IAM policies to ensure secure and functional permissions**
-– IAM Access Analyzer validates new and existing policies so that the policies adhere to the IAM policy language (JSON) and IAM best practices.
-IAM Access Analyzer provides more than 100 policy checks and actionable recommendations to help
-you author secure and functional policies. For more information, see [Validate policies with IAM Access Analyzer](../../../iam/latest/userguide/access-analyzer-policy-validation.md) in the _IAM User Guide_.
-
-- **Require multi-factor authentication (MFA)** –
-If you have a scenario that requires IAM users or a root user in your AWS account, turn on MFA for additional security. To require
-MFA when API operations are called, add MFA conditions to your policies. For
-more information, see [Secure API access with MFA](../../../iam/latest/userguide/id-credentials-mfa-configure-api-require.md) in the _IAM User Guide_.
-
-For more information about best practices in IAM, see [Security best practices in IAM](../../../iam/latest/userguide/best-practices.md) in the _IAM User Guide_.
+For more information about best practices in IAM, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
 
 ## Allow users to view their own permissions
+<a name="security_iam_id-based-policy-examples-view-own-permissions"></a>
 
-This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user
-identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
+This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```json
-
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -115,17 +73,16 @@ identity. This policy includes permissions to complete this action on the consol
 ```
 
 ## Simple read permissions
+<a name="api-gateway-policy-example-apigateway-general"></a>
 
-This example policy gives a user permission to get information about all of the resources of an HTTP or
-WebSocket API with the identifier of `a123456789` in the AWS Region of
-us-east-1. The resource
-`arn:aws:apigateway:us-east-1::/apis/a123456789/*`
-includes all sub-resources of the API such as authorizers and deployments.
+This example policy gives a user permission to get information about all of the resources of an HTTP or WebSocket API with the identifier of `a123456789` in the AWS Region of us-east-1. The resource `arn:aws:apigateway:{{us-east-1}}::/apis/a123456789/*` includes all sub-resources of the API such as authorizers and deployments.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -135,27 +92,26 @@ JSON
         "apigateway:GET"
       ],
       "Resource": [
-        "arn:aws:apigateway:us-east-1::/apis/a123456789/*"
+        "arn:aws:apigateway:{{us-east-1}}::/apis/a123456789/*"
       ]
     }
   ]
 }
-
 ```
 
+------
+
 ## Create only REQUEST or JWT authorizers
+<a name="security_iam_id-based-policy-examples-v2-import"></a>
 
-This example policy allows a user to create APIs with only `REQUEST` or `JWT`
-authorizers, including through [import](../../../apigatewayv2/latest/api-reference/apis.md#ImportApi). In the `Resource`
-section of the policy, `arn:aws:apigateway:us-east-1::/apis/??????????` requires that resources have
-a maximum of 10 characters, which excludes sub-resources of an API. This example uses `ForAllValues`
-in the `Condition` section because users can create multiple authorizers at once by importing an
-API.
+This example policy allows a user to create APIs with only `REQUEST` or `JWT` authorizers, including through [import](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis.html#ImportApi). In the `Resource` section of the policy, `arn:aws:apigateway:us-east-1::/apis/??????????` requires that resources have a maximum of 10 characters, which excludes sub-resources of an API. This example uses `ForAllValues` in the `Condition` section because users can create multiple authorizers at once by importing an API.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -184,27 +140,25 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Require that the default `execute-api` endpoint is disabled
+<a name="security_iam_id-based-policy-examples-v2-endpoint-status"></a>
 
-This example policy allows users to create, update or import an API, with the
-requirement that `DisableExecuteApiEndpoint` is `true`. When
-`DisableExecuteApiEndpoint` is `true`, clients can't use the default
-`execute-api` endpoint to invoke an API.
+ This example policy allows users to create, update or import an API, with the requirement that `DisableExecuteApiEndpoint` is `true`. When `DisableExecuteApiEndpoint` is `true`, clients can't use the default `execute-api` endpoint to invoke an API.
 
-We use the `BoolIfExists` condition to handle a call to update an API that doesn't have the
-`DisableExecuteApiEndpoint` condition key populated. When a user attempts to create or import an
-API, the `DisableExecuteApiEndpoint` condition key is always populated.
+We use the `BoolIfExists` condition to handle a call to update an API that doesn't have the `DisableExecuteApiEndpoint` condition key populated. When a user attempts to create or import an API, the `DisableExecuteApiEndpoint` condition key is always populated.
 
-Because the `apis/*` resource also captures sub resources such as authorizers or methods, we
-explicitly scope it to just APIs with a `Deny` statement.
+Because the `apis/*` resource also captures sub resources such as authorizers or methods, we explicitly scope it to just APIs with a `Deny` statement.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -240,26 +194,25 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Allow users to create or update only private REST APIs
+<a name="security_iam_id-based-policy-examples-private-api"></a>
 
-This example policy uses condition keys to require that a user creates only `PRIVATE`
-APIs, and to prevent updates that might change an API from `PRIVATE` to another type, such as
-`REGIONAL`.
+This example policy uses condition keys to require that a user creates only `PRIVATE` APIs, and to prevent updates that might change an API from `PRIVATE` to another type, such as `REGIONAL`.
 
-We use `ForAllValues` to require that every `EndpointType` added to an API is
-`PRIVATE`. We use a resource condition key to allow any update to an API as long as it's
-`PRIVATE`. `ForAllValues` applies only if a condition key is present.
+We use `ForAllValues` to require that every `EndpointType` added to an API is `PRIVATE`. We use a resource condition key to allow any update to an API as long as it's `PRIVATE`. `ForAllValues` applies only if a condition key is present.
 
-We use the non-greedy matcher ( `?`) to explicitly match against API IDs to
-prevent allowing non-API resources such as authorizers.
+We use the non-greedy matcher (`?`) to explicitly match against API IDs to prevent allowing non-API resources such as authorizers.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -310,20 +263,21 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## Require that API routes have authorization
+<a name="security_iam_id-based-policy-examples-require-authorization"></a>
 
-This policy causes attempts to create or update a route (including through [import](../../../apigatewayv2/latest/api-reference/apis.md#ImportApi)) to fail if the route has no
-authorization. `ForAnyValue` evaluates to false if the key is not present, such as when a route is
-not being created or updated. We use `ForAnyValue` because multiple routes can be created through
-import.
+This policy causes attempts to create or update a route (including through [import](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis.html#ImportApi)) to fail if the route has no authorization. `ForAnyValue` evaluates to false if the key is not present, such as when a route is not being created or updated. We use `ForAnyValue` because multiple routes can be created through import.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -362,18 +316,21 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Prevent a user from creating or updating a VPC link
+<a name="security_iam_id-based-policy-examples-deny-vpc-link"></a>
 
-This policy prevents a user from creating or updating a VPC link. A VPC link enables you to expose resources
-within an Amazon VPC to clients outside of the VPC.
+This policy prevents a user from creating or updating a VPC link. A VPC link enables you to expose resources within an Amazon VPC to clients outside of the VPC.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -386,31 +343,32 @@ JSON
         "apigateway:PATCH"
       ],
       "Resource": [
-        "arn:aws:apigateway:us-east-1::/vpclinks",
-        "arn:aws:apigateway:us-east-1::/vpclinks/*"
+        "arn:aws:apigateway:{{us-east-1}}::/vpclinks",
+        "arn:aws:apigateway:{{us-east-1}}::/vpclinks/*"
       ]
     }
   ]
 }
-
 ```
 
-## Example policies for using routing rules
+------
 
-The following example policies show how to use the RoutingRule condition keys to control how users can route
-traffic from their custom domain names to their REST APIs. You can use these examples to create fine-grained
-policies for what kind of routing rules users can make. For more information, see [Routing rules to connect API stages to a custom domain name for REST APIs](rest-api-routing-rules.md).
+## Example policies for using routing rules
+<a name="security_iam_id-based-policy-examples-routing-mode"></a>
+
+The following example policies show how to use the RoutingRule condition keys to control how users can route traffic from their custom domain names to their REST APIs. You can use these examples to create fine-grained policies for what kind of routing rules users can make. For more information, see [Routing rules to connect API stages to a custom domain name for REST APIs](rest-api-routing-rules.md).
 
 ### Prevent a user from changing how a custom domain name routes a request
+<a name="security_iam_id-based-policy-examples-routing-mode-1"></a>
 
-This policy prevents a user from creating or updating a `BasePathMapping`, `ApiMapping` or
-`RoutingRule`.
-All of these resources might change how a custom domain name routes requests to APIs.
+This policy prevents a user from creating or updating a `BasePathMapping`, `ApiMapping` or `RoutingRule`. All of these resources might change how a custom domain name routes requests to APIs.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -419,26 +377,28 @@ JSON
       "Effect": "Deny",
       "Action": "apigateway:*",
       "Resource": [
-        "arn:aws:apigateway:us-east-1::/domainnames/example.com/basepathmappings/*",
-        "arn:aws:apigateway:us-east-1::/domainnames/example.com/apimappings/*",
-        "arn:aws:apigateway:us-east-1:111122223333:/domainnames/example.com/routingrules/*"
+        "arn:aws:apigateway:{{us-east-1}}::/domainnames/{{example.com}}/basepathmappings/*",
+        "arn:aws:apigateway:{{us-east-1}}::/domainnames/{{example.com}}/apimappings/*",
+        "arn:aws:apigateway:{{us-east-1}}:{{111122223333}}:/domainnames/{{example.com}}/routingrules/*"
       ]
     }
   ]
 }
-
 ```
 
+------
+
 ### Allow a user to update a routing rule for certain priorities
+<a name="security_iam_id-based-policy-examples-routing-mode-2"></a>
 
-This policy allows a user to only update a routing rule to a priority between 1001 and 2000. You can use
-this rule to separate your production rules from lower priority rules and then allow users to modify lower
-priority rules without impacting production rules.
+This policy allows a user to only update a routing rule to a priority between 1001 and 2000. You can use this rule to separate your production rules from lower priority rules and then allow users to modify lower priority rules without impacting production rules.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -460,19 +420,21 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ### Allow a user to update a routing rule or base path mapping for a certain base path value
+<a name="security_iam_id-based-policy-examples-routing-mode-3"></a>
 
-This policy allows a user to only update a base path mapping for any base path that starts with
-`orders` or update a routing rule matching a base path that starts with `orders`. In this policy, a user can update a base path mapping or routing rule for `orders/create` or `orders123`, but not
-`payment/orders`.
+This policy allows a user to only update a base path mapping for any base path that starts with `orders` or update a routing rule matching a base path that starts with `orders`. In this policy, a user can update a base path mapping or routing rule for `orders/create` or `orders123`, but not `payment/orders`.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -494,18 +456,21 @@ JSON
       }
   ]
 }
-
 ```
 
+------
+
 ### Allow a user to update the routing mode to specific values
+<a name="security_iam_id-based-policy-examples-routing-mode-4"></a>
 
-This policy allows a user to only update the routing mode to `API_MAPPING_ONLY` and
-`ROUTING_RULE_THEN_API_MAPPING`. For more information about routing mode, see [Set the routing mode for your custom domain name](set-routing-mode.md).
+This policy allows a user to only update the routing mode to `API_MAPPING_ONLY` and `ROUTING_RULE_THEN_API_MAPPING`. For more information about routing mode, see [Set the routing mode for your custom domain name](set-routing-mode.md).
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -522,13 +487,8 @@ JSON
        }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-How Amazon API Gateway works with IAM
-
-Resource-based policy examples
+------
 
 All content copied from https://docs.aws.amazon.com/.

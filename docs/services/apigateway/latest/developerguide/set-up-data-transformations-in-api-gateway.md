@@ -3,74 +3,58 @@ title: "Tutorial: Modify the integration request and response for integrations t
 ---
 
 # Tutorial: Modify the integration request and response for integrations to AWS services
+<a name="set-up-data-transformations-in-api-gateway"></a>
 
-The following tutorial shows how to use mapping template transformations to set up mapping templates to transform integration requests and responses using the
-console and AWS CLI.
+The following tutorial shows how to use mapping template transformations to set up mapping templates to transform integration requests and responses using the console and AWS CLI.
 
-###### Topics
-
-- [Set up data transformation using the API Gateway console](#mapping-example-console)
-
-- [Set up data transformation using the AWS CLI](#mapping-example-cli)
-
-- [Completed data transformation CloudFormation template](#api-gateway-data-transformations-full-cfn-stack)
+**Topics**
++ [Set up data transformation using the API Gateway console](#mapping-example-console)
++ [Set up data transformation using the AWS CLI](#mapping-example-cli)
++ [Completed data transformation CloudFormation template](#api-gateway-data-transformations-full-cfn-stack)
 
 ## Set up data transformation using the API Gateway console
+<a name="mapping-example-console"></a>
 
-In this tutorial, you will create an incomplete API and DynamoDB table using the following .zip file [data-transformation-tutorial-console.zip](https://docs.aws.amazon.com/apigateway/latest/developerguide/samples/data-transformation-tutorial-console.zip). This incomplete API has a `/pets` resource with `GET` and `POST` methods.
+In this tutorial, you will create an incomplete API and DynamoDB table using the following .zip file [data-transformation-tutorial-console.zip](samples/data-transformation-tutorial-console.zip). This incomplete API has a `/pets` resource with `GET` and `POST` methods.
++ The `GET` method will get data from the `http://petstore-demo-endpoint.execute-api.com/petstore/pets` HTTP endpoint. The output data will be transformed according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
++ The `POST` method will allow the user to `POST` pet information to a Amazon DynamoDB table using a mapping template.
 
-- The `GET` method will get data from the
-`http://petstore-demo-endpoint.execute-api.com/petstore/pets` HTTP endpoint. The output data
-will be transformed according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
+Download and unzip [the app creation template for CloudFormation](samples/data-transformation-tutorial-console.zip). You'll use this template to create a DynamoDB table to post pet information and an incomplete API. You will finish the rest of the steps in the API Gateway console.
 
-- The `POST` method will allow the user to `POST` pet information to a Amazon DynamoDB table using a mapping template.
+**To create an CloudFormation stack**
 
-Download and unzip [the app creation template for CloudFormation](https://docs.aws.amazon.com/apigateway/latest/developerguide/samples/data-transformation-tutorial-console.zip).
-You'll use this template to create a DynamoDB table to post pet information and an incomplete API. You will finish the
-rest of the steps in the API Gateway console.
+1. Open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 
-###### To create an CloudFormation stack
+1. Choose **Create stack** and then choose **With new resources (standard)**.
 
-1. Open the CloudFormation console at
-    [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
+1. For **Specify template**, choose **Upload a template file**.
 
-2. Choose **Create stack** and then choose **With new resources**
-**(standard)**.
+1. Select the template that you downloaded.
 
-3. For **Specify template**, choose **Upload a template file**.
+1. Choose **Next**.
 
-4. Select the template that you downloaded.
+1. For **Stack name**, enter **data-transformation-tutorial-console** and then choose **Next**.
 
-5. Choose **Next**.
+1. For **Configure stack options**, choose **Next**.
 
-6. For **Stack name**, enter `data-transformation-tutorial-console` and then choose
-    **Next**.
+1. For **Capabilities**, acknowledge that CloudFormation can create IAM resources in your account.
 
-7. For **Configure stack options**, choose **Next**.
+1. Choose **Next**, and then choose **Submit**.
 
-8. For **Capabilities**, acknowledge that CloudFormation can create IAM resources in your
-    account.
+CloudFormation provisions the resources specified in the template. It can take a few minutes to finish provisioning your resources. When the status of your CloudFormation stack is **CREATE\_COMPLETE**, you're ready to move on to the next step.
 
-9. Choose **Next**, and then choose **Submit**.
+**To test the `GET` integration response**
 
-CloudFormation provisions the resources specified in the template. It can take a few minutes to finish provisioning
-your resources. When the status of your CloudFormation stack is **CREATE\_COMPLETE**, you're ready to move
-on to the next step.
+1. On the **Resources** tab of the CloudFormation stack for **data-transformation-tutorial-console**, select the physical ID of your API.
 
-###### To test the `GET` integration response
+1. In the main navigation pane, choose **Resources**, and then select the **GET** method.
 
-1. On the **Resources** tab of the CloudFormation stack for
-    `data-transformation-tutorial-console`, select the physical ID of your API.
+1. Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
 
-2. In the main navigation pane, choose **Resources**, and then select the **GET** method.
+   The output of the test will show the following:
 
-3. Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
-
-The output of the test will show the following:
-
-```nohighlight
-
-[
+   ```
+   [
      {
        "id": 1,
        "type": "dog",
@@ -86,29 +70,28 @@ The output of the test will show the following:
        "type": "fish",
        "price": 0.99
      }
-]
-```
+   ]
+   ```
 
-You will transform this output according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
+   You will transform this output according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
 
-###### To transform the `GET` integration response
+**To transform the `GET` integration response**
 
 1. Choose the **Integration response** tab.
 
-Currently, there are no mapping templates defined, so the integration response will not be transformed.
+   Currently, there are no mapping templates defined, so the integration response will not be transformed.
 
-2. For **Default - Response**, choose **Edit**.
+1. For **Default - Response**, choose **Edit**.
 
-3. Choose **Mapping templates**, and then do the following:
+1. Choose **Mapping templates**, and then do the following:
 
-1. Choose **Add mapping template**.
+   1. Choose **Add mapping template**.
 
-2. For **Content type**, enter `application/json`.
+   1. For **Content type**, enter **application/json**.
 
-3. For **Template body**, enter the following:
+   1. For **Template body**, enter the following:
 
-      ```nohighlight
-
+      ```
       #set($inputRoot = $input.path('$'))
       [
       #foreach($elem in $inputRoot)
@@ -121,17 +104,15 @@ Currently, there are no mapping templates defined, so the integration response w
       ]
       ```
 
-Choose **Save**.
+   Choose **Save**.
 
-###### To test the `GET` integration response
+**To test the `GET` integration response**
++ Choose the **Test** tab, and then choose **Test**.
 
-- Choose the **Test** tab, and then choose **Test**.
+  The output of the test will show the transformed response.
 
-The output of the test will show the transformed response.
-
-```nohighlight
-
-[
+  ```
+  [
     {
       "description" : "Item 1 is a dog.",
       "askingPrice" : 249.99
@@ -144,45 +125,36 @@ The output of the test will show the transformed response.
       "description" : "Item 3 is a fish.",
       "askingPrice" : 0.99
     }
-]
-```
+  ]
+  ```
 
-###### To transform input data from the `POST` method
+**To transform input data from the `POST` method**
 
 1. Choose the **POST** method.
 
-2. Choose the **Integration request** tab, and then for **Integration request settings**, choose **Edit**.
+1. Choose the **Integration request** tab, and then for **Integration request settings**, choose **Edit**.
 
-The CloudFormation template has populated some of the integration request fields.
+   The CloudFormation template has populated some of the integration request fields.
+   +  The integration type is AWS service.
+   +  The AWS service is DynamoDB.
+   +  The HTTP method is `POST`.
+   +  The Action is `PutItem`.
+   +  The Execution role allowing API Gateway to put an item into the DynamoDB table is `data-transformation-tutorial-console-APIGatewayRole`. CloudFormation created this role to allow API Gateway to have the minimal permissions for interacting with DynamoDB.
 
-- The integration type is AWS service.
+    The name of the DynamoDB table has not been specified. You will specify the name in the following steps.
 
-- The AWS service is DynamoDB.
+1. For **Request body passthrough**, select **Never**.
 
-- The HTTP method is `POST`.
+   This means that the API will reject data with Content-Types that do not have a mapping template.
 
-- The Action is `PutItem`.
+1. Choose **Mapping templates**.
 
-- The Execution role allowing API Gateway to put an item into the DynamoDB table is
-`data-transformation-tutorial-console-APIGatewayRole`. CloudFormation created this role to allow API Gateway to have the minimal
-permissions for interacting with DynamoDB.
+1. The **Content type** is set to `application/json`. This means a content types that are not application/json will be rejected by the API. For more information about the integration passthrough behaviors, see [Method request behavior for payloads without mapping templates for REST APIs in API Gateway](integration-passthrough-behaviors.md)
 
-The name of the DynamoDB table has not been specified. You will specify the name in the following steps.
+1. Enter the following code into the text editor.
 
-3. For **Request body passthrough**, select **Never**.
-
-This means that the API will reject data with Content-Types that do not have a mapping template.
-
-4. Choose **Mapping templates**.
-
-5. The **Content type** is set to `application/json`. This means a content types that are not application/json will be rejected by the API. For more information about the
-    integration passthrough behaviors, see [Method request behavior for payloads without mapping templates for REST APIs in API Gateway](integration-passthrough-behaviors.md)
-
-6. Enter the following code into the text editor.
-
-```nohighlight
-
-{
+   ```
+   {
        "TableName":"data-transformation-tutorial-console-ddb",
        "Item": {
            "id": {
@@ -195,145 +167,115 @@ This means that the API will reject data with Content-Types that do not have a m
                "N": $input.json("$.price")
            }
        }
-}
-```
+   }
+   ```
 
-    This template specifies the table as `data-transformation-tutorial-console-ddb` and sets the
-    items as `id`, `type`, and `price`. The items will come from the body of the
-    `POST` method. You also can use a data model to help create a mapping template.
-    For more information, see [Request validation for REST APIs in API Gateway](api-gateway-method-request-validation.md).
+    This template specifies the table as `data-transformation-tutorial-console-ddb` and sets the items as `id`, `type`, and `price`. The items will come from the body of the `POST` method. You also can use a data model to help create a mapping template. For more information, see [Request validation for REST APIs in API Gateway](api-gateway-method-request-validation.md).
 
-7. Choose **Save** to save your mapping template.
+1. Choose **Save** to save your mapping template.
 
-###### To add a method and integration response from the `POST` method
+**To add a method and integration response from the `POST` method**
 
-The CloudFormation created a blank method and integration response. You will edit this response to provide more
-information. For more information about how to edit responses, see [Parameter mapping examples for REST APIs in API Gateway](request-response-data-mappings.md).
+The CloudFormation created a blank method and integration response. You will edit this response to provide more information. For more information about how to edit responses, see [Parameter mapping examples for REST APIs in API Gateway](request-response-data-mappings.md).
 
 1. On the **Integration response** tab, for **Default - Response**, choose **Edit**.
 
-2. Choose **Mapping templates**, and then choose **Add mapping template**.
+1. Choose **Mapping templates**, and then choose **Add mapping template**.
 
-3. For **Content-type**, enter `application/json`.
+1. For **Content-type**, enter **application/json**.
 
-4. In the code editor, enter the following output mapping template to send an output message:
+1. In the code editor, enter the following output mapping template to send an output message:
 
-```nohighlight
+   ```
+   { "message" : "Your response was recorded at $context.requestTime" }
+   ```
 
-{ "message" : "Your response was recorded at $context.requestTime" }
-```
+   For more information about context variables, see [Context variables for data transformations](api-gateway-mapping-template-reference.md#context-variable-reference).
 
-For more information about context variables, see [Context variables for data transformations](api-gateway-mapping-template-reference.md#context-variable-reference).
+1. Choose **Save** to save your mapping template.
 
-5. Choose **Save** to save your mapping template.
-
-###### Test the `POST` method
+**Test the `POST` method**
 
 Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
 
 1. In the request body, enter the following example.
 
-```nohighlight
-
-{
+   ```
+   {
              "id": "4",
              "type" : "dog",
              "price": "321"
-}
-```
+   }
+   ```
 
-2. Choose **Test**.
+1. Choose **Test**.
 
-The output should show your success message.
+   The output should show your success message.
 
-    You can open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb) to verify that the example item is in your
-    table.
+    You can open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/) to verify that the example item is in your table.
 
-###### To delete an CloudFormation stack
+**To delete an CloudFormation stack**
 
-1. Open the CloudFormation console at
-    [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
+1. Open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 
-2. Select your CloudFormation stack.
+1. Select your CloudFormation stack.
 
-3. Choose **Delete** and then confirm your choice.
+1. Choose **Delete** and then confirm your choice.
 
 ## Set up data transformation using the AWS CLI
+<a name="mapping-example-cli"></a>
 
-In this tutorial, you will create an incomplete API and DynamoDB table using the following .zip file [data-transformation-tutorial-cli.zip](https://docs.aws.amazon.com/apigateway/latest/developerguide/samples/data-transformation-tutorial-cli.zip). This incomplete API has a
-`/pets` resource with a `GET` method integrated with the
-`http://petstore-demo-endpoint.execute-api.com/petstore/pets` HTTP endpoint. You will create a
-`POST` method to connect to a DynamoDB table and use mapping templates to input data into a DynamoDB table.
+In this tutorial, you will create an incomplete API and DynamoDB table using the following .zip file [data-transformation-tutorial-cli.zip](samples/data-transformation-tutorial-cli.zip). This incomplete API has a `/pets` resource with a `GET` method integrated with the `http://petstore-demo-endpoint.execute-api.com/petstore/pets` HTTP endpoint. You will create a `POST` method to connect to a DynamoDB table and use mapping templates to input data into a DynamoDB table.
++ You will transform the output data according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
++ You will create a `POST` method to allow the user to `POST` pet information to a Amazon DynamoDB table using a mapping template.
 
-- You will transform the output data according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
+**To create an CloudFormation stack**
 
-- You will create a `POST` method to allow the user to `POST` pet information to a
-Amazon DynamoDB table using a mapping template.
+Download and unzip [the app creation template for CloudFormation](samples/data-transformation-tutorial-cli.zip).
 
-###### To create an CloudFormation stack
+To complete the following tutorial, you need the [AWS Command Line Interface (AWS CLI) version 2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
-Download and unzip [the app creation template for CloudFormation](https://docs.aws.amazon.com/apigateway/latest/developerguide/samples/data-transformation-tutorial-cli.zip).
+For long commands, an escape character (`\`) is used to split a command over multiple lines.
+**Note**
+In Windows, some Bash CLI commands that you commonly use (such as `zip`) are not supported by the operating system's built-in terminals. To get a Windows-integrated version of Ubuntu and Bash, [install the Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install). Example CLI commands in this guide use Linux formatting. Commands which include inline JSON documents must be reformatted if you are using the Windows CLI.
 
-To complete the following tutorial, you need the [AWS Command Line Interface (AWS CLI) version 2](../../../cli/latest/userguide/getting-started-install.md).
+1.  Use the following command to create the CloudFormation stack.
 
-For long commands, an escape character ( `\`) is used to split a command over multiple lines.
+   ```
+   aws cloudformation create-stack --stack-name data-transformation-tutorial-cli --template-body file://data-transformation-tutorial-cli.zip --capabilities CAPABILITY_NAMED_IAM
+   ```
 
-###### Note
+1. CloudFormation provisions the resources specified in the template. It can take a few minutes to finish provisioning your resources. Use the following command to see the status of your CloudFormation stack.
 
-In Windows, some Bash CLI commands that you commonly use (such as `zip`) are not supported by the operating system's built-in terminals.
-To get a Windows-integrated version of Ubuntu and Bash, [install the Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
-Example CLI commands in this guide use Linux formatting. Commands which include inline JSON documents must be reformatted if you are using the Windows CLI.
+   ```
+   aws cloudformation describe-stacks --stack-name data-transformation-tutorial-cli
+   ```
 
-1. Use the following command to create the CloudFormation stack.
+1. When the status of your CloudFormation stack is `StackStatus: "CREATE_COMPLETE"`, use the following command to retrieve relevant output values for future steps.
 
-```nohighlight
-
-aws cloudformation create-stack --stack-name data-transformation-tutorial-cli --template-body file://data-transformation-tutorial-cli.zip --capabilities CAPABILITY_NAMED_IAM
-```
-
-2. CloudFormation provisions the resources specified in the template. It can take a few minutes to finish provisioning
-    your resources. Use the following command to see the status of your CloudFormation stack.
-
-```nohighlight
-
-aws cloudformation describe-stacks --stack-name data-transformation-tutorial-cli
-```
-
-3. When the status of your CloudFormation stack is `StackStatus: "CREATE_COMPLETE"`, use the following
-    command to retrieve relevant output values for future steps.
-
-```nohighlight
-
+   ```
     aws cloudformation describe-stacks --stack-name data-transformation-tutorial-cli --query "Stacks[*].Outputs[*].{OutputKey: OutputKey, OutputValue: OutputValue, Description: Description}"
-```
+   ```
 
-The output values are the following:
+   The output values are the following:
+   + ApiRole, which is the role name that allows API Gateway to put items in the DynamoDB table. For this tutorial, the role name is `data-transformation-tutorial-cli-APIGatewayRole-ABCDEFG`.
+   + DDBTableName, which is the name of the DynamoDB table. For this tutorial, the table name is `data-transformation-tutorial-cli-ddb`
+   + ResourceId, which is the ID for the pets resource where the `GET` and `POST` methods are exposed. For this tutorial, the Resource ID is `efg456`
+   + ApiId, which is the ID for the API. For this tutorial, the API ID is `abc123`.
 
-- ApiRole, which is the role name that allows API Gateway to put items in the DynamoDB table. For this tutorial,
-the role name is `data-transformation-tutorial-cli-APIGatewayRole-ABCDEFG`.
+**To test the `GET` method before data transformation**
++ Use the following command to test the `GET` method.
 
-- DDBTableName, which is the name of the DynamoDB table. For this tutorial, the table name is `data-transformation-tutorial-cli-ddb`
-
-- ResourceId, which is the ID for the pets resource where the `GET` and `POST` methods are exposed. For this tutorial, the Resource ID is `efg456`
-
-- ApiId, which is the ID for the API. For this tutorial, the API ID is `abc123`.
-
-###### To test the `GET` method before data transformation
-
-- Use the following command to test the `GET` method.
-
-```nohighlight
-
-aws apigateway test-invoke-method --rest-api-id abc123 \
-            --resource-id efg456 \
+  ```
+  aws apigateway test-invoke-method --rest-api-id {{abc123}} \
+            --resource-id {{efg456}} \
             --http-method GET
-```
+  ```
 
-The output of the test will show the following.
+  The output of the test will show the following.
 
-```nohighlight
-
-[
+  ```
+  [
     {
       "id": 1,
       "type": "dog",
@@ -349,46 +291,38 @@ The output of the test will show the following.
       "type": "fish",
       "price": 0.99
     }
-]
-```
+  ]
+  ```
 
-You will transform this output according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
+  You will transform this output according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
 
-###### To transform the `GET` integration response
+**To transform the `GET` integration response**
++ Use the following command to update the integration response for the `GET` method. Replace the {{rest-api-id}} and {{resource-id}} with your values.
 
-- Use the following command to update the integration response for the `GET`
-method. Replace the `rest-api-id` and
-`resource-id` with your values.
+  Use the following command to create the integration response.
 
-Use the following command to create the integration response.
-
-```nohighlight
-
-aws apigateway put-integration-response --rest-api-id abc123 \
-    --resource-id efg456 \
+  ```
+  aws apigateway put-integration-response --rest-api-id {{abc123}} \
+    --resource-id {{efg456}} \
     --http-method GET \
     --status-code 200 \
     --selection-pattern "" \
     --response-templates '{"application/json": "#set($inputRoot = $input.path(\"$\"))\n[\n#foreach($elem in $inputRoot)\n {\n  \"description\": \"Item $elem.id is a $elem.type\",\n  \"askingPrice\": \"$elem.price\"\n }#if($foreach.hasNext),#end\n\n#end\n]"}'
-```
+  ```
 
-###### To test the `GET` method
+**To test the `GET` method**
++ Use the following command to test the `GET` method.
 
-- Use the following command to test the `GET` method.
-
-```nohighlight
-
-aws apigateway test-invoke-method --rest-api-id abc123 \
-    --resource-id efg456 \
+  ```
+  aws apigateway test-invoke-method --rest-api-id {{abc123}} \
+    --resource-id {{efg456}} \
     --http-method GET \
+  ```
 
-```
+  The output of the test will show the transformed response.
 
-The output of the test will show the transformed response.
-
-```nohighlight
-
-[
+  ```
+  [
     {
       "description" : "Item 1 is a dog.",
       "askingPrice" : 249.99
@@ -401,100 +335,85 @@ The output of the test will show the transformed response.
       "description" : "Item 3 is a fish.",
       "askingPrice" : 0.99
     }
-]
-```
+  ]
+  ```
 
-###### To create a `POST` method
+**To create a `POST` method**
 
 1. Use the following command to create a new method on the `/pets` resource.
 
-```nohighlight
-
-aws apigateway put-method --rest-api-id abc123 \
-     --resource-id efg456 \
+   ```
+   aws apigateway put-method --rest-api-id {{abc123}} \
+     --resource-id {{efg456}} \
      --http-method POST \
      --authorization-type "NONE" \
+   ```
 
-```
+   This method will allow you to send pet information to the DynamoDB table that your created in the CloudFormation stack.
 
-This method will allow you to send pet information to the DynamoDB table that your created in the CloudFormation stack.
+1.  Use the following command to create an AWS service integration on the `POST` method.
 
-2. Use the following command to create an AWS service integration on the `POST` method.
-
-```nohighlight
-
-aws apigateway put-integration --rest-api-id abc123 \
-     --resource-id efg456 \
+   ```
+   aws apigateway put-integration --rest-api-id {{abc123}} \
+     --resource-id {{efg456}} \
      --http-method POST \
      --type AWS \
      --integration-http-method POST \
-     --uri "arn:aws:apigateway:us-east-2:dynamodb:action/PutItem" \
-     --credentials arn:aws:iam::111122223333:role/data-transformation-tutorial-cli-APIGatewayRole-ABCDEFG \
+     --uri "arn:aws:apigateway:{{us-east-2}}:dynamodb:action/PutItem" \
+     --credentials arn:aws:iam::{{111122223333}}:role/{{data-transformation-tutorial-cli-APIGatewayRole-ABCDEFG}} \
      --request-templates '{"application/json":"{\"TableName\":\"data-transformation-tutorial-cli-ddb\",\"Item\":{\"id\":{\"N\":$input.json(\"$.id\")},\"type\":{\"S\":$input.json(\"$.type\")},\"price\":{\"N\":$input.json(\"$.price\")} }}"}'
+   ```
 
-```
+1.  Use the following command to create a method response for a successful call of the `POST` method.
 
-3. Use the following command to create a method response for a successful call of the `POST`
-    method.
-
-```nohighlight
-
-aws apigateway put-method-response --rest-api-id abc123 \
-     --resource-id efg456 \
+   ```
+   aws apigateway put-method-response --rest-api-id {{abc123}} \
+     --resource-id {{efg456}} \
      --http-method POST \
      --status-code 200
-```
+   ```
 
-4. Use the following command to create an integration response for the successful call of the `POST`
-    method.
+1. Use the following command to create an integration response for the successful call of the `POST` method.
 
-```nohighlight
-
-aws apigateway put-integration-response --rest-api-id abc123 \
-     --resource-id efg456 \
+   ```
+   aws apigateway put-integration-response --rest-api-id {{abc123}} \
+     --resource-id {{efg456}} \
      --http-method POST \
      --status-code 200 \
      --selection-pattern "" \
      --response-templates '{"application/json": "{\"message\": \"Your response was recorded at $context.requestTime\"}"}'
-```
+   ```
 
-###### To test the `POST` method
+**To test the `POST` method**
++ Use the following command to test the `POST` method.
 
-- Use the following command to test the `POST` method.
-
-```nohighlight
-
-aws apigateway test-invoke-method --rest-api-id abc123 \
-    --resource-id efg456 \
+  ```
+  aws apigateway test-invoke-method --rest-api-id {{abc123}} \
+    --resource-id {{efg456}} \
     --http-method POST \
     --body '{\"id\": \"4\", \"type\": \"dog\", \"price\": \"321\"}'
-```
+  ```
 
-The output will show the successful message.
+  The output will show the successful message.
 
-###### To delete an CloudFormation stack
+**To delete an CloudFormation stack**
++ Use the following command to delete your CloudFormation resources.
 
-- Use the following command to delete your CloudFormation resources.
-
-```nohighlight
-
-aws cloudformation delete-stack  --stack-name data-transformation-tutorial-cli
-```
+  ```
+  aws cloudformation delete-stack  --stack-name data-transformation-tutorial-cli
+  ```
 
 ## Completed data transformation CloudFormation template
+<a name="api-gateway-data-transformations-full-cfn-stack"></a>
 
-The following example is a completed CloudFormation template, which creates an API and a DynamoDB table with a
-`/pets` resource with `GET` and `POST` methods.
+The following example is a completed CloudFormation template, which creates an API and a DynamoDB table with a `/pets` resource with `GET` and `POST` methods.
++ The `GET` method will get data from the `http://petstore-demo-endpoint.execute-api.com/petstore/pets` HTTP endpoint. The output data will be transformed according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
++ The `POST` method will allow the user to `POST` pet information to a DynamoDB table using a mapping template.
 
-- The `GET` method will get data from the
-`http://petstore-demo-endpoint.execute-api.com/petstore/pets` HTTP endpoint. The output data
-will be transformed according to the mapping template in [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
+### Example CloudFormation template
+<a name="mapping-template-cfn-example"></a>
 
-- The `POST` method will allow the user to `POST` pet information to a DynamoDB table using a
-mapping template.
-
-```nohighlight
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: A completed Amazon API Gateway REST API that uses non-proxy integration to POST to an Amazon DynamoDB table and non-proxy integration to GET transformed pets data.
 Parameters:
@@ -611,13 +530,6 @@ Outputs:
   DDBTableName:
     Description: DynamoDB table name
     Value: !Ref DynamoDBTable
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Override your API's request and response parameters and status codes
-
-Examples using variables for mapping template transformations
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,34 +3,22 @@ title: "Return binary media from a Lambda proxy integration in API Gateway"
 ---
 
 # Return binary media from a Lambda proxy integration in API Gateway
+<a name="lambda-proxy-binary-media"></a>
 
-To return binary media from an [AWS Lambda proxy\
-integration](set-up-lambda-proxy-integrations.md), base64 encode the response from your Lambda function. You must also [configure your API's binary media types](api-gateway-payload-encodings-configure-with-console.md).
-When you configure your API's binary media types, your API treats that content type as binary data. The payload
-size limit is 10 MB.
+To return binary media from an [AWS Lambda proxy integration](set-up-lambda-proxy-integrations.md), base64 encode the response from your Lambda function. You must also [configure your API's binary media types](api-gateway-payload-encodings-configure-with-console.md). When you configure your API's binary media types, your API treats that content type as binary data. The payload size limit is 10 MB.
 
-###### Note
+**Note**
+To use a web browser to invoke an API with this example integration, set your API's binary media types to `*/*`. API Gateway uses the first `Accept` header from clients to determine if a response should return binary media. To return binary media when you can't control the order of `Accept` header values, such as requests from a browser, set your API's binary media types to `*/*` (for all content types).
 
-To use a web browser to invoke an API with this example integration, set your
-API's binary media types to `*/*`. API Gateway uses the first
-`Accept` header from clients to determine if a response should
-return binary media. To return binary media when you can't control the order of
-`Accept` header values, such as requests from a browser, set your
-API's binary media types to `*/*` (for all content types).
+The following example Lambda function can return a binary image from Amazon S3 or text to clients. The function's response includes a `Content-Type` header to indicate to the client the type of data that it returns. The function conditionally sets the `isBase64Encoded` property in its response, depending on the type of data that it returns.
 
-The following example Lambda function can return a binary image from Amazon S3
-or text to clients. The function's response includes a `Content-Type`
-header to indicate to the client the type of data that it returns. The function
-conditionally sets the `isBase64Encoded` property in its response,
-depending on the type of data that it returns.
+------
+#### [ Node.js ]
 
-Node.js
-
-```javascript
-
+```
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
 
-const client = new S3Client({region: 'us-east-2'});
+const client = new S3Client({region: '{{us-east-2}}'});
 
 export const handler = async (event) => {
 
@@ -40,8 +28,8 @@ export const handler = async (event) => {
   var number = randomint(2);
   if (number == 1){
     const input = {
-      "Bucket" : "bucket-name",
-      "Key" : "image.png"
+      "Bucket" : "{{bucket-name}}",
+      "Key" : "{{image.png}}"
       }
     try {
       const command = new GetObjectCommand(input)
@@ -67,10 +55,10 @@ export const handler = async (event) => {
 }
 ```
 
-Python
+------
+#### [ Python ]
 
-```python
-
+```
 import base64
 import boto3
 import json
@@ -82,8 +70,8 @@ def lambda_handler(event, context):
     number = random.randint(0,1)
     if number == 1:
         response = s3.get_object(
-            Bucket='bucket-name',
-            Key='image.png',
+            Bucket='{{bucket-name}}',
+            Key='{{image.png'}},
         )
         image = response['Body'].read()
         return {
@@ -100,12 +88,8 @@ def lambda_handler(event, context):
         }
 ```
 
+------
+
 To learn more about binary media types, see [Binary media types for REST APIs in API Gateway](api-gateway-payload-encodings.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Import and export content encodings for API Gateway
-
-Access binary files in Amazon S3 through an API Gateway API
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,22 +3,20 @@ title: "x-amazon-apigateway-gateway-responses.responseParameters object"
 ---
 
 # x-amazon-apigateway-gateway-responses.responseParameters object
+<a name="api-gateway-swagger-extensions-gateway-responses.responseParameters"></a>
 
 Defines a string-to-string map of key-value pairs to generate gateway response parameters from the incoming request parameters or using literal strings. Supported only for REST APIs.
 
-Property nameTypeDescription`gatewayresponse.param-position.param-name``string`
-
-`param-position` can be
-`header`, `path`, or
-`querystring`. For more information, see [Parameter mapping for REST APIs in API Gateway](rest-api-parameter-mapping.md).
+| Property name | Type | Description |
+| --- | --- | --- |
+| gatewayresponse.{{param-position}}.{{param-name}} | string | `{{param-position}}` can be `header`, `path`, or `querystring`. For more information, see [Parameter mapping for REST APIs in API Gateway](rest-api-parameter-mapping.md). |
 
 ## x-amazon-apigateway-gateway-responses.responseParameters example
+<a name="api-gateway-swagger-extensions-gateway-responses.responseParameters-example"></a>
 
-The following OpenAPI extensions example shows a
-[GatewayResponse](../api/api-gatewayresponse.md) response parameter mapping expression to enable CORS support for resources on the `*.example.domain` domains.
+ The following OpenAPI extensions example shows a [GatewayResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_GatewayResponse.html) response parameter mapping expression to enable CORS support for resources on the `*.example.domain` domains.
 
-```nohighlight
-
+```
       "responseParameters": {
         "gatewayresponse.header.Access-Control-Allow-Origin": '*.example.domain',
         "gatewayresponse.header.from-request-header" : method.request.header.Accept,
@@ -26,11 +24,5 @@ The following OpenAPI extensions example shows a
         "gatewayresponse.header.from-request-query" : method.request.querystring.qname
       }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-x-amazon-apigateway-gateway-responses.gatewayResponse
-
-x-amazon-apigateway-gateway-responses.responseTemplates
 
 All content copied from https://docs.aws.amazon.com/.

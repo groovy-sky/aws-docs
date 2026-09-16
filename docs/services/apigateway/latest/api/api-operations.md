@@ -3,261 +3,132 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported:
-
-- [CreateApiKey](api-createapikey.md)
-
-- [CreateAuthorizer](api-createauthorizer.md)
-
-- [CreateBasePathMapping](api-createbasepathmapping.md)
-
-- [CreateDeployment](api-createdeployment.md)
-
-- [CreateDocumentationPart](api-createdocumentationpart.md)
-
-- [CreateDocumentationVersion](api-createdocumentationversion.md)
-
-- [CreateDomainName](api-createdomainname.md)
-
-- [CreateDomainNameAccessAssociation](api-createdomainnameaccessassociation.md)
-
-- [CreateModel](api-createmodel.md)
-
-- [CreateRequestValidator](api-createrequestvalidator.md)
-
-- [CreateResource](api-createresource.md)
-
-- [CreateRestApi](api-createrestapi.md)
-
-- [CreateStage](api-createstage.md)
-
-- [CreateUsagePlan](api-createusageplan.md)
-
-- [CreateUsagePlanKey](api-createusageplankey.md)
-
-- [CreateVpcLink](api-createvpclink.md)
-
-- [DeleteApiKey](api-deleteapikey.md)
-
-- [DeleteAuthorizer](api-deleteauthorizer.md)
-
-- [DeleteBasePathMapping](api-deletebasepathmapping.md)
-
-- [DeleteClientCertificate](api-deleteclientcertificate.md)
-
-- [DeleteDeployment](api-deletedeployment.md)
-
-- [DeleteDocumentationPart](api-deletedocumentationpart.md)
-
-- [DeleteDocumentationVersion](api-deletedocumentationversion.md)
-
-- [DeleteDomainName](api-deletedomainname.md)
-
-- [DeleteDomainNameAccessAssociation](api-deletedomainnameaccessassociation.md)
-
-- [DeleteGatewayResponse](api-deletegatewayresponse.md)
-
-- [DeleteIntegration](api-deleteintegration.md)
-
-- [DeleteIntegrationResponse](api-deleteintegrationresponse.md)
-
-- [DeleteMethod](api-deletemethod.md)
-
-- [DeleteMethodResponse](api-deletemethodresponse.md)
-
-- [DeleteModel](api-deletemodel.md)
-
-- [DeleteRequestValidator](api-deleterequestvalidator.md)
-
-- [DeleteResource](api-deleteresource.md)
-
-- [DeleteRestApi](api-deleterestapi.md)
-
-- [DeleteStage](api-deletestage.md)
-
-- [DeleteUsagePlan](api-deleteusageplan.md)
-
-- [DeleteUsagePlanKey](api-deleteusageplankey.md)
-
-- [DeleteVpcLink](api-deletevpclink.md)
-
-- [FlushStageAuthorizersCache](api-flushstageauthorizerscache.md)
-
-- [FlushStageCache](api-flushstagecache.md)
-
-- [GenerateClientCertificate](api-generateclientcertificate.md)
-
-- [GetAccount](api-getaccount.md)
-
-- [GetApiKey](api-getapikey.md)
-
-- [GetApiKeys](api-getapikeys.md)
-
-- [GetAuthorizer](api-getauthorizer.md)
-
-- [GetAuthorizers](api-getauthorizers.md)
-
-- [GetBasePathMapping](api-getbasepathmapping.md)
-
-- [GetBasePathMappings](api-getbasepathmappings.md)
-
-- [GetClientCertificate](api-getclientcertificate.md)
-
-- [GetClientCertificates](api-getclientcertificates.md)
-
-- [GetDeployment](api-getdeployment.md)
-
-- [GetDeployments](api-getdeployments.md)
-
-- [GetDocumentationPart](api-getdocumentationpart.md)
-
-- [GetDocumentationParts](api-getdocumentationparts.md)
-
-- [GetDocumentationVersion](api-getdocumentationversion.md)
-
-- [GetDocumentationVersions](api-getdocumentationversions.md)
-
-- [GetDomainName](api-getdomainname.md)
-
-- [GetDomainNameAccessAssociations](api-getdomainnameaccessassociations.md)
-
-- [GetDomainNames](api-getdomainnames.md)
-
-- [GetExport](api-getexport.md)
-
-- [GetGatewayResponse](api-getgatewayresponse.md)
-
-- [GetGatewayResponses](api-getgatewayresponses.md)
-
-- [GetIntegration](api-getintegration.md)
-
-- [GetIntegrationResponse](api-getintegrationresponse.md)
-
-- [GetMethod](api-getmethod.md)
-
-- [GetMethodResponse](api-getmethodresponse.md)
-
-- [GetModel](api-getmodel.md)
-
-- [GetModels](api-getmodels.md)
-
-- [GetModelTemplate](api-getmodeltemplate.md)
-
-- [GetRequestValidator](api-getrequestvalidator.md)
-
-- [GetRequestValidators](api-getrequestvalidators.md)
-
-- [GetResource](api-getresource.md)
-
-- [GetResources](api-getresources.md)
-
-- [GetRestApi](api-getrestapi.md)
-
-- [GetRestApis](api-getrestapis.md)
-
-- [GetSdk](../../../../reference/apigateway/latest/api/api-getsdk.md)
-
-- [GetSdkType](../../../../reference/apigateway/latest/api/api-getsdktype.md)
-
-- [GetSdkTypes](../../../../reference/apigateway/latest/api/api-getsdktypes.md)
-
-- [GetStage](api-getstage.md)
-
-- [GetStages](api-getstages.md)
-
-- [GetTags](api-gettags.md)
-
-- [GetUsage](api-getusage.md)
-
-- [GetUsagePlan](api-getusageplan.md)
-
-- [GetUsagePlanKey](api-getusageplankey.md)
-
-- [GetUsagePlanKeys](api-getusageplankeys.md)
-
-- [GetUsagePlans](api-getusageplans.md)
-
-- [GetVpcLink](api-getvpclink.md)
-
-- [GetVpcLinks](api-getvpclinks.md)
-
-- [ImportApiKeys](api-importapikeys.md)
-
-- [ImportDocumentationParts](api-importdocumentationparts.md)
-
-- [ImportRestApi](api-importrestapi.md)
-
-- [PutGatewayResponse](api-putgatewayresponse.md)
-
-- [PutIntegration](api-putintegration.md)
-
-- [PutIntegrationResponse](api-putintegrationresponse.md)
-
-- [PutMethod](api-putmethod.md)
-
-- [PutMethodResponse](api-putmethodresponse.md)
-
-- [PutRestApi](api-putrestapi.md)
-
-- [RejectDomainNameAccessAssociation](api-rejectdomainnameaccessassociation.md)
-
-- [TagResource](api-tagresource.md)
-
-- [TestInvokeAuthorizer](api-testinvokeauthorizer.md)
-
-- [TestInvokeMethod](api-testinvokemethod.md)
-
-- [UntagResource](api-untagresource.md)
-
-- [UpdateAccount](api-updateaccount.md)
-
-- [UpdateApiKey](api-updateapikey.md)
-
-- [UpdateAuthorizer](api-updateauthorizer.md)
-
-- [UpdateBasePathMapping](api-updatebasepathmapping.md)
-
-- [UpdateClientCertificate](api-updateclientcertificate.md)
-
-- [UpdateDeployment](api-updatedeployment.md)
-
-- [UpdateDocumentationPart](api-updatedocumentationpart.md)
-
-- [UpdateDocumentationVersion](api-updatedocumentationversion.md)
-
-- [UpdateDomainName](api-updatedomainname.md)
-
-- [UpdateGatewayResponse](api-updategatewayresponse.md)
-
-- [UpdateIntegration](api-updateintegration.md)
-
-- [UpdateIntegrationResponse](api-updateintegrationresponse.md)
-
-- [UpdateMethod](api-updatemethod.md)
-
-- [UpdateMethodResponse](api-updatemethodresponse.md)
-
-- [UpdateModel](api-updatemodel.md)
-
-- [UpdateRequestValidator](api-updaterequestvalidator.md)
-
-- [UpdateResource](api-updateresource.md)
-
-- [UpdateRestApi](api-updaterestapi.md)
-
-- [UpdateStage](api-updatestage.md)
-
-- [UpdateUsage](api-updateusage.md)
-
-- [UpdateUsagePlan](api-updateusageplan.md)
-
-- [UpdateVpcLink](api-updatevpclink.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-CreateApiKey
++  [CreateApiKey](API_CreateApiKey.md)
++  [CreateAuthorizer](API_CreateAuthorizer.md)
++  [CreateBasePathMapping](API_CreateBasePathMapping.md)
++  [CreateDeployment](API_CreateDeployment.md)
++  [CreateDocumentationPart](API_CreateDocumentationPart.md)
++  [CreateDocumentationVersion](API_CreateDocumentationVersion.md)
++  [CreateDomainName](API_CreateDomainName.md)
++  [CreateDomainNameAccessAssociation](API_CreateDomainNameAccessAssociation.md)
++  [CreateModel](API_CreateModel.md)
++  [CreateRequestValidator](API_CreateRequestValidator.md)
++  [CreateResource](API_CreateResource.md)
++  [CreateRestApi](API_CreateRestApi.md)
++  [CreateStage](API_CreateStage.md)
++  [CreateUsagePlan](API_CreateUsagePlan.md)
++  [CreateUsagePlanKey](API_CreateUsagePlanKey.md)
++  [CreateVpcLink](API_CreateVpcLink.md)
++  [DeleteApiKey](API_DeleteApiKey.md)
++  [DeleteAuthorizer](API_DeleteAuthorizer.md)
++  [DeleteBasePathMapping](API_DeleteBasePathMapping.md)
++  [DeleteClientCertificate](API_DeleteClientCertificate.md)
++  [DeleteDeployment](API_DeleteDeployment.md)
++  [DeleteDocumentationPart](API_DeleteDocumentationPart.md)
++  [DeleteDocumentationVersion](API_DeleteDocumentationVersion.md)
++  [DeleteDomainName](API_DeleteDomainName.md)
++  [DeleteDomainNameAccessAssociation](API_DeleteDomainNameAccessAssociation.md)
++  [DeleteGatewayResponse](API_DeleteGatewayResponse.md)
++  [DeleteIntegration](API_DeleteIntegration.md)
++  [DeleteIntegrationResponse](API_DeleteIntegrationResponse.md)
++  [DeleteMethod](API_DeleteMethod.md)
++  [DeleteMethodResponse](API_DeleteMethodResponse.md)
++  [DeleteModel](API_DeleteModel.md)
++  [DeleteRequestValidator](API_DeleteRequestValidator.md)
++  [DeleteResource](API_DeleteResource.md)
++  [DeleteRestApi](API_DeleteRestApi.md)
++  [DeleteStage](API_DeleteStage.md)
++  [DeleteUsagePlan](API_DeleteUsagePlan.md)
++  [DeleteUsagePlanKey](API_DeleteUsagePlanKey.md)
++  [DeleteVpcLink](API_DeleteVpcLink.md)
++  [FlushStageAuthorizersCache](API_FlushStageAuthorizersCache.md)
++  [FlushStageCache](API_FlushStageCache.md)
++  [GenerateClientCertificate](API_GenerateClientCertificate.md)
++  [GetAccount](API_GetAccount.md)
++  [GetApiKey](API_GetApiKey.md)
++  [GetApiKeys](API_GetApiKeys.md)
++  [GetAuthorizer](API_GetAuthorizer.md)
++  [GetAuthorizers](API_GetAuthorizers.md)
++  [GetBasePathMapping](API_GetBasePathMapping.md)
++  [GetBasePathMappings](API_GetBasePathMappings.md)
++  [GetClientCertificate](API_GetClientCertificate.md)
++  [GetClientCertificates](API_GetClientCertificates.md)
++  [GetDeployment](API_GetDeployment.md)
++  [GetDeployments](API_GetDeployments.md)
++  [GetDocumentationPart](API_GetDocumentationPart.md)
++  [GetDocumentationParts](API_GetDocumentationParts.md)
++  [GetDocumentationVersion](API_GetDocumentationVersion.md)
++  [GetDocumentationVersions](API_GetDocumentationVersions.md)
++  [GetDomainName](API_GetDomainName.md)
++  [GetDomainNameAccessAssociations](API_GetDomainNameAccessAssociations.md)
++  [GetDomainNames](API_GetDomainNames.md)
++  [GetExport](API_GetExport.md)
++  [GetGatewayResponse](API_GetGatewayResponse.md)
++  [GetGatewayResponses](API_GetGatewayResponses.md)
++  [GetIntegration](API_GetIntegration.md)
++  [GetIntegrationResponse](API_GetIntegrationResponse.md)
++  [GetMethod](API_GetMethod.md)
++  [GetMethodResponse](API_GetMethodResponse.md)
++  [GetModel](API_GetModel.md)
++  [GetModels](API_GetModels.md)
++  [GetModelTemplate](API_GetModelTemplate.md)
++  [GetRequestValidator](API_GetRequestValidator.md)
++  [GetRequestValidators](API_GetRequestValidators.md)
++  [GetResource](API_GetResource.md)
++  [GetResources](API_GetResources.md)
++  [GetRestApi](API_GetRestApi.md)
++  [GetRestApis](API_GetRestApis.md)
++  [GetSdk](API_GetSdk.md)
++  [GetSdkType](API_GetSdkType.md)
++  [GetSdkTypes](API_GetSdkTypes.md)
++  [GetStage](API_GetStage.md)
++  [GetStages](API_GetStages.md)
++  [GetTags](API_GetTags.md)
++  [GetUsage](API_GetUsage.md)
++  [GetUsagePlan](API_GetUsagePlan.md)
++  [GetUsagePlanKey](API_GetUsagePlanKey.md)
++  [GetUsagePlanKeys](API_GetUsagePlanKeys.md)
++  [GetUsagePlans](API_GetUsagePlans.md)
++  [GetVpcLink](API_GetVpcLink.md)
++  [GetVpcLinks](API_GetVpcLinks.md)
++  [ImportApiKeys](API_ImportApiKeys.md)
++  [ImportDocumentationParts](API_ImportDocumentationParts.md)
++  [ImportRestApi](API_ImportRestApi.md)
++  [PutGatewayResponse](API_PutGatewayResponse.md)
++  [PutIntegration](API_PutIntegration.md)
++  [PutIntegrationResponse](API_PutIntegrationResponse.md)
++  [PutMethod](API_PutMethod.md)
++  [PutMethodResponse](API_PutMethodResponse.md)
++  [PutRestApi](API_PutRestApi.md)
++  [RejectDomainNameAccessAssociation](API_RejectDomainNameAccessAssociation.md)
++  [TagResource](API_TagResource.md)
++  [TestInvokeAuthorizer](API_TestInvokeAuthorizer.md)
++  [TestInvokeMethod](API_TestInvokeMethod.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateAccount](API_UpdateAccount.md)
++  [UpdateApiKey](API_UpdateApiKey.md)
++  [UpdateAuthorizer](API_UpdateAuthorizer.md)
++  [UpdateBasePathMapping](API_UpdateBasePathMapping.md)
++  [UpdateClientCertificate](API_UpdateClientCertificate.md)
++  [UpdateDeployment](API_UpdateDeployment.md)
++  [UpdateDocumentationPart](API_UpdateDocumentationPart.md)
++  [UpdateDocumentationVersion](API_UpdateDocumentationVersion.md)
++  [UpdateDomainName](API_UpdateDomainName.md)
++  [UpdateGatewayResponse](API_UpdateGatewayResponse.md)
++  [UpdateIntegration](API_UpdateIntegration.md)
++  [UpdateIntegrationResponse](API_UpdateIntegrationResponse.md)
++  [UpdateMethod](API_UpdateMethod.md)
++  [UpdateMethodResponse](API_UpdateMethodResponse.md)
++  [UpdateModel](API_UpdateModel.md)
++  [UpdateRequestValidator](API_UpdateRequestValidator.md)
++  [UpdateResource](API_UpdateResource.md)
++  [UpdateRestApi](API_UpdateRestApi.md)
++  [UpdateStage](API_UpdateStage.md)
++  [UpdateUsage](API_UpdateUsage.md)
++  [UpdateUsagePlan](API_UpdateUsagePlan.md)
++  [UpdateVpcLink](API_UpdateVpcLink.md)
 
 All content copied from https://docs.aws.amazon.com/.

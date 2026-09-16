@@ -3,12 +3,11 @@ title: "API Gateway-supported certificate authorities for HTTP and HTTP proxy in
 ---
 
 # API Gateway-supported certificate authorities for HTTP and HTTP proxy integrations in API Gateway
+<a name="api-gateway-supported-certificate-authorities-for-http-endpoints"></a>
 
-The following list shows the certificate authorities supported by API Gateway for HTTP, HTTP proxy, and private
-integrations.
+ The following list shows the certificate authorities supported by API Gateway for HTTP, HTTP proxy, and private integrations.
 
-```nohighlight
-
+```
 Alias name: accvraiz1
 	 SHA1: 93:05:7A:88:15:C6:4F:CE:88:2F:FA:91:16:52:28:78:BC:53:64:17
 	 SHA256: 9A:6E:C0:12:E1:A7:DA:9D:BE:34:19:4D:47:8A:D7:C0:DB:18:22:FB:07:1D:F1:29:81:49:6E:D1:04:38:41:13
@@ -1203,14 +1202,6 @@ Alias name: xrampglobalca
 Alias name: xrampglobalcaroot
 	 SHA1: B8:01:86:D1:EB:9C:86:A5:41:04:CF:30:54:F3:4C:52:B7:E5:58:C6
 	 SHA256: CE:CD:DC:90:50:99:D8:DA:DF:C5:B1:D2:09:B7:37:CB:E2:C1:8C:FB:2C:10:C0:FF:0B:CF:0D:32:86:FC:1A:A2
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Client
-certificates
-
-AWS WAF
 
 All content copied from https://docs.aws.amazon.com/.

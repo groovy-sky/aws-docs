@@ -3,49 +3,34 @@ title: "ApiStage"
 ---
 
 # ApiStage
+<a name="API_ApiStage"></a>
 
 API stage name of the associated API stage in a usage plan.
 
 ## Contents
+<a name="API_ApiStage_Contents"></a>
 
-**apiId**
-
+ ** apiId **   <a name="apigw-Type-ApiStage-apiId"></a>
 API Id of the associated API stage in a usage plan.
-
 Type: String
-
 Required: No
 
-**stage**
-
+ ** stage **   <a name="apigw-Type-ApiStage-stage"></a>
 API stage name of the associated API stage in a usage plan.
-
 Type: String
-
 Required: No
 
-**throttle**
-
+ ** throttle **   <a name="apigw-Type-ApiStage-throttle"></a>
 Map containing method level throttling information for API stage in a usage plan.
-
-Type: String to [ThrottleSettings](api-throttlesettings.md) object map
-
+Type: String to [ThrottleSettings](API_ThrottleSettings.md) object map
 Required: No
 
 ## See Also
+<a name="API_ApiStage_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/apistage.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/apistage.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/apistage.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiKey
-
-Authorizer
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/ApiStage)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/ApiStage)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/ApiStage)
 
 All content copied from https://docs.aws.amazon.com/.

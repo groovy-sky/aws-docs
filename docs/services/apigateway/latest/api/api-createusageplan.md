@@ -3,106 +3,91 @@ title: "CreateUsagePlan"
 ---
 
 # CreateUsagePlan
+<a name="API_CreateUsagePlan"></a>
 
 Creates a usage plan with the throttle and quota limits, as well as the associated API stages, specified in the payload.
 
 ## Request Syntax
+<a name="API_CreateUsagePlan_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /usageplans HTTP/1.1
 Content-type: application/json
 
 {
    "apiStages": [
       {
-         "apiId": "string",
-         "stage": "string",
+         "apiId": "{{string}}",
+         "stage": "{{string}}",
          "throttle": {
-            "string" : {
-               "burstLimit": number,
-               "rateLimit": number
+            "{{string}}" : {
+               "burstLimit": {{number}},
+               "rateLimit": {{number}}
             }
          }
       }
    ],
-   "description": "string",
-   "name": "string",
+   "description": "{{string}}",
+   "name": "{{string}}",
    "quota": {
-      "limit": number,
-      "offset": number,
-      "period": "string"
+      "limit": {{number}},
+      "offset": {{number}},
+      "period": "{{string}}"
    },
    "tags": {
-      "string" : "string"
+      "{{string}}" : "{{string}}"
    },
    "throttle": {
-      "burstLimit": number,
-      "rateLimit": number
+      "burstLimit": {{number}},
+      "rateLimit": {{number}}
    }
 }
 ```
 
 ## URI Request Parameters
+<a name="API_CreateUsagePlan_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_CreateUsagePlan_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[apiStages](#API_CreateUsagePlan_RequestSyntax)**
-
+ ** [apiStages](#API_CreateUsagePlan_RequestSyntax) **   <a name="apigw-CreateUsagePlan-request-apiStages"></a>
 The associated API stages of the usage plan.
-
-Type: Array of [ApiStage](api-apistage.md) objects
-
+Type: Array of [ApiStage](API_ApiStage.md) objects
 Required: No
 
-**[description](#API_CreateUsagePlan_RequestSyntax)**
-
+ ** [description](#API_CreateUsagePlan_RequestSyntax) **   <a name="apigw-CreateUsagePlan-request-description"></a>
 The description of the usage plan.
-
 Type: String
-
 Required: No
 
-**[name](#API_CreateUsagePlan_RequestSyntax)**
-
+ ** [name](#API_CreateUsagePlan_RequestSyntax) **   <a name="apigw-CreateUsagePlan-request-name"></a>
 The name of the usage plan.
-
 Type: String
-
 Required: Yes
 
-**[quota](#API_CreateUsagePlan_RequestSyntax)**
-
+ ** [quota](#API_CreateUsagePlan_RequestSyntax) **   <a name="apigw-CreateUsagePlan-request-quota"></a>
 The quota of the usage plan.
-
-Type: [QuotaSettings](api-quotasettings.md) object
-
+Type: [QuotaSettings](API_QuotaSettings.md) object
 Required: No
 
-**[tags](#API_CreateUsagePlan_RequestSyntax)**
-
-The key-value map of strings. The valid character set is \[a-zA-Z+-=.\_:/\]. The tag key can be up to 128 characters and must not start with `aws:`. The tag value can be up to 256 characters.
-
+ ** [tags](#API_CreateUsagePlan_RequestSyntax) **   <a name="apigw-CreateUsagePlan-request-tags"></a>
+The key-value map of strings. The valid character set is [a-zA-Z\+-=.\_:/]. The tag key can be up to 128 characters and must not start with `aws:`. The tag value can be up to 256 characters.
 Type: String to string map
-
 Required: No
 
-**[throttle](#API_CreateUsagePlan_RequestSyntax)**
-
+ ** [throttle](#API_CreateUsagePlan_RequestSyntax) **   <a name="apigw-CreateUsagePlan-request-throttle"></a>
 The throttling limits of the usage plan.
-
-Type: [ThrottleSettings](api-throttlesettings.md) object
-
+Type: [ThrottleSettings](API_ThrottleSettings.md) object
 Required: No
 
 ## Response Syntax
+<a name="API_CreateUsagePlan_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 201
 Content-type: application/json
 
@@ -139,109 +124,85 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_CreateUsagePlan_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 201 response.
 
 The following data is returned in JSON format by the service.
 
-**[apiStages](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [apiStages](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-apiStages"></a>
 The associated API stages of a usage plan.
+Type: Array of [ApiStage](API_ApiStage.md) objects
 
-Type: Array of [ApiStage](api-apistage.md) objects
-
-**[description](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [description](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-description"></a>
 The description of a usage plan.
-
 Type: String
 
-**[id](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [id](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-id"></a>
 The identifier of a UsagePlan resource.
-
 Type: String
 
-**[name](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [name](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-name"></a>
 The name of a usage plan.
-
 Type: String
 
-**[productCode](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [productCode](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-productCode"></a>
 The AWS Marketplace product identifier to associate with the usage plan as a SaaS product on the AWS Marketplace.
-
 Type: String
 
-**[quota](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [quota](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-quota"></a>
 The target maximum number of permitted requests per a given unit time interval.
+Type: [QuotaSettings](API_QuotaSettings.md) object
 
-Type: [QuotaSettings](api-quotasettings.md) object
-
-**[tags](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [tags](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
-
 Type: String to string map
 
-**[throttle](#API_CreateUsagePlan_ResponseSyntax)**
-
+ ** [throttle](#API_CreateUsagePlan_ResponseSyntax) **   <a name="apigw-CreateUsagePlan-response-throttle"></a>
 A map containing method level throttling information for API stage in a usage plan.
-
-Type: [ThrottleSettings](api-throttlesettings.md) object
+Type: [ThrottleSettings](API_ThrottleSettings.md) object
 
 ## Errors
+<a name="API_CreateUsagePlan_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The submitted request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.
-
 HTTP Status Code: 400
 
-**ConflictException**
-
+ ** ConflictException **
 The request configuration has conflicts. For details, see the accompanying error message.
-
 HTTP Status Code: 409
 
-**LimitExceededException**
-
+ ** LimitExceededException **
 The request exceeded the rate limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**NotFoundException**
-
+ ** NotFoundException **
 The requested resource is not found. Make sure that the request URI is correct.
-
 HTTP Status Code: 404
 
-**TooManyRequestsException**
-
+ ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
-
 HTTP Status Code: 401
 
 ## Examples
+<a name="API_CreateUsagePlan_Examples"></a>
 
 ### Create a usage plan
+<a name="API_CreateUsagePlan_Example_1"></a>
 
 This example illustrates one usage of CreateUsagePlan.
 
 #### Sample Request
+<a name="API_CreateUsagePlan_Example_1_Request"></a>
 
 ```
-
 POST /usageplans HTTP/1.1
 Content-Type: application/json
 Host: apigateway.us-east-1.amazonaws.com
@@ -270,9 +231,9 @@ Postman-Token: c3ffa588-50e0-aa0c-234e-f191671564a9
 ```
 
 #### Sample Response
+<a name="API_CreateUsagePlan_Example_1_Response"></a>
 
 ```
-
 {
   "_links": {
     "curies": [
@@ -331,33 +292,18 @@ Postman-Token: c3ffa588-50e0-aa0c-234e-f191671564a9
 ```
 
 ## See Also
+<a name="API_CreateUsagePlan_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for Python](../../../goto/boto3/apigateway-2015-07-09/createusageplan.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/createusageplan.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateStage
-
-CreateUsagePlanKey
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/CreateUsagePlan)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/CreateUsagePlan)
 
 All content copied from https://docs.aws.amazon.com/.

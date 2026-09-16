@@ -3,11 +3,12 @@ title: "OpenAPI definitions of sample API integrated with a Lambda function"
 ---
 
 # OpenAPI definitions of sample API integrated with a Lambda function
+<a name="api-as-lambda-proxy-export-swagger-with-extensions"></a>
 
-OpenAPI 2.0
+------
+#### [ OpenAPI 2.0 ]
 
-```nohighlight
-
+```
 {
   "swagger": "2.0",
   "info": {
@@ -248,13 +249,8 @@ OpenAPI 2.0
     }
   }
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tutorial: Create a calculator REST API with three integrations
-
-Tutorial: Create a REST API as an Amazon S3 proxy
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,39 +3,20 @@ title: "x-amazon-apigateway-integration.responses object"
 ---
 
 # x-amazon-apigateway-integration.responses object
+<a name="api-gateway-swagger-extensions-integration-responses"></a>
 
-Defines the method's responses and specifies parameter mappings or payload mappings
-from integration responses to method responses.
+ Defines the method's responses and specifies parameter mappings or payload mappings from integration responses to method responses.
 
-Property nameTypeDescription`Response status pattern`[x-amazon-apigateway-integration.response object](api-gateway-swagger-extensions-integration-response.md)
-
-Either a regular expression used to match the integration
-response to the method response, or `default` to catch any response that you haven't configured.
-For HTTP integrations, the regex applies to the integration response status code. For Lambda
-invocations, the regex applies to the `errorMessage`
-field of the error information object returned by AWS Lambda as a
-failure response body when the Lambda function execution throws an exception.
-
-###### Note
-
-The `Response status pattern` property
-name refers to a response status code or regular expression
-describing a group of response status codes. It does not correspond
-to any identifier of an [IntegrationResponse](../api/api-integrationresponse.md) resource in the API Gateway REST
-API.
+| Property name | Type | Description |
+| --- | --- | --- |
+| {{Response status pattern}} | [x-amazon-apigateway-integration.response object](api-gateway-swagger-extensions-integration-response.md) | Either a regular expression used to match the integration response to the method response, or `default` to catch any response that you haven't configured. For HTTP integrations, the regex applies to the integration response status code. For Lambda invocations, the regex applies to the `errorMessage` field of the error information object returned by AWS Lambda as a failure response body when the Lambda function execution throws an exception.The {{Response status pattern}} property name refers to a response status code or regular expression describing a group of response status codes. It does not correspond to any identifier of an [IntegrationResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_IntegrationResponse.html) resource in the API Gateway REST API. |
 
 ## `x-amazon-apigateway-integration.responses` example
+<a name="api-gateway-swagger-extensions-responses-example"></a>
 
-The following example shows a list of responses from `2xx` and
-`302` responses. For the `2xx` response, the method
-response is mapped from the integration response's payload of the
-`application/json` or `application/xml` MIME type. This
-response uses the supplied mapping templates. For the `302` response, the
-method response returns a `Location` header whose value is derived from
-the `redirect.url` property on the integration response's payload.
+The following example shows a list of responses from `2xx` and `302` responses. For the `2xx` response, the method response is mapped from the integration response's payload of the `application/json` or `application/xml` MIME type. This response uses the supplied mapping templates. For the `302` response, the method response returns a `Location` header whose value is derived from the `redirect.url` property on the integration response's payload.
 
-```nohighlight
-
+```
 "responses" : {
     "2\\d{2}" : {
         "statusCode" : "200",
@@ -51,13 +32,6 @@ the `redirect.url` property on the integration response's payload.
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-x-amazon-apigateway-integration.requestParameters
-
-x-amazon-apigateway-integration.response
 
 All content copied from https://docs.aws.amazon.com/.

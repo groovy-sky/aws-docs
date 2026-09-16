@@ -3,21 +3,18 @@ title: "Control access to API documentation in API Gateway"
 ---
 
 # Control access to API documentation in API Gateway
+<a name="api-gateway-documenting-api-content-provision-and-consumption"></a>
 
-If you have a dedicated documentation team to write and edit your API documentation,
-you can configure separate access permissions for your developers (for API development)
-and for your writers or editors (for content development). This is especially
-appropriate when a third-party vendor is involved in creating the documentation for you.
+If you have a dedicated documentation team to write and edit your API documentation, you can configure separate access permissions for your developers (for API development) and for your writers or editors (for content development). This is especially appropriate when a third-party vendor is involved in creating the documentation for you.
 
-To grant your documentation team the access to create, update, and publish your API
-documentation, you can assign the documentation team an IAM role with the following
-IAM policy, where `account_id` is the AWS account ID of
-your documentation team.
+ To grant your documentation team the access to create, update, and publish your API documentation, you can assign the documentation team an IAM role with the following IAM policy, where {{account\_id}} is the AWS account ID of your documentation team.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -33,20 +30,15 @@ JSON
         "apigateway:DELETE"
       ],
       "Resource": [
-        "arn:aws:apigateway:us-east-1:111111111111:/restapis/*/documentation/*"
+        "arn:aws:apigateway:us-east-1:{{111111111111}}:/restapis/*/documentation/*"
       ]
     }
   ]
 }
-
 ```
 
-For information on setting permissions to access API Gateway resources, see [How Amazon API Gateway works with IAM](security-iam-service-with-iam.md).
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Import API documentation
-
-SDK generation
+ For information on setting permissions to access API Gateway resources, see [How Amazon API Gateway works with IAM](security_iam_service-with-iam.md).
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,54 +3,35 @@ title: "OpenAPI definitions of the sample API as an Amazon S3 proxy"
 ---
 
 # OpenAPI definitions of the sample API as an Amazon S3 proxy
+<a name="api-as-s3-proxy-export-swagger-with-extensions"></a>
 
-The following OpenAPI definitions describes an API that works as an Amazon S3 proxy. This API contains more Amazon S3
-operations than the API you created in the tutorial. The following methods are exposed in the OpenAPI definitions:
+The following OpenAPI definitions describes an API that works as an Amazon S3 proxy. This API contains more Amazon S3 operations than the API you created in the tutorial. The following methods are exposed in the OpenAPI definitions:
++ Expose GET on the API's root resource to [list all of the Amazon S3 buckets of a caller](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html).
++ Expose GET on a Folder resource to [view a list of all of the objects in an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html).
++ Expose PUT on a Folder resource to [add a bucket to Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html).
++ Expose DELETE on a Folder resource to [remove a bucket from Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html).
++ Expose GET on a Folder/Item resource to [view or download an object from an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
++ Expose PUT on a Folder/Item resource to [upload an object to an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html).
++ Expose HEAD on a Folder/Item resource to [get object metadata in an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html).
++ Expose DELETE on a Folder/Item resource to [remove an object from an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html).
 
-- Expose GET on the API's root resource to [list all of the\
-Amazon S3 buckets of a caller](../../../s3/latest/api/api-listbuckets.md).
-
-- Expose GET on a Folder resource to [view a list of all of the\
-objects in an Amazon S3 bucket](../../../s3/latest/api/api-listobjects.md).
-
-- Expose PUT on a Folder resource to [add a bucket to\
-Amazon S3](../../../s3/latest/api/api-createbucket.md).
-
-- Expose DELETE on a Folder resource to [remove a bucket\
-from Amazon S3](../../../s3/latest/api/api-deletebucket.md).
-
-- Expose GET on a Folder/Item resource to [view or download an\
-object from an Amazon S3 bucket](../../../s3/latest/api/api-getobject.md).
-
-- Expose PUT on a Folder/Item resource to [upload an object to\
-an Amazon S3 bucket](../../../s3/latest/api/api-putobject.md).
-
-- Expose HEAD on a Folder/Item resource to [get object\
-metadata in an Amazon S3 bucket](../../../s3/latest/api/api-headobject.md).
-
-- Expose DELETE on a Folder/Item resource to [remove an\
-object from an Amazon S3 bucket](../../../s3/latest/api/api-deleteobject.md).
-
-For instructions on how to import an API using
-the OpenAPI definition, see [Develop REST APIs using OpenAPI in API Gateway](api-gateway-import-api.md).
+For instructions on how to import an API using the OpenAPI definition, see [Develop REST APIs using OpenAPI in API Gateway](api-gateway-import-api.md).
 
 For instructions on how to create a similar API, see [Tutorial: Create a REST API as an Amazon S3 proxy](integrating-api-with-aws-services-s3.md).
 
-To learn how to invoke this API using [Postman](https://www.postman.com/), which supports
-the AWS IAM authorization, see
-[Call the API using a REST API client](api-as-s3-proxy-test-using-postman.md).
+To learn how to invoke this API using [Postman](https://www.postman.com/), which supports the AWS IAM authorization, see [Call the API using a REST API client](api-as-s3-proxy-test-using-postman.md).
 
-OpenAPI 2.0
+------
+#### [ OpenAPI 2.0 ]
 
-```nohighlight
-
+```
 {
   "swagger": "2.0",
   "info": {
     "version": "2016-10-13T23:04:43Z",
     "title": "MyS3"
   },
-  "host": "9gn28ca086.execute-api.{region}.amazonaws.com",
+  "host": "9gn28ca086.execute-api.{{{region}}}.amazonaws.com",
   "basePath": "/S3",
   "schemes": [
     "https"
@@ -92,7 +73,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -160,7 +141,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -232,7 +213,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -298,7 +279,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -371,7 +352,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -443,7 +424,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -521,7 +502,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -594,7 +575,7 @@ OpenAPI 2.0
           }
         ],
         "x-amazon-apigateway-integration": {
-          "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials": "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "responses": {
             "4\\d{2}": {
               "statusCode": "400"
@@ -635,10 +616,10 @@ OpenAPI 2.0
 }
 ```
 
-OpenAPI 3.0
+------
+#### [ OpenAPI 3.0 ]
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -646,7 +627,7 @@ OpenAPI 3.0
     "version" : "2016-10-13T23:04:43Z"
   },
   "servers" : [ {
-    "url" : "https://9gn28ca086.execute-api.{region}.amazonaws.com/{basePath}",
+    "url" : "https://9gn28ca086.execute-api.{{{region}}}.amazonaws.com/{basePath}",
     "variables" : {
       "basePath" : {
         "default" : "S3"
@@ -702,7 +683,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "GET",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}",
           "responses" : {
@@ -776,7 +757,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "PUT",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}",
           "responses" : {
@@ -844,7 +825,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "DELETE",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}",
           "responses" : {
@@ -920,7 +901,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "GET",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}/{object}",
           "responses" : {
@@ -1001,7 +982,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "PUT",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}/{object}",
           "responses" : {
@@ -1077,7 +1058,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "DELETE",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}/{object}",
           "responses" : {
@@ -1148,7 +1129,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "HEAD",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path/{bucket}/{object}",
           "responses" : {
@@ -1215,7 +1196,7 @@ OpenAPI 3.0
           }
         },
         "x-amazon-apigateway-integration" : {
-          "credentials" : "arn:aws:iam::123456789012:role/apigAwsProxyRole",
+          "credentials" : "arn:aws:iam::{{123456789012}}:role/apigAwsProxyRole",
           "httpMethod" : "GET",
           "uri" : "arn:aws:apigateway:us-west-2:s3:path//",
           "responses" : {
@@ -1251,10 +1232,6 @@ OpenAPI 3.0
 }
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tutorial: Create a REST API as an Amazon S3 proxy
-
-Call the API using a REST API client
+------
 
 All content copied from https://docs.aws.amazon.com/.

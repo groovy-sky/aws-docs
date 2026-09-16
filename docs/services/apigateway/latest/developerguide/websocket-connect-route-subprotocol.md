@@ -1,23 +1,17 @@
 ---
-title: "Set up a $connect route that requires a WebSocket subprotocol"
+title: "Set up a `$connect` route that requires a WebSocket subprotocol"
 ---
 
 # Set up a `$connect` route that requires a WebSocket subprotocol
+<a name="websocket-connect-route-subprotocol"></a>
 
-Clients can use the `Sec-WebSocket-Protocol` field to request a [WebSocket subprotocol](https://datatracker.ietf.org/doc/html/rfc6455) during
-the connection to your WebSocket API. You can set up an integration for the
-`$connect` route to allow connections only if a client requests a subprotocol
-that your API supports.
+Clients can use the `Sec-WebSocket-Protocol` field to request a [WebSocket subprotocol](https://datatracker.ietf.org/doc/html/rfc6455#page-12) during the connection to your WebSocket API. You can set up an integration for the `$connect` route to allow connections only if a client requests a subprotocol that your API supports.
 
-The following example Lambda function returns the `Sec-WebSocket-Protocol`
-header to clients. The function establishes a connection to your API only if the client specifies the
-`myprotocol` subprotocol.
+The following example Lambda function returns the `Sec-WebSocket-Protocol` header to clients. The function establishes a connection to your API only if the client specifies the `myprotocol` subprotocol.
 
-For an CloudFormation template that creates this example API and Lambda proxy integration, see
-[`ws-subprotocol.yaml`](https://docs.aws.amazon.com/apigateway/latest/developerguide/samples/ws-subprotocol.zip).
+For an CloudFormation template that creates this example API and Lambda proxy integration, see [`ws-subprotocol.yaml`](samples/ws-subprotocol.zip).
 
 ```
-
 export const handler = async (event) => {
     if (event.headers != undefined) {
         const headers = toLowerCaseProperties(event.headers);
@@ -52,40 +46,24 @@ function toLowerCaseProperties(obj) {
     }
     return wrapper;
 }
-
 ```
 
-You can use [`wscat`](https://www.npmjs.com/package/wscat) to test that your API allows connections only if a
-client requests a subprotocol that your API supports. The following commands use the
-`-s` flag to specify subprotocols during the connection.
+You can use [`wscat`](https://www.npmjs.com/package/wscat) to test that your API allows connections only if a client requests a subprotocol that your API supports. The following commands use the `-s` flag to specify subprotocols during the connection.
 
-The following command attempts a connection with an unsupported subprotocol. Because
-the client specified the `chat1` subprotocol, the Lambda integration returns a
-400 error, and the connection is unsuccessful.
+The following command attempts a connection with an unsupported subprotocol. Because the client specified the `chat1` subprotocol, the Lambda integration returns a 400 error, and the connection is unsuccessful.
 
-```nohighlight
-
-wscat -c wss://api-id.execute-api.region.amazonaws.com/beta -s chat1
+```
+wscat -c wss://{{api-id}}.execute-api.{{region}}.amazonaws.com/{{beta}} -s chat1
 error: Unexpected server response: 400
-
 ```
 
-The following command includes a supported subprotocol in the connection request. The Lambda integration allows
-the connection.
+The following command includes a supported subprotocol in the connection request. The Lambda integration allows the connection.
 
-```nohighlight
-
-wscat -c wss://api-id.execute-api.region.amazonaws.com/beta -s chat1,myprotocol
+```
+wscat -c wss://{{api-id}}.execute-api.{{region}}.amazonaws.com/{{beta}} -s chat1,myprotocol
 connected (press CTRL+C to quit)
-
 ```
 
 To learn more about invoking WebSocket APIs, see [Invoke WebSocket APIs](apigateway-how-to-call-websocket-api.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Set up WebSocket API route responses
-
-Access control
 
 All content copied from https://docs.aws.amazon.com/.

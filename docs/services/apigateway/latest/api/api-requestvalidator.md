@@ -3,57 +3,39 @@ title: "RequestValidator"
 ---
 
 # RequestValidator
+<a name="API_RequestValidator"></a>
 
 A set of validation rules for incoming Method requests.
 
 ## Contents
+<a name="API_RequestValidator_Contents"></a>
 
-**id**
-
+ ** id **   <a name="apigw-Type-RequestValidator-id"></a>
 The identifier of this RequestValidator.
-
 Type: String
-
 Required: No
 
-**name**
-
+ ** name **   <a name="apigw-Type-RequestValidator-name"></a>
 The name of this RequestValidator
-
 Type: String
-
 Required: No
 
-**validateRequestBody**
-
+ ** validateRequestBody **   <a name="apigw-Type-RequestValidator-validateRequestBody"></a>
 A Boolean flag to indicate whether to validate a request body according to the configured Model schema.
-
 Type: Boolean
-
 Required: No
 
-**validateRequestParameters**
-
-A Boolean flag to indicate whether to validate request parameters ( `true`) or not ( `false`).
-
+ ** validateRequestParameters **   <a name="apigw-Type-RequestValidator-validateRequestParameters"></a>
+A Boolean flag to indicate whether to validate request parameters (`true`) or not (`false`).
 Type: Boolean
-
 Required: No
 
 ## See Also
+<a name="API_RequestValidator_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/requestvalidator.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/requestvalidator.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/requestvalidator.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QuotaSettings
-
-Resource
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/RequestValidator)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/RequestValidator)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/RequestValidator)
 
 All content copied from https://docs.aws.amazon.com/.

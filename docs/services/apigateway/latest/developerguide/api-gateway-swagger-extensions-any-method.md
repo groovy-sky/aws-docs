@@ -3,29 +3,23 @@ title: "x-amazon-apigateway-any-method object"
 ---
 
 # x-amazon-apigateway-any-method object
+<a name="api-gateway-swagger-extensions-any-method"></a>
 
-Specifies the [OpenAPI Operation Object](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md) for the API Gateway catch-all `ANY` method in
-an [OpenAPI Path Item Object](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md). This object can exist alongside other Operation
-objects and will catch any HTTP method that wasn't explicitly declared.
+ Specifies the [OpenAPI Operation Object](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#operation-object) for the API Gateway catch-all `ANY` method in an [OpenAPI Path Item Object](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#path-item-object). This object can exist alongside other Operation objects and will catch any HTTP method that wasn't explicitly declared.
 
-The following table lists the properties extended by API Gateway. For the other OpenAPI
-Operation properties, see the OpenAPI specification.
+ The following table lists the properties extended by API Gateway. For the other OpenAPI Operation properties, see the OpenAPI specification.
 
-Property nameTypeDescription`isDefaultRoute``Boolean`Specifies whether a route is the `$default` route. Supported only for HTTP APIs. To learn more, see
-[Create routes for HTTP APIs in API Gateway](http-api-develop-routes.md).`x-amazon-apigateway-integration`[x-amazon-apigateway-integration object](api-gateway-swagger-extensions-integration.md) Specifies the integration of the method with the backend. This is
-an extended property of the [OpenAPI\
-Operation](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md) object. The integration can be of type
-`AWS`, `AWS_PROXY`, `HTTP`,
-`HTTP_PROXY`, or `MOCK`.
+| Property name | Type | Description |
+| --- | --- | --- |
+| isDefaultRoute | Boolean | Specifies whether a route is the $default route. Supported only for HTTP APIs. To learn more, see [Create routes for HTTP APIs in API Gateway](http-api-develop-routes.md). |
+| x-amazon-apigateway-integration | [x-amazon-apigateway-integration object](api-gateway-swagger-extensions-integration.md) |  Specifies the integration of the method with the backend. This is an extended property of the [OpenAPI Operation](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#operation-object) object. The integration can be of type AWS, AWS\_PROXY, HTTP, HTTP\_PROXY, or MOCK.  |
 
 ## x-amazon-apigateway-any-method examples
+<a name="api-gateway-swagger-extensions-any-method-example"></a>
 
-The following example integrates the `ANY` method on a proxy resource,
-`{proxy+}`, with a Lambda function,
-`TestSimpleProxy`.
+The following example integrates the `ANY` method on a proxy resource, `{proxy+}`, with a Lambda function, `TestSimpleProxy`.
 
-```nohighlight
-
+```
     "/{proxy+}": {
       "x-amazon-apigateway-any-method": {
         "produces": [
@@ -49,8 +43,7 @@ The following example integrates the `ANY` method on a proxy resource,
 
 The following example creates a `$default` route for an HTTP API that integrates with a Lambda function, `HelloWorld`.
 
-```nohighlight
-
+```
 "/$default": {
     "x-amazon-apigateway-any-method": {
       "isDefaultRoute": true,
@@ -65,11 +58,5 @@ The following example creates a `$default` route for an HTTP API that integrates
    }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OpenAPI extensions
-
-x-amazon-apigateway-cors
 
 All content copied from https://docs.aws.amazon.com/.

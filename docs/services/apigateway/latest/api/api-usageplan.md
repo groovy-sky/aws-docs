@@ -3,92 +3,59 @@ title: "UsagePlan"
 ---
 
 # UsagePlan
+<a name="API_UsagePlan"></a>
 
-Represents a usage plan used to specify who can assess associated API stages. Optionally, target request rate and quota limits can be set.
-In some cases clients can exceed the targets that you set. Don’t rely on usage plans to control costs.
-Consider using [AWS Budgets](../../../cost-management/latest/userguide/budgets-managing-costs.md) to monitor costs
-and [AWS WAF](../../../waf/latest/developerguide/waf-chapter.md) to manage API requests.
+Represents a usage plan used to specify who can assess associated API stages. Optionally, target request rate and quota limits can be set. In some cases clients can exceed the targets that you set. Don’t rely on usage plans to control costs. Consider using [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) to monitor costs and [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) to manage API requests.
 
 ## Contents
+<a name="API_UsagePlan_Contents"></a>
 
-**apiStages**
-
+ ** apiStages **   <a name="apigw-Type-UsagePlan-apiStages"></a>
 The associated API stages of a usage plan.
-
-Type: Array of [ApiStage](api-apistage.md) objects
-
+Type: Array of [ApiStage](API_ApiStage.md) objects
 Required: No
 
-**description**
-
+ ** description **   <a name="apigw-Type-UsagePlan-description"></a>
 The description of a usage plan.
-
 Type: String
-
 Required: No
 
-**id**
-
+ ** id **   <a name="apigw-Type-UsagePlan-id"></a>
 The identifier of a UsagePlan resource.
-
 Type: String
-
 Required: No
 
-**name**
-
+ ** name **   <a name="apigw-Type-UsagePlan-name"></a>
 The name of a usage plan.
-
 Type: String
-
 Required: No
 
-**productCode**
-
+ ** productCode **   <a name="apigw-Type-UsagePlan-productCode"></a>
 The AWS Marketplace product identifier to associate with the usage plan as a SaaS product on the AWS Marketplace.
-
 Type: String
-
 Required: No
 
-**quota**
-
+ ** quota **   <a name="apigw-Type-UsagePlan-quota"></a>
 The target maximum number of permitted requests per a given unit time interval.
-
-Type: [QuotaSettings](api-quotasettings.md) object
-
+Type: [QuotaSettings](API_QuotaSettings.md) object
 Required: No
 
-**tags**
-
+ ** tags **   <a name="apigw-Type-UsagePlan-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
-
 Type: String to string map
-
 Required: No
 
-**throttle**
-
+ ** throttle **   <a name="apigw-Type-UsagePlan-throttle"></a>
 A map containing method level throttling information for API stage in a usage plan.
-
-Type: [ThrottleSettings](api-throttlesettings.md) object
-
+Type: [ThrottleSettings](API_ThrottleSettings.md) object
 Required: No
 
 ## See Also
+<a name="API_UsagePlan_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/usageplan.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/usageplan.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/usageplan.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TlsConfig
-
-UsagePlanKey
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/UsagePlan)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/UsagePlan)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/UsagePlan)
 
 All content copied from https://docs.aws.amazon.com/.

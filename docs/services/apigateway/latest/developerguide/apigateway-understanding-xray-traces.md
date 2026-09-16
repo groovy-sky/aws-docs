@@ -3,59 +3,44 @@ title: "AWS X-Ray traces for Amazon API Gateway APIs"
 ---
 
 # AWS X-Ray traces for Amazon API Gateway APIs
+<a name="apigateway-understanding-xray-traces"></a>
 
-This section discusses AWS X-Ray trace segments, subsegments, and other trace fields for
-Amazon API Gateway APIs.
+This section discusses AWS X-Ray trace segments, subsegments, and other trace fields for Amazon API Gateway APIs.
 
-Before you read this section, review the following topics in the X-Ray Developer
-Guide:
+Before you read this section, review the following topics in the X-Ray Developer Guide:
++  [Use an AWS Management Console](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-console.html)
++  [X-Ray segment documents](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-api.html#xray-api-segmentdocuments)
++ [Concepts](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html#xray-concepts)
 
-- [Use an AWS Management Console](../../../xray/latest/devguide/aws-xray-interface-console.md)
-
-- [X-Ray segment documents](../../../xray/latest/devguide/aws-xray-interface-api.md#xray-api-segmentdocuments)
-
-- [Concepts](../../../xray/latest/devguide/aws-xray.md#xray-concepts)
-
-###### Topics
-
-- [Examples of trace objects for an API Gateway API](#apigateway-understanding-xray-traces-example-segments)
-
-- [Understanding the trace](#apigateway-understanding-xray-traces-segments)
+**Topics**
++ [Examples of trace objects for an API Gateway API](#apigateway-understanding-xray-traces-example-segments)
++ [Understanding the trace](#apigateway-understanding-xray-traces-segments)
 
 ## Examples of trace objects for an API Gateway API
+<a name="apigateway-understanding-xray-traces-example-segments"></a>
 
-This section discusses some of the objects you may see in a trace for an API Gateway
-API.
+This section discusses some of the objects you may see in a trace for an API Gateway API.
 
 **Annotations**
 
-Annotations can appear in segments and subsegments. They are used as filtering expressions in sampling rules
-to filter traces. For more information, see [Configure sampling\
-rules](../../../xray/latest/devguide/aws-xray-interface-console.md#xray-console-sampling).
+Annotations can appear in segments and subsegments. They are used as filtering expressions in sampling rules to filter traces. For more information, see [Configure sampling rules](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-console.html#xray-console-sampling).
 
-Following is an example of an `annotations` object, in which an API stage is identified by
-the API ID and the API stage name:
+Following is an example of an `annotations` object, in which an API stage is identified by the API ID and the API stage name:
 
-```nohighlight
-
+```
 "annotations": {
     "aws:api_id": "a1b2c3d4e5",
     "aws:api_stage": "dev"
 }
 ```
 
-For more information about annotations, see
-[X-Ray segment documents](../../../xray/latest/devguide/aws-xray-interface-api.md#xray-api-segmentdocuments), and then choose **X-Ray segment documents**, **Annotations**.
+For more information about annotations, see [X-Ray segment documents](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-api.html#xray-api-segmentdocuments), and then choose **X-Ray segment documents**, **Annotations**.
 
 **AWS resource data**
 
-The `aws` object appears only in segments. Following is an
-example of an `aws` object that matches the Default sampling rule. For an
-in-depth explanation of sampling rules, see [Configure sampling\
-rules](../../../xray/latest/devguide/aws-xray-interface-console.md#xray-console-sampling).
+The `aws` object appears only in segments. Following is an example of an `aws` object that matches the Default sampling rule. For an in-depth explanation of sampling rules, see [Configure sampling rules](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-console.html#xray-console-sampling).
 
-```nohighlight
-
+```
 "aws": {
     "xray": {
         "sampling_rule_name": "Default"
@@ -69,16 +54,14 @@ rules](../../../xray/latest/devguide/aws-xray-interface-console.md#xray-console-
 }
 ```
 
-For more information about the `aws` object, see
-[X-Ray segment documents](../../../xray/latest/devguide/aws-xray-interface-api.md#xray-api-segmentdocuments), and then choose **X-Ray segment documents**, **AWS resource data**.
+For more information about the `aws` object, see [X-Ray segment documents](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-api.html#xray-api-segmentdocuments), and then choose **X-Ray segment documents**, **AWS resource data**.
 
 ## Understanding the trace
+<a name="apigateway-understanding-xray-traces-segments"></a>
 
-Following is a trace segment for an API Gateway stage. For a detailed explanation of the
-fields that make up the trace segment, see [X-Ray segment documents](../../../xray/latest/devguide/aws-xray-interface-api.md#xray-api-segmentdocuments).
+Following is a trace segment for an API Gateway stage. For a detailed explanation of the fields that make up the trace segment, see [X-Ray segment documents](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-api.html#xray-api-segmentdocuments).
 
 ```
-
         {
             "Document": {
                 "id": "a1b2c3d4a1b2c3d4",
@@ -152,11 +135,5 @@ fields that make up the trace segment, see [X-Ray segment documents](../../../xr
             "Id": "a1b2c3d4a1b2c3d4"
         }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configure AWS X-Ray sampling rules
-
-API Gateway portals
 
 All content copied from https://docs.aws.amazon.com/.

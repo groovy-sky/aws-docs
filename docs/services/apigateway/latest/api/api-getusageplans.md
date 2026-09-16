@@ -3,41 +3,40 @@ title: "GetUsagePlans"
 ---
 
 # GetUsagePlans
+<a name="API_GetUsagePlans"></a>
 
 Gets all the usage plans of the caller's account.
 
 ## Request Syntax
+<a name="API_GetUsagePlans_RequestSyntax"></a>
 
-```nohighlight
-
-GET /usageplans?keyId=keyId&limit=limit&position=position HTTP/1.1
-
+```
+GET /usageplans?keyId={{keyId}}&limit={{limit}}&position={{position}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetUsagePlans_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[keyId](#API_GetUsagePlans_RequestSyntax)**
-
+ ** [keyId](#API_GetUsagePlans_RequestSyntax) **   <a name="apigw-GetUsagePlans-request-uri-keyId"></a>
 The identifier of the API key associated with the usage plans.
 
-**[limit](#API_GetUsagePlans_RequestSyntax)**
-
+ ** [limit](#API_GetUsagePlans_RequestSyntax) **   <a name="apigw-GetUsagePlans-request-uri-limit"></a>
 The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
 
-**[position](#API_GetUsagePlans_RequestSyntax)**
-
+ ** [position](#API_GetUsagePlans_RequestSyntax) **   <a name="apigw-GetUsagePlans-request-uri-position"></a>
 The current pagination position in the paged result set.
 
 ## Request Body
+<a name="API_GetUsagePlans_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetUsagePlans_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -79,64 +78,55 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetUsagePlans_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[item](#API_GetUsagePlans_ResponseSyntax)**
-
+ ** [item](#API_GetUsagePlans_ResponseSyntax) **   <a name="apigw-GetUsagePlans-response-item"></a>
 The current page of elements from this collection.
+Type: Array of [UsagePlan](API_UsagePlan.md) objects
 
-Type: Array of [UsagePlan](api-usageplan.md) objects
-
-**[position](#API_GetUsagePlans_ResponseSyntax)**
-
+ ** [position](#API_GetUsagePlans_ResponseSyntax) **   <a name="apigw-GetUsagePlans-response-position"></a>
 The current pagination position in the paged result set.
-
 Type: String
 
 ## Errors
+<a name="API_GetUsagePlans_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The submitted request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.
-
 HTTP Status Code: 400
 
-**NotFoundException**
-
+ ** NotFoundException **
 The requested resource is not found. Make sure that the request URI is correct.
-
 HTTP Status Code: 404
 
-**TooManyRequestsException**
-
+ ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
-
 HTTP Status Code: 401
 
 ## Examples
+<a name="API_GetUsagePlans_Examples"></a>
 
 ### Retrieve usage plans
+<a name="API_GetUsagePlans_Example_1"></a>
 
-The following example request gets the UsagePlans of the caller's account.
+ The following example request gets the UsagePlans of the caller's account.
 
-The successful response returns a `200 OK` status code and a payload similar to
-the following:
+ The successful response returns a `200 OK` status code and a payload similar to the following:
 
 #### Sample Request
+<a name="API_GetUsagePlans_Example_1_Request"></a>
 
 ```
-
 GET /usageplans HTTP/1.1
 Content-Type: application/json
 Host: apigateway.ap-southeast-1.amazonaws.com
@@ -146,9 +136,9 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160801/ap-southeast
 ```
 
 #### Sample Response
+<a name="API_GetUsagePlans_Example_1_Response"></a>
 
 ```
-
 {
   "_links": {
     "curies": [
@@ -226,33 +216,18 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160801/ap-southeast
 ```
 
 ## See Also
+<a name="API_GetUsagePlans_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for Python](../../../goto/boto3/apigateway-2015-07-09/getusageplans.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/getusageplans.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetUsagePlanKeys
-
-GetVpcLink
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/GetUsagePlans)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/GetUsagePlans)
 
 All content copied from https://docs.aws.amazon.com/.

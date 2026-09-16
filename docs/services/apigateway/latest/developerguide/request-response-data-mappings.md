@@ -3,81 +3,75 @@ title: "Parameter mapping examples for REST APIs in API Gateway"
 ---
 
 # Parameter mapping examples for REST APIs in API Gateway
+<a name="request-response-data-mappings"></a>
 
-The following examples show how to create parameter mapping expressions using the API Gateway console, OpenAPI, and
-CloudFormation templates. For an example of how to use parameter mapping to create the required CORS headers, see [CORS for REST APIs in API Gateway](how-to-cors.md).
+The following examples show how to create parameter mapping expressions using the API Gateway console, OpenAPI, and CloudFormation templates. For an example of how to use parameter mapping to create the required CORS headers, see [CORS for REST APIs in API Gateway](how-to-cors.md).
 
 ## Example 1: Map a method request parameter to an integration request parameter
+<a name="request-response-data-mappings-example-1"></a>
 
-The following example maps the method request header parameter `puppies` to the integration request header parameter
-`DogsAge0`.
+The following example maps the method request header parameter `puppies` to the integration request header parameter `DogsAge0`.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To map the method request parameter
+**To map the method request parameter**
 
-01. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-02. Choose a REST API.
+1. Choose a REST API.
 
-03. Choose a method.
+1. Choose a method.
 
-    Your method must have a non-proxy integration.
+   Your method must have a non-proxy integration.
 
-04. For **Method request settings**, choose **Edit**.
+1. For **Method request settings**, choose **Edit**.
 
-05. Choose **HTTP request headers**.
+1. Choose **HTTP request headers**.
 
-06. Choose **Add header**.
+1. Choose **Add header**.
 
-07. For **Name**, enter `puppies`.
+1. For **Name**, enter **puppies**.
 
-08. Choose **Save**.
+1. Choose **Save**.
 
-09. Choose the **Integration request** tab, and then for **Integration request**
-    **settings**, choose **Edit**.
+1. Choose the **Integration request** tab, and then for **Integration request settings**, choose **Edit**.
 
-    The AWS Management Console automatically adds a parameter mapping from `method.request.header.puppies
-                  ` to `puppies` for you, but you need to change the
-     **Name** to match the request header parameter that is expected by your integration endpoint.
+   The AWS Management Console automatically adds a parameter mapping from `method.request.header.puppies ` to `puppies` for you, but you need to change the **Name** to match the request header parameter that is expected by your integration endpoint.
 
-10. For
-     **Name**, enter `DogsAge0`.
+1. For **Name**, enter **DogsAge0**.
 
-11. Choose **Save**.
+1. Choose **Save**.
 
-12. Redeploy your API for the changes to take effect.
+1. Redeploy your API for the changes to take effect.
 
 The following steps show you how to verify that your parameter mapping was successful.
 
-###### (Optional) Test your parameter mapping
+**(Optional) Test your parameter mapping**
 
 1. Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
 
-2. For headers, enter `puppies:true`.
+1. For headers, enter **puppies:true**.
 
-3. Choose **Test**.
+1. Choose **Test**.
 
-4. In the **Logs**, the result should look like the following:
+1. In the **Logs**, the result should look like the following:
 
-```nohighlight
+   ```
+   Tue Feb 04 00:28:36 UTC 2025 : Method request headers: {puppies=true}
+   Tue Feb 04 00:28:36 UTC 2025 : Method request body before transformations:
+   Tue Feb 04 00:28:36 UTC 2025 : Endpoint request URI: http://petstore-demo-endpoint.execute-api.com/petstore/pets
+   Tue Feb 04 00:28:36 UTC 2025 : Endpoint request headers: {DogsAge0=true, x-amzn-apigateway-api-id=abcd1234, Accept=application/json, User-Agent=AmazonAPIGateway_aaaaaaa, X-Amzn-Trace-Id=Root=1-abcd-12344}
+   ```
 
-Tue Feb 04 00:28:36 UTC 2025 : Method request headers: {puppies=true}
-Tue Feb 04 00:28:36 UTC 2025 : Method request body before transformations:
-Tue Feb 04 00:28:36 UTC 2025 : Endpoint request URI: http://petstore-demo-endpoint.execute-api.com/petstore/pets
-Tue Feb 04 00:28:36 UTC 2025 : Endpoint request headers: {DogsAge0=true, x-amzn-apigateway-api-id=abcd1234, Accept=application/json, User-Agent=AmazonAPIGateway_aaaaaaa, X-Amzn-Trace-Id=Root=1-abcd-12344}
+   The request header parameter has changed from `puppies` to `DogsAge0`.
+
+------
+#### [ CloudFormation ]
+
+ In this example, you use the [body](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
+
 ```
-
-The request header parameter has changed from
-    `puppies` to `DogsAge0`.
-
-CloudFormation
-
-In this example, you use the
-[body](../../../cloudformation/latest/userguide/aws-resource-apigateway-restapi.md#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
-
-```nohighlight
-
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -127,10 +121,10 @@ Resources:
        StageName: prod
 ```
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -172,92 +166,78 @@ OpenAPI
 }
 ```
 
+------
+
 ## Example 2: Map multiple method request parameters to different integration request parameters
+<a name="request-response-data-mappings-example-2"></a>
 
-The following example maps the multi-value method request query string parameter
-`methodRequestQueryParam` to the integration request query
-string parameter `integrationQueryParam` and maps the method request header parameter
-`methodRequestHeaderParam` to the integration request path parameter
-`integrationPathParam`.
+The following example maps the multi-value method request query string parameter `methodRequestQueryParam` to the integration request query string parameter `integrationQueryParam` and maps the method request header parameter `methodRequestHeaderParam` to the integration request path parameter `integrationPathParam`.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To map the method request parameters
+**To map the method request parameters**
 
-01. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-02. Choose a REST API.
+1. Choose a REST API.
 
-03. Choose a method.
+1. Choose a method.
 
-    Your method must have a non-proxy integration.
+   Your method must have a non-proxy integration.
 
-04. For **Method request settings**, choose **Edit**.
+1. For **Method request settings**, choose **Edit**.
 
-05. Choose **URL query string parameters**.
+1. Choose **URL query string parameters**.
 
-06. Choose **Add query string**.
+1. Choose **Add query string**.
 
-07. For **Name**, enter `methodRequestQueryParam`.
+1. For **Name**, enter **methodRequestQueryParam**.
 
-08. Choose **HTTP request headers**.
+1. Choose **HTTP request headers**.
 
-09. Choose **Add header**.
+1. Choose **Add header**.
 
-10. For
-     **Name**, enter `methodRequestHeaderParam`.
+1. For **Name**, enter **methodRequestHeaderParam**.
 
-11. Choose **Save**.
+1. Choose **Save**.
 
-12. Choose the **Integration request** tab, and then for **Integration request**
-    **settings**, choose **Edit**.
+1. Choose the **Integration request** tab, and then for **Integration request settings**, choose **Edit**.
 
-13. Choose **URL path parameters**.
+1. Choose **URL path parameters**.
 
-14. Choose **Add path parameter**.
+1. Choose **Add path parameter**.
 
-15. For
-     **Name**, enter `integrationPathParam`.
+1. For **Name**, enter **integrationPathParam**.
 
-16. For **Mapped from**, enter `method.request.header.methodRequestHeaderParam`.
+1. For **Mapped from**, enter **method.request.header.methodRequestHeaderParam**.
 
-    This maps the method request header you specified in the method request to a new integration request
-     path parameter.
+   This maps the method request header you specified in the method request to a new integration request path parameter.
 
-17. Choose **URL query string parameters**.
+1. Choose **URL query string parameters**.
 
-18. Choose **Add query string**.
+1. Choose **Add query string**.
 
-19. For
-     **Name**, enter `integrationQueryParam`.
+1. For **Name**, enter **integrationQueryParam**.
 
-20. For **Mapped from**, enter `method.request.multivaluequerystring.methodRequestQueryParam`.
+1. For **Mapped from**, enter **method.request.multivaluequerystring.methodRequestQueryParam**.
 
-    This maps the multivalue query string parameter to a new single valued integration request query
-     string parameter.
+   This maps the multivalue query string parameter to a new single valued integration request query string parameter.
 
-21. Choose **Save**.
+1. Choose **Save**.
 
-22. Redeploy your API for the changes to take effect.
+1. Redeploy your API for the changes to take effect.
 
-CloudFormation
+------
+#### [ CloudFormation ]
 
-In this example, you use the
-[body](../../../cloudformation/latest/userguide/aws-resource-apigateway-restapi.md#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
+ In this example, you use the [body](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
 
-The following OpenAPI definition creates the following parameter mappings for an HTTP
-integration:
+The following OpenAPI definition creates the following parameter mappings for an HTTP integration:
++ The method request's header, named `methodRequestHeaderParam`, into the integration request path parameter, named `integrationPathParam`
++ The multi-value method request query string, named `methodRequestQueryParam`, into the integration request query string, named `integrationQueryParam`
 
-- The method request's
-header, named `methodRequestHeaderParam`, into the integration request path
-parameter, named `integrationPathParam`
-
-- The multi-value method request query
-string, named `methodRequestQueryParam`, into the integration request
-query string, named `integrationQueryParam`
-
-```nohighlight
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -315,21 +295,14 @@ Resources:
        StageName: prod
 ```
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
-The following OpenAPI definition creates the following parameter mappings for an HTTP
-integration:
+The following OpenAPI definition creates the following parameter mappings for an HTTP integration:
++ The method request's header, named `methodRequestHeaderParam`, into the integration request path parameter, named `integrationPathParam`
++ The multi-value method request query string, named `methodRequestQueryParam`, into the integration request query string, named `integrationQueryParam`
 
-- The method request's
-header, named `methodRequestHeaderParam`, into the integration request path
-parameter, named `integrationPathParam`
-
-- The multi-value method request query
-string, named `methodRequestQueryParam`, into the integration request
-query string, named `integrationQueryParam`
-
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -380,19 +353,18 @@ query string, named `integrationQueryParam`
     }
   }
 }
-
 ```
 
-## Example 3: Map fields from the JSON request body to integration request parameters
+------
 
-You can also map integration request parameters from fields in the JSON request body using a [JSONPath expression](http://goessner.net/articles/JsonPath/index.html). The following example maps
-the method request body to an integration request header named `body-header` and maps part of the request
-body, as expressed by a JSON expression to an integration request header named `pet-price`.
+## Example 3: Map fields from the JSON request body to integration request parameters
+<a name="request-response-data-mappings-example-3"></a>
+
+You can also map integration request parameters from fields in the JSON request body using a [JSONPath expression](http://goessner.net/articles/JsonPath/index.html#e2). The following example maps the method request body to an integration request header named `body-header` and maps part of the request body, as expressed by a JSON expression to an integration request header named `pet-price`.
 
 To test this example, provide an input that contains a price category, such as the following:
 
-```nohighlight
-
+```
 [
   {
     "id": 1,
@@ -402,52 +374,49 @@ To test this example, provide an input that contains a price category, such as t
 ]
 ```
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To map the method request parameters
+**To map the method request parameters**
 
-01. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-02. Choose a REST API.
+1. Choose a REST API.
 
-03. Choose a `POST`, `PUT`, `PATCH`, or `ANY` method.
+1. Choose a `POST`, `PUT`, `PATCH`, or `ANY` method.
 
-    Your method must have a non-proxy integration.
+   Your method must have a non-proxy integration.
 
-04. For **Integration request settings**, choose **Edit**.
+1. For **Integration request settings**, choose **Edit**.
 
-05. Choose **URL request headers parameters**.
+1. Choose **URL request headers parameters**.
 
-06. Choose **Add request header parameter**.
+1. Choose **Add request header parameter**.
 
-07. For
-     **Name**, enter `body-header`.
+1. For **Name**, enter **body-header**.
 
-08. For **Mapped from**, enter `method.request.body`.
+1. For **Mapped from**, enter **method.request.body**.
 
-    This maps the method request body to a new integration request header parameter.
+   This maps the method request body to a new integration request header parameter.
 
-09. Choose **Add request header parameter**.
+1. Choose **Add request header parameter**.
 
-10. For
-     **Name**, enter `pet-price`.
+1. For **Name**, enter **pet-price**.
 
-11. For **Mapped from**, enter `
-                method.request.body[0].price`.
+1. For **Mapped from**, enter ** method.request.body[0].price**.
 
-    This maps a part of the method request body to a new integration request header parameter.
+   This maps a part of the method request body to a new integration request header parameter.
 
-12. Choose **Save**.
+1. Choose **Save**.
 
-13. Redeploy your API for the changes to take effect.
+1. Redeploy your API for the changes to take effect.
 
-CloudFormation
+------
+#### [ CloudFormation ]
 
-In this example, you use the
-[body](../../../cloudformation/latest/userguide/aws-resource-apigateway-restapi.md#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
+ In this example, you use the [body](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
 
-```nohighlight
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -496,12 +465,12 @@ Resources:
        StageName: prod
 ```
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
 The following OpenAPI definition map integration request parameters from fields in the JSON request body.
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -541,56 +510,54 @@ The following OpenAPI definition map integration request parameters from fields 
 }
 ```
 
+------
+
 ## Example 4: Map the integration response to the method response
+<a name="request-response-data-mappings-example-4"></a>
 
-You can also map the integration response to the method response. The following example maps the integration
-response body to a method response header named `location`, maps the integration response header
-`x-app-id` to the method response header `id`, and maps the multi-valued integration
-response header `item` to the method response header `items`.
+You can also map the integration response to the method response. The following example maps the integration response body to a method response header named `location`, maps the integration response header `x-app-id` to the method response header `id`, and maps the multi-valued integration response header `item` to the method response header `items`.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To map the integration response
+**To map the integration response**
 
-01. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
+1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-02. Choose a REST API.
+1. Choose a REST API.
 
-03. Choose a method.
+1. Choose a method.
 
-    Your method must have a non-proxy integration.
+   Your method must have a non-proxy integration.
 
-04. Choose the **Method response** tab, and then for
-     **Response 200**, choose **Edit**.
+1. Choose the **Method response** tab, and then for **Response 200**, choose **Edit**.
 
-05. For **Header name**, choose **Add header**.
+1. For **Header name**, choose **Add header**.
 
-06. Create three headers named `id`, `item`, and
-     `location`.
+1. Create three headers named **id**, **item**, and **location**.
 
-07. Choose **Save**.
+1. Choose **Save**.
 
-08. Choose the **Integration response** tab, and then for
-     **Default - Response**, choose **Edit**.
+1. Choose the **Integration response** tab, and then for **Default - Response**, choose **Edit**.
 
-09. Under **Header mappings**, enter the following.
+1. Under **Header mappings**, enter the following.
 
-    1. For **id**, enter `integration.response.header.x-app-id`
+   1. For **id**, enter **integration.response.header.x-app-id**
 
-    2. For **item**, enter `integration.response.multivalueheader.item`
+   1. For **item**, enter **integration.response.multivalueheader.item**
 
-    3. For **location**, enter `integration.response.body.redirect.url`
-10. Choose **Save**.
+   1. For **location**, enter **integration.response.body.redirect.url**
 
-11. Redeploy your API for the changes to take effect.
+1. Choose **Save**.
 
-CloudFormation
+1. Redeploy your API for the changes to take effect.
 
-In this example, you use the
-[body](../../../cloudformation/latest/userguide/aws-resource-apigateway-restapi.md#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
+------
+#### [ CloudFormation ]
 
-```nohighlight
+ In this example, you use the [body](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body) property to import an OpenAPI definition file into API Gateway.
 
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -648,15 +615,14 @@ Resources:
        DeploymentId: !Ref ApiGatewayDeployment20250219
        RestApiId: !Ref Api
        StageName: prod
-
 ```
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
 The following OpenAPI definition maps the integration response to the method response.
 
-```nohighlight
-
+```
 {
   "openapi" : "3.0.1",
   "info" : {
@@ -714,10 +680,6 @@ The following OpenAPI definition maps the integration response to the method res
 }
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Parameter mapping
-
-Parameter mapping source reference
+------
 
 All content copied from https://docs.aws.amazon.com/.

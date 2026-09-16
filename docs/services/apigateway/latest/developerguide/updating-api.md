@@ -3,66 +3,41 @@ title: "Updates to REST APIs that require redeployment"
 ---
 
 # Updates to REST APIs that require redeployment
+<a name="updating-api"></a>
 
-Maintaining an API amounts to viewing, updating and deleting the existing API setups. You
-can maintain an API using the API Gateway console, AWS CLI, CloudFormation, an SDK or the API Gateway REST API. Updating
-an API involves modifying certain resource properties or configuration settings of the API.
-Resource updates require redeploying the API, where configuration updates do not.
+Maintaining an API amounts to viewing, updating and deleting the existing API setups. You can maintain an API using the API Gateway console, AWS CLI, CloudFormation, an SDK or the API Gateway REST API. Updating an API involves modifying certain resource properties or configuration settings of the API. Resource updates require redeploying the API, where configuration updates do not.
 
 The following table describes API resources that require redeployment of your API when you update them.
 
-ResourceNotes[ApiKey](../api/api-apikey.md)For applicable properties and supported operations, see [apikey:update](../api/api-updateapikey.md). The update requires redeploying the API.[Authorizer](../api/api-authorizer.md)For applicable properties and supported operations, see [authorizer:update](../api/api-updateauthorizer.md). The update requires redeploying the
-API.[disableExecuteApiEndpoint](../api/api-updaterestapi.md#apigw-UpdateRestApi-response-disableExecuteApiEndpoint)The update requires modifying any stage on the API such as redeploying the API to a stage.[DocumentationPart](../api/api-documentationpart.md)For applicable properties and supported operations, see [documentationpart:update](../api/api-updatedocumentationpart.md). The update requires redeploying the
-API.[DocumentationVersion](../api/api-documentationversion.md)For applicable properties and supported operations, see [documentationversion:update](../api/api-updatedocumentationversion.md). The update requires redeploying
-the API.[GatewayResponse](../api/api-gatewayresponse.md)For applicable properties and supported operations, see [gatewayresponse:update](../api/api-updategatewayresponse.md#remarks). The update requires redeploying the
-API.[Integration](../api/api-integration.md)
-
-For applicable properties and supported operations, see [integration:update](../api/api-updateintegration.md). The update requires redeploying the
-API.
-
-[IntegrationResponse](../api/api-integrationresponse.md)For applicable properties and supported operations, see [integrationresponse:update](../api/api-updateintegrationresponse.md). The update requires redeploying the
-API.[Method](../api/api-method.md)For applicable properties and supported operations, see [method:update](../api/api-updatemethod.md). The update requires redeploying the API.[MethodResponse](../api/api-methodresponse.md)For applicable properties and supported operations, see [methodresponse:update](../api/api-updatemethodresponse.md). The update requires redeploying the
-API.[Model](../api/api-model.md)For applicable properties and supported operations, see [model:update](../api/api-updatemodel.md). The update requires redeploying the API.[RequestValidator](../api/api-requestvalidator.md)For applicable properties and supported operations, see [requestvalidator:update](../api/api-updaterequestvalidator.md). The update requires redeploying the
-API.[Resource](../api/api-resource.md)For applicable properties and supported operations, see [resource:update](../api/api-updateresource.md). The update requires redeploying the
-API.[RestApi](../api/api-updaterestapi.md)For applicable properties and supported operations, see [restapi:update](../api/api-updaterestapi.md). The update requires redeploying the
-API. This includes modifying resource policies.[VpcLink](../api/api-vpclink.md)For applicable properties and supported operations, see [vpclink:update](../api/api-updatevpclink.md). The update requires redeploying the
-API.
+| Resource | Notes |
+| --- | --- |
+| [ApiKey](https://docs.aws.amazon.com/apigateway/latest/api/API_ApiKey.html) | For applicable properties and supported operations, see [apikey:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateApiKey.html). The update requires redeploying the API. |
+| [Authorizer](https://docs.aws.amazon.com/apigateway/latest/api/API_Authorizer.html) | For applicable properties and supported operations, see [authorizer:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateAuthorizer.html). The update requires redeploying the API. |
+|  [disableExecuteApiEndpoint](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.html#apigw-UpdateRestApi-response-disableExecuteApiEndpoint) | The update requires modifying any stage on the API such as redeploying the API to a stage. |
+| [DocumentationPart](https://docs.aws.amazon.com/apigateway/latest/api/API_DocumentationPart.html) | For applicable properties and supported operations, see [documentationpart:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDocumentationPart.html). The update requires redeploying the API. |
+| [DocumentationVersion](https://docs.aws.amazon.com/apigateway/latest/api/API_DocumentationVersion.html) | For applicable properties and supported operations, see [documentationversion:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDocumentationVersion.html). The update requires redeploying the API. |
+| [GatewayResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_GatewayResponse.html) | For applicable properties and supported operations, see [gatewayresponse:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateGatewayResponse.html#remarks). The update requires redeploying the API. |
+| [Integration](https://docs.aws.amazon.com/apigateway/latest/api/API_Integration.html) | For applicable properties and supported operations, see [integration:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateIntegration.html). The update requires redeploying the API. |
+| [IntegrationResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_IntegrationResponse.html) | For applicable properties and supported operations, see [integrationresponse:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateIntegrationResponse.html). The update requires redeploying the API. |
+| [Method](https://docs.aws.amazon.com/apigateway/latest/api/API_Method.html) | For applicable properties and supported operations, see [method:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethod.html). The update requires redeploying the API. |
+| [MethodResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html) | For applicable properties and supported operations, see [methodresponse:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethodResponse.html). The update requires redeploying the API. |
+| [Model](https://docs.aws.amazon.com/apigateway/latest/api/API_Model.html) | For applicable properties and supported operations, see [model:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateModel.html). The update requires redeploying the API. |
+| [RequestValidator](https://docs.aws.amazon.com/apigateway/latest/api/API_RequestValidator.html) | For applicable properties and supported operations, see [requestvalidator:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRequestValidator.html). The update requires redeploying the API. |
+| [Resource](https://docs.aws.amazon.com/apigateway/latest/api/API_Resource.html) | For applicable properties and supported operations, see [resource:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateResource.html). The update requires redeploying the API. |
+| [RestApi](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.html) | For applicable properties and supported operations, see [restapi:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.html). The update requires redeploying the API. This includes modifying resource policies. |
+| [VpcLink](https://docs.aws.amazon.com/apigateway/latest/api/API_VpcLink.html) | For applicable properties and supported operations, see [vpclink:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateVpcLink.html). The update requires redeploying the API. |
 
 The following table describes API configurations that don't require redeployment of your API when you update them.
 
-ConfigurationNotes[Account](../api/api-getaccount.md)
-
-For applicable properties and supported operations, see [account:update](../api/api-updateaccount.md). The update does not require redeploying the
-API.
-
-[Deployment](../api/api-deployment.md)For applicable properties and supported operations, see [deployment:update](../api/api-updatedeployment.md). [DomainName](../api/api-domainname.md)For applicable properties and supported operations, see [domainname:update](../api/api-updatedomainname.md). The update does not require redeploying the
-API.[BasePathMapping](../api/api-basepathmapping.md)
-
-For applicable properties and supported operations, see [basepathmapping:update](../api/api-updatebasepathmapping.md). The update does not require
-redeploying the API.
-
-[IP address type](../api/api-createrestapi.md)
-
-The update does not require redeploying the
-API.
-
-[Stage](../api/api-stage.md)
-
-For applicable properties and supported operations, see [stage:update](../api/api-updatestage.md). The update does not require redeploying the
-API.
-
-[Usage](../api/api-getusage.md)
-
-For applicable properties and supported operations, see [usage:update](../api/api-updateusage.md). The update does not require redeploying the
-API.
-
-[UsagePlan](../api/api-usageplan.md)For applicable properties and supported operations, see [usageplan:update](../api/api-updateusageplan.md). The update does not require redeploying the
-API.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Turn off a canary release
-
-Custom domain names
+| Configuration | Notes |
+| --- | --- |
+| [Account](https://docs.aws.amazon.com/apigateway/latest/api/API_GetAccount.html) | For applicable properties and supported operations, see [account:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateAccount.html). The update does not require redeploying the API. |
+| [Deployment](https://docs.aws.amazon.com/apigateway/latest/api/API_Deployment.html) | For applicable properties and supported operations, see [deployment:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDeployment.html).  |
+| [DomainName](https://docs.aws.amazon.com/apigateway/latest/api/API_DomainName.html) | For applicable properties and supported operations, see [domainname:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDomainName.html). The update does not require redeploying the API. |
+| [BasePathMapping](https://docs.aws.amazon.com/apigateway/latest/api/API_BasePathMapping.html) | For applicable properties and supported operations, see [basepathmapping:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateBasePathMapping.html). The update does not require redeploying the API. |
+| [IP address type](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateRestApi.html) | The update does not require redeploying the API. |
+| [Stage](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html) | For applicable properties and supported operations, see [stage:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateStage.html). The update does not require redeploying the API. |
+| [Usage](https://docs.aws.amazon.com/apigateway/latest/api/API_GetUsage.html) | For applicable properties and supported operations, see [usage:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsage.html). The update does not require redeploying the API. |
+| [UsagePlan](https://docs.aws.amazon.com/apigateway/latest/api/API_UsagePlan.html) | For applicable properties and supported operations, see [usageplan:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsagePlan.html). The update does not require redeploying the API. |
 
 All content copied from https://docs.aws.amazon.com/.

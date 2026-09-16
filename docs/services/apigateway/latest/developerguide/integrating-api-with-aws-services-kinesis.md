@@ -3,152 +3,105 @@ title: "Tutorial: Create a REST API as an Amazon Kinesis proxy"
 ---
 
 # Tutorial: Create a REST API as an Amazon Kinesis proxy
+<a name="integrating-api-with-aws-services-kinesis"></a>
 
-This page describes how to create and configure a REST API with an integration of
-the `AWS` type to access Kinesis.
+This page describes how to create and configure a REST API with an integration of the `AWS` type to access Kinesis.
 
-###### Note
+**Note**
+ To integrate your API Gateway API with Kinesis, you must choose a region where both the API Gateway and Kinesis services are available. For region availability, see [Service Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html).
 
-To integrate your API Gateway API with Kinesis, you must choose a region where both the API Gateway
-and Kinesis services are available. For region availability, see [Service Endpoints and Quotas](../../../../general/latest/gr/aws-service-information.md).
-
-For the purpose of illustration, we create an example API to enable a client to do the
-following:
+ For the purpose of illustration, we create an example API to enable a client to do the following:
 
 1. List the user's available streams in Kinesis
 
-2. Create, describe, or delete a specified stream
+1. Create, describe, or delete a specified stream
 
-3. Read data records from or write data records into the specified stream
+1. Read data records from or write data records into the specified stream
 
-To accomplish the preceding tasks, the API exposes methods on various resources to invoke
-the following, respectively:
+ To accomplish the preceding tasks, the API exposes methods on various resources to invoke the following, respectively:
 
 1. The `ListStreams` action in Kinesis
 
-2. The `CreateStream`, `DescribeStream`, or
-    `DeleteStream` action
+1. The `CreateStream`, `DescribeStream`, or `DeleteStream` action
 
-3. The `GetRecords` or `PutRecords` (including
-    `PutRecord`) action in Kinesis
+1. The `GetRecords` or `PutRecords` (including `PutRecord`) action in Kinesis
 
-Specifically, we build the API as follows:
+ Specifically, we build the API as follows:
++  Expose an HTTP GET method on the API's `/streams` resource and integrate the method with the [ListStreams](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStreams.html) action in Kinesis to list the streams in the caller's account.
++  Expose an HTTP POST method on the API's `/streams/{stream-name}` resource and integrate the method with the [CreateStream](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_CreateStream.html) action in Kinesis to create a named stream in the caller's account.
++  Expose an HTTP GET method on the API's `/streams/{stream-name}` resource and integrate the method with the [DescribeStream](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html) action in Kinesis to describe a named stream in the caller's account.
++  Expose an HTTP DELETE method on the API's `/streams/{stream-name}` resource and integrate the method with the [DeleteStream](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteStream.html) action in Kinesis to delete a stream in the caller's account.
++  Expose an HTTP PUT method on the API's `/streams/{stream-name}/record` resource and integrate the method with the [PutRecord](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) action in Kinesis. This enables the client to add a single data record to the named stream.
++  Expose an HTTP PUT method on the API's `/streams/{stream-name}/records` resource and integrate the method with the [PutRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html) action in Kinesis. This enables the client to add a list of data records to the named stream.
++  Expose an HTTP GET method on the API's `/streams/{stream-name}/records` resource and integrate the method with the [GetRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) action in Kinesis. This enables the client to list data records in the named stream, with a specified shard iterator. A shard iterator specifies the shard position from which to start reading data records sequentially.
++  Expose an HTTP GET method on the API's `/streams/{stream-name}/sharditerator` resource and integrate the method with the [GetShardIterator](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html) action in Kinesis. This helper method must be supplied to the `ListStreams` action in Kinesis.
 
-- Expose an HTTP GET method on the API's `/streams` resource and
-integrate the method with the [ListStreams](../../../../reference/kinesis/latest/apireference/api-liststreams.md) action in Kinesis to list the streams in the caller's account.
+ You can apply the instructions presented here to other Kinesis actions. For the complete list of the Kinesis actions, see [Amazon Kinesis API Reference](https://docs.aws.amazon.com/kinesis/latest/APIReference/Welcome.html).
 
-- Expose an HTTP POST method on the API's `/streams/{stream-name}`
-resource and integrate the method with the [CreateStream](../../../../reference/kinesis/latest/apireference/api-createstream.md) action in Kinesis to create a named stream in the caller's
-account.
-
-- Expose an HTTP GET method on the API's `/streams/{stream-name}`
-resource and integrate the method with the [DescribeStream](../../../../reference/kinesis/latest/apireference/api-describestream.md) action in Kinesis to describe a named stream in the
-caller's account.
-
-- Expose an HTTP DELETE method on the API's `/streams/{stream-name}`
-resource and integrate the method with the [DeleteStream](../../../../reference/kinesis/latest/apireference/api-deletestream.md) action in Kinesis to delete a stream in the caller's account.
-
-- Expose an HTTP PUT method on the API's `/streams/{stream-name}/record`
-resource and integrate the method with the [PutRecord](../../../../reference/kinesis/latest/apireference/api-putrecord.md) action in Kinesis. This enables the client to add a single data
-record to the named stream.
-
-- Expose an HTTP PUT method on the API's
-`/streams/{stream-name}/records` resource and integrate the method
-with the [PutRecords](../../../../reference/kinesis/latest/apireference/api-putrecords.md) action in Kinesis. This enables the client to add a list of
-data records to the named stream.
-
-- Expose an HTTP GET method on the API's
-`/streams/{stream-name}/records` resource and integrate the method
-with the [GetRecords](../../../../reference/kinesis/latest/apireference/api-getrecords.md) action in Kinesis. This enables the client to list data records
-in the named stream, with a specified shard iterator. A shard iterator specifies the
-shard position from which to start reading data records sequentially.
-
-- Expose an HTTP GET method on the API's
-`/streams/{stream-name}/sharditerator` resource and integrate the
-method with the [GetShardIterator](../../../../reference/kinesis/latest/apireference/api-getsharditerator.md) action in Kinesis. This helper method must be supplied to
-the `ListStreams` action in Kinesis.
-
-You can apply the instructions presented here to other Kinesis actions. For the complete
-list of the Kinesis actions, see [Amazon Kinesis API\
-Reference](../../../../reference/kinesis/latest/apireference/welcome.md).
-
-Instead of using the API Gateway console to create the sample API, you can import the sample
-API into API Gateway using the API Gateway [Import\
-API](../api/api-importrestapi.md). For information on how to use the Import API, see [Develop REST APIs using OpenAPI in API Gateway](api-gateway-import-api.md).
+ Instead of using the API Gateway console to create the sample API, you can import the sample API into API Gateway using the API Gateway [Import API](https://docs.aws.amazon.com/apigateway/latest/api/API_ImportRestApi.html). For information on how to use the Import API, see [Develop REST APIs using OpenAPI in API Gateway](api-gateway-import-api.md).
 
 ## Create an IAM role and policy for the API to access Kinesis
+<a name="integrate-with-kinesis-create-iam-role-and-policy"></a>
 
-To allow the API to invoke Kinesis actions, you must have the appropriate IAM policies attached to an IAM role. In this step, you create a new IAM role.
+ To allow the API to invoke Kinesis actions, you must have the appropriate IAM policies attached to an IAM role. In this step, you create a new IAM role.
 
-###### To create the AWS service proxy execution role
+**To create the AWS service proxy execution role**
 
-01. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
+1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
-02. Choose **Roles**.
+1. Choose **Roles**.
 
-03. Choose **Create role**.
+1. Choose **Create role**.
 
-04. Choose **AWS service** under **Select type of**
-    **trusted entity**, and then select
-     **API Gateway** and select **Allows API Gateway to push logs to CloudWatch Logs**.
+1.  Choose **AWS service** under **Select type of trusted entity**, and then select **API Gateway** and select **Allows API Gateway to push logs to CloudWatch Logs**.
 
-05. Choose **Next**, and then choose **Next**.
+1.  Choose **Next**, and then choose **Next**.
 
-06. For **Role name**, enter `APIGatewayKinesisProxyPolicy`, and then choose **Create**
-    **role**.
+1. For **Role name**, enter **APIGatewayKinesisProxyPolicy**, and then choose **Create role**.
 
-07. In the **Roles** list, choose the role you just created. You
-     may need to scroll or use the search bar to find the role.
+1. In the **Roles** list, choose the role you just created. You may need to scroll or use the search bar to find the role.
 
-08. For the selected role, select the **Add permissions** tab.
+1. For the selected role, select the **Add permissions** tab.
 
-09. Choose **Attach policies** from the dropdown list.
+1. Choose **Attach policies** from the dropdown list.
 
-10. In the search bar, enter `AmazonKinesisFullAccess` and choose **Add permissions**.
+1. In the search bar, enter **AmazonKinesisFullAccess** and choose **Add permissions**.
+**Note**
+This tutorial uses a managed policy for simplicity. As a best practice, you should create your own IAM policy to grant the minimum permissions required.
 
-    ###### Note
-
-    This tutorial uses a managed policy for simplicity. As a best practice, you should create your own IAM policy to grant the minimum permissions required.
-
-11. Note the newly created **Role ARN**, you will use it later.
+1. Note the newly created **Role ARN**, you will use it later.
 
 ## Create an API as a Kinesis proxy
+<a name="api-gateway-create-api-as-kinesis-proxy"></a>
 
 Use the following steps to create the API in the API Gateway console.
 
-###### To create an API as an AWS service proxy for Kinesis
+**To create an API as an AWS service proxy for Kinesis**
 
 1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-2. If this is your first time using API Gateway, you see a page that introduces you to
-    the features of the service. Under **REST API**, choose **Build**. When the
-    **Create Example API** popup appears, choose
-    **OK**.
+1. If this is your first time using API Gateway, you see a page that introduces you to the features of the service. Under **REST API**, choose **Build**. When the **Create Example API** popup appears, choose **OK**.
 
-If this is not your first time using API Gateway, choose **Create**
-**API**. Under **REST API**, choose **Build**.
+   If this is not your first time using API Gateway, choose **Create API**. Under **REST API**, choose **Build**.
 
-3. Choose **New API**.
+1. Choose **New API**.
 
-4. In **API name**, enter `KinesisProxy`.
-    Keep the default values for all other fields.
+1. In **API name**, enter **KinesisProxy**. Keep the default values for all other fields.
 
-5. (Optional) For **Description**, enter a description.
+1. (Optional) For **Description**, enter a description.
 
-6. For **IP address type**, select **IPv4**.
+1. For **IP address type**, select **IPv4**.
 
-7. Choose **Create API**.
+1. Choose **Create API**.
 
-After the API is created, the API Gateway console displays the
-**Resources** page, which contains only the API's root
-( `/`) resource.
+ After the API is created, the API Gateway console displays the **Resources** page, which contains only the API's root (`/`) resource.
 
 ## List streams in Kinesis
+<a name="api-gateway-list-kinesis-streams"></a>
 
-Kinesis supports the `ListStreams` action with the following REST API call:
+ Kinesis supports the `ListStreams` action with the following REST API call:
 
-```nohighlight
-
+```
 POST /?Action=ListStreams HTTP/1.1
 Host: kinesis.<region>.<domain>
 Content-Length: <PayloadSizeBytes>
@@ -162,12 +115,9 @@ X-Amz-Date: <Date>
 }
 ```
 
-In the above REST API request, the action is specified in the `Action`
-query parameter. Alternatively, you can specify the action in a
-`X-Amz-Target` header, instead:
+In the above REST API request, the action is specified in the `Action` query parameter. Alternatively, you can specify the action in a `X-Amz-Target` header, instead:
 
-```nohighlight
-
+```
 POST / HTTP/1.1
 Host: kinesis.<region>.<domain>
 Content-Length: <PayloadSizeBytes>
@@ -183,491 +133,393 @@ X-Amz-Target: Kinesis_20131202.ListStreams
 
 In this tutorial, we use the query parameter to specify action.
 
-To expose a Kinesis action in the API, add a `/streams` resource to the API's
-root. Then set a `GET` method on the resource and integrate the method with
-the `ListStreams` action of Kinesis.
+To expose a Kinesis action in the API, add a `/streams` resource to the API's root. Then set a `GET` method on the resource and integrate the method with the `ListStreams` action of Kinesis.
 
 The following procedure describes how to list Kinesis streams by using the API Gateway console.
 
-###### To list Kinesis streams by using the API Gateway console
+**To list Kinesis streams by using the API Gateway console**
 
-01. Select the `/` resource, and then choose **Create resource**.
+1. Select the `/` resource, and then choose **Create resource**.
 
-02. For **Resource name**, enter `streams`.
+1. For **Resource name**, enter **streams**.
 
-03. Keep **CORS (Cross Origin Resource Sharing)** turned off.
+1. Keep **CORS (Cross Origin Resource Sharing)** turned off.
 
-04. Choose **Create resource**.
+1. Choose **Create resource**.
 
-05. Choose the `/streams` resource, and then choose **Create method**, and then do the following:
-    01. For **Method type**, select **GET**.
+1.  Choose the `/streams` resource, and then choose **Create method**, and then do the following:
 
-        ###### Note
+   1. For **Method type**, select **GET**.
+**Note**
+The HTTP verb for a method invoked by a client may differ from the HTTP verb for an integration required by the backend. We select `GET` here, because listing streams is intuitively a READ operation.
 
-        The HTTP verb for a method invoked by a client may differ from the HTTP
-        verb for an integration required by the backend. We select `GET`
-        here, because listing streams is intuitively a READ operation.
+   1. For **Integration type**, select **AWS service**.
 
-    02. For **Integration type**, select **AWS service**.
+   1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-    03. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+   1. For **AWS service**, select **Kinesis**.
 
-    04. For **AWS service**, select **Kinesis**.
+   1. Keep **AWS subdomain** blank.
 
-    05. Keep **AWS subdomain** blank.
+   1. For **HTTP method**, choose **POST**.
+**Note**
+We chose `POST` here because Kinesis requires that the `ListStreams` action be invoked with it.
 
-    06. For **HTTP method**, choose
-         **POST**.
+   1. For **Action type**, choose **Use action name**.
 
-        ###### Note
+   1. For **Action name**, enter **ListStreams**.
 
-        We chose `POST` here because Kinesis requires that the
-        `ListStreams` action be invoked with it.
+   1. For **Execution role**, enter the ARN for your execution role.
 
-    07. For **Action type**, choose **Use action**
-        **name**.
+   1. Keep the default of **Passthrough** for **Content Handling**.
 
-    08. For **Action name**, enter
-         `ListStreams`.
+   1. Choose **Create method**.
 
-    09. For **Execution role**, enter the ARN for your
-         execution role.
+1. On the **Integration request** tab, under **Integration request settings**, choose **Edit**.
 
-    10. Keep the default of **Passthrough** for
-         **Content Handling**.
+1. For **Request body passthrough**, select **When there are no templates defined (recommended)**.
 
-    11. Choose **Create method**.
-06. On the **Integration request** tab, under **Integration request settings**, choose **Edit**.
+1.  Choose **URL request headers parameters**, and then do the following:
 
-07. For **Request body passthrough**, select **When there are no templates defined (recommended)**.
+   1. Choose **Add request headers parameter**.
 
-08. Choose **URL request headers parameters**, and then do the following:
+   1. For **Name**, enter **Content-Type**.
 
-    1. Choose **Add request headers parameter**.
+   1. For **Mapped from**, enter **'application/x-amz-json-1.1'**.
 
-    2. For **Name**, enter
-        `Content-Type`.
+    We use a request parameter mapping to set the `Content-Type` header to the static value of `'application/x-amz-json-1.1'` to inform Kinesis that the input is of a specific version of JSON.
 
-    3. For **Mapped from**, enter
-        `'application/x-amz-json-1.1'`.
+1. Choose **Mapping templates**, and then choose **Add mapping template**, and do the following:
 
-We use a request parameter mapping to set the `Content-Type`
-header to the static value of `'application/x-amz-json-1.1'` to
-inform Kinesis that the input is of a specific version of JSON.
+   1. For **Content-Type**, enter **application/json**.
 
-09. Choose **Mapping templates**, and then choose **Add mapping template**, and do the following:
+   1. For **Template body**, enter **{}**.
 
-    1. For **Content-Type**, enter
-        `application/json`.
+   1. Choose **Save**.
 
-    2. For **Template body**, enter `{}`.
+    The [ListStreams](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStreams.html#API_ListStreams_RequestSyntax) request takes a payload of the following JSON format:
 
-    3. Choose **Save**.
+   ```
+   {
+       "ExclusiveStartStreamName": "string",
+       "Limit": number
+   }
+   ```
 
-The [ListStreams](../../../../reference/kinesis/latest/apireference/api-liststreams.md#API_ListStreams_RequestSyntax) request takes a payload of the following JSON format:
+   However, the properties are optional. To use the default values, we opted for an empty JSON payload here.
 
-```nohighlight
+1. Test the GET method on the **/streams** resource to invoke the `ListStreams` action in Kinesis:
 
-{
-    "ExclusiveStartStreamName": "string",
-    "Limit": number
-}
+   Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
 
-```
+   Choose **Test** to test your method.
 
-However, the properties are optional. To use the default values, we opted for
-an empty JSON payload here.
+    If you already created two streams named "myStream" and "yourStream" in Kinesis, the successful test returns a 200 OK response containing the following payload:
 
-10. Test the GET method on the **/streams** resource to invoke the
-     `ListStreams` action in Kinesis:
-
-    Choose the **Test** tab. You might need to choose the right arrow button to show the tab.
-
-    Choose **Test** to test your method.
-
-     If you already created two streams named
-     "myStream"
-     and "yourStream" in Kinesis, the successful test returns a 200
-     OK response containing the following payload:
-
-    ```nohighlight
-
-    {
-         "HasMoreStreams": false,
-         "StreamNames": [
-             "myStream",
-             "yourStream"
-         ]
-    }
-
-    ```
+   ```
+   {
+        "HasMoreStreams": false,
+        "StreamNames": [
+            "myStream",
+            "yourStream"
+        ]
+   }
+   ```
 
 ## Create, describe, and delete a stream in Kinesis
+<a name="api-gateway-create-describe-delete-stream"></a>
 
-Creating, describing, and deleting a stream in Kinesis involves making the following
-Kinesis REST API requests, respectively:
+ Creating, describing, and deleting a stream in Kinesis involves making the following Kinesis REST API requests, respectively:
 
-```nohighlight
-
+```
 POST /?Action=CreateStream HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
     "ShardCount": number,
     "StreamName": "string"
 }
-
 ```
 
-```nohighlight
-
+```
 POST /?Action=DescribeStream HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
     "StreamName": "string"
 }
-
 ```
 
-```nohighlight
-
+```
 POST /?Action=DeleteStream HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
     "StreamName":"string"
 }
-
 ```
 
-We can build the API to accept the required input as a JSON payload of the method
-request and pass the payload through to the integration request. However, to provide
-more examples of data mapping between method and integration requests, and method and
-integration responses, we create our API somewhat differently.
+ We can build the API to accept the required input as a JSON payload of the method request and pass the payload through to the integration request. However, to provide more examples of data mapping between method and integration requests, and method and integration responses, we create our API somewhat differently.
 
-We expose the `GET`, `POST`, and `Delete` HTTP
-methods on a to-be-named `Stream` resource. We use the
-`{stream-name}` path variable as the placeholder of the stream resource
-and integrate these API methods with the Kinesis' `DescribeStream`,
-`CreateStream`, and `DeleteStream` actions, respectively. We
-require that the client pass other input data as headers, query parameters, or the
-payload of a method request. We provide mapping templates to transform the data to the
-required integration request payload.
+ We expose the `GET`, `POST`, and `Delete` HTTP methods on a to-be-named `Stream` resource. We use the `{stream-name}` path variable as the placeholder of the stream resource and integrate these API methods with the Kinesis' `DescribeStream`, `CreateStream`, and `DeleteStream` actions, respectively. We require that the client pass other input data as headers, query parameters, or the payload of a method request. We provide mapping templates to transform the data to the required integration request payload.
 
-###### To create the {stream-name} resource
+**To create the {stream-name} resource**
 
 1. Choose the **/streams** resource, and then choose **Create resource**.
 
-2. Keep **Proxy resource** turned off.
+1. Keep **Proxy resource** turned off.
 
-3. For **Resource path**, select `/streams`.
+1. For **Resource path**, select `/streams`.
 
-4. For **Resource name**, enter `{stream-name}`.
+1. For **Resource name**, enter **{stream-name}**.
 
-5. Keep **CORS (Cross Origin Resource Sharing)** turned off.
+1. Keep **CORS (Cross Origin Resource Sharing)** turned off.
 
-6. Choose **Create resource**.
+1. Choose **Create resource**.
 
-###### To configure and test the GET method on a stream resource
+**To configure and test the GET method on a stream resource**
 
-01. Choose the **/{stream-name}** resource, and then choose **Create method**.
+1. Choose the **/{stream-name}** resource, and then choose **Create method**.
 
-02. For **Method type**, select **GET**.
+1. For **Method type**, select **GET**.
 
-03. For **Integration type**, select **AWS service**.
+1. For **Integration type**, select **AWS service**.
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-05. For **AWS service**, select **Kinesis**.
+1. For **AWS service**, select **Kinesis**.
 
-06. Keep **AWS subdomain** blank.
+1. Keep **AWS subdomain** blank.
 
-07. For **HTTP method**, choose
-     **POST**.
+1. For **HTTP method**, choose **POST**.
 
-08. For **Action type**, choose **Use action**
-    **name**.
+1. For **Action type**, choose **Use action name**.
 
-09. For **Action name**, enter
-     `DescribeStream`.
+1. For **Action name**, enter **DescribeStream**.
 
-10. For **Execution role**, enter the ARN for your
-     execution role.
+1. For **Execution role**, enter the ARN for your execution role.
 
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
+1. Keep the default of **Passthrough** for **Content Handling**.
 
-12. Choose **Create method**.
+1. Choose **Create method**.
 
-13. In the **Integration request** section, add the following **URL request headers parameters**:
+1. In the **Integration request** section, add the following **URL request headers parameters**:
 
-    ```nohighlight
+   ```
+   Content-Type: 'x-amz-json-1.1'
+   ```
 
-    Content-Type: 'x-amz-json-1.1'
-    ```
+   The task follows the same procedure to set up the request parameter mapping for the `GET /streams` method.
 
-    The task follows the same procedure to set up the request parameter mapping
-     for the `GET /streams` method.
+1. Add the following body mapping template to map data from the `GET /streams/{stream-name}` method request to the `POST /?Action=DescribeStream` integration request:
 
-14. Add the following body mapping template to map data from the `GET
-                      /streams/{stream-name}` method request to the `POST
-                        /?Action=DescribeStream` integration request:
+   ```
+   {
+       "StreamName": "$input.params('stream-name')"
+   }
+   ```
 
-    ```nohighlight
+   This mapping template generates the required integration request payload for the `DescribeStream` action of Kinesis from the method request's `stream-name` path parameter value.
 
-    {
-        "StreamName": "$input.params('stream-name')"
-    }
-    ```
+1. To test the `GET /stream/{stream-name}` method to invoke the `DescribeStream` action in Kinesis, choose the **Test** tab.
 
-    This mapping template generates the required integration request payload for
-     the `DescribeStream` action of Kinesis from the method request's
-     `stream-name` path parameter value.
+1. For **Path**, under **stream-name**, enter the name of an existing Kinesis stream.
 
-15. To test the `GET /stream/{stream-name}` method to invoke the
-     `DescribeStream` action in Kinesis, choose the **Test** tab.
+1. Choose **Test**. If the test is successful, a 200 OK response is returned with a payload similar to the following:
 
-16. For **Path**, under **stream-name**, enter the name of an existing Kinesis stream.
+   ```
+   {
+     "StreamDescription": {
+       "HasMoreShards": false,
+       "RetentionPeriodHours": 24,
+       "Shards": [
+         {
+           "HashKeyRange": {
+             "EndingHashKey": "68056473384187692692674921486353642290",
+             "StartingHashKey": "0"
+           },
+           "SequenceNumberRange": {
+             "StartingSequenceNumber": "49559266461454070523309915164834022007924120923395850242"
+           },
+           "ShardId": "shardId-000000000000"
+         },
+         ...
+         {
+           "HashKeyRange": {
+             "EndingHashKey": "340282366920938463463374607431768211455",
+             "StartingHashKey": "272225893536750770770699685945414569164"
+           },
+           "SequenceNumberRange": {
+             "StartingSequenceNumber": "49559266461543273504104037657400164881014714369419771970"
+           },
+           "ShardId": "shardId-000000000004"
+         }
+       ],
+       "StreamARN": "arn:aws:kinesis:us-east-1:12345678901:stream/myStream",
+       "StreamName": "myStream",
+       "StreamStatus": "ACTIVE"
+     }
+   }
+   ```
 
-17. Choose **Test**. If the test is successful, a 200 OK response is
-     returned with a payload similar to the following:
+    After you deploy the API, you can make a REST request against this API method:
 
-    ```nohighlight
+   ```
+   GET https://{{your-api-id}}.execute-api.{{region}}.amazonaws.com/{{stage}}/streams/{{myStream}} HTTP/1.1
+   Host: {{your-api-id}}.execute-api.{{region}}.amazonaws.com
+   Content-Type: application/json
+   Authorization: ...
+   X-Amz-Date: 20160323T194451Z
+   ```
 
-    {
-      "StreamDescription": {
-        "HasMoreShards": false,
-        "RetentionPeriodHours": 24,
-        "Shards": [
-          {
-            "HashKeyRange": {
-              "EndingHashKey": "68056473384187692692674921486353642290",
-              "StartingHashKey": "0"
-            },
-            "SequenceNumberRange": {
-              "StartingSequenceNumber": "49559266461454070523309915164834022007924120923395850242"
-            },
-            "ShardId": "shardId-000000000000"
-          },
-          ...
-          {
-            "HashKeyRange": {
-              "EndingHashKey": "340282366920938463463374607431768211455",
-              "StartingHashKey": "272225893536750770770699685945414569164"
-            },
-            "SequenceNumberRange": {
-              "StartingSequenceNumber": "49559266461543273504104037657400164881014714369419771970"
-            },
-            "ShardId": "shardId-000000000004"
-          }
-        ],
-        "StreamARN": "arn:aws:kinesis:us-east-1:12345678901:stream/myStream",
-        "StreamName": "myStream",
-        "StreamStatus": "ACTIVE"
-      }
-    }
-    ```
+**To configure and test the POST method on a stream resource**
 
-     After you deploy the API, you can make a REST request against this API
-     method:
+1. Choose the **/{stream-name}** resource, and then choose **Create method**.
 
-    ```nohighlight
+1. For **Method type**, select **POST**.
 
-    GET https://your-api-id.execute-api.region.amazonaws.com/stage/streams/myStream HTTP/1.1
-    Host: your-api-id.execute-api.region.amazonaws.com
-    Content-Type: application/json
-    Authorization: ...
-    X-Amz-Date: 20160323T194451Z
+1. For **Integration type**, select **AWS service**.
 
-    ```
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-###### To configure and test the POST method on a stream resource
+1. For **AWS service**, select **Kinesis**.
 
-01. Choose the **/{stream-name}** resource, and then choose **Create method**.
+1. Keep **AWS subdomain** blank.
 
-02. For **Method type**, select **POST**.
+1. For **HTTP method**, choose **POST**.
 
-03. For **Integration type**, select **AWS service**.
+1. For **Action type**, choose **Use action name**.
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+1. For **Action name**, enter **CreateStream**.
 
-05. For **AWS service**, select **Kinesis**.
+1. For **Execution role**, enter the ARN for your execution role.
 
-06. Keep **AWS subdomain** blank.
+1. Keep the default of **Passthrough** for **Content Handling**.
 
-07. For **HTTP method**, choose
-     **POST**.
+1. Choose **Create method**.
 
-08. For **Action type**, choose **Use action**
-    **name**.
+1. In the **Integration request** section, add the following **URL request headers parameters**:
 
-09. For **Action name**, enter
-     `CreateStream`.
+   ```
+   Content-Type: 'x-amz-json-1.1'
+   ```
 
-10. For **Execution role**, enter the ARN for your
-     execution role.
+   The task follows the same procedure to set up the request parameter mapping for the `GET /streams` method.
 
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
+1.  Add the following body mapping template to map data from the `POST /streams/{stream-name}` method request to the `POST /?Action=CreateStream` integration request:
 
-12. Choose **Create method**.
+   ```
+   {
+       "ShardCount": #if($input.path('$.ShardCount') == '') 5 #else $input.path('$.ShardCount') #end,
+       "StreamName": "$input.params('stream-name')"
+   }
+   ```
 
-13. In the **Integration request** section, add the following **URL request headers parameters**:
+    In the preceding mapping template, we set `ShardCount` to a fixed value of 5 if the client does not specify a value in the method request payload.
 
-    ```nohighlight
+1. To test the `POST /stream/{stream-name}` method to invoke the `CreateStream` action in Kinesis, choose the **Test** tab.
 
-    Content-Type: 'x-amz-json-1.1'
-    ```
+1. For **Path**, under **stream-name**, enter the name of a new Kinesis stream.
 
-    The task follows the same procedure to set up the request parameter mapping
-     for the `GET /streams` method.
+1. Choose **Test**. If the test is successful, a 200 OK response is returned with no data.
 
-14. Add the following body mapping template to map data from the `POST
-                      /streams/{stream-name}` method request to the `POST
-                        /?Action=CreateStream` integration request:
+    After you deploy the API, you can also make a REST API request against the POST method on a Stream resource to invoke the `CreateStream` action in Kinesis:
 
-    ```nohighlight
+   ```
+   POST https://{{your-api-id}}.execute-api.{{region}}.amazonaws.com/{{stage}}/streams/{{yourStream}} HTTP/1.1
+   Host: {{your-api-id}}.execute-api.{{region}}.amazonaws.com
+   Content-Type: application/json
+   Authorization: ...
+   X-Amz-Date: 20160323T194451Z
 
-    {
-        "ShardCount": #if($input.path('$.ShardCount') == '') 5 #else $input.path('$.ShardCount') #end,
-        "StreamName": "$input.params('stream-name')"
-    }
-    ```
+   {
+       "ShardCount": 5
+   }
+   ```
 
-     In the preceding mapping template, we set `ShardCount` to a fixed
-     value of 5 if the client does not specify a value in the method request payload.
+**Configure and test the DELETE method on a stream resource**
 
-15. To test the `POST /stream/{stream-name}` method to invoke the
-     `CreateStream` action in Kinesis, choose the **Test** tab.
+1. Choose the **/{stream-name}** resource, and then choose **Create method**.
 
-16. For **Path**, under **stream-name**, enter the name of a new Kinesis stream.
+1. For **Method type**, select **DELETE**.
 
-17. Choose **Test**. If the test is successful, a 200 OK response is
-     returned with no data.
+1. For **Integration type**, select **AWS service**.
 
-     After you deploy the API, you can also make a REST API request against the
-     POST method on a Stream resource to invoke the `CreateStream` action
-     in Kinesis:
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-    ```nohighlight
+1. For **AWS service**, select **Kinesis**.
 
-    POST https://your-api-id.execute-api.region.amazonaws.com/stage/streams/yourStream HTTP/1.1
-    Host: your-api-id.execute-api.region.amazonaws.com
-    Content-Type: application/json
-    Authorization: ...
-    X-Amz-Date: 20160323T194451Z
+1. Keep **AWS subdomain** blank.
 
-    {
-        "ShardCount": 5
-    }
+1. For **HTTP method**, choose **POST**.
 
-    ```
+1. For **Action type**, choose **Use action name**.
 
-###### Configure and test the DELETE method on a stream resource
+1. For **Action name**, enter **DeleteStream**.
 
-01. Choose the **/{stream-name}** resource, and then choose **Create method**.
+1. For **Execution role**, enter the ARN for your execution role.
 
-02. For **Method type**, select **DELETE**.
+1. Keep the default of **Passthrough** for **Content Handling**.
 
-03. For **Integration type**, select **AWS service**.
+1. Choose **Create method**.
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+1. In the **Integration request** section, add the following **URL request headers parameters**:
 
-05. For **AWS service**, select **Kinesis**.
+   ```
+   Content-Type: 'x-amz-json-1.1'
+   ```
 
-06. Keep **AWS subdomain** blank.
+   The task follows the same procedure to set up the request parameter mapping for the `GET /streams` method.
 
-07. For **HTTP method**, choose
-     **POST**.
+1.  Add the following body mapping template to map data from the `DELETE /streams/{stream-name}` method request to the corresponding integration request of `POST /?Action=DeleteStream` :
 
-08. For **Action type**, choose **Use action**
-    **name**.
+   ```
+   {
+       "StreamName": "$input.params('stream-name')"
+   }
+   ```
 
-09. For **Action name**, enter
-     `DeleteStream`.
+    This mapping template generates the required input for the `DELETE /streams/{stream-name}` action from the client-supplied URL path name of `stream-name`.
 
-10. For **Execution role**, enter the ARN for your
-     execution role.
+1. To test the `DELETE /stream/{stream-name}` method to invoke the `DeleteStream` action in Kinesis, choose the **Test** tab.
 
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
+1. For **Path**, under **stream-name**, enter the name of an existing Kinesis stream.
 
-12. Choose **Create method**.
+1. Choose **Test**. If the test is successful, a 200 OK response is returned with no data.
 
-13. In the **Integration request** section, add the following **URL request headers parameters**:
+    After you deploy the API, you can also make the following REST API request against the DELETE method on the Stream resource to call the `DeleteStream` action in Kinesis:
 
-    ```nohighlight
+   ```
+   DELETE https://{{your-api-id}}.execute-api.{{region}}.amazonaws.com/{{stage}}/streams/{{yourStream}} HTTP/1.1
+   Host: {{your-api-id}}.execute-api.{{region}}.amazonaws.com
+   Content-Type: application/json
+   Authorization: ...
+   X-Amz-Date: 20160323T194451Z
 
-    Content-Type: 'x-amz-json-1.1'
-    ```
-
-    The task follows the same procedure to set up the request parameter mapping
-     for the `GET /streams` method.
-
-14. Add the following body mapping template to map data from the `DELETE
-                      /streams/{stream-name}` method request to the corresponding
-     integration request of `POST /?Action=DeleteStream` :
-
-    ```nohighlight
-
-    {
-        "StreamName": "$input.params('stream-name')"
-    }
-    ```
-
-     This mapping template generates the required input for the `DELETE
-                      /streams/{stream-name}` action from the client-supplied URL path name
-     of `stream-name`.
-
-15. To test the `DELETE /stream/{stream-name}` method to invoke the
-     `DeleteStream` action in Kinesis, choose the **Test** tab.
-
-16. For **Path**, under **stream-name**, enter the name of an existing Kinesis stream.
-
-17. Choose
-     **Test**. If the test is successful, a 200 OK response is
-     returned with no data.
-
-     After you deploy the API, you can also make the following REST API request
-     against the DELETE method on the Stream resource to call the
-     `DeleteStream` action in Kinesis:
-
-    ```nohighlight
-
-    DELETE https://your-api-id.execute-api.region.amazonaws.com/stage/streams/yourStream HTTP/1.1
-    Host: your-api-id.execute-api.region.amazonaws.com
-    Content-Type: application/json
-    Authorization: ...
-    X-Amz-Date: 20160323T194451Z
-
-    {}
-
-    ```
+   {}
+   ```
 
 ## Get records from and add records to a stream in Kinesis
+<a name="api-gateway-get-and-add-records-to-stream"></a>
 
-After you create a stream in Kinesis, you can add data records to the stream and read
-the data from the stream. Adding data records involves calling the [PutRecords](../../../../reference/kinesis/latest/apireference/api-putrecords.md#API_PutRecords_Examples) or [PutRecord](../../../../reference/kinesis/latest/apireference/api-putrecord.md#API_PutRecord_Examples) action in Kinesis. The former adds multiple records whereas the
-latter adds a single record to the stream.
+ After you create a stream in Kinesis, you can add data records to the stream and read the data from the stream. Adding data records involves calling the [PutRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html#API_PutRecords_Examples) or [PutRecord](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html#API_PutRecord_Examples) action in Kinesis. The former adds multiple records whereas the latter adds a single record to the stream.
 
-```nohighlight
-
+```
 POST /?Action=PutRecords HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 Authorization: AWS4-HMAC-SHA256 Credential=..., ...
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
     "Records": [
@@ -679,498 +531,392 @@ Content-Length: PayloadSizeBytes
     ],
     "StreamName": "string"
 }
-
 ```
 
 or
 
-```nohighlight
-
+```
 POST /?Action=PutRecord HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 Authorization: AWS4-HMAC-SHA256 Credential=..., ...
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
-    "Data": blob,
-    "ExplicitHashKey": "string",
-    "PartitionKey": "string",
-    "SequenceNumberForOrdering": "string",
+    "Data": {{blob}},
+    "ExplicitHashKey": {{"string"}},
+    "PartitionKey": {{"string"}},
+    "SequenceNumberForOrdering": {{"string"}},
     "StreamName": "string"
 }
-
 ```
 
-Here, `StreamName` identifies the target stream to add records.
-`StreamName`, `Data`, and `PartitionKey` are
-required input data. In our example, we use the default values for all of the optional
-input data and will not explicitly specify values for them in the input to the method
-request.
+ Here, `StreamName` identifies the target stream to add records. `StreamName`, `Data`, and `PartitionKey` are required input data. In our example, we use the default values for all of the optional input data and will not explicitly specify values for them in the input to the method request.
 
-Reading data in Kinesis amounts to calling the [GetRecords](../../../../reference/kinesis/latest/apireference/api-getrecords.md#API_GetRecords_Examples) action:
+ Reading data in Kinesis amounts to calling the [GetRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html#API_GetRecords_Examples) action:
 
-```nohighlight
-
+```
 POST /?Action=GetRecords HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 Authorization: AWS4-HMAC-SHA256 Credential=..., ...
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
-    "ShardIterator": "string",
-    "Limit": number
+    "ShardIterator": {{"string"}},
+    "Limit": {{number}}
 }
-
 ```
 
-Here, the source stream from which we are getting records is specified in the required
-`ShardIterator` value, as is shown in the following Kinesis action to obtain
-a shard iterator:
+Here, the source stream from which we are getting records is specified in the required `ShardIterator` value, as is shown in the following Kinesis action to obtain a shard iterator:
 
-```nohighlight
-
+```
 POST /?Action=GetShardIterator HTTP/1.1
-Host: kinesis.region.domain
+Host: kinesis.{{region}}.{{domain}}
 Authorization: AWS4-HMAC-SHA256 Credential=..., ...
 ...
 Content-Type: application/x-amz-json-1.1
-Content-Length: PayloadSizeBytes
+Content-Length: {{PayloadSizeBytes}}
 
 {
-    "ShardId": "string",
-    "ShardIteratorType": "string",
-    "StartingSequenceNumber": "string",
-    "StreamName": "string"
+    "ShardId": {{"string"}},
+    "ShardIteratorType": {{"string"}},
+    "StartingSequenceNumber": {{"string"}},
+    "StreamName": {{"string"}}
 }
-
 ```
 
-For the `GetRecords` and `PutRecords` actions, we expose the
-`GET` and `PUT` methods, respectively, on a
-`/records` resource that is appended to a named stream resource
-( `/{stream-name}`). Similarly, we expose the `PutRecord`
-action as a `PUT` method on a `/record` resource.
+ For the `GetRecords` and `PutRecords` actions, we expose the `GET` and `PUT` methods, respectively, on a `/records` resource that is appended to a named stream resource (`/{stream-name}`). Similarly, we expose the `PutRecord` action as a `PUT` method on a `/record` resource.
 
-Because the `GetRecords` action takes as input a
-`ShardIterator` value, which is obtained by calling the
-`GetShardIterator` helper action, we expose a `GET` helper
-method on a `ShardIterator` resource ( `/sharditerator`).
+ Because the `GetRecords` action takes as input a `ShardIterator` value, which is obtained by calling the `GetShardIterator` helper action, we expose a `GET` helper method on a `ShardIterator` resource (`/sharditerator`).
 
-###### To create the /record, /records, and /sharditerator resources
+**To create the /record, /records, and /sharditerator resources**
 
 1. Choose the **/{stream-name}** resource, and then choose **Create resource**.
 
-2. Keep **Proxy resource** turned off.
+1. Keep **Proxy resource** turned off.
 
-3. For **Resource path**, select `/{stream-name}`.
+1. For **Resource path**, select `/{stream-name}`.
 
-4. For **Resource name**, enter `record`.
+1. For **Resource name**, enter **record**.
 
-5. Keep **CORS (Cross Origin Resource Sharing)** turned off.
+1. Keep **CORS (Cross Origin Resource Sharing)** turned off.
 
-6. Choose **Create resource**.
+1. Choose **Create resource**.
 
-7. Repeat the previous steps to create a **/records** and a **/sharditerator** resource. The final API should look like the following:
+1. Repeat the previous steps to create a **/records** and a **/sharditerator** resource. The final API should look like the following:
 
-![Create Records:GET|PUT|PUT|GET method for the API.](https://docs.aws.amazon.com/images/apigateway/latest/developerguide/images/api-gateway-kinesis-proxy-setup-streams-stream-record-method-new-console.png)
+![Create Records:GET|PUT|PUT|GET method for the API.](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/api-gateway-kinesis-proxy-setup-streams-stream-record-method-new-console.png)
 
-The following four procedures describe how to set up each of the methods, how to map
-data from the method requests to the integration requests, and how to test the methods.
+ The following four procedures describe how to set up each of the methods, how to map data from the method requests to the integration requests, and how to test the methods.
 
-###### To set up and test the `PUT /streams/{stream-name}/record` method to invoke `PutRecord` in Kinesis:
+**To set up and test the `PUT /streams/{stream-name}/record` method to invoke `PutRecord` in Kinesis:**
 
-01. Choose the **/record**, and then choose **Create method**.
+1. Choose the **/record**, and then choose **Create method**.
 
-02. For **Method type**, select **PUT**.
+1. For **Method type**, select **PUT**.
 
-03. For **Integration type**, select **AWS service**.
+1. For **Integration type**, select **AWS service**.
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-05. For **AWS service**, select **Kinesis**.
+1. For **AWS service**, select **Kinesis**.
 
-06. Keep **AWS subdomain** blank.
+1. Keep **AWS subdomain** blank.
 
-07. For **HTTP method**, choose
-     **POST**.
+1. For **HTTP method**, choose **POST**.
 
-08. For **Action type**, choose **Use action**
-    **name**.
+1. For **Action type**, choose **Use action name**.
 
-09. For **Action name**, enter
-     `PutRecord`.
+1. For **Action name**, enter **PutRecord**.
 
-10. For **Execution role**, enter the ARN for your
-     execution role.
+1. For **Execution role**, enter the ARN for your execution role.
 
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
+1. Keep the default of **Passthrough** for **Content Handling**.
 
-12. Choose **Create method**.
+1. Choose **Create method**.
 
-13. In the **Integration request** section, add the following **URL request headers parameters**:
+1. In the **Integration request** section, add the following **URL request headers parameters**:
 
-    ```nohighlight
+   ```
+   Content-Type: 'x-amz-json-1.1'
+   ```
 
-    Content-Type: 'x-amz-json-1.1'
-    ```
+   The task follows the same procedure to set up the request parameter mapping for the `GET /streams` method.
 
-    The task follows the same procedure to set up the request parameter mapping
-     for the `GET /streams` method.
+1.  Add the following body mapping template to map data from the `PUT /streams/{stream-name}/record` method request to the corresponding integration request of `POST /?Action=PutRecord`:
 
-14. Add the following body mapping template to map data from the `PUT
-                            /streams/{stream-name}/record` method request to the corresponding
-     integration request of `POST /?Action=PutRecord`:
+   ```
+   {
+       "StreamName": "$input.params('stream-name')",
+       "Data": "$util.base64Encode($input.json('$.Data'))",
+       "PartitionKey": "$input.path('$.PartitionKey')"
+   }
+   ```
 
-    ```nohighlight
+    This mapping template assumes that the method request payload is of the following format:
 
-    {
-        "StreamName": "$input.params('stream-name')",
-        "Data": "$util.base64Encode($input.json('$.Data'))",
-        "PartitionKey": "$input.path('$.PartitionKey')"
-    }
-    ```
+   ```
+   {
+      "Data": "some data",
+      "PartitionKey": "some key"
+   }
+   ```
 
-     This mapping template assumes that the method request payload is of the
-     following format:
+   This data can be modeled by the following JSON schema:
 
-    ```nohighlight
+   ```
+   {
+     "$schema": "http://json-schema.org/draft-04/schema#",
+     "title": "PutRecord proxy single-record payload",
+     "type": "object",
+     "properties": {
+         "Data": { "type": "string" },
+         "PartitionKey": { "type": "string" }
+     }
+   }
+   ```
 
-    {
-       "Data": "some data",
-       "PartitionKey": "some key"
-    }
-    ```
+    You can create a model to include this schema and use the model to facilitate generating the mapping template. However, you can generate a mapping template without using any model.
 
-    This data can be modeled by the following JSON schema:
+1.  To test the `PUT /streams/{stream-name}/record` method, set the `stream-name` path variable to the name of an existing stream, supply a payload of the required format, and then submit the method request. The successful result is a `200 OK `response with a payload of the following format:
 
-    ```nohighlight
+   ```
+   {
+     "SequenceNumber": "49559409944537880850133345460169886593573102115167928386",
+     "ShardId": "shardId-000000000004"
+   }
+   ```
 
-    {
-      "$schema": "http://json-schema.org/draft-04/schema#",
-      "title": "PutRecord proxy single-record payload",
-      "type": "object",
-      "properties": {
-          "Data": { "type": "string" },
-          "PartitionKey": { "type": "string" }
-      }
-    }
-    ```
+**To set up and test the `PUT /streams/{stream-name}/records` method to invoke `PutRecords` in Kinesis**
 
-     You can create a model to include this schema and use the model to facilitate
-     generating the mapping template. However, you can generate a mapping template
-     without using any model.
+1. Choose the **/records** resource, and then choose **Create method**.
 
-15. To test the `PUT /streams/{stream-name}/record` method, set the
-     `stream-name` path variable to the name of an existing stream,
-     supply a payload of the required format, and then submit the method request. The
-     successful result is a `200 OK ` response with a payload of the
-     following format:
+1. For **Method type**, select **PUT**.
 
-    ```nohighlight
+1. For **Integration type**, select **AWS service**.
+
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+
+1. For **AWS service**, select **Kinesis**.
+
+1. Keep **AWS subdomain** blank.
+
+1. For **HTTP method**, choose **POST**.
+
+1. For **Action type**, choose **Use action name**.
+
+1. For **Action name**, enter **PutRecords**.
+
+1. For **Execution role**, enter the ARN for your execution role.
+
+1. Keep the default of **Passthrough** for **Content Handling**.
+
+1. Choose **Create method**.
 
-    {
-      "SequenceNumber": "49559409944537880850133345460169886593573102115167928386",
-      "ShardId": "shardId-000000000004"
-    }
+1. In the **Integration request** section, add the following **URL request headers parameters**:
 
-    ```
+   ```
+   Content-Type: 'x-amz-json-1.1'
+   ```
 
-###### To set up and test the `PUT /streams/{stream-name}/records` method to invoke `PutRecords` in Kinesis
+   The task follows the same procedure to set up the request parameter mapping for the `GET /streams` method.
 
-01. Choose the **/records** resource, and then choose **Create method**.
+1.  Add the following mapping template to map data from the `PUT /streams/{stream-name}/records` method request to the corresponding integration request of `POST /?Action=PutRecords` :
 
-02. For **Method type**, select **PUT**.
+   ```
+   {
+       "StreamName": "$input.params('stream-name')",
+       "Records": [
+          #foreach($elem in $input.path('$.records'))
+             {
+               "Data": "$util.base64Encode($elem.data)",
+               "PartitionKey": "$elem.partition-key"
+             }#if($foreach.hasNext),#end
+           #end
+       ]
+   }
+   ```
 
-03. For **Integration type**, select **AWS service**.
+   This mapping template assumes that the method request payload can be modelled by the following JSON schema:
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+   ```
+   {
+     "$schema": "http://json-schema.org/draft-04/schema#",
+     "title": "PutRecords proxy payload data",
+     "type": "object",
+     "properties": {
+       "records": {
+         "type": "array",
+         "items": {
+           "type": "object",
+           "properties": {
+             "data": { "type": "string" },
+             "partition-key": { "type": "string" }
+           }
+         }
+       }
+     }
+   }
+   ```
 
-05. For **AWS service**, select **Kinesis**.
+    You can create a model to include this schema and use the model to facilitate generating the mapping template. However, you can generate a mapping template without using any model.
 
-06. Keep **AWS subdomain** blank.
-
-07. For **HTTP method**, choose
-     **POST**.
+   In this tutorial, we used two slightly different payload formats to illustrate that an API developer can choose to expose the backend data format to the client or hide it from the client. One format is for the `PUT /streams/{stream-name}/records` method (above). Another format is used for the `PUT /streams/{stream-name}/record` method (in the previous procedure). In production environment, you should keep both formats consistent.
 
-08. For **Action type**, choose **Use action**
-    **name**.
+1.
 
-09. For **Action name**, enter
-     `PutRecords`.
+    To test the `PUT /streams/{stream-name}/records` method, set the `stream-name` path variable to an existing stream, supply the following payload, and submit the method request.
 
-10. For **Execution role**, enter the ARN for your
-     execution role.
+   ```
+   {
+       "records": [
+           {
+               "data": "some data",
+               "partition-key": "some key"
+           },
+           {
+               "data": "some other data",
+               "partition-key": "some key"
+           }
+       ]
+   }
+   ```
 
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
+   The successful result is a 200 OK response with a payload similar to the following output:
 
-12. Choose **Create method**.
-
-13. In the **Integration request** section, add the following **URL request headers parameters**:
-
-    ```nohighlight
-
-    Content-Type: 'x-amz-json-1.1'
-    ```
-
-    The task follows the same procedure to set up the request parameter mapping
-     for the `GET /streams` method.
-
-14. Add the following mapping template to map data from the `PUT
-                            /streams/{stream-name}/records` method request to the corresponding
-     integration request of `POST /?Action=PutRecords` :
+   ```
+   {
+     "FailedRecordCount": 0,
+     "Records": [
+       {
+         "SequenceNumber": "49559409944537880850133345460167468741933742152373764162",
+         "ShardId": "shardId-000000000004"
+       },
+       {
+         "SequenceNumber": "49559409944537880850133345460168677667753356781548470338",
+         "ShardId": "shardId-000000000004"
+       }
+     ]
+   }
+   ```
 
-    ```nohighlight
+**To set up and test the `GET /streams/{stream-name}/sharditerator` method invoke `GetShardIterator` in Kinesis**
 
-    {
-        "StreamName": "$input.params('stream-name')",
-        "Records": [
-           #foreach($elem in $input.path('$.records'))
-              {
-                "Data": "$util.base64Encode($elem.data)",
-                "PartitionKey": "$elem.partition-key"
-              }#if($foreach.hasNext),#end
-            #end
-        ]
-    }
-    ```
+The `GET /streams/{stream-name}/sharditerator` method is a helper method to acquire a required shard iterator before calling the `GET /streams/{stream-name}/records` method.
 
-    This mapping template assumes that the method request payload can be modelled
-     by the following JSON schema:
+1. Choose the **/sharditerator** resource, and then choose **Create method**.
 
-    ```nohighlight
+1. For **Method type**, select **GET**.
 
-    {
-      "$schema": "http://json-schema.org/draft-04/schema#",
-      "title": "PutRecords proxy payload data",
-      "type": "object",
-      "properties": {
-        "records": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "data": { "type": "string" },
-              "partition-key": { "type": "string" }
-            }
-          }
-        }
-      }
-    }
-    ```
+1. For **Integration type**, select **AWS service**.
 
-     You can create a model to include this schema and use the model to facilitate
-     generating the mapping template. However, you can generate a mapping template
-     without using any model.
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-    In this tutorial, we used two slightly different payload formats to illustrate
-     that an API developer can choose to expose the backend data format to the client
-     or hide it from the client. One format is for the `PUT
-                            /streams/{stream-name}/records` method (above). Another format is used
-     for the `PUT /streams/{stream-name}/record` method (in the previous
-     procedure). In production environment, you should keep both formats consistent.
+1. For **AWS service**, select **Kinesis**.
 
-15. To test the `PUT /streams/{stream-name}/records` method, set the
-     `stream-name` path variable to an existing stream, supply the
-     following payload, and submit the method request.
+1. Keep **AWS subdomain** blank.
 
-    ```nohighlight
+1. For **HTTP method**, choose **POST**.
 
-    {
-        "records": [
-            {
-                "data": "some data",
-                "partition-key": "some key"
-            },
-            {
-                "data": "some other data",
-                "partition-key": "some key"
-            }
-        ]
-    }
+1. For **Action type**, choose **Use action name**.
 
-    ```
+1. For **Action name**, enter **GetShardIterator**.
 
-    The successful result is a 200 OK response with a payload similar to the
-     following output:
+1. For **Execution role**, enter the ARN for your execution role.
 
-    ```nohighlight
+1. Keep the default of **Passthrough** for **Content Handling**.
 
-    {
-      "FailedRecordCount": 0,
-      "Records": [
-        {
-          "SequenceNumber": "49559409944537880850133345460167468741933742152373764162",
-          "ShardId": "shardId-000000000004"
-        },
-        {
-          "SequenceNumber": "49559409944537880850133345460168677667753356781548470338",
-          "ShardId": "shardId-000000000004"
-        }
-      ]
-    }
-    ```
+1. Choose **URL query string parameters**.
 
-###### To set up and test the `GET /streams/{stream-name}/sharditerator` method invoke `GetShardIterator` in Kinesis
+   The `GetShardIterator` action requires an input of a ShardId value. To pass a client-supplied `ShardId` value, we add a `shard-id` query parameter to the method request, as shown in the following step.
 
-The `GET /streams/{stream-name}/sharditerator` method is a helper
-method to acquire a required shard iterator before calling the `GET
-                    /streams/{stream-name}/records` method.
+1. Choose **Add query string**.
 
-01. Choose the **/sharditerator** resource, and then choose **Create method**.
+1. For **Name**, enter **shard-id**.
 
-02. For **Method type**, select **GET**.
+1. Keep **Required** and **Caching** turned off.
 
-03. For **Integration type**, select **AWS service**.
+1. Choose **Create method**.
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+1. In the **Integration request** section, add the following mapping template to generate the required input (`ShardId` and `StreamName`) to the `GetShardIterator` action from the `shard-id` and `stream-name` parameters of the method request. In addition, the mapping template also sets `ShardIteratorType` to `TRIM_HORIZON` as a default.
 
-05. For **AWS service**, select **Kinesis**.
+   ```
+   {
+       "ShardId": "$input.params('shard-id')",
+       "ShardIteratorType": "TRIM_HORIZON",
+       "StreamName": "$input.params('stream-name')"
+   }
+   ```
 
-06. Keep **AWS subdomain** blank.
+1.  Using the **Test** option in the API Gateway console, enter an existing stream name as the `stream-name` **Path** variable value, set the `shard-id` **Query string** to an existing `ShardId` value (e.g., `shard-000000000004`), and choose **Test**.
 
-07. For **HTTP method**, choose
-     **POST**.
+    The successful response payload is similar to the following output:
 
-08. For **Action type**, choose **Use action**
-    **name**.
+   ```
+   {
+     "ShardIterator": "AAAAAAAAAAFYVN3VlFy..."
+   }
+   ```
 
-09. For **Action name**, enter
-     `GetShardIterator`.
+   Make note of the `ShardIterator` value. You need it to get records from a stream.
 
-10. For **Execution role**, enter the ARN for your
-     execution role.
+**To configure and test the `GET /streams/{stream-name}/records` method to invoke the `GetRecords` action in Kinesis**
 
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
+1. Choose the **/records** resource, and then choose **Create method**.
 
-12. Choose **URL query string parameters**.
+1. For **Method type**, select **GET**.
 
-    The `GetShardIterator` action requires an input of a ShardId
-     value. To pass a client-supplied `ShardId` value, we add a
-     `shard-id` query parameter to the method request, as shown in the
-     following step.
+1. For **Integration type**, select **AWS service**.
 
-13. Choose **Add query string**.
+1. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
 
-14. For **Name**, enter `shard-id`.
+1. For **AWS service**, select **Kinesis**.
 
-15. Keep **Required** and **Caching** turned off.
+1. Keep **AWS subdomain** blank.
 
-16. Choose **Create method**.
+1. For **HTTP method**, choose **POST**.
 
-17. In the **Integration request** section, add the following mapping template to generate the required input
-     ( `ShardId` and `StreamName`) to the
-     `GetShardIterator` action from the `shard-id` and
-     `stream-name` parameters of the method request. In addition, the
-     mapping template also sets `ShardIteratorType` to
-     `TRIM_HORIZON` as a default.
+1. For **Action type**, choose **Use action name**.
 
-    ```nohighlight
+1. For **Action name**, enter **GetRecords**.
 
-    {
-        "ShardId": "$input.params('shard-id')",
-        "ShardIteratorType": "TRIM_HORIZON",
-        "StreamName": "$input.params('stream-name')"
-    }
-    ```
+1. For **Execution role**, enter the ARN for your execution role.
 
-18. Using the **Test** option in the API Gateway console, enter an
-     existing stream name as the `stream-name` **Path** variable value, set the `shard-id` **Query string** to an existing `ShardId` value
-     (e.g., `shard-000000000004`), and choose **Test**.
+1. Keep the default of **Passthrough** for **Content Handling**.
 
-     The successful response payload is similar to the following output:
+1. Choose **HTTP request headers**.
 
-    ```nohighlight
+    The `GetRecords` action requires an input of a `ShardIterator` value. To pass a client-supplied `ShardIterator` value, we add a `Shard-Iterator` header parameter to the method request.
 
-    {
-      "ShardIterator": "AAAAAAAAAAFYVN3VlFy..."
-    }
-    ```
+1. Choose **Add header**.
 
-    Make note of the `ShardIterator` value. You need it to get records
-     from a stream.
+1. For **Name**, enter **Shard-Iterator**.
 
-###### To configure and test the `GET /streams/{stream-name}/records` method to invoke the `GetRecords` action in Kinesis
+1. Keep **Required** and **Caching** turned off.
 
-01. Choose the **/records** resource, and then choose **Create method**.
+1. Choose **Create method**.
 
-02. For **Method type**, select **GET**.
+1.  In the **Integration request** section, add the following body mapping template to map the `Shard-Iterator` header parameter value to the `ShardIterator` property value of the JSON payload for the `GetRecords` action in Kinesis.
 
-03. For **Integration type**, select **AWS service**.
+   ```
+   {
+       "ShardIterator": "$input.params('Shard-Iterator')"
+   }
+   ```
 
-04. For **AWS Region**, select the AWS Region where you created your Kinesis stream.
+1.  Using the **Test** option in the API Gateway console, enter an existing stream name as the `stream-name` **Path** variable value, set the `Shard-Iterator` **Header** to the `ShardIterator` value obtained from the test run of the `GET /streams/{stream-name}/sharditerator` method (above), and choose **Test**.
 
-05. For **AWS service**, select **Kinesis**.
+    The successful response payload is similar to the following output:
 
-06. Keep **AWS subdomain** blank.
-
-07. For **HTTP method**, choose
-     **POST**.
-
-08. For **Action type**, choose **Use action**
-    **name**.
-
-09. For **Action name**, enter
-     `GetRecords`.
-
-10. For **Execution role**, enter the ARN for your
-     execution role.
-
-11. Keep the default of **Passthrough** for
-     **Content Handling**.
-
-12. Choose **HTTP request headers**.
-
-     The `GetRecords` action requires an input of a
-     `ShardIterator` value. To pass a client-supplied
-     `ShardIterator` value, we add a `Shard-Iterator`
-     header parameter to the method request.
-
-13. Choose **Add header**.
-
-14. For **Name**, enter `Shard-Iterator`.
-
-15. Keep **Required** and **Caching** turned off.
-
-16. Choose **Create method**.
-
-17. In the **Integration request** section, add the following body mapping template to map the `Shard-Iterator`
-     header parameter value to the `ShardIterator` property value of the
-     JSON payload for the `GetRecords` action in Kinesis.
-
-    ```nohighlight
-
-    {
-        "ShardIterator": "$input.params('Shard-Iterator')"
-    }
-    ```
-
-18. Using the **Test** option in the API Gateway console, enter an
-     existing stream name as the `stream-name` **Path** variable value, set the `Shard-Iterator` **Header** to the `ShardIterator` value obtained
-     from the test run of the `GET /streams/{stream-name}/sharditerator`
-     method (above), and choose **Test**.
-
-     The successful response payload is similar to the following output:
-
-    ```nohighlight
-
-    {
-      "MillisBehindLatest": 0,
-      "NextShardIterator": "AAAAAAAAAAF...",
-      "Records": [ ... ]
-    }
-    ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Call the API using a REST API client
-
-OpenAPI definitions of a sample API as a Kinesis proxy
+   ```
+   {
+     "MillisBehindLatest": 0,
+     "NextShardIterator": "AAAAAAAAAAF...",
+     "Records": [ ... ]
+   }
+   ```
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,31 +3,26 @@ title: "Set up a private integration"
 ---
 
 # Set up a private integration
+<a name="set-up-private-integration"></a>
 
-To create a
-private integration with an Application Load Balancer or Network Load Balancer, you create an HTTP proxy integration, specify the
-[VPC link V2](apigateway-vpc-links-v2.md) to use, and
-provide the ARN of an Network Load Balancer or an Application Load Balancer. By default, private integration traffic uses the HTTP protocol. To use HTTPS, specify an [`uri`](../api/api-putintegration.md#apigw-PutIntegration-request-uri)
-that contains a secure server name, such as `https://example.com:443/test`. For a complete tutorial on how to create
-a REST API with a private integration, see [Tutorial: Create a REST API with a private integration](getting-started-with-private-integration.md).
+To create a private integration with an Application Load Balancer or Network Load Balancer, you create an HTTP proxy integration, specify the [VPC link V2](apigateway-vpc-links-v2.md) to use, and provide the ARN of an Network Load Balancer or an Application Load Balancer. By default, private integration traffic uses the HTTP protocol. To use HTTPS, specify an [`uri`](https://docs.aws.amazon.com/apigateway/latest/api/API_PutIntegration.html#apigw-PutIntegration-request-uri) that contains a secure server name, such as `https://example.com:443/test`. For a complete tutorial on how to create a REST API with a private integration, see [Tutorial: Create a REST API with a private integration](getting-started-with-private-integration.md).
 
 ## Create a private integration
+<a name="set-up-private-integration-create"></a>
 
-The following procedure shows how to create a private integration that connects to a load balancer by
-using a VPC link V2.
+The following procedure shows how to create a private integration that connects to a load balancer by using a VPC link V2.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-For a tutorial on how to create a private integration see,
-[Tutorial: Create a REST API with a private integration](getting-started-with-private-integration.md).
+For a tutorial on how to create a private integration see, [Tutorial: Create a REST API with a private integration](getting-started-with-private-integration.md).
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-The following [put-integration](../../../cli/latest/reference/latest/api/api-putintegration.md)
-command creates a private integration that connects to a load balancer by using a VPC link V2:
+The following [put-integration](https://docs.aws.amazon.com/cli/latest/reference/latest/api/API_PutIntegration.html) command creates a private integration that connects to a load balancer by using a VPC link V2:
 
-```shell
-
+```
 aws apigateway put-integration \
     --rest-api-id abcdef123 \
     --resource-id aaa000 \
@@ -40,12 +35,9 @@ aws apigateway put-integration \
     --connection-id bbb111
 ```
 
-Instead of directly providing the connection ID, you can use a stage variable instead. When you deploy
-your API to a stage, you set the VPC link V2 ID. The following [put-integration](../../../cli/latest/reference/latest/api/api-putintegration.md) command creates a private
-integration using a stage variable for the VPC link V2 ID:
+Instead of directly providing the connection ID, you can use a stage variable instead. When you deploy your API to a stage, you set the VPC link V2 ID. The following [put-integration](https://docs.aws.amazon.com/cli/latest/reference/latest/api/API_PutIntegration.html) command creates a private integration using a stage variable for the VPC link V2 ID:
 
-```shell
-
+```
 aws apigateway put-integration \
     --rest-api-id abcdef123 \
     --resource-id aaa000 \
@@ -60,35 +52,20 @@ aws apigateway put-integration \
 
 Make sure to double-quote the stage variable expression (${stageVariables.vpcLinkV2Id}) and escape the $ character.
 
-OpenAPI
+------
+#### [ OpenAPI ]
 
-You can set up an API with the private integration by importing the API's
-OpenAPI file. The settings are similar to the OpenAPI definitions of an API with HTTP
-integrations, with the following exceptions:
+You can set up an API with the private integration by importing the API's OpenAPI file. The settings are similar to the OpenAPI definitions of an API with HTTP integrations, with the following exceptions:
++ You must explicitly set `connectionType` to `VPC_LINK`.
++ You must explicitly set `connectionId` to the ID of a `VpcLinkV2` or to a stage variable referencing the ID of a `VpcLinkV2`.
++ The `uri` parameter in the private integration points to an HTTP/HTTPS endpoint in the VPC, but is used instead to set up the integration request's `Host` header.
++ The `uri` parameter in the private integration with an HTTPS endpoint in the VPC is used to verify the stated domain name against the one in the certificate installed on the VPC endpoint.
 
-- You must explicitly set `connectionType` to
-`VPC_LINK`.
+ You can use a stage variable to reference the `VpcLinkV2` ID. Or you can assign the ID value directly to `connectionId`.
 
-- You must explicitly set `connectionId` to the ID of a
-`VpcLinkV2` or to a stage variable referencing the ID of a
-`VpcLinkV2`.
+The following JSON-formatted OpenAPI file shows an example of an API with a VPC link as referenced by a stage variable (`${stageVariables.vpcLinkIdV2}`):
 
-- The `uri` parameter in the private integration points to an
-HTTP/HTTPS endpoint in the VPC, but is used instead to set up the integration
-request's `Host` header.
-
-- The `uri` parameter in the private integration with an HTTPS
-endpoint in the VPC is used to verify the stated domain name against the one in
-the certificate installed on the VPC endpoint.
-
-You can use a stage variable to reference the `VpcLinkV2` ID.
-Or you can assign the ID value directly to `connectionId`.
-
-The following JSON-formatted OpenAPI file shows an example of an API with a VPC link
-as referenced by a stage variable ( `${stageVariables.vpcLinkIdV2}`):
-
-```nohighlight
-
+```
 {
   "swagger": "2.0",
   "info": {
@@ -140,37 +117,38 @@ as referenced by a stage variable ( `${stageVariables.vpcLinkIdV2}`):
 }
 ```
 
+------
+
 ## Update a private integration
+<a name="set-up-private-integration-update"></a>
 
 The following example updates the VPC link V2 for a private integration.
 
-AWS Management Console
+------
+#### [ AWS Management Console ]
 
-###### To update a private integration
+**To update a private integration**
 
 1. Sign in to the API Gateway console at [https://console.aws.amazon.com/apigateway](https://console.aws.amazon.com/apigateway).
 
-2. Choose a REST API with a private integration.
+1. Choose a REST API with a private integration.
 
-3. Choose the resource and method that uses a private integration.
+1. Choose the resource and method that uses a private integration.
 
-4. On the **Integration request tab**, under the **Integration request settings**, choose
-    **Edit**.
+1. On the **Integration request tab**, under the **Integration request settings**, choose **Edit**.
 
-5. You can edit the setting of your private integration. If you are currently using a VPC link V1,
-    you can change your VPC link to a VPC link V2.
+1. You can edit the setting of your private integration. If you are currently using a VPC link V1, you can change your VPC link to a VPC link V2.
 
-6. Choose **Save**.
+1. Choose **Save**.
 
-7. Redeploy your API for the changes to take effect.
+1. Redeploy your API for the changes to take effect.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-The following [update-integration](../../../cli/latest/reference/latest/api/api-putintegration.md)
-command updates a private integration to use a VPC link V2:
+The following [update-integration](https://docs.aws.amazon.com/cli/latest/reference/latest/api/API_PutIntegration.html) command updates a private integration to use a VPC link V2:
 
-```nohighlight
-
+```
 aws apigateway update-integration \
     --rest-api-id a1b2c3d4e5 \
     --resource-id a1b2c3 \
@@ -178,10 +156,6 @@ aws apigateway update-integration \
     --patch-operations "[{\"op\":\"replace\",\"path\":\"/connectionId\",\"value\":\"pk0000\"}, {\"op\":\"replace\",\"path\":\"/uri\",\"value\":\"http://example.com\"}, {\"op\":\"replace\",\"path\":\"/integrationTarget\",\"value\":\"arn:aws:elasticloadbalancing:us-east-2:111122223333:loadbalancer/app/myLoadBalancerName/1234567891011\"}]"
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VPC links V2
-
-Private integration using VPC links V1 (legacy)
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,19 +3,14 @@ title: "Create an Amazon Cognito authorizer for a REST API using CloudFormation"
 ---
 
 # Create an Amazon Cognito authorizer for a REST API using CloudFormation
+<a name="apigateway-cognito-authorizer-cfn"></a>
 
 You can use CloudFormation to create an Amazon Cognito user pool and an Amazon Cognito authorizer. The example CloudFormation template does the following:
++ Create an Amazon Cognito user pool. The client must first sign the user in to the user pool and obtain an [identity or access token](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-with-identity-providers.html). If you're using access tokens to authorize API method calls, be sure to configure the app integration with the user pool to set up the custom scopes that you want on a given resource server.
++ Creates an API Gateway API with a `GET` method.
++ Creates an Amazon Cognito authorizer that uses the `Authorization` header as the token source.
 
-- Create an Amazon Cognito user pool. The client must first sign the user in to the user pool and obtain an [identity or access token](../../../cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-with-identity-providers.md). If you're using access tokens to authorize API method calls, be sure to
-configure the app integration with the user pool to set up the custom scopes that you want on a given
-resource server.
-
-- Creates an API Gateway API with a `GET` method.
-
-- Creates an Amazon Cognito authorizer that uses the `Authorization` header as the token source.
-
-```nohighlight
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   UserPool:
@@ -103,11 +98,5 @@ Outputs:
           - Ref: ApiDeploymentStageprod
           - /
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configure cross-account Amazon Cognito authorizer for a REST API
-
-Integrations
 
 All content copied from https://docs.aws.amazon.com/.
