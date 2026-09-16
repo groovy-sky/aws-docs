@@ -3,37 +3,35 @@ title: "AWSControlTowerServiceRolePolicy"
 ---
 
 # AWSControlTowerServiceRolePolicy
+<a name="AWSControlTowerServiceRolePolicy"></a>
 
 **Description**: Provides access to AWS Resources managed or used by AWS Control Tower
 
-`AWSControlTowerServiceRolePolicy` is an [AWS managed policy](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies).
+`AWSControlTowerServiceRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
 
 ## Using this policy
+<a name="AWSControlTowerServiceRolePolicy-how-to-use"></a>
 
 You can attach `AWSControlTowerServiceRolePolicy` to your users, groups, and roles.
 
 ## Policy details
-
-- **Type**: Service role policy
-
-- **Creation time**: May 03, 2019, 18:19 UTC
-
-- **Edited time:** March 23, 2026, 18:42 UTC
-
-- **ARN**:
-`arn:aws:iam::aws:policy/service-role/AWSControlTowerServiceRolePolicy`
+<a name="AWSControlTowerServiceRolePolicy-details"></a>
++ **Type**: Service role policy
++ **Creation time**: May 03, 2019, 18:19 UTC
++ **Edited time:** September 10, 2026, 19:47 UTC
++ **ARN**: `arn:aws:iam::aws:policy/service-role/AWSControlTowerServiceRolePolicy`
 
 ## Policy version
+<a name="AWSControlTowerServiceRolePolicy-version"></a>
 
-**Policy version:** v20 (default)
+**Policy version:** v22 (default)
 
-The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
-request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
 ## JSON policy document
+<a name="AWSControlTowerServiceRolePolicy-json"></a>
 
-```json
-
+```
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -227,10 +225,15 @@ request to access an AWS resource, AWS checks the default version of the policy 
       "Action" : [
         "cloudformation:SetTypeConfiguration",
         "cloudformation:DeactivateType",
-        "cloudformation:ActivateType",
-        "cloudformation:BatchDescribeTypeConfigurations"
+        "cloudformation:ActivateType"
       ],
       "Resource" : "arn:aws:cloudformation:*:*:type/hook/AWS-ControlTower*"
+    },
+    {
+      "Sid" : "AllowBatchDescribeTypeConfigurationsForHookConfigFetch",
+      "Effect" : "Allow",
+      "Action" : "cloudformation:BatchDescribeTypeConfigurations",
+      "Resource" : "*"
     },
     {
       "Sid" : "AllowActionsForCloudFormationStackSetOrganizationsTrustedAccess",
@@ -240,25 +243,39 @@ request to access an AWS resource, AWS checks the default version of the policy 
         "cloudformation:DescribeOrganizationsAccess"
       ],
       "Resource" : "*"
+    },
+    {
+      "Sid" : "CloudFormationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:cloudformation:*:*:type/resource/AWS-IAM-Role",
+        "arn:aws:cloudformation:*:*:stack/AWSControlTower*/*",
+        "arn:aws:cloudformation:*:*:stack/StackSet-AWSControlTower*/*",
+        "arn:aws:cloudformation:*:*:stackset/AWSControlTower*:*",
+        "arn:aws:cloudformation:*:*:stackset-target/AWSControlTower*/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "cloudformation:CreateAction" : [
+            "CreateStack",
+            "UpdateStack"
+          ]
+        }
+      }
     }
   ]
 }
 ```
 
 ## Learn more
-
-- [Create a permission set using AWS managed policies in IAM Identity Center](../../../singlesignon/latest/userguide/howtocreatepermissionset.md)
-
-- [Adding and removing IAM identity permissions](../../../iam/latest/userguide/access-policies-manage-attach-detach.md)
-
-- [Understand versioning for IAM policies](../../../iam/latest/userguide/access-policies-managed-versioning.md)
-
-- [Get started with AWS managed policies and move toward least-privilege permissions](../../../iam/latest/userguide/best-practices.md#bp-use-aws-defined-policies)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWSControlTowerIdentityCenterManagementPolicy
-
-AWSCostAndUsageReportAutomationPolicy
+<a name="AWSControlTowerServiceRolePolicy-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
 
 All content copied from https://docs.aws.amazon.com/.
