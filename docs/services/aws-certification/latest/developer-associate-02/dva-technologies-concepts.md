@@ -3,35 +3,19 @@ title: "Technologies and Concepts"
 ---
 
 # Technologies and Concepts
+<a name="dva-technologies-concepts"></a>
 
 The following list contains technologies and concepts that might appear on the exam. This list is non-exhaustive and is subject to change. The order and placement of the items in this list is no indication of their relative weight or importance on the exam:
-
-- Analytics
-
-- Application integration
-
-- Compute
-
-- Containers
-
-- Cost and capacity management
-
-- Database
-
-- Developer tools
-
-- Management and governance
-
-- Networking and content delivery
-
-- Security, identity, and compliance
-
-- Storage
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Content Domain 4: Troubleshooting and Optimization
-
-Mentions of AWS Services on the Exam
++ Analytics
++ Application integration
++ Compute
++ Containers
++ Cost and capacity management
++ Database
++ Developer tools
++ Management and governance
++ Networking and content delivery
++ Security, identity, and compliance
++ Storage
 
 All content copied from https://docs.aws.amazon.com/.

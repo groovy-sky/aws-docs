@@ -1,23 +1,17 @@
 ---
-title: "Out-of-scope AWS services and features"
+title: "Out-of-Scope AWS Services"
 ---
 
-# Out-of-scope AWS services and features
+# Out-of-Scope AWS Services
+<a name="sap-02-out-of-scope-services"></a>
 
 The following list contains AWS services and features that are out of scope for the exam. This list is non-exhaustive and is subject to change. AWS offerings that are entirely unrelated to the target job roles for the exam are excluded from this list:
 
-###### Topics
-
-- [Game Tech](#sap-02-out-of-scope-game-tech)
+**Topics**
++ [Game Tech](#sap-02-out-of-scope-game-tech)
 
 ## Game Tech
-
-- Amazon GameLift
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-In-scope AWS services and features
-
-Mentions of AWS Services
+<a name="sap-02-out-of-scope-game-tech"></a>
++ Amazon GameLift
 
 All content copied from https://docs.aws.amazon.com/.

@@ -46,8 +46,4 @@ title: "Content Domain 2: ML Model and Foundation Model (FM) Development"
 + Skill 2.3.9: Perform AI evaluation (for example, model output assessment, content quality validation, bias detection, LLM-as-a-judge frameworks).
 + Skill 2.3.10: Configure RAG system monitoring, including retrieval accuracy assessment.
 
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
-
 All content copied from https://docs.aws.amazon.com/.

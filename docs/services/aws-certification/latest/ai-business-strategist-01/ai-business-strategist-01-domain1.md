@@ -32,8 +32,4 @@ title: "Content Domain 1: AI Fundamentals and Literacy"
 + Skill 1.3.2: Identify when token limits or context window constraints affect GenAI system performance.
 + Skill 1.3.3: Recognize how model adaptation techniques (for example, Retrieval Augmented Generation [RAG], fine-tuning) improve AI responses for specific business needs.
 
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
-
 All content copied from https://docs.aws.amazon.com/.
