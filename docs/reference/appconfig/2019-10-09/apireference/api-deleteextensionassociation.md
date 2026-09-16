@@ -3,83 +3,75 @@ title: "DeleteExtensionAssociation"
 ---
 
 # DeleteExtensionAssociation
+<a name="API_DeleteExtensionAssociation"></a>
 
-Deletes an extension association. This action doesn't delete extensions defined in the
-association.
+Deletes an extension association. This action doesn't delete extensions defined in the association.
 
 ## Request Syntax
+<a name="API_DeleteExtensionAssociation_RequestSyntax"></a>
 
-```nohighlight
-
-DELETE /extensionassociations/ExtensionAssociationId HTTP/1.1
-
+```
+DELETE /extensionassociations/{{ExtensionAssociationId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_DeleteExtensionAssociation_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[ExtensionAssociationId](#API_DeleteExtensionAssociation_RequestSyntax)**
-
+ ** [ExtensionAssociationId](#API_DeleteExtensionAssociation_RequestSyntax) **   <a name="appconfig-DeleteExtensionAssociation-request-uri-ExtensionAssociationId"></a>
 The ID of the extension association to delete.
-
 Pattern: `[a-z0-9]{4,7}`
-
 Required: Yes
 
 ## Request Body
+<a name="API_DeleteExtensionAssociation_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_DeleteExtensionAssociation_ResponseSyntax"></a>
 
 ```
-
 HTTP/1.1 204
-
 ```
 
 ## Response Elements
+<a name="API_DeleteExtensionAssociation_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
 
 ## Errors
+<a name="API_DeleteExtensionAssociation_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The input fails to satisfy the constraints specified by an AWS service.
-
-**Details**
-
-Detailed information about the input that failed to satisfy the constraints specified by
-a call.
-
+ ** Details **
+Detailed information about the input that failed to satisfy the constraints specified by a call.
 HTTP Status Code: 400
 
-**InternalServerException**
-
+ ** InternalServerException **
 There was an internal failure in the AWS AppConfig service.
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The requested resource could not be found.
-
 HTTP Status Code: 404
 
 ## Examples
+<a name="API_DeleteExtensionAssociation_Examples"></a>
 
 ### Example
+<a name="API_DeleteExtensionAssociation_Example_1"></a>
 
 This example illustrates one usage of DeleteExtensionAssociation.
 
 #### Sample Request
+<a name="API_DeleteExtensionAssociation_Example_1_Request"></a>
 
 ```
-
 DELETE /extensionassociations/rnekru4 HTTP/1.1
 Host: appconfig.us-west-2.amazonaws.com
 Accept-Encoding: identity
@@ -90,40 +82,25 @@ Content-Length: 0
 ```
 
 #### Sample Response
+<a name="API_DeleteExtensionAssociation_Example_1_Response"></a>
 
 ```
-
 {}
 ```
 
 ## See Also
+<a name="API_DeleteExtensionAssociation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/deleteextensionassociation.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/deleteextensionassociation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeleteExtension
-
-DeleteHostedConfigurationVersion
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/DeleteExtensionAssociation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/DeleteExtensionAssociation)
 
 All content copied from https://docs.aws.amazon.com/.

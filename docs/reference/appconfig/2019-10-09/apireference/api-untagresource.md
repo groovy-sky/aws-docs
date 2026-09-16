@@ -3,94 +3,82 @@ title: "UntagResource"
 ---
 
 # UntagResource
+<a name="API_UntagResource"></a>
 
 Deletes a tag key and value from an AWS AppConfig resource.
 
 ## Request Syntax
+<a name="API_UntagResource_RequestSyntax"></a>
 
-```nohighlight
-
-DELETE /tags/ResourceArn?tagKeys=TagKeys HTTP/1.1
-
+```
+DELETE /tags/{{ResourceArn}}?tagKeys={{TagKeys}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_UntagResource_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[ResourceArn](#API_UntagResource_RequestSyntax)**
-
+ ** [ResourceArn](#API_UntagResource_RequestSyntax) **   <a name="appconfig-UntagResource-request-uri-ResourceArn"></a>
 The ARN of the resource for which to remove tags.
-
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-
 Pattern: `arn:(aws[a-zA-Z-]*)?:[a-z]+:((eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1})?:(\d{12})?:[a-zA-Z0-9-_/:.]+`
-
 Required: Yes
 
-**[TagKeys](#API_UntagResource_RequestSyntax)**
-
+ ** [TagKeys](#API_UntagResource_RequestSyntax) **   <a name="appconfig-UntagResource-request-uri-TagKeys"></a>
 The tag keys to delete.
-
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Required: Yes
 
 ## Request Body
+<a name="API_UntagResource_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_UntagResource_ResponseSyntax"></a>
 
 ```
-
 HTTP/1.1 204
-
 ```
 
 ## Response Elements
+<a name="API_UntagResource_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
 
 ## Errors
+<a name="API_UntagResource_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The input fails to satisfy the constraints specified by an AWS service.
-
-**Details**
-
-Detailed information about the input that failed to satisfy the constraints specified by
-a call.
-
+ ** Details **
+Detailed information about the input that failed to satisfy the constraints specified by a call.
 HTTP Status Code: 400
 
-**InternalServerException**
-
+ ** InternalServerException **
 There was an internal failure in the AWS AppConfig service.
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The requested resource could not be found.
-
 HTTP Status Code: 404
 
 ## Examples
+<a name="API_UntagResource_Examples"></a>
 
 ### Example
+<a name="API_UntagResource_Example_1"></a>
 
 This example illustrates one usage of UntagResource.
 
 #### Sample Request
+<a name="API_UntagResource_Example_1_Request"></a>
 
 ```
-
 DELETE /tags/arn%3Aaws%3Aappconfig%3Aus-east-1%3A111122223333%3Aapplication%abc1234?tagKeys=group1 HTTP/1.1
 Host: appconfig.us-east-1.amazonaws.com
 Accept-Encoding: identity
@@ -101,40 +89,25 @@ Content-Length: 0
 ```
 
 #### Sample Response
+<a name="API_UntagResource_Example_1_Response"></a>
 
 ```
-
 {}
 ```
 
 ## See Also
+<a name="API_UntagResource_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/untagresource.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/untagresource.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagResource
-
-UpdateAccountSettings
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/UntagResource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/UntagResource)
 
 All content copied from https://docs.aws.amazon.com/.

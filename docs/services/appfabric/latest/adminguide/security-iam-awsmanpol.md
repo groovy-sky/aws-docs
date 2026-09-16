@@ -3,52 +3,33 @@ title: "AWS managed policies for AWS AppFabric"
 ---
 
 # AWS managed policies for AWS AppFabric
+<a name="security-iam-awsmanpol"></a>
 
-To add permissions to users, groups, and roles, it is easier to use AWS managed policies
-than to write policies yourself. It takes time and expertise to [create IAM customer\
-managed policies](../../../iam/latest/userguide/access-policies-create-console.md) that provide your team with only the permissions they need. To get
-started quickly, you can use our AWS managed policies. These policies cover common use cases
-and are available in your AWS account. For more information about AWS managed policies,
-see [AWS managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies) in the _IAM User Guide_.
+To add permissions to users, groups, and roles, it is easier to use AWS managed policies than to write policies yourself. It takes time and expertise to [create IAM customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html) that provide your team with only the permissions they need. To get started quickly, you can use our AWS managed policies. These policies cover common use cases and are available in your AWS account. For more information about AWS managed policies, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 
-AWS services maintain and update AWS managed policies. You can't change the
-permissions in AWS managed policies. Services occasionally add additional permissions to an
-AWS managed policy to support new features. This type of update affects all identities
-(users, groups, and roles) where the policy is attached. Services are most likely to update an
-AWS managed policy when a new feature is launched or when new operations become available.
-Services don't remove permissions from an AWS managed policy, so policy updates won't
-break your existing permissions.
+AWS services maintain and update AWS managed policies. You can't change the permissions in AWS managed policies. Services occasionally add additional permissions to an AWS managed policy to support new features. This type of update affects all identities (users, groups, and roles) where the policy is attached. Services are most likely to update an AWS managed policy when a new feature is launched or when new operations become available. Services don't remove permissions from an AWS managed policy, so policy updates won't break your existing permissions.
 
-Additionally, AWS supports managed policies for job functions that span multiple
-services. For example, the **ReadOnlyAccess** AWS managed
-policy provides read-only access to all AWS services and resources. When a service launches
-a new feature, AWS adds read-only permissions for new operations and resources. For a list
-and descriptions of job function policies, see [AWS managed policies for\
-job functions](../../../iam/latest/userguide/access-policies-job-functions.md) in the _IAM User Guide_.
+Additionally, AWS supports managed policies for job functions that span multiple services. For example, the **ReadOnlyAccess** AWS managed policy provides read-only access to all AWS services and resources. When a service launches a new feature, AWS adds read-only permissions for new operations and resources. For a list and descriptions of job function policies, see [AWS managed policies for job functions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) in the *IAM User Guide*.
 
 ## AWS managed policy: AWSAppFabricReadOnlyAccess
+<a name="security-iam-awsmanpol-AWSAppFabricReadOnlyAccess"></a>
 
-You can attach the `AWSAppFabricReadOnlyAccess` policy to your IAM
-identities. This policy grants read-only permissions to the AppFabric service.
+You can attach the `AWSAppFabricReadOnlyAccess` policy to your IAM identities. This policy grants read-only permissions to the AppFabric service.
 
-###### Note
-
-The `AWSAppFabricReadOnlyAccess` policy does not grant read-only access to
-the AppFabric for productivity features.
+**Note**
+The `AWSAppFabricReadOnlyAccess` policy does not grant read-only access to the AppFabric for productivity features.
 
 **Permissions details**
 
 This policy includes the following permissions:
++ `appfabric` – Grants permission to get an app bundle, list app bundles, get an app authorization, list app authorizations, get an ingestion, list ingestions, get an ingestion destination, list ingestion destinations, and list resource tags.
 
-- `appfabric` – Grants permission to get an app bundle, list app
-bundles, get an app authorization, list app authorizations, get an ingestion, list
-ingestions, get an ingestion destination, list ingestion destinations, and list
-resource tags.
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,43 +50,33 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## AWS managed policy: AWSAppFabricFullAccess
+<a name="security-iam-awsmanpol-AWSAppFabricFullAccess"></a>
 
-You can attach the `AWSAppFabricFullAccess` policy to your IAM identities.
-This policy grants administrative permissions to the AppFabric service.
+You can attach the `AWSAppFabricFullAccess` policy to your IAM identities. This policy grants administrative permissions to the AppFabric service.
 
-###### Important
-
-The `AWSAppFabricFullAccess` policy does not grant access to the
-AppFabric for productivity features because they are currently in preview. For more information about
-ranting access to the AppFabric for productivity features, see [AppFabric for productivity IAM policy examples](security-iam-id-based-policy-examples.md#appfabric-for-productivity-policy-examples).
+**Important**
+The `AWSAppFabricFullAccess` policy does not grant access to the AppFabric for productivity features because they are currently in preview. For more information about ranting access to the AppFabric for productivity features, see [AppFabric for productivity IAM policy examples](security_iam_id-based-policy-examples.md#appfabric-for-productivity-policy-examples).
 
 **Permissions details**
 
 This policy includes the following permissions:
++ `appfabric` – Grants full administrative permission to AppFabric.
++ `kms` – Grants permission to list aliases.
++ `s3` – Grants permission to list all of your Amazon S3 buckets, and get bucket location.
++ `firehose` – Grants permission to list Amazon Data Firehose delivery streams, and describe delivery streams.
++ `iam` – Grants permission to create the `AWSServiceRoleForAppFabric` service-linked role for AppFabric. For more information, see [Using service-linked roles for AppFabric](using-service-linked-roles.md).
 
-- `appfabric` – Grants full administrative permission to
-AppFabric.
+------
+#### [ JSON ]
 
-- `kms` – Grants permission to list aliases.
+****
 
-- `s3` – Grants permission to list all of your Amazon S3 buckets, and
-get bucket location.
-
-- `firehose` – Grants permission to list Amazon Data Firehose delivery
-streams, and describe delivery streams.
-
-- `iam` – Grants permission to create the
-`AWSServiceRoleForAppFabric` service-linked role for AppFabric. For more
-information, see [Using service-linked roles for AppFabric](using-service-linked-roles.md).
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -149,33 +120,28 @@ JSON
         }
     ]
 }
-
 ```
 
-## AWS managed policy: AWSAppFabricServiceRolePolicy
+------
 
-You can't attach the `AWSAppFabricServiceRolePolicy` policy to your IAM
-entities. This policy is attached to a service-linked role that allows AppFabric to perform
-actions on your behalf. For more information, see [Using service-linked roles for AppFabric](using-service-linked-roles.md).
+## AWS managed policy: AWSAppFabricServiceRolePolicy
+<a name="security-iam-awsmanpol-AWSAppFabricServiceRolePolicy"></a>
+
+You can't attach the `AWSAppFabricServiceRolePolicy` policy to your IAM entities. This policy is attached to a service-linked role that allows AppFabric to perform actions on your behalf. For more information, see [Using service-linked roles for AppFabric](using-service-linked-roles.md).
 
 **Permissions details**
 
 This policy includes the following permissions:
++ `cloudwatch` – Grants permission for AppFabric to put metric data into the Amazon CloudWatch `AWS/AppFabric` namespace. For more information about the AppFabric metrics available in CloudWatch, see [Monitoring AWS AppFabric with Amazon CloudWatch](monitoring-cloudwatch.md).
++ `s3` – Grants permission for AppFabric to put ingested data into an Amazon S3 bucket that you specify.
++ `firehose` – Grants permission for AppFabric to put ingested data into an Amazon Data Firehose delivery stream that you specify.
 
-- `cloudwatch` – Grants permission for AppFabric to put metric data
-into the Amazon CloudWatch `AWS/AppFabric` namespace. For more information about
-the AppFabric metrics available in CloudWatch, see [Monitoring AWS AppFabric with Amazon CloudWatch](monitoring-cloudwatch.md).
+------
+#### [ JSON ]
 
-- `s3` – Grants permission for AppFabric to put ingested data into an
-Amazon S3 bucket that you specify.
+****
 
-- `firehose` – Grants permission for AppFabric to put ingested data
-into an Amazon Data Firehose delivery stream that you specify.
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -208,52 +174,20 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## AppFabric updates to AWS managed policies
+<a name="security-iam-awsmanpol-updates"></a>
 
-View details about updates to AWS managed policies for AppFabric since this service
-began tracking these changes. For automatic alerts about changes to this page, subscribe to
-the RSS feed on the [AppFabric Document history](doc-history.md)
-page.
+View details about updates to AWS managed policies for AppFabric since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the [AppFabric Document history](doc-history.md) page.
 
-ChangeDescriptionDate
-
-[AWSAppFabricReadOnlyAccess](#security-iam-awsmanpol-AWSAppFabricReadOnlyAccess) – New
-policy
-
-AppFabric added a new policy to grant read-only permissions to the AppFabric
-service.
-
-June 27, 2023
-
-[AWSAppFabricFullAccess](#security-iam-awsmanpol-AWSAppFabricFullAccess) – New
-policy
-
-AppFabric added a new policy to grant administrative permissions to the
-AppFabric service.
-
-June 27, 2023
-
-[AWSAppFabricServiceRolePolicy](#security-iam-awsmanpol-AWSAppFabricServiceRolePolicy) – New
-policy
-
-AppFabric added a new policy for the
-`AWSServiceRoleForAppFabric` service-linked role.
-
-June 27, 2023
-
-AppFabric started tracking changes
-
-AppFabric started tracking changes for its AWS managed policies.
-
-June 27, 2023
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using service-linked roles
-
-Troubleshooting
+| Change | Description | Date |
+| --- | --- | --- |
+| [AWSAppFabricReadOnlyAccess](#security-iam-awsmanpol-AWSAppFabricReadOnlyAccess) – New policy | AppFabric added a new policy to grant read-only permissions to the AppFabric service. | June 27, 2023 |
+| [AWSAppFabricFullAccess](#security-iam-awsmanpol-AWSAppFabricFullAccess) – New policy | AppFabric added a new policy to grant administrative permissions to the AppFabric service. | June 27, 2023 |
+| [AWSAppFabricServiceRolePolicy](#security-iam-awsmanpol-AWSAppFabricServiceRolePolicy) – New policy | AppFabric added a new policy for the `AWSServiceRoleForAppFabric` service-linked role. | June 27, 2023 |
+| AppFabric started tracking changes | AppFabric started tracking changes for its AWS managed policies. | June 27, 2023 |
 
 All content copied from https://docs.aws.amazon.com/.

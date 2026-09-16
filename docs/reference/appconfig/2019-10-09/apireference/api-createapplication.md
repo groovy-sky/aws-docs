@@ -3,76 +3,60 @@ title: "CreateApplication"
 ---
 
 # CreateApplication
+<a name="API_CreateApplication"></a>
 
-Creates an application. In AWS AppConfig, an application is simply an
-organizational construct like a folder. This organizational construct has a relationship
-with some unit of executable code. For example, you could create an application called
-MyMobileApp to organize and manage configuration data for a mobile application installed by
-your users.
+Creates an application. In AWS AppConfig, an application is simply an organizational construct like a folder. This organizational construct has a relationship with some unit of executable code. For example, you could create an application called MyMobileApp to organize and manage configuration data for a mobile application installed by your users.
 
 ## Request Syntax
+<a name="API_CreateApplication_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /applications HTTP/1.1
 Content-type: application/json
 
 {
-   "Description": "string",
-   "Name": "string",
+   "Description": "{{string}}",
+   "Name": "{{string}}",
    "Tags": {
-      "string" : "string"
+      "{{string}}" : "{{string}}"
    }
 }
 ```
 
 ## URI Request Parameters
+<a name="API_CreateApplication_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_CreateApplication_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[Description](#API_CreateApplication_RequestSyntax)**
-
+ ** [Description](#API_CreateApplication_RequestSyntax) **   <a name="appconfig-CreateApplication-request-Description"></a>
 A description of the application.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-
 Required: No
 
-**[Name](#API_CreateApplication_RequestSyntax)**
-
+ ** [Name](#API_CreateApplication_RequestSyntax) **   <a name="appconfig-CreateApplication-request-Name"></a>
 A name for the application.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 64.
-
 Required: Yes
 
-**[Tags](#API_CreateApplication_RequestSyntax)**
-
-Metadata to assign to the application. Tags help organize and categorize your AWS AppConfig resources. Each tag consists of a key and an optional value, both of which
-you define.
-
+ ** [Tags](#API_CreateApplication_RequestSyntax) **   <a name="appconfig-CreateApplication-request-Tags"></a>
+Metadata to assign to the application. Tags help organize and categorize your AWS AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
 Type: String to string map
-
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
-
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Value Length Constraints: Maximum length of 256.
-
 Required: No
 
 ## Response Syntax
+<a name="API_CreateApplication_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 201
 Content-type: application/json
 
@@ -84,85 +68,60 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_CreateApplication_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 201 response.
 
 The following data is returned in JSON format by the service.
 
-**[Description](#API_CreateApplication_ResponseSyntax)**
-
+ ** [Description](#API_CreateApplication_ResponseSyntax) **   <a name="appconfig-CreateApplication-response-Description"></a>
 The description of the application.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
-**[Id](#API_CreateApplication_ResponseSyntax)**
-
+ ** [Id](#API_CreateApplication_ResponseSyntax) **   <a name="appconfig-CreateApplication-response-Id"></a>
 The application ID.
-
 Type: String
-
 Pattern: `[a-z0-9]{4,7}`
 
-**[Name](#API_CreateApplication_ResponseSyntax)**
-
+ ** [Name](#API_CreateApplication_ResponseSyntax) **   <a name="appconfig-CreateApplication-response-Name"></a>
 The application name.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
 ## Errors
+<a name="API_CreateApplication_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The input fails to satisfy the constraints specified by an AWS service.
-
-**Details**
-
-Detailed information about the input that failed to satisfy the constraints specified by
-a call.
-
+ ** Details **
+Detailed information about the input that failed to satisfy the constraints specified by a call.
 HTTP Status Code: 400
 
-**InternalServerException**
-
+ ** InternalServerException **
 There was an internal failure in the AWS AppConfig service.
-
 HTTP Status Code: 500
 
-**ServiceQuotaExceededException**
-
-The number of one more AWS AppConfig resources exceeds the maximum allowed. Verify that your
-environment doesn't exceed the following service quotas:
-
+ ** ServiceQuotaExceededException **
+The number of one more AWS AppConfig resources exceeds the maximum allowed. Verify that your environment doesn't exceed the following service quotas:
 Applications: 100 max
-
-Deployment strategies: 20 max
-
-Configuration profiles: 100 max per application
-
-Environments: 20 max per application
-
-To resolve this issue, you can delete one or more resources and try again. Or, you can
-request a quota increase. For more information about quotas and to request an increase, see
-[Service quotas for AWS AppConfig](../../../../general/latest/gr/appconfig.md#limits_appconfig) in the Amazon Web Services General Reference.
-
+To resolve this issue, you can delete one or more resources and try again. Or, you can request a quota increase. For more information about quotas and to request an increase, see [Service quotas for AWS AppConfig](https://docs.aws.amazon.com/general/latest/gr/appconfig.html#limits_appconfig) in the Amazon Web Services General Reference.
 HTTP Status Code: 402
 
 ## Examples
+<a name="API_CreateApplication_Examples"></a>
 
 ### Example
+<a name="API_CreateApplication_Example_1"></a>
 
 This example illustrates one usage of CreateApplication.
 
 #### Sample Request
+<a name="API_CreateApplication_Example_1_Request"></a>
 
 ```
-
 POST /applications HTTP/1.1
 Host: appconfig.us-east-1.amazonaws.com
 Accept-Encoding: identity
@@ -178,9 +137,9 @@ Content-Length: 91
 ```
 
 #### Sample Response
+<a name="API_CreateApplication_Example_1_Response"></a>
 
 ```
-
 {
 	"Description": "An application used for creating an example.",
 	"Id": "abc1234",
@@ -189,33 +148,18 @@ Content-Length: 91
 ```
 
 ## See Also
+<a name="API_CreateApplication_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/createapplication.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/createapplication.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS AppConfig
-
-CreateConfigurationProfile
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/CreateApplication)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/CreateApplication)
 
 All content copied from https://docs.aws.amazon.com/.

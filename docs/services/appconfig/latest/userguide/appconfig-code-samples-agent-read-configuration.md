@@ -3,21 +3,21 @@ title: "Using AWS AppConfig Agent to read a freeform configuration profile"
 ---
 
 # Using AWS AppConfig Agent to read a freeform configuration profile
+<a name="appconfig-code-samples-agent-read-configuration"></a>
 
-Each of the following samples includes comments about the actions performed by the
-code.
+Each of the following samples includes comments about the actions performed by the code.
 
-Java
+------
+#### [ Java ]
 
-```java
-
+```
 public void retrieveConfigFromAgent() throws Exception {
         /*
         In this sample, we will retrieve configuration data from the AWS AppConfig Agent.
         The agent is a sidecar process that handles retrieving configuration data from AppConfig
         for you in a way that implements best practices like configuration caching.
 
-        For more information about the agent, see How to use AWS AppConfig Agent
+        For more information about the agent, see [How to use AWS AppConfig Agent](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-agent-how-to-use.html)
         */
 
         // The agent runs a local HTTP server that serves configuration data
@@ -40,16 +40,16 @@ public void retrieveConfigFromAgent() throws Exception {
     }
 ```
 
-Python
+------
+#### [ Python ]
 
-```python
-
+```
 # in this sample, we will retrieve configuration data from the AWS AppConfig Agent.
 # the agent is a sidecar process that handles retrieving configuration data from AWS AppConfig
 # for you in a way that implements best practices like configuration caching.
 #
 # for more information about the agent, see
-# How to use AWS AppConfig Agent
+# [How to use AWS AppConfig Agent](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-agent-how-to-use.html)
 #
 
 import requests
@@ -67,16 +67,16 @@ response = requests.get(f"http://localhost:2772/applications/{application_name}/
 config = response.content
 ```
 
-JavaScript
+------
+#### [ JavaScript ]
 
-```javascript
-
+```
 // in this sample, we will retrieve configuration data from the AWS AppConfig Agent.
 // the agent is a sidecar process that handles retrieving configuration data from AppConfig
 // for you in a way that implements best practices like configuration caching.
 
 // for more information about the agent, see
-// How to use AWS AppConfig Agent
+// [How to use AWS AppConfig Agent](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-agent-how-to-use.html)
 
 const application_name = "MyDemoApp";
 const environment_name = "MyEnvironment";
@@ -91,10 +91,6 @@ const response = await fetch(url);
 const config = await response.text(); // (use `await response.json()` if your config is json)
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Deploying a configuration profile
-
-Using AWS AppConfig Agent to read a specific feature flag
+------
 
 All content copied from https://docs.aws.amazon.com/.

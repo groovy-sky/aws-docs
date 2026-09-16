@@ -3,18 +3,18 @@ title: "Understanding the configuration profile IAM role"
 ---
 
 # Understanding the configuration profile IAM role
+<a name="appconfig-creating-configuration-and-profile-iam-role"></a>
 
-You can create the IAM role that provides access to the configuration data by using
-AWS AppConfig. Or you can create the IAM role yourself. If you create the role by using AWS AppConfig, the
-system creates the role and specifies one of the following permissions policies, depending on
-which type of configuration source you choose.
+You can create the IAM role that provides access to the configuration data by using AWS AppConfig. Or you can create the IAM role yourself. If you create the role by using AWS AppConfig, the system creates the role and specifies one of the following permissions policies, depending on which type of configuration source you choose.
 
-**Configuration source is a Secrets Manager secret**
+ **Configuration source is a Secrets Manager secret**
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -24,20 +24,23 @@ JSON
                 "secretsmanager:GetSecretValue"
              ],
             "Resource": [
-                "arn:aws:secretsmanager:us-east-1:111122223333:secret:secret_name-a1b2c3"
+                "arn:aws:secretsmanager:{{us-east-1}}:{{111122223333}}:secret:{{secret_name-a1b2c3}}"
             ]
         }
     ]
 }
-
 ```
 
-**Configuration source is a Parameter Store parameter**
+------
 
-JSON
+ **Configuration source is a Parameter Store parameter**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -47,20 +50,23 @@ JSON
                 "ssm:GetParameter"
             ],
             "Resource": [
-                "arn:aws:ssm:us-east-1:111122223333:parameter/parameter_name"
+                "arn:aws:ssm:{{us-east-1}}:{{111122223333}}:parameter/{{parameter_name}}"
             ]
         }
     ]
     }
-
 ```
 
-**Configuration source is an SSM document**
+------
 
-JSON
+ **Configuration source is an SSM document**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
 
     "Version":"2012-10-17",
@@ -71,21 +77,23 @@ JSON
                 "ssm:GetDocument"
             ],
             "Resource": [
-                "arn:aws:ssm:us-east-1:111122223333:document/document_name"
+                "arn:aws:ssm:{{us-east-1}}:{{111122223333}}:document/{{document_name}}"
             ]
         }
     ]
 }
-
 ```
 
-If you create the role by using AWS AppConfig, the system also creates the following trust
-relationship for the role.
+------
 
-JSON
+If you create the role by using AWS AppConfig, the system also creates the following trust relationship for the role.
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
 
   "Version":"2012-10-17",
@@ -99,13 +107,8 @@ JSON
     }
   ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating
-
-Creating a namespace
+------
 
 All content copied from https://docs.aws.amazon.com/.

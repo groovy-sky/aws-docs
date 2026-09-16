@@ -3,64 +3,48 @@ title: "Amazon Security Lake"
 ---
 
 # Amazon Security Lake
+<a name="security-lake"></a>
 
-Amazon Security Lake automatically centralizes security data from AWS environments,
-software as a service (SaaS) providers, on premises and cloud sources into a purpose-built
-data lake stored in your AWS account. With Security Lake, you can get a more complete
-understanding of your security data across your entire organization. Security Lake has
-adopted the Open Cybersecurity Schema Framework (OCSF), an open source security event
-schema. With OCSF support, the service normalizes and combines security data from AWS and
-a broad range of enterprise security data sources.
+Amazon Security Lake automatically centralizes security data from AWS environments, software as a service (SaaS) providers, on premises and cloud sources into a purpose-built data lake stored in your AWS account. With Security Lake, you can get a more complete understanding of your security data across your entire organization. Security Lake has adopted the Open Cybersecurity Schema Framework (OCSF), an open source security event schema. With OCSF support, the service normalizes and combines security data from AWS and a broad range of enterprise security data sources.
 
 ## AppFabric audit log ingestion considerations
+<a name="security-lake-audit-log-ingestion"></a>
 
-You can get your SaaS audit logs into Amazon Security Lake in your AWS account by
-adding a custom source to Security Lake. The following sections describe the AppFabric
-output schema, output format, and output destinations to use with Security Lake.
+You can get your SaaS audit logs into Amazon Security Lake in your AWS account by adding a custom source to Security Lake. The following sections describe the AppFabric output schema, output format, and output destinations to use with Security Lake.
 
 ### Schema and format
+<a name="security-lake-schema-format"></a>
 
 Security Lake supports the following AppFabric output schema and format:
-
-- OCSF - JSON
-
-- AppFabric normalizes the data using the Open Cybersecurity Schema
-Framework (OCSF) and outputs the data in JSON format.
++ OCSF - JSON
+  + AppFabric normalizes the data using the Open Cybersecurity Schema Framework (OCSF) and outputs the data in JSON format.
 
 ### Output locations
+<a name="security-lake-output-locations"></a>
 
-Security Lake supports AppFabric as a custom source using an Amazon Data Firehose delivery stream
-as the AppFabric ingestion output location. To configure the AWS Glue table and Firehose
-delivery stream, and to set up a custom source in Security Lake, use the following
-procedures.
+Security Lake supports AppFabric as a custom source using an Amazon Data Firehose delivery stream as the AppFabric ingestion output location. To configure the AWS Glue table and Firehose delivery stream, and to set up a custom source in Security Lake, use the following procedures.
 
 ### Create an AWS Glue table
+<a name="security-lake-create-glue-table"></a>
 
-1. Navigate to Amazon Simple Storage Service (Amazon S3) and create a bucket with a name of your
-    choice.
+1. Navigate to Amazon Simple Storage Service (Amazon S3) and create a bucket with a name of your choice.
 
-2. Navigate to the AWS Glue console.
+1. Navigate to the AWS Glue console.
 
-3. For **Data Catalog**, go to the
-    **Tables** section, and choose **Add**
-**Table**.
+1. For **Data Catalog**, go to the **Tables** section, and choose **Add Table**.
 
-4. Enter a name of your choice for this table.
+1. Enter a name of your choice for this table.
 
-5. Select the Amazon S3 bucket that you created in step 1.
+1. Select the Amazon S3 bucket that you created in step 1.
 
-6. For the data format, select **JSON**, and choose
-    **Next**.
+1. For the data format, select **JSON**, and choose **Next**.
 
-7. On the **Choose or define schema** page, choose
-    **Edit schema as JSON**.
+1. On the **Choose or define schema** page, choose **Edit schema as JSON**.
 
-8. Enter the following schema, and complete the AWS Glue table creation
-    process.
+1. Enter the following schema, and complete the AWS Glue table creation process.
 
-```json
-
-[
+   ```
+   [
        {
            "Name": "message",
            "Type": "string"
@@ -833,113 +817,74 @@ procedures.
            "Name": "database",
            "Type": "struct<name:string,type:string,uid:string,type_id:int,data_classification:struct<category:string,category_id:int,confidentiality:string,confidentiality_id:int>,modified_time:bigint>"
        }
-]
-```
+   ]
+   ```
 
 ### Create a custom source in Security Lake
+<a name="security-lake-create-security-lake-custom-source"></a>
 
 1. Navigate to the Amazon Security Lake console.
 
-2. Select **Custom sources** in the navigation pane.
+1. Select **Custom sources** in the navigation pane.
 
-3. Choose **Create custom source**.
+1. Choose **Create custom source**.
 
-4. Enter a name for your custom source and select an applicable OCSF event
-    class.
+1. Enter a name for your custom source and select an applicable OCSF event class.
+**Note**
+AppFabric uses **Account Change**, **Authentication**, **User Access Management**, **Group Management**, **Web Resources Activity**, and **Web Resource Access Activity** event classes.
 
-###### Note
+1. For both **AWS account ID** and **External ID**, enter your AWS account ID. Then, choose **Create**.
 
-AppFabric uses **Account Change**,
-**Authentication**, **User Access**
-**Management**, **Group Management**,
-**Web Resources Activity**, and **Web**
-**Resource Access Activity** event classes.
-
-5. For both **AWS account ID** and **External**
-**ID**, enter your AWS account ID. Then, choose
-    **Create**.
-
-6. Save the Amazon S3 location of the custom source. You will use it to set up an
-    Amazon Data Firehose delivery stream.
+1. Save the Amazon S3 location of the custom source. You will use it to set up an Amazon Data Firehose delivery stream.
 
 ### Create a delivery stream in Firehose
+<a name="security-lake-create-kinesis-data-firehose"></a>
 
-01. Navigate to the Amazon Data Firehose console.
+1. Navigate to the Amazon Data Firehose console.
 
-02. Choose **Create a delivery stream**.
+1. Choose **Create a delivery stream**.
 
-03. For **Source**, select **Direct**
-    **PUT**.
+1. For **Source**, select **Direct PUT**.
 
-04. For **Destination**, choose
-     **S3**.
+1. For **Destination**, choose **S3**.
 
-05. In the **Transform and convert records** section, choose
-     **Enable record format conversion** and choose
-     **Apache Parquet** as the output
-     format.
+1. In the **Transform and convert records** section, choose **Enable record format conversion** and choose **Apache Parquet** as the output format.
 
-06. For **AWS Glue table**, choose the AWS Glue table that
-     you created in the previous procedure, and choose the latest version.
+1. For **AWS Glue table**, choose the AWS Glue table that you created in the previous procedure, and choose the latest version.
 
-07. For **Destination settings**, choose the Amazon S3 bucket that
-     you created with the Security Lake custom source.
+1. For **Destination settings**, choose the Amazon S3 bucket that you created with the Security Lake custom source.
 
-08. For **Dynamic Partitioning**, choose
-     **Enabled**.
+1. For **Dynamic Partitioning**, choose **Enabled**.
 
-09. For **Inline parsing for JSON**, choose
-     **Enabled**.
+1. For **Inline parsing for JSON**, choose **Enabled**.
+   + For **Keyname**, enter `eventDayValue`.
+   + For **JQ Expression**, enter `(.time/1000)|strftime("%Y%m%d")`.
 
-- For **Keyname**, enter
-`eventDayValue`.
+1. For the **S3 bucket prefix**, enter the following value.
 
-- For **JQ Expression**, enter
-`(.time/1000)|strftime("%Y%m%d")`.
+   ```
+   ext/{{<custom source name>}}/region={{<region>}}/accountId={{<account_id>}}/eventDay=!{partitionKeyFromQuery:eventDayValue}/
+   ```
 
-10. For the **S3 bucket prefix**, enter the following
-     value.
+   Replace {{<custom source name>}}, {{<region>}} and {{<account\_id>}} with your Security Lake custom source name, AWS Region and AWS account ID.
 
-    ```nohighlight
+1. For the **S3 bucket error output prefix**, enter the following value.
 
-    ext/<custom source name>/region=<region>/accountId=<account_id>/eventDay=!{partitionKeyFromQuery:eventDayValue}/
-    ```
+   ```
+   ext/AppFabric/error/
+   ```
 
-    Replace `<custom source name>`, `<region>` and
-     `<account_id>` with your Security Lake custom source name, AWS Region and
-     AWS account ID.
+1. For the **Retry duration**, select **300**.
 
-11. For the **S3 bucket error output prefix**, enter the
-     following value.
+1. For the **Buffer size**, select **128 MiB**.
 
-    ```
+1. For the **Buffer interval**, select **60s**.
 
-    ext/AppFabric/error/
-    ```
-
-12. For the **Retry duration**, select
-     **300**.
-
-13. For the **Buffer size**, select **128**
-    **MiB**.
-
-14. For the **Buffer interval**, select
-     **60s**.
-
-15. Complete the creation process for the Firehose delivery stream.
+1. Complete the creation process for the Firehose delivery stream.
 
 ### Create AppFabric ingestions
+<a name="security-lake-create-appfabric-ingestions"></a>
 
-To send data to Amazon Security Lake, you must create an ingestion in the AppFabric
-console that uses the Firehose delivery stream that you created earlier as the output
-location. For more information about configuring AppFabric ingestions to use Firehose as an
-output location, see the [Create an output\
-location](prerequisites.md#create-output-location).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Rapid7
-
-Singularity Cloud
+To send data to Amazon Security Lake, you must create an ingestion in the AppFabric console that uses the Firehose delivery stream that you created earlier as the output location. For more information about configuring AppFabric ingestions to use Firehose as an output location, see the [Create an output location](prerequisites.md#create-output-location).
 
 All content copied from https://docs.aws.amazon.com/.

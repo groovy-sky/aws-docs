@@ -3,27 +3,18 @@ title: "Step 1: Create a Lambda function for a custom AWS AppConfig extension"
 ---
 
 # Step 1: Create a Lambda function for a custom AWS AppConfig extension
+<a name="working-with-appconfig-extensions-creating-custom-lambda"></a>
 
-For most use-cases, to create a custom extension, you must create an AWS Lambda function to perform any computation and processing defined in the
-extension. This section includes Lambda function sample code for a custom AWS AppConfig extension.
-This section also includes payload request and response reference details. For information
-about creating a Lambda function, see [Getting started with Lambda](../../../lambda/latest/dg/getting-started.md) in the
-_AWS Lambda Developer Guide_.
+For most use-cases, to create a custom extension, you must create an AWS Lambda function to perform any computation and processing defined in the extension. This section includes Lambda function sample code for a custom AWS AppConfig extension. This section also includes payload request and response reference details. For information about creating a Lambda function, see [Getting started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) in the *AWS Lambda Developer Guide*.
 
 ## Sample code
+<a name="working-with-appconfig-extensions-creating-custom-lambda-code-sample"></a>
 
-The following sample code for a Lambda function, when invoked, automatically backs up
-an AWS AppConfig configuration to an Amazon S3 bucket. The configuration is backed up whenever a new
-configuration is created or deployed. The sample uses extension parameters so the bucket
-name doesn't have to be hardcoded in the Lambda function. By using extension parameters,
-the user can attach the extension to multiple applications and back up configurations to
-different buckets. The code sample includes comments to further explain the
-function.
+The following sample code for a Lambda function, when invoked, automatically backs up an AWS AppConfig configuration to an Amazon S3 bucket. The configuration is backed up whenever a new configuration is created or deployed. The sample uses extension parameters so the bucket name doesn't have to be hardcoded in the Lambda function. By using extension parameters, the user can attach the extension to multiple applications and back up configurations to different buckets. The code sample includes comments to further explain the function.
 
 **Sample Lambda function for an AWS AppConfig extension**
 
-```python
-
+```
 from datetime import datetime
 import base64
 import json
@@ -74,23 +65,17 @@ def write_backup_to_s3(bucket_name, config_data_bytes):
     new_object.put(Body=config_data_bytes)
 ```
 
-If you want to use this sample during this walkthrough, save it with the name
-`MyS3ConfigurationBackUpExtension` and copy the Amazon Resource
-Name (ARN) for the function. You specify the ARN when you create the AWS Identity and Access Management (IAM)
-assume role in the next section. You specify the ARN and the name when you create the
-extension.
+If you want to use this sample during this walkthrough, save it with the name **MyS3ConfigurationBackUpExtension** and copy the Amazon Resource Name (ARN) for the function. You specify the ARN when you create the AWS Identity and Access Management (IAM) assume role in the next section. You specify the ARN and the name when you create the extension.
 
 ## Payload reference
+<a name="working-with-appconfig-extensions-creating-custom-lambda-payload"></a>
 
-This section includes payload request and response reference details for working with
-custom AWS AppConfig extensions.
+This section includes payload request and response reference details for working with custom AWS AppConfig extensions.
 
-###### Request structure
-
-_AtDeploymentTick_
+**Request structure**
+*AtDeploymentTick*
 
 ```
-
 {
     'InvocationId': 'o2xbtm7',
     'Parameters': {
@@ -116,12 +101,10 @@ _AtDeploymentTick_
 }
 ```
 
-###### Request structure
-
-_PreCreateHostedConfigurationVersion_
+**Request structure**
+*PreCreateHostedConfigurationVersion*
 
 ```
-
 {
     'InvocationId': 'vlns753', // id for specific invocation
     'Parameters': {
@@ -149,10 +132,9 @@ _PreCreateHostedConfigurationVersion_
 }
 ```
 
-_PreStartDeployment_
+*PreStartDeployment*
 
 ```
-
 {
     'InvocationId': '765ahdm',
     'Parameters': {
@@ -180,12 +162,11 @@ _PreStartDeployment_
 }
 ```
 
-###### Asynchronous events
+**Asynchronous events**
 
-_OnStartDeployment, OnDeploymentStep, OnDeployment_
+*OnStartDeployment, OnDeploymentStep, OnDeployment*
 
 ```
-
 {
     'InvocationId': 'o2xbtm7',
     'Parameters': {
@@ -209,55 +190,45 @@ _OnStartDeployment, OnDeploymentStep, OnDeployment_
 }
 ```
 
-###### Response structure
+**Response structure**
+The following examples show what your Lambda function returns in response to the request from a custom AWS AppConfig extension.
 
-The following examples show what your Lambda function returns in response to the
-request from a custom AWS AppConfig extension.
-
-_PRE\_\* Synchronous events - successful response_
+*PRE\_\* Synchronous events - successful response*
 
 If you want to transform the content, use the following:
 
 ```
-
 "Content": "SomeBase64EncodedByteArray"
 ```
 
-_AT\_\* Synchronous events - successful response_
+*AT\_\* Synchronous events - successful response*
 
-If you want to control the next steps of a deployment (continue a deployment or roll
-it back) set `Directive` and `Description` attributes in the
-response.
+If you want to control the next steps of a deployment (continue a deployment or roll it back) set `Directive` and `Description` attributes in the response.
 
 ```
-
 "Directive": "ROLL_BACK"
 "Description" "Deployment event log description"
 ```
 
-`Directive` supports two values: `CONTINUE` or
-`ROLL_BACK`. Use these enums in your payload response to control the next
-steps of a deployment.
+`Directive` supports two values: `CONTINUE` or `ROLL_BACK`. Use these enums in your payload response to control the next steps of a deployment.
 
-_Synchronous events - successful response_
+*Synchronous events - successful response*
 
 If you want to transform the content, use the following:
 
 ```
-
 "Content": "SomeBase64EncodedByteArray"
 ```
 
 If you don't want to transform the content, return nothing.
 
-_Asynchronous events - successful response_
+*Asynchronous events - successful response*
 
 Return nothing.
 
-_All error events_
+*All error events*
 
 ```
-
 {
         "Error": "BadRequestError",
         "Message": "There was malformed stuff in here",
@@ -268,11 +239,5 @@ _All error events_
         }]
     }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Walkthrough: Creating custom AWS AppConfig extensions
-
-Step 2: Configure permissions for a custom AWS AppConfig extension
 
 All content copied from https://docs.aws.amazon.com/.

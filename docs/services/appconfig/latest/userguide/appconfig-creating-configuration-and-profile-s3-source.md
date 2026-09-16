@@ -3,90 +3,58 @@ title: "Understanding configurations stored in Amazon S3"
 ---
 
 # Understanding configurations stored in Amazon S3
+<a name="appconfig-creating-configuration-and-profile-S3-source"></a>
 
-You can store configurations in an Amazon Simple Storage Service (Amazon S3) bucket. When you create the
-configuration profile, you specify the URI to a single S3 object in a bucket. You also
-specify the Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that gives AWS AppConfig
-permission to get the object. Before you create a configuration profile for an Amazon S3
-object, be aware of the following restrictions.
+You can store configurations in an Amazon Simple Storage Service (Amazon S3) bucket. When you create the configuration profile, you specify the URI to a single S3 object in a bucket. You also specify the Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that gives AWS AppConfig permission to get the object. Before you create a configuration profile for an Amazon S3 object, be aware of the following restrictions.
 
-RestrictionDetails
-
-Size
-
-Configurations stored as S3 objects can be a maximum of 1 MB in size.
-
-Object encryption
-
-A configuration profile can target SSE-S3 and SSE-KMS encrypted
-objects.
-
-Storage classes
-
-AWS AppConfig supports the following S3 storage classes: `STANDARD`,
-`INTELLIGENT_TIERING`, `REDUCED_REDUNDANCY`,
-`STANDARD_IA`, and `ONEZONE_IA`. The following classes
-are not supported: All S3 Glacier classes ( `GLACIER` and
-`DEEP_ARCHIVE`).
-
-Versioning
-
-AWS AppConfig requires that the S3 object use versioning.
+| Restriction | Details |
+| --- | --- |
+| Size | Configurations stored as S3 objects can be a maximum of 1 MB in size. |
+| Object encryption | A configuration profile can target SSE-S3 and SSE-KMS encrypted objects. |
+| Storage classes | AWS AppConfig supports the following S3 storage classes: `STANDARD`, `INTELLIGENT_TIERING`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, and `ONEZONE_IA`. The following classes are not supported: All S3 Glacier classes (`GLACIER` and `DEEP_ARCHIVE`). |
+| Versioning | AWS AppConfig requires that the S3 object use versioning. |
 
 ## Configuring permissions for a configuration stored as an Amazon S3 object
+<a name="appconfig-creating-configuration-and-profile-S3-source-permissions"></a>
 
-When you create a configuration profile for a configuration stored as an S3 object,
-you must specify an ARN for an IAM role that gives AWS AppConfig permission to get the
-object. The role must include the following permissions.
+When you create a configuration profile for a configuration stored as an S3 object, you must specify an ARN for an IAM role that gives AWS AppConfig permission to get the object. The role must include the following permissions.
 
 Permissions to access the S3 object
-
-- s3:GetObject
-
-- s3:GetObjectVersion
++ s3:GetObject
++ s3:GetObjectVersion
 
 Permissions to list S3 buckets
 
 s3:ListAllMyBuckets
 
 Permissions to access the S3 bucket where the object is stored
++ s3:GetBucketLocation
++ s3:GetBucketVersioning
++ s3:ListBucket
++ s3:ListBucketVersions
 
-- s3:GetBucketLocation
+Complete the following procedure to create a role that enables AWS AppConfig to get a configuration stored in an S3 object.
 
-- s3:GetBucketVersioning
+**Creating the IAM Policy for Accessing an S3 Object**
+Use the following procedure to create an IAM policy that enables AWS AppConfig to get a configuration stored in an S3 object.
 
-- s3:ListBucket
+**To create an IAM policy for accessing an S3 object**
 
-- s3:ListBucketVersions
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
-Complete the following procedure to create a role that enables AWS AppConfig to get a
-configuration stored in an S3 object.
+1. In the navigation pane, choose **Policies**, and then choose **Create policy**.
 
-###### Creating the IAM Policy for Accessing an S3 Object
+1. On the **Create policy** page, choose the **JSON** tab.
 
-Use the following procedure to create an IAM policy that enables AWS AppConfig to get a
-configuration stored in an S3 object.
+1. Update the following sample policy with information about your S3 bucket and configuration object. Then paste the policy into the text field on the **JSON** tab. Replace the {{placeholder values}} with your own information.
 
-###### To create an IAM policy for accessing an S3 object
+------
+#### [ JSON ]
 
-1. Open the IAM console at
-    [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
+****
 
-2. In the navigation pane, choose **Policies**, and then choose
-    **Create policy**.
-
-3. On the **Create policy** page, choose the
-    **JSON** tab.
-
-4. Update the following sample policy with information about your S3 bucket and
-    configuration object. Then paste the policy into the text field on the
-    **JSON** tab. Replace the `placeholder
-                     values` with your own information.
-JSON
-
-```json
-
-{
+   ```
+   {
      "Version":"2012-10-17",
      "Statement": [
        {
@@ -95,7 +63,7 @@ JSON
            "s3:GetObject",
            "s3:GetObjectVersion"
          ],
-         "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/my-configurations/my-configuration.json"
+         "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{my-configurations}}/{{my-configuration}}.json"
        },
        {
          "Effect": "Allow",
@@ -106,7 +74,7 @@ JSON
            "s3:ListBucket"
          ],
          "Resource": [
-           "arn:aws:s3:::amzn-s3-demo-bucket"
+           "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
          ]
        },
        {
@@ -115,75 +83,58 @@ JSON
          "Resource": "*"
        }
      ]
-}
+   }
+   ```
 
-```
+------
 
-5. Choose **Review policy**.
+1. Choose **Review policy**.
 
-6. On the **Review policy** page, type a name in the
-    **Name** box, and then type a description.
+1. On the **Review policy** page, type a name in the **Name** box, and then type a description.
 
-7. Choose **Create policy**. The system returns you to the
-    **Roles** page.
+1. Choose **Create policy**. The system returns you to the **Roles** page.
 
-###### Creating the IAM Role for Accessing an S3 Object
+**Creating the IAM Role for Accessing an S3 Object**
+Use the following procedure to create an IAM role that enables AWS AppConfig to get a configuration stored in an S3 object.
 
-Use the following procedure to create an IAM role that enables AWS AppConfig to get a
-configuration stored in an S3 object.
+**To create an IAM role for accessing an Amazon S3 object**
 
-###### To create an IAM role for accessing an Amazon S3 object
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
-01. Open the IAM console at
-     [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
+1. In the navigation pane, choose **Roles**, and then choose **Create role**.
 
-02. In the navigation pane, choose **Roles**, and then choose
-     **Create role**.
+1. On the **Select type of trusted entity** section, choose **AWS service**.
 
-03. On the **Select type of trusted entity** section, choose
-     **AWS service**.
+1. In the **Choose a use case** section, under **Common use cases**, choose **EC2**, and then choose **Next: Permissions**.
 
-04. In the **Choose a use case** section, under **Common**
-    **use cases**, choose **EC2**, and then choose
-     **Next: Permissions**.
+1. On the **Attach permissions policy** page, in the search box, enter the name of the policy you created in the previous procedure.
 
-05. On the **Attach permissions policy** page, in the search box,
-     enter the name of the policy you created in the previous procedure.
+1. Choose the policy and then choose **Next: Tags**.
 
-06. Choose the policy and then choose **Next: Tags**.
+1. On the **Add tags (optional)** page, enter a key and an optional value, and then choose **Next: Review**.
 
-07. On the **Add tags (optional)** page, enter a key and an
-     optional value, and then choose **Next: Review**.
+1. On the **Review** page, type a name in the **Role name** field, and then type a description.
 
-08. On the **Review** page, type a name in the **Role**
-    **name** field, and then type a description.
+1. Choose **Create role**. The system returns you to the **Roles** page.
 
-09. Choose **Create role**. The system returns you to the
-     **Roles** page.
+1. On the **Roles** page, choose the role you just created to open the **Summary** page. Note the **Role Name** and **Role ARN**. You will specify the role ARN when you create the configuration profile later in this topic.
 
-10. On the **Roles** page, choose the role you just created to open
-     the **Summary** page. Note the **Role Name** and
-     **Role ARN**. You will specify the role ARN when you create the
-     configuration profile later in this topic.
+**Creating a Trust Relationship**
+Use the following procedure to configure the role you just created to trust AWS AppConfig.
 
-###### Creating a Trust Relationship
+**To add a trust relationship**
 
-Use the following procedure to configure the role you just created to trust
-AWS AppConfig.
+1. In the **Summary** page for the role you just created, choose the **Trust Relationships** tab, and then choose **Edit Trust Relationship**.
 
-###### To add a trust relationship
+1. Delete `"ec2.amazonaws.com"` and add `"appconfig.amazonaws.com"`, as shown in the following example.
 
-1. In the **Summary** page for the role you just created, choose
-    the **Trust Relationships** tab, and then choose **Edit**
-**Trust Relationship**.
+------
+#### [ JSON ]
 
-2. Delete `"ec2.amazonaws.com"` and add
-    `"appconfig.amazonaws.com"`, as shown in the following example.
-JSON
+****
 
-```json
-
-{
+   ```
+   {
      "Version":"2012-10-17",
      "Statement": [
        {
@@ -194,16 +145,11 @@ JSON
          "Action": "sts:AssumeRole"
        }
      ]
-}
+   }
+   ```
 
-```
+------
 
-3. Choose **Update Trust Policy**.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Understanding the AWS AppConfig hosted configuration store
-
-Creating an AWS AppConfig freeform configuration profile (console)
+1. Choose **Update Trust Policy**.
 
 All content copied from https://docs.aws.amazon.com/.

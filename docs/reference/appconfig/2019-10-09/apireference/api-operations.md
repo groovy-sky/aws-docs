@@ -3,109 +3,68 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported by AWS AppConfig:
-
-- [CreateApplication](api-createapplication.md)
-
-- [CreateConfigurationProfile](api-createconfigurationprofile.md)
-
-- [CreateDeploymentStrategy](api-createdeploymentstrategy.md)
-
-- [CreateEnvironment](api-createenvironment.md)
-
-- [CreateExtension](api-createextension.md)
-
-- [CreateExtensionAssociation](api-createextensionassociation.md)
-
-- [CreateHostedConfigurationVersion](api-createhostedconfigurationversion.md)
-
-- [DeleteApplication](api-deleteapplication.md)
-
-- [DeleteConfigurationProfile](api-deleteconfigurationprofile.md)
-
-- [DeleteDeploymentStrategy](api-deletedeploymentstrategy.md)
-
-- [DeleteEnvironment](api-deleteenvironment.md)
-
-- [DeleteExtension](api-deleteextension.md)
-
-- [DeleteExtensionAssociation](api-deleteextensionassociation.md)
-
-- [DeleteHostedConfigurationVersion](api-deletehostedconfigurationversion.md)
-
-- [GetAccountSettings](api-getaccountsettings.md)
-
-- [GetApplication](api-getapplication.md)
-
-- [GetConfiguration](api-getconfiguration.md)
-
-- [GetConfigurationProfile](api-getconfigurationprofile.md)
-
-- [GetDeployment](api-getdeployment.md)
-
-- [GetDeploymentStrategy](api-getdeploymentstrategy.md)
-
-- [GetEnvironment](api-getenvironment.md)
-
-- [GetExtension](api-getextension.md)
-
-- [GetExtensionAssociation](api-getextensionassociation.md)
-
-- [GetHostedConfigurationVersion](api-gethostedconfigurationversion.md)
-
-- [ListApplications](api-listapplications.md)
-
-- [ListConfigurationProfiles](api-listconfigurationprofiles.md)
-
-- [ListDeployments](api-listdeployments.md)
-
-- [ListDeploymentStrategies](api-listdeploymentstrategies.md)
-
-- [ListEnvironments](api-listenvironments.md)
-
-- [ListExtensionAssociations](api-listextensionassociations.md)
-
-- [ListExtensions](api-listextensions.md)
-
-- [ListHostedConfigurationVersions](api-listhostedconfigurationversions.md)
-
-- [ListTagsForResource](api-listtagsforresource.md)
-
-- [StartDeployment](api-startdeployment.md)
-
-- [StopDeployment](api-stopdeployment.md)
-
-- [TagResource](api-tagresource.md)
-
-- [UntagResource](api-untagresource.md)
-
-- [UpdateAccountSettings](api-updateaccountsettings.md)
-
-- [UpdateApplication](api-updateapplication.md)
-
-- [UpdateConfigurationProfile](api-updateconfigurationprofile.md)
-
-- [UpdateDeploymentStrategy](api-updatedeploymentstrategy.md)
-
-- [UpdateEnvironment](api-updateenvironment.md)
-
-- [UpdateExtension](api-updateextension.md)
-
-- [UpdateExtensionAssociation](api-updateextensionassociation.md)
-
-- [ValidateConfiguration](api-validateconfiguration.md)
++  [CreateApplication](API_CreateApplication.md)
++  [CreateConfigurationProfile](API_CreateConfigurationProfile.md)
++  [CreateDeploymentStrategy](API_CreateDeploymentStrategy.md)
++  [CreateEnvironment](API_CreateEnvironment.md)
++  [CreateExperimentDefinition](API_CreateExperimentDefinition.md)
++  [CreateExtension](API_CreateExtension.md)
++  [CreateExtensionAssociation](API_CreateExtensionAssociation.md)
++  [CreateHostedConfigurationVersion](API_CreateHostedConfigurationVersion.md)
++  [DeleteApplication](API_DeleteApplication.md)
++  [DeleteConfigurationProfile](API_DeleteConfigurationProfile.md)
++  [DeleteDeploymentStrategy](API_DeleteDeploymentStrategy.md)
++  [DeleteEnvironment](API_DeleteEnvironment.md)
++  [DeleteExperimentDefinition](API_DeleteExperimentDefinition.md)
++  [DeleteExtension](API_DeleteExtension.md)
++  [DeleteExtensionAssociation](API_DeleteExtensionAssociation.md)
++  [DeleteHostedConfigurationVersion](API_DeleteHostedConfigurationVersion.md)
++  [GetAccountSettings](API_GetAccountSettings.md)
++  [GetApplication](API_GetApplication.md)
++  [GetConfiguration](API_GetConfiguration.md)
++  [GetConfigurationProfile](API_GetConfigurationProfile.md)
++  [GetDeployment](API_GetDeployment.md)
++  [GetDeploymentStrategy](API_GetDeploymentStrategy.md)
++  [GetEnvironment](API_GetEnvironment.md)
++  [GetExperimentDefinition](API_GetExperimentDefinition.md)
++  [GetExperimentRun](API_GetExperimentRun.md)
++  [GetExtension](API_GetExtension.md)
++  [GetExtensionAssociation](API_GetExtensionAssociation.md)
++  [GetHostedConfigurationVersion](API_GetHostedConfigurationVersion.md)
++  [ListApplications](API_ListApplications.md)
++  [ListConfigurationProfiles](API_ListConfigurationProfiles.md)
++  [ListDeployments](API_ListDeployments.md)
++  [ListDeploymentStrategies](API_ListDeploymentStrategies.md)
++  [ListEnvironments](API_ListEnvironments.md)
++  [ListExperimentDefinitions](API_ListExperimentDefinitions.md)
++  [ListExperimentRunEvents](API_ListExperimentRunEvents.md)
++  [ListExperimentRuns](API_ListExperimentRuns.md)
++  [ListExtensionAssociations](API_ListExtensionAssociations.md)
++  [ListExtensions](API_ListExtensions.md)
++  [ListHostedConfigurationVersions](API_ListHostedConfigurationVersions.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [StartDeployment](API_StartDeployment.md)
++  [StartExperimentRun](API_StartExperimentRun.md)
++  [StopDeployment](API_StopDeployment.md)
++  [StopExperimentRun](API_StopExperimentRun.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateAccountSettings](API_UpdateAccountSettings.md)
++  [UpdateApplication](API_UpdateApplication.md)
++  [UpdateConfigurationProfile](API_UpdateConfigurationProfile.md)
++  [UpdateDeploymentStrategy](API_UpdateDeploymentStrategy.md)
++  [UpdateEnvironment](API_UpdateEnvironment.md)
++  [UpdateExperimentDefinition](API_UpdateExperimentDefinition.md)
++  [UpdateExperimentRun](API_UpdateExperimentRun.md)
++  [UpdateExtension](API_UpdateExtension.md)
++  [UpdateExtensionAssociation](API_UpdateExtensionAssociation.md)
++  [ValidateConfiguration](API_ValidateConfiguration.md)
 
 The following actions are supported by AWS AppConfig Data:
-
-- [GetLatestConfiguration](api-appconfigdata-getlatestconfiguration.md)
-
-- [StartConfigurationSession](api-appconfigdata-startconfigurationsession.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-AWS AppConfig
++  [GetLatestConfiguration](API_appconfigdata_GetLatestConfiguration.md)
++  [StartConfigurationSession](API_appconfigdata_StartConfigurationSession.md)
 
 All content copied from https://docs.aws.amazon.com/.

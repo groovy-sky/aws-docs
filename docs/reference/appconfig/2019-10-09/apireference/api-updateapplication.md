@@ -3,62 +3,54 @@ title: "UpdateApplication"
 ---
 
 # UpdateApplication
+<a name="API_UpdateApplication"></a>
 
 Updates an application.
 
 ## Request Syntax
+<a name="API_UpdateApplication_RequestSyntax"></a>
 
-```nohighlight
-
-PATCH /applications/ApplicationId HTTP/1.1
+```
+PATCH /applications/{{ApplicationId}} HTTP/1.1
 Content-type: application/json
 
 {
-   "Description": "string",
-   "Name": "string"
+   "Description": "{{string}}",
+   "Name": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_UpdateApplication_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[ApplicationId](#API_UpdateApplication_RequestSyntax)**
-
-The application ID.
-
-Pattern: `[a-z0-9]{4,7}`
-
+ ** [ApplicationId](#API_UpdateApplication_RequestSyntax) **   <a name="appconfig-UpdateApplication-request-uri-ApplicationId"></a>
+The ID or name of the application.
+Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
 ## Request Body
+<a name="API_UpdateApplication_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[Description](#API_UpdateApplication_RequestSyntax)**
-
+ ** [Description](#API_UpdateApplication_RequestSyntax) **   <a name="appconfig-UpdateApplication-request-Description"></a>
 A description of the application.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-
 Required: No
 
-**[Name](#API_UpdateApplication_RequestSyntax)**
-
+ ** [Name](#API_UpdateApplication_RequestSyntax) **   <a name="appconfig-UpdateApplication-request-Name"></a>
 The name of the application.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 64.
-
 Required: No
 
 ## Response Syntax
+<a name="API_UpdateApplication_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -70,72 +62,58 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_UpdateApplication_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[Description](#API_UpdateApplication_ResponseSyntax)**
-
+ ** [Description](#API_UpdateApplication_ResponseSyntax) **   <a name="appconfig-UpdateApplication-response-Description"></a>
 The description of the application.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
-**[Id](#API_UpdateApplication_ResponseSyntax)**
-
+ ** [Id](#API_UpdateApplication_ResponseSyntax) **   <a name="appconfig-UpdateApplication-response-Id"></a>
 The application ID.
-
 Type: String
-
 Pattern: `[a-z0-9]{4,7}`
 
-**[Name](#API_UpdateApplication_ResponseSyntax)**
-
+ ** [Name](#API_UpdateApplication_ResponseSyntax) **   <a name="appconfig-UpdateApplication-response-Name"></a>
 The application name.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
 ## Errors
+<a name="API_UpdateApplication_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**BadRequestException**
-
+ ** BadRequestException **
 The input fails to satisfy the constraints specified by an AWS service.
-
-**Details**
-
-Detailed information about the input that failed to satisfy the constraints specified by
-a call.
-
+ ** Details **
+Detailed information about the input that failed to satisfy the constraints specified by a call.
 HTTP Status Code: 400
 
-**InternalServerException**
-
+ ** InternalServerException **
 There was an internal failure in the AWS AppConfig service.
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The requested resource could not be found.
-
 HTTP Status Code: 404
 
 ## Examples
+<a name="API_UpdateApplication_Examples"></a>
 
 ### Example
+<a name="API_UpdateApplication_Example_1"></a>
 
 This example illustrates one usage of UpdateApplication.
 
 #### Sample Request
+<a name="API_UpdateApplication_Example_1_Request"></a>
 
 ```
-
 PATCH /applications/abc1234 HTTP/1.1
 Host: appconfig.us-east-1.amazonaws.com
 Accept-Encoding: identity
@@ -150,9 +128,9 @@ Content-Length: 31
 ```
 
 #### Sample Response
+<a name="API_UpdateApplication_Example_1_Response"></a>
 
 ```
-
 {
     "Id": "abc1234",
     "Name": "Example-Application",
@@ -161,33 +139,18 @@ Content-Length: 31
 ```
 
 ## See Also
+<a name="API_UpdateApplication_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/updateapplication.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/updateapplication.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateAccountSettings
-
-UpdateConfigurationProfile
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/UpdateApplication)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/UpdateApplication)
 
 All content copied from https://docs.aws.amazon.com/.
