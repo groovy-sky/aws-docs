@@ -3,18 +3,15 @@ title: "GetItem"
 ---
 
 # GetItem
+<a name="js-aws-appsync-resolver-reference-dynamodb-getitem"></a>
 
-The `GetItem` request lets you tell the AWS AppSync DynamoDB function to make a
-`GetItem` request to DynamoDB, and enables you to specify:
-
-- The key of the item in DynamoDB
-
-- Whether to use a consistent read or not
+The `GetItem` request lets you tell the AWS AppSync DynamoDB function to make a `GetItem` request to DynamoDB, and enables you to specify:
++ The key of the item in DynamoDB
++ Whether to use a consistent read or not
 
 The `GetItem` request has the following structure:
 
-```TypeScript
-
+```
 type DynamoDBGetItem = {
   operation: 'GetItem';
   key: { [key: string]: any };
@@ -29,44 +26,35 @@ type DynamoDBGetItem = {
 The fields are defined as follows:
 
 ## GetItem fields
+<a name="js-getitem-list"></a>
 
-**`operation`**
+### GetItem fields list
+<a name="js-getitem-list-col"></a>
 
-The DynamoDB operation to perform. To perform the `GetItem`
-DynamoDB operation, this must be set to `GetItem`. This value
-is required.
+ **`operation`**
+The DynamoDB operation to perform. To perform the `GetItem` DynamoDB operation, this must be set to `GetItem`. This value is required.
 
-**`key`**
+ **`key`**
+The key of the item in DynamoDB. DynamoDB items may have a single hash key, or a hash key and sort key, depending on the table structure. For more information about how to specify a “typed value”, see [Type system (request mapping)](https://docs.aws.amazon.com/appsync/latest/devguide/js-resolver-reference-dynamodb.html#js-aws-appsync-resolver-reference-dynamodb-typed-values-request). This value is required.
 
-The key of the item in DynamoDB. DynamoDB items may have a single hash key,
-or a hash key and sort key, depending on the table structure. For more
-information about how to specify a “typed value”, see [Type system (request mapping)](js-resolver-reference-dynamodb.md#js-aws-appsync-resolver-reference-dynamodb-typed-values-request). This value is required.
-
-**`consistentRead`**
-
-Whether or not to perform a strongly consistent read with DynamoDB. This
-is optional, and defaults to `false`.
+ **`consistentRead`**
+Whether or not to perform a strongly consistent read with DynamoDB. This is optional, and defaults to `false`.
 
 **`projection`**
+A projection that's used to specify the attributes to return from the DynamoDB operation. For more information about projections, see [Projections](https://docs.aws.amazon.com/appsync/latest/devguide/js-resolver-reference-dynamodb.html#js-aws-appsync-resolver-reference-dynamodb-projections). This field is optional.
 
-A projection that's used to specify the attributes to return from the
-DynamoDB operation. For more information about projections, see [Projections](js-resolver-reference-dynamodb.md#js-aws-appsync-resolver-reference-dynamodb-projections). This field is optional.
+The item returned from DynamoDB is automatically converted into GraphQL and JSON primitive types, and is available in the context result (`context.result`).
 
-The item returned from DynamoDB is automatically converted into GraphQL and JSON primitive
-types, and is available in the context result ( `context.result`).
+For more information about DynamoDB type conversion, see [Type system (response mapping)](https://docs.aws.amazon.com/appsync/latest/devguide/js-resolver-reference-dynamodb.html#js-aws-appsync-resolver-reference-dynamodb-typed-values-responses).
 
-For more information about DynamoDB type conversion, see [Type system (response mapping)](js-resolver-reference-dynamodb.md#js-aws-appsync-resolver-reference-dynamodb-typed-values-responses).
-
-For more information about JavaScript resolvers, see [JavaScript resolvers\
-overview](resolver-reference-overview-js.md).
+For more information about JavaScript resolvers, see [JavaScript resolvers overview](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-overview-js.html).
 
 ## Example
+<a name="js-example"></a>
 
-The following example is a function request handler for a GraphQL query
-`getThing(foo: String!, bar: String!)`:
+The following example is a function request handler for a GraphQL query `getThing(foo: String!, bar: String!)`:
 
-```TypeScript
-
+```
 export function request(ctx) {
   const {foo, bar} = ctx.args
   return {
@@ -77,14 +65,6 @@ export function request(ctx) {
 }
 ```
 
-For more information about the DynamoDB `GetItem` API, see the [DynamoDB\
-API documentation](../../../../reference/amazondynamodb/latest/apireference/api-getitem.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JavaScript resolver function
-reference for DynamoDB
-
-PutItem
+For more information about the DynamoDB `GetItem` API, see the [DynamoDB API documentation](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html).
 
 All content copied from https://docs.aws.amazon.com/.

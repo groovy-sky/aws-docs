@@ -3,6 +3,7 @@ title: "Publish events via HTTP"
 ---
 
 # Publish events via HTTP
+<a name="publish-http"></a>
 
 AWS AppSync Events allows you to publish events via your API’s HTTP endpoint using a POST operation. Publishing is the only supported action over the endpoint.
 
@@ -10,13 +11,11 @@ AWS AppSync Events allows you to publish events via your API’s HTTP endpoint u
 
 1. Send a POST request to the address: `https://HTTP_DOMAIN/event`.
 
-2. Add the authorization header(s) required to authorize your request.
+1. Add the authorization header(s) required to authorize your request.
 
-3. Specify the following in the request body:
-
-- The channel that you are publishing to.
-
-- The list of events you are publishing. You can publish up to 5 events in a batch.
+1. Specify the following in the request body:
+   + The channel that you are publishing to.
+   + The list of events you are publishing. You can publish up to 5 events in a batch.
 
 Each specified event in your publish request must be a stringified valid JSON value.
 
@@ -24,8 +23,7 @@ Each specified event in your publish request must be a stringified valid JSON va
 
 The following is an example of a request.
 
-```json
-
+```
 {
   "method": "POST",
   "headers": {
@@ -44,8 +42,7 @@ The following is an example of a request.
 
 You can use your Browser’s `fetch API` to publish the events. The following example demonstrates this.
 
-```json
-
+```
 await fetch(`https://${HTTP_DOMAIN}/event`, {
   "method": "POST",
   "headers": {
@@ -63,11 +60,5 @@ await fetch(`https://${HTTP_DOMAIN}/event`, {
 ```
 
 To learn more about the different authorization types that AWS AppSync Events supports, see [Configuring authorization and authentication to secure Event APIs](configure-event-api-auth.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Publishing events
-
-Publish events via WebSocket
 
 All content copied from https://docs.aws.amazon.com/.

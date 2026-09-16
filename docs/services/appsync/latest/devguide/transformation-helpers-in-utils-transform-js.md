@@ -3,27 +3,21 @@ title: "Transformation helpers in util.transform"
 ---
 
 # Transformation helpers in util.transform
+<a name="transformation-helpers-in-utils-transform-js"></a>
 
-`util.transform` contains helper methods that make it easier to perform
-complex operations against data sources.
+`util.transform` contains helper methods that make it easier to perform complex operations against data sources.
 
-**`util.transform.toDynamoDBFilterExpression(filterObject:**
-**DynamoDBFilterObject) : string`**
+## Transformation helpers utils list
+<a name="transformation-helpers-in-utils-transform-js-list"></a>
 
-Converts an input string to a filter expression for use with DynamoDB. We
-recommend using `toDynamoDBFilterExpression` with [built-in module\
-functions](built-in-modules-js.md).
+**`util.transform.toDynamoDBFilterExpression(filterObject: DynamoDBFilterObject) : string`**
+Converts an input string to a filter expression for use with DynamoDB. We recommend using `toDynamoDBFilterExpression` with [built-in module functions](https://docs.aws.amazon.com/appsync/latest/devguide/built-in-modules-js.html).
 
-**`util.transform.toElasticsearchQueryDSL(object:**
-**OpenSearchQueryObject) : string`**
-
-Converts the given input into its equivalent OpenSearch Query DSL
-expression, returning it as a JSON string.
-
+**`util.transform.toElasticsearchQueryDSL(object: OpenSearchQueryObject) : string`**
+Converts the given input into its equivalent OpenSearch Query DSL expression, returning it as a JSON string.
 **Example input:**
 
 ```
-
 util.transform.toElasticsearchQueryDSL({
     "upvotes":{
         "ne":15,
@@ -38,11 +32,9 @@ util.transform.toElasticsearchQueryDSL({
     }
   })
 ```
-
 **Example output:**
 
 ```
-
 {
     "bool":{
       "must":[
@@ -89,110 +81,53 @@ util.transform.toElasticsearchQueryDSL({
     }
 }
 ```
-
-###### Note
-
 The default operator is assumed to be AND.
 
-**`util.transform.toSubscriptionFilter(objFilter,**
-**ignoredFields?, rules?): SubscriptionFilter`**
-
-Converts a `Map` input object to a
-`SubscriptionFilter` expression object. The
-`util.transform.toSubscriptionFilter` method is used as an
-input to the `extensions.setSubscriptionFilter()` extension. For
-more information, see [Extensions](extensions-js.md).
-
-###### Note
-
+**`util.transform.toSubscriptionFilter(objFilter, ignoredFields?, rules?): SubscriptionFilter`**
+Converts a `Map` input object to a `SubscriptionFilter` expression object. The `util.transform.toSubscriptionFilter` method is used as an input to the `extensions.setSubscriptionFilter()` extension. For more information, see [Extensions](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html).
 The parameters and return statement is listed below:
+*Parameters*
++ `objFilter`: `SubscriptionFilterObject`
 
-_Parameters_
+  A `Map` input object that's converted to the `SubscriptionFilter` expression object.
++ `ignoredFields`: `SubscriptionFilterExcludeKeysType` (optional)
 
-- `objFilter`:
-`SubscriptionFilterObject`
+  A `List` of field names in the first object that will be ignored.
++ `rules`: `SubscriptionFilterRuleObject` (optional)
 
-A `Map` input object that's converted to the
-`SubscriptionFilter` expression object.
+  A `Map` input object with strict rules that's included when you're constructing the `SubscriptionFilter` expression object. These strict rules will be included in the `SubscriptionFilter` expression object so that at least one of the rules will be satisfied to pass the subscription filter.
+*Response*
+Returns a `[SubscriptionFilter](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html)`.
 
-- `ignoredFields`:
-`SubscriptionFilterExcludeKeysType` (optional)
+**`util.transform.toSubscriptionFilter(Map, List)`**
+Converts a `Map` input object to a `SubscriptionFilter` expression object. The `util.transform.toSubscriptionFilter` method is used as an input to the `extensions.setSubscriptionFilter()` extension. For more information, see [Extensions](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html).
+The first argument is the `Map` input object that's converted to the `SubscriptionFilter` expression object. The second argument is a `List` of field names that are ignored in the first `Map` input object while constructing the `SubscriptionFilter` expression object.
 
-A `List` of field names in the first object that will
-be ignored.
-
-- `rules`: `SubscriptionFilterRuleObject`
-(optional)
-
-A `Map` input object with strict rules that's
-included when you're constructing the
-`SubscriptionFilter` expression object. These strict
-rules will be included in the `SubscriptionFilter`
-expression object so that at least one of the rules will be
-satisfied to pass the subscription filter.
-
-_Response_
-
-Returns a `SubscriptionFilter`.
-
-**`util.transform.toSubscriptionFilter(Map,**
-**List)`**
-
-Converts a `Map` input object to a
-`SubscriptionFilter` expression object. The
-`util.transform.toSubscriptionFilter` method is used as an
-input to the `extensions.setSubscriptionFilter()` extension. For
-more information, see [Extensions](extensions-js.md).
-
-The first argument is the `Map` input object that's converted
-to the `SubscriptionFilter` expression object. The second
-argument is a `List` of field names that are ignored in the first
-`Map` input object while constructing the
-`SubscriptionFilter` expression object.
-
-**`util.transform.toSubscriptionFilter(Map, List,**
-**Map)`**
-
-Converts a `Map` input object to a
-`SubscriptionFilter` expression object. The
-`util.transform.toSubscriptionFilter` method is used as an
-input to the `extensions.setSubscriptionFilter()` extension. For
-more information, see [Extensions](extensions-js.md).
+**`util.transform.toSubscriptionFilter(Map, List, Map)`**
+Converts a `Map` input object to a `SubscriptionFilter` expression object. The `util.transform.toSubscriptionFilter` method is used as an input to the `extensions.setSubscriptionFilter()` extension. For more information, see [Extensions](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html).
 
 **`util.transform.toDynamoDBConditionExpression(conditionObject)`**
-
 Creates a DynamoDB condition expression.
 
 ## Subscription filter arguments
+<a name="subscription-filter-arguments-js"></a>
 
-The
-following
-table
-explains the how the arguments of the following utilities are
-defined:
+The following table explains the how the arguments of the following utilities are defined:
++ `Util.transform.toSubscriptionFilter(objFilter, ignoredFields?, rules?): SubscriptionFilter`
 
-- `Util.transform.toSubscriptionFilter(objFilter, ignoredFields?, rules?):
-                       SubscriptionFilter`
+------
+#### [ Argument 1: Map ]
 
-Argument 1: Map
+Argument 1 is a `Map` object with the following key values:
++ field names
++ "and"
++ "or"
 
-Argument 1 is a `Map` object with the following key
-values:
+For field names as keys, the conditions on these fields' entries are in the form of `"operator" : "value"`.
 
-- field names
-
-- "and"
-
-- "or"
-
-For field names as keys, the conditions on these fields' entries are in the
-form of `"operator" : "value"`.
-
-The following example shows how entries can be added to the
-`Map`:
+The following example shows how entries can be added to the `Map`:
 
 ```
-
 "field_name" : {
                     "operator1" : value
                }
@@ -208,15 +143,11 @@ The following example shows how entries can be added to the
                }
 ```
 
-When a field has two or more conditions on it, all of these conditions are
-considered to use the OR operation.
+When a field has two or more conditions on it, all of these conditions are considered to use the OR operation.
 
-The input `Map` can also have "and" and "or" as keys, implying
-that all entries within these should be joined using AND or OR logic depending
-on the key. The key values "and" and "or" expect an array of conditions.
+The input `Map` can also have "and" and "or" as keys, implying that all entries within these should be joined using AND or OR logic depending on the key. The key values "and" and "or" expect an array of conditions.
 
 ```
-
 "and" : [
 
             {
@@ -235,15 +166,9 @@ on the key. The key values "and" and "or" expect an array of conditions.
         ].
 ```
 
-Note that
-you
-can nest "and" and
-"or".
-That is, you can have nested "and"/"or" within another
-"and"/"or" block. However, this doesn't work for simple fields.
+Note that you can nest "and" and "or". That is, you can have nested "and"/"or" within another "and"/"or" block. However, this doesn't work for simple fields.
 
 ```
-
 "and" : [
 
             {
@@ -269,16 +194,13 @@ That is, you can have nested "and"/"or" within another
                         ].
 ```
 
-The following example shows an input of _argument_
-_1_ using `util.transform.toSubscriptionFilter(Map) :
-                        Map`.
+The following example shows an input of *argument 1* using `util.transform.toSubscriptionFilter(Map) : Map`.
 
 **Input(s)**
 
 Argument 1: Map:
 
 ```
-
 {
   "percentageUp": {
     "lte": 50,
@@ -316,7 +238,6 @@ Argument 1: Map:
 The result is a `Map` object:
 
 ```
-
 {
   "filterGroup": [
     {
@@ -419,22 +340,18 @@ The result is a `Map` object:
 }
 ```
 
-Argument 2: List
+------
+#### [ Argument 2: List ]
 
-Argument 2 contains a `List` of field names that shouldn't be
-considered in the input `Map` (argument 1) while constructing the
-`SubscriptionFilter` expression object. The `List` can
-also be empty.
+Argument 2 contains a `List` of field names that shouldn't be considered in the input `Map` (argument 1) while constructing the `SubscriptionFilter` expression object. The `List` can also be empty.
 
-The following example shows the inputs of argument 1 and argument 2 using
-`util.transform.toSubscriptionFilter(Map, List) : Map`.
+The following example shows the inputs of argument 1 and argument 2 using `util.transform.toSubscriptionFilter(Map, List) : Map`.
 
 **Input(s)**
 
 Argument 1: Map:
 
 ```
-
 {
   "percentageUp": {
     "lte": 50,
@@ -470,7 +387,6 @@ Argument 1: Map:
 Argument 2: List:
 
 ```
-
 ["percentageUp", "author"]
 ```
 
@@ -479,7 +395,6 @@ Argument 2: List:
 The result is a `Map` object:
 
 ```
-
 {
   "filterGroup": [
     {
@@ -505,21 +420,14 @@ The result is a `Map` object:
 }
 ```
 
-Argument 3: Map
+------
+#### [ Argument 3: Map ]
 
-Argument 3 is a `Map` object that has field names as key values
-(cannot have "and" or "or"). For field names as keys, the conditions on these
-fields are entries in the form of `"operator" : "value"`. Unlike
-argument 1, argument 3 cannot have multiple conditions in the same key. In
-addition, argument 3 doesn't have an "and" or "or" clause, so there's no
-nesting involved either.
+Argument 3 is a `Map` object that has field names as key values (cannot have "and" or "or"). For field names as keys, the conditions on these fields are entries in the form of `"operator" : "value"`. Unlike argument 1, argument 3 cannot have multiple conditions in the same key. In addition, argument 3 doesn't have an "and" or "or" clause, so there's no nesting involved either.
 
-Argument 3 represents a list of strict rules, which are added to the
-`SubscriptionFilter` expression object so that **at least one** of these conditions is met to pass the
-filter.
+Argument 3 represents a list of strict rules, which are added to the `SubscriptionFilter` expression object so that **at least one** of these conditions is met to pass the filter.
 
 ```
-
 {
   "fieldname1": {
     "operator": value
@@ -533,17 +441,13 @@ filter.
 .
 ```
 
-The following example shows the inputs of _argument_
-_1_, _argument 2_, and _argument 3_ using
-`util.transform.toSubscriptionFilter(Map, List, Map) :
-                     Map`.
+The following example shows the inputs of *argument 1*, *argument 2*, and *argument 3* using `util.transform.toSubscriptionFilter(Map, List, Map) : Map`.
 
 **Input(s)**
 
 Argument 1: Map:
 
 ```
-
 {
   "percentageUp": {
     "lte": 50,
@@ -579,14 +483,12 @@ Argument 1: Map:
 Argument 2: List:
 
 ```
-
 ["percentageUp", "author"]
 ```
 
 Argument 3: Map:
 
 ```
-
 {
   "upvotes": {
     "gte": 250
@@ -602,7 +504,6 @@ Argument 3: Map:
 The result is a `Map` object:
 
 ```
-
 {
   "filterGroup": [
     {
@@ -657,10 +558,6 @@ The result is a `Map` object:
 }
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HTTP helpers in util.http
-
-String helpers in util.str
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,60 +3,40 @@ title: "AdditionalAuthenticationProvider"
 ---
 
 # AdditionalAuthenticationProvider
+<a name="API_AdditionalAuthenticationProvider"></a>
 
 Describes an additional authentication provider.
 
 ## Contents
+<a name="API_AdditionalAuthenticationProvider_Contents"></a>
 
-**authenticationType**
-
-The authentication type: API key, AWS Identity and Access Management (IAM), OpenID
-Connect (OIDC), Amazon Cognito user pools, or AWS Lambda.
-
+ ** authenticationType **   <a name="appsync-Type-AdditionalAuthenticationProvider-authenticationType"></a>
+The authentication type: API key, AWS Identity and Access Management (IAM), OpenID Connect (OIDC), Amazon Cognito user pools, or AWS Lambda.
 Type: String
-
 Valid Values: `API_KEY | AWS_IAM | AMAZON_COGNITO_USER_POOLS | OPENID_CONNECT | AWS_LAMBDA`
-
 Required: No
 
-**lambdaAuthorizerConfig**
-
+ ** lambdaAuthorizerConfig **   <a name="appsync-Type-AdditionalAuthenticationProvider-lambdaAuthorizerConfig"></a>
 Configuration for Lambda function authorization.
-
-Type: [LambdaAuthorizerConfig](api-lambdaauthorizerconfig.md) object
-
+Type: [LambdaAuthorizerConfig](API_LambdaAuthorizerConfig.md) object
 Required: No
 
-**openIDConnectConfig**
-
+ ** openIDConnectConfig **   <a name="appsync-Type-AdditionalAuthenticationProvider-openIDConnectConfig"></a>
 The OIDC configuration.
-
-Type: [OpenIDConnectConfig](api-openidconnectconfig.md) object
-
+Type: [OpenIDConnectConfig](API_OpenIDConnectConfig.md) object
 Required: No
 
-**userPoolConfig**
-
+ ** userPoolConfig **   <a name="appsync-Type-AdditionalAuthenticationProvider-userPoolConfig"></a>
 The Amazon Cognito user pool configuration.
-
-Type: [CognitoUserPoolConfig](api-cognitouserpoolconfig.md) object
-
+Type: [CognitoUserPoolConfig](API_CognitoUserPoolConfig.md) object
 Required: No
 
 ## See Also
+<a name="API_AdditionalAuthenticationProvider_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/additionalauthenticationprovider.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/additionalauthenticationprovider.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/additionalauthenticationprovider.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Data Types
-
-Api
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appsync-2017-07-25/AdditionalAuthenticationProvider)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appsync-2017-07-25/AdditionalAuthenticationProvider)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appsync-2017-07-25/AdditionalAuthenticationProvider)
 
 All content copied from https://docs.aws.amazon.com/.

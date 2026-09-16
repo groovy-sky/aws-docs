@@ -3,23 +3,13 @@ title: "Previewing, publishing, and sharing applications"
 ---
 
 # Previewing, publishing, and sharing applications
+<a name="applications-preview-publish-share"></a>
 
-###### Topics
-
-- [Previewing applications](applications-preview.md)
-
-- [Publishing applications](applications-publish.md)
-
-- [Sharing published applications](application-share.md)
-
-- [Rolling back to a previously published version](application-rollback-version.md)
-
-- [Exporting applications](applications-export.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Deleting an application
-
-Previewing applications
+**Topics**
++ [Previewing applications](applications-preview.md)
++ [Publishing applications](applications-publish.md)
++ [Sharing published applications](application-share.md)
++ [Rolling back to a previously published version](application-rollback-version.md)
++ [Exporting applications](applications-export.md)
 
 All content copied from https://docs.aws.amazon.com/.

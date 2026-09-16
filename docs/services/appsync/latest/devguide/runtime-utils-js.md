@@ -3,36 +3,22 @@ title: "Runtime utilities"
 ---
 
 # Runtime utilities
+<a name="runtime-utils-js"></a>
 
-The `runtime` library provides utilities to control or modify the runtime
-properties of your resolvers and functions.
+The `runtime` library provides utilities to control or modify the runtime properties of your resolvers and functions.
 
 ## Runtime utils list
+<a name="runtime-utils-list-js"></a>
 
-**`runtime.earlyReturn(obj?: unknown, returnOptions?:**
-**{skipTo: 'END' | 'NEXT'}): never`**
-
-Invoking this function will halt the execution of the current
-handler, AWS AppSync function or resolver (Unit or Pipeline Resolver) depending on
-the current context. The specified object is returned as the result.
-
-- When called in an AWS AppSync function request handler, the data
-source and response handler are skipped, and the next function
-request handler (or the pipeline resolver response handler if this
-was the last AWS AppSync function) is called.
-
-- When called in an AWS AppSync pipeline resolver request handler, the
-pipeline execution is skipped, and the pipeline resolver response
-handler is called immediately.
-
-- When `returnOptions` is given with `skipTo` set to "END", the pipeline execution is skipped, and the pipeline resolver response handler is called immediately.
-
-- When `returnOptions` is given with `skipTo` set to "NEXT", the function execution is skipped, and the next pipeline handler is called.
-
+ **`runtime.earlyReturn(obj?: unknown, returnOptions?: {skipTo: 'END' | 'NEXT'}): never`**
+Invoking this function will halt the execution of the current handler, AWS AppSync function or resolver (Unit or Pipeline Resolver) depending on the current context. The specified object is returned as the result.
++ When called in an AWS AppSync function request handler, the data source and response handler are skipped, and the next function request handler (or the pipeline resolver response handler if this was the last AWS AppSync function) is called.
++ When called in an AWS AppSync pipeline resolver request handler, the pipeline execution is skipped, and the pipeline resolver response handler is called immediately.
++ When `returnOptions` is given with `skipTo` set to "END", the pipeline execution is skipped, and the pipeline resolver response handler is called immediately.
++ When `returnOptions` is given with `skipTo` set to "NEXT", the function execution is skipped, and the next pipeline handler is called.
 **Example**
 
-```TypeScript
-
+```
 import { runtime } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -46,11 +32,5 @@ export function response(ctx) {
   return ctx.result
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Built-in modules
-
-Time helpers in util.time
 
 All content copied from https://docs.aws.amazon.com/.

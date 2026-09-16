@@ -3,40 +3,25 @@ title: "Defining enhanced subscriptions filters in AWS AppSync"
 ---
 
 # Defining enhanced subscriptions filters in AWS AppSync
+<a name="aws-appsync-real-time-enhanced-filtering"></a>
 
-###### Important
+**Important**
+As of Mar 13, 2025, you can build a real-time PubSub API powered by WebSockets using AWS AppSync Events. For more information, see [Publish events via WebSocket](https://docs.aws.amazon.com/appsync/latest/eventapi/publish-websocket.html) in the *AWS AppSync Events Developer Guide*.
 
-As of Mar 13, 2025, you can build a real-time PubSub API powered by WebSockets using
-AWS AppSync Events. For more information, see [Publish events via WebSocket](../eventapi/publish-websocket.md) in the _AWS AppSync Events_
-_Developer Guide_.
+In AWS AppSync, you can define and enable business logic for data filtering on the backend directly in the GraphQL API subscription resolvers by using filters that support additional logical operators. You can configure these filters, unlike the subscription arguments that are defined on the subscription query in the client. For more information about using subscription arguments, see [Using subscription arguments](aws-appsync-real-time-data.md#using-subscription-arguments). For a list of operators, see [AWS AppSync resolver mapping template utility reference](resolver-util-reference.md).
 
-In AWS AppSync, you can define and enable business logic for data filtering on the
-backend directly in the GraphQL API subscription resolvers by using filters that support
-additional logical operators. You can configure these filters, unlike the subscription
-arguments that are defined on the subscription query in the client. For more information
-about using subscription arguments, see [Using subscription arguments](aws-appsync-real-time-data.md#using-subscription-arguments). For a list of operators, see [AWS AppSync resolver mapping template utility reference](resolver-util-reference.md).
+For the purpose of this document, we divide real-time data filtering into the following categories:
++ **Basic filtering** - Filtering based on client-defined arguments in the subscription query.
++ **Enhanced filtering** - Filtering based on logic defined centrally in the AWS AppSync service backend.
 
-For the purpose of this document, we divide real-time data filtering into the
-following categories:
-
-- **Basic filtering** \- Filtering based on
-client-defined arguments in the subscription query.
-
-- **Enhanced filtering** \- Filtering based on logic
-defined centrally in the AWS AppSync service backend.
-
-The following sections explain how to configure enhanced subscription filters and show
-their practical use.
+The following sections explain how to configure enhanced subscription filters and show their practical use.
 
 ## Defining subscriptions in your GraphQL schema
+<a name="aws-appsync-real-time-enhanced-filtering-using-subscription-filters"></a>
 
-To use enhanced subscription filters, you define the subscription in the GraphQL
-schema then define the enhanced filter using a filtering extension. To illustrate
-how enhanced subscription filtering works in AWS AppSync, use the following GraphQL
-schema, which defines a ticket management system API, as an example:
+To use enhanced subscription filters, you define the subscription in the GraphQL schema then define the enhanced filter using a filtering extension. To illustrate how enhanced subscription filtering works in AWS AppSync, use the following GraphQL schema, which defines a ticket management system API, as an example:
 
-```TypeScript
-
+```
 type Ticket {
 	id: ID
 	createdAt: AWSDateTime
@@ -77,15 +62,11 @@ input TicketInput {
 	priority: Priority
 	category: String
 	group: String
-
 ```
 
-Suppose you create a `NONE` data source for your API, then attach a
-resolver to the `createTicket` mutation using this data source. Your
-handlers may look like this:
+Suppose you create a `NONE` data source for your API, then attach a resolver to the `createTicket` mutation using this data source. Your handlers may look like this:
 
-```TypeScript
-
+```
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -102,36 +83,21 @@ export function request(ctx) {
 export function response(ctx) {
 	return ctx.result;
 }
-
 ```
 
-###### Note
+**Note**
+Enhanced filters are enabled in the GraphQL resolver's handler in a given subscription. For more information, see [Resolver reference](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-js-version.html).
 
-Enhanced filters are enabled in the GraphQL resolver's handler in a given
-subscription. For more information, see [Resolver\
-reference](resolver-reference-js-version.md).
+To implement the behavior of the enhanced filter, you must use the `extensions.setSubscriptionFilter()` function to define a filter expression evaluated against published data from a GraphQL mutation that the subscribed clients might be interested in. For more information about the filtering extensions, see [Extensions](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html).
 
-To implement the behavior of the enhanced filter, you must use the
-`extensions.setSubscriptionFilter()` function to define a filter
-expression evaluated against published data from a GraphQL mutation that the
-subscribed clients might be interested in. For more information about the filtering
-extensions, see [Extensions](extensions-js.md).
-
-The following section explains how to use filtering extensions to implement
-enhanced filters.
+The following section explains how to use filtering extensions to implement enhanced filters.
 
 ## Creating enhanced subscription filters using filtering extensions
+<a name="aws-appsync-real-time-enhanced-filtering-defining-filters"></a>
 
-Enhanced filters are written in JSON in the response handler of the subscription's
-resolvers. Filters can be grouped together in a list called a
-`filterGroup`. Filters are defined using at least one rule, each with
-fields, operators, and values. Let’s define a new resolver for
-`onSpecialTicketCreated` that sets up an enhanced filter. You can
-configure multiple rules in a filter that are evaluated using AND logic, while
-multiple filters in a filter group are evaluated using OR logic:
+Enhanced filters are written in JSON in the response handler of the subscription's resolvers. Filters can be grouped together in a list called a `filterGroup`. Filters are defined using at least one rule, each with fields, operators, and values. Let’s define a new resolver for `onSpecialTicketCreated` that sets up an enhanced filter. You can configure multiple rules in a filter that are evaluated using AND logic, while multiple filters in a filter group are evaluated using OR logic:
 
-```TypeScript
-
+```
 import { util, extensions } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -153,56 +119,29 @@ export function response(ctx) {
 }
 ```
 
-Based
-on the filters defined in the preceding example, important tickets are automatically
-pushed to subscribed API clients if a ticket is created with:
+Based on the filters defined in the preceding example, important tickets are automatically pushed to subscribed API clients if a ticket is created with:
++ `priority` level `high` or `medium`
 
-- `priority` level `high` or
-`medium`
-
-AND
-
-- `severity` level greater than or equal to `7`
-( `ge`)
+  AND
++ `severity` level greater than or equal to `7` (`ge`)
 
 OR
++ `classification` ticket set to `Security`
 
-- `classification` ticket set to `Security`
+  AND
++ `group` assignment set to `admin` or `operators`
 
-AND
+![Example showing a ticket filtering query](https://docs.aws.amazon.com/appsync/latest/devguide/images/aws-priority-example.png)
 
-- `group` assignment set to `admin` or
-`operators`
+Filters defined in the subscription resolver (enhanced filtering) take precedence over filtering based only on subscription arguments (basic filtering). For more information about using subscription arguments, see [Using subscription arguments](https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-real-time-data.html#using-subscription-arguments)).
 
-![Example showing a ticket filtering query](https://docs.aws.amazon.com/images/appsync/latest/devguide/images/aws-priority-example.png)
+If an argument is defined and required in the GraphQL schema of the subscription, filtering based on the given argument takes place only if the argument is defined as a rule in the resolver's `extensions.setSubscriptionFilter()` method. However, if there are no `extensions` filtering methods in the subscription resolver, arguments defined in the client are used only for basic filtering. You can't use basic filtering and enhanced filtering concurrently.
 
-Filters defined in the subscription resolver (enhanced filtering) take precedence
-over filtering based only on subscription arguments (basic filtering). For more
-information about using subscription arguments, see [Using subscription arguments](aws-appsync-real-time-data.md#using-subscription-arguments)).
+You can use the [`context` variable](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-context-reference-js.html) in the subscription's filter extension logic to access contextual information about the request. For example, when using Amazon Cognito User Pools, OIDC, or Lambda custom authorizers for authorization, you can retrieve information about your users in `context.identity` when the subscription is established. You can use that information to establish filters based on your users’ identity.
 
-If an argument is defined and required in the GraphQL schema of the subscription,
-filtering based on the given argument takes place only if the argument is defined as
-a rule in the resolver's `extensions.setSubscriptionFilter()` method.
-However, if there are no `extensions` filtering methods in the
-subscription resolver, arguments defined in the client are used only for basic
-filtering. You can't use basic filtering and enhanced filtering concurrently.
-
-You can use the [`context` variable](resolver-context-reference-js.md) in the subscription's filter
-extension logic to access contextual information about the request. For example,
-when using Amazon Cognito User Pools, OIDC, or Lambda custom authorizers for authorization,
-you can retrieve information about your users in `context.identity` when
-the subscription is established. You can use that information to establish filters
-based on your users’ identity.
-
-Now assume that you want to implement the enhanced filter behavior for
-`onGroupTicketCreated`. The `onGroupTicketCreated`
-subscription requires a mandatory `group` name as an argument. When
-created, tickets are automatically assigned a `pending` status. You can
-set up a subscription filter to only receive newly created tickets that belong to
-the provided group:
+Now assume that you want to implement the enhanced filter behavior for `onGroupTicketCreated`. The `onGroupTicketCreated` subscription requires a mandatory `group` name as an argument. When created, tickets are automatically assigned a `pending` status. You can set up a subscription filter to only receive newly created tickets that belong to the provided group:
 
 ```
-
 import { util, extensions } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -221,7 +160,6 @@ export function response(ctx) {
 When data is published using a mutation like in the following example:
 
 ```
-
 mutation CreateTicket {
   createTicket(input: {priority: medium, severity: 2, group: "aws"}) {
     id
@@ -234,11 +172,9 @@ mutation CreateTicket {
 }
 ```
 
-Subscribed clients listen for the data to be automatically pushed via WebSockets
-as soon as a ticket is created with the `createTicket` mutation:
+Subscribed clients listen for the data to be automatically pushed via WebSockets as soon as a ticket is created with the `createTicket` mutation:
 
-```TypeScript
-
+```
 subscription OnGroup {
   onGroupTicketCreated(group: "aws") {
     category
@@ -253,18 +189,14 @@ subscription OnGroup {
 }
 ```
 
-Clients can be subscribed without arguments because the filtering logic is
-implemented in the AWS AppSync service with enhanced filtering, which simplifies the
-client code. Clients receive data only if the defined filter criteria is met.
+Clients can be subscribed without arguments because the filtering logic is implemented in the AWS AppSync service with enhanced filtering, which simplifies the client code. Clients receive data only if the defined filter criteria is met.
 
 ## Defining enhanced filters for nested schema fields
+<a name="aws-appsync-real-time-enhanced-filters-nested-schema-fields.title"></a>
 
-You can use enhanced subscription filtering to filter nested schema fields.
-Suppose we modified the schema from the previous section to include location and
-address types:
+You can use enhanced subscription filtering to filter nested schema fields. Suppose we modified the schema from the previous section to include location and address types:
 
 ```
-
 type Ticket {
 	id: ID
 	createdAt: AWSDateTime
@@ -316,13 +248,9 @@ input TicketInput {
 	location: AWSJSON
 ```
 
-With this schema, you can use a `.` separator to represent nesting. The
-following example adds a filter rule for a nested schema field under
-`location.address.country`. The subscription will be triggered if the
-ticket's address is set to `USA`:
+With this schema, you can use a `.` separator to represent nesting. The following example adds a filter rule for a nested schema field under `location.address.country`. The subscription will be triggered if the ticket's address is set to `USA`:
 
-```TypeScript
-
+```
 import { util, extensions } from '@aws-appsync/utils';
 
 export const request = (ctx) => ({ payload: null });
@@ -340,16 +268,11 @@ export function response(ctx) {
 }
 ```
 
-In the example above, `location` represents nesting level one,
-`address` represents nesting level two, and `country`
-represents nesting level three, all of which are separated by the `.`
-separator.
+In the example above, `location` represents nesting level one, `address` represents nesting level two, and `country` represents nesting level three, all of which are separated by the `.` separator.
 
-You can test this subscription by using the `createTicket`
-mutation:
+You can test this subscription by using the `createTicket` mutation:
 
 ```
-
 mutation CreateTicketInUSA {
   createTicket(input: {location: "{\"address\":{\"country\":\"USA\"}}"}) {
     category
@@ -370,18 +293,13 @@ mutation CreateTicketInUSA {
 ```
 
 ## Defining enhanced filters from the client
+<a name="aws-appsync-real-time-enhanced-filtering-defining-from-client"></a>
 
-You can use basic filtering in GraphQL with [subscriptions arguments](aws-appsync-real-time-data.md#using-subscription-arguments). The client that makes the call in the
-subscription query defines the arguments' values. When enhanced filters are enabled
-in an AWS AppSync subscription resolver with the `extensions` filtering,
-backend filters defined in the resolver take precedence and priority.
+You can use basic filtering in GraphQL with [subscriptions arguments](https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-real-time-data.html#using-subscription-arguments). The client that makes the call in the subscription query defines the arguments' values. When enhanced filters are enabled in an AWS AppSync subscription resolver with the `extensions` filtering, backend filters defined in the resolver take precedence and priority.
 
-Configure dynamic, client-defined enhanced filters using a `filter`
-argument in the subscription. When you configure these filters, you must update the
-GraphQL schema to reflect the new argument:
+Configure dynamic, client-defined enhanced filters using a `filter` argument in the subscription. When you configure these filters, you must update the GraphQL schema to reflect the new argument:
 
-```TypeScript
-
+```
 ...
 type Subscription {
     onSpecialTicketCreated(filter: String): Ticket
@@ -390,11 +308,9 @@ type Subscription {
 ...
 ```
 
-The client can then send a subscription query like in the following
-example:
+The client can then send a subscription query like in the following example:
 
-```TypeScript
-
+```
 subscription onSpecialTicketCreated($filter: String) {
      onSpecialTicketCreated(filter: $filter) {
         id
@@ -408,17 +324,13 @@ subscription onSpecialTicketCreated($filter: String) {
 
 You can configure the query variable like the following example:
 
-```TypeScript
-
+```
 {"filter" : "{\"severity\":{\"le\":2}}"}
 ```
 
-The `util.transform.toSubscriptionFilter()` resolver utility can be
-implemented in the subscription response mapping template to apply the filter
-defined in the subscription argument for each client:
+The `util.transform.toSubscriptionFilter()` resolver utility can be implemented in the subscription response mapping template to apply the filter defined in the subscription argument for each client:
 
-```TypeScript
-
+```
 import { util, extensions } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -433,34 +345,17 @@ export function response(ctx) {
 }
 ```
 
-With this strategy, clients can define their own filters that use enhanced
-filtering logic and additional operators. Filters are assigned when a given client
-invokes the subscription query in a secure WebSocket connection. For more
-information about the transform utility for enhanced filtering, including the format
-of the `filter` query variable payload, see [JavaScript\
-resolvers overview](resolver-reference-overview-js.md).
+With this strategy, clients can define their own filters that use enhanced filtering logic and additional operators. Filters are assigned when a given client invokes the subscription query in a secure WebSocket connection. For more information about the transform utility for enhanced filtering, including the format of the `filter` query variable payload, see [JavaScript resolvers overview](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-overview-js.html).
 
 ## Additional enhanced filtering restrictions
+<a name="aws-appsync-real-time-enhanced-filtering-additional-restrictions"></a>
 
-Below are
-several use cases where additional restrictions are placed on enhanced
-filters:
+Below are several use cases where additional restrictions are placed on enhanced filters:
++ Enhanced filters don't support filtering for top-level object lists. In this use case, published data from the mutation will be ignored for enhanced subscriptions.
++ AWS AppSync supports up to five levels of nesting. Filters on schema fields past nesting level five will be ignored. Take the GraphQL response below. The `continent` field in `venue.address.country.metadata.continent` is allowed because it's a level five nest. However, `financial` in `venue.address.country.metadata.capital.financial` is a level six nest, so the filter won't work:
 
-- Enhanced filters don't support filtering for top-level object lists. In
-this use case, published data from the mutation will be ignored for enhanced
-subscriptions.
-
-- AWS AppSync supports up to five levels of nesting. Filters on schema fields
-past nesting level five will be ignored. Take the GraphQL response below.
-The `continent` field in
-`venue.address.country.metadata.continent` is allowed because
-it's a level five nest. However, `financial` in
-`venue.address.country.metadata.capital.financial` is a level
-six nest, so the filter won't work:
-
-```TypeScript
-
-{
+  ```
+  {
       "data": {
           "onCreateFilterEvent": {
               "venue": {
@@ -480,14 +375,7 @@ six nest, so the filter won't work:
               "private": false,
           }
       }
-}
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating generic pub/sub APIs powered by serverless
-WebSockets
-
-Unsubscribing WebSocket connections using filters
+  }
+  ```
 
 All content copied from https://docs.aws.amazon.com/.

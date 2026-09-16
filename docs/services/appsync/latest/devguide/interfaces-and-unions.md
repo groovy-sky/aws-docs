@@ -3,28 +3,22 @@ title: "Interfaces and unions in GraphQL"
 ---
 
 # Interfaces and unions in GraphQL
+<a name="interfaces-and-unions"></a>
 
-The GraphQL type system supports [Interfaces](https://graphql.org/learn/schema).
-An interface exposes a certain set of fields that a type must include to implement the interface.
+The GraphQL type system supports [Interfaces](https://graphql.org/learn/schema/#interfaces). An interface exposes a certain set of fields that a type must include to implement the interface.
 
-The GraphQL type system also supports [Unions](https://graphql.org/learn/schema).
-Unions are identical to interfaces, except that they don’t define a common set of fields. Unions are generally
-preferred over interfaces when the possible types do not share a logical hierarchy.
+The GraphQL type system also supports [Unions](https://graphql.org/learn/schema/#union-types). Unions are identical to interfaces, except that they don’t define a common set of fields. Unions are generally preferred over interfaces when the possible types do not share a logical hierarchy.
 
 The following section is a reference for schema typing.
 
 ## Interface examples
+<a name="interfaces"></a>
 
-We could represent an `Event` interface that represents any kind of activity or gathering of
-people. Some possible event types are `Concert`, `Conference`, and `Festival`.
-These types all share common characteristics, including a name, a venue where the event is taking place, and a
-start and end date. These types also have differences; a `Conference` offers a list of speakers and
-workshops, while a `Concert` features a performing band.
+We could represent an `Event` interface that represents any kind of activity or gathering of people. Some possible event types are `Concert`, `Conference`, and `Festival`. These types all share common characteristics, including a name, a venue where the event is taking place, and a start and end date. These types also have differences; a `Conference` offers a list of speakers and workshops, while a `Concert` features a performing band.
 
 In Schema Definition Language (SDL), the `Event` interface is defined as follows:
 
-```sh
-
+```
 interface Event {
         id: ID!
         name : String!
@@ -37,8 +31,7 @@ interface Event {
 
 And each of the types implements the `Event` interface as follows:
 
-```sh
-
+```
 type Concert implements Event {
     id: ID!
     name: String!
@@ -71,12 +64,9 @@ type Conference implements Event {
 }
 ```
 
-Interfaces are useful to represent elements that might be of several types. For example, we could search for
-all events happening at a specific venue. Let’s add a `findEventsByVenue` field to the schema as
-follows:
+Interfaces are useful to represent elements that might be of several types. For example, we could search for all events happening at a specific venue. Let’s add a `findEventsByVenue` field to the schema as follows:
 
-```sh
-
+```
 schema {
     query: Query
 }
@@ -134,17 +124,11 @@ type Conference implements Event {
 }
 ```
 
-The `findEventsByVenue` returns a list of `Event`. Because GraphQL interface fields are
-common to all the implementing types, it’s possible to select any fields on the `Event` interface
-( `id`, `name`, `startsAt`, `endsAt`, `venue`, and
-`minAgeRestriction`). Additionally, you can access the fields on any implementing type using GraphQL
-[fragments](https://graphql.org/learn/queries), as long as you specify the
-type.
+The `findEventsByVenue` returns a list of `Event`. Because GraphQL interface fields are common to all the implementing types, it’s possible to select any fields on the `Event` interface (`id`, `name`, `startsAt`, `endsAt`, `venue`, and `minAgeRestriction`). Additionally, you can access the fields on any implementing type using GraphQL [fragments](https://graphql.org/learn/queries/#fragments), as long as you specify the type.
 
 Let’s examine an example of a GraphQL query that uses the interface.
 
-```sh
-
+```
 query {
   findEventsAtVenue(venueId: "Madison Square Garden") {
     id
@@ -168,11 +152,9 @@ query {
 }
 ```
 
-The previous query yields a single list of results, and the server could sort the events by start date by
-default.
+The previous query yields a single list of results, and the server could sort the events by start date by default.
 
-```sh
-
+```
 {
   "data": {
     "findEventsAtVenue": [
@@ -211,16 +193,14 @@ default.
 }
 ```
 
-Since results are returned as a single collection of events, using interfaces to represent common
-characteristics is very helpful for sorting results.
+Since results are returned as a single collection of events, using interfaces to represent common characteristics is very helpful for sorting results.
 
 ## Union examples
+<a name="unions"></a>
 
-As stated earlier, unions don't define common sets of fields. A search result might represent many different
-types. Using the `Event` schema, you can define a `SearchResult` union as follows:
+As stated earlier, unions don't define common sets of fields. A search result might represent many different types. Using the `Event` schema, you can define a `SearchResult` union as follows:
 
-```sh
-
+```
 type Query {
     # Retrieve Events at a specific Venue
     findEventsAtVenue(venueId: ID!): [Event]
@@ -233,8 +213,7 @@ union SearchResult = Conference | Festival | Concert | Venue
 
 In this case, to query any field on our `SearchResult` union, you must use fragments:
 
-```sh
-
+```
 query {
   search(query: "Madison") {
     ... on Venue {
@@ -264,29 +243,22 @@ query {
 ```
 
 ## Type resolution in AWS AppSync
+<a name="type-resolution-in-appsynclong"></a>
 
-Type resolution is the mechanism by which the GraphQL engine identifies a resolved value as a specific object
-type.
+Type resolution is the mechanism by which the GraphQL engine identifies a resolved value as a specific object type.
 
-Going back to the union search example, provided our query yielded results, each item in the results list must
-present itself as one of the possible types that the `SearchResult` union defined (that is,
-`Conference`, `Festival`, `Concert`, or `Venue`).
+Going back to the union search example, provided our query yielded results, each item in the results list must present itself as one of the possible types that the `SearchResult` union defined (that is, `Conference`, `Festival`, `Concert`, or `Venue`).
 
-Because the logic to identify a `Festival` from a `Venue` or a `Conference`
-is dependent on the application requirements, the GraphQL engine must be given a hint to identify our possible
-types from the raw results.
+Because the logic to identify a `Festival` from a `Venue` or a `Conference` is dependent on the application requirements, the GraphQL engine must be given a hint to identify our possible types from the raw results.
 
-With AWS AppSync, this hint is represented by a meta field named `__typename`, whose value
-corresponds to the identified object type name. `__typename` is required for return types that are
-interfaces or unions.
+With AWS AppSync, this hint is represented by a meta field named `__typename`, whose value corresponds to the identified object type name. `__typename` is required for return types that are interfaces or unions.
 
 ## Type resolution example
+<a name="type-resolution-example"></a>
 
-Let’s reuse the previous schema. You can follow along by navigating to the console and adding the following
-under the **Schema** page:
+Let’s reuse the previous schema. You can follow along by navigating to the console and adding the following under the **Schema** page:
 
-```sh
-
+```
 schema {
     query: Query
 }
@@ -348,16 +320,11 @@ type Concert implements Event {
 }
 ```
 
-Let’s attach a resolver to the `Query.search` field. In the `Resolvers` section, choose
-**Attach**, create a new **Data Source** of type
-_NONE_, and then name it _StubDataSource_. For the sake of this example,
-we’ll pretend we fetched results from an external source, and hard code the fetched results in the request mapping
-template.
+Let’s attach a resolver to the `Query.search` field. In the `Resolvers` section, choose **Attach**, create a new **Data Source** of type *NONE*, and then name it *StubDataSource*. For the sake of this example, we’ll pretend we fetched results from an external source, and hard code the fetched results in the request mapping template.
 
 In the request mapping template pane, enter the following:
 
-```sh
-
+```
 {
     "version" : "2018-05-29",
     "payload":
@@ -389,17 +356,12 @@ In the request mapping template pane, enter the following:
 }
 ```
 
-If the application returns the type name as part of the `id` field, the type resolution logic must
-parse the `id` field to extract the type name and then add the `__typename` field to each of
-the results. You can perform that logic in the response mapping template as follows:
+If the application returns the type name as part of the `id` field, the type resolution logic must parse the `id` field to extract the type name and then add the `__typename` field to each of the results. You can perform that logic in the response mapping template as follows:
 
-###### Note
+**Note**
+You can also perform this task as part of your Lambda function, if you are using the Lambda data source.
 
-You can also perform this task as part of your Lambda function, if you are using the Lambda data
-source.
-
-```sh
-
+```
 #foreach ($result in $context.result)
     ## Extract type name from the id field.
     #set( $typeName = $result.id.split("-")[0] )
@@ -410,8 +372,7 @@ $util.toJson($context.result)
 
 Run the following query:
 
-```sh
-
+```
 query {
   search(query: "Madison") {
     ... on Venue {
@@ -442,8 +403,7 @@ query {
 
 The query yields the following results:
 
-```sh
-
+```
 {
   "data": {
     "search": [
@@ -479,16 +439,6 @@ The query yields the following results:
 }
 ```
 
-The type resolution logic varies depending on the application. For example, you could have a different
-identifying logic that checks for the existence of certain fields or even a combination of fields. That is, you
-could detect the presence of the `performers` field to identify a `Festival` or the
-combination of the `speakers` and the `workshops` fields to identify a
-`Conference`. Ultimately, it is up to you to define the logic you want to use.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Scalar types in GraphQL
-
-Troubleshooting and common mistakes
+The type resolution logic varies depending on the application. For example, you could have a different identifying logic that checks for the existence of certain fields or even a combination of fields. That is, you could detect the presence of the `performers` field to identify a `Festival` or the combination of the `speakers` and the `workshops` fields to identify a `Conference`. Ultimately, it is up to you to define the logic you want to use.
 
 All content copied from https://docs.aws.amazon.com/.

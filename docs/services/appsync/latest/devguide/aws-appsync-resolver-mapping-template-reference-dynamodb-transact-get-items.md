@@ -3,22 +3,17 @@ title: "TransactGetItems"
 ---
 
 # TransactGetItems
+<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-transact-get-items"></a>
 
-The `TransactGetItems` request mapping document lets you to tell the AWS AppSync DynamoDB resolver to
-make a `TransactGetItems` request to DynamoDB to retrieve multiple items, potentially across multiple
-tables. For this request template, you must specify the following:
+The `TransactGetItems` request mapping document lets you to tell the AWS AppSync DynamoDB resolver to make a `TransactGetItems` request to DynamoDB to retrieve multiple items, potentially across multiple tables. For this request template, you must specify the following:
++ The table name of each request item where to retrieve the item from
++ The key of each request item to retrieve from each table
 
-- The table name of each request item where to retrieve the item from
-
-- The key of each request item to retrieve from each table
-
-The DynamoDB `TransactGetItems` limits apply and **no condition**
-**expression** can be provided.
+The DynamoDB `TransactGetItems` limits apply and **no condition expression** can be provided.
 
 The `TransactGetItems` mapping document has the following structure:
 
-```TypeScript
-
+```
 {
     "version": "2018-05-29",
     "operation": "TransactGetItems",
@@ -52,60 +47,36 @@ The `TransactGetItems` mapping document has the following structure:
 The fields are defined as follows:
 
 ## TransactGetItems fields
+<a name="TransactGetItems-list"></a>
 
-**`version`**
+### TransactGetItems fields list
+<a name="TransactGetItems-list-col"></a>
 
-The template definition version. Only `2018-05-29` is supported. This value is
-required.
+** `version` **
+The template definition version. Only `2018-05-29` is supported. This value is required.
 
-**`operation`**
+** `operation` **
+The DynamoDB operation to perform. To perform the `TransactGetItems` DynamoDB operation, this must be set to `TransactGetItems`. This value is required.
 
-The DynamoDB operation to perform. To perform the `TransactGetItems` DynamoDB
-operation, this must be set to `TransactGetItems`. This value is required.
-
-**`transactItems`**
-
-The request items to include. The value is an array of request items. At least one request
-item must be provided. This `transactItems` value is required.
-
-**`table`**
-
-The DynamoDB table to retrieve the item from. The value is a string of the table
-name. This `table` value is required.
-
-**`key`**
-
-The DynamoDB key representing the primary key of the item to
-retrieve. DynamoDB items may have a single hash key, or a hash key
-and sort key, depending on the table structure. For more
-information about how to specify a “typed value”, see [Type system (request mapping)](aws-appsync-resolver-mapping-template-reference-dynamodb-typed-values-request.md).
-
+** `transactItems` **
+The request items to include. The value is an array of request items. At least one request item must be provided. This `transactItems` value is required.
+** `table` **
+The DynamoDB table to retrieve the item from. The value is a string of the table name. This `table` value is required.
+** `key` **
+The DynamoDB key representing the primary key of the item to retrieve. DynamoDB items may have a single hash key, or a hash key and sort key, depending on the table structure. For more information about how to specify a “typed value”, see [Type system (request mapping)](aws-appsync-resolver-mapping-template-reference-dynamodb-typed-values-request.md).
 **`projection`**
-
-A projection that's used to specify the attributes to return
-from the DynamoDB operation. For more information about
-projections, see [Projections](resolver-mapping-template-reference-dynamodb.md#aws-appsync-resolver-mapping-template-reference-dynamodb-projections). This field is optional.
+A projection that's used to specify the attributes to return from the DynamoDB operation. For more information about projections, see [Projections](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference-dynamodb.html#aws-appsync-resolver-mapping-template-reference-dynamodb-projections). This field is optional.
 
 Things to remember:
-
-- If a transaction succeeds, the order of retrieved items in the `items` block will be the
-same as the order of request items.
-
-- Transactions are performed in an all-or-nothing way. If any request item causes an error, the whole
-transaction will not be performed and error details will be returned.
-
-- A request item being unable to be retrieved is not an error. Instead, a _null_ element appears in the _items_ block in the corresponding position.
-
-- If the error of a transaction is _TransactionCanceledException_, the `cancellationReasons` block will be
-populated. The order of cancellation reasons in `cancellationReasons` block will be the same
-as the order of request items.
-
-- `TransactGetItems` is limited to 100 request items.
++ If a transaction succeeds, the order of retrieved items in the `items` block will be the same as the order of request items.
++ Transactions are performed in an all-or-nothing way. If any request item causes an error, the whole transaction will not be performed and error details will be returned.
++ A request item being unable to be retrieved is not an error. Instead, a *null* element appears in the *items* block in the corresponding position.
++ If the error of a transaction is *TransactionCanceledException*, the `cancellationReasons` block will be populated. The order of cancellation reasons in `cancellationReasons` block will be the same as the order of request items.
++  `TransactGetItems` is limited to 100 request items.
 
 For the following example request mapping template:
 
-```TypeScript
-
+```
 {
     "version": "2018-05-29",
     "operation": "TransactGetItems",
@@ -132,11 +103,9 @@ For the following example request mapping template:
 }
 ```
 
-If the transaction succeeds and only the first requested item is retrieved, the invocation result available
-in `$ctx.result` is as follows:
+If the transaction succeeds and only the first requested item is retrieved, the invocation result available in `$ctx.result` is as follows:
 
-```TypeScript
-
+```
 {
     "items": [
        {
@@ -152,12 +121,9 @@ in `$ctx.result` is as follows:
 }
 ```
 
-If the transaction fails due to _TransactionCanceledException_
-caused by the first request item, the invocation result available in `$ctx.result` is as
-follows:
+If the transaction fails due to *TransactionCanceledException* caused by the first request item, the invocation result available in `$ctx.result` is as follows:
 
-```TypeScript
-
+```
 {
     "items": null,
     "cancellationReasons": [
@@ -173,17 +139,8 @@ follows:
 }
 ```
 
-The `$ctx.error` contains details about the error. The keys **items** and **cancellationReasons** are guaranteed to be present in
-`$ctx.result`.
+The `$ctx.error` contains details about the error. The keys **items** and **cancellationReasons** are guaranteed to be present in `$ctx.result`.
 
-For a more complete example, follow the DynamoDB Transaction tutorial with AppSync here
-[Tutorial: DynamoDB transaction\
-resolvers](tutorial-dynamodb-transact.md#aws-appsync-tutorial-dynamodb-transact).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BatchPutItem
-
-TransactWriteItems
+For a more complete example, follow the DynamoDB Transaction tutorial with AppSync here [Tutorial: DynamoDB transaction resolvers](tutorial-dynamodb-transact.md#aws-appsync-tutorial-dynamodb-transact).
 
 All content copied from https://docs.aws.amazon.com/.

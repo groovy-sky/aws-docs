@@ -3,31 +3,23 @@ title: "Using AWS Lambda resolvers in AWS AppSync"
 ---
 
 # Using AWS Lambda resolvers in AWS AppSync
+<a name="tutorial-lambda-resolvers-js"></a>
 
-You can use AWS Lambda with AWS AppSync to resolve any GraphQL field. For example, a GraphQL
-query might send a call to an Amazon Relational Database Service (Amazon RDS) instance, and a GraphQL mutation might write
-to an Amazon Kinesis stream. In this section, we'll show you how to write a Lambda function that
-performs business logic based on the invocation of a GraphQL field operation.
+You can use AWS Lambda with AWS AppSync to resolve any GraphQL field. For example, a GraphQL query might send a call to an Amazon Relational Database Service (Amazon RDS) instance, and a GraphQL mutation might write to an Amazon Kinesis stream. In this section, we'll show you how to write a Lambda function that performs business logic based on the invocation of a GraphQL field operation.
 
 ## Powertools for AWS Lambda
+<a name="powertools-graphql"></a>
 
-The Powertools for AWS Lambda GraphQL event handler simplifies the routing and
-processing of GraphQL events in Lambda functions. It is available for Python and
-Typescript. Read more about about the GraphQL API Event Handler on the Powertools for
-AWS Lambda documentation, see the following references.
-
-- [Powertools for AWS Lambda GraphQL Event Handler (Python)](../../../powertools/python/latest/core/event-handler/appsync.md)
-
-- [Powertools for AWS Lambda GraphQL Event Handler (Typescript)](../../../powertools/typescript/latest/features/event-handler/appsync-graphql.md)
+The Powertools for AWS Lambda GraphQL event handler simplifies the routing and processing of GraphQL events in Lambda functions. It is available for Python and Typescript. Read more about about the GraphQL API Event Handler on the Powertools for AWS Lambda documentation, see the following references.
++ [Powertools for AWS Lambda GraphQL Event Handler (Python) ](https://docs.aws.amazon.com/powertools/python/latest/core/event_handler/appsync/)
++ [Powertools for AWS Lambda GraphQL Event Handler (Typescript)](https://docs.aws.amazon.com/powertools/typescript/latest/features/event-handler/appsync-graphql/)
 
 ## Create a Lambda function
+<a name="create-a-lam-function-js"></a>
 
-The following example shows a Lambda function written in `Node.js` (runtime: Node.js 18.x) that
-performs different operations on blog posts as part of a blog post application. Note that the code should be
-saved in a file name with a .mis extension.
+The following example shows a Lambda function written in `Node.js` (runtime: Node.js 18.x) that performs different operations on blog posts as part of a blog post application. Note that the code should be saved in a file name with a .mis extension.
 
-```javascript
-
+```
 export const handler = async (event) => {
 console.log('Received event {}', JSON.stringify(event, 3))
 
@@ -71,35 +63,28 @@ return result
 }
 ```
 
-This Lambda function retrieves a post by ID, adds a post, retrieves a list of posts, and fetches related
-posts for a given post.
+This Lambda function retrieves a post by ID, adds a post, retrieves a list of posts, and fetches related posts for a given post.
 
-###### Note
-
-The Lambda function uses the `switch` statement on `event.field` to determine
-which field is currently being resolved.
+**Note**
+The Lambda function uses the `switch` statement on `event.field` to determine which field is currently being resolved.
 
 Create this Lambda function using the AWS Management Console.
 
 ## Configure a data source for Lambda
+<a name="configure-data-source-for-lamlong-js"></a>
 
-After you create the Lambda function, navigate to your GraphQL API in the AWS AppSync
-console, and then choose the **Data Sources** tab.
+After you create the Lambda function, navigate to your GraphQL API in the AWS AppSync console, and then choose the **Data Sources** tab.
 
-Choose **Create data source**, enter a friendly **Data source name**
-(for example, `Lambda`), and then for **Data source type**, choose
-**AWS Lambda function**. For **Region**, choose the same Region as your
-function. For **Function ARN**, choose the Amazon Resource Name (ARN) of your Lambda
-function.
+Choose **Create data source**, enter a friendly **Data source name** (for example, **Lambda**), and then for **Data source type**, choose **AWS Lambda function**. For **Region**, choose the same Region as your function. For **Function ARN**, choose the Amazon Resource Name (ARN) of your Lambda function.
 
-After choosing your Lambda function, you can either create a new AWS Identity and Access Management (IAM) role
-(for which AWS AppSync assigns the appropriate permissions) or choose an existing role
-that has the following inline policy:
+After choosing your Lambda function, you can either create a new AWS Identity and Access Management (IAM) role (for which AWS AppSync assigns the appropriate permissions) or choose an existing role that has the following inline policy:
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -112,16 +97,18 @@ JSON
         }
     ]
 }
-
 ```
 
-You must also set up a trust relationship with AWS AppSync for the IAM role as
-follows:
+------
 
-JSON
+You must also set up a trust relationship with AWS AppSync for the IAM role as follows:
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -134,19 +121,18 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## Create a GraphQL schema
+<a name="creating-a-graphql-schema-js"></a>
 
-Now that the data source is connected to your Lambda function, create a GraphQL
-schema.
+Now that the data source is connected to your Lambda function, create a GraphQL schema.
 
-From the schema editor in the AWS AppSync console, make sure that your schema matches
-the following schema:
+From the schema editor in the AWS AppSync console, make sure that your schema matches the following schema:
 
-```sh
-
+```
 schema {
     query: Query
     mutation: Mutation
@@ -171,25 +157,17 @@ type Post {
 ```
 
 ## Configure resolvers
+<a name="configuring-resolvers-js"></a>
 
-Now that you've registered a Lambda data source and a valid GraphQL schema, you can
-connect your GraphQL fields to your Lambda data source using resolvers.
+Now that you've registered a Lambda data source and a valid GraphQL schema, you can connect your GraphQL fields to your Lambda data source using resolvers.
 
-You will create a resolver that uses the AWS AppSync JavaScript ( `APPSYNC_JS`) runtime and
-interact with your Lambda functions. To learn more about writing AWS AppSync resolvers and functions with
-JavaScript, see [JavaScript runtime features for resolvers and functions](resolver-util-reference-js.md).
+You will create a resolver that uses the AWS AppSync JavaScript (`APPSYNC_JS`) runtime and interact with your Lambda functions. To learn more about writing AWS AppSync resolvers and functions with JavaScript, see [JavaScript runtime features for resolvers and functions](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-util-reference-js.html).
 
-For more information about Lambda mapping templates, see [JavaScript resolver function reference for Lambda](resolver-reference-lambda-js.md).
+For more information about Lambda mapping templates, see [JavaScript resolver function reference for Lambda](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-lambda-js.html).
 
-In this step, you attach a resolver to the Lambda function for the following fields: `getPost(id:ID!):
-                Post`, `allPosts: [Post]`, `addPost(id: ID!, author: String!, title: String,
-                content: String, url: String): Post!`, and `Post.relatedPosts: [Post]`. From the
-**Schema** editor in the AWS AppSync console, in the **Resolvers** pane, choose **Attach** next to the
-`getPost(id:ID!): Post` field. Choose your Lambda data source. Next, provide the following
-code:
+In this step, you attach a resolver to the Lambda function for the following fields: `getPost(id:ID!): Post`, `allPosts: [Post]`, `addPost(id: ID!, author: String!, title: String, content: String, url: String): Post!`, and `Post.relatedPosts: [Post]`. From the **Schema** editor in the AWS AppSync console, in the **Resolvers** pane, choose **Attach** next to the `getPost(id:ID!): Post` field. Choose your Lambda data source. Next, provide the following code:
 
 ```
-
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -205,22 +183,21 @@ export function response(ctx) {
 }
 ```
 
-This resolver code passes the field name, list of arguments, and context about the source object to the
-Lambda function when it invokes it. Choose **Save**.
+This resolver code passes the field name, list of arguments, and context about the source object to the Lambda function when it invokes it. Choose **Save**.
 
 You have successfully attached your first resolver. Repeat this operation for the remaining fields.
 
 ## Test your GraphQL API
+<a name="testing-your-graphql-api-js"></a>
 
-Now that your Lambda function is connected to GraphQL resolvers, you can run some
-mutations and queries using the console or a client application.
+Now that your Lambda function is connected to GraphQL resolvers, you can run some mutations and queries using the console or a client application.
 
 On the left side of the AWS AppSync console, choose **Queries**, and then paste in the following code:
 
 ### addPost Mutation
+<a name="addpost-mutation-js"></a>
 
-```sh
-
+```
 mutation AddPost {
     addPost(
         id: 6
@@ -241,9 +218,9 @@ mutation AddPost {
 ```
 
 ### getPost Query
+<a name="getpost-query-js"></a>
 
-```sh
-
+```
 query GetPost {
     getPost(id: "2") {
         id
@@ -258,9 +235,9 @@ query GetPost {
 ```
 
 ### allPosts Query
+<a name="allposts-query-js"></a>
 
-```sh
-
+```
 query AllPosts {
     allPosts {
         id
@@ -279,26 +256,20 @@ query AllPosts {
 ```
 
 ## Returning errors
+<a name="returning-errors-js"></a>
 
-Any given field resolution can result in an error. With AWS AppSync, you can raise
-errors from the following sources:
-
-- Resolver response handler
-
-- Lambda function
+Any given field resolution can result in an error. With AWS AppSync, you can raise errors from the following sources:
++ Resolver response handler
++ Lambda function
 
 ### From the resolver response handler
+<a name="from-the-resolver-response-handler-js"></a>
 
-To raise intentional errors, you can use the `util.error` utility method. It takes an
-argument an `errorMessage`, an `errorType`, and an optional `data`
-value. The `data` is useful for returning extra data back to the client when an error occurs.
-The `data` object is added to the `errors` in the GraphQL final response.
+To raise intentional errors, you can use the `util.error` utility method. It takes an argument an `errorMessage`, an `errorType`, and an optional `data` value. The `data` is useful for returning extra data back to the client when an error occurs. The `data` object is added to the `errors` in the GraphQL final response.
 
-The following example shows how to use it in the `Post.relatedPosts: [Post]` resolver
-response handler.
+The following example shows how to use it in the `Post.relatedPosts: [Post]` resolver response handler.
 
-```sh
-
+```
 // the Post.relatedPosts response handler
 export function response(ctx) {
     util.error("Failed to fetch relatedPosts", "LambdaFailure", ctx.result)
@@ -308,8 +279,7 @@ export function response(ctx) {
 
 This yields a GraphQL response similar to the following:
 
-```json
-
+```
 {
     "data": {
         "allPosts": [
@@ -351,39 +321,28 @@ This yields a GraphQL response similar to the following:
 }
 ```
 
-Where `allPosts[0].relatedPosts` is _null_ because of the error and the `errorMessage`,
-`errorType`, and `data` are present in the
-`data.errors[0]` object.
+Where `allPosts[0].relatedPosts` is *null* because of the error and the `errorMessage`, `errorType`, and `data` are present in the `data.errors[0]` object.
 
 ### From the Lambda function
+<a name="from-the-lam-function-js"></a>
 
-AWS AppSync also understands errors that the Lambda function throws. The Lambda programming model lets you
-raise _handled_ errors. If the Lambda function throws an error,
-AWS AppSync fails to resolve the current field. Only the error message returned from Lambda is set in the
-response. Currently, you can't pass any extraneous data back to the client by raising an error from the
-Lambda function.
+AWS AppSync also understands errors that the Lambda function throws. The Lambda programming model lets you raise *handled* errors. If the Lambda function throws an error, AWS AppSync fails to resolve the current field. Only the error message returned from Lambda is set in the response. Currently, you can't pass any extraneous data back to the client by raising an error from the Lambda function.
 
-###### Note
-
-If your Lambda function raises an _unhandled_ error,
-AWS AppSync uses the error message that Lambda set.
+**Note**
+If your Lambda function raises an *unhandled* error, AWS AppSync uses the error message that Lambda set.
 
 The following Lambda function raises an error:
 
-```javascript
-
+```
 export const handler = async (event) => {
   console.log('Received event {}', JSON.stringify(event, 3))
   throw new Error('I always fail.')
 }
 ```
 
-The error is received in your response handler. You can send it back in the GraphQL response by
-appending the error to the response with `util.appendError`. To do so, change your AWS AppSync
-function response handler to this:
+The error is received in your response handler. You can send it back in the GraphQL response by appending the error to the response with `util.appendError`. To do so, change your AWS AppSync function response handler to this:
 
-```json
-
+```
 // the lambdaInvoke response handler
 export function response(ctx) {
   const { error, result } = ctx;
@@ -397,7 +356,6 @@ export function response(ctx) {
 This returns a GraphQL response similar to the following:
 
 ```
-
 {
   "data": {
     "allPosts": null
@@ -424,16 +382,11 @@ This returns a GraphQL response similar to the following:
 ```
 
 ## Advanced use case: Batching
+<a name="advanced-use-case-batching-js"></a>
 
-The Lambda function in this example has a `relatedPosts` field that returns
-a list of related posts for a given post. In the example queries, the
-`allPosts` field invocation from the Lambda function returns five posts.
-Because we specified that we also want to resolve `relatedPosts` for each
-returned post, the `relatedPosts` field operation is invoked five
-times.
+The Lambda function in this example has a `relatedPosts` field that returns a list of related posts for a given post. In the example queries, the `allPosts` field invocation from the Lambda function returns five posts. Because we specified that we also want to resolve `relatedPosts` for each returned post, the `relatedPosts` field operation is invoked five times.
 
-```sh
-
+```
 query {
     allPosts {   // 1 Lambda invocation - yields 5 Posts
         id
@@ -451,15 +404,11 @@ query {
 }
 ```
 
-While this might not sound substantial in this specific example, this compounded
-over-fetching can quickly undermine the application.
+While this might not sound substantial in this specific example, this compounded over-fetching can quickly undermine the application.
 
-If you were to fetch `relatedPosts` again on the returned related
-`Posts` in the same query, the number of invocations would increase
-dramatically.
+If you were to fetch `relatedPosts` again on the returned related `Posts` in the same query, the number of invocations would increase dramatically.
 
-```sh
-
+```
 query {
     allPosts {   // 1 Lambda invocation - yields 5 Posts
         id
@@ -482,21 +431,15 @@ query {
 }
 ```
 
-In this relatively simple query, AWS AppSync would invoke the Lambda function 1 + 5 + 25
-= 31 times.
+In this relatively simple query, AWS AppSync would invoke the Lambda function 1 \+ 5 \+ 25 = 31 times.
 
-This is a fairly common challenge and is often called the N+1 problem (in this case, N
-= 5), and it can incur increased latency and cost to the application.
+This is a fairly common challenge and is often called the N\+1 problem (in this case, N = 5), and it can incur increased latency and cost to the application.
 
-One approach to solving this issue is to batch similar field resolver requests
-together. In this example, instead of having the Lambda function resolve a list of
-related posts for a single given post, it could instead resolve a list of related posts
-for a given batch of posts.
+One approach to solving this issue is to batch similar field resolver requests together. In this example, instead of having the Lambda function resolve a list of related posts for a single given post, it could instead resolve a list of related posts for a given batch of posts.
 
 To demonstrate this, let's update the resolver for `relatedPosts` to handle batching.
 
-```sh
-
+```
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -516,16 +459,11 @@ export function response(ctx) {
 }
 ```
 
-The code now changes the operation from `Invoke` to `BatchInvoke` when the
-`fieldName` being resolved is `relatedPosts`. Now, enable batching on the function
-in the **Configure Batching** section. Set the maximum batching size set to
-`5`. Choose **Save**.
+The code now changes the operation from `Invoke` to `BatchInvoke` when the `fieldName` being resolved is `relatedPosts`. Now, enable batching on the function in the **Configure Batching** section. Set the maximum batching size set to `5`. Choose **Save**.
 
-With this change, when resolving `relatedPosts`, the Lambda function receives the following as
-input:
+With this change, when resolving `relatedPosts`, the Lambda function receives the following as input:
 
-```sh
-
+```
 [
     {
         "field": "relatedPosts",
@@ -543,17 +481,13 @@ input:
 ]
 ```
 
-When `BatchInvoke` is specified in the request, the Lambda function receives a list of requests
-and returns a list of results.
+When `BatchInvoke` is specified in the request, the Lambda function receives a list of requests and returns a list of results.
 
-Specifically, the list of results must match the size and order of the request payload
-entries so that AWS AppSync can match the results accordingly.
+Specifically, the list of results must match the size and order of the request payload entries so that AWS AppSync can match the results accordingly.
 
-In this batching example, the Lambda function returns a batch of results as
-follows:
+In this batching example, the Lambda function returns a batch of results as follows:
 
-```sh
-
+```
 [
     [{"id":"2","title":"Second book"}, {"id":"3","title":"Third book"}],   // relatedPosts for id=1
     [{"id":"3","title":"Third book"}]                                     // relatedPosts for id=2
@@ -562,8 +496,7 @@ follows:
 
 You can update your Lambda code to handle batching for `relatedPosts`:
 
-```sh
-
+```
 export const handler = async (event) => {
   console.log('Received event {}', JSON.stringify(event, 3))
   //throw new Error('I fail. always')
@@ -614,24 +547,15 @@ export const handler = async (event) => {
 ```
 
 ### Returning individual errors
+<a name="returning-individual-errors-js"></a>
 
-The previous examples show that it's possible to return a single error from the Lambda function or
-raise an error from your response handler. For batched invocations, raising an error from the Lambda
-function flags an entire batch as failed. This might be acceptable for specific scenarios where an
-irrecoverable error occurs, such as a failed connection to a data store. However, in cases where some
-items in the batch succeed and others fail, it's possible to return both errors and valid data. Because
-AWS AppSync requires the batch response to list elements matching the original size of the batch, you must
-define a data structure that can differentiate valid data from an error.
+The previous examples show that it's possible to return a single error from the Lambda function or raise an error from your response handler. For batched invocations, raising an error from the Lambda function flags an entire batch as failed. This might be acceptable for specific scenarios where an irrecoverable error occurs, such as a failed connection to a data store. However, in cases where some items in the batch succeed and others fail, it's possible to return both errors and valid data. Because AWS AppSync requires the batch response to list elements matching the original size of the batch, you must define a data structure that can differentiate valid data from an error.
 
-For example, if the Lambda function is expected to return a batch of related posts,
-you could choose to return a list of `Response` objects where each object
-has optional _data_, _errorMessage_, and _errorType_ fields. If the _errorMessage_ field is present, it means that
-an error occurred.
+For example, if the Lambda function is expected to return a batch of related posts, you could choose to return a list of `Response` objects where each object has optional *data*, *errorMessage*, and *errorType* fields. If the *errorMessage* field is present, it means that an error occurred.
 
 The following code shows how you could update the Lambda function:
 
-```javascript
-
+```
 export const handler = async (event) => {
 console.log('Received event {}', JSON.stringify(event, 3))
   // throw new Error('I fail. always')
@@ -689,7 +613,6 @@ return result
 Update the `relatedPosts` resolver code:
 
 ```
-
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -714,14 +637,9 @@ export function response(ctx) {
 }
 ```
 
-The response handler now checks for errors returned by the Lambda function on `Invoke`
-operations, checks for errors returned for individual items for `BatchInvoke` operations, and
-finally checks the `fieldName`. For `relatedPosts`, the function returns
-`result.data`. For all other fields, the function just returns `result`. For
-example, see the query below:
+The response handler now checks for errors returned by the Lambda function on `Invoke` operations, checks for errors returned for individual items for `BatchInvoke` operations, and finally checks the `fieldName`. For `relatedPosts`, the function returns `result.data`. For all other fields, the function just returns `result`. For example, see the query below:
 
 ```
-
 query AllPosts {
   allPosts {
     id
@@ -741,7 +659,6 @@ query AllPosts {
 This query returns a GraphQL response similar to the following:
 
 ```
-
 {
   "data": {
     "allPosts": [
@@ -809,12 +726,11 @@ This query returns a GraphQL response similar to the following:
 ```
 
 ### Configuring the maximum batching size
+<a name="configure-max-batch-size-js"></a>
 
-To configure the maximum batching size on a resolver, use the following command in
-the AWS Command Line Interface (AWS CLI):
+To configure the maximum batching size on a resolver, use the following command in the AWS Command Line Interface (AWS CLI):
 
 ```
-
 $ aws appsync create-resolver --api-id <api-id> --type-name Query --field-name relatedPosts \
  --code "<code-goes-here>" \
  --runtime name=APPSYNC_JS,runtimeVersion=1.0.0 \
@@ -822,15 +738,7 @@ $ aws appsync create-resolver --api-id <api-id> --type-name Query --field-name r
  --max-batch-size X
 ```
 
-###### Note
-
-When providing a request mapping template, you must use the
-`BatchInvoke` operation to use batching.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating a simple post application using DynamoDB JavaScript resolvers
-
-Using local resolvers
+**Note**
+When providing a request mapping template, you must use the `BatchInvoke` operation to use batching.
 
 All content copied from https://docs.aws.amazon.com/.

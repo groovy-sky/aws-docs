@@ -3,14 +3,8 @@ title: "Managing components"
 ---
 
 # Managing components
+<a name="adding-editing-deleting-components"></a>
 
-Use the following procedures to add, edit, and delete components in or from pages in the App Studio application studio
-to craft the desired user interface for your application.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Deleting a page
-
-Adding components to a page
+Use the following procedures to add, edit, and delete components in or from pages in the App Studio application studio to craft the desired user interface for your application.
 
 All content copied from https://docs.aws.amazon.com/.

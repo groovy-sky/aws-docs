@@ -3,161 +3,152 @@ title: "Creating a simple post application using DynamoDB resolvers"
 ---
 
 # Creating a simple post application using DynamoDB resolvers
+<a name="tutorial-dynamodb-resolvers"></a>
 
-###### Note
+**Note**
+We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS runtime and its guides [here](https://docs.aws.amazon.com/appsync/latest/devguide/tutorials-js.html).
 
-We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS
-runtime and its guides [here](tutorials-js.md).
+This tutorial shows how you can bring your own Amazon DynamoDB tables to AWS AppSync and connect them to a GraphQL API.
 
-This tutorial shows how you can bring your own Amazon DynamoDB tables to AWS AppSync and connect
-them to a GraphQL API.
+You can let AWS AppSync provision DynamoDB resources on your behalf. Or, if you prefer, you can connect your existing tables to a GraphQL schema by creating a data source and a resolver. In either case, you’ll be able to read and write to your DynamoDB database through GraphQL statements and subscribe to real-time data.
 
-You can let AWS AppSync provision DynamoDB resources on your behalf. Or, if you prefer, you can connect your existing
-tables to a GraphQL schema by creating a data source and a resolver. In either case, you’ll be able to read and
-write to your DynamoDB database through GraphQL statements and subscribe to real-time data.
-
-There are specific configuration steps that need to be completed in order for GraphQL statements to be
-translated to DynamoDB operations, and for responses to be translated back into GraphQL. This tutorial outlines the
-configuration process through several real-world scenarios and data access patterns.
+There are specific configuration steps that need to be completed in order for GraphQL statements to be translated to DynamoDB operations, and for responses to be translated back into GraphQL. This tutorial outlines the configuration process through several real-world scenarios and data access patterns.
 
 ## Setting up your DynamoDB tables
+<a name="setting-up-your-ddb-tables"></a>
 
 To begin this tutorial, first you need to follow the steps below to provision AWS resources.
 
 1. Provision AWS resources using the following AWS CloudFormation template in the CLI:
 
-```sh
-
-aws cloudformation create-stack \
+   ```
+   aws cloudformation create-stack \
        --stack-name AWSAppSyncTutorialForAmazonDynamoDB \
        --template-url https://s3.us-west-2.amazonaws.com/awsappsync/resources/dynamodb/AmazonDynamoDBCFTemplate.yaml \
        --capabilities CAPABILITY_NAMED_IAM
-```
+   ```
 
-Alternatively, you can launch the following CloudFormation stack in the US-West 2 (Oregon) region in your AWS
-    account.
+   Alternatively, you can launch the following CloudFormation stack in the US-West 2 (Oregon) region in your AWS account.
 
-[![Blue button labeled "Launch Stack" with an arrow icon indicating an action to start.](https://docs.aws.amazon.com/images/appsync/latest/devguide/images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2)
+   [![Blue button labeled "Launch Stack" with an arrow icon indicating an action to start.](https://docs.aws.amazon.com/appsync/latest/devguide/images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?templateURL=https://s3.us-west-2.amazonaws.com/awsappsync/resources/dynamodb/AmazonDynamoDBCFTemplate.yaml)
 
-This creates the following:
+   This creates the following:
+   + A DynamoDB table called `AppSyncTutorial-Post` that will hold `Post` data.
+   + An IAM role and associated IAM managed policy to allow AWS AppSync to interact with the `Post` table.
 
-- A DynamoDB table called `AppSyncTutorial-Post` that will hold `Post` data.
+1. To see more details about the stack and the created resources, run the following CLI command:
 
-- An IAM role and associated IAM managed policy to allow AWS AppSync to interact with the
-`Post` table.
+   ```
+   aws cloudformation describe-stacks --stack-name AWSAppSyncTutorialForAmazonDynamoDB
+   ```
 
-2. To see more details about the stack and the created resources, run the following CLI command:
+1. To delete the resources later, you can run the following:
 
-```sh
-
-aws cloudformation describe-stacks --stack-name AWSAppSyncTutorialForAmazonDynamoDB
-```
-
-3. To delete the resources later, you can run the following:
-
-```sh
-
-aws cloudformation delete-stack --stack-name AWSAppSyncTutorialForAmazonDynamoDB
-```
+   ```
+   aws cloudformation delete-stack --stack-name AWSAppSyncTutorialForAmazonDynamoDB
+   ```
 
 ## Creating your GraphQL API
+<a name="creating-your-graphql-api"></a>
 
 To create the GraphQL API in AWS AppSync:
 
-1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync).
-1. In the **APIs dashboard**, choose **Create**
-      **API**.
-2. Under the **Customize your API or import from Amazon DynamoDB** window,
-    choose **Build from scratch**.
-1. Choose **Start** to the right of the same window.
-3. In the **API name** field, set the name of the API to
-    `AWSAppSyncTutorial`.
+1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync/).
 
-4. Choose **Create**.
+   1. In the **APIs dashboard**, choose **Create API**.
 
-The AWS AppSync console creates a new GraphQL API for you using the API key authentication mode. You can use the
-console to set up the rest of the GraphQL API and run queries against it for the rest of this tutorial.
+1. Under the **Customize your API or import from Amazon DynamoDB** window, choose **Build from scratch**.
+
+   1. Choose **Start** to the right of the same window.
+
+1. In the **API name** field, set the name of the API to `AWSAppSyncTutorial`.
+
+1. Choose **Create**.
+
+The AWS AppSync console creates a new GraphQL API for you using the API key authentication mode. You can use the console to set up the rest of the GraphQL API and run queries against it for the rest of this tutorial.
 
 ## Defining a basic post API
+<a name="defining-a-basic-post-api"></a>
 
-Now that you have created an AWS AppSync GraphQL API, you can set up a basic schema that allows the basic
-creation, retrieval, and deletion of post data.
+Now that you have created an AWS AppSync GraphQL API, you can set up a basic schema that allows the basic creation, retrieval, and deletion of post data.
 
-1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync).
-1. In the **APIs dashboard**, choose the API you just created.
-2. In the **Sidebar**, choose **Schema**.
-1. In the **Schema** pane, replace the contents with the following
-       code:
+1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync/).
 
-      ```nohighlight
+   1. In the **APIs dashboard**, choose the API you just created.
 
-      schema {
-          query: Query
-          mutation: Mutation
-      }
+1. In the **Sidebar**, choose **Schema**.
 
-      type Query {
-          getPost(id: ID): Post
-      }
+   1. In the **Schema** pane, replace the contents with the following code:
 
-      type Mutation {
-          addPost(
-              id: ID!
-              author: String!
-              title: String!
-              content: String!
-              url: String!
-          ): Post!
-      }
+     ```
+     schema {
+         query: Query
+         mutation: Mutation
+     }
 
-      type Post {
-          id: ID!
-          author: String
-          title: String
-          content: String
-          url: String
-          ups: Int!
-          downs: Int!
-          version: Int!
-      }
-      ```
-3. Choose **Save**.
+     type Query {
+         getPost(id: ID): Post
+     }
+
+     type Mutation {
+         addPost(
+             id: ID!
+             author: String!
+             title: String!
+             content: String!
+             url: String!
+         ): Post!
+     }
+
+     type Post {
+         id: ID!
+         author: String
+         title: String
+         content: String
+         url: String
+         ups: Int!
+         downs: Int!
+         version: Int!
+     }
+     ```
+
+1. Choose **Save**.
 
 This schema defines a `Post` type and operations to add and get `Post` objects.
 
 ## Configuring the Data Source for the DynamoDB Tables
+<a name="configuring-the-data-source-for-the-ddb-tables"></a>
 
-Next, link the queries and mutations defined in the schema to the `AppSyncTutorial-Post` DynamoDB
-table.
+Next, link the queries and mutations defined in the schema to the `AppSyncTutorial-Post`DynamoDB table.
 
-First, AWS AppSync needs to be aware of your tables. You do this by setting up a data source in
-AWS AppSync:
+First, AWS AppSync needs to be aware of your tables. You do this by setting up a data source in AWS AppSync:
 
-1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync).
-1. In the **APIs dashboard**, choose your GraphQL API.
+1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync/).
 
-2. In the **Sidebar**, choose **Data**
-      **Sources**.
-2. Choose **Create data source**.
-1. For **Data source name**, enter in `PostDynamoDBTable`.
+   1. In the **APIs dashboard**, choose your GraphQL API.
 
-2. For **Data source type**, choose **Amazon DynamoDB**
-      **table**.
+   1. In the **Sidebar**, choose **Data Sources**.
 
-3. For **Region**, choose **US-WEST-2**.
+1. Choose **Create data source**.
 
-4. For **Table name**, choose the **AppSyncTutorial-Post** DynamoDB table.
+   1. For **Data source name**, enter in `PostDynamoDBTable`.
 
-5. Create
-       a new IAM role (recommended) or choose an existing role that has the `lambda:invokeFunction`
-       IAM permission. Existing roles need a trust policy, as explained in the [Attaching a data source](attaching-a-data-source.md) section.
+   1. For **Data source type**, choose **Amazon DynamoDB table**.
 
-      The following is an example IAM policy that has the required permissions to perform operations on the
-       resource:
-      JSON
+   1. For **Region**, choose **US-WEST-2**.
 
-      ```json
+   1. For **Table name**, choose the **AppSyncTutorial-Post** DynamoDB table.
 
+   1. Create a new IAM role (recommended) or choose an existing role that has the `lambda:invokeFunction` IAM permission. Existing roles need a trust policy, as explained in the [Attaching a data source](attaching-a-data-source.md) section.
+
+      The following is an example IAM policy that has the required permissions to perform operations on the resource:
+
+------
+#### [ JSON ]
+
+****
+
+      ```
       {
            "Version":"2012-10-17",
            "Statement": [
@@ -171,155 +162,124 @@ AWS AppSync:
                }
            ]
        }
-
       ```
-3. Choose **Create**.
+
+------
+
+1. Choose **Create**.
 
 ## Setting up the addPost resolver (DynamoDB PutItem)
+<a name="setting-up-the-addpost-resolver-dynamodb-putitem"></a>
 
-After AWS AppSync is aware of the DynamoDB table, you can link it to individual queries and mutations by defining
-**Resolvers**. The first resolver you create is the `addPost` resolver,
-which enables you to create a post in the `AppSyncTutorial-Post` DynamoDB table.
+After AWS AppSync is aware of the DynamoDB table, you can link it to individual queries and mutations by defining **Resolvers**. The first resolver you create is the `addPost` resolver, which enables you to create a post in the `AppSyncTutorial-Post` DynamoDB table.
 
 A resolver has the following components:
-
-- The location in the GraphQL schema to attach the resolver. In this case, you are setting up a resolver on
-the `addPost` field on the `Mutation` type. This resolver will be invoked when the
-caller calls `mutation { addPost(...){...} }`.
-
-- The data source to use for this resolver. In this case, you want to use the `PostDynamoDBTable`
-data source you defined earlier, so you can add entries into the `AppSyncTutorial-Post` DynamoDB
-table.
-
-- The request mapping template. The purpose of the request mapping template is to take the incoming request
-from the caller and translate it into instructions for AWS AppSync to perform against DynamoDB.
-
-- The response mapping template. The job of the response mapping template is to take the response from DynamoDB
-and translate it back into something that GraphQL expects. This is useful if the shape of the data in DynamoDB is
-different to the `Post` type in GraphQL, but in this case they have the same shape, so you just
-pass the data through.
++ The location in the GraphQL schema to attach the resolver. In this case, you are setting up a resolver on the `addPost` field on the `Mutation` type. This resolver will be invoked when the caller calls `mutation { addPost(...){...} }`.
++ The data source to use for this resolver. In this case, you want to use the `PostDynamoDBTable` data source you defined earlier, so you can add entries into the `AppSyncTutorial-Post` DynamoDB table.
++ The request mapping template. The purpose of the request mapping template is to take the incoming request from the caller and translate it into instructions for AWS AppSync to perform against DynamoDB.
++ The response mapping template. The job of the response mapping template is to take the response from DynamoDB and translate it back into something that GraphQL expects. This is useful if the shape of the data in DynamoDB is different to the `Post` type in GraphQL, but in this case they have the same shape, so you just pass the data through.
 
 To set up the resolver:
 
-01. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync).
-    1. In the **APIs dashboard**, choose your GraphQL API.
+1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync/).
 
-    2. In the **Sidebar**, choose **Data**
-       **Sources**.
-02. Choose **Create data source**.
-    1. For **Data source name**, enter in `PostDynamoDBTable`.
+   1. In the **APIs dashboard**, choose your GraphQL API.
 
-    2. For **Data source type**, choose **Amazon DynamoDB**
-       **table**.
+   1. In the **Sidebar**, choose **Data Sources**.
 
-    3. For **Region**, choose **US-WEST-2**.
+1. Choose **Create data source**.
 
-    4. For **Table name**, choose the **AppSyncTutorial-Post** DynamoDB table.
+   1. For **Data source name**, enter in `PostDynamoDBTable`.
 
-    5. Create
-        a new IAM role (recommended) or choose an existing role that has the `lambda:invokeFunction`
-        IAM permission. Existing roles need a trust policy, as explained in the [Attaching a data source](attaching-a-data-source.md) section.
+   1. For **Data source type**, choose **Amazon DynamoDB table**.
 
-       The following is an example IAM policy that has the required permissions to perform operations on the
-        resource:
-       JSON
+   1. For **Region**, choose **US-WEST-2**.
 
-       ```json
+   1. For **Table name**, choose the **AppSyncTutorial-Post** DynamoDB table.
 
-       {
-            "Version":"2012-10-17",
-            "Statement": [
-                {
-                    "Effect": "Allow",
-                    "Action": [ "lambda:invokeFunction" ],
-                    "Resource": [
-                        "arn:aws:lambda:us-west-2:123456789012:function:myFunction",
-                        "arn:aws:lambda:us-west-2:123456789012:function:myFunction:*"
-                    ]
-                }
-            ]
-        }
+   1. Create a new IAM role (recommended) or choose an existing role that has the `lambda:invokeFunction` IAM permission. Existing roles need a trust policy, as explained in the [Attaching a data source](attaching-a-data-source.md) section.
 
-       ```
-03. Choose **Create**.
+      The following is an example IAM policy that has the required permissions to perform operations on the resource:
 
-04. Choose the **Schema** tab.
+------
+#### [ JSON ]
 
-05. In the **Data types** pane on the right, find the **addPost** field on the **Mutation** type, and then choose **Attach**.
+****
 
-06. In the **Action menu**, choose **Update**
-    **runtime**, then choose **Unit Resolver (VTL only)**.
+      ```
+      {
+           "Version":"2012-10-17",
+           "Statement": [
+               {
+                   "Effect": "Allow",
+                   "Action": [ "lambda:invokeFunction" ],
+                   "Resource": [
+                       "arn:aws:lambda:us-west-2:123456789012:function:myFunction",
+                       "arn:aws:lambda:us-west-2:123456789012:function:myFunction:*"
+                   ]
+               }
+           ]
+       }
+      ```
 
-07. In **Data source name**, choose **PostDynamoDBTable**.
+------
 
-08. In **Configure the request mapping template**, paste the following:
+1. Choose **Create**.
 
-    ```nohighlight
+1. Choose the **Schema** tab.
 
-    {
-        "version" : "2017-02-28",
-        "operation" : "PutItem",
-        "key" : {
-            "id" : $util.dynamodb.toDynamoDBJson($context.arguments.id)
-        },
-        "attributeValues" : {
-            "author" : $util.dynamodb.toDynamoDBJson($context.arguments.author),
-            "title" : $util.dynamodb.toDynamoDBJson($context.arguments.title),
-            "content" : $util.dynamodb.toDynamoDBJson($context.arguments.content),
-            "url" : $util.dynamodb.toDynamoDBJson($context.arguments.url),
-            "ups" : { "N" : 1 },
-            "downs" : { "N" : 0 },
-            "version" : { "N" : 1 }
-        }
-    }
-    ```
+1. In the **Data types** pane on the right, find the **addPost** field on the **Mutation** type, and then choose **Attach**.
 
-    **Note:** A _type_ is specified on all the keys and
-     attribute values. For example, you set the `author` field to `{ "S" :
-                "${context.arguments.author}" }`. The `S` part indicates to AWS AppSync and DynamoDB that the
-     value will be a string value. The actual value gets populated from the `author` argument.
-     Similarly, the `version` field is a number field because it uses `N` for the type.
-     Finally, you’re also initializing the `ups`, `downs` and `version`
-     field.
+1. In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
 
-    For this tutorial you’ve specified that the GraphQL `ID!` type, which indexes the new item that
-     is inserted to DynamoDB, comes as part of the client arguments. AWS AppSync comes with a utility for automatic ID
-     generation called `$utils.autoId()` which you could have also used in the form of `"id" : {
-                "S" : "${$utils.autoId()}" }`. Then you could simply leave the `id: ID!` out of the schema
-     definition of `addPost()` and it would be inserted automatically. You won’t use this technique for
-     this tutorial, but you should consider it as a good practice when writing to DynamoDB tables.
+1. In **Data source name**, choose **PostDynamoDBTable**.
 
-    For more information about mapping templates, see the [Resolver Mapping Template Overview](resolver-mapping-template-reference-overview.md#aws-appsync-resolver-mapping-template-reference-overview)
-     reference documentation. For more information about GetItem request mapping, see the [GetItem](aws-appsync-resolver-mapping-template-reference-dynamodb-getitem.md) reference
-     documentation. For more information about types, see the [Type System (Request\
-     Mapping)](aws-appsync-resolver-mapping-template-reference-dynamodb-typed-values-request.md) reference documentation.
+1. In **Configure the request mapping template**, paste the following:
 
-09. In **Configure the response mapping template**, paste the following:
+   ```
+   {
+       "version" : "2017-02-28",
+       "operation" : "PutItem",
+       "key" : {
+           "id" : $util.dynamodb.toDynamoDBJson($context.arguments.id)
+       },
+       "attributeValues" : {
+           "author" : $util.dynamodb.toDynamoDBJson($context.arguments.author),
+           "title" : $util.dynamodb.toDynamoDBJson($context.arguments.title),
+           "content" : $util.dynamodb.toDynamoDBJson($context.arguments.content),
+           "url" : $util.dynamodb.toDynamoDBJson($context.arguments.url),
+           "ups" : { "N" : 1 },
+           "downs" : { "N" : 0 },
+           "version" : { "N" : 1 }
+       }
+   }
+   ```
 
-    ```nohighlight
+   **Note:** A *type* is specified on all the keys and attribute values. For example, you set the `author` field to `{ "S" : "${context.arguments.author}" }`. The `S` part indicates to AWS AppSync and DynamoDB that the value will be a string value. The actual value gets populated from the `author` argument. Similarly, the `version` field is a number field because it uses `N` for the type. Finally, you’re also initializing the `ups`, `downs` and `version` field.
 
-    $utils.toJson($context.result)
-    ```
+   For this tutorial you’ve specified that the GraphQL `ID!` type, which indexes the new item that is inserted to DynamoDB, comes as part of the client arguments. AWS AppSync comes with a utility for automatic ID generation called `$utils.autoId()` which you could have also used in the form of `"id" : { "S" : "${$utils.autoId()}" }`. Then you could simply leave the `id: ID!` out of the schema definition of `addPost()` and it would be inserted automatically. You won’t use this technique for this tutorial, but you should consider it as a good practice when writing to DynamoDB tables.
 
-    **Note:** Because the shape of the data in the `AppSyncTutorial-Post`
-     table exactly matches the shape of the `Post` type in GraphQL, the response mapping template just
-     passes the results straight through. Also note that all of the examples in this tutorial use the same response
-     mapping template, so you only create one file.
+   For more information about mapping templates, see the [Resolver Mapping Template Overview](resolver-mapping-template-reference-overview.md#aws-appsync-resolver-mapping-template-reference-overview) reference documentation. For more information about GetItem request mapping, see the [GetItem](aws-appsync-resolver-mapping-template-reference-dynamodb-getitem.md) reference documentation. For more information about types, see the [Type System (Request Mapping)](aws-appsync-resolver-mapping-template-reference-dynamodb-typed-values-request.md) reference documentation.
 
-10. Choose **Save**.
+1. In **Configure the response mapping template**, paste the following:
+
+   ```
+   $utils.toJson($context.result)
+   ```
+
+    **Note:** Because the shape of the data in the `AppSyncTutorial-Post` table exactly matches the shape of the `Post` type in GraphQL, the response mapping template just passes the results straight through. Also note that all of the examples in this tutorial use the same response mapping template, so you only create one file.
+
+1. Choose **Save**.
 
 ### Call the API to Add a Post
+<a name="call-the-api-to-add-a-post"></a>
 
-Now that the resolver is set up, AWS AppSync can translate an incoming `addPost` mutation to a
-DynamoDB PutItem operation. You can now run a mutation to put something in the table.
+Now that the resolver is set up, AWS AppSync can translate an incoming `addPost` mutation to a DynamoDB PutItem operation. You can now run a mutation to put something in the table.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following mutation:
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following mutation:
-
-```nohighlight
-
-mutation addPost {
+  ```
+  mutation addPost {
     addPost(
       id: 123
       author: "AUTHORNAME"
@@ -336,17 +296,13 @@ mutation addPost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The results of the newly created post should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play button).
-
-- The results of the newly created post should appear in the results pane to the right of the query pane.
-It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "addPost": {
         "id": "123",
@@ -359,19 +315,15 @@ It should look similar to the following:
         "version": 1
       }
     }
-}
-```
+  }
+  ```
 
 Here’s what happened:
++ AWS AppSync received an `addPost` mutation request.
++ AWS AppSync took the request, and the request mapping template, and generated a request mapping document. This would have looked like:
 
-- AWS AppSync received an `addPost` mutation request.
-
-- AWS AppSync took the request, and the request mapping template, and generated a request mapping document.
-This would have looked like:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "PutItem",
       "key" : {
@@ -386,18 +338,13 @@ This would have looked like:
           "downs" : { "N" : 0 },
           "version" : { "N" : 1 }
       }
-}
-```
+  }
+  ```
++ AWS AppSync used the request mapping document to generate and execute a DynamoDB`PutItem` request.
++ AWS AppSync took the results of the `PutItem` request and converted them back to GraphQL types.
 
-- AWS AppSync used the request mapping document to generate and execute a DynamoDB `PutItem`
-request.
-
-- AWS AppSync took the results of the `PutItem` request and converted them back to GraphQL
-types.
-
-```nohighlight
-
-{
+  ```
+  {
       "id" : "123",
       "author": "AUTHORNAME",
       "title": "Our first post!",
@@ -406,65 +353,46 @@ types.
       "ups" : 1,
       "downs" : 0,
       "version" : 1
-}
-```
-
-- Passed it through the response mapping document, which just passed it through unchanged.
-
-- Returned the newly created object in the GraphQL response.
+  }
+  ```
++ Passed it through the response mapping document, which just passed it through unchanged.
++ Returned the newly created object in the GraphQL response.
 
 ## Setting Up the getPost Resolver (DynamoDB GetItem)
+<a name="setting-up-the-getpost-resolver-ddb-getitem"></a>
 
-Now that you’re able to add data to the `AppSyncTutorial-Post` DynamoDB table, you
-need to set up the `getPost` query so it can retrieve that data from the
-`AppSyncTutorial-Post` table. To do this, you set up another resolver.
+Now that you’re able to add data to the `AppSyncTutorial-Post`DynamoDB table, you need to set up the `getPost` query so it can retrieve that data from the `AppSyncTutorial-Post` table. To do this, you set up another resolver.
++ Choose the **Schema** tab.
++ In the **Data types** pane on the right, find the **getPost** field on the **Query** type, and then choose **Attach**.
++ In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose the **Schema** tab.
-
-- In the **Data types** pane on the right, find the
-**getPost** field on the **Query** type, and then choose **Attach**.
-
-- In the **Action menu**, choose **Update**
-**runtime**, then choose **Unit Resolver (VTL only)**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "GetItem",
       "key" : {
           "id" : $util.dynamodb.toDynamoDBJson($ctx.args.id)
       }
-}
-```
+  }
+  ```
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-- Choose **Save**.
+  ```
+  $utils.toJson($context.result)
+  ```
++ Choose **Save**.
 
 ### Call the API to Get a Post
+<a name="call-the-api-to-get-a-post"></a>
 
-Now the resolver has been set up, AWS AppSync knows how to translate an incoming `getPost` query to
-a DynamoDB `GetItem` operation. You can now run a query to retrieve the post you created earlier.
+Now the resolver has been set up, AWS AppSync knows how to translate an incoming `getPost` query to a DynamoDB`GetItem` operation. You can now run a query to retrieve the post you created earlier.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following:
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following:
-
-```nohighlight
-
-query getPost {
+  ```
+  query getPost {
     getPost(id:123) {
       id
       author
@@ -475,17 +403,13 @@ query getPost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The post retrieved from DynamoDB should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play button).
-
-- The post retrieved from DynamoDB should appear in the results pane to the right of the query pane. It
-should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "getPost": {
         "id": "123",
@@ -498,35 +422,27 @@ should look similar to the following:
         "version": 1
       }
     }
-}
-```
+  }
+  ```
 
 Here’s what happened:
++ AWS AppSync received a `getPost` query request.
++ AWS AppSync took the request, and the request mapping template, and generated a request mapping document. This would have looked like:
 
-- AWS AppSync received a `getPost` query request.
-
-- AWS AppSync took the request, and the request mapping template, and generated a request mapping document.
-This would have looked like:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "GetItem",
       "key" : {
           "id" : { "S" : "123" }
       }
-}
-```
+  }
+  ```
++ AWS AppSync used the request mapping document to generate and execute a DynamoDB GetItem request.
++ AWS AppSync took the results of the `GetItem` request and converted it back to GraphQL types.
 
-- AWS AppSync used the request mapping document to generate and execute a DynamoDB GetItem request.
-
-- AWS AppSync took the results of the `GetItem` request and converted it back to GraphQL
-types.
-
-```nohighlight
-
-{
+  ```
+  {
       "id" : "123",
       "author": "AUTHORNAME",
       "title": "Our first post!",
@@ -535,17 +451,14 @@ types.
       "ups" : 1,
       "downs" : 0,
       "version" : 1
-}
-```
-
-- Passed it through the response mapping document, which just passed it through unchanged.
-
-- Returned the retrieved object in the response.
+  }
+  ```
++ Passed it through the response mapping document, which just passed it through unchanged.
++ Returned the retrieved object in the response.
 
 Alternatively, take the following example:
 
 ```
-
 query getPost {
   getPost(id:123) {
     id
@@ -555,13 +468,9 @@ query getPost {
 }
 ```
 
-If your `getPost` query only needs the `id`, `author`, and
-`title`, you can change your request mapping template to use projection expressions to specify only
-the attributes that you want from your DynamoDB table to avoid unnecessary data transfer from DynamoDB to AWS AppSync. For
-example, the request mapping template may look like the snippet below:
+If your `getPost` query only needs the `id`, `author`, and `title`, you can change your request mapping template to use projection expressions to specify only the attributes that you want from your DynamoDB table to avoid unnecessary data transfer from DynamoDB to AWS AppSync. For example, the request mapping template may look like the snippet below:
 
 ```
-
 {
     "version" : "2017-02-28",
     "operation" : "GetItem",
@@ -576,19 +485,14 @@ example, the request mapping template may look like the snippet below:
 ```
 
 ## Create an updatePost Mutation (DynamoDB UpdateItem)
+<a name="create-an-updatepost-mutation-ddb-updateitem"></a>
 
-So far you can create and retrieve `Post` objects in DynamoDB. Next, you’ll set up
-a new mutation to allow us to update object. You’ll do this using the UpdateItem DynamoDB
-operation.
+So far you can create and retrieve `Post` objects in DynamoDB. Next, you’ll set up a new mutation to allow us to update object. You’ll do this using the UpdateItem DynamoDB operation.
++ Choose the **Schema** tab.
++ In the **Schema** pane, modify the `Mutation` type to add a new `updatePost` mutation as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, modify the `Mutation`
-type to add a new `updatePost` mutation as follows:
-
-```nohighlight
-
-type Mutation {
+  ```
+  type Mutation {
       updatePost(
           id: ID!,
           author: String!,
@@ -602,25 +506,16 @@ type Mutation {
           content: String!
           url: String!
       ): Post!
-}
-```
+  }
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **updatePost** field on the **Mutation** type and then choose **Attach**.
++ In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **updatePost** field on the **Mutation** type and then choose **Attach**.
-
-- In the **Action menu**, choose **Update**
-**runtime**, then choose **Unit Resolver (VTL only)**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "UpdateItem",
       "key" : {
@@ -639,48 +534,27 @@ following:
               ":one" : { "N": 1 }
           }
       }
-}
-```
+  }
+  ```
 
-**Note:** This resolver is using the DynamoDB UpdateItem, which
-is significantly different from the PutItem operation. Instead of writing the entire item,
-you’re just asking DynamoDB to update certain attributes. This is done using DynamoDB Update
-Expressions. The expression itself is specified in the `expression` field in
-the `update` section. It says to set the `author`,
-`title`, `content` and url attributes, and then increment the
-`version` field. The values to use do not appear in the expression itself;
-the expression has placeholders that have names starting with a colon, which are then
-defined in the `expressionValues` field. Finally, DynamoDB has reserved words that
-cannot appear in the `expression`. For example, `url` is a reserved
-word, so to update the `url` field you can use name placeholders and define
-them in the `expressionNames` field.
+   **Note:** This resolver is using the DynamoDB UpdateItem, which is significantly different from the PutItem operation. Instead of writing the entire item, you’re just asking DynamoDB to update certain attributes. This is done using DynamoDB Update Expressions. The expression itself is specified in the `expression` field in the `update` section. It says to set the `author`, `title`, `content` and url attributes, and then increment the `version` field. The values to use do not appear in the expression itself; the expression has placeholders that have names starting with a colon, which are then defined in the `expressionValues` field. Finally, DynamoDB has reserved words that cannot appear in the `expression`. For example, `url` is a reserved word, so to update the `url` field you can use name placeholders and define them in the `expressionNames` field.
 
-For more info about `UpdateItem` request mapping, see the [UpdateItem](aws-appsync-resolver-mapping-template-reference-dynamodb-updateitem.md) reference documentation. For more information about how to write
-update expressions, see the [DynamoDB UpdateExpressions documentation](../../../dynamodb/latest/developerguide/expressions-updateexpressions.md).
+  For more info about `UpdateItem` request mapping, see the [UpdateItem](aws-appsync-resolver-mapping-template-reference-dynamodb-updateitem.md) reference documentation. For more information about how to write update expressions, see the [DynamoDB UpdateExpressions documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html).
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-$utils.toJson($context.result)
-```
+  ```
+  $utils.toJson($context.result)
+  ```
 
 ### Call the API to Update a Post
+<a name="call-the-api-to-update-a-post"></a>
 
-Now the resolver has been set up, AWS AppSync knows how to translate an incoming
-`update` mutation to a DynamoDB `Update` operation. You can now run a
-mutation to update the item you wrote earlier.
+Now the resolver has been set up, AWS AppSync knows how to translate an incoming `update` mutation to a DynamoDB`Update` operation. You can now run a mutation to update the item you wrote earlier.
++ Choose the **Queries** tab.
++ In **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- Choose the **Queries** tab.
-
-- In **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation updatePost {
+  ```
+  mutation updatePost {
     updatePost(
       id:"123"
       author: "A new author"
@@ -697,18 +571,13 @@ mutation updatePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The updated post in DynamoDB should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The updated post in DynamoDB should appear in the results pane to the right of the
-query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "updatePost": {
         "id": "123",
@@ -721,40 +590,26 @@ query pane. It should look similar to the following:
         "version": 2
       }
     }
-}
-```
+  }
+  ```
 
-In this example, the `ups` and `downs` fields were not modified
-because the request mapping template did not ask AWS AppSync and DynamoDB to do anything with
-those fields. Also, the `version` field was incremented by 1 because you asked
-AWS AppSync and DynamoDB to add 1 to the `version` field.
+In this example, the `ups` and `downs` fields were not modified because the request mapping template did not ask AWS AppSync and DynamoDB to do anything with those fields. Also, the `version` field was incremented by 1 because you asked AWS AppSync and DynamoDB to add 1 to the `version` field.
 
 ## Modifying the updatePost Resolver (DynamoDB UpdateItem)
+<a name="modifying-the-updatepost-resolver-dynamodb-updateitem"></a>
 
-This is a good start to the `updatePost` mutation, but it has two main
-problems:
+This is a good start to the `updatePost` mutation, but it has two main problems:
++ If you want to update just a single field, you have to update all of the fields.
++ If two people are modifying the object, you could potentially lose information.
 
-- If you want to update just a single field, you have to update all of the
-fields.
-
-- If two people are modifying the object, you could potentially lose information.
-
-To address these issues, you’re going to modify the `updatePost` mutation to
-only modify arguments that were specified in the request, and then add a condition to the
-`UpdateItem` operation.
+To address these issues, you’re going to modify the `updatePost` mutation to only modify arguments that were specified in the request, and then add a condition to the `UpdateItem` operation.
 
 1. Choose the **Schema** tab.
 
-2. In the **Schema** pane, modify the
-    `updatePost` field in the `Mutation` type to remove the
-    exclamation marks from the `author`, `title`, `content`,
-    and `url` arguments, making sure to leave the `id` field as is. This
-    will make them optional argument. Also, add a new, required `expectedVersion`
-    argument.
+1. In the **Schema** pane, modify the `updatePost` field in the `Mutation` type to remove the exclamation marks from the `author`, `title`, `content`, and `url` arguments, making sure to leave the `id` field as is. This will make them optional argument. Also, add a new, required `expectedVersion` argument.
 
-```nohighlight
-
-type Mutation {
+   ```
+   type Mutation {
        updatePost(
            id: ID!,
            author: String,
@@ -769,23 +624,19 @@ type Mutation {
            content: String!
            url: String!
        ): Post!
-}
-```
+   }
+   ```
 
-3. Choose **Save**.
+1. Choose **Save**.
 
-4. In the **Data types** pane on the right, find the
-    **updatePost** field on the **Mutation** type.
+1. In the **Data types** pane on the right, find the **updatePost** field on the **Mutation** type.
 
-5. Choose **PostDynamoDBTable** to open the existing
-    resolver.
+1. Choose **PostDynamoDBTable** to open the existing resolver.
 
-6. In **Configure the request mapping template**, modify the
-    request mapping template as follows:
+1. In **Configure the request mapping template**, modify the request mapping template as follows:
 
-```nohighlight
-
-{
+   ```
+   {
        "version" : "2017-02-28",
        "operation" : "UpdateItem",
        "key" : {
@@ -873,40 +724,26 @@ type Mutation {
                ":expectedVersion" : $util.dynamodb.toDynamoDBJson($context.arguments.expectedVersion)
            }
        }
-}
-```
+   }
+   ```
 
-7. Choose **Save**.
+1. Choose **Save**.
 
-This template is one of the more complex examples. It demonstrates the power and
-flexibility of mapping templates. It loops through all of the arguments, skipping over
-`id` and `expectedVersion`. If the argument is set to something, it
-asks AWS AppSync and DynamoDB to update that attribute on the object in DynamoDB. If the attribute is
-set to null, it asks AWS AppSync and DynamoDB to remove that attribute from the post object. If an
-argument wasn’t specified, it leaves the attribute alone. It also increments the
-`version` field.
+This template is one of the more complex examples. It demonstrates the power and flexibility of mapping templates. It loops through all of the arguments, skipping over `id` and `expectedVersion`. If the argument is set to something, it asks AWS AppSync and DynamoDB to update that attribute on the object in DynamoDB. If the attribute is set to null, it asks AWS AppSync and DynamoDB to remove that attribute from the post object. If an argument wasn’t specified, it leaves the attribute alone. It also increments the `version` field.
 
-Also, there is a new `condition` section. A condition expression enables you
-tell AWS AppSync and DynamoDB whether or not the request should succeed based on the state of the
-object already in DynamoDB before the operation is performed. In this case, you only want the
-`UpdateItem` request to succeed if the `version` field of the item
-currently in DynamoDB exactly matches the `expectedVersion` argument.
+Also, there is a new `condition` section. A condition expression enables you tell AWS AppSync and DynamoDB whether or not the request should succeed based on the state of the object already in DynamoDB before the operation is performed. In this case, you only want the `UpdateItem` request to succeed if the `version` field of the item currently in DynamoDB exactly matches the `expectedVersion` argument.
 
 For more information about condition expressions, see the [Condition Expressions](aws-appsync-resolver-mapping-template-reference-dynamodb-condition-expressions.md) reference documentation.
 
 ### Call the API to Update a Post
+<a name="id1"></a>
 
 Let’s try updating the `Post` object with the new resolver:
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation updatePost {
+  ```
+  mutation updatePost {
     updatePost(
       id:123
       title: "An empty story"
@@ -922,18 +759,13 @@ mutation updatePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The updated post in DynamoDB should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The updated post in DynamoDB should appear in the results pane to the right of the
-query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "updatePost": {
         "id": "123",
@@ -946,21 +778,14 @@ query pane. It should look similar to the following:
         "version": 3
       }
     }
-}
+  }
+  ```
+
+In this request, you asked AWS AppSync and DynamoDB to update the `title` and `content` field only. It left all the other fields alone (other than incrementing the `version` field). You set the `title` attribute to a new value, and removed the `content` attribute from the post. The `author`, `url`, `ups`, and `downs` fields were left untouched.
+
+Try executing the mutation request again, leaving the request exactly as is. You should see a response similar to the following:
+
 ```
-
-In this request, you asked AWS AppSync and DynamoDB to update the `title` and
-`content` field only. It left all the other fields alone (other than
-incrementing the `version` field). You set the `title` attribute to a
-new value, and removed the `content` attribute from the post. The
-`author`, `url`, `ups`, and `downs` fields
-were left untouched.
-
-Try executing the mutation request again, leaving the request exactly as is. You should
-see a response similar to the following:
-
-```nohighlight
-
 {
   "data": {
     "updatePost": null
@@ -994,42 +819,24 @@ see a response similar to the following:
 ```
 
 The request fails because the condition expression evaluates to false:
++ The first time you ran the request, the value of the `version` field of the post in DynamoDB was `2`, which matched the `expectedVersion` argument. The request succeeded, which meant the `version` field was incremented in DynamoDB to `3`.
++ The second time you ran the request, the value of the `version` field of the post in DynamoDB was `3`, which did not match the `expectedVersion` argument.
 
-- The first time you ran the request, the value of the `version` field of
-the post in DynamoDB was `2`, which matched the `expectedVersion`
-argument. The request succeeded, which meant the `version` field was
-incremented in DynamoDB to `3`.
+This pattern is typically called *optimistic locking*.
 
-- The second time you ran the request, the value of the `version` field of
-the post in DynamoDB was `3`, which did not match the
-`expectedVersion` argument.
-
-This pattern is typically called _optimistic locking_.
-
-A feature of an AWS AppSync DynamoDB resolver is that it returns the current value of the post
-object in DynamoDB. You can find this in the `data` field in the `errors`
-section of the GraphQL response. Your application can use this information to decide how it
-should proceed. In this case, you can see the `version` field of the object in
-DynamoDB is set to `3`, so you could just update the `expectedVersion`
-argument to `3` and the request would succeed again.
+A feature of an AWS AppSync DynamoDB resolver is that it returns the current value of the post object in DynamoDB. You can find this in the `data` field in the `errors` section of the GraphQL response. Your application can use this information to decide how it should proceed. In this case, you can see the `version` field of the object in DynamoDB is set to `3`, so you could just update the `expectedVersion` argument to `3` and the request would succeed again.
 
 For more information about handling condition check failures, see the [Condition Expressions](aws-appsync-resolver-mapping-template-reference-dynamodb-condition-expressions.md) mapping template reference documentation.
 
 ## Create upvotePost and downvotePost Mutations (DynamoDB UpdateItem)
+<a name="create-upvotepost-and-downvotepost-mutations-ddb-updateitem"></a>
 
-The `Post` type has `ups` and `downs` fields to enable
-record upvotes and downvotes, but so far the API doesn’t let us do anything with them. Let’s
-add some mutations to let us upvote and downvote the posts.
+The `Post` type has `ups` and `downs` fields to enable record upvotes and downvotes, but so far the API doesn’t let us do anything with them. Let’s add some mutations to let us upvote and downvote the posts.
++ Choose the **Schema** tab.
++ In the **Schema** pane, modify the `Mutation` type to add new `upvotePost` and `downvotePost` mutations as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, modify the `Mutation`
-type to add new `upvotePost` and `downvotePost` mutations as
-follows:
-
-```nohighlight
-
-type Mutation {
+  ```
+  type Mutation {
       upvotePost(id: ID!): Post
       downvotePost(id: ID!): Post
       updatePost(
@@ -1046,25 +853,16 @@ type Mutation {
           content: String!,
           url: String!
       ): Post!
-}
-```
+  }
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **upvotePost** field on the **Mutation** type, and then choose **Attach**.
++ In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **upvotePost** field on the **Mutation** type, and then choose **Attach**.
-
-- In the **Action menu**, choose **Update**
-**runtime**, then choose **Unit Resolver (VTL only)**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "UpdateItem",
       "key" : {
@@ -1076,31 +874,20 @@ following:
               ":plusOne" : { "N" : 1 }
           }
       }
-}
-```
+  }
+  ```
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
+  ```
+  $utils.toJson($context.result)
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created `downvotePost` field on the **Mutation** type, and then choose **Attach**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created `downvotePost` field on the **Mutation**
-type, and then choose **Attach**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "UpdateItem",
       "key" : {
@@ -1112,34 +899,24 @@ following:
               ":plusOne" : { "N" : 1 }
           }
       }
-}
-```
+  }
+  ```
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-- Choose **Save**.
+  ```
+  $utils.toJson($context.result)
+  ```
++ Choose **Save**.
 
 ### Call the API to upvote and downvote a Post
+<a name="call-the-api-to-upvote-and-downvote-a-post"></a>
 
-Now the new resolvers have been set up, AWS AppSync knows how to translate an incoming
-`upvotePost` or `downvote` mutation to DynamoDB UpdateItem operation.
-You can now run mutations to upvote or downvote the post you created earlier.
+Now the new resolvers have been set up, AWS AppSync knows how to translate an incoming `upvotePost` or `downvote` mutation to DynamoDB UpdateItem operation. You can now run mutations to upvote or downvote the post you created earlier.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation votePost {
+  ```
+  mutation votePost {
     upvotePost(id:123) {
       id
       author
@@ -1150,18 +927,13 @@ mutation votePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The post is updated in DynamoDB and should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The post is updated in DynamoDB and should appear in the results pane to the right of
-the query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "upvotePost": {
         "id": "123",
@@ -1174,18 +946,13 @@ the query pane. It should look similar to the following:
         "version": 4
       }
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** a few more times. You should see the `ups` and `version` field incrementing by 1 each time you execute the query.
++ Change the query to call the `downvotePost` mutation as follows:
 
-- Choose **Execute query** a few more times. You should
-see the `ups` and `version` field incrementing by 1 each time you
-execute the query.
-
-- Change the query to call the `downvotePost` mutation as follows:
-
-```nohighlight
-
-mutation votePost {
+  ```
+  mutation votePost {
     downvotePost(id:123) {
       id
       author
@@ -1196,16 +963,12 @@ mutation votePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button). This time, you should see the `downs` and `version` field incrementing by 1 each time you execute the query.
 
-- Choose **Execute query** (the orange play button). This
-time, you should see the `downs` and `version` field incrementing
-by 1 each time you execute the query.
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "downvotePost": {
         "id": "123",
@@ -1218,22 +981,18 @@ by 1 each time you execute the query.
         "version": 12
       }
     }
-}
-```
+  }
+  ```
 
 ## Setting Up the deletePost Resolver (DynamoDB DeleteItem)
+<a name="setting-up-the-deletepost-resolver-ddb-deletepost"></a>
 
-The next mutation you want to set up is to delete a post. You’ll do this using the
-`DeleteItem` DynamoDB operation.
+The next mutation you want to set up is to delete a post. You’ll do this using the `DeleteItem` DynamoDB operation.
++ Choose the **Schema** tab.
++ In the **Schema** pane, modify the `Mutation` type to add a new `deletePost` mutation as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, modify the `Mutation`
-type to add a new `deletePost` mutation as follows:
-
-```nohighlight
-
-type Mutation {
+  ```
+  type Mutation {
       deletePost(id: ID!, expectedVersion: Int): Post
       upvotePost(id: ID!): Post
       downvotePost(id: ID!): Post
@@ -1251,28 +1010,18 @@ type Mutation {
           content: String!,
           url: String!
       ): Post!
-}
-```
+  }
+  ```
 
-This time you made the `expectedVersion` field optional, which is explained
-later when you add the request mapping template.
+  This time you made the `expectedVersion` field optional, which is explained later when you add the request mapping template.
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **delete** field on the **Mutation** type, and then choose **Attach**.
++ In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **delete** field on the **Mutation** type, and then choose **Attach**.
-
-- In the **Action menu**, choose **Update**
-**runtime**, then choose **Unit Resolver (VTL only)**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "DeleteItem",
       "key": {
@@ -1286,48 +1035,30 @@ following:
               }
           }
       #end
-}
-```
+  }
+  ```
 
-**Note:** The `expectedVersion` argument is an
-optional argument. If the caller set an `expectedVersion` argument in the
-request, the template adds a condition that only allows the `DeleteItem`
-request to succeed if the item is already deleted or if the `version` attribute
-of the post in DynamoDB exactly matches the `expectedVersion`. If left out, no
-condition expression is specified on the `DeleteItem` request. It succeeds
-regardless of the value of `version`, or whether or not the item exists in
-DynamoDB.
+   **Note:** The `expectedVersion` argument is an optional argument. If the caller set an `expectedVersion` argument in the request, the template adds a condition that only allows the `DeleteItem` request to succeed if the item is already deleted or if the `version` attribute of the post in DynamoDB exactly matches the `expectedVersion`. If left out, no condition expression is specified on the `DeleteItem` request. It succeeds regardless of the value of `version`, or whether or not the item exists in DynamoDB.
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
+  ```
+  $utils.toJson($context.result)
+  ```
 
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-**Note:** Even though you’re deleting an item, you can return
-the item that was deleted, if it was not already deleted.
-
-- Choose **Save**.
+   **Note:** Even though you’re deleting an item, you can return the item that was deleted, if it was not already deleted.
++ Choose **Save**.
 
 For more info about `DeleteItem` request mapping, see the [DeleteItem](aws-appsync-resolver-mapping-template-reference-dynamodb-deleteitem.md) reference documentation.
 
 ### Call the API to Delete a Post
+<a name="call-the-api-to-delete-a-post"></a>
 
-Now the resolver has been set up, AWS AppSync knows how to translate an incoming
-`delete` mutation to a DynamoDB `DeleteItem` operation. You can now run
-a mutation to delete something in the table.
+Now the resolver has been set up, AWS AppSync knows how to translate an incoming `delete` mutation to a DynamoDB`DeleteItem` operation. You can now run a mutation to delete something in the table.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation deletePost {
+  ```
+  mutation deletePost {
     deletePost(id:123) {
       id
       author
@@ -1338,19 +1069,13 @@ mutation deletePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The post is deleted from DynamoDB. Note that AWS AppSync returns the value of the item that was deleted from DynamoDB, which should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The post is deleted from DynamoDB. Note that AWS AppSync returns the value of the item
-that was deleted from DynamoDB, which should appear in the results pane to the right of the
-query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "deletePost": {
         "id": "123",
@@ -1363,35 +1088,26 @@ query pane. It should look similar to the following:
         "version": 12
       }
     }
-}
-```
+  }
+  ```
 
-The value is only returned if this call to `deletePost` was the one that
-actually deleted it from DynamoDB.
+The value is only returned if this call to `deletePost` was the one that actually deleted it from DynamoDB.
++ Choose **Execute query** again.
++ The call still succeeds, but no value is returned.
 
-- Choose **Execute query** again.
-
-- The call still succeeds, but no value is returned.
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "deletePost": null
     }
-}
-```
+  }
+  ```
 
-Now let’s try deleting a post, but this time specifying an `expectedValue`.
-First though, you’ll need to create a new post because you’ve just deleted the one you’ve
-been working with so far.
+Now let’s try deleting a post, but this time specifying an `expectedValue`. First though, you’ll need to create a new post because you’ve just deleted the one you’ve been working with so far.
++ In the **Queries** pane, paste the following mutation:
 
-- In the **Queries** pane, paste the following
-mutation:
-
-```nohighlight
-
-mutation addPost {
+  ```
+  mutation addPost {
     addPost(
       id:123
       author: "AUTHORNAME"
@@ -1408,19 +1124,13 @@ mutation addPost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The results of the newly created post should appear in the results pane to the right of the query pane. Note down the `id` of the newly created object because you need it in just a moment. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The results of the newly created post should appear in the results pane to the right
-of the query pane. Note down the `id` of the newly created object because you
-need it in just a moment. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "addPost": {
         "id": "123",
@@ -1433,19 +1143,14 @@ need it in just a moment. It should look similar to the following:
         "version": 1
       }
     }
-}
-```
+  }
+  ```
 
-Now let’s try to delete that post, but put in the wrong value for
-`expectedVersion`:
+Now let’s try to delete that post, but put in the wrong value for `expectedVersion`:
++ In the **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- In the **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation deletePost {
+  ```
+  mutation deletePost {
     deletePost(
       id:123
       expectedVersion: 9999
@@ -1459,15 +1164,12 @@ mutation deletePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
 
-- Choose **Execute query** (the orange play
-button).
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "deletePost": null
     },
@@ -1496,20 +1198,14 @@ button).
         "message": "The conditional request failed (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ConditionalCheckFailedException; Request ID: ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ)"
       }
     ]
-}
-```
+  }
+  ```
 
-The request failed because the condition expression evaluates to false: the value
-for `version` of the post in DynamoDB does not match the
-`expectedValue` specified in the arguments. The current value of the object
-is returned in the `data` field in the `errors` section of the
-GraphQL response.
+  The request failed because the condition expression evaluates to false: the value for `version` of the post in DynamoDB does not match the `expectedValue` specified in the arguments. The current value of the object is returned in the `data` field in the `errors` section of the GraphQL response.
++ Retry the request, but correct the `expectedVersion`:
 
-- Retry the request, but correct the `expectedVersion`:
-
-```nohighlight
-
-mutation deletePost {
+  ```
+  mutation deletePost {
     deletePost(
       id:123
       expectedVersion: 1
@@ -1523,18 +1219,13 @@ mutation deletePost {
       downs
       version
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ This time the request succeeds, and the value that was deleted from DynamoDB is returned:
 
-- Choose **Execute query** (the orange play
-button).
-
-- This time the request succeeds, and the value that was deleted from DynamoDB is
-returned:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "deletePost": {
         "id": "123",
@@ -1547,16 +1238,12 @@ returned:
         "version": 1
       }
     }
-}
+  }
+  ```
++ Choose **Execute query** again.
++ The call still succeeds, but this time no value is returned because the post was already deleted in DynamoDB.
+
 ```
-
-- Choose **Execute query** again.
-
-- The call still succeeds, but this time no value is returned because the post was
-already deleted in DynamoDB.
-
-```nohighlight
-
 {
   "data": {
     "deletePost": null
@@ -1565,49 +1252,34 @@ already deleted in DynamoDB.
 ```
 
 ## Setting Up the allPost Resolver (DynamoDB Scan)
+<a name="setting-up-the-allpost-resolver-dynamodb-scan"></a>
 
-So far the API is only useful if you know the `id` of each post you want to
-look at. Let’s add a new resolver that returns all the posts in the table.
+So far the API is only useful if you know the `id` of each post you want to look at. Let’s add a new resolver that returns all the posts in the table.
++ Choose the **Schema** tab.
++ In the **Schema** pane, modify the `Query` type to add a new `allPost` query as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, modify the `Query`
-type to add a new `allPost` query as follows:
-
-```nohighlight
-
-type Query {
+  ```
+  type Query {
       allPost(count: Int, nextToken: String): PaginatedPosts!
       getPost(id: ID): Post
-}
-```
+  }
+  ```
++ Add a new `PaginationPosts` type:
 
-- Add a new `PaginationPosts` type:
-
-```nohighlight
-
-type PaginatedPosts {
+  ```
+  type PaginatedPosts {
       posts: [Post!]!
       nextToken: String
-}
-```
+  }
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **allPost** field on the **Query** type, and then choose **Attach**.
++ In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **allPost** field on the **Query** type, and then choose **Attach**.
-
-- In the **Action menu**, choose **Update**
-**runtime**, then choose **Unit Resolver (VTL only)**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "Scan"
       #if( ${context.arguments.count} )
@@ -1616,56 +1288,37 @@ following:
       #if( ${context.arguments.nextToken} )
           ,"nextToken": $util.toJson($context.arguments.nextToken)
       #end
-}
-```
+  }
+  ```
 
-This resolver has two optional arguments: `count`, which specifies the
-maximum number of items to return in a single call, and `nextToken`, which can
-be used to retrieve the next set of results (you’ll show where the value for
-`nextToken` comes from later).
+  This resolver has two optional arguments: `count`, which specifies the maximum number of items to return in a single call, and `nextToken`, which can be used to retrieve the next set of results (you’ll show where the value for `nextToken` comes from later).
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "posts": $utils.toJson($context.result.items)
       #if( ${context.result.nextToken} )
           ,"nextToken": $util.toJson($context.result.nextToken)
       #end
-}
-```
+  }
+  ```
 
-**Note:** This response mapping template is different from
-all the others so far. The result of the `allPost` query is a
-`PaginatedPosts`, which contains a list of posts and a pagination token. The
-shape of this object is different to what is returned from the AWS AppSync DynamoDB
-Resolver: the list of posts is called `items` in the AWS AppSync DynamoDB
-Resolver results, but is called `posts` in `PaginatedPosts`.
+   **Note:** This response mapping template is different from all the others so far. The result of the `allPost` query is a `PaginatedPosts`, which contains a list of posts and a pagination token. The shape of this object is different to what is returned from the AWS AppSync DynamoDB Resolver: the list of posts is called `items` in the AWS AppSync DynamoDB Resolver results, but is called `posts` in `PaginatedPosts`.
++ Choose **Save**.
 
-- Choose **Save**.
-
-For more information about `Scan` request mapping, see the [Scan](aws-appsync-resolver-mapping-template-reference-dynamodb-scan.md)
-reference documentation.
+For more information about `Scan` request mapping, see the [Scan](aws-appsync-resolver-mapping-template-reference-dynamodb-scan.md) reference documentation.
 
 ### Call the API to Scan All Posts
+<a name="call-the-api-to-scan-all-posts"></a>
 
-Now the resolver has been set up, AWS AppSync knows how to translate an incoming
-`allPost` query to a DynamoDB `Scan` operation. You can now scan the
-table to retrieve all the posts.
+Now the resolver has been set up, AWS AppSync knows how to translate an incoming `allPost` query to a DynamoDB`Scan` operation. You can now scan the table to retrieve all the posts.
 
-Before you can try it out though, you need to populate the table with some data because
-you’ve deleted everything you’ve worked with so far.
+Before you can try it out though, you need to populate the table with some data because you’ve deleted everything you’ve worked with so far.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following mutation:
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following
-mutation:
-
-```nohighlight
-
-mutation addPost {
+  ```
+  mutation addPost {
     post1: addPost(id:1 author: "AUTHORNAME" title: "A series of posts, Volume 1" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
     post2: addPost(id:2 author: "AUTHORNAME" title: "A series of posts, Volume 2" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
     post3: addPost(id:3 author: "AUTHORNAME" title: "A series of posts, Volume 3" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
@@ -1675,20 +1328,15 @@ mutation addPost {
     post7: addPost(id:7 author: "AUTHORNAME" title: "A series of posts, Volume 7" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
     post8: addPost(id:8 author: "AUTHORNAME" title: "A series of posts, Volume 8" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
     post9: addPost(id:9 author: "AUTHORNAME" title: "A series of posts, Volume 9" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
-}
-```
-
-- Choose **Execute query** (the orange play
-button).
+  }
+  ```
++ Choose **Execute query** (the orange play button).
 
 Now, let’s scan the table, returning five results at a time.
++ In the **Queries** pane, paste the following query:
 
-- In the **Queries** pane, paste the following
-query:
-
-```nohighlight
-
-query allPost {
+  ```
+  query allPost {
     allPost(count: 5) {
       posts {
         id
@@ -1696,18 +1344,13 @@ query allPost {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The first five posts should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The first five posts should appear in the results pane to the right of the query
-pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPost": {
         "posts": [
@@ -1735,18 +1378,14 @@ pane. It should look similar to the following:
         "nextToken": "eyJ2ZXJzaW9uIjoxLCJ0b2tlbiI6IkFRSUNBSGo4eHR0RG0xWXhUa1F0cEhXMEp1R3B0M1B3eThOSmRvcG9ad2RHYjI3Z0lnRkJEdXdUK09hcnovRGhNTGxLTGdMUEFBQUI1akNDQWVJR0NTcUdTSWIzRFFFSEJxQ0NBZE13Z2dIUEFnRUFNSUlCeUFZSktvWklodmNOQVFjQk1CNEdDV0NHU0FGbEF3UUJMakFSQkF6ajFodkhKU1paT1pncTRaUUNBUkNBZ2dHWnJiR1dQWGxkMDB1N0xEdGY4Z2JsbktzRjRua1VCcks3TFJLcjZBTFRMeGFwVGJZMDRqOTdKVFQyYVRwSzdzbVdtNlhWWFVCTnFIOThZTzBWZHVkdDI2RlkxMHRqMDJ2QTlyNWJTUWpTbWh6NE5UclhUMG9KZWJSQ2JJbXBlaDRSVlg0Tis0WTVCN1IwNmJQWWQzOVhsbTlUTjBkZkFYMVErVCthaXZoNE5jMk50RitxVmU3SlJ5WmpzMEFkSGduM3FWd2VrOW5oeFVVd3JlK1loUks5QkRzemdiMDlmZmFPVXpzaFZ4cVJRbC93RURlOTcrRmVJdXZNby9NZ1F6dUdNbFRyalpNR3FuYzZBRnhwa0VlZTFtR0FwVDFISElUZlluakptYklmMGUzUmcxbVlnVHVSbDh4S0trNmR0QVoraEhLVDhuNUI3VnF4bHRtSnlNUXBrZGl6KzkyL3VzNDl4OWhrMnVxSW01ZFFwMjRLNnF0dm9ZK1BpdERuQTc5djhzb0grVytYT3VuQ2NVVDY4TVZ1Wk5KYkRuSEFSSEVlaTlVNVBTelU5RGZ6d2pPdmhqWDNJMWhwdWUrWi83MDVHVjlPQUxSTGlwZWZPeTFOZFhwZTdHRDZnQW00bUJUK2c1eC9Ec3ZDbWVnSDFDVXRTdHVuU1ZFa2JpZytQRC9oMUwyRTNqSHhVQldaa28yU256WUc0cG0vV1RSWkFVZHZuQT09In0="
       }
     }
-}
-```
+  }
+  ```
 
-You got five results and a `nextToken` that you can use to get the next set
-of results.
+You got five results and a `nextToken` that you can use to get the next set of results.
++ Update the `allPost` query to include the `nextToken` from the previous set of results:
 
-- Update the `allPost` query to include the `nextToken` from the
-previous set of results:
-
-```nohighlight
-
-query allPost {
+  ```
+  query allPost {
     allPost(
       count: 5
       nextToken: "eyJ2ZXJzaW9uIjoxLCJ0b2tlbiI6IkFRSUNBSGo4eHR0RG0xWXhUa1F0cEhXMEp1R3B0M1B3eThOSmRvcG9ad2RHYjI3Z0lnRlluNktJRWl6V0ZlR3hJOVJkaStrZUFBQUI1akNDQWVJR0NTcUdTSWIzRFFFSEJxQ0NBZE13Z2dIUEFnRUFNSUlCeUFZSktvWklodmNOQVFjQk1CNEdDV0NHU0FGbEF3UUJMakFSQkF5cW8yUGFSZThnalFpemRCTUNBUkNBZ2dHWk1JODhUNzhIOFVUZGtpdFM2ZFluSWRyVDg4c2lkN1RjZzB2d1k3VGJTTWpSQ2U3WjY3TkUvU2I1dWNETUdDMmdmMHErSGJSL0pteGRzYzVEYnE1K3BmWEtBdU5jSENJdWNIUkJ0UHBPWVdWdCtsS2U5L1pNcWdocXhrem1RaXI1YnIvQkt6dU5hZmJCdE93NmtoM2Jna1BKM0RjWWhpMFBGbmhMVGg4TUVGSjBCcXg3RTlHR1V5N0tUS0JLZlV3RjFQZ0JRREdrNzFYQnFMK2R1S2IrVGtZZzVYMjFrc3NyQmFVTmNXZmhTeXE0ZUJHSWhqZWQ5c3VKWjBSSTc2ZnVQdlZkR3FLNENjQmxHYXhpekZnK2pKK1FneEU1SXduRTNYYU5TR0I4QUpmamR2bU1wbUk1SEdvWjlMUUswclczbG14RDRtMlBsaTNLaEVlcm9pem5zcmdINFpvcXIrN2ltRDN3QkJNd3BLbGQzNjV5Nnc4ZnMrK2FnbTFVOUlKOFFrOGd2bEgySHFROHZrZXBrMWlLdWRIQ25LaS9USnBlMk9JeEVPazVnRFlzRTRUU09HUlVJTkxYY2MvdW1WVEpBMUthV2hWTlAvdjNlSnlZQUszbWV6N2h5WHVXZ1BkTVBNWERQdTdjVnVRa3EwK3NhbGZOd2wvSUx4bHNyNDVwTEhuVFpyRWZvVlV1bXZ5S2VKY1RUU1lET05hM1NwWEd2UT09In0="
@@ -1757,20 +1396,13 @@ query allPost {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The remaining four posts should appear in the results pane to the right of the query pane. There is no `nextToken` in this set of results because you’ve paged through all nine posts, with none remaining. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The remaining four posts should appear in the results pane to the right of the query
-pane. There is no `nextToken` in this set of results because you’ve paged
-through all nine posts, with none remaining. It should look similar to the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPost": {
         "posts": [
@@ -1794,49 +1426,33 @@ following:
         "nextToken": null
       }
     }
-}
-```
+  }
+  ```
 
 ## Setting Up the allPostsByAuthor Resolver (DynamoDB Query)
+<a name="setting-up-the-allpostsbyauthor-resolver-ddb-query"></a>
 
-In addition to scanning DynamoDB for all posts, you can also query DynamoDB to retrieve posts
-created by a specific author. The DynamoDB table you created earlier already has a
-`GlobalSecondaryIndex` called `author-index` you can use with a
-DynamoDB `Query` operation to retrieve all posts created by a specific author.
+In addition to scanning DynamoDB for all posts, you can also query DynamoDB to retrieve posts created by a specific author. The DynamoDB table you created earlier already has a `GlobalSecondaryIndex` called `author-index` you can use with a DynamoDB`Query` operation to retrieve all posts created by a specific author.
++ Choose the **Schema** tab.
++ In the **Schema** pane, modify the `Query` type to add a new `allPostsByAuthor` query as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, modify the `Query`
-type to add a new `allPostsByAuthor` query as follows:
-
-```nohighlight
-
-type Query {
+  ```
+  type Query {
       allPostsByAuthor(author: String!, count: Int, nextToken: String): PaginatedPosts!
       allPost(count: Int, nextToken: String): PaginatedPosts!
       getPost(id: ID): Post
-}
-```
+  }
+  ```
 
-**Note:** This uses the same `PaginatedPosts` type
-that you used with the `allPost` query.
+   **Note:** This uses the same `PaginatedPosts` type that you used with the `allPost` query.
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **allPostsByAuthor** field on the **Query** type, and then choose **Attach**.
++ In the **Action menu**, choose **Update runtime**, then choose **Unit Resolver (VTL only)**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **allPostsByAuthor** field on the **Query** type, and then choose **Attach**.
-
-- In the **Action menu**, choose **Update**
-**runtime**, then choose **Unit Resolver (VTL only)**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "Query",
       "index" : "author-index",
@@ -1852,70 +1468,49 @@ following:
       #if( ${context.arguments.nextToken} )
           ,"nextToken": "${context.arguments.nextToken}"
       #end
-}
-```
+  }
+  ```
 
-Like the `allPost` resolver, this resolver has two optional arguments:
-`count`, which specifies the maximum number of items to return in a single
-call, and `nextToken`, which can be used to retrieve the next set of results
-(the value for `nextToken` can be obtained from a previous call).
+  Like the `allPost` resolver, this resolver has two optional arguments: `count`, which specifies the maximum number of items to return in a single call, and `nextToken`, which can be used to retrieve the next set of results (the value for `nextToken` can be obtained from a previous call).
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "posts": $utils.toJson($context.result.items)
       #if( ${context.result.nextToken} )
           ,"nextToken": $util.toJson($context.result.nextToken)
       #end
-}
-```
+  }
+  ```
 
-**Note:** This is the same response mapping template that you
-used in the `allPost` resolver.
+   **Note:** This is the same response mapping template that you used in the `allPost` resolver.
++ Choose **Save**.
 
-- Choose **Save**.
-
-For more information about `Query` request mapping, see the [Query](aws-appsync-resolver-mapping-template-reference-dynamodb-query.md)
-reference documentation.
+For more information about `Query` request mapping, see the [Query](aws-appsync-resolver-mapping-template-reference-dynamodb-query.md) reference documentation.
 
 ### Call the API to Query All Posts by an Author
+<a name="call-the-api-to-query-all-posts-by-an-author"></a>
 
-Now the resolver has been set up, AWS AppSync knows how to translate an incoming
-`allPostsByAuthor` mutation to a DynamoDB `Query` operation against the
-`author-index` index. You can now query the table to retrieve all the posts by
-a specific author.
+Now the resolver has been set up, AWS AppSync knows how to translate an incoming `allPostsByAuthor` mutation to a DynamoDB`Query` operation against the `author-index` index. You can now query the table to retrieve all the posts by a specific author.
 
-Before you do that, however, let’s populate the table with some more posts, because
-every post so far has the same author.
+Before you do that, however, let’s populate the table with some more posts, because every post so far has the same author.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following mutation:
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following
-mutation:
-
-```nohighlight
-
-mutation addPost {
+  ```
+  mutation addPost {
     post1: addPost(id:10 author: "Nadia" title: "The cutest dog in the world" content: "So cute. So very, very cute." url: "https://aws.amazon.com/appsync/" ) { author, title }
     post2: addPost(id:11 author: "Nadia" title: "Did you know...?" content: "AppSync works offline?" url: "https://aws.amazon.com/appsync/" ) { author, title }
     post3: addPost(id:12 author: "Steve" title: "I like GraphQL" content: "It's great" url: "https://aws.amazon.com/appsync/" ) { author, title }
-}
-```
-
-- Choose **Execute query** (the orange play
-button).
+  }
+  ```
++ Choose **Execute query** (the orange play button).
 
 Now, let’s query the table, returning all posts authored by `Nadia`.
++ In the **Queries** pane, paste the following query:
 
-- In the **Queries** pane, paste the following
-query:
-
-```nohighlight
-
-query allPostsByAuthor {
+  ```
+  query allPostsByAuthor {
     allPostsByAuthor(author: "Nadia") {
       posts {
         id
@@ -1923,18 +1518,13 @@ query allPostsByAuthor {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ All the posts authored by `Nadia` should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- All the posts authored by `Nadia` should appear in the results pane to
-the right of the query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPostsByAuthor": {
         "posts": [
@@ -1950,19 +1540,14 @@ the right of the query pane. It should look similar to the following:
         "nextToken": null
       }
     }
-}
-```
+  }
+  ```
 
-Pagination works for `Query` just the same as it does for `Scan`.
-For example, let’s look for all posts by `AUTHORNAME`, getting five at a
-time.
+Pagination works for `Query` just the same as it does for `Scan`. For example, let’s look for all posts by `AUTHORNAME`, getting five at a time.
++ In the **Queries** pane, paste the following query:
 
-- In the **Queries** pane, paste the following
-query:
-
-```nohighlight
-
-query allPostsByAuthor {
+  ```
+  query allPostsByAuthor {
     allPostsByAuthor(
       author: "AUTHORNAME"
       count: 5
@@ -1973,18 +1558,13 @@ query allPostsByAuthor {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ All the posts authored by `AUTHORNAME` should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- All the posts authored by `AUTHORNAME` should appear in the results pane
-to the right of the query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPostsByAuthor": {
         "posts": [
@@ -2012,15 +1592,12 @@ to the right of the query pane. It should look similar to the following:
         "nextToken": "eyJ2ZXJzaW9uIjoxLCJ0b2tlbiI6IkFRSUNBSGo4eHR0RG0xWXhUa1F0cEhXMEp1R3B0M1B3eThOSmRvcG9ad2RHYjI3Z0lnSExqRnVhVUR3ZUhEZ2QzNGJ2QlFuY0FBQUNqekNDQW9zR0NTcUdTSWIzRFFFSEJxQ0NBbnd3Z2dKNEFnRUFNSUlDY1FZSktvWklodmNOQVFjQk1CNEdDV0NHU0FGbEF3UUJMakFSQkF5Qkg4Yk1obW9LVEFTZHM3SUNBUkNBZ2dKQ3dISzZKNlJuN3pyYUVKY1pWNWxhSkNtZW1KZ0F5N1dhZkc2UEdTNHpNQzJycTkwZHFJTFV6Z25wck9Gd3pMS3VOQ2JvUXc3VDI5eCtnVExIbGg4S3BqbzB1YjZHQ3FwcDhvNDVmMG9JbDlmdS9JdjNXcFNNSXFKTXZ1MEVGVWs1VzJQaW5jZGlUaVRtZFdYWlU1bkV2NkgyRFBRQWZYYlNnSmlHSHFLbmJZTUZZM0FTdmRIL0hQaVZBb1RCMk1YZkg0eGJOVTdEbjZtRFNhb2QwbzdHZHJEWDNtODQ1UXBQUVNyUFhHemY0WDkyajhIdlBCSWE4Smcrb0RxbHozUVQ5N2FXUXdYWWU2S0h4emI1ejRITXdEdXEyRDRkYzhoMi9CbW10MzRMelVGUVIyaExSZGRaZ0xkdzF5cHJZdFZwY3dEc1d4UURBTzdOcjV2ZEp4VVR2TVhmODBRSnp1REhXREpTVlJLdDJwWmlpaXhXeGRwRmNod1BzQ3d2aVBqMGwrcWFFWU1jMXNQbENkVkFGem43VXJrSThWbS8wWHlwR2xZb3BSL2FkV0xVekgrbGMrYno1ZEM2SnVLVXdtY1EyRXlZeDZiS0Izbi9YdUViWGdFeU5PMWZTdE1rRlhyWmpvMVpzdlYyUFRjMzMrdEs0ZDhkNkZrdjh5VVR6WHhJRkxIaVNsOUx6VVdtT3BCaWhrTFBCT09jcXkyOHh1UmkzOEM3UFRqMmN6c3RkOUo1VUY0azBJdUdEbVZzM2xjdWg1SEJjYThIeXM2aEpvOG1HbFpMNWN6R2s5bi8vRE1EbDY3RlJraG5QNFNhSDBpZGI5VFEvMERLeFRBTUdhcWpPaEl5ekVqd2ZDQVJleFdlbldyOGlPVkhScDhGM25WZVdvbFRGK002N0xpdi9XNGJXdDk0VEg3b0laUU5lYmZYKzVOKy9Td25Hb1dyMTlWK0pEb2lIRVFLZ1cwMWVuYjZKUXo5Slh2Tm95ZzF3RnJPVmxGc2xwNlRHa1BlN2Rnd2IrWT0ifQ=="
       }
     }
-}
-```
+  }
+  ```
++ Update the `nextToken` argument with the value returned from the previous query as follows:
 
-- Update the `nextToken` argument with the value returned from the previous
-query as follows:
-
-```nohighlight
-
-query allPostsByAuthor {
+  ```
+  query allPostsByAuthor {
     allPostsByAuthor(
       author: "AUTHORNAME"
       count: 5
@@ -2032,18 +1609,13 @@ query allPostsByAuthor {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The remaining posts authored by `AUTHORNAME` should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- The remaining posts authored by `AUTHORNAME` should appear in the results
-pane to the right of the query pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPostsByAuthor": {
         "posts": [
@@ -2067,26 +1639,20 @@ pane to the right of the query pane. It should look similar to the following:
         "nextToken": null
       }
     }
-}
-```
+  }
+  ```
 
 ## Using Sets
+<a name="using-sets"></a>
 
-Up to this point the `Post` type has been a flat key/value object. You can also
-model complex objects with the AWS AppSyncDynamoDB resolver, such as sets, lists, and maps.
+Up to this point the `Post` type has been a flat key/value object. You can also model complex objects with the AWS AppSyncDynamoDB resolver, such as sets, lists, and maps.
 
-Let’s update the `Post` type to include tags. A post can have 0 or more tags,
-which are stored in DynamoDB as a String Set. You’ll also set up some mutations to add and remove
-tags, and a new query to scan for posts with a specific tag.
+Let’s update the `Post` type to include tags. A post can have 0 or more tags, which are stored in DynamoDB as a String Set. You’ll also set up some mutations to add and remove tags, and a new query to scan for posts with a specific tag.
++ Choose the **Schema** tab.
++ In the **Schema** pane, modify the `Post` type to add a new `tags` field as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, modify the `Post` type
-to add a new `tags` field as follows:
-
-```nohighlight
-
-type Post {
+  ```
+  type Post {
     id: ID!
     author: String
     title: String
@@ -2096,29 +1662,22 @@ type Post {
     downs: Int!
     version: Int!
     tags: [String!]
-}
-```
+  }
+  ```
++ In the **Schema** pane, modify the `Query` type to add a new `allPostsByTag` query as follows:
 
-- In the **Schema** pane, modify the `Query`
-type to add a new `allPostsByTag` query as follows:
-
-```nohighlight
-
-type Query {
+  ```
+  type Query {
     allPostsByTag(tag: String!, count: Int, nextToken: String): PaginatedPosts!
     allPostsByAuthor(author: String!, count: Int, nextToken: String): PaginatedPosts!
     allPost(count: Int, nextToken: String): PaginatedPosts!
     getPost(id: ID): Post
-}
-```
+  }
+  ```
++ In the **Schema** pane, modify the `Mutation` type to add new `addTag` and `removeTag` mutations as follows:
 
-- In the **Schema** pane, modify the `Mutation`
-type to add new `addTag` and `removeTag` mutations as
-follows:
-
-```nohighlight
-
-type Mutation {
+  ```
+  type Mutation {
     addTag(id: ID!, tag: String!): Post
     removeTag(id: ID!, tag: String!): Post
     deletePost(id: ID!, expectedVersion: Int): Post
@@ -2138,22 +1697,15 @@ type Mutation {
       content: String!,
       url: String!
     ): Post!
-}
-```
+  }
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **allPostsByTag** field on the **Query** type, and then choose **Attach**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **allPostsByTag** field on the **Query** type, and then choose **Attach**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "Scan",
       "filter": {
@@ -2168,35 +1720,25 @@ following:
       #if( ${context.arguments.nextToken} )
           ,"nextToken": $util.toJson($context.arguments.nextToken)
       #end
-}
-```
+  }
+  ```
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "posts": $utils.toJson($context.result.items)
       #if( ${context.result.nextToken} )
           ,"nextToken": $util.toJson($context.result.nextToken)
       #end
-}
-```
+  }
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **addTag** field on the **Mutation** type, and then choose **Attach**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **addTag** field on the **Mutation** type, and then choose **Attach**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "UpdateItem",
       "key" : {
@@ -2209,30 +1751,20 @@ following:
               ":plusOne" : { "N" : 1 }
           }
       }
-}
-```
+  }
+  ```
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
+  ```
+  $utils.toJson($context.result)
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **removeTag** field on the **Mutation** type, and then choose **Attach**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **removeTag** field on the **Mutation** type, and then choose **Attach**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
       "version" : "2017-02-28",
       "operation" : "UpdateItem",
       "key" : {
@@ -2245,36 +1777,26 @@ following:
               ":plusOne" : { "N" : 1 }
           }
       }
-}
-```
+  }
+  ```
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-- Choose **Save**.
+  ```
+  $utils.toJson($context.result)
+  ```
++ Choose **Save**.
 
 ### Call the API to Work with Tags
+<a name="call-the-api-to-work-with-tags"></a>
 
-Now that you’ve set up the resolvers, AWS AppSync knows how to translate incoming
-`addTag`, `removeTag`, and `allPostsByTag` requests into
-DynamoDB `UpdateItem` and `Scan` operations.
+Now that you’ve set up the resolvers, AWS AppSync knows how to translate incoming `addTag`, `removeTag`, and `allPostsByTag` requests into DynamoDB`UpdateItem` and `Scan` operations.
 
-To try it out, let’s select one of the posts you created earlier. For example, let’s use
-a post authored by `Nadia`.
+To try it out, let’s select one of the posts you created earlier. For example, let’s use a post authored by `Nadia`.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following query:
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following
-query:
-
-```nohighlight
-
-query allPostsByAuthor {
+  ```
+  query allPostsByAuthor {
     allPostsByAuthor(
       author: "Nadia"
     ) {
@@ -2284,18 +1806,13 @@ query allPostsByAuthor {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ All of Nadia’s posts should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- All of Nadia’s posts should appear in the results pane to the right of the query
-pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPostsByAuthor": {
         "posts": [
@@ -2311,37 +1828,27 @@ pane. It should look similar to the following:
         "nextToken": null
       }
     }
-}
-```
-
-- Let’s use the one with the title `"The cutest dog in the world"`. Note
-down its `id` because you’ll use it later.
+  }
+  ```
++ Let’s use the one with the title `"The cutest dog in the world"`. Note down its `id` because you’ll use it later.
 
 Now let’s try adding a `dog` tag.
++ In the **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- In the **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation addTag {
+  ```
+  mutation addTag {
     addTag(id:10 tag: "dog") {
       id
       title
       tags
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The post is updated with the new tag.
 
-- Choose **Execute query** (the orange play
-button).
-
-- The post is updated with the new tag.
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "addTag": {
         "id": "10",
@@ -2351,33 +1858,26 @@ button).
         ]
       }
     }
-}
-```
+  }
+  ```
 
 You can add more tags as follows:
++ Update the mutation to change the `tag` argument to `puppy`.
 
-- Update the mutation to change the `tag` argument to
-`puppy`.
-
-```nohighlight
-
-mutation addTag {
+  ```
+  mutation addTag {
     addTag(id:10 tag: "puppy") {
       id
       title
       tags
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The post is updated with the new tag.
 
-- Choose **Execute query** (the orange play
-button).
-
-- The post is updated with the new tag.
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "addTag": {
         "id": "10",
@@ -2388,34 +1888,26 @@ button).
         ]
       }
     }
-}
-```
+  }
+  ```
 
 You can also delete tags:
++ In the **Queries** pane, paste the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-- In the **Queries** pane, paste the following mutation.
-You’ll also need to update the `id` argument to the value you noted down
-earlier.
-
-```nohighlight
-
-mutation removeTag {
+  ```
+  mutation removeTag {
     removeTag(id:10 tag: "puppy") {
       id
       title
       tags
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ The post is updated and the `puppy` tag is deleted.
 
-- Choose **Execute query** (the orange play
-button).
-
-- The post is updated and the `puppy` tag is deleted.
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "addTag": {
         "id": "10",
@@ -2425,17 +1917,14 @@ button).
         ]
       }
     }
-}
-```
+  }
+  ```
 
 You can also search for all posts that have a tag:
++ In the **Queries** pane, paste the following query:
 
-- In the **Queries** pane, paste the following
-query:
-
-```nohighlight
-
-query allPostsByTag {
+  ```
+  query allPostsByTag {
     allPostsByTag(tag: "dog") {
       posts {
         id
@@ -2444,17 +1933,13 @@ query allPostsByTag {
       }
       nextToken
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ All posts that have the `dog` tag are returned as follows:
 
-- Choose **Execute query** (the orange play
-button).
-
-- All posts that have the `dog` tag are returned as follows:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "allPostsByTag": {
         "posts": [
@@ -2470,40 +1955,30 @@ button).
         "nextToken": null
       }
     }
-}
-```
+  }
+  ```
 
 ## Using Lists and Maps
+<a name="using-lists-and-maps"></a>
 
-In addition to using DynamoDB sets, you can also use DynamoDB lists and maps to model complex
-data in a single object.
+In addition to using DynamoDB sets, you can also use DynamoDB lists and maps to model complex data in a single object.
 
-Let’s add the ability to add comments to posts. This will be modeled as a list of map
-objects on the `Post` object in DynamoDB.
+Let’s add the ability to add comments to posts. This will be modeled as a list of map objects on the `Post` object in DynamoDB.
 
-**Note:** in a real application, you would model comments in
-their own table. For this tutorial, you’ll just add them in the `Post`
-table.
+ **Note:** in a real application, you would model comments in their own table. For this tutorial, you’ll just add them in the `Post` table.
++ Choose the **Schema** tab.
++ In the **Schema** pane, add a new `Comment` type as follows:
 
-- Choose the **Schema** tab.
-
-- In the **Schema** pane, add a new `Comment`
-type as follows:
-
-```nohighlight
-
-type Comment {
+  ```
+  type Comment {
       author: String!
       comment: String!
-}
-```
+  }
+  ```
++ In the **Schema** pane, modify the `Post` type to add a new `comments` field as follows:
 
-- In the **Schema** pane, modify the `Post` type
-to add a new `comments` field as follows:
-
-```nohighlight
-
-type Post {
+  ```
+  type Post {
     id: ID!
     author: String
     title: String
@@ -2514,15 +1989,12 @@ type Post {
     version: Int!
     tags: [String!]
     comments: [Comment!]
-}
-```
+  }
+  ```
++ In the **Schema** pane, modify the `Mutation` type to add a new `addComment` mutation as follows:
 
-- In the **Schema** pane, modify the `Mutation`
-type to add a new `addComment` mutation as follows:
-
-```nohighlight
-
-type Mutation {
+  ```
+  type Mutation {
     addComment(id: ID!, author: String!, comment: String!): Post
     addTag(id: ID!, tag: String!): Post
     removeTag(id: ID!, tag: String!): Post
@@ -2543,22 +2015,15 @@ type Mutation {
       content: String!,
       url: String!
     ): Post!
-}
-```
+  }
+  ```
++ Choose **Save**.
++ In the **Data types** pane on the right, find the newly created **addComment** field on the **Mutation** type, and then choose **Attach**.
++ In **Data source name**, choose **PostDynamoDBTable**.
++ In **Configure the request mapping template**, paste the following:
 
-- Choose **Save**.
-
-- In the **Data types** pane on the right, find the newly
-created **addComment** field on the **Mutation** type, and then choose **Attach**.
-
-- In **Data source name**, choose **PostDynamoDBTable**.
-
-- In **Configure the request mapping template**, paste the
-following:
-
-```nohighlight
-
-{
+  ```
+  {
     "version" : "2017-02-28",
     "operation" : "UpdateItem",
     "key" : {
@@ -2578,38 +2043,28 @@ following:
         ":plusOne" : $util.dynamodb.toDynamoDBJson(1)
       }
     }
-}
-```
+  }
+  ```
 
-This update expression will append a list containing our new comment to the existing
-`comments` list. If the list doesn’t already exist, it will be
-created.
+  This update expression will append a list containing our new comment to the existing `comments` list. If the list doesn’t already exist, it will be created.
++ In **Configure the response mapping template**, paste the following:
 
-- In **Configure the response mapping template**, paste the
-following:
-
-```nohighlight
-
-$utils.toJson($context.result)
-```
-
-- Choose **Save**.
+  ```
+  $utils.toJson($context.result)
+  ```
++ Choose **Save**.
 
 ### Call the API to Add a Comment
+<a name="call-the-api-to-add-a-comment"></a>
 
-Now that you’ve set up the resolvers, AWS AppSync knows how to translate incoming
-`addComment` requests into DynamoDB `UpdateItem` operations.
+Now that you’ve set up the resolvers, AWS AppSync knows how to translate incoming `addComment` requests into DynamoDB`UpdateItem` operations.
 
 Let’s try it out by adding a comment to the same post you added the tags to.
++ Choose the **Queries** tab.
++ In the **Queries** pane, paste the following query:
 
-- Choose the **Queries** tab.
-
-- In the **Queries** pane, paste the following
-query:
-
-```nohighlight
-
-mutation addComment {
+  ```
+  mutation addComment {
     addComment(
       id:10
       author: "Steve"
@@ -2621,18 +2076,13 @@ mutation addComment {
         comment
       }
     }
-}
-```
+  }
+  ```
++ Choose **Execute query** (the orange play button).
++ All of Nadia’s posts should appear in the results pane to the right of the query pane. It should look similar to the following:
 
-- Choose **Execute query** (the orange play
-button).
-
-- All of Nadia’s posts should appear in the results pane to the right of the query
-pane. It should look similar to the following:
-
-```nohighlight
-
-{
+  ```
+  {
     "data": {
       "addComment": {
         "id": "10",
@@ -2644,34 +2094,23 @@ pane. It should look similar to the following:
         ]
       }
     }
-}
-```
+  }
+  ```
 
-If you execute the request multiple times, multiple comments will be appended to the
-list.
+If you execute the request multiple times, multiple comments will be appended to the list.
 
 ## Conclusion
+<a name="conclusion"></a>
 
-In this tutorial, you’ve built an API that lets us manipulate Post objects in DynamoDB using
-AWS AppSync and GraphQL. For more information, see the [Resolver Mapping Template\
-Reference](resolver-mapping-template-reference.md#aws-appsync-resolver-mapping-template-reference).
+In this tutorial, you’ve built an API that lets us manipulate Post objects in DynamoDB using AWS AppSync and GraphQL. For more information, see the [Resolver Mapping Template Reference](resolver-mapping-template-reference.md#aws-appsync-resolver-mapping-template-reference).
 
 To clean up, you can delete the AppSync GraphQL API from the console.
 
-To delete the DynamoDB table and the IAM role you created for this tutorial, you can run
-the following to delete the `AWSAppSyncTutorialForAmazonDynamoDB` stack, or visit
-the CloudFormation console and delete the stack:
+To delete the DynamoDB table and the IAM role you created for this tutorial, you can run the following to delete the `AWSAppSyncTutorialForAmazonDynamoDB` stack, or visit the CloudFormation console and delete the stack:
 
-```sh
-
+```
 aws cloudformation delete-stack \
     --stack-name AWSAppSyncTutorialForAmazonDynamoDB
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VTL resolver tutorials
-
-Using AWS Lambda resolvers
 
 All content copied from https://docs.aws.amazon.com/.

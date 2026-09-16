@@ -3,30 +3,25 @@ title: "Performing DynamoDB transactions in AWS AppSync"
 ---
 
 # Performing DynamoDB transactions in AWS AppSync
+<a name="tutorial-dynamodb-transact-js"></a>
 
-AWS AppSync supports using Amazon DynamoDB transaction operations across one or more tables in a single Region.
-Supported operations are `TransactGetItems` and `TransactWriteItems`. By using these
-features in AWS AppSync, you can perform tasks such as:
-
-- Passing a list of keys in a single query and returning the results from a table
-
-- Reading records from one or more tables in a single query
-
-- Writing records in transactions to one or more tables in an all-or-nothing way
-
-- Running transactions when some conditions are satisfied
+AWS AppSync supports using Amazon DynamoDB transaction operations across one or more tables in a single Region. Supported operations are `TransactGetItems` and `TransactWriteItems`. By using these features in AWS AppSync, you can perform tasks such as:
++ Passing a list of keys in a single query and returning the results from a table
++ Reading records from one or more tables in a single query
++ Writing records in transactions to one or more tables in an all-or-nothing way
++ Running transactions when some conditions are satisfied
 
 ## Permissions
+<a name="permissions-js"></a>
 
-Like other resolvers, you need to create a data source in AWS AppSync and either
-create a role or use an existing one. Because transaction operations require different
-permissions on DynamoDB tables, you need to grant the configured role permissions for read
-or write actions:
+Like other resolvers, you need to create a data source in AWS AppSync and either create a role or use an existing one. Because transaction operations require different permissions on DynamoDB tables, you need to grant the configured role permissions for read or write actions:
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -47,31 +42,23 @@ JSON
         }
     ]
 }
-
 ```
 
-###### Note
+------
 
-Roles are tied to data sources in AWS AppSync, and resolvers on fields are invoked against a data
-source. Data sources configured to fetch against DynamoDB only have one table specified to keep
-configurations simple. Therefore, when performing a transaction operation against multiple tables in a
-single resolver, which is a more advanced task, you must grant the role on that data source access to
-any tables the resolver will interact with. This would be done in the **Resource** field in the IAM policy above. Configuration of the transaction calls against
-the tables is done in the resolver code, which we describe below.
+**Note**
+Roles are tied to data sources in AWS AppSync, and resolvers on fields are invoked against a data source. Data sources configured to fetch against DynamoDB only have one table specified to keep configurations simple. Therefore, when performing a transaction operation against multiple tables in a single resolver, which is a more advanced task, you must grant the role on that data source access to any tables the resolver will interact with. This would be done in the **Resource** field in the IAM policy above. Configuration of the transaction calls against the tables is done in the resolver code, which we describe below.
 
 ## Data source
+<a name="data-source-js"></a>
 
 For the sake of simplicity, we’ll use the same data source for all the resolvers used in this tutorial.
 
-We’ll have two tables called **savingAccounts** and **checkingAccounts**, both with the `accountNumber` as a partition key, and a
-**transactionHistory** table with `transactionId` as partition
-key. You can use the CLI commands below to create your tables. Make sure to replace `region` with
-your Region.
+We’ll have two tables called **savingAccounts** and **checkingAccounts**, both with the `accountNumber` as a partition key, and a **transactionHistory** table with `transactionId` as partition key. You can use the CLI commands below to create your tables. Make sure to replace `region` with your Region.
 
 **With the CLI**
 
 ```
-
 aws dynamodb create-table --table-name savingAccounts \
   --attribute-definitions AttributeName=accountNumber,AttributeType=S \
   --key-schema AttributeName=accountNumber,KeyType=HASH \
@@ -91,18 +78,16 @@ aws dynamodb create-table --table-name transactionHistory \
   --table-class STANDARD --region region
 ```
 
-In the AWS AppSync console, in **Data sources**, create a new DynamoDB data source
-and name it **TransactTutorial**. Select **savingAccounts** as the table (though the specific table does not matter when using
-transactions). Choose to create a new role and the data source. You can review the data source configuration
-to see the name of the generated role. In the IAM console, you can add an in-line policy that allows the
-data source to interact with all the tables.
+In the AWS AppSync console, in **Data sources**, create a new DynamoDB data source and name it **TransactTutorial**. Select **savingAccounts** as the table (though the specific table does not matter when using transactions). Choose to create a new role and the data source. You can review the data source configuration to see the name of the generated role. In the IAM console, you can add an in-line policy that allows the data source to interact with all the tables.
 
 Replace `region` and `accountID` with your Region and account ID:
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -127,30 +112,25 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## Transactions
+<a name="transactions-js"></a>
 
-For this example, the context is a classic banking transaction, where we’ll use
-`TransactWriteItems` to:
+For this example, the context is a classic banking transaction, where we’ll use `TransactWriteItems` to:
++ Transfer money from saving accounts to checking accounts
++ Generate new transaction records for each transaction
 
-- Transfer money from saving accounts to checking accounts
+And then we’ll use `TransactGetItems` to retrieve details from saving accounts and checking accounts.
 
-- Generate new transaction records for each transaction
-
-And then we’ll use `TransactGetItems` to retrieve details from saving
-accounts and checking accounts.
-
-###### Warning
-
-`TransactWriteItems` is not supported when used with conflict detection
-and resolution. These settings must be disabled to prevent possible errors.
+**Warning**
+`TransactWriteItems` is not supported when used with conflict detection and resolution. These settings must be disabled to prevent possible errors.
 
 We define our GraphQL schema as follows:
 
-```nohighlight
-
+```
 type SavingAccount {
     accountNumber: String!
     username: String
@@ -205,19 +185,15 @@ type Mutation {
 ```
 
 ### TransactWriteItems - Populate accounts
+<a name="transactwriteitems-populate-accounts-js"></a>
 
-In order to transfer money between accounts, we need to populate the table with
-the details. We’ll use the GraphQL operation `Mutation.populateAccounts`
-to do so.
+In order to transfer money between accounts, we need to populate the table with the details. We’ll use the GraphQL operation `Mutation.populateAccounts` to do so.
 
-In the Schema section, click on **Attach** next to the
-`Mutation.populateAccounts` operation. Choose the `TransactTutorial` data
-source and choose **Create**.
+In the Schema section, click on **Attach** next to the `Mutation.populateAccounts` operation. Choose the `TransactTutorial` data source and choose **Create**.
 
 Now use the following code:
 
-```TypeScript
-
+```
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -260,13 +236,11 @@ export function response(ctx) {
 }
 ```
 
-Save the resolver and navigate to the **Queries**
-section of the AWS AppSync console to populate the accounts.
+Save the resolver and navigate to the **Queries** section of the AWS AppSync console to populate the accounts.
 
 Execute the following mutation:
 
-```SDL
-
+```
 mutation populateAccounts {
   populateAccounts (
     savingAccounts: [
@@ -294,13 +268,11 @@ We populated three saving accounts and three checking accounts in one mutation.
 Use the DynamoDB console to validate that data shows up in both the **savingAccounts** and **checkingAccounts** tables.
 
 ### TransactWriteItems - Transfer money
+<a name="transactwriteitems-transfer-money-js"></a>
 
-Attach a resolver to the `transferMoney` mutation with the following code. For each
-transfer, we need a success modifier to both the checking and savings accounts, and we need to track the
-transfer in transactions.
+Attach a resolver to the `transferMoney` mutation with the following code. For each transfer, we need a success modifier to both the checking and savings accounts, and we need to track the transfer in transactions.
 
-```TypeScript
-
+```
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -362,11 +334,9 @@ export function response(ctx) {
 }
 ```
 
-Now, navigate to the **Queries** section of the AWS AppSync console and
-execute the **transferMoney** mutation as follows:
+Now, navigate to the **Queries** section of the AWS AppSync console and execute the **transferMoney** mutation as follows:
 
-```SDL
-
+```
 mutation write {
   transferMoney(
     transactions: [
@@ -387,18 +357,14 @@ mutation write {
 }
 ```
 
-We sent three banking transactions in one mutation. Use the DynamoDB console to validate that data shows
-up in the **savingAccounts**, **checkingAccounts**, and **transactionHistory** tables.
+We sent three banking transactions in one mutation. Use the DynamoDB console to validate that data shows up in the **savingAccounts**, **checkingAccounts**, and **transactionHistory** tables.
 
 ### TransactGetItems - Retrieve accounts
+<a name="transactgetitems-retrieve-accounts-js"></a>
 
-In order to retrieve the details from savings and checking accounts in a single transactional request,
-we’ll attach a resolver to the `Query.getAccounts` GraphQL operation on our schema. Select
-**Attach**, pick the same `TransactTutorial` data source
-created at the beginning of the tutorial. Use the following code:
+In order to retrieve the details from savings and checking accounts in a single transactional request, we’ll attach a resolver to the `Query.getAccounts` GraphQL operation on our schema. Select **Attach**, pick the same `TransactTutorial` data source created at the beginning of the tutorial. Use the following code:
 
 ```
-
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -431,12 +397,9 @@ export function response(ctx) {
 }
 ```
 
-Save the resolver and navigate to the **Queries** sections of the
-AWS AppSync console. In order to retrieve the savings and checking accounts, execute the following
-query:
+Save the resolver and navigate to the **Queries** sections of the AWS AppSync console. In order to retrieve the savings and checking accounts, execute the following query:
 
-```SDL
-
+```
 query getAccounts {
   getAccounts(
     savingAccountNumbers: ["1", "2", "3"],
@@ -456,13 +419,6 @@ query getAccounts {
 }
 ```
 
-We have successfully demonstrated the use of DynamoDB transactions using
-AWS AppSync.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using OpenSearch Service resolvers
-
-Using DynamoDB batch operations
+We have successfully demonstrated the use of DynamoDB transactions using AWS AppSync.
 
 All content copied from https://docs.aws.amazon.com/.

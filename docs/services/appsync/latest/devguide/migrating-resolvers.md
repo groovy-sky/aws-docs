@@ -3,17 +3,13 @@ title: "Migrating from VTL to JavaScript in AWS AppSync"
 ---
 
 # Migrating from VTL to JavaScript in AWS AppSync
+<a name="migrating-resolvers"></a>
 
-AWS AppSync allows you to write your business logic for your resolvers and functions using VTL or
-JavaScript. With both languages, you write logic that instructs the AWS AppSync service on how to interact
-with your data sources. With VTL, you write mapping templates that must evaluate to a valid JSON-encoded
-string. With JavaScript, you write request and response handlers that return objects. You don't return a
-JSON-encoded string.
+AWS AppSync allows you to write your business logic for your resolvers and functions using VTL or JavaScript. With both languages, you write logic that instructs the AWS AppSync service on how to interact with your data sources. With VTL, you write mapping templates that must evaluate to a valid JSON-encoded string. With JavaScript, you write request and response handlers that return objects. You don't return a JSON-encoded string.
 
 For example, take the following VTL mapping template to get an Amazon DynamoDB item:
 
-```TypeScript
-
+```
 {
     "operation": "GetItem",
     "key": {
@@ -22,12 +18,9 @@ For example, take the following VTL mapping template to get an Amazon DynamoDB i
 }
 ```
 
-The utility `$util.dynamodb.toDynamoDBJson` returns a JSON-encoded string. If
-`$ctx.args.id` is set to `<id>`, the template evaluates to a valid JSON-encoded
-string:
+The utility `$util.dynamodb.toDynamoDBJson` returns a JSON-encoded string. If `$ctx.args.id` is set to `<id>`, the template evaluates to a valid JSON-encoded string:
 
-```TypeScript
-
+```
 {
     "operation": "GetItem",
     "key": {
@@ -36,12 +29,9 @@ string:
 }
 ```
 
-When working with JavaScript, you do not need to print out raw JSON-encoded strings within your code, and
-using a utility like `toDynamoDBJson` is not needed. An equivalent example of the mapping template
-above is:
+When working with JavaScript, you do not need to print out raw JSON-encoded strings within your code, and using a utility like `toDynamoDBJson` is not needed. An equivalent example of the mapping template above is:
 
-```TypeScript
-
+```
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   return {
@@ -51,11 +41,9 @@ export function request(ctx) {
 }
 ```
 
-An alternative is to use `util.dynamodb.toMapValues`, which is the recommended approach to handle
-an object of values:
+An alternative is to use `util.dynamodb.toMapValues`, which is the recommended approach to handle an object of values:
 
-```TypeScript
-
+```
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   return {
@@ -67,8 +55,7 @@ export function request(ctx) {
 
 This evaluates to:
 
-```TypeScript
-
+```
 {
   "operation": "GetItem",
   "key": {
@@ -79,12 +66,10 @@ This evaluates to:
 }
 ```
 
-###### Note
-
+**Note**
 We recommend using the DynamoDB module with DynamoDB data sources:
 
 ```
-
 import * as ddb from '@aws-appsync/utils/dynamodb'
 
 export function request(ctx) {
@@ -94,8 +79,7 @@ export function request(ctx) {
 
 As another example, take the following mapping template to put an item in an Amazon DynamoDB data source:
 
-```TypeScript
-
+```
 {
     "operation" : "PutItem",
     "key" : {
@@ -105,11 +89,9 @@ As another example, take the following mapping template to put an item in an Ama
 }
 ```
 
-When evaluated, this mapping template string must produce a valid JSON-encoded string. When using
-JavaScript, your code returns the request object directly:
+When evaluated, this mapping template string must produce a valid JSON-encoded string. When using JavaScript, your code returns the request object directly:
 
-```TypeScript
-
+```
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   const { id = util.autoId(), ...values } = ctx.args;
@@ -123,8 +105,7 @@ export function request(ctx) {
 
 which evaluates to:
 
-```TypeScript
-
+```
 {
   "operation": "PutItem",
   "key": {
@@ -137,12 +118,10 @@ which evaluates to:
 }
 ```
 
-###### Note
-
+**Note**
 We recommend using the DynamoDB module with DynamoDB data sources:
 
 ```
-
 import { util } from '@aws-appsync/utils'
 import * as ddb from '@aws-appsync/utils/dynamodb'
 
@@ -151,11 +130,5 @@ export function request(ctx) {
 	return ddb.put({ key: { id }, item })
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Testing your resolver and function handlers
-
-Choosing between direct data source access and proxying via a Lambda data source
 
 All content copied from https://docs.aws.amazon.com/.

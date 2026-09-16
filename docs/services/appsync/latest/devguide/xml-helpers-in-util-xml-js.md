@@ -3,20 +3,18 @@ title: "XML helpers in util.xml"
 ---
 
 # XML helpers in util.xml
+<a name="xml-helpers-in-util-xml-js"></a>
 
-`util.xml` contains methods to help with XML string conversion.
+ `util.xml` contains methods to help with XML string conversion.
 
 ## util.xml utils list
+<a name="xml-helpers-in-util-xml-list-js"></a>
 
-**`util.xml.toMap(String) :**
-**Object`**
-
+ **`util.xml.toMap(String) : Object`**
 Converts a XML string to a dictionary.
-
 **Example 1:**
 
-```TypeScript
-
+```
 Input:
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,11 +36,9 @@ Output (object):
     }
 }
 ```
-
 **Example 2:**
 
-```TypeScript
-
+```
 Input:
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -75,20 +71,7 @@ Output (JavaScript object):
 }
 ```
 
-**`util.xml.toJsonString(String, Boolean?) :**
-**String`**
-
-Converts a XML string to a JSON string. This is similar to
-`toMap`, except that the output is a string. This is useful if
-you want to directly convert and return the XML response from an HTTP object
-to JSON. You can set an optional boolean parameter to determine if you want
-to string-encode the JSON.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Extensions
-
-JavaScript resolver function
-reference for DynamoDB
+**`util.xml.toJsonString(String, Boolean?) : String`**
+Converts a XML string to a JSON string. This is similar to `toMap`, except that the output is a string. This is useful if you want to directly convert and return the XML response from an HTTP object to JSON. You can set an optional boolean parameter to determine if you want to string-encode the JSON.
 
 All content copied from https://docs.aws.amazon.com/.
