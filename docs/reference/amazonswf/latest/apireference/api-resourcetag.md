@@ -3,48 +3,33 @@ title: "ResourceTag"
 ---
 
 # ResourceTag
+<a name="API_ResourceTag"></a>
 
-Tags are key-value pairs that can be associated with Amazon SWF state machines and
-activities.
+Tags are key-value pairs that can be associated with Amazon SWF state machines and activities.
 
 Tags may only contain unicode letters, digits, whitespace, or these symbols: `_ . : / = + - @`.
 
 ## Contents
+<a name="API_ResourceTag_Contents"></a>
 
-**key**
-
+ ** key **   <a name="SWF-Type-ResourceTag-key"></a>
 The key of a tag.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Required: Yes
 
-**value**
-
+ ** value **   <a name="SWF-Type-ResourceTag-value"></a>
 The value of a tag.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Required: No
 
 ## See Also
+<a name="API_ResourceTag_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/resourcetag.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/resourcetag.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/resourcetag.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RequestCancelExternalWorkflowExecutionInitiatedEventAttributes
-
-ScheduleActivityTaskDecisionAttributes
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/ResourceTag)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/ResourceTag)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/ResourceTag)
 
 All content copied from https://docs.aws.amazon.com/.

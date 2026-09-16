@@ -3,51 +3,34 @@ title: "CompleteWorkflowExecutionDecisionAttributes"
 ---
 
 # CompleteWorkflowExecutionDecisionAttributes
+<a name="API_CompleteWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `CompleteWorkflowExecution` decision.
 
-**Access Control**
+ **Access Control**
 
 You can use IAM policies to control this decision's access to Amazon SWF resources as follows:
++ Use a `Resource` element with the domain name to limit the action to only specified domains.
++ Use an `Action` element to allow or deny permission to call this action.
++ You cannot use an IAM policy to constrain this action's parameters.
 
-- Use a `Resource` element with the domain name to limit the action to only
-specified domains.
-
-- Use an `Action` element to allow or deny permission to call this action.
-
-- You cannot use an IAM policy to constrain this action's parameters.
-
-If the caller doesn't have sufficient permissions to invoke the action, or the
-parameter values fall outside the specified constraints, the action fails. The associated event attribute's
-`cause` parameter is set to `OPERATION_NOT_PERMITTED`. For details and example IAM policies, see
-[Using IAM to Manage Access to Amazon SWF Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md) in the _Amazon SWF Developer Guide_.
+If the caller doesn't have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html) in the *Amazon SWF Developer Guide*.
 
 ## Contents
+<a name="API_CompleteWorkflowExecutionDecisionAttributes_Contents"></a>
 
-**result**
-
+ ** result **   <a name="SWF-Type-CompleteWorkflowExecutionDecisionAttributes-result"></a>
 The result of the workflow execution. The form of the result is implementation defined.
-
 Type: String
-
 Length Constraints: Maximum length of 32768.
-
 Required: No
 
 ## See Also
+<a name="API_CompleteWorkflowExecutionDecisionAttributes_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/completeworkflowexecutiondecisionattributes.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/completeworkflowexecutiondecisionattributes.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/completeworkflowexecutiondecisionattributes.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloseStatusFilter
-
-CompleteWorkflowExecutionFailedEventAttributes
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/CompleteWorkflowExecutionDecisionAttributes)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/CompleteWorkflowExecutionDecisionAttributes)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/CompleteWorkflowExecutionDecisionAttributes)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,47 +3,30 @@ title: "Setting task priority in Amazon SWF"
 ---
 
 # Setting task priority in Amazon SWF
+<a name="programming-priority"></a>
 
-By default, tasks on a task list are delivered based upon their _arrival_
-_time_: tasks that are scheduled first are generally run first, as far as possible.
-By setting an optional _task priority_, you can give priority to certain
-tasks: Amazon SWF will attempt to deliver higher-priority tasks on a task list before those with
-lower priority.
+By default, tasks on a task list are delivered based upon their *arrival time*: tasks that are scheduled first are generally run first, as far as possible. By setting an optional *task priority*, you can give priority to certain tasks: Amazon SWF will attempt to deliver higher-priority tasks on a task list before those with lower priority.
 
-###### Note
-
+**Note**
 Tasks that are scheduled first generally run first, but this is not guaranteed.
 
-You can set task priorities for both workflows and activities. A workflow's task priority
-doesn't affect the priority of any activity tasks it schedules, nor does it affect any child
-workflows it starts. The default priority for an activity or workflow is set (either by you or
-by Amazon SWF) during registration, and the registered task priority is always used unless it is
-overridden while scheduling the activity or starting a workflow execution.
+You can set task priorities for both workflows and activities. A workflow's task priority doesn't affect the priority of any activity tasks it schedules, nor does it affect any child workflows it starts. The default priority for an activity or workflow is set (either by you or by Amazon SWF) during registration, and the registered task priority is always used unless it is overridden while scheduling the activity or starting a workflow execution.
 
-Task priority values can range from "-2147483648" to "2147483647", with higher numbers
-indicating higher priority. If you don't set the task priority for an activity or workflow, it
-will be assigned a priority of zero ("0").
+Task priority values can range from "-2147483648" to "2147483647", with higher numbers indicating higher priority. If you don't set the task priority for an activity or workflow, it will be assigned a priority of zero ("0").
 
-###### Topics
-
-- [Setting Task Priority for Workflows](#task-priority-workflows)
-
-- [Setting Task Priority for Activities](#task-priority-activities)
-
-- [Actions that Return Task Priority Information](#task-priority-responses)
+**Topics**
++ [Setting Task Priority for Workflows](#task-priority-workflows)
++ [Setting Task Priority for Activities](#task-priority-activities)
++ [Actions that Return Task Priority Information](#task-priority-responses)
 
 ## Setting Task Priority for Workflows
+<a name="task-priority-workflows"></a>
 
-You can set the task priority for a workflow when you register it or start it. The task
-priority that is set when the workflow type is registered is used as the default for any
-workflow executions of that type, unless it is overridden when starting the workflow
-execution.
+You can set the task priority for a workflow when you register it or start it. The task priority that is set when the workflow type is registered is used as the default for any workflow executions of that type, unless it is overridden when starting the workflow execution.
 
-To register a workflow type with a default task priority, set the
-_defaultTaskPriority_ option when using the [RegisterWorkflowType](../../../../reference/amazonswf/latest/apireference/api-registerworkflowtype.md) action:
+To register a workflow type with a default task priority, set the *defaultTaskPriority* option when using the [RegisterWorkflowType](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RegisterWorkflowType.html) action:
 
-```json
-
+```
 {
   "domain": "867530901",
   "name": "expeditedOrderWorkflow",
@@ -57,11 +40,9 @@ _defaultTaskPriority_ option when using the [RegisterWorkflowType](../../../../r
 }
 ```
 
-You can override a workflow type's registered task priority when you start a workflow
-execution with [StartWorkflowExecution](../../../../reference/amazonswf/latest/apireference/api-startworkflowexecution.md):
+You can override a workflow type's registered task priority when you start a workflow execution with [StartWorkflowExecution](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartWorkflowExecution.html):
 
-```json
-
+```
 {
   "childPolicy": "TERMINATE",
   "domain": "867530901",
@@ -76,14 +57,11 @@ execution with [StartWorkflowExecution](../../../../reference/amazonswf/latest/a
 }
 ```
 
-You can also override the registered task priority when starting a child workflow or when
-continuing a workflow as new, such as when responding to a decision with [RespondDecisionTaskCompleted](../../../../reference/amazonswf/latest/apireference/api-responddecisiontaskcompleted.md).
+You can also override the registered task priority when starting a child workflow or when continuing a workflow as new, such as when responding to a decision with [RespondDecisionTaskCompleted](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondDecisionTaskCompleted.html).
 
-To set a child workflow's task priority, provide the value in
-`startChildWorkflowExecutionDecisionAttributes`:
+To set a child workflow's task priority, provide the value in `startChildWorkflowExecutionDecisionAttributes`:
 
-```json
-
+```
 {
   "taskToken": "AAAAKgAAAAEAAAAAAAAAA...",
   "decisions": [
@@ -108,11 +86,9 @@ To set a child workflow's task priority, provide the value in
 }
 ```
 
-When continuing a workflow as new, set the task priority in
-`continueAsNewWorkflowExecutionDecisionAttributes`:
+When continuing a workflow as new, set the task priority in `continueAsNewWorkflowExecutionDecisionAttributes`:
 
-```json
-
+```
 {
   "taskToken": "AAAAKgAAAAEAAAAAAAAAA...",
   "decisions": [
@@ -133,17 +109,13 @@ When continuing a workflow as new, set the task priority in
 ```
 
 ## Setting Task Priority for Activities
+<a name="task-priority-activities"></a>
 
-You can set the task priority for an activity either when registering it or when
-scheduling it. The task priority that is set when registering an activity type is used as the
-default priority when the activity is run, unless it is overridden when scheduling the
-activity.
+You can set the task priority for an activity either when registering it or when scheduling it. The task priority that is set when registering an activity type is used as the default priority when the activity is run, unless it is overridden when scheduling the activity.
 
-To set task priority when registering an activity type, set the
-_defaultTaskPriority_ option when using the [RegisterActivityType](../../../../reference/amazonswf/latest/apireference/api-registeractivitytype.md) action:
+To set task priority when registering an activity type, set the *defaultTaskPriority* option when using the [RegisterActivityType](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RegisterActivityType.html) action:
 
-```json
-
+```
 {
   "defaultTaskHeartbeatTimeout": "120",
   "defaultTaskList": {"name": "mainTaskList"},
@@ -158,11 +130,9 @@ _defaultTaskPriority_ option when using the [RegisterActivityType](../../../../r
 }
 ```
 
-To schedule a task with a task priority, use the _taskPriority_ option
-when scheduling the activity with the [RespondDecisionTaskCompleted](../../../../reference/amazonswf/latest/apireference/api-responddecisiontaskcompleted.md) action:
+To schedule a task with a task priority, use the *taskPriority* option when scheduling the activity with the [RespondDecisionTaskCompleted](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondDecisionTaskCompleted.html) action:
 
-```json
-
+```
 {
   "taskToken": "AAAAKgAAAAEAAAAAAAAAA...",
   "decisions": [
@@ -185,30 +155,12 @@ when scheduling the activity with the [RespondDecisionTaskCompleted](../../../..
 ```
 
 ## Actions that Return Task Priority Information
+<a name="task-priority-responses"></a>
 
-You can get information about the set task priority (or set default task priority) from
-the following Amazon SWF actions:
-
-- [DescribeActivityType](../../../../reference/amazonswf/latest/apireference/api-describeactivitytype.md) returns the _defaultTaskPriority_ of
-the activity type in the `configuration` section of the response.
-
-- [DescribeWorkflowExecution](../../../../reference/amazonswf/latest/apireference/api-describeworkflowexecution.md) returns the _taskPriority_ of the
-workflow execution in the `executionConfiguration` section of the
-response.
-
-- [DescribeWorkflowType](../../../../reference/amazonswf/latest/apireference/api-describeworkflowtype.md) returns the _defaultTaskPriority_ of
-the workflow type in the `configuration` section of the response.
-
-- [GetWorkflowExecutionHistory](../../../../reference/amazonswf/latest/apireference/api-getworkflowexecutionhistory.md) and [PollForDecisionTask](../../../../reference/amazonswf/latest/apireference/api-pollfordecisiontask.md) provide task priority information in the
-`activityTaskScheduledEventAttributes`,
-`decisionTaskScheduledEventAttributes`,
-`workflowExecutionContinuedAsNewEventAttributes`, and
-`workflowExecutionStartedEventAttributes` sections of the response.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Starting workflows
-
-Handling errors
+You can get information about the set task priority (or set default task priority) from the following Amazon SWF actions:
++ [DescribeActivityType](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeActivityType.html) returns the *defaultTaskPriority* of the activity type in the `configuration` section of the response.
++ [DescribeWorkflowExecution](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html) returns the *taskPriority* of the workflow execution in the `executionConfiguration` section of the response.
++ [DescribeWorkflowType](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowType.html) returns the *defaultTaskPriority* of the workflow type in the `configuration` section of the response.
++ [GetWorkflowExecutionHistory](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWorkflowExecutionHistory.html) and [PollForDecisionTask](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_PollForDecisionTask.html) provide task priority information in the `activityTaskScheduledEventAttributes`, `decisionTaskScheduledEventAttributes`, `workflowExecutionContinuedAsNewEventAttributes`, and `workflowExecutionStartedEventAttributes` sections of the response.
 
 All content copied from https://docs.aws.amazon.com/.

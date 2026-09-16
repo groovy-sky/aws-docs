@@ -3,58 +3,45 @@ title: "DescribeDomain"
 ---
 
 # DescribeDomain
+<a name="API_DescribeDomain"></a>
 
-Returns information about the specified domain, including description and
-status.
+Returns information about the specified domain, including description and status.
 
-**Access Control**
+ **Access Control**
 
-You can use IAM policies to control this action's access to Amazon SWF resources as
-follows:
+You can use IAM policies to control this action's access to Amazon SWF resources as follows:
++ Use a `Resource` element with the domain name to limit the action to only specified domains.
++ Use an `Action` element to allow or deny permission to call this action.
++ You cannot use an IAM policy to constrain this action's parameters.
 
-- Use a `Resource` element with the domain name to limit the action to
-only specified domains.
-
-- Use an `Action` element to allow or deny permission to call this
-action.
-
-- You cannot use an IAM policy to constrain this action's parameters.
-
-If the caller doesn't have sufficient permissions to invoke the action, or the
-parameter values fall outside the specified constraints, the action fails. The associated
-event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`.
-For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF\
-Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md) in the _Amazon SWF Developer Guide_.
+If the caller doesn't have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html) in the *Amazon SWF Developer Guide*.
 
 ## Request Syntax
+<a name="API_DescribeDomain_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "name": "string"
+   "name": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_DescribeDomain_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[name](#API_DescribeDomain_RequestSyntax)**
-
+ ** [name](#API_DescribeDomain_RequestSyntax) **   <a name="SWF-DescribeDomain-request-name"></a>
 The name of the domain to describe.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_DescribeDomain_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "configuration": {
       "workflowExecutionRetentionPeriodInDays": "string"
@@ -69,59 +56,49 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_DescribeDomain_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[configuration](#API_DescribeDomain_ResponseSyntax)**
+ ** [configuration](#API_DescribeDomain_ResponseSyntax) **   <a name="SWF-DescribeDomain-response-configuration"></a>
+The domain configuration. Currently, this includes only the domain's retention period.
+Type: [DomainConfiguration](API_DomainConfiguration.md) object
 
-The domain configuration. Currently, this includes only the domain's retention
-period.
-
-Type: [DomainConfiguration](api-domainconfiguration.md) object
-
-**[domainInfo](#API_DescribeDomain_ResponseSyntax)**
-
-The basic information about a domain, such as its name, status, and
-description.
-
-Type: [DomainInfo](api-domaininfo.md) object
+ ** [domainInfo](#API_DescribeDomain_ResponseSyntax) **   <a name="SWF-DescribeDomain-response-domainInfo"></a>
+The basic information about a domain, such as its name, status, and description.
+Type: [DomainInfo](API_DomainInfo.md) object
 
 ## Errors
+<a name="API_DescribeDomain_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**OperationNotPermittedFault**
-
+ ** OperationNotPermittedFault **
 Returned when the caller doesn't have sufficient permissions to invoke the action.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
-**UnknownResourceFault**
-
+ ** UnknownResourceFault **
 Returned when the named resource cannot be found with in the scope of this operation (region or domain). This could happen if the named resource was never created or is no longer available for this operation.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DescribeDomain_Examples"></a>
 
 ### DescribeDomain Example
+<a name="API_DescribeDomain_Example_1"></a>
 
 This example illustrates one usage of DescribeDomain.
 
 #### Sample Request
+<a name="API_DescribeDomain_Example_1_Request"></a>
 
 ```
-
 POST / HTTP/1.1
 Host: swf.us-east-1.amazonaws.com
 User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25 ( .NET CLR 3.5.30729; .NET4.0E)
@@ -146,9 +123,9 @@ Cache-Control: no-cache
 ```
 
 #### Sample Response
+<a name="API_DescribeDomain_Example_1_Response"></a>
 
 ```
-
 HTTP/1.1 200 OK
 Content-Length: 137
 Content-Type: application/json
@@ -164,33 +141,18 @@ x-amzn-RequestId: e86a6779-3f26-11e1-9a27-0760db01a4a8
 ```
 
 ## See Also
+<a name="API_DescribeDomain_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/swf-2012-01-25/describedomain.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/describedomain.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeActivityType
-
-DescribeWorkflowExecution
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/swf-2012-01-25/DescribeDomain)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/DescribeDomain)
 
 All content copied from https://docs.aws.amazon.com/.

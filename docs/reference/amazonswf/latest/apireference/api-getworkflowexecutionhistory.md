@@ -3,117 +3,78 @@ title: "GetWorkflowExecutionHistory"
 ---
 
 # GetWorkflowExecutionHistory
+<a name="API_GetWorkflowExecutionHistory"></a>
 
-Returns the history of the specified workflow execution. The results may be split into
-multiple pages. To retrieve subsequent pages, make the call again using the
-`nextPageToken` returned by the initial call.
+Returns the history of the specified workflow execution. The results may be split into multiple pages. To retrieve subsequent pages, make the call again using the `nextPageToken` returned by the initial call.
 
-###### Note
+**Note**
+This operation is eventually consistent. The results are best effort and may not exactly reflect recent updates and changes.
 
-This operation is eventually consistent. The results are best effort and may not
-exactly reflect recent updates and changes.
+ **Access Control**
 
-**Access Control**
+You can use IAM policies to control this action's access to Amazon SWF resources as follows:
++ Use a `Resource` element with the domain name to limit the action to only specified domains.
++ Use an `Action` element to allow or deny permission to call this action.
++ You cannot use an IAM policy to constrain this action's parameters.
 
-You can use IAM policies to control this action's access to Amazon SWF resources as
-follows:
-
-- Use a `Resource` element with the domain name to limit the action to
-only specified domains.
-
-- Use an `Action` element to allow or deny permission to call this
-action.
-
-- You cannot use an IAM policy to constrain this action's parameters.
-
-If the caller doesn't have sufficient permissions to invoke the action, or the
-parameter values fall outside the specified constraints, the action fails. The associated
-event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`.
-For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF\
-Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md) in the _Amazon SWF Developer Guide_.
+If the caller doesn't have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html) in the *Amazon SWF Developer Guide*.
 
 ## Request Syntax
+<a name="API_GetWorkflowExecutionHistory_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "domain": "string",
+   "domain": "{{string}}",
    "execution": {
-      "runId": "string",
-      "workflowId": "string"
+      "runId": "{{string}}",
+      "workflowId": "{{string}}"
    },
-   "maximumPageSize": number,
-   "nextPageToken": "string",
-   "reverseOrder": boolean
+   "maximumPageSize": {{number}},
+   "nextPageToken": "{{string}}",
+   "reverseOrder": {{boolean}}
 }
 ```
 
 ## Request Parameters
+<a name="API_GetWorkflowExecutionHistory_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[domain](#API_GetWorkflowExecutionHistory_RequestSyntax)**
-
+ ** [domain](#API_GetWorkflowExecutionHistory_RequestSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-request-domain"></a>
 The name of the domain containing the workflow execution.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
-**[execution](#API_GetWorkflowExecutionHistory_RequestSyntax)**
-
+ ** [execution](#API_GetWorkflowExecutionHistory_RequestSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-request-execution"></a>
 Specifies the workflow execution for which to return the history.
-
-Type: [WorkflowExecution](api-workflowexecution.md) object
-
+Type: [WorkflowExecution](API_WorkflowExecution.md) object
 Required: Yes
 
-**[maximumPageSize](#API_GetWorkflowExecutionHistory_RequestSyntax)**
-
-The maximum number of results that are returned per call.
-Use `nextPageToken` to obtain further pages of results.
-
+ ** [maximumPageSize](#API_GetWorkflowExecutionHistory_RequestSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-request-maximumPageSize"></a>
+The maximum number of results that are returned per call. Use `nextPageToken` to obtain further pages of results.
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 1000.
-
 Required: No
 
-**[nextPageToken](#API_GetWorkflowExecutionHistory_RequestSyntax)**
-
-If `NextPageToken` is returned there are more results
-available. The value of `NextPageToken` is a unique pagination token for each page. Make the call again using
-the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires
-after 24 hours. Using an expired pagination token will return a `400` error: " `Specified token has
-      exceeded its maximum lifetime`".
-
-The configured `maximumPageSize` determines how many results can be returned
-in a single call.
-
+ ** [nextPageToken](#API_GetWorkflowExecutionHistory_RequestSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-request-nextPageToken"></a>
+If `NextPageToken` is returned there are more results available. The value of `NextPageToken` is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return a `400` error: "`Specified token has exceeded its maximum lifetime`".
+The configured `maximumPageSize` determines how many results can be returned in a single call.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Required: No
 
-**[reverseOrder](#API_GetWorkflowExecutionHistory_RequestSyntax)**
-
-When set to `true`, returns the events in reverse order. By default the
-results are returned in ascending order of the `eventTimeStamp` of the
-events.
-
+ ** [reverseOrder](#API_GetWorkflowExecutionHistory_RequestSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-request-reverseOrder"></a>
+When set to `true`, returns the events in reverse order. By default the results are returned in ascending order of the `eventTimeStamp` of the events.
 Type: Boolean
-
 Required: No
 
 ## Response Syntax
+<a name="API_GetWorkflowExecutionHistory_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "events": [
       {
@@ -535,63 +496,51 @@ Required: No
 ```
 
 ## Response Elements
+<a name="API_GetWorkflowExecutionHistory_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[events](#API_GetWorkflowExecutionHistory_ResponseSyntax)**
-
+ ** [events](#API_GetWorkflowExecutionHistory_ResponseSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-response-events"></a>
 The list of history events.
+Type: Array of [HistoryEvent](API_HistoryEvent.md) objects
 
-Type: Array of [HistoryEvent](api-historyevent.md) objects
-
-**[nextPageToken](#API_GetWorkflowExecutionHistory_ResponseSyntax)**
-
-If a `NextPageToken` was returned by a previous call, there are more
-results available. To retrieve the next page of results, make the call again using the returned token in
-`nextPageToken`. Keep all other arguments unchanged.
-
+ ** [nextPageToken](#API_GetWorkflowExecutionHistory_ResponseSyntax) **   <a name="SWF-GetWorkflowExecutionHistory-response-nextPageToken"></a>
+If a `NextPageToken` was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in `nextPageToken`. Keep all other arguments unchanged.
 The configured `maximumPageSize` determines how many results can be returned in a single call.
-
 Type: String
-
 Length Constraints: Maximum length of 2048.
 
 ## Errors
+<a name="API_GetWorkflowExecutionHistory_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**OperationNotPermittedFault**
-
+ ** OperationNotPermittedFault **
 Returned when the caller doesn't have sufficient permissions to invoke the action.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
-**UnknownResourceFault**
-
+ ** UnknownResourceFault **
 Returned when the named resource cannot be found with in the scope of this operation (region or domain). This could happen if the named resource was never created or is no longer available for this operation.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_GetWorkflowExecutionHistory_Examples"></a>
 
 ### GetWorkflowExecutionHistory Example
+<a name="API_GetWorkflowExecutionHistory_Example_1"></a>
 
 This example illustrates one usage of GetWorkflowExecutionHistory.
 
 #### Sample Request
+<a name="API_GetWorkflowExecutionHistory_Example_1_Request"></a>
 
 ```
-
 POST / HTTP/1.1
 Host: swf.us-east-1.amazonaws.com
 User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25 ( .NET CLR 3.5.30729; .NET4.0E)
@@ -624,9 +573,9 @@ Cache-Control: no-cache
 ```
 
 #### Sample Response
+<a name="API_GetWorkflowExecutionHistory_Example_1_Response"></a>
 
 ```
-
 HTTP/1.1 200 OK
 Content-Length: 2942
 Content-Type: application/json
@@ -753,33 +702,18 @@ x-amzn-RequestId: 5385723f-3ff4-11e1-b118-3bfa5e8e7fc3
 ```
 
 ## See Also
+<a name="API_GetWorkflowExecutionHistory_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/getworkflowexecutionhistory.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeWorkflowType
-
-ListActivityTypes
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/swf-2012-01-25/GetWorkflowExecutionHistory)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/GetWorkflowExecutionHistory)
 
 All content copied from https://docs.aws.amazon.com/.

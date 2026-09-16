@@ -3,173 +3,98 @@ title: "PollForDecisionTask"
 ---
 
 # PollForDecisionTask
+<a name="API_PollForDecisionTask"></a>
 
-Used by deciders to get a [DecisionTask](api-decisiontask.md) from the specified decision
-`taskList`. A decision task may be returned for any open workflow execution that
-is using the specified task list. The task includes a paginated view of the history of the
-workflow execution. The decider should use the workflow type and the history to determine how
-to properly handle the task.
+Used by deciders to get a [DecisionTask](API_DecisionTask.md) from the specified decision `taskList`. A decision task may be returned for any open workflow execution that is using the specified task list. The task includes a paginated view of the history of the workflow execution. The decider should use the workflow type and the history to determine how to properly handle the task.
 
-This action initiates a long poll, where the service holds the HTTP connection open and
-responds as soon a task becomes available. If no decision task is available in the specified
-task list before the timeout of 60 seconds expires, an empty result is returned. An empty
-result, in this context, means that a DecisionTask is returned, but that the value of
-taskToken is an empty string.
+This action initiates a long poll, where the service holds the HTTP connection open and responds as soon a task becomes available. If no decision task is available in the specified task list before the timeout of 60 seconds expires, an empty result is returned. An empty result, in this context, means that a DecisionTask is returned, but that the value of taskToken is an empty string.
 
-###### Important
+**Important**
+Deciders should set their client side socket timeout to at least 70 seconds (10 seconds higher than the timeout).
 
-Deciders should set their client side socket timeout to at least 70 seconds (10
-seconds higher than the timeout).
+**Important**
+Because the number of workflow history events for a single workflow execution might be very large, the result returned might be split up across a number of pages. To retrieve subsequent pages, make additional calls to `PollForDecisionTask` using the `nextPageToken` returned by the initial call. Note that you do *not* call `GetWorkflowExecutionHistory` with this `nextPageToken`. Instead, call `PollForDecisionTask` again.
 
-###### Important
+ **Access Control**
 
-Because the number of workflow history events for a single workflow execution might
-be very large, the result returned might be split up across a number of pages. To retrieve
-subsequent pages, make additional calls to `PollForDecisionTask` using the
-`nextPageToken` returned by the initial call. Note that you do
-_not_ call `GetWorkflowExecutionHistory` with this
-`nextPageToken`. Instead, call `PollForDecisionTask`
-again.
+You can use IAM policies to control this action's access to Amazon SWF resources as follows:
++ Use a `Resource` element with the domain name to limit the action to only specified domains.
++ Use an `Action` element to allow or deny permission to call this action.
++ Constrain the `taskList.name` parameter by using a `Condition` element with the `swf:taskList.name` key to allow the action to access only certain task lists.
 
-**Access Control**
-
-You can use IAM policies to control this action's access to Amazon SWF resources as
-follows:
-
-- Use a `Resource` element with the domain name to limit the action to
-only specified domains.
-
-- Use an `Action` element to allow or deny permission to call this
-action.
-
-- Constrain the `taskList.name` parameter by using a
-`Condition` element with the `swf:taskList.name` key to allow the
-action to access only certain task lists.
-
-If the caller doesn't have sufficient permissions to invoke the action, or the
-parameter values fall outside the specified constraints, the action fails. The associated
-event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`.
-For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF\
-Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md) in the _Amazon SWF Developer Guide_.
+If the caller doesn't have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html) in the *Amazon SWF Developer Guide*.
 
 ## Request Syntax
+<a name="API_PollForDecisionTask_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "domain": "string",
-   "identity": "string",
-   "maximumPageSize": number,
-   "nextPageToken": "string",
-   "reverseOrder": boolean,
-   "startAtPreviousStartedEvent": boolean,
+   "domain": "{{string}}",
+   "identity": "{{string}}",
+   "maximumPageSize": {{number}},
+   "nextPageToken": "{{string}}",
+   "reverseOrder": {{boolean}},
+   "startAtPreviousStartedEvent": {{boolean}},
    "taskList": {
-      "name": "string"
+      "name": "{{string}}"
    }
 }
 ```
 
 ## Request Parameters
+<a name="API_PollForDecisionTask_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[domain](#API_PollForDecisionTask_RequestSyntax)**
-
+ ** [domain](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-domain"></a>
 The name of the domain containing the task lists to poll.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
-**[identity](#API_PollForDecisionTask_RequestSyntax)**
-
-Identity of the decider making the request, which is recorded in the
-DecisionTaskStarted event in the workflow history. This enables diagnostic tracing when
-problems arise. The form of this identity is user defined.
-
+ ** [identity](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-identity"></a>
+Identity of the decider making the request, which is recorded in the DecisionTaskStarted event in the workflow history. This enables diagnostic tracing when problems arise. The form of this identity is user defined.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Required: No
 
-**[maximumPageSize](#API_PollForDecisionTask_RequestSyntax)**
-
-The maximum number of results that are returned per call.
-Use `nextPageToken` to obtain further pages of results.
-
-This
-is an upper limit only; the actual number of results returned per call may be fewer than the
-specified maximum.
-
+ ** [maximumPageSize](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-maximumPageSize"></a>
+The maximum number of results that are returned per call. Use `nextPageToken` to obtain further pages of results.
+This is an upper limit only; the actual number of results returned per call may be fewer than the specified maximum.
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 1000.
-
 Required: No
 
-**[nextPageToken](#API_PollForDecisionTask_RequestSyntax)**
-
-If `NextPageToken` is returned there are more results
-available. The value of `NextPageToken` is a unique pagination token for each page. Make the call again using
-the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires
-after 24 hours. Using an expired pagination token will return a `400` error: " `Specified token has
-      exceeded its maximum lifetime`".
-
-The configured `maximumPageSize` determines how many results can be returned
-in a single call.
-
-###### Note
-
-The `nextPageToken` returned by this action cannot be used with [GetWorkflowExecutionHistory](api-getworkflowexecutionhistory.md) to get the next page. You must call [PollForDecisionTask](api-pollfordecisiontask.md) again (with the `nextPageToken`) to retrieve
-the next page of history records. Calling [PollForDecisionTask](api-pollfordecisiontask.md) with a
-`nextPageToken` doesn't return a new decision task.
-
+ ** [nextPageToken](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-nextPageToken"></a>
+If `NextPageToken` is returned there are more results available. The value of `NextPageToken` is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return a `400` error: "`Specified token has exceeded its maximum lifetime`".
+The configured `maximumPageSize` determines how many results can be returned in a single call.
+The `nextPageToken` returned by this action cannot be used with [GetWorkflowExecutionHistory](API_GetWorkflowExecutionHistory.md) to get the next page. You must call [PollForDecisionTask](#API_PollForDecisionTask) again (with the `nextPageToken`) to retrieve the next page of history records. Calling [PollForDecisionTask](#API_PollForDecisionTask) with a `nextPageToken` doesn't return a new decision task.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Required: No
 
-**[reverseOrder](#API_PollForDecisionTask_RequestSyntax)**
-
-When set to `true`, returns the events in reverse order. By default the
-results are returned in ascending order of the `eventTimestamp` of the
-events.
-
+ ** [reverseOrder](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-reverseOrder"></a>
+When set to `true`, returns the events in reverse order. By default the results are returned in ascending order of the `eventTimestamp` of the events.
 Type: Boolean
-
 Required: No
 
-**[startAtPreviousStartedEvent](#API_PollForDecisionTask_RequestSyntax)**
-
+ ** [startAtPreviousStartedEvent](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-startAtPreviousStartedEvent"></a>
 When set to `true`, returns the events with `eventTimestamp` greater than or equal to `eventTimestamp` of the most recent `DecisionTaskStarted` event. By default, this parameter is set to `false`.
-
 Type: Boolean
-
 Required: No
 
-**[taskList](#API_PollForDecisionTask_RequestSyntax)**
-
+ ** [taskList](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-taskList"></a>
 Specifies the task list to poll for decision tasks.
-
-The specified string must not contain a
-`:` (colon), `/` (slash), `|` (vertical bar), or any
-control characters ( `\u0000-\u001f` \| `\u007f-\u009f`). Also, it must
-_not_ be the literal string `arn`.
-
-Type: [TaskList](api-tasklist.md) object
-
+The specified string must not contain a `:` (colon), `/` (slash), `|` (vertical bar), or any control characters (`\u0000-\u001f` \| `\u007f-\u009f`). Also, it must *not* be the literal string `arn`.
+Type: [TaskList](API_TaskList.md) object
 Required: Yes
 
 ## Response Syntax
+<a name="API_PollForDecisionTask_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "events": [
       {
@@ -602,105 +527,78 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_PollForDecisionTask_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[events](#API_PollForDecisionTask_ResponseSyntax)**
-
+ ** [events](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-events"></a>
 A paginated list of history events of the workflow execution. The decider uses this during the processing of the decision task.
+Type: Array of [HistoryEvent](API_HistoryEvent.md) objects
 
-Type: Array of [HistoryEvent](api-historyevent.md) objects
-
-**[nextPageToken](#API_PollForDecisionTask_ResponseSyntax)**
-
-If a `NextPageToken` was returned by a previous call, there are more
-results available. To retrieve the next page of results, make the call again using the returned token in
-`nextPageToken`. Keep all other arguments unchanged.
-
+ ** [nextPageToken](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-nextPageToken"></a>
+If a `NextPageToken` was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in `nextPageToken`. Keep all other arguments unchanged.
 The configured `maximumPageSize` determines how many results can be returned in a single call.
-
 Type: String
-
 Length Constraints: Maximum length of 2048.
 
-**[previousStartedEventId](#API_PollForDecisionTask_ResponseSyntax)**
-
+ ** [previousStartedEventId](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-previousStartedEventId"></a>
 The ID of the DecisionTaskStarted event of the previous decision task of this workflow execution that was processed by the decider. This can be used to determine the events in the history new since the last decision task received by the decider.
-
 Type: Long
 
-**[startedEventId](#API_PollForDecisionTask_ResponseSyntax)**
-
+ ** [startedEventId](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-startedEventId"></a>
 The ID of the `DecisionTaskStarted` event recorded in the history.
-
 Type: Long
 
-**[taskToken](#API_PollForDecisionTask_ResponseSyntax)**
-
+ ** [taskToken](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-taskToken"></a>
 The opaque string used as a handle on the task. This token is used by workers to communicate progress and response information back to the system about the task.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
-**[workflowExecution](#API_PollForDecisionTask_ResponseSyntax)**
-
+ ** [workflowExecution](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-workflowExecution"></a>
 The workflow execution for which this decision task was created.
+Type: [WorkflowExecution](API_WorkflowExecution.md) object
 
-Type: [WorkflowExecution](api-workflowexecution.md) object
-
-**[workflowType](#API_PollForDecisionTask_ResponseSyntax)**
-
+ ** [workflowType](#API_PollForDecisionTask_ResponseSyntax) **   <a name="SWF-PollForDecisionTask-response-workflowType"></a>
 The type of the workflow execution for which this decision task was created.
-
-Type: [WorkflowType](api-workflowtype.md) object
+Type: [WorkflowType](API_WorkflowType.md) object
 
 ## Errors
+<a name="API_PollForDecisionTask_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**LimitExceededFault**
-
+ ** LimitExceededFault **
 Returned by any operation if a system imposed limitation has been reached. To address this fault you should either clean up unused resources or increase the limit by contacting AWS.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
-**OperationNotPermittedFault**
-
+ ** OperationNotPermittedFault **
 Returned when the caller doesn't have sufficient permissions to invoke the action.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
-**UnknownResourceFault**
-
+ ** UnknownResourceFault **
 Returned when the named resource cannot be found with in the scope of this operation (region or domain). This could happen if the named resource was never created or is no longer available for this operation.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_PollForDecisionTask_Examples"></a>
 
 ### PollForDecisionTask Example
+<a name="API_PollForDecisionTask_Example_1"></a>
 
 This example illustrates one usage of PollForDecisionTask.
 
 #### Sample Request
+<a name="API_PollForDecisionTask_Example_1_Request"></a>
 
 ```
-
 POST / HTTP/1.1
 Host: swf.us-east-1.amazonaws.com
 User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25 ( .NET CLR 3.5.30729; .NET4.0E)
@@ -733,9 +631,9 @@ Cache-Control: no-cache
 ```
 
 #### Sample Response
+<a name="API_PollForDecisionTask_Example_1_Response"></a>
 
 ```
-
 HTTP/1.1 200 OK
 Content-Length: 1639
 Content-Type: application/json
@@ -804,33 +702,18 @@ x-amzn-RequestId: 03db54cf-3f1e-11e1-b118-3bfa5e8e7fc3
 ```
 
 ## See Also
+<a name="API_PollForDecisionTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/swf-2012-01-25/pollfordecisiontask.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/pollfordecisiontask.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PollForActivityTask
-
-RecordActivityTaskHeartbeat
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/swf-2012-01-25/PollForDecisionTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/PollForDecisionTask)
 
 All content copied from https://docs.aws.amazon.com/.

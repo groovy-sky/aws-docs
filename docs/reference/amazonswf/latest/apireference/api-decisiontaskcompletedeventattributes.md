@@ -3,73 +3,46 @@ title: "DecisionTaskCompletedEventAttributes"
 ---
 
 # DecisionTaskCompletedEventAttributes
+<a name="API_DecisionTaskCompletedEventAttributes"></a>
 
 Provides the details of the `DecisionTaskCompleted` event.
 
 ## Contents
+<a name="API_DecisionTaskCompletedEventAttributes_Contents"></a>
 
-**scheduledEventId**
-
-The ID of the `DecisionTaskScheduled` event that was recorded when this decision task was scheduled.
-This information can be useful for diagnosing problems by tracing back the chain of
-events leading up to this event.
-
+ ** scheduledEventId **   <a name="SWF-Type-DecisionTaskCompletedEventAttributes-scheduledEventId"></a>
+The ID of the `DecisionTaskScheduled` event that was recorded when this decision task was scheduled. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
 Type: Long
-
 Required: Yes
 
-**startedEventId**
-
-The ID of the `DecisionTaskStarted` event recorded when this decision task was started.
-This information can be useful for diagnosing problems by tracing back the chain of
-events leading up to this event.
-
+ ** startedEventId **   <a name="SWF-Type-DecisionTaskCompletedEventAttributes-startedEventId"></a>
+The ID of the `DecisionTaskStarted` event recorded when this decision task was started. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
 Type: Long
-
 Required: Yes
 
-**executionContext**
-
+ ** executionContext **   <a name="SWF-Type-DecisionTaskCompletedEventAttributes-executionContext"></a>
 User defined context for the workflow execution.
-
 Type: String
-
 Length Constraints: Maximum length of 32768.
-
 Required: No
 
-**taskList**
-
+ ** taskList **   <a name="SWF-Type-DecisionTaskCompletedEventAttributes-taskList"></a>
 Represents a task list.
-
-Type: [TaskList](api-tasklist.md) object
-
+Type: [TaskList](API_TaskList.md) object
 Required: No
 
-**taskListScheduleToStartTimeout**
-
+ ** taskListScheduleToStartTimeout **   <a name="SWF-Type-DecisionTaskCompletedEventAttributes-taskListScheduleToStartTimeout"></a>
 The maximum amount of time the decision task can wait to be assigned to a worker.
-
 Type: String
-
 Length Constraints: Maximum length of 8.
-
 Required: No
 
 ## See Also
+<a name="API_DecisionTaskCompletedEventAttributes_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/decisiontaskcompletedeventattributes.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/decisiontaskcompletedeventattributes.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/decisiontaskcompletedeventattributes.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DecisionTask
-
-DecisionTaskScheduledEventAttributes
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/DecisionTaskCompletedEventAttributes)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/DecisionTaskCompletedEventAttributes)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/DecisionTaskCompletedEventAttributes)
 
 All content copied from https://docs.aws.amazon.com/.

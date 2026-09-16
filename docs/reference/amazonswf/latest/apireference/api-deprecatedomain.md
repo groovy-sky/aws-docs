@@ -3,110 +3,84 @@ title: "DeprecateDomain"
 ---
 
 # DeprecateDomain
+<a name="API_DeprecateDomain"></a>
 
-Deprecates the specified domain. After a domain has been deprecated it cannot be used
-to create new workflow executions or register new types. However, you can still use visibility
-actions on this domain. Deprecating a domain also deprecates all activity and workflow types
-registered in the domain. Executions that were started before the domain was deprecated
-continues to run.
+Deprecates the specified domain. After a domain has been deprecated it cannot be used to create new workflow executions or register new types. However, you can still use visibility actions on this domain. Deprecating a domain also deprecates all activity and workflow types registered in the domain. Executions that were started before the domain was deprecated continues to run.
 
-###### Note
+**Note**
+This operation is eventually consistent. The results are best effort and may not exactly reflect recent updates and changes.
 
-This operation is eventually consistent. The results are best effort and may not
-exactly reflect recent updates and changes.
+ **Access Control**
 
-**Access Control**
+You can use IAM policies to control this action's access to Amazon SWF resources as follows:
++ Use a `Resource` element with the domain name to limit the action to only specified domains.
++ Use an `Action` element to allow or deny permission to call this action.
++ You cannot use an IAM policy to constrain this action's parameters.
 
-You can use IAM policies to control this action's access to Amazon SWF resources as
-follows:
-
-- Use a `Resource` element with the domain name to limit the action to
-only specified domains.
-
-- Use an `Action` element to allow or deny permission to call this
-action.
-
-- You cannot use an IAM policy to constrain this action's parameters.
-
-If the caller doesn't have sufficient permissions to invoke the action, or the
-parameter values fall outside the specified constraints, the action fails. The associated
-event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`.
-For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF\
-Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md) in the _Amazon SWF Developer Guide_.
+If the caller doesn't have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's `cause` parameter is set to `OPERATION_NOT_PERMITTED`. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html) in the *Amazon SWF Developer Guide*.
 
 ## Request Syntax
+<a name="API_DeprecateDomain_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "name": "string"
+   "name": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_DeprecateDomain_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[name](#API_DeprecateDomain_RequestSyntax)**
-
+ ** [name](#API_DeprecateDomain_RequestSyntax) **   <a name="SWF-DeprecateDomain-request-name"></a>
 The name of the domain to deprecate.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
 ## Response Elements
+<a name="API_DeprecateDomain_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
+<a name="API_DeprecateDomain_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**DomainDeprecatedFault**
-
+ ** DomainDeprecatedFault **
 Returned when the specified domain has been deprecated.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
-**OperationNotPermittedFault**
-
+ ** OperationNotPermittedFault **
 Returned when the caller doesn't have sufficient permissions to invoke the action.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
-**UnknownResourceFault**
-
+ ** UnknownResourceFault **
 Returned when the named resource cannot be found with in the scope of this operation (region or domain). This could happen if the named resource was never created or is no longer available for this operation.
-
-**message**
-
+ ** message **
 A description that may help with diagnosing the cause of the fault.
-
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DeprecateDomain_Examples"></a>
 
 ### DeprecateDomain Example
+<a name="API_DeprecateDomain_Example_1"></a>
 
 This example illustrates one usage of DeprecateDomain.
 
 #### Sample Request
+<a name="API_DeprecateDomain_Example_1_Request"></a>
 
 ```
-
 POST / HTTP/1.1
 Host: swf.us-east-1.amazonaws.com
 User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25 ( .NET CLR 3.5.30729; .NET4.0E)
@@ -131,9 +105,9 @@ Cache-Control: no-cache
 ```
 
 #### Sample Response
+<a name="API_DeprecateDomain_Example_1_Response"></a>
 
 ```
-
 HTTP/1.1 200 OK
 Content-Length: 0
 Content-Type: application/json
@@ -141,33 +115,18 @@ x-amzn-RequestId: 0800c01a-4000-11e1-9914-a356b6ea8bdf
 ```
 
 ## See Also
+<a name="API_DeprecateDomain_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/swf-2012-01-25/deprecatedomain.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/deprecatedomain.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeprecateActivityType
-
-DeprecateWorkflowType
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/swf-2012-01-25/DeprecateDomain)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/DeprecateDomain)
 
 All content copied from https://docs.aws.amazon.com/.

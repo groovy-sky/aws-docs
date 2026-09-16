@@ -3,35 +3,25 @@ title: "TaskList"
 ---
 
 # TaskList
+<a name="API_TaskList"></a>
 
 Represents a task list.
 
 ## Contents
+<a name="API_TaskList_Contents"></a>
 
-**name**
-
+ ** name **   <a name="SWF-Type-TaskList-name"></a>
 The name of the task list.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
 ## See Also
+<a name="API_TaskList_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/tasklist.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/tasklist.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/tasklist.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagFilter
-
-TimerCanceledEventAttributes
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/TaskList)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/TaskList)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/TaskList)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,69 +3,45 @@ title: "ChildWorkflowExecutionCompletedEventAttributes"
 ---
 
 # ChildWorkflowExecutionCompletedEventAttributes
+<a name="API_ChildWorkflowExecutionCompletedEventAttributes"></a>
 
 Provides the details of the `ChildWorkflowExecutionCompleted` event.
 
 ## Contents
+<a name="API_ChildWorkflowExecutionCompletedEventAttributes_Contents"></a>
 
-**initiatedEventId**
-
-The ID of the `StartChildWorkflowExecutionInitiated` event corresponding to the `StartChildWorkflowExecution` [Decision](api-decision.md) to start this child workflow execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
-
+ ** initiatedEventId **   <a name="SWF-Type-ChildWorkflowExecutionCompletedEventAttributes-initiatedEventId"></a>
+The ID of the `StartChildWorkflowExecutionInitiated` event corresponding to the `StartChildWorkflowExecution` [Decision](API_Decision.md) to start this child workflow execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
 Type: Long
-
 Required: Yes
 
-**startedEventId**
-
-The ID of the `ChildWorkflowExecutionStarted` event recorded when this child workflow execution was
-started. This information can be useful for diagnosing problems by tracing back the chain of
-events leading up to this event.
-
+ ** startedEventId **   <a name="SWF-Type-ChildWorkflowExecutionCompletedEventAttributes-startedEventId"></a>
+The ID of the `ChildWorkflowExecutionStarted` event recorded when this child workflow execution was started. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
 Type: Long
-
 Required: Yes
 
-**workflowExecution**
-
+ ** workflowExecution **   <a name="SWF-Type-ChildWorkflowExecutionCompletedEventAttributes-workflowExecution"></a>
 The child workflow execution that was completed.
-
-Type: [WorkflowExecution](api-workflowexecution.md) object
-
+Type: [WorkflowExecution](API_WorkflowExecution.md) object
 Required: Yes
 
-**workflowType**
-
+ ** workflowType **   <a name="SWF-Type-ChildWorkflowExecutionCompletedEventAttributes-workflowType"></a>
 The type of the child workflow execution.
-
-Type: [WorkflowType](api-workflowtype.md) object
-
+Type: [WorkflowType](API_WorkflowType.md) object
 Required: Yes
 
-**result**
-
+ ** result **   <a name="SWF-Type-ChildWorkflowExecutionCompletedEventAttributes-result"></a>
 The result of the child workflow execution.
-
 Type: String
-
 Length Constraints: Maximum length of 32768.
-
 Required: No
 
 ## See Also
+<a name="API_ChildWorkflowExecutionCompletedEventAttributes_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/childworkflowexecutioncompletedeventattributes.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/childworkflowexecutioncompletedeventattributes.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/childworkflowexecutioncompletedeventattributes.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChildWorkflowExecutionCanceledEventAttributes
-
-ChildWorkflowExecutionFailedEventAttributes
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/ChildWorkflowExecutionCompletedEventAttributes)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/ChildWorkflowExecutionCompletedEventAttributes)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/ChildWorkflowExecutionCompletedEventAttributes)
 
 All content copied from https://docs.aws.amazon.com/.
