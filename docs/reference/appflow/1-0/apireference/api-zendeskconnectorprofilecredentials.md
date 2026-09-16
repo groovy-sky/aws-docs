@@ -3,69 +3,45 @@ title: "ZendeskConnectorProfileCredentials"
 ---
 
 # ZendeskConnectorProfileCredentials
+<a name="API_ZendeskConnectorProfileCredentials"></a>
 
-The connector-specific profile credentials required when using Zendesk.
+ The connector-specific profile credentials required when using Zendesk.
 
 ## Contents
+<a name="API_ZendeskConnectorProfileCredentials_Contents"></a>
 
-**clientId**
-
-The identifier for the desired client.
-
+ ** clientId **   <a name="appflow-Type-ZendeskConnectorProfileCredentials-clientId"></a>
+ The identifier for the desired client.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: Yes
 
-**clientSecret**
-
-The client secret used by the OAuth client to authenticate to the authorization server.
-
+ ** clientSecret **   <a name="appflow-Type-ZendeskConnectorProfileCredentials-clientSecret"></a>
+ The client secret used by the OAuth client to authenticate to the authorization server.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: Yes
 
-**accessToken**
-
-The credentials used to access protected Zendesk resources.
-
+ ** accessToken **   <a name="appflow-Type-ZendeskConnectorProfileCredentials-accessToken"></a>
+ The credentials used to access protected Zendesk resources.
 Type: String
-
 Length Constraints: Maximum length of 4096.
-
 Pattern: `\S+`
-
 Required: No
 
-**oAuthRequest**
-
-The OAuth requirement needed to request security tokens from the connector endpoint.
-
-Type: [ConnectorOAuthRequest](api-connectoroauthrequest.md) object
-
+ ** oAuthRequest **   <a name="appflow-Type-ZendeskConnectorProfileCredentials-oAuthRequest"></a>
+ The OAuth requirement needed to request security tokens from the connector endpoint.
+Type: [ConnectorOAuthRequest](API_ConnectorOAuthRequest.md) object
 Required: No
 
 ## See Also
+<a name="API_ZendeskConnectorProfileCredentials_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/zendeskconnectorprofilecredentials.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/zendeskconnectorprofilecredentials.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/zendeskconnectorprofilecredentials.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VeevaSourceProperties
-
-ZendeskConnectorProfileProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ZendeskConnectorProfileCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ZendeskConnectorProfileCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ZendeskConnectorProfileCredentials)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,37 +3,26 @@ title: "ZendeskMetadata"
 ---
 
 # ZendeskMetadata
+<a name="API_ZendeskMetadata"></a>
 
-The connector metadata specific to Zendesk.
+ The connector metadata specific to Zendesk.
 
 ## Contents
+<a name="API_ZendeskMetadata_Contents"></a>
 
-**oAuthScopes**
-
-The desired authorization scope for the Zendesk account.
-
+ ** oAuthScopes **   <a name="appflow-Type-ZendeskMetadata-oAuthScopes"></a>
+ The desired authorization scope for the Zendesk account.
 Type: Array of strings
-
 Length Constraints: Maximum length of 128.
-
 Pattern: `\S+`
-
 Required: No
 
 ## See Also
+<a name="API_ZendeskMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/zendeskmetadata.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/zendeskmetadata.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/zendeskmetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ZendeskDestinationProperties
-
-ZendeskSourceProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ZendeskMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ZendeskMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ZendeskMetadata)
 
 All content copied from https://docs.aws.amazon.com/.

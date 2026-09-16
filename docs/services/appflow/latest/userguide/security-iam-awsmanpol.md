@@ -3,75 +3,42 @@ title: "AWS managed policies for Amazon AppFlow"
 ---
 
 # AWS managed policies for Amazon AppFlow
+<a name="security-iam-awsmanpol"></a>
 
-An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed
-to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
+An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
 
-Keep in mind that AWS managed policies might not grant least-privilege permissions for your specific use cases because
-they're available for all AWS customers to use. We recommend that you reduce permissions further by defining
-[customer managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#customer-managed-policies) that are specific to your use cases.
+Keep in mind that AWS managed policies might not grant least-privilege permissions for your specific use cases because they're available for all AWS customers to use. We recommend that you reduce permissions further by defining [ customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#customer-managed-policies) that are specific to your use cases.
 
-You cannot change the permissions defined in AWS managed policies. If AWS updates the permissions defined in an AWS
-managed policy, the update affects all principal identities (users, groups, and roles) that the policy is attached to. AWS is
-most likely to update an AWS managed policy when a new AWS service is launched or new API operations become available for
-existing services.
+You cannot change the permissions defined in AWS managed policies. If AWS updates the permissions defined in an AWS managed policy, the update affects all principal identities (users, groups, and roles) that the policy is attached to. AWS is most likely to update an AWS managed policy when a new AWS service is launched or new API operations become available for existing services.
 
-For more information, see [AWS managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies) in the
-_IAM User Guide_.
+For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 
 ## AWS managed policy: AmazonAppFlowFullAccess
+<a name="security-iam-awsmanpol-full"></a>
 
-You can attach the `AmazonAppFlowFullAccess` policy to your IAM
-identities.
+You can attach the `AmazonAppFlowFullAccess` policy to your IAM identities.
 
-This policy grants administrative permissions that allow you to view, create,
-update, run, and delete flows, and also to list, create, and delete connections. In
-addition, this policy grants access to the API actions that are required to
-configure other AWS services as a source or destinations. This policy also
-provides access to AWS Key Management Service to allow use of customer managed CMKs for encryption.
-It does not grant the ability to add other users.
+This policy grants administrative permissions that allow you to view, create, update, run, and delete flows, and also to list, create, and delete connections. In addition, this policy grants access to the API actions that are required to configure other AWS services as a source or destinations. This policy also provides access to AWS Key Management Service to allow use of customer managed CMKs for encryption. It does not grant the ability to add other users.
 
-###### Note
-
-This policy automatically grants read and write permissions to S3 buckets with
-an `appflow-` prefix only. You will not have access rights to any
-other S3 buckets without this prefix.
+**Note**
+This policy automatically grants read and write permissions to S3 buckets with an `appflow-` prefix only. You will not have access rights to any other S3 buckets without this prefix.
 
 **Permissions details**
 
 This policy includes the following permissions.
++ `appflow` – Allows principals to have full access to Amazon AppFlow. This is required so that you can view, create, update, run, and delete flows, in addition to list, create, and delete connections.
++ `iam` – Allows principals to list IAM roles from Amazon Redshift. This is required so that you can use Amazon Redshift as a flow destination.
++ `s3` – Allows principals to access buckets, bucket locations, and bucket policies for Amazon Simple Storage Service (Amazon S3). This is required so that you can use Amazon S3 as a flow source or destination (or use it to support the use of another source or destination).
++ `kms` – Allows principals to view the key ID and Amazon Resource Name (ARN) of all the customer master keys (CMKs) in the account, view detailed information about a CMK, view the aliases that are defined in the account, and add a grant to a CMK. This is required so that you can use customer managed CMKs for encryption.
++ `secretsmanager` – Allows principals to create secrets in Secrets Manager. This is required so that Amazon AppFlow can store the encrypted credentials that you use to connect to flow source and destination applications in your Secrets Manager account.
++ `lambda` – Allows principals to list all the functions in customer account. This is required so that you can register new connectors
 
-- `appflow` – Allows principals to have full access to
-Amazon AppFlow. This is required so that you can view, create, update, run, and
-delete flows, in addition to list, create, and delete connections.
+------
+#### [ JSON ]
 
-- `iam` – Allows principals to list IAM roles from Amazon Redshift.
-This is required so that you can use Amazon Redshift as a flow destination.
+****
 
-- `s3` – Allows principals to access buckets, bucket
-locations, and bucket policies for Amazon Simple Storage Service (Amazon S3). This is required so that
-you can use Amazon S3 as a flow source or destination (or use it to support the
-use of another source or destination).
-
-- `kms` – Allows principals to view the key ID and Amazon
-Resource Name (ARN) of all the customer master keys (CMKs) in the account,
-view detailed information about a CMK, view the aliases that are defined in
-the account, and add a grant to a CMK. This is required so that you can use
-customer managed CMKs for encryption.
-
-- `secretsmanager` – Allows principals to create secrets
-in Secrets Manager. This is required so that Amazon AppFlow can store the encrypted
-credentials that you use to connect to flow source and destination
-applications in your Secrets Manager account.
-
-- `lambda` – Allows principals to list all the functions
-in customer account. This is required so that you can register new
-connectors
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -188,31 +155,28 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## AWS managed policy: AmazonAppFlowReadOnlyAccess
+<a name="security-iam-awsmanpol-readonly"></a>
 
-You can attach the `AmazonAppFlowReadOnlyAccess` policy to your IAM
-identities.
+You can attach the `AmazonAppFlowReadOnlyAccess` policy to your IAM identities.
 
-This policy grants read-only permissions that allow you to view flows and
-connections in an AWS account. This policy doesn't allow you to create or delete
-flows or connections, and it doesn't grant the ability to add other users or grant
-access to other AWS services.
+This policy grants read-only permissions that allow you to view flows and connections in an AWS account. This policy doesn't allow you to create or delete flows or connections, and it doesn't grant the ability to add other users or grant access to other AWS services.
 
 **Permissions details**
 
 This policy includes the following permissions.
++ `appflow` – Allows principals to describe and list resources from Amazon AppFlow. This is required so that Amazon AppFlow users can view connectors, connector profiles, flows, and their associated metadata.
 
-- `appflow` – Allows principals to describe and list
-resources from Amazon AppFlow. This is required so that Amazon AppFlow users can
-view connectors, connector profiles, flows, and their associated metadata.
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement":
@@ -235,45 +199,19 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Amazon AppFlow updates to AWS managed policies
+<a name="security-iam-awsmanpol-updates"></a>
 
-View details about updates to AWS managed policies for Amazon AppFlow since this
-service began tracking these changes. For automatic alerts about changes to this
-page, subscribe to the RSS feed on the Amazon AppFlow [Document history](doc-history.md) page.
+View details about updates to AWS managed policies for Amazon AppFlow since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the Amazon AppFlow [Document history](https://docs.aws.amazon.com/appflow/latest/userguide/doc-history.html) page.
 
-ChangeDescriptionDate
-
-[AmazonAppFlowFullAccess](#security-iam-awsmanpol-full) – Update to an
-existing policy
-
-Amazon AppFlow now allows the `lambda:ListFunctions` action
-in the AmazonAppFlowFullAccess policy.
-
-03/01/2022
-
-[AmazonAppFlowReadOnlyAccess](#security-iam-awsmanpol-readonly) – Update to an
-existing policy
-
-Amazon AppFlow now allows the `appflow:DescribeConnector`
-and `appflow:ListConnectors` actions in the
-AmazonAppFlowReadOnlyAccess policy.
-
-03/01/2022
-
-Amazon AppFlow started tracking changes
-
-Amazon AppFlow started tracking changes for its AWS managed
-policies.
-
-03/26/2021
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon S3 Bucket Policies for Amazon AppFlow
-
-Troubleshooting
+| Change | Description | Date |
+| --- | --- | --- |
+| [AmazonAppFlowFullAccess](#security-iam-awsmanpol-full) – Update to an existing policy | Amazon AppFlow now allows the `lambda:ListFunctions` action in the AmazonAppFlowFullAccess policy. | 03/01/2022 |
+| [AmazonAppFlowReadOnlyAccess](#security-iam-awsmanpol-readonly) – Update to an existing policy | Amazon AppFlow now allows the `appflow:DescribeConnector` and `appflow:ListConnectors` actions in the AmazonAppFlowReadOnlyAccess policy. | 03/01/2022 |
+| Amazon AppFlow started tracking changes | Amazon AppFlow started tracking changes for its AWS managed policies. | 03/26/2021 |
 
 All content copied from https://docs.aws.amazon.com/.

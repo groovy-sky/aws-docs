@@ -3,50 +3,33 @@ title: "AmplitudeConnectorProfileCredentials"
 ---
 
 # AmplitudeConnectorProfileCredentials
+<a name="API_AmplitudeConnectorProfileCredentials"></a>
 
-The connector-specific credentials required when using Amplitude.
+ The connector-specific credentials required when using Amplitude.
 
 ## Contents
+<a name="API_AmplitudeConnectorProfileCredentials_Contents"></a>
 
-**apiKey**
-
-A unique alphanumeric identifier used to authenticate a user, developer, or calling
-program to your API.
-
+ ** apiKey **   <a name="appflow-Type-AmplitudeConnectorProfileCredentials-apiKey"></a>
+ A unique alphanumeric identifier used to authenticate a user, developer, or calling program to your API.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: Yes
 
-**secretKey**
-
-The Secret Access Key portion of the credentials.
-
+ ** secretKey **   <a name="appflow-Type-AmplitudeConnectorProfileCredentials-secretKey"></a>
+ The Secret Access Key portion of the credentials.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: Yes
 
 ## See Also
+<a name="API_AmplitudeConnectorProfileCredentials_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/amplitudeconnectorprofilecredentials.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/amplitudeconnectorprofilecredentials.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/amplitudeconnectorprofilecredentials.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AggregationConfig
-
-AmplitudeConnectorProfileProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/AmplitudeConnectorProfileCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/AmplitudeConnectorProfileCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/AmplitudeConnectorProfileCredentials)
 
 All content copied from https://docs.aws.amazon.com/.

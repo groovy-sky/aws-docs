@@ -3,56 +3,50 @@ title: "ListFlows"
 ---
 
 # ListFlows
+<a name="API_ListFlows"></a>
 
-Lists all of the flows associated with your account.
+ Lists all of the flows associated with your account.
 
 ## Request Syntax
+<a name="API_ListFlows_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /list-flows HTTP/1.1
 Content-type: application/json
 
 {
-   "maxResults": number,
-   "nextToken": "string"
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_ListFlows_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_ListFlows_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[maxResults](#API_ListFlows_RequestSyntax)**
-
-Specifies the maximum number of items that should be returned in the result set.
-
+ ** [maxResults](#API_ListFlows_RequestSyntax) **   <a name="appflow-ListFlows-request-maxResults"></a>
+ Specifies the maximum number of items that should be returned in the result set.
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**[nextToken](#API_ListFlows_RequestSyntax)**
-
-The pagination token for next page of data.
-
+ ** [nextToken](#API_ListFlows_RequestSyntax) **   <a name="appflow-ListFlows-request-nextToken"></a>
+ The pagination token for next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
-
 Required: No
 
 ## Response Syntax
+<a name="API_ListFlows_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -87,55 +81,47 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_ListFlows_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[flows](#API_ListFlows_ResponseSyntax)**
+ ** [flows](#API_ListFlows_ResponseSyntax) **   <a name="appflow-ListFlows-response-flows"></a>
+ The list of flows associated with your account.
+Type: Array of [FlowDefinition](API_FlowDefinition.md) objects
 
-The list of flows associated with your account.
-
-Type: Array of [FlowDefinition](api-flowdefinition.md) objects
-
-**[nextToken](#API_ListFlows_ResponseSyntax)**
-
-The pagination token for next page of data.
-
+ ** [nextToken](#API_ListFlows_ResponseSyntax) **   <a name="appflow-ListFlows-response-nextToken"></a>
+ The pagination token for next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
 
 ## Errors
+<a name="API_ListFlows_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_ListFlows_Examples"></a>
 
 ### ListFlows examples
+<a name="API_ListFlows_Example_1"></a>
 
-This example shows a sample request for the `ListFlows` API. In the second
-sample, note that `MaxResults` will show a number between 1 and 100.
+This example shows a sample request for the `ListFlows` API. In the second sample, note that `MaxResults` will show a number between 1 and 100.
 
 #### Sample Request
+<a name="API_ListFlows_Example_1_Request"></a>
 
-```json
-
+```
 {
   "flowList": [
     {
@@ -169,41 +155,25 @@ sample, note that `MaxResults` will show a number between 1 and 100.
 }
 ```
 
-```json
-
+```
 {
   "maxResults": 1
 }
 ```
 
 ## See Also
+<a name="API_ListFlows_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/listflows.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/listflows.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListConnectors
-
-ListTagsForResource
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/ListFlows)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/ListFlows)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ListFlows)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/ListFlows)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ListFlows)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/ListFlows)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/ListFlows)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/ListFlows)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/ListFlows)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ListFlows)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,61 +3,50 @@ title: "DescribeConnector"
 ---
 
 # DescribeConnector
+<a name="API_DescribeConnector"></a>
 
-Describes the given custom connector registered in your AWS account. This
-API can be used for custom connectors that are registered in your account and also for Amazon
-authored connectors.
+Describes the given custom connector registered in your AWS account. This API can be used for custom connectors that are registered in your account and also for Amazon authored connectors.
 
 ## Request Syntax
+<a name="API_DescribeConnector_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /describe-connector HTTP/1.1
 Content-type: application/json
 
 {
-   "connectorLabel": "string",
-   "connectorType": "string"
+   "connectorLabel": "{{string}}",
+   "connectorType": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_DescribeConnector_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_DescribeConnector_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[connectorLabel](#API_DescribeConnector_RequestSyntax)**
-
-The label of the connector. The label is unique for each
-`ConnectorRegistration` in your AWS account. Only needed if
-calling for CUSTOMCONNECTOR connector type/.
-
+ ** [connectorLabel](#API_DescribeConnector_RequestSyntax) **   <a name="appflow-DescribeConnector-request-connectorLabel"></a>
+The label of the connector. The label is unique for each `ConnectorRegistration` in your AWS account. Only needed if calling for CUSTOMCONNECTOR connector type/.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `[a-zA-Z0-9][\w!@#.-]+`
-
 Required: No
 
-**[connectorType](#API_DescribeConnector_RequestSyntax)**
-
-The connector type, such as CUSTOMCONNECTOR, Saleforce, Marketo. Please choose
-CUSTOMCONNECTOR for Lambda based custom connectors.
-
+ ** [connectorType](#API_DescribeConnector_RequestSyntax) **   <a name="appflow-DescribeConnector-request-connectorType"></a>
+The connector type, such as CUSTOMCONNECTOR, Saleforce, Marketo. Please choose CUSTOMCONNECTOR for Lambda based custom connectors.
 Type: String
-
 Valid Values: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_DescribeConnector_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -205,52 +194,45 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_DescribeConnector_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[connectorConfiguration](#API_DescribeConnector_ResponseSyntax)**
-
+ ** [connectorConfiguration](#API_DescribeConnector_ResponseSyntax) **   <a name="appflow-DescribeConnector-response-connectorConfiguration"></a>
 Configuration info of all the connectors that the user requested.
-
-Type: [ConnectorConfiguration](api-connectorconfiguration.md) object
+Type: [ConnectorConfiguration](API_ConnectorConfiguration.md) object
 
 ## Errors
+<a name="API_DescribeConnector_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
-The resource specified in the request (such as the source or destination connector
-profile) is not found.
-
+ ** ResourceNotFoundException **
+ The resource specified in the request (such as the source or destination connector profile) is not found.
 HTTP Status Code: 404
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DescribeConnector_Examples"></a>
 
 ### Describing the given connector
+<a name="API_DescribeConnector_Example_1"></a>
 
-This example shows a sample request for the `DescribeConnector` API and a
-sample response.
+This example shows a sample request for the `DescribeConnector` API and a sample response.
 
 #### Sample Request
+<a name="API_DescribeConnector_Example_1_Request"></a>
 
-```json
-
+```
 {
   "connectorType": "connectorType",
   "connectorLabel": "connectorLabel"
@@ -258,9 +240,9 @@ sample response.
 ```
 
 #### Sample Response
+<a name="API_DescribeConnector_Example_1_Response"></a>
 
-```json
-
+```
 {
   "connectorConfiguration":
   {
@@ -357,33 +339,18 @@ sample response.
 ```
 
 ## See Also
+<a name="API_DescribeConnector_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/describeconnector.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/describeconnector.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeleteFlow
-
-DescribeConnectorEntity
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/DescribeConnector)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DescribeConnector)
 
 All content copied from https://docs.aws.amazon.com/.

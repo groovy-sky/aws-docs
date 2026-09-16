@@ -3,41 +3,29 @@ title: "ConnectorProfileConfig"
 ---
 
 # ConnectorProfileConfig
+<a name="API_ConnectorProfileConfig"></a>
 
-Defines the connector-specific configuration and credentials for the connector profile.
+ Defines the connector-specific configuration and credentials for the connector profile.
 
 ## Contents
+<a name="API_ConnectorProfileConfig_Contents"></a>
 
-**connectorProfileProperties**
-
-The connector-specific properties of the profile configuration.
-
-Type: [ConnectorProfileProperties](api-connectorprofileproperties.md) object
-
+ ** connectorProfileProperties **   <a name="appflow-Type-ConnectorProfileConfig-connectorProfileProperties"></a>
+ The connector-specific properties of the profile configuration.
+Type: [ConnectorProfileProperties](API_ConnectorProfileProperties.md) object
 Required: Yes
 
-**connectorProfileCredentials**
-
-The connector-specific credentials required by each connector.
-
-Type: [ConnectorProfileCredentials](api-connectorprofilecredentials.md) object
-
+ ** connectorProfileCredentials **   <a name="appflow-Type-ConnectorProfileConfig-connectorProfileCredentials"></a>
+ The connector-specific credentials required by each connector.
+Type: [ConnectorProfileCredentials](API_ConnectorProfileCredentials.md) object
 Required: No
 
 ## See Also
+<a name="API_ConnectorProfileConfig_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/connectorprofileconfig.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/connectorprofileconfig.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/connectorprofileconfig.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectorProfile
-
-ConnectorProfileCredentials
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ConnectorProfileConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ConnectorProfileConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ConnectorProfileConfig)
 
 All content copied from https://docs.aws.amazon.com/.

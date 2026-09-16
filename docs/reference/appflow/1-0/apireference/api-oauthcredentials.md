@@ -3,81 +3,52 @@ title: "OAuthCredentials"
 ---
 
 # OAuthCredentials
+<a name="API_OAuthCredentials"></a>
 
-The OAuth credentials required for OAuth type authentication.
+ The OAuth credentials required for OAuth type authentication.
 
 ## Contents
+<a name="API_OAuthCredentials_Contents"></a>
 
-**clientId**
-
-The identifier for the desired client.
-
+ ** clientId **   <a name="appflow-Type-OAuthCredentials-clientId"></a>
+ The identifier for the desired client.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: Yes
 
-**clientSecret**
-
-The client secret used by the OAuth client to authenticate to the authorization server.
-
+ ** clientSecret **   <a name="appflow-Type-OAuthCredentials-clientSecret"></a>
+ The client secret used by the OAuth client to authenticate to the authorization server.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: Yes
 
-**accessToken**
-
-The access token used to access protected SAPOData resources.
-
+ ** accessToken **   <a name="appflow-Type-OAuthCredentials-accessToken"></a>
+ The access token used to access protected SAPOData resources.
 Type: String
-
 Length Constraints: Maximum length of 4096.
-
 Pattern: `\S+`
-
 Required: No
 
-**oAuthRequest**
-
-The OAuth requirement needed to request security tokens from the connector endpoint.
-
-Type: [ConnectorOAuthRequest](api-connectoroauthrequest.md) object
-
+ ** oAuthRequest **   <a name="appflow-Type-OAuthCredentials-oAuthRequest"></a>
+ The OAuth requirement needed to request security tokens from the connector endpoint.
+Type: [ConnectorOAuthRequest](API_ConnectorOAuthRequest.md) object
 Required: No
 
-**refreshToken**
-
-The refresh token used to refresh expired access token.
-
+ ** refreshToken **   <a name="appflow-Type-OAuthCredentials-refreshToken"></a>
+ The refresh token used to refresh expired access token.
 Type: String
-
 Length Constraints: Maximum length of 4096.
-
 Pattern: `\S+`
-
 Required: No
 
 ## See Also
+<a name="API_OAuthCredentials_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/oauthcredentials.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/oauthcredentials.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/oauthcredentials.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OAuth2Properties
-
-OAuthProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/OAuthCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/OAuthCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/OAuthCredentials)
 
 All content copied from https://docs.aws.amazon.com/.

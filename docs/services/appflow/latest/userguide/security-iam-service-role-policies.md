@@ -3,38 +3,27 @@ title: "Service role policies for Amazon AppFlow"
 ---
 
 # Service role policies for Amazon AppFlow
+<a name="security_iam_service-role-policies"></a>
 
-A service role is an [IAM role](../../../iam/latest/userguide/id-roles.md) that a service assumes to perform
-actions on your behalf. An IAM administrator can create, modify, and delete a service role from within IAM. For
-more information, see [Create a role to delegate permissions to an AWS service](../../../iam/latest/userguide/id-roles-create-for-service.md) in the _IAM User Guide_.
+ A service role is an [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that a service assumes to perform actions on your behalf. An IAM administrator can create, modify, and delete a service role from within IAM. For more information, see [Create a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the *IAM User Guide*.
 
-###### Warning
+**Warning**
+Changing the permissions for a service role might break Amazon AppFlow functionality. Edit service roles only when Amazon AppFlow provides guidance to do so.
 
-Changing the permissions for a service role might break Amazon AppFlow functionality. Edit
-service roles only when Amazon AppFlow provides guidance to do so.
-
-###### Topics
-
-- [Allow Amazon AppFlow to access the AWS Glue Data Catalog](#access-gdc)
-
-- [Allow Amazon AppFlow to access Amazon Redshift databases with the Data API](#access-redshift)
-
-- [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](#redshift-access-s3)
+**Topics**
++ [Allow Amazon AppFlow to access the AWS Glue Data Catalog](#access-gdc)
++ [Allow Amazon AppFlow to access Amazon Redshift databases with the Data API](#access-redshift)
++ [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](#redshift-access-s3)
 
 ## Allow Amazon AppFlow to access the AWS Glue Data Catalog
+<a name="access-gdc"></a>
 
-Before you can create a flow that catalogs its output data in the AWS Glue Data Catalog, you
-must grant Amazon AppFlow the required permissions. Amazon AppFlow requires permissions to create
-Data Catalog tables, databases, and partitions. To grant the required permissions, you
-provide an IAM role that contains the following permissions policy and trust policy.
-You provide this role to Amazon AppFlow in the settings for your flows.
+Before you can create a flow that catalogs its output data in the AWS Glue Data Catalog, you must grant Amazon AppFlow the required permissions. Amazon AppFlow requires permissions to create Data Catalog tables, databases, and partitions. To grant the required permissions, you provide an IAM role that contains the following permissions policy and trust policy. You provide this role to Amazon AppFlow in the settings for your flows.
 
-###### Example permissions policy
+**Example permissions policy**
+****
 
-JSON
-
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -76,15 +65,12 @@ JSON
     }
   ]
 }
-
 ```
 
-###### Example trust policy
+**Example trust policy**
+****
 
-JSON
-
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -98,29 +84,21 @@ JSON
     }
   ]
 }
-
 ```
 
 ## Allow Amazon AppFlow to access Amazon Redshift databases with the Data API
+<a name="access-redshift"></a>
 
-Before you can create a flow that transfers data to an Amazon Redshift database by using the Amazon Redshift
-Data API, you must grant Amazon AppFlow the required permissions. Amazon AppFlow requires permissions
-to do the following with your Amazon Redshift database:
+Before you can create a flow that transfers data to an Amazon Redshift database by using the Amazon Redshift Data API, you must grant Amazon AppFlow the required permissions. Amazon AppFlow requires permissions to do the following with your Amazon Redshift database:
++ Gain access through temporary credentials
++ Run SQL statements
 
-- Gain access through temporary credentials
+To grant those permissions, you create an IAM role that contains the permissions policy and trust policy below. You provide this role to Amazon AppFlow in the settings for your Amazon Redshift connections.
 
-- Run SQL statements
+**Example permissions policy**
+****
 
-To grant those permissions, you create an IAM role that contains the permissions
-policy and trust policy below. You provide this role to Amazon AppFlow in the settings for your Amazon Redshift
-connections.
-
-###### Example permissions policy
-
-JSON
-
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -179,17 +157,11 @@ JSON
     }
   ]
 }
+```
+**Tag condition for Amazon Redshift Serverless resources**
+In the example permissions policy, the statement that grants the `redshift-serverless:GetCredentials` action has the following condition block:
 
 ```
-
-###### Tag condition for Amazon Redshift Serverless resources
-
-In the example permissions policy, the statement that grants the
-`redshift-serverless:GetCredentials` action has the following condition
-block:
-
-```json
-
 "Condition":
 {
   "StringLike":
@@ -198,23 +170,13 @@ block:
   }
 }
 ```
+In IAM policies, `condition` is an optional element that specifies conditions for when a policy is in effect. With this condition block, the policy allows Amazon AppFlow to get temporary credentials for only those Amazon Redshift Serverless resources that meet the condition. To meet the condition, the resources must be tagged with the key `RedshiftDataFullAccess`. Therefore, to use this policy, you must apply that tag to the appropriate workgroup.
+For more information about tagging resources in Amazon Redshift Serverless, see [Tagging resources overview](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-tagging-resources.html) in the *Amazon Redshift Management Guide*.
 
-In IAM policies, `condition` is an optional element that specifies
-conditions for when a policy is in effect. With this condition block, the policy allows
-Amazon AppFlow to get temporary credentials for only those Amazon Redshift Serverless resources that meet the
-condition. To meet the condition, the resources must be tagged with the key
-`RedshiftDataFullAccess`. Therefore, to use this policy, you must apply that
-tag to the appropriate workgroup.
+**Example trust policy**
+****
 
-For more information about tagging resources in Amazon Redshift Serverless, see [Tagging resources overview](../../../redshift/latest/mgmt/serverless-tagging-resources.md) in the _Amazon Redshift Management_
-_Guide_.
-
-###### Example trust policy
-
-JSON
-
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -228,44 +190,32 @@ JSON
     }
   ]
 }
-
 ```
 
-For more information about authorizing access to the Data API, see [Authorizing access to\
-the Amazon Redshift Data API](../../../redshift/latest/mgmt/data-api-access.md) in the _Amazon Redshift Management_
-_Guide_.
+For more information about authorizing access to the Data API, see [Authorizing access to the Amazon Redshift Data API](https://docs.aws.amazon.com/redshift/latest/mgmt/data-api-access.html) in the *Amazon Redshift Management Guide*.
 
 ## Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3
+<a name="redshift-access-s3"></a>
 
-When you run a flow that transfers data to an Amazon Redshift database, Amazon AppFlow first stores the data
-in an S3 bucket that you provide. Then, Amazon Redshift gets the data from the S3 bucket. For the flow to
-run successfully, you must authorize Amazon Redshift to get and decrypt the data. To grant those
-permission, you create an IAM role that contains the permissions policies and trust policy
-below.
+When you run a flow that transfers data to an Amazon Redshift database, Amazon AppFlow first stores the data in an S3 bucket that you provide. Then, Amazon Redshift gets the data from the S3 bucket. For the flow to run successfully, you must authorize Amazon Redshift to get and decrypt the data. To grant those permission, you create an IAM role that contains the permissions policies and trust policy below.
 
-You provide the IAM role in the settings when you create an Amazon Redshift connection in
-Amazon AppFlow.
+You provide the IAM role in the settings when you create an Amazon Redshift connection in Amazon AppFlow.
 
-You must also associate the role with the Amazon Redshift cluster that receives the data that you
-transfer with Amazon AppFlow. For the steps to associate the role, see [Associating IAM roles with clusters](../../../redshift/latest/mgmt/copy-unload-iam-role.md#copy-unload-iam-role-associating-with-clusters) in the _Amazon Redshift_
-_Management Guide_.
+You must also associate the role with the Amazon Redshift cluster that receives the data that you transfer with Amazon AppFlow. For the steps to associate the role, see [Associating IAM roles with clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/copy-unload-iam-role.html#copy-unload-iam-role-associating-with-clusters) in the *Amazon Redshift Management Guide*.
 
-###### Example permissions policies
+**Example permissions policies**
 
-To provide the required permissions to Amazon Redshift, you can attach the following permissions
-policies to the IAM role:
+To provide the required permissions to Amazon Redshift, you can attach the following permissions policies to the IAM role:
++ The AWS managed policy AmazonS3ReadOnlyAccess. This policy is owned and maintained by AWS. It grants read-only access to Amazon S3. To view the permissions for this policy, see [AmazonS3ReadOnlyAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess$jsonEditor) in the AWS Management Console.
++ A policy that permits Amazon Redshift to decrypt the encrypted data that Amazon AppFlow stores in Amazon S3, such as the following example:
 
-- The AWS managed policy AmazonS3ReadOnlyAccess. This policy is owned and maintained
-by AWS. It grants read-only access to Amazon S3. To view the permissions for this policy, see
-[AmazonS3ReadOnlyAccess](https://console.aws.amazon.com/iam/home?) in the AWS Management Console.
+------
+#### [ JSON ]
 
-- A policy that permits Amazon Redshift to decrypt the encrypted data that Amazon AppFlow stores in Amazon S3,
-such as the following example:
-JSON
+****
 
-```json
-
-{
+  ```
+  {
     "Version":"2012-10-17",
     "Statement": [
       {
@@ -274,16 +224,15 @@ JSON
         "Resource": "*"
       }
     ]
-}
+  }
+  ```
+
+------
+
+**Example trust policy**
+****
 
 ```
-
-###### Example trust policy
-
-JSON
-
-```json
-
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -297,13 +246,6 @@ JSON
     }
   ]
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Identity-based policy examples
-
-Amazon S3 Bucket Policies for Amazon AppFlow
 
 All content copied from https://docs.aws.amazon.com/.

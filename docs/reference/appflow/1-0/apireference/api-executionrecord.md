@@ -3,98 +3,62 @@ title: "ExecutionRecord"
 ---
 
 # ExecutionRecord
+<a name="API_ExecutionRecord"></a>
 
-Specifies information about the past flow run instances for a given flow.
+ Specifies information about the past flow run instances for a given flow.
 
 ## Contents
+<a name="API_ExecutionRecord_Contents"></a>
 
-**dataPullEndTime**
-
-The timestamp that indicates the last new or updated record to be transferred in the flow
-run.
-
+ ** dataPullEndTime **   <a name="appflow-Type-ExecutionRecord-dataPullEndTime"></a>
+ The timestamp that indicates the last new or updated record to be transferred in the flow run.
 Type: Timestamp
-
 Required: No
 
-**dataPullStartTime**
-
-The timestamp that determines the first new or updated record to be transferred in the
-flow run.
-
+ ** dataPullStartTime **   <a name="appflow-Type-ExecutionRecord-dataPullStartTime"></a>
+ The timestamp that determines the first new or updated record to be transferred in the flow run.
 Type: Timestamp
-
 Required: No
 
-**executionId**
-
-Specifies the identifier of the given flow run.
-
+ ** executionId **   <a name="appflow-Type-ExecutionRecord-executionId"></a>
+ Specifies the identifier of the given flow run.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: No
 
-**executionResult**
-
-Describes the result of the given flow run.
-
-Type: [ExecutionResult](api-executionresult.md) object
-
+ ** executionResult **   <a name="appflow-Type-ExecutionRecord-executionResult"></a>
+ Describes the result of the given flow run.
+Type: [ExecutionResult](API_ExecutionResult.md) object
 Required: No
 
-**executionStatus**
-
-Specifies the flow run status and whether it is in progress, has completed successfully,
-or has failed.
-
+ ** executionStatus **   <a name="appflow-Type-ExecutionRecord-executionStatus"></a>
+ Specifies the flow run status and whether it is in progress, has completed successfully, or has failed.
 Type: String
-
 Valid Values: `InProgress | Successful | Error | CancelStarted | Canceled`
-
 Required: No
 
-**lastUpdatedAt**
-
-Specifies the time of the most recent update.
-
+ ** lastUpdatedAt **   <a name="appflow-Type-ExecutionRecord-lastUpdatedAt"></a>
+ Specifies the time of the most recent update.
 Type: Timestamp
-
 Required: No
 
-**metadataCatalogDetails**
-
+ ** metadataCatalogDetails **   <a name="appflow-Type-ExecutionRecord-metadataCatalogDetails"></a>
 Describes the metadata catalog, metadata table, and data partitions that Amazon AppFlow used for the associated flow run.
-
-Type: Array of [MetadataCatalogDetail](api-metadatacatalogdetail.md) objects
-
+Type: Array of [MetadataCatalogDetail](API_MetadataCatalogDetail.md) objects
 Required: No
 
-**startedAt**
-
-Specifies the start time of the flow run.
-
+ ** startedAt **   <a name="appflow-Type-ExecutionRecord-startedAt"></a>
+ Specifies the start time of the flow run.
 Type: Timestamp
-
 Required: No
 
 ## See Also
+<a name="API_ExecutionRecord_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/executionrecord.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/executionrecord.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/executionrecord.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExecutionDetails
-
-ExecutionResult
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ExecutionRecord)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ExecutionRecord)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ExecutionRecord)
 
 All content copied from https://docs.aws.amazon.com/.

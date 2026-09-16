@@ -3,162 +3,104 @@ title: "SourceConnectorProperties"
 ---
 
 # SourceConnectorProperties
+<a name="API_SourceConnectorProperties"></a>
 
-Specifies the information that is required to query a particular connector.
+ Specifies the information that is required to query a particular connector.
 
 ## Contents
+<a name="API_SourceConnectorProperties_Contents"></a>
 
-**Amplitude**
-
-Specifies the information that is required for querying Amplitude.
-
-Type: [AmplitudeSourceProperties](api-amplitudesourceproperties.md) object
-
+ ** Amplitude **   <a name="appflow-Type-SourceConnectorProperties-Amplitude"></a>
+ Specifies the information that is required for querying Amplitude.
+Type: [AmplitudeSourceProperties](API_AmplitudeSourceProperties.md) object
 Required: No
 
-**CustomConnector**
-
-The properties that are applied when the custom connector is being used as a
-source.
-
-Type: [CustomConnectorSourceProperties](api-customconnectorsourceproperties.md) object
-
+ ** CustomConnector **   <a name="appflow-Type-SourceConnectorProperties-CustomConnector"></a>
+The properties that are applied when the custom connector is being used as a source.
+Type: [CustomConnectorSourceProperties](API_CustomConnectorSourceProperties.md) object
 Required: No
 
-**Datadog**
-
-Specifies the information that is required for querying Datadog.
-
-Type: [DatadogSourceProperties](api-datadogsourceproperties.md) object
-
+ ** Datadog **   <a name="appflow-Type-SourceConnectorProperties-Datadog"></a>
+ Specifies the information that is required for querying Datadog.
+Type: [DatadogSourceProperties](API_DatadogSourceProperties.md) object
 Required: No
 
-**Dynatrace**
-
-Specifies the information that is required for querying Dynatrace.
-
-Type: [DynatraceSourceProperties](api-dynatracesourceproperties.md) object
-
+ ** Dynatrace **   <a name="appflow-Type-SourceConnectorProperties-Dynatrace"></a>
+ Specifies the information that is required for querying Dynatrace.
+Type: [DynatraceSourceProperties](API_DynatraceSourceProperties.md) object
 Required: No
 
-**GoogleAnalytics**
-
-Specifies the information that is required for querying Google Analytics.
-
-Type: [GoogleAnalyticsSourceProperties](api-googleanalyticssourceproperties.md) object
-
+ ** GoogleAnalytics **   <a name="appflow-Type-SourceConnectorProperties-GoogleAnalytics"></a>
+ Specifies the information that is required for querying Google Analytics.
+Type: [GoogleAnalyticsSourceProperties](API_GoogleAnalyticsSourceProperties.md) object
 Required: No
 
-**InforNexus**
-
-Specifies the information that is required for querying Infor Nexus.
-
-Type: [InforNexusSourceProperties](api-infornexussourceproperties.md) object
-
+ ** InforNexus **   <a name="appflow-Type-SourceConnectorProperties-InforNexus"></a>
+ Specifies the information that is required for querying Infor Nexus.
+Type: [InforNexusSourceProperties](API_InforNexusSourceProperties.md) object
 Required: No
 
-**Marketo**
-
-Specifies the information that is required for querying Marketo.
-
-Type: [MarketoSourceProperties](api-marketosourceproperties.md) object
-
+ ** Marketo **   <a name="appflow-Type-SourceConnectorProperties-Marketo"></a>
+ Specifies the information that is required for querying Marketo.
+Type: [MarketoSourceProperties](API_MarketoSourceProperties.md) object
 Required: No
 
-**Pardot**
-
+ ** Pardot **   <a name="appflow-Type-SourceConnectorProperties-Pardot"></a>
 Specifies the information that is required for querying Salesforce Pardot.
-
-Type: [PardotSourceProperties](api-pardotsourceproperties.md) object
-
+Type: [PardotSourceProperties](API_PardotSourceProperties.md) object
 Required: No
 
-**S3**
-
-Specifies the information that is required for querying Amazon S3.
-
-Type: [S3SourceProperties](api-s3sourceproperties.md) object
-
+ ** S3 **   <a name="appflow-Type-SourceConnectorProperties-S3"></a>
+ Specifies the information that is required for querying Amazon S3.
+Type: [S3SourceProperties](API_S3SourceProperties.md) object
 Required: No
 
-**Salesforce**
-
-Specifies the information that is required for querying Salesforce.
-
-Type: [SalesforceSourceProperties](api-salesforcesourceproperties.md) object
-
+ ** Salesforce **   <a name="appflow-Type-SourceConnectorProperties-Salesforce"></a>
+ Specifies the information that is required for querying Salesforce.
+Type: [SalesforceSourceProperties](API_SalesforceSourceProperties.md) object
 Required: No
 
-**SAPOData**
-
-The properties that are applied when using SAPOData as a flow source.
-
-Type: [SAPODataSourceProperties](api-sapodatasourceproperties.md) object
-
+ ** SAPOData **   <a name="appflow-Type-SourceConnectorProperties-SAPOData"></a>
+ The properties that are applied when using SAPOData as a flow source.
+Type: [SAPODataSourceProperties](API_SAPODataSourceProperties.md) object
 Required: No
 
-**ServiceNow**
-
-Specifies the information that is required for querying ServiceNow.
-
-Type: [ServiceNowSourceProperties](api-servicenowsourceproperties.md) object
-
+ ** ServiceNow **   <a name="appflow-Type-SourceConnectorProperties-ServiceNow"></a>
+ Specifies the information that is required for querying ServiceNow.
+Type: [ServiceNowSourceProperties](API_ServiceNowSourceProperties.md) object
 Required: No
 
-**Singular**
-
-Specifies the information that is required for querying Singular.
-
-Type: [SingularSourceProperties](api-singularsourceproperties.md) object
-
+ ** Singular **   <a name="appflow-Type-SourceConnectorProperties-Singular"></a>
+ Specifies the information that is required for querying Singular.
+Type: [SingularSourceProperties](API_SingularSourceProperties.md) object
 Required: No
 
-**Slack**
-
-Specifies the information that is required for querying Slack.
-
-Type: [SlackSourceProperties](api-slacksourceproperties.md) object
-
+ ** Slack **   <a name="appflow-Type-SourceConnectorProperties-Slack"></a>
+ Specifies the information that is required for querying Slack.
+Type: [SlackSourceProperties](API_SlackSourceProperties.md) object
 Required: No
 
-**Trendmicro**
-
-Specifies the information that is required for querying Trend Micro.
-
-Type: [TrendmicroSourceProperties](api-trendmicrosourceproperties.md) object
-
+ ** Trendmicro **   <a name="appflow-Type-SourceConnectorProperties-Trendmicro"></a>
+ Specifies the information that is required for querying Trend Micro.
+Type: [TrendmicroSourceProperties](API_TrendmicroSourceProperties.md) object
 Required: No
 
-**Veeva**
-
-Specifies the information that is required for querying Veeva.
-
-Type: [VeevaSourceProperties](api-veevasourceproperties.md) object
-
+ ** Veeva **   <a name="appflow-Type-SourceConnectorProperties-Veeva"></a>
+ Specifies the information that is required for querying Veeva.
+Type: [VeevaSourceProperties](API_VeevaSourceProperties.md) object
 Required: No
 
-**Zendesk**
-
-Specifies the information that is required for querying Zendesk.
-
-Type: [ZendeskSourceProperties](api-zendesksourceproperties.md) object
-
+ ** Zendesk **   <a name="appflow-Type-SourceConnectorProperties-Zendesk"></a>
+ Specifies the information that is required for querying Zendesk.
+Type: [ZendeskSourceProperties](API_ZendeskSourceProperties.md) object
 Required: No
 
 ## See Also
+<a name="API_SourceConnectorProperties_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/sourceconnectorproperties.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/sourceconnectorproperties.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/sourceconnectorproperties.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnowflakeMetadata
-
-SourceFieldProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SourceConnectorProperties)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SourceConnectorProperties)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SourceConnectorProperties)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,71 +3,58 @@ title: "DescribeFlowExecutionRecords"
 ---
 
 # DescribeFlowExecutionRecords
+<a name="API_DescribeFlowExecutionRecords"></a>
 
-Fetches the execution history of the flow.
+ Fetches the execution history of the flow.
 
 ## Request Syntax
+<a name="API_DescribeFlowExecutionRecords_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /describe-flow-execution-records HTTP/1.1
 Content-type: application/json
 
 {
-   "flowName": "string",
-   "maxResults": number,
-   "nextToken": "string"
+   "flowName": "{{string}}",
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_DescribeFlowExecutionRecords_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_DescribeFlowExecutionRecords_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[flowName](#API_DescribeFlowExecutionRecords_RequestSyntax)**
-
-The specified name of the flow. Spaces are not allowed. Use underscores (\_) or hyphens
-(-) only.
-
+ ** [flowName](#API_DescribeFlowExecutionRecords_RequestSyntax) **   <a name="appflow-DescribeFlowExecutionRecords-request-flowName"></a>
+ The specified name of the flow. Spaces are not allowed. Use underscores (\_) or hyphens (-) only.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `[a-zA-Z0-9][\w!@#.-]+`
-
 Required: Yes
 
-**[maxResults](#API_DescribeFlowExecutionRecords_RequestSyntax)**
-
-Specifies the maximum number of items that should be returned in the result set. The
-default for `maxResults` is 20 (for all paginated API operations).
-
+ ** [maxResults](#API_DescribeFlowExecutionRecords_RequestSyntax) **   <a name="appflow-DescribeFlowExecutionRecords-request-maxResults"></a>
+ Specifies the maximum number of items that should be returned in the result set. The default for `maxResults` is 20 (for all paginated API operations).
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**[nextToken](#API_DescribeFlowExecutionRecords_RequestSyntax)**
-
-The pagination token for the next page of data.
-
+ ** [nextToken](#API_DescribeFlowExecutionRecords_RequestSyntax) **   <a name="appflow-DescribeFlowExecutionRecords-request-nextToken"></a>
+ The pagination token for the next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
-
 Required: No
 
 ## Response Syntax
+<a name="API_DescribeFlowExecutionRecords_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -114,62 +101,51 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_DescribeFlowExecutionRecords_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[flowExecutions](#API_DescribeFlowExecutionRecords_ResponseSyntax)**
+ ** [flowExecutions](#API_DescribeFlowExecutionRecords_ResponseSyntax) **   <a name="appflow-DescribeFlowExecutionRecords-response-flowExecutions"></a>
+ Returns a list of all instances when this flow was run.
+Type: Array of [ExecutionRecord](API_ExecutionRecord.md) objects
 
-Returns a list of all instances when this flow was run.
-
-Type: Array of [ExecutionRecord](api-executionrecord.md) objects
-
-**[nextToken](#API_DescribeFlowExecutionRecords_ResponseSyntax)**
-
-The pagination token for the next page of data.
-
+ ** [nextToken](#API_DescribeFlowExecutionRecords_ResponseSyntax) **   <a name="appflow-DescribeFlowExecutionRecords-response-nextToken"></a>
+ The pagination token for the next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
 
 ## Errors
+<a name="API_DescribeFlowExecutionRecords_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
-The resource specified in the request (such as the source or destination connector
-profile) is not found.
-
+ ** ResourceNotFoundException **
+ The resource specified in the request (such as the source or destination connector profile) is not found.
 HTTP Status Code: 404
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DescribeFlowExecutionRecords_Examples"></a>
 
 ### DescribeFlowExecutionRecords examples
+<a name="API_DescribeFlowExecutionRecords_Example_1"></a>
 
-This example shows sample requests and responses for the
-`DescribeFlowExecutionRecords` API.
+This example shows sample requests and responses for the `DescribeFlowExecutionRecords` API.
 
 #### Sample Request
+<a name="API_DescribeFlowExecutionRecords_Example_1_Request"></a>
 
-```json
-
+```
 {
   "flowName": "name",
   "maxResults": 1
@@ -177,9 +153,9 @@ This example shows sample requests and responses for the
 ```
 
 #### Sample Response
+<a name="API_DescribeFlowExecutionRecords_Example_1_Response"></a>
 
-```json
-
+```
 {
   "flowExecutionList": [
     {
@@ -218,9 +194,9 @@ This example shows sample requests and responses for the
 ```
 
 #### Sample Request
+<a name="API_DescribeFlowExecutionRecords_Example_1_Request"></a>
 
-```json
-
+```
 {
   "flowName": "test-new-create",
   "maxResults": 1,
@@ -229,9 +205,9 @@ This example shows sample requests and responses for the
 ```
 
 #### Sample Response
+<a name="API_DescribeFlowExecutionRecords_Example_1_Response"></a>
 
-```json
-
+```
 {
   "flowExecutionList": [
     {
@@ -265,9 +241,9 @@ This example shows sample requests and responses for the
 ```
 
 #### Sample Request
+<a name="API_DescribeFlowExecutionRecords_Example_1_Request"></a>
 
-```json
-
+```
 {
   "flowName": "name",
   "maxResults": 1,
@@ -276,9 +252,9 @@ This example shows sample requests and responses for the
 ```
 
 #### Sample Response
+<a name="API_DescribeFlowExecutionRecords_Example_1_Response"></a>
 
-```json
-
+```
 {
   "flowExecutionList": [
     {
@@ -315,33 +291,18 @@ This example shows sample requests and responses for the
 ```
 
 ## See Also
+<a name="API_DescribeFlowExecutionRecords_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/describeflowexecutionrecords.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeFlow
-
-ListConnectorEntities
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/DescribeFlowExecutionRecords)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DescribeFlowExecutionRecords)
 
 All content copied from https://docs.aws.amazon.com/.

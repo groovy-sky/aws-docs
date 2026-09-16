@@ -3,35 +3,24 @@ title: "SupportedFieldTypeDetails"
 ---
 
 # SupportedFieldTypeDetails
+<a name="API_SupportedFieldTypeDetails"></a>
 
-Contains details regarding all the supported `FieldTypes` and their
-corresponding `filterOperators` and `supportedValues`.
+ Contains details regarding all the supported `FieldTypes` and their corresponding `filterOperators` and `supportedValues`.
 
 ## Contents
+<a name="API_SupportedFieldTypeDetails_Contents"></a>
 
-**v1**
-
-The initial supported version for `fieldType`. If this is later changed to a
-different version, v2 will be introduced.
-
-Type: [FieldTypeDetails](api-fieldtypedetails.md) object
-
+ ** v1 **   <a name="appflow-Type-SupportedFieldTypeDetails-v1"></a>
+ The initial supported version for `fieldType`. If this is later changed to a different version, v2 will be introduced.
+Type: [FieldTypeDetails](API_FieldTypeDetails.md) object
 Required: Yes
 
 ## See Also
+<a name="API_SupportedFieldTypeDetails_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/supportedfieldtypedetails.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/supportedfieldtypedetails.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/supportedfieldtypedetails.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SuccessResponseHandlingConfig
-
-Task
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SupportedFieldTypeDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SupportedFieldTypeDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SupportedFieldTypeDetails)
 
 All content copied from https://docs.aws.amazon.com/.

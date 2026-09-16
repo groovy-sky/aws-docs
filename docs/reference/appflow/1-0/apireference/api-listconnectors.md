@@ -3,59 +3,50 @@ title: "ListConnectors"
 ---
 
 # ListConnectors
+<a name="API_ListConnectors"></a>
 
-Returns the list of all registered custom connectors in your AWS account.
-This API lists only custom connectors registered in this account, not the AWS
-authored connectors.
+Returns the list of all registered custom connectors in your AWS account. This API lists only custom connectors registered in this account, not the AWS authored connectors.
 
 ## Request Syntax
+<a name="API_ListConnectors_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /list-connectors HTTP/1.1
 Content-type: application/json
 
 {
-   "maxResults": number,
-   "nextToken": "string"
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_ListConnectors_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_ListConnectors_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[maxResults](#API_ListConnectors_RequestSyntax)**
-
-Specifies the maximum number of items that should be returned in the result set. The
-default for `maxResults` is 20 (for all paginated API operations).
-
+ ** [maxResults](#API_ListConnectors_RequestSyntax) **   <a name="appflow-ListConnectors-request-maxResults"></a>
+Specifies the maximum number of items that should be returned in the result set. The default for `maxResults` is 20 (for all paginated API operations).
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**[nextToken](#API_ListConnectors_RequestSyntax)**
-
+ ** [nextToken](#API_ListConnectors_RequestSyntax) **   <a name="appflow-ListConnectors-request-nextToken"></a>
 The pagination token for the next page of data.
-
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
-
 Required: No
 
 ## Response Syntax
+<a name="API_ListConnectors_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -81,56 +72,47 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_ListConnectors_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[connectors](#API_ListConnectors_ResponseSyntax)**
-
+ ** [connectors](#API_ListConnectors_ResponseSyntax) **   <a name="appflow-ListConnectors-response-connectors"></a>
 Contains information about the connectors supported by Amazon AppFlow.
+Type: Array of [ConnectorDetail](API_ConnectorDetail.md) objects
 
-Type: Array of [ConnectorDetail](api-connectordetail.md) objects
-
-**[nextToken](#API_ListConnectors_ResponseSyntax)**
-
-The pagination token for the next page of data. If nextToken=null, this means that all
-records have been fetched.
-
+ ** [nextToken](#API_ListConnectors_ResponseSyntax) **   <a name="appflow-ListConnectors-response-nextToken"></a>
+The pagination token for the next page of data. If nextToken=null, this means that all records have been fetched.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
 
 ## Errors
+<a name="API_ListConnectors_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_ListConnectors_Examples"></a>
 
 ### Listing connectors
+<a name="API_ListConnectors_Example_1"></a>
 
-This example shows a sample request for the `ListConnector` API and a
-sample response.
+This example shows a sample request for the `ListConnector` API and a sample response.
 
 #### Sample Request
+<a name="API_ListConnectors_Example_1_Request"></a>
 
-```json
-
+```
 {
   "maxResults": 1,
   "nextToken": "nextToken_value"
@@ -138,9 +120,9 @@ sample response.
 ```
 
 #### Sample Response
+<a name="API_ListConnectors_Example_1_Response"></a>
 
-```json
-
+```
 {
   "connectors":
   [
@@ -188,33 +170,18 @@ sample response.
 ```
 
 ## See Also
+<a name="API_ListConnectors_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/listconnectors.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/listconnectors.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListConnectorEntities
-
-ListFlows
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/ListConnectors)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ListConnectors)
 
 All content copied from https://docs.aws.amazon.com/.

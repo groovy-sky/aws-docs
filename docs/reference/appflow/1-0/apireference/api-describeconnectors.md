@@ -3,73 +3,58 @@ title: "DescribeConnectors"
 ---
 
 # DescribeConnectors
+<a name="API_DescribeConnectors"></a>
 
-Describes the connectors vended by Amazon AppFlow for specified connector types. If
-you don't specify a connector type, this operation describes all connectors vended by Amazon AppFlow. If there are more connectors than can be returned in one page, the response
-contains a `nextToken` object, which can be be passed in to the next call to the
-`DescribeConnectors` API operation to retrieve the next page.
+ Describes the connectors vended by Amazon AppFlow for specified connector types. If you don't specify a connector type, this operation describes all connectors vended by Amazon AppFlow. If there are more connectors than can be returned in one page, the response contains a `nextToken` object, which can be be passed in to the next call to the `DescribeConnectors` API operation to retrieve the next page.
 
 ## Request Syntax
+<a name="API_DescribeConnectors_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /describe-connectors HTTP/1.1
 Content-type: application/json
 
 {
-   "connectorTypes": [ "string" ],
-   "maxResults": number,
-   "nextToken": "string"
+   "connectorTypes": [ "{{string}}" ],
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_DescribeConnectors_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_DescribeConnectors_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[connectorTypes](#API_DescribeConnectors_RequestSyntax)**
-
-The type of connector, such as Salesforce, Amplitude, and so on.
-
+ ** [connectorTypes](#API_DescribeConnectors_RequestSyntax) **   <a name="appflow-DescribeConnectors-request-connectorTypes"></a>
+ The type of connector, such as Salesforce, Amplitude, and so on.
 Type: Array of strings
-
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
-
 Valid Values: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
-
 Required: No
 
-**[maxResults](#API_DescribeConnectors_RequestSyntax)**
-
-The maximum number of items that should be returned in the result set. The default is
-20.
-
+ ** [maxResults](#API_DescribeConnectors_RequestSyntax) **   <a name="appflow-DescribeConnectors-request-maxResults"></a>
+The maximum number of items that should be returned in the result set. The default is 20.
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**[nextToken](#API_DescribeConnectors_RequestSyntax)**
-
-The pagination token for the next page of data.
-
+ ** [nextToken](#API_DescribeConnectors_RequestSyntax) **   <a name="appflow-DescribeConnectors-request-nextToken"></a>
+ The pagination token for the next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
-
 Required: No
 
 ## Response Syntax
+<a name="API_DescribeConnectors_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -236,71 +221,58 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_DescribeConnectors_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[connectorConfigurations](#API_DescribeConnectors_ResponseSyntax)**
-
-The configuration that is applied to the connectors used in the flow.
-
-Type: String to [ConnectorConfiguration](api-connectorconfiguration.md) object map
-
+ ** [connectorConfigurations](#API_DescribeConnectors_ResponseSyntax) **   <a name="appflow-DescribeConnectors-response-connectorConfigurations"></a>
+ The configuration that is applied to the connectors used in the flow.
+Type: String to [ConnectorConfiguration](API_ConnectorConfiguration.md) object map
 Valid Keys: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
 
-**[connectors](#API_DescribeConnectors_ResponseSyntax)**
-
+ ** [connectors](#API_DescribeConnectors_ResponseSyntax) **   <a name="appflow-DescribeConnectors-response-connectors"></a>
 Information about the connectors supported in Amazon AppFlow.
+Type: Array of [ConnectorDetail](API_ConnectorDetail.md) objects
 
-Type: Array of [ConnectorDetail](api-connectordetail.md) objects
-
-**[nextToken](#API_DescribeConnectors_ResponseSyntax)**
-
-The pagination token for the next page of data.
-
+ ** [nextToken](#API_DescribeConnectors_ResponseSyntax) **   <a name="appflow-DescribeConnectors-response-nextToken"></a>
+ The pagination token for the next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
 
 ## Errors
+<a name="API_DescribeConnectors_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DescribeConnectors_Examples"></a>
 
 ### DescribeConnectors example
+<a name="API_DescribeConnectors_Example_1"></a>
 
-This example shows a sample request and response for the
-`DescribeConnectors` API using Marketo and Salesforce. The second sample
-shows how to proceed if you receive `nextToken`.
+This example shows a sample request and response for the `DescribeConnectors` API using Marketo and Salesforce. The second sample shows how to proceed if you receive `nextToken`.
 
 #### Sample Request
+<a name="API_DescribeConnectors_Example_1_Request"></a>
 
-```json
-
+```
 {
   "connectorTypes": ["Marketo","Salesforce"]
 }
 ```
 
-```json
-
+```
 {
   "connectorTypes": ["Marketo","Salesforce"],
   "nextToken": "nextToken_value"
@@ -308,9 +280,9 @@ shows how to proceed if you receive `nextToken`.
 ```
 
 #### Sample Response
+<a name="API_DescribeConnectors_Example_1_Response"></a>
 
-```json
-
+```
 {
   "connectorConfigurations": {
     "Marketo": {
@@ -475,33 +447,18 @@ shows how to proceed if you receive `nextToken`.
 ```
 
 ## See Also
+<a name="API_DescribeConnectors_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/describeconnectors.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/describeconnectors.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeConnectorProfiles
-
-DescribeFlow
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/DescribeConnectors)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DescribeConnectors)
 
 All content copied from https://docs.aws.amazon.com/.

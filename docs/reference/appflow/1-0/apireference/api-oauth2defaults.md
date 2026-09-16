@@ -3,79 +3,51 @@ title: "OAuth2Defaults"
 ---
 
 # OAuth2Defaults
+<a name="API_OAuth2Defaults"></a>
 
 Contains the default values required for OAuth 2.0 authentication.
 
 ## Contents
+<a name="API_OAuth2Defaults_Contents"></a>
 
-**authCodeUrls**
-
+ ** authCodeUrls **   <a name="appflow-Type-OAuth2Defaults-authCodeUrls"></a>
 Auth code URLs that can be used for OAuth 2.0 authentication.
-
 Type: Array of strings
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]`
-
 Required: No
 
-**oauth2CustomProperties**
-
+ ** oauth2CustomProperties **   <a name="appflow-Type-OAuth2Defaults-oauth2CustomProperties"></a>
 List of custom parameters required for OAuth 2.0 authentication.
-
-Type: Array of [OAuth2CustomParameter](api-oauth2customparameter.md) objects
-
+Type: Array of [OAuth2CustomParameter](API_OAuth2CustomParameter.md) objects
 Required: No
 
-**oauth2GrantTypesSupported**
-
+ ** oauth2GrantTypesSupported **   <a name="appflow-Type-OAuth2Defaults-oauth2GrantTypesSupported"></a>
 OAuth 2.0 grant types supported by the connector.
-
 Type: Array of strings
-
 Valid Values: `CLIENT_CREDENTIALS | AUTHORIZATION_CODE | JWT_BEARER`
-
 Required: No
 
-**oauthScopes**
-
+ ** oauthScopes **   <a name="appflow-Type-OAuth2Defaults-oauthScopes"></a>
 OAuth 2.0 scopes that the connector supports.
-
 Type: Array of strings
-
 Length Constraints: Maximum length of 128.
-
 Pattern: `\S+`
-
 Required: No
 
-**tokenUrls**
-
+ ** tokenUrls **   <a name="appflow-Type-OAuth2Defaults-tokenUrls"></a>
 Token URLs that can be used for OAuth 2.0 authentication.
-
 Type: Array of strings
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]`
-
 Required: No
 
 ## See Also
+<a name="API_OAuth2Defaults_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/oauth2defaults.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/oauth2defaults.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/oauth2defaults.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OAuth2CustomParameter
-
-OAuth2Properties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/OAuth2Defaults)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/OAuth2Defaults)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/OAuth2Defaults)
 
 All content copied from https://docs.aws.amazon.com/.

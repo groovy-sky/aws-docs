@@ -3,317 +3,192 @@ title: "ConnectorConfiguration"
 ---
 
 # ConnectorConfiguration
+<a name="API_ConnectorConfiguration"></a>
 
-The configuration settings related to a given connector.
+ The configuration settings related to a given connector.
 
 ## Contents
+<a name="API_ConnectorConfiguration_Contents"></a>
 
-**authenticationConfig**
-
+ ** authenticationConfig **   <a name="appflow-Type-ConnectorConfiguration-authenticationConfig"></a>
 The authentication config required for the connector.
-
-Type: [AuthenticationConfig](api-authenticationconfig.md) object
-
+Type: [AuthenticationConfig](API_AuthenticationConfig.md) object
 Required: No
 
-**canUseAsDestination**
-
-Specifies whether the connector can be used as a destination.
-
+ ** canUseAsDestination **   <a name="appflow-Type-ConnectorConfiguration-canUseAsDestination"></a>
+ Specifies whether the connector can be used as a destination.
 Type: Boolean
-
 Required: No
 
-**canUseAsSource**
-
-Specifies whether the connector can be used as a source.
-
+ ** canUseAsSource **   <a name="appflow-Type-ConnectorConfiguration-canUseAsSource"></a>
+ Specifies whether the connector can be used as a source.
 Type: Boolean
-
 Required: No
 
-**connectorArn**
-
+ ** connectorArn **   <a name="appflow-Type-ConnectorConfiguration-connectorArn"></a>
 The Amazon Resource Name (ARN) for the registered connector.
-
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `arn:aws:.*:.*:[0-9]+:.*`
-
 Required: No
 
-**connectorDescription**
-
+ ** connectorDescription **   <a name="appflow-Type-ConnectorConfiguration-connectorDescription"></a>
 A description about the connector.
-
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `[\w!@#\-.?,\s]*`
-
 Required: No
 
-**connectorLabel**
-
+ ** connectorLabel **   <a name="appflow-Type-ConnectorConfiguration-connectorLabel"></a>
 The label used for registering the connector.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `[a-zA-Z0-9][\w!@#.-]+`
-
 Required: No
 
-**connectorMetadata**
-
-Specifies connector-specific metadata such as `oAuthScopes`,
-`supportedRegions`, `privateLinkServiceUrl`, and so on.
-
-Type: [ConnectorMetadata](api-connectormetadata.md) object
-
+ ** connectorMetadata **   <a name="appflow-Type-ConnectorConfiguration-connectorMetadata"></a>
+ Specifies connector-specific metadata such as `oAuthScopes`, `supportedRegions`, `privateLinkServiceUrl`, and so on.
+Type: [ConnectorMetadata](API_ConnectorMetadata.md) object
 Required: No
 
-**connectorModes**
-
+ ** connectorModes **   <a name="appflow-Type-ConnectorConfiguration-connectorModes"></a>
 The connection modes that the connector supports.
-
 Type: Array of strings
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: No
 
-**connectorName**
-
+ ** connectorName **   <a name="appflow-Type-ConnectorConfiguration-connectorName"></a>
 The connector name.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `.*`
-
 Required: No
 
-**connectorOwner**
-
+ ** connectorOwner **   <a name="appflow-Type-ConnectorConfiguration-connectorOwner"></a>
 The owner who developed the connector.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `.*`
-
 Required: No
 
-**connectorProvisioningConfig**
-
+ ** connectorProvisioningConfig **   <a name="appflow-Type-ConnectorConfiguration-connectorProvisioningConfig"></a>
 The configuration required for registering the connector.
-
-Type: [ConnectorProvisioningConfig](api-connectorprovisioningconfig.md) object
-
+Type: [ConnectorProvisioningConfig](API_ConnectorProvisioningConfig.md) object
 Required: No
 
-**connectorProvisioningType**
-
+ ** connectorProvisioningType **   <a name="appflow-Type-ConnectorConfiguration-connectorProvisioningType"></a>
 The provisioning type used to register the connector.
-
 Type: String
-
 Valid Values: `LAMBDA`
-
 Required: No
 
-**connectorRuntimeSettings**
-
+ ** connectorRuntimeSettings **   <a name="appflow-Type-ConnectorConfiguration-connectorRuntimeSettings"></a>
 The required connector runtime settings.
-
-Type: Array of [ConnectorRuntimeSetting](api-connectorruntimesetting.md) objects
-
+Type: Array of [ConnectorRuntimeSetting](API_ConnectorRuntimeSetting.md) objects
 Required: No
 
-**connectorType**
-
+ ** connectorType **   <a name="appflow-Type-ConnectorConfiguration-connectorType"></a>
 The connector type.
-
 Type: String
-
 Valid Values: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
-
 Required: No
 
-**connectorVersion**
-
+ ** connectorVersion **   <a name="appflow-Type-ConnectorConfiguration-connectorVersion"></a>
 The connector version.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: No
 
-**isPrivateLinkEnabled**
-
-Specifies if PrivateLink is enabled for that connector.
-
+ ** isPrivateLinkEnabled **   <a name="appflow-Type-ConnectorConfiguration-isPrivateLinkEnabled"></a>
+ Specifies if PrivateLink is enabled for that connector.
 Type: Boolean
-
 Required: No
 
-**isPrivateLinkEndpointUrlRequired**
-
-Specifies if a PrivateLink endpoint URL is required.
-
+ ** isPrivateLinkEndpointUrlRequired **   <a name="appflow-Type-ConnectorConfiguration-isPrivateLinkEndpointUrlRequired"></a>
+ Specifies if a PrivateLink endpoint URL is required.
 Type: Boolean
-
 Required: No
 
-**logoURL**
-
+ ** logoURL **   <a name="appflow-Type-ConnectorConfiguration-logoURL"></a>
 Logo URL of the connector.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]`
-
 Required: No
 
-**registeredAt**
-
+ ** registeredAt **   <a name="appflow-Type-ConnectorConfiguration-registeredAt"></a>
 The date on which the connector was registered.
-
 Type: Timestamp
-
 Required: No
 
-**registeredBy**
-
+ ** registeredBy **   <a name="appflow-Type-ConnectorConfiguration-registeredBy"></a>
 Information about who registered the connector.
-
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: No
 
-**supportedApiVersions**
-
+ ** supportedApiVersions **   <a name="appflow-Type-ConnectorConfiguration-supportedApiVersions"></a>
 A list of API versions that are supported by the connector.
-
 Type: Array of strings
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: No
 
-**supportedDataTransferApis**
-
-The APIs of the connector application that Amazon AppFlow can use to transfer your
-data.
-
-Type: Array of [DataTransferApi](api-datatransferapi.md) objects
-
+ ** supportedDataTransferApis **   <a name="appflow-Type-ConnectorConfiguration-supportedDataTransferApis"></a>
+The APIs of the connector application that Amazon AppFlow can use to transfer your data.
+Type: Array of [DataTransferApi](API_DataTransferApi.md) objects
 Required: No
 
-**supportedDataTransferTypes**
-
+ ** supportedDataTransferTypes **   <a name="appflow-Type-ConnectorConfiguration-supportedDataTransferTypes"></a>
 The data transfer types that the connector supports.
-
 RECORD
-
 Structured records.
-
 FILE
-
 Files or binary data.
-
 Type: Array of strings
-
 Valid Values: `RECORD | FILE`
-
 Required: No
 
-**supportedDestinationConnectors**
-
-Lists the connectors that are available for use as destinations.
-
+ ** supportedDestinationConnectors **   <a name="appflow-Type-ConnectorConfiguration-supportedDestinationConnectors"></a>
+ Lists the connectors that are available for use as destinations.
 Type: Array of strings
-
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
-
 Valid Values: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
-
 Required: No
 
-**supportedOperators**
-
+ ** supportedOperators **   <a name="appflow-Type-ConnectorConfiguration-supportedOperators"></a>
 A list of operators supported by the connector.
-
 Type: Array of strings
-
 Valid Values: `PROJECTION | LESS_THAN | GREATER_THAN | CONTAINS | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
 Required: No
 
-**supportedSchedulingFrequencies**
-
-Specifies the supported flow frequency for that connector.
-
+ ** supportedSchedulingFrequencies **   <a name="appflow-Type-ConnectorConfiguration-supportedSchedulingFrequencies"></a>
+ Specifies the supported flow frequency for that connector.
 Type: Array of strings
-
 Valid Values: `BYMINUTE | HOURLY | DAILY | WEEKLY | MONTHLY | ONCE`
-
 Required: No
 
-**supportedTriggerTypes**
-
-Specifies the supported trigger types for the flow.
-
+ ** supportedTriggerTypes **   <a name="appflow-Type-ConnectorConfiguration-supportedTriggerTypes"></a>
+ Specifies the supported trigger types for the flow.
 Type: Array of strings
-
 Valid Values: `Scheduled | Event | OnDemand`
-
 Required: No
 
-**supportedWriteOperations**
-
+ ** supportedWriteOperations **   <a name="appflow-Type-ConnectorConfiguration-supportedWriteOperations"></a>
 A list of write operations supported by the connector.
-
 Type: Array of strings
-
 Valid Values: `INSERT | UPSERT | UPDATE | DELETE`
-
 Required: No
 
 ## See Also
+<a name="API_ConnectorConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/connectorconfiguration.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/connectorconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/connectorconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BasicAuthCredentials
-
-ConnectorDetail
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ConnectorConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ConnectorConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ConnectorConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

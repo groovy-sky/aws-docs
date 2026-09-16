@@ -3,129 +3,84 @@ title: "DestinationConnectorProperties"
 ---
 
 # DestinationConnectorProperties
+<a name="API_DestinationConnectorProperties"></a>
 
-This stores the information that is required to query a particular connector.
+ This stores the information that is required to query a particular connector.
 
 ## Contents
+<a name="API_DestinationConnectorProperties_Contents"></a>
 
-**CustomConnector**
-
+ ** CustomConnector **   <a name="appflow-Type-DestinationConnectorProperties-CustomConnector"></a>
 The properties that are required to query the custom Connector.
-
-Type: [CustomConnectorDestinationProperties](api-customconnectordestinationproperties.md) object
-
+Type: [CustomConnectorDestinationProperties](API_CustomConnectorDestinationProperties.md) object
 Required: No
 
-**CustomerProfiles**
-
-The properties required to query Amazon Connect Customer Profiles.
-
-Type: [CustomerProfilesDestinationProperties](api-customerprofilesdestinationproperties.md) object
-
+ ** CustomerProfiles **   <a name="appflow-Type-DestinationConnectorProperties-CustomerProfiles"></a>
+ The properties required to query Connect Customer Customer Profiles.
+Type: [CustomerProfilesDestinationProperties](API_CustomerProfilesDestinationProperties.md) object
 Required: No
 
-**EventBridge**
-
-The properties required to query Amazon EventBridge.
-
-Type: [EventBridgeDestinationProperties](api-eventbridgedestinationproperties.md) object
-
+ ** EventBridge **   <a name="appflow-Type-DestinationConnectorProperties-EventBridge"></a>
+ The properties required to query Amazon EventBridge.
+Type: [EventBridgeDestinationProperties](API_EventBridgeDestinationProperties.md) object
 Required: No
 
-**Honeycode**
-
-The properties required to query Amazon Honeycode.
-
-Type: [HoneycodeDestinationProperties](api-honeycodedestinationproperties.md) object
-
+ ** Honeycode **   <a name="appflow-Type-DestinationConnectorProperties-Honeycode"></a>
+ The properties required to query Amazon Honeycode.
+Type: [HoneycodeDestinationProperties](API_HoneycodeDestinationProperties.md) object
 Required: No
 
-**LookoutMetrics**
-
-The properties required to query Amazon Lookout for Metrics.
-
-Type: [LookoutMetricsDestinationProperties](api-lookoutmetricsdestinationproperties.md) object
-
+ ** LookoutMetrics **   <a name="appflow-Type-DestinationConnectorProperties-LookoutMetrics"></a>
+ The properties required to query Amazon Lookout for Metrics.
+Type: [LookoutMetricsDestinationProperties](API_LookoutMetricsDestinationProperties.md) object
 Required: No
 
-**Marketo**
-
+ ** Marketo **   <a name="appflow-Type-DestinationConnectorProperties-Marketo"></a>
 The properties required to query Marketo.
-
-Type: [MarketoDestinationProperties](api-marketodestinationproperties.md) object
-
+Type: [MarketoDestinationProperties](API_MarketoDestinationProperties.md) object
 Required: No
 
-**Redshift**
-
-The properties required to query Amazon Redshift.
-
-Type: [RedshiftDestinationProperties](api-redshiftdestinationproperties.md) object
-
+ ** Redshift **   <a name="appflow-Type-DestinationConnectorProperties-Redshift"></a>
+ The properties required to query Amazon Redshift.
+Type: [RedshiftDestinationProperties](API_RedshiftDestinationProperties.md) object
 Required: No
 
-**S3**
-
-The properties required to query Amazon S3.
-
-Type: [S3DestinationProperties](api-s3destinationproperties.md) object
-
+ ** S3 **   <a name="appflow-Type-DestinationConnectorProperties-S3"></a>
+ The properties required to query Amazon S3.
+Type: [S3DestinationProperties](API_S3DestinationProperties.md) object
 Required: No
 
-**Salesforce**
-
-The properties required to query Salesforce.
-
-Type: [SalesforceDestinationProperties](api-salesforcedestinationproperties.md) object
-
+ ** Salesforce **   <a name="appflow-Type-DestinationConnectorProperties-Salesforce"></a>
+ The properties required to query Salesforce.
+Type: [SalesforceDestinationProperties](API_SalesforceDestinationProperties.md) object
 Required: No
 
-**SAPOData**
-
+ ** SAPOData **   <a name="appflow-Type-DestinationConnectorProperties-SAPOData"></a>
 The properties required to query SAPOData.
-
-Type: [SAPODataDestinationProperties](api-sapodatadestinationproperties.md) object
-
+Type: [SAPODataDestinationProperties](API_SAPODataDestinationProperties.md) object
 Required: No
 
-**Snowflake**
-
-The properties required to query Snowflake.
-
-Type: [SnowflakeDestinationProperties](api-snowflakedestinationproperties.md) object
-
+ ** Snowflake **   <a name="appflow-Type-DestinationConnectorProperties-Snowflake"></a>
+ The properties required to query Snowflake.
+Type: [SnowflakeDestinationProperties](API_SnowflakeDestinationProperties.md) object
 Required: No
 
-**Upsolver**
-
-The properties required to query Upsolver.
-
-Type: [UpsolverDestinationProperties](api-upsolverdestinationproperties.md) object
-
+ ** Upsolver **   <a name="appflow-Type-DestinationConnectorProperties-Upsolver"></a>
+ The properties required to query Upsolver.
+Type: [UpsolverDestinationProperties](API_UpsolverDestinationProperties.md) object
 Required: No
 
-**Zendesk**
-
+ ** Zendesk **   <a name="appflow-Type-DestinationConnectorProperties-Zendesk"></a>
 The properties required to query Zendesk.
-
-Type: [ZendeskDestinationProperties](api-zendeskdestinationproperties.md) object
-
+Type: [ZendeskDestinationProperties](API_ZendeskDestinationProperties.md) object
 Required: No
 
 ## See Also
+<a name="API_DestinationConnectorProperties_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/destinationconnectorproperties.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/destinationconnectorproperties.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/destinationconnectorproperties.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataTransferApi
-
-DestinationFieldProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DestinationConnectorProperties)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DestinationConnectorProperties)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DestinationConnectorProperties)
 
 All content copied from https://docs.aws.amazon.com/.

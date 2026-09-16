@@ -3,37 +3,26 @@ title: "SnowflakeMetadata"
 ---
 
 # SnowflakeMetadata
+<a name="API_SnowflakeMetadata"></a>
 
-The connector metadata specific to Snowflake.
+ The connector metadata specific to Snowflake.
 
 ## Contents
+<a name="API_SnowflakeMetadata_Contents"></a>
 
-**supportedRegions**
-
-Specifies the supported AWS Regions when using Snowflake.
-
+ ** supportedRegions **   <a name="appflow-Type-SnowflakeMetadata-supportedRegions"></a>
+ Specifies the supported AWS Regions when using Snowflake.
 Type: Array of strings
-
 Length Constraints: Maximum length of 64.
-
 Pattern: `\S+`
-
 Required: No
 
 ## See Also
+<a name="API_SnowflakeMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/snowflakemetadata.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/snowflakemetadata.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/snowflakemetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnowflakeDestinationProperties
-
-SourceConnectorProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SnowflakeMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SnowflakeMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SnowflakeMetadata)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,49 +3,33 @@ title: "VeevaConnectorProfileCredentials"
 ---
 
 # VeevaConnectorProfileCredentials
+<a name="API_VeevaConnectorProfileCredentials"></a>
 
-The connector-specific profile credentials required when using Veeva.
+ The connector-specific profile credentials required when using Veeva.
 
 ## Contents
+<a name="API_VeevaConnectorProfileCredentials_Contents"></a>
 
-**password**
-
-The password that corresponds to the user name.
-
+ ** password **   <a name="appflow-Type-VeevaConnectorProfileCredentials-password"></a>
+ The password that corresponds to the user name.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `.*`
-
 Required: Yes
 
-**username**
-
-The name of the user.
-
+ ** username **   <a name="appflow-Type-VeevaConnectorProfileCredentials-username"></a>
+ The name of the user.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: Yes
 
 ## See Also
+<a name="API_VeevaConnectorProfileCredentials_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/veevaconnectorprofilecredentials.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/veevaconnectorprofilecredentials.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/veevaconnectorprofilecredentials.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpsolverS3OutputFormatConfig
-
-VeevaConnectorProfileProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/VeevaConnectorProfileCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/VeevaConnectorProfileCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/VeevaConnectorProfileCredentials)
 
 All content copied from https://docs.aws.amazon.com/.

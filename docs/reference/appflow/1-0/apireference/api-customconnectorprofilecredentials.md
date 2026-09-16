@@ -3,70 +3,45 @@ title: "CustomConnectorProfileCredentials"
 ---
 
 # CustomConnectorProfileCredentials
+<a name="API_CustomConnectorProfileCredentials"></a>
 
-The connector-specific profile credentials that are required when using the custom
-connector.
+The connector-specific profile credentials that are required when using the custom connector.
 
 ## Contents
+<a name="API_CustomConnectorProfileCredentials_Contents"></a>
 
-**authenticationType**
-
-The authentication type that the custom connector uses for authenticating while creating a
-connector profile.
-
+ ** authenticationType **   <a name="appflow-Type-CustomConnectorProfileCredentials-authenticationType"></a>
+The authentication type that the custom connector uses for authenticating while creating a connector profile.
 Type: String
-
 Valid Values: `OAUTH2 | APIKEY | BASIC | CUSTOM`
-
 Required: Yes
 
-**apiKey**
-
+ ** apiKey **   <a name="appflow-Type-CustomConnectorProfileCredentials-apiKey"></a>
 The API keys required for the authentication of the user.
-
-Type: [ApiKeyCredentials](api-apikeycredentials.md) object
-
+Type: [ApiKeyCredentials](API_ApiKeyCredentials.md) object
 Required: No
 
-**basic**
-
+ ** basic **   <a name="appflow-Type-CustomConnectorProfileCredentials-basic"></a>
 The basic credentials that are required for the authentication of the user.
-
-Type: [BasicAuthCredentials](api-basicauthcredentials.md) object
-
+Type: [BasicAuthCredentials](API_BasicAuthCredentials.md) object
 Required: No
 
-**custom**
-
-If the connector uses the custom authentication mechanism, this holds the required
-credentials.
-
-Type: [CustomAuthCredentials](api-customauthcredentials.md) object
-
+ ** custom **   <a name="appflow-Type-CustomConnectorProfileCredentials-custom"></a>
+If the connector uses the custom authentication mechanism, this holds the required credentials.
+Type: [CustomAuthCredentials](API_CustomAuthCredentials.md) object
 Required: No
 
-**oauth2**
-
+ ** oauth2 **   <a name="appflow-Type-CustomConnectorProfileCredentials-oauth2"></a>
 The OAuth 2.0 credentials required for the authentication of the user.
-
-Type: [OAuth2Credentials](api-oauth2credentials.md) object
-
+Type: [OAuth2Credentials](API_OAuth2Credentials.md) object
 Required: No
 
 ## See Also
+<a name="API_CustomConnectorProfileCredentials_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/customconnectorprofilecredentials.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/customconnectorprofilecredentials.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/customconnectorprofilecredentials.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomConnectorDestinationProperties
-
-CustomConnectorProfileProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/CustomConnectorProfileCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/CustomConnectorProfileCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/CustomConnectorProfileCredentials)
 
 All content copied from https://docs.aws.amazon.com/.

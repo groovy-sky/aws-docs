@@ -3,84 +3,66 @@ title: "DescribeConnectorEntity"
 ---
 
 # DescribeConnectorEntity
+<a name="API_DescribeConnectorEntity"></a>
 
-Provides details regarding the entity used with the connector, with a description of the
-data model for each field in that entity.
+ Provides details regarding the entity used with the connector, with a description of the data model for each field in that entity.
 
 ## Request Syntax
+<a name="API_DescribeConnectorEntity_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /describe-connector-entity HTTP/1.1
 Content-type: application/json
 
 {
-   "apiVersion": "string",
-   "connectorEntityName": "string",
-   "connectorProfileName": "string",
-   "connectorType": "string"
+   "apiVersion": "{{string}}",
+   "connectorEntityName": "{{string}}",
+   "connectorProfileName": "{{string}}",
+   "connectorType": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_DescribeConnectorEntity_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_DescribeConnectorEntity_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[apiVersion](#API_DescribeConnectorEntity_RequestSyntax)**
-
+ ** [apiVersion](#API_DescribeConnectorEntity_RequestSyntax) **   <a name="appflow-DescribeConnectorEntity-request-apiVersion"></a>
 The version of the API that's used by the connector.
-
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `\S+`
-
 Required: No
 
-**[connectorEntityName](#API_DescribeConnectorEntity_RequestSyntax)**
-
-The entity name for that connector.
-
+ ** [connectorEntityName](#API_DescribeConnectorEntity_RequestSyntax) **   <a name="appflow-DescribeConnectorEntity-request-connectorEntityName"></a>
+ The entity name for that connector.
 Type: String
-
 Length Constraints: Maximum length of 1024.
-
 Pattern: `\S+`
-
 Required: Yes
 
-**[connectorProfileName](#API_DescribeConnectorEntity_RequestSyntax)**
-
-The name of the connector profile. The name is unique for each
-`ConnectorProfile` in the AWS account.
-
+ ** [connectorProfileName](#API_DescribeConnectorEntity_RequestSyntax) **   <a name="appflow-DescribeConnectorEntity-request-connectorProfileName"></a>
+ The name of the connector profile. The name is unique for each `ConnectorProfile` in the AWS account.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `[\w/!@#+=.-]+`
-
 Required: No
 
-**[connectorType](#API_DescribeConnectorEntity_RequestSyntax)**
-
-The type of connector application, such as Salesforce, Amplitude, and so on.
-
+ ** [connectorType](#API_DescribeConnectorEntity_RequestSyntax) **   <a name="appflow-DescribeConnectorEntity-request-connectorType"></a>
+ The type of connector application, such as Salesforce, Amplitude, and so on.
 Type: String
-
 Valid Values: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
-
 Required: No
 
 ## Response Syntax
+<a name="API_DescribeConnectorEntity_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -133,66 +115,53 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_DescribeConnectorEntity_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[connectorEntityFields](#API_DescribeConnectorEntity_ResponseSyntax)**
-
-Describes the fields for that connector entity. For example, for an
-_account_ entity, the fields would be _account name_,
-_account ID_, and so on.
-
-Type: Array of [ConnectorEntityField](api-connectorentityfield.md) objects
+ ** [connectorEntityFields](#API_DescribeConnectorEntity_ResponseSyntax) **   <a name="appflow-DescribeConnectorEntity-response-connectorEntityFields"></a>
+ Describes the fields for that connector entity. For example, for an *account* entity, the fields would be *account name*, *account ID*, and so on.
+Type: Array of [ConnectorEntityField](API_ConnectorEntityField.md) objects
 
 ## Errors
+<a name="API_DescribeConnectorEntity_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**ConnectorAuthenticationException**
-
-An error occurred when authenticating with the connector endpoint.
-
+ ** ConnectorAuthenticationException **
+ An error occurred when authenticating with the connector endpoint.
 HTTP Status Code: 401
 
-**ConnectorServerException**
-
-An error occurred when retrieving data from the connector endpoint.
-
+ ** ConnectorServerException **
+ An error occurred when retrieving data from the connector endpoint.
 HTTP Status Code: 400
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
-The resource specified in the request (such as the source or destination connector
-profile) is not found.
-
+ ** ResourceNotFoundException **
+ The resource specified in the request (such as the source or destination connector profile) is not found.
 HTTP Status Code: 404
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DescribeConnectorEntity_Examples"></a>
 
 ### DescribeConnectorEntity example
+<a name="API_DescribeConnectorEntity_Example_1"></a>
 
-This example shows a sample request and response for the
-`DescribeConnectorEntity` API
+This example shows a sample request and response for the `DescribeConnectorEntity` API
 
 #### Sample Request
+<a name="API_DescribeConnectorEntity_Example_1_Request"></a>
 
-```json
-
+```
 {
   "connectorEntityName": "tickets",
   "connectorProfileName": "connector_profile_name",
@@ -201,9 +170,9 @@ This example shows a sample request and response for the
 ```
 
 #### Sample Response
+<a name="API_DescribeConnectorEntity_Example_1_Response"></a>
 
-```json
-
+```
 {
   "connectorEntityFields": [
     {
@@ -2005,33 +1974,18 @@ This example shows a sample request and response for the
 ```
 
 ## See Also
+<a name="API_DescribeConnectorEntity_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/describeconnectorentity.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/describeconnectorentity.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeConnector
-
-DescribeConnectorProfiles
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/DescribeConnectorEntity)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DescribeConnectorEntity)
 
 All content copied from https://docs.aws.amazon.com/.

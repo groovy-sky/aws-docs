@@ -3,319 +3,163 @@ title: "Data Types"
 ---
 
 # Data Types
+<a name="API_Types"></a>
 
 The Amazon Appflow API contains several data types that various actions use. This section describes each data type in detail.
 
-###### Note
-
+**Note**
 The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
 
 The following data types are supported:
-
-- [AggregationConfig](api-aggregationconfig.md)
-
-- [AmplitudeConnectorProfileCredentials](api-amplitudeconnectorprofilecredentials.md)
-
-- [AmplitudeConnectorProfileProperties](api-amplitudeconnectorprofileproperties.md)
-
-- [AmplitudeMetadata](api-amplitudemetadata.md)
-
-- [AmplitudeSourceProperties](api-amplitudesourceproperties.md)
-
-- [ApiKeyCredentials](api-apikeycredentials.md)
-
-- [AuthenticationConfig](api-authenticationconfig.md)
-
-- [AuthParameter](api-authparameter.md)
-
-- [BasicAuthCredentials](api-basicauthcredentials.md)
-
-- [ConnectorConfiguration](api-connectorconfiguration.md)
-
-- [ConnectorDetail](api-connectordetail.md)
-
-- [ConnectorEntity](api-connectorentity.md)
-
-- [ConnectorEntityField](api-connectorentityfield.md)
-
-- [ConnectorMetadata](api-connectormetadata.md)
-
-- [ConnectorOAuthRequest](api-connectoroauthrequest.md)
-
-- [ConnectorOperator](api-connectoroperator.md)
-
-- [ConnectorProfile](api-connectorprofile.md)
-
-- [ConnectorProfileConfig](api-connectorprofileconfig.md)
-
-- [ConnectorProfileCredentials](api-connectorprofilecredentials.md)
-
-- [ConnectorProfileProperties](api-connectorprofileproperties.md)
-
-- [ConnectorProvisioningConfig](api-connectorprovisioningconfig.md)
-
-- [ConnectorRuntimeSetting](api-connectorruntimesetting.md)
-
-- [CustomAuthConfig](api-customauthconfig.md)
-
-- [CustomAuthCredentials](api-customauthcredentials.md)
-
-- [CustomConnectorDestinationProperties](api-customconnectordestinationproperties.md)
-
-- [CustomConnectorProfileCredentials](api-customconnectorprofilecredentials.md)
-
-- [CustomConnectorProfileProperties](api-customconnectorprofileproperties.md)
-
-- [CustomConnectorSourceProperties](api-customconnectorsourceproperties.md)
-
-- [CustomerProfilesDestinationProperties](api-customerprofilesdestinationproperties.md)
-
-- [CustomerProfilesMetadata](api-customerprofilesmetadata.md)
-
-- [DatadogConnectorProfileCredentials](api-datadogconnectorprofilecredentials.md)
-
-- [DatadogConnectorProfileProperties](api-datadogconnectorprofileproperties.md)
-
-- [DatadogMetadata](api-datadogmetadata.md)
-
-- [DatadogSourceProperties](api-datadogsourceproperties.md)
-
-- [DataTransferApi](api-datatransferapi.md)
-
-- [DestinationConnectorProperties](api-destinationconnectorproperties.md)
-
-- [DestinationFieldProperties](api-destinationfieldproperties.md)
-
-- [DestinationFlowConfig](api-destinationflowconfig.md)
-
-- [DynatraceConnectorProfileCredentials](api-dynatraceconnectorprofilecredentials.md)
-
-- [DynatraceConnectorProfileProperties](api-dynatraceconnectorprofileproperties.md)
-
-- [DynatraceMetadata](api-dynatracemetadata.md)
-
-- [DynatraceSourceProperties](api-dynatracesourceproperties.md)
-
-- [ErrorHandlingConfig](api-errorhandlingconfig.md)
-
-- [ErrorInfo](api-errorinfo.md)
-
-- [EventBridgeDestinationProperties](api-eventbridgedestinationproperties.md)
-
-- [EventBridgeMetadata](api-eventbridgemetadata.md)
-
-- [ExecutionDetails](api-executiondetails.md)
-
-- [ExecutionRecord](api-executionrecord.md)
-
-- [ExecutionResult](api-executionresult.md)
-
-- [FieldTypeDetails](api-fieldtypedetails.md)
-
-- [FlowDefinition](api-flowdefinition.md)
-
-- [GlueDataCatalogConfig](api-gluedatacatalogconfig.md)
-
-- [GoogleAnalyticsConnectorProfileCredentials](api-googleanalyticsconnectorprofilecredentials.md)
-
-- [GoogleAnalyticsConnectorProfileProperties](api-googleanalyticsconnectorprofileproperties.md)
-
-- [GoogleAnalyticsMetadata](api-googleanalyticsmetadata.md)
-
-- [GoogleAnalyticsSourceProperties](api-googleanalyticssourceproperties.md)
-
-- [HoneycodeConnectorProfileCredentials](api-honeycodeconnectorprofilecredentials.md)
-
-- [HoneycodeConnectorProfileProperties](api-honeycodeconnectorprofileproperties.md)
-
-- [HoneycodeDestinationProperties](api-honeycodedestinationproperties.md)
-
-- [HoneycodeMetadata](api-honeycodemetadata.md)
-
-- [IncrementalPullConfig](api-incrementalpullconfig.md)
-
-- [InforNexusConnectorProfileCredentials](api-infornexusconnectorprofilecredentials.md)
-
-- [InforNexusConnectorProfileProperties](api-infornexusconnectorprofileproperties.md)
-
-- [InforNexusMetadata](api-infornexusmetadata.md)
-
-- [InforNexusSourceProperties](api-infornexussourceproperties.md)
-
-- [LambdaConnectorProvisioningConfig](api-lambdaconnectorprovisioningconfig.md)
-
-- [LookoutMetricsDestinationProperties](api-lookoutmetricsdestinationproperties.md)
-
-- [MarketoConnectorProfileCredentials](api-marketoconnectorprofilecredentials.md)
-
-- [MarketoConnectorProfileProperties](api-marketoconnectorprofileproperties.md)
-
-- [MarketoDestinationProperties](api-marketodestinationproperties.md)
-
-- [MarketoMetadata](api-marketometadata.md)
-
-- [MarketoSourceProperties](api-marketosourceproperties.md)
-
-- [MetadataCatalogConfig](api-metadatacatalogconfig.md)
-
-- [MetadataCatalogDetail](api-metadatacatalogdetail.md)
-
-- [OAuth2Credentials](api-oauth2credentials.md)
-
-- [OAuth2CustomParameter](api-oauth2customparameter.md)
-
-- [OAuth2Defaults](api-oauth2defaults.md)
-
-- [OAuth2Properties](api-oauth2properties.md)
-
-- [OAuthCredentials](api-oauthcredentials.md)
-
-- [OAuthProperties](api-oauthproperties.md)
-
-- [PardotConnectorProfileCredentials](api-pardotconnectorprofilecredentials.md)
-
-- [PardotConnectorProfileProperties](api-pardotconnectorprofileproperties.md)
-
-- [PardotMetadata](api-pardotmetadata.md)
-
-- [PardotSourceProperties](api-pardotsourceproperties.md)
-
-- [PrefixConfig](api-prefixconfig.md)
-
-- [PrivateConnectionProvisioningState](api-privateconnectionprovisioningstate.md)
-
-- [Range](api-range.md)
-
-- [RedshiftConnectorProfileCredentials](api-redshiftconnectorprofilecredentials.md)
-
-- [RedshiftConnectorProfileProperties](api-redshiftconnectorprofileproperties.md)
-
-- [RedshiftDestinationProperties](api-redshiftdestinationproperties.md)
-
-- [RedshiftMetadata](api-redshiftmetadata.md)
-
-- [RegistrationOutput](api-registrationoutput.md)
-
-- [S3DestinationProperties](api-s3destinationproperties.md)
-
-- [S3InputFormatConfig](api-s3inputformatconfig.md)
-
-- [S3Metadata](api-s3metadata.md)
-
-- [S3OutputFormatConfig](api-s3outputformatconfig.md)
-
-- [S3SourceProperties](api-s3sourceproperties.md)
-
-- [SalesforceConnectorProfileCredentials](api-salesforceconnectorprofilecredentials.md)
-
-- [SalesforceConnectorProfileProperties](api-salesforceconnectorprofileproperties.md)
-
-- [SalesforceDestinationProperties](api-salesforcedestinationproperties.md)
-
-- [SalesforceMetadata](api-salesforcemetadata.md)
-
-- [SalesforceSourceProperties](api-salesforcesourceproperties.md)
-
-- [SAPODataConnectorProfileCredentials](api-sapodataconnectorprofilecredentials.md)
-
-- [SAPODataConnectorProfileProperties](api-sapodataconnectorprofileproperties.md)
-
-- [SAPODataDestinationProperties](api-sapodatadestinationproperties.md)
-
-- [SAPODataMetadata](api-sapodatametadata.md)
-
-- [SAPODataPaginationConfig](api-sapodatapaginationconfig.md)
-
-- [SAPODataParallelismConfig](api-sapodataparallelismconfig.md)
-
-- [SAPODataSourceProperties](api-sapodatasourceproperties.md)
-
-- [ScheduledTriggerProperties](api-scheduledtriggerproperties.md)
-
-- [ServiceNowConnectorProfileCredentials](api-servicenowconnectorprofilecredentials.md)
-
-- [ServiceNowConnectorProfileProperties](api-servicenowconnectorprofileproperties.md)
-
-- [ServiceNowMetadata](api-servicenowmetadata.md)
-
-- [ServiceNowSourceProperties](api-servicenowsourceproperties.md)
-
-- [SingularConnectorProfileCredentials](api-singularconnectorprofilecredentials.md)
-
-- [SingularConnectorProfileProperties](api-singularconnectorprofileproperties.md)
-
-- [SingularMetadata](api-singularmetadata.md)
-
-- [SingularSourceProperties](api-singularsourceproperties.md)
-
-- [SlackConnectorProfileCredentials](api-slackconnectorprofilecredentials.md)
-
-- [SlackConnectorProfileProperties](api-slackconnectorprofileproperties.md)
-
-- [SlackMetadata](api-slackmetadata.md)
-
-- [SlackSourceProperties](api-slacksourceproperties.md)
-
-- [SnowflakeConnectorProfileCredentials](api-snowflakeconnectorprofilecredentials.md)
-
-- [SnowflakeConnectorProfileProperties](api-snowflakeconnectorprofileproperties.md)
-
-- [SnowflakeDestinationProperties](api-snowflakedestinationproperties.md)
-
-- [SnowflakeMetadata](api-snowflakemetadata.md)
-
-- [SourceConnectorProperties](api-sourceconnectorproperties.md)
-
-- [SourceFieldProperties](api-sourcefieldproperties.md)
-
-- [SourceFlowConfig](api-sourceflowconfig.md)
-
-- [SuccessResponseHandlingConfig](api-successresponsehandlingconfig.md)
-
-- [SupportedFieldTypeDetails](api-supportedfieldtypedetails.md)
-
-- [Task](api-task.md)
-
-- [TrendmicroConnectorProfileCredentials](api-trendmicroconnectorprofilecredentials.md)
-
-- [TrendmicroConnectorProfileProperties](api-trendmicroconnectorprofileproperties.md)
-
-- [TrendmicroMetadata](api-trendmicrometadata.md)
-
-- [TrendmicroSourceProperties](api-trendmicrosourceproperties.md)
-
-- [TriggerConfig](api-triggerconfig.md)
-
-- [TriggerProperties](api-triggerproperties.md)
-
-- [UpsolverDestinationProperties](api-upsolverdestinationproperties.md)
-
-- [UpsolverMetadata](api-upsolvermetadata.md)
-
-- [UpsolverS3OutputFormatConfig](api-upsolvers3outputformatconfig.md)
-
-- [VeevaConnectorProfileCredentials](api-veevaconnectorprofilecredentials.md)
-
-- [VeevaConnectorProfileProperties](api-veevaconnectorprofileproperties.md)
-
-- [VeevaMetadata](api-veevametadata.md)
-
-- [VeevaSourceProperties](api-veevasourceproperties.md)
-
-- [ZendeskConnectorProfileCredentials](api-zendeskconnectorprofilecredentials.md)
-
-- [ZendeskConnectorProfileProperties](api-zendeskconnectorprofileproperties.md)
-
-- [ZendeskDestinationProperties](api-zendeskdestinationproperties.md)
-
-- [ZendeskMetadata](api-zendeskmetadata.md)
-
-- [ZendeskSourceProperties](api-zendesksourceproperties.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateFlow
-
-AggregationConfig
++  [AggregationConfig](API_AggregationConfig.md)
++  [AmplitudeConnectorProfileCredentials](API_AmplitudeConnectorProfileCredentials.md)
++  [AmplitudeConnectorProfileProperties](API_AmplitudeConnectorProfileProperties.md)
++  [AmplitudeMetadata](API_AmplitudeMetadata.md)
++  [AmplitudeSourceProperties](API_AmplitudeSourceProperties.md)
++  [ApiKeyCredentials](API_ApiKeyCredentials.md)
++  [AuthenticationConfig](API_AuthenticationConfig.md)
++  [AuthParameter](API_AuthParameter.md)
++  [BasicAuthCredentials](API_BasicAuthCredentials.md)
++  [ConnectorConfiguration](API_ConnectorConfiguration.md)
++  [ConnectorDetail](API_ConnectorDetail.md)
++  [ConnectorEntity](API_ConnectorEntity.md)
++  [ConnectorEntityField](API_ConnectorEntityField.md)
++  [ConnectorMetadata](API_ConnectorMetadata.md)
++  [ConnectorOAuthRequest](API_ConnectorOAuthRequest.md)
++  [ConnectorOperator](API_ConnectorOperator.md)
++  [ConnectorProfile](API_ConnectorProfile.md)
++  [ConnectorProfileConfig](API_ConnectorProfileConfig.md)
++  [ConnectorProfileCredentials](API_ConnectorProfileCredentials.md)
++  [ConnectorProfileProperties](API_ConnectorProfileProperties.md)
++  [ConnectorProvisioningConfig](API_ConnectorProvisioningConfig.md)
++  [ConnectorRuntimeSetting](API_ConnectorRuntimeSetting.md)
++  [CustomAuthConfig](API_CustomAuthConfig.md)
++  [CustomAuthCredentials](API_CustomAuthCredentials.md)
++  [CustomConnectorDestinationProperties](API_CustomConnectorDestinationProperties.md)
++  [CustomConnectorProfileCredentials](API_CustomConnectorProfileCredentials.md)
++  [CustomConnectorProfileProperties](API_CustomConnectorProfileProperties.md)
++  [CustomConnectorSourceProperties](API_CustomConnectorSourceProperties.md)
++  [CustomerProfilesDestinationProperties](API_CustomerProfilesDestinationProperties.md)
++  [CustomerProfilesMetadata](API_CustomerProfilesMetadata.md)
++  [DatadogConnectorProfileCredentials](API_DatadogConnectorProfileCredentials.md)
++  [DatadogConnectorProfileProperties](API_DatadogConnectorProfileProperties.md)
++  [DatadogMetadata](API_DatadogMetadata.md)
++  [DatadogSourceProperties](API_DatadogSourceProperties.md)
++  [DataTransferApi](API_DataTransferApi.md)
++  [DestinationConnectorProperties](API_DestinationConnectorProperties.md)
++  [DestinationFieldProperties](API_DestinationFieldProperties.md)
++  [DestinationFlowConfig](API_DestinationFlowConfig.md)
++  [DynatraceConnectorProfileCredentials](API_DynatraceConnectorProfileCredentials.md)
++  [DynatraceConnectorProfileProperties](API_DynatraceConnectorProfileProperties.md)
++  [DynatraceMetadata](API_DynatraceMetadata.md)
++  [DynatraceSourceProperties](API_DynatraceSourceProperties.md)
++  [ErrorHandlingConfig](API_ErrorHandlingConfig.md)
++  [ErrorInfo](API_ErrorInfo.md)
++  [EventBridgeDestinationProperties](API_EventBridgeDestinationProperties.md)
++  [EventBridgeMetadata](API_EventBridgeMetadata.md)
++  [ExecutionDetails](API_ExecutionDetails.md)
++  [ExecutionRecord](API_ExecutionRecord.md)
++  [ExecutionResult](API_ExecutionResult.md)
++  [FieldTypeDetails](API_FieldTypeDetails.md)
++  [FlowDefinition](API_FlowDefinition.md)
++  [GlueDataCatalogConfig](API_GlueDataCatalogConfig.md)
++  [GoogleAnalyticsConnectorProfileCredentials](API_GoogleAnalyticsConnectorProfileCredentials.md)
++  [GoogleAnalyticsConnectorProfileProperties](API_GoogleAnalyticsConnectorProfileProperties.md)
++  [GoogleAnalyticsMetadata](API_GoogleAnalyticsMetadata.md)
++  [GoogleAnalyticsSourceProperties](API_GoogleAnalyticsSourceProperties.md)
++  [HoneycodeConnectorProfileCredentials](API_HoneycodeConnectorProfileCredentials.md)
++  [HoneycodeConnectorProfileProperties](API_HoneycodeConnectorProfileProperties.md)
++  [HoneycodeDestinationProperties](API_HoneycodeDestinationProperties.md)
++  [HoneycodeMetadata](API_HoneycodeMetadata.md)
++  [IncrementalPullConfig](API_IncrementalPullConfig.md)
++  [InforNexusConnectorProfileCredentials](API_InforNexusConnectorProfileCredentials.md)
++  [InforNexusConnectorProfileProperties](API_InforNexusConnectorProfileProperties.md)
++  [InforNexusMetadata](API_InforNexusMetadata.md)
++  [InforNexusSourceProperties](API_InforNexusSourceProperties.md)
++  [LambdaConnectorProvisioningConfig](API_LambdaConnectorProvisioningConfig.md)
++  [LookoutMetricsDestinationProperties](API_LookoutMetricsDestinationProperties.md)
++  [MarketoConnectorProfileCredentials](API_MarketoConnectorProfileCredentials.md)
++  [MarketoConnectorProfileProperties](API_MarketoConnectorProfileProperties.md)
++  [MarketoDestinationProperties](API_MarketoDestinationProperties.md)
++  [MarketoMetadata](API_MarketoMetadata.md)
++  [MarketoSourceProperties](API_MarketoSourceProperties.md)
++  [MetadataCatalogConfig](API_MetadataCatalogConfig.md)
++  [MetadataCatalogDetail](API_MetadataCatalogDetail.md)
++  [OAuth2Credentials](API_OAuth2Credentials.md)
++  [OAuth2CustomParameter](API_OAuth2CustomParameter.md)
++  [OAuth2Defaults](API_OAuth2Defaults.md)
++  [OAuth2Properties](API_OAuth2Properties.md)
++  [OAuthCredentials](API_OAuthCredentials.md)
++  [OAuthProperties](API_OAuthProperties.md)
++  [PardotConnectorProfileCredentials](API_PardotConnectorProfileCredentials.md)
++  [PardotConnectorProfileProperties](API_PardotConnectorProfileProperties.md)
++  [PardotMetadata](API_PardotMetadata.md)
++  [PardotSourceProperties](API_PardotSourceProperties.md)
++  [PrefixConfig](API_PrefixConfig.md)
++  [PrivateConnectionProvisioningState](API_PrivateConnectionProvisioningState.md)
++  [Range](API_Range.md)
++  [RedshiftConnectorProfileCredentials](API_RedshiftConnectorProfileCredentials.md)
++  [RedshiftConnectorProfileProperties](API_RedshiftConnectorProfileProperties.md)
++  [RedshiftDestinationProperties](API_RedshiftDestinationProperties.md)
++  [RedshiftMetadata](API_RedshiftMetadata.md)
++  [RegistrationOutput](API_RegistrationOutput.md)
++  [S3DestinationProperties](API_S3DestinationProperties.md)
++  [S3InputFormatConfig](API_S3InputFormatConfig.md)
++  [S3Metadata](API_S3Metadata.md)
++  [S3OutputFormatConfig](API_S3OutputFormatConfig.md)
++  [S3SourceProperties](API_S3SourceProperties.md)
++  [SalesforceConnectorProfileCredentials](API_SalesforceConnectorProfileCredentials.md)
++  [SalesforceConnectorProfileProperties](API_SalesforceConnectorProfileProperties.md)
++  [SalesforceDestinationProperties](API_SalesforceDestinationProperties.md)
++  [SalesforceMetadata](API_SalesforceMetadata.md)
++  [SalesforceSourceProperties](API_SalesforceSourceProperties.md)
++  [SAPODataConnectorProfileCredentials](API_SAPODataConnectorProfileCredentials.md)
++  [SAPODataConnectorProfileProperties](API_SAPODataConnectorProfileProperties.md)
++  [SAPODataDestinationProperties](API_SAPODataDestinationProperties.md)
++  [SAPODataMetadata](API_SAPODataMetadata.md)
++  [SAPODataPaginationConfig](API_SAPODataPaginationConfig.md)
++  [SAPODataParallelismConfig](API_SAPODataParallelismConfig.md)
++  [SAPODataSourceProperties](API_SAPODataSourceProperties.md)
++  [ScheduledTriggerProperties](API_ScheduledTriggerProperties.md)
++  [ServiceNowConnectorProfileCredentials](API_ServiceNowConnectorProfileCredentials.md)
++  [ServiceNowConnectorProfileProperties](API_ServiceNowConnectorProfileProperties.md)
++  [ServiceNowMetadata](API_ServiceNowMetadata.md)
++  [ServiceNowSourceProperties](API_ServiceNowSourceProperties.md)
++  [SingularConnectorProfileCredentials](API_SingularConnectorProfileCredentials.md)
++  [SingularConnectorProfileProperties](API_SingularConnectorProfileProperties.md)
++  [SingularMetadata](API_SingularMetadata.md)
++  [SingularSourceProperties](API_SingularSourceProperties.md)
++  [SlackConnectorProfileCredentials](API_SlackConnectorProfileCredentials.md)
++  [SlackConnectorProfileProperties](API_SlackConnectorProfileProperties.md)
++  [SlackMetadata](API_SlackMetadata.md)
++  [SlackSourceProperties](API_SlackSourceProperties.md)
++  [SnowflakeConnectorProfileCredentials](API_SnowflakeConnectorProfileCredentials.md)
++  [SnowflakeConnectorProfileProperties](API_SnowflakeConnectorProfileProperties.md)
++  [SnowflakeDestinationProperties](API_SnowflakeDestinationProperties.md)
++  [SnowflakeMetadata](API_SnowflakeMetadata.md)
++  [SourceConnectorProperties](API_SourceConnectorProperties.md)
++  [SourceFieldProperties](API_SourceFieldProperties.md)
++  [SourceFlowConfig](API_SourceFlowConfig.md)
++  [SuccessResponseHandlingConfig](API_SuccessResponseHandlingConfig.md)
++  [SupportedFieldTypeDetails](API_SupportedFieldTypeDetails.md)
++  [Task](API_Task.md)
++  [TrendmicroConnectorProfileCredentials](API_TrendmicroConnectorProfileCredentials.md)
++  [TrendmicroConnectorProfileProperties](API_TrendmicroConnectorProfileProperties.md)
++  [TrendmicroMetadata](API_TrendmicroMetadata.md)
++  [TrendmicroSourceProperties](API_TrendmicroSourceProperties.md)
++  [TriggerConfig](API_TriggerConfig.md)
++  [TriggerProperties](API_TriggerProperties.md)
++  [UpsolverDestinationProperties](API_UpsolverDestinationProperties.md)
++  [UpsolverMetadata](API_UpsolverMetadata.md)
++  [UpsolverS3OutputFormatConfig](API_UpsolverS3OutputFormatConfig.md)
++  [VeevaConnectorProfileCredentials](API_VeevaConnectorProfileCredentials.md)
++  [VeevaConnectorProfileProperties](API_VeevaConnectorProfileProperties.md)
++  [VeevaMetadata](API_VeevaMetadata.md)
++  [VeevaSourceProperties](API_VeevaSourceProperties.md)
++  [ZendeskConnectorProfileCredentials](API_ZendeskConnectorProfileCredentials.md)
++  [ZendeskConnectorProfileProperties](API_ZendeskConnectorProfileProperties.md)
++  [ZendeskDestinationProperties](API_ZendeskDestinationProperties.md)
++  [ZendeskMetadata](API_ZendeskMetadata.md)
++  [ZendeskSourceProperties](API_ZendeskSourceProperties.md)
 
 All content copied from https://docs.aws.amazon.com/.

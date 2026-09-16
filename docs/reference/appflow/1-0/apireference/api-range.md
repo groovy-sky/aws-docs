@@ -3,41 +3,29 @@ title: "Range"
 ---
 
 # Range
+<a name="API_Range"></a>
 
 The range of values that the property supports.
 
 ## Contents
+<a name="API_Range_Contents"></a>
 
-**maximum**
-
+ ** maximum **   <a name="appflow-Type-Range-maximum"></a>
 Maximum value supported by the field.
-
 Type: Double
-
 Required: No
 
-**minimum**
-
+ ** minimum **   <a name="appflow-Type-Range-minimum"></a>
 Minimum value supported by the field.
-
 Type: Double
-
 Required: No
 
 ## See Also
+<a name="API_Range_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/range.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/range.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/range.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrivateConnectionProvisioningState
-
-RedshiftConnectorProfileCredentials
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/Range)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/Range)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/Range)
 
 All content copied from https://docs.aws.amazon.com/.

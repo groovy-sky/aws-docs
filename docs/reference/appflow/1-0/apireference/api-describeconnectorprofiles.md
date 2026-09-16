@@ -3,104 +3,76 @@ title: "DescribeConnectorProfiles"
 ---
 
 # DescribeConnectorProfiles
+<a name="API_DescribeConnectorProfiles"></a>
 
-Returns a list of `connector-profile` details matching the provided
-`connector-profile` names and `connector-types`. Both input lists are
-optional, and you can use them to filter the result.
+ Returns a list of `connector-profile` details matching the provided `connector-profile` names and `connector-types`. Both input lists are optional, and you can use them to filter the result.
 
-If no names or `connector-types` are provided, returns all connector profiles
-in a paginated form. If there is no match, this operation returns an empty list.
+If no names or `connector-types` are provided, returns all connector profiles in a paginated form. If there is no match, this operation returns an empty list.
 
 ## Request Syntax
+<a name="API_DescribeConnectorProfiles_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /describe-connector-profiles HTTP/1.1
 Content-type: application/json
 
 {
-   "connectorLabel": "string",
-   "connectorProfileNames": [ "string" ],
-   "connectorType": "string",
-   "maxResults": number,
-   "nextToken": "string"
+   "connectorLabel": "{{string}}",
+   "connectorProfileNames": [ "{{string}}" ],
+   "connectorType": "{{string}}",
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
 }
 ```
 
 ## URI Request Parameters
+<a name="API_DescribeConnectorProfiles_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_DescribeConnectorProfiles_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[connectorLabel](#API_DescribeConnectorProfiles_RequestSyntax)**
-
-The name of the connector. The name is unique for each `ConnectorRegistration`
-in your AWS account. Only needed if calling for CUSTOMCONNECTOR connector
-type/.
-
+ ** [connectorLabel](#API_DescribeConnectorProfiles_RequestSyntax) **   <a name="appflow-DescribeConnectorProfiles-request-connectorLabel"></a>
+The name of the connector. The name is unique for each `ConnectorRegistration` in your AWS account. Only needed if calling for CUSTOMCONNECTOR connector type/.
 Type: String
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `[a-zA-Z0-9][\w!@#.-]+`
-
 Required: No
 
-**[connectorProfileNames](#API_DescribeConnectorProfiles_RequestSyntax)**
-
-The name of the connector profile. The name is unique for each
-`ConnectorProfile` in the AWS account.
-
+ ** [connectorProfileNames](#API_DescribeConnectorProfiles_RequestSyntax) **   <a name="appflow-DescribeConnectorProfiles-request-connectorProfileNames"></a>
+ The name of the connector profile. The name is unique for each `ConnectorProfile` in the AWS account.
 Type: Array of strings
-
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
-
 Length Constraints: Maximum length of 256.
-
 Pattern: `[\w/!@#+=.-]+`
-
 Required: No
 
-**[connectorType](#API_DescribeConnectorProfiles_RequestSyntax)**
-
-The type of connector, such as Salesforce, Amplitude, and so on.
-
+ ** [connectorType](#API_DescribeConnectorProfiles_RequestSyntax) **   <a name="appflow-DescribeConnectorProfiles-request-connectorType"></a>
+ The type of connector, such as Salesforce, Amplitude, and so on.
 Type: String
-
 Valid Values: `Salesforce | Singular | Slack | Redshift | S3 | Marketo | Googleanalytics | Zendesk | Servicenow | Datadog | Trendmicro | Snowflake | Dynatrace | Infornexus | Amplitude | Veeva | EventBridge | LookoutMetrics | Upsolver | Honeycode | CustomerProfiles | SAPOData | CustomConnector | Pardot`
-
 Required: No
 
-**[maxResults](#API_DescribeConnectorProfiles_RequestSyntax)**
-
-Specifies the maximum number of items that should be returned in the result set. The
-default for `maxResults` is 20 (for all paginated API operations).
-
+ ** [maxResults](#API_DescribeConnectorProfiles_RequestSyntax) **   <a name="appflow-DescribeConnectorProfiles-request-maxResults"></a>
+ Specifies the maximum number of items that should be returned in the result set. The default for `maxResults` is 20 (for all paginated API operations).
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**[nextToken](#API_DescribeConnectorProfiles_RequestSyntax)**
-
-The pagination token for the next page of data.
-
+ ** [nextToken](#API_DescribeConnectorProfiles_RequestSyntax) **   <a name="appflow-DescribeConnectorProfiles-request-nextToken"></a>
+ The pagination token for the next page of data.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
-
 Required: No
 
 ## Response Syntax
+<a name="API_DescribeConnectorProfiles_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -219,56 +191,47 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_DescribeConnectorProfiles_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[connectorProfileDetails](#API_DescribeConnectorProfiles_ResponseSyntax)**
+ ** [connectorProfileDetails](#API_DescribeConnectorProfiles_ResponseSyntax) **   <a name="appflow-DescribeConnectorProfiles-response-connectorProfileDetails"></a>
+ Returns information about the connector profiles associated with the flow.
+Type: Array of [ConnectorProfile](API_ConnectorProfile.md) objects
 
-Returns information about the connector profiles associated with the flow.
-
-Type: Array of [ConnectorProfile](api-connectorprofile.md) objects
-
-**[nextToken](#API_DescribeConnectorProfiles_ResponseSyntax)**
-
-The pagination token for the next page of data. If `nextToken=null`, this
-means that all records have been fetched.
-
+ ** [nextToken](#API_DescribeConnectorProfiles_ResponseSyntax) **   <a name="appflow-DescribeConnectorProfiles-response-nextToken"></a>
+ The pagination token for the next page of data. If `nextToken=null`, this means that all records have been fetched.
 Type: String
-
 Length Constraints: Maximum length of 2048.
-
 Pattern: `\S+`
 
 ## Errors
+<a name="API_DescribeConnectorProfiles_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_DescribeConnectorProfiles_Examples"></a>
 
 ### DescribeConnectorProfiles example
+<a name="API_DescribeConnectorProfiles_Example_1"></a>
 
-This example shows a sample request and response for the
-`DescribeConnectorProfiles` API.
+This example shows a sample request and response for the `DescribeConnectorProfiles` API.
 
 #### Sample Request
+<a name="API_DescribeConnectorProfiles_Example_1_Request"></a>
 
-```json
-
+```
 {
   "connectorProfileNames": ["OldMarketoProfile","non-existing-name"],
   "connectorTypes": ["Marketo","Salesforce"]
@@ -276,9 +239,9 @@ This example shows a sample request and response for the
 ```
 
 #### Sample Response
+<a name="API_DescribeConnectorProfiles_Example_1_Response"></a>
 
-```json
-
+```
 {
   "connectorProfileDetails": [
     {
@@ -325,14 +288,14 @@ This example shows a sample request and response for the
 ```
 
 ### DescribeConnectorProfiles example
+<a name="API_DescribeConnectorProfiles_Example_2"></a>
 
-This example shows a sample request and response for the
-`DescribeConnectorProfiles` API.
+This example shows a sample request and response for the `DescribeConnectorProfiles` API.
 
 #### Sample Request
+<a name="API_DescribeConnectorProfiles_Example_2_Request"></a>
 
-```json
-
+```
 {
    "connectorProfileNames": ["OldMarketoProfile", "non-existing-name"],
    "connectorTypes": ["Marketo", "Salesforce", "CustomConnector"],
@@ -341,9 +304,9 @@ This example shows a sample request and response for the
 ```
 
 #### Sample Response
+<a name="API_DescribeConnectorProfiles_Example_2_Response"></a>
 
-```json
-
+```
 {
   "connectorProfileDetails": [
     {
@@ -392,33 +355,18 @@ This example shows a sample request and response for the
 ```
 
 ## See Also
+<a name="API_DescribeConnectorProfiles_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/describeconnectorprofiles.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/describeconnectorprofiles.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeConnectorEntity
-
-DescribeConnectors
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/DescribeConnectorProfiles)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DescribeConnectorProfiles)
 
 All content copied from https://docs.aws.amazon.com/.

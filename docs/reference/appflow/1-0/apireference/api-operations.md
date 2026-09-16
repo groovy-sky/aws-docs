@@ -3,63 +3,33 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported:
-
-- [CancelFlowExecutions](api-cancelflowexecutions.md)
-
-- [CreateConnectorProfile](api-createconnectorprofile.md)
-
-- [CreateFlow](api-createflow.md)
-
-- [DeleteConnectorProfile](api-deleteconnectorprofile.md)
-
-- [DeleteFlow](api-deleteflow.md)
-
-- [DescribeConnector](api-describeconnector.md)
-
-- [DescribeConnectorEntity](api-describeconnectorentity.md)
-
-- [DescribeConnectorProfiles](api-describeconnectorprofiles.md)
-
-- [DescribeConnectors](api-describeconnectors.md)
-
-- [DescribeFlow](api-describeflow.md)
-
-- [DescribeFlowExecutionRecords](api-describeflowexecutionrecords.md)
-
-- [ListConnectorEntities](api-listconnectorentities.md)
-
-- [ListConnectors](api-listconnectors.md)
-
-- [ListFlows](api-listflows.md)
-
-- [ListTagsForResource](api-listtagsforresource.md)
-
-- [RegisterConnector](api-registerconnector.md)
-
-- [ResetConnectorMetadataCache](api-resetconnectormetadatacache.md)
-
-- [StartFlow](api-startflow.md)
-
-- [StopFlow](api-stopflow.md)
-
-- [TagResource](api-tagresource.md)
-
-- [UnregisterConnector](api-unregisterconnector.md)
-
-- [UntagResource](api-untagresource.md)
-
-- [UpdateConnectorProfile](api-updateconnectorprofile.md)
-
-- [UpdateConnectorRegistration](api-updateconnectorregistration.md)
-
-- [UpdateFlow](api-updateflow.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-CancelFlowExecutions
++  [CancelFlowExecutions](API_CancelFlowExecutions.md)
++  [CreateConnectorProfile](API_CreateConnectorProfile.md)
++  [CreateFlow](API_CreateFlow.md)
++  [DeleteConnectorProfile](API_DeleteConnectorProfile.md)
++  [DeleteFlow](API_DeleteFlow.md)
++  [DescribeConnector](API_DescribeConnector.md)
++  [DescribeConnectorEntity](API_DescribeConnectorEntity.md)
++  [DescribeConnectorProfiles](API_DescribeConnectorProfiles.md)
++  [DescribeConnectors](API_DescribeConnectors.md)
++  [DescribeFlow](API_DescribeFlow.md)
++  [DescribeFlowExecutionRecords](API_DescribeFlowExecutionRecords.md)
++  [ListConnectorEntities](API_ListConnectorEntities.md)
++  [ListConnectors](API_ListConnectors.md)
++  [ListFlows](API_ListFlows.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [RegisterConnector](API_RegisterConnector.md)
++  [ResetConnectorMetadataCache](API_ResetConnectorMetadataCache.md)
++  [StartFlow](API_StartFlow.md)
++  [StopFlow](API_StopFlow.md)
++  [TagResource](API_TagResource.md)
++  [UnregisterConnector](API_UnregisterConnector.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateConnectorProfile](API_UpdateConnectorProfile.md)
++  [UpdateConnectorRegistration](API_UpdateConnectorRegistration.md)
++  [UpdateFlow](API_UpdateFlow.md)
 
 All content copied from https://docs.aws.amazon.com/.

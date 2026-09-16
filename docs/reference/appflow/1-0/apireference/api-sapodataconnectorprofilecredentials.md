@@ -3,41 +3,29 @@ title: "SAPODataConnectorProfileCredentials"
 ---
 
 # SAPODataConnectorProfileCredentials
+<a name="API_SAPODataConnectorProfileCredentials"></a>
 
-The connector-specific profile credentials required when using SAPOData.
+ The connector-specific profile credentials required when using SAPOData.
 
 ## Contents
+<a name="API_SAPODataConnectorProfileCredentials_Contents"></a>
 
-**basicAuthCredentials**
-
-The SAPOData basic authentication credentials.
-
-Type: [BasicAuthCredentials](api-basicauthcredentials.md) object
-
+ ** basicAuthCredentials **   <a name="appflow-Type-SAPODataConnectorProfileCredentials-basicAuthCredentials"></a>
+ The SAPOData basic authentication credentials.
+Type: [BasicAuthCredentials](API_BasicAuthCredentials.md) object
 Required: No
 
-**oAuthCredentials**
-
-The SAPOData OAuth type authentication credentials.
-
-Type: [OAuthCredentials](api-oauthcredentials.md) object
-
+ ** oAuthCredentials **   <a name="appflow-Type-SAPODataConnectorProfileCredentials-oAuthCredentials"></a>
+ The SAPOData OAuth type authentication credentials.
+Type: [OAuthCredentials](API_OAuthCredentials.md) object
 Required: No
 
 ## See Also
+<a name="API_SAPODataConnectorProfileCredentials_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/sapodataconnectorprofilecredentials.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/sapodataconnectorprofilecredentials.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/sapodataconnectorprofilecredentials.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SalesforceSourceProperties
-
-SAPODataConnectorProfileProperties
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SAPODataConnectorProfileCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SAPODataConnectorProfileCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SAPODataConnectorProfileCredentials)
 
 All content copied from https://docs.aws.amazon.com/.

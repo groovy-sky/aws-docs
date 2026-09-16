@@ -3,75 +3,49 @@ title: "ExecutionResult"
 ---
 
 # ExecutionResult
+<a name="API_ExecutionResult"></a>
 
-Specifies the end result of the flow run.
+ Specifies the end result of the flow run.
 
 ## Contents
+<a name="API_ExecutionResult_Contents"></a>
 
-**bytesProcessed**
-
-The total number of bytes processed by the flow run.
-
+ ** bytesProcessed **   <a name="appflow-Type-ExecutionResult-bytesProcessed"></a>
+ The total number of bytes processed by the flow run.
 Type: Long
-
 Required: No
 
-**bytesWritten**
-
-The total number of bytes written as a result of the flow run.
-
+ ** bytesWritten **   <a name="appflow-Type-ExecutionResult-bytesWritten"></a>
+ The total number of bytes written as a result of the flow run.
 Type: Long
-
 Required: No
 
-**errorInfo**
-
-Provides any error message information related to the flow run.
-
-Type: [ErrorInfo](api-errorinfo.md) object
-
+ ** errorInfo **   <a name="appflow-Type-ExecutionResult-errorInfo"></a>
+ Provides any error message information related to the flow run.
+Type: [ErrorInfo](API_ErrorInfo.md) object
 Required: No
 
-**maxPageSize**
-
-The maximum number of records that Amazon AppFlow receives in each page of the
-response from your SAP application.
-
+ ** maxPageSize **   <a name="appflow-Type-ExecutionResult-maxPageSize"></a>
+The maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.
 Type: Long
-
 Required: No
 
-**numParallelProcesses**
-
-The number of processes that Amazon AppFlow ran at the same time when it retrieved
-your data.
-
+ ** numParallelProcesses **   <a name="appflow-Type-ExecutionResult-numParallelProcesses"></a>
+The number of processes that Amazon AppFlow ran at the same time when it retrieved your data.
 Type: Long
-
 Required: No
 
-**recordsProcessed**
-
-The number of records processed in the flow run.
-
+ ** recordsProcessed **   <a name="appflow-Type-ExecutionResult-recordsProcessed"></a>
+ The number of records processed in the flow run.
 Type: Long
-
 Required: No
 
 ## See Also
+<a name="API_ExecutionResult_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/executionresult.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/executionresult.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/executionresult.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExecutionRecord
-
-FieldTypeDetails
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ExecutionResult)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ExecutionResult)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ExecutionResult)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,37 +3,26 @@ title: "SingularSourceProperties"
 ---
 
 # SingularSourceProperties
+<a name="API_SingularSourceProperties"></a>
 
-The properties that are applied when Singular is being used as a source.
+ The properties that are applied when Singular is being used as a source.
 
 ## Contents
+<a name="API_SingularSourceProperties_Contents"></a>
 
-**object**
-
-The object specified in the Singular flow source.
-
+ ** object **   <a name="appflow-Type-SingularSourceProperties-object"></a>
+ The object specified in the Singular flow source.
 Type: String
-
 Length Constraints: Maximum length of 512.
-
 Pattern: `\S+`
-
 Required: Yes
 
 ## See Also
+<a name="API_SingularSourceProperties_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/singularsourceproperties.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/singularsourceproperties.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/singularsourceproperties.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SingularMetadata
-
-SlackConnectorProfileCredentials
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SingularSourceProperties)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SingularSourceProperties)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SingularSourceProperties)
 
 All content copied from https://docs.aws.amazon.com/.
