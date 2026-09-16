@@ -2,414 +2,68 @@
 title: "Connecting Amazon Q Business to ServiceNow using AWS CloudFormation"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to ServiceNow using AWS CloudFormation
+<a name="servicenow-cfn"></a>
 
-You use the [`AWS::QBusiness::DataSource`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md) resource to connect a data source to
-your Amazon Q application.
+You use the [`AWS::QBusiness::DataSource`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
 
-Use the [`configuration`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary
-configuration details specific to your data source connector.
+Use the [`configuration`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
 
-To learn more about AWS CloudFormation, see
-[What is AWS CloudFormation?](../../../cloudformation/latest/userguide/welcome.md)
-in the _CloudFormation User Guide_.
+To learn more about AWS CloudFormation, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in the *CloudFormation User Guide*.
 
-###### Topics
-
-- [ServiceNow configuration properties](#servicenow-configuration-keys)
-
-- [ServiceNow JSON schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-json)
-
-- [ServiceNow YAML schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-yaml)
+**Topics**
++ [ServiceNow configuration properties](#servicenow-configuration-keys)
++ [ServiceNow JSON schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-json)
++ [ServiceNow YAML schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-yaml)
 
 ## ServiceNow configuration properties
-
-The following provides information about important configuration properties required in the
-schema.
-
-ConfigurationDescriptionTypeRequired
-
-`connectionConfiguration`
-
-Configuration information for the endpoint for the data source.
-
-`object`
-
-This property has the following sub-property:
-`repositoryEndpointMetadata`.
-
-Yes
-
-`repositoryEndpointMetadata`
-
-The endpoint information for the data source.
-
-`object`
-
-This property has the following sub-property: `hostUrl`,
-`authType`.
-
-Yes
-
-`hostUrl`
-
-The ServiceNow host URL. For example,
-`your-domain.service-now.com`.
-
-`string`
-
-Yes
-
-`authType`
-
-The type of authentication you are using, either `basicAuth` or
-`OAuth2`.
-
-`string`
-
-Yes
-
-`repositoryConfigurations`
-
-Configuration information for the content of the data source. For example,
-configuring specific types of content and field mappings.
-
-- `knowledgeArticle`
-
-- `attachment`
-
-- `serviceCatalog`
-
-- `incident`
-
-A list of ServiceNow objects that Amazon Q crawls and
-maps the attributes of to Amazon Q index field names.
-
-`object`
-
-This property has the following sub-properties: `indexFieldName`,
-`indexFieldType`, `dataSourceFieldName`, and
-`dateFieldFormat`.
-
-Yes
-
-`indexFieldName`
-
-The field name of your ServiceNow pages and assets.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your ServiceNow pages and assets.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`,
-`DATE`, and `LONG`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your ServiceNow pages and assets.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your ServiceNow pages and assets.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'`
-
-No
-
-`additionalProperties`
-
-Additional configuration options for your content in your data source.
-
-`object`
-
-This property has the following sub-properties.
-
-- `applyACLForKnowledgeArticle`
-
-- `applyACLForServiceCatalog`
-
-- `applyACLForIncident`
-
-- `isCrawlKnowledgeArticle`
-
-- `isCrawlKnowledgeArticleAttachment`
-
-- `includePublicArticlesOnly`
-
-- `knowledgeArticleFilter`
-
-- `knowledgeArticleTitleRegExp`
-
-- `isCrawlServiceCatalog`
-
-- `isCrawlServiceCatalogAttachment`
-
-- `isCrawlActiveServiceCatalog`
-
-- `isCrawlInactiveServiceCatalog`
-
-- `serviceCatalogQueryFilter`
-
-- `serviceCatalogTitleRegExp`
-
-- `isCrawlIncident`
-
-- `isCrawlIncidentAttachment`
-
-- `isCrawlActiveIncident`
-
-- `isCrawlInactiveIncident`
-
-- `incidentStateType`
-
-- `incidentQueryFilter`
-
-- `incidentTitleRegExp`
-
-- `maxFileSizeInMegaBytes`
-
-- `inclusionFileTypePatterns`
-
-- `exclusionFileTypePatterns`
-
-- `inclusionFileNamePatterns`
-
-- `exclusionFileNamePatterns`
-
-Yes
-
-`maxFileSizeInMegaBytes`
-
-Specify the file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default
-file size is 50MB. The maximum file size should be greater than 0MB and less than or
-equal to 50MB.
-
-`string`
-
-No
-
-- `knowledgeArticleFilter`
-
-- `incidentQueryFilter`
-
-- `serviceCatalogQueryFilter`
-
-Specify specific knowledge articles, incident queries, and service catalog queries
-to crawl.
-
-`string`
-
-No
-
-`incidentStateType`
-
-Specify incidents to crawl by state type: whether `Open`, `Open -
-              Unassigned`, `Resolved`, or `All`.
-
-`array (string)`
-
-No
-
-- `knowledgeArticleTitleRegExp`
-
-- `serviceCatalogTitleRegExp`
-
-- `incidentTitleRegExp`
-
-A list of regular expression patterns to include and exclude specific files in your
-ServiceNow data source. Files that match the patterns are included in the index.
-Files that don't match the patterns are excluded from the index. If a file matches both
-an inclusion and exclusion pattern, the exclusion pattern takes precedence and the file
-isn't included in the index.
-
-`string`
-
-No
-
-- `exclusionFileTypePatterns`
-
-- `exclusionFileNamePatterns`
-
-A list of regular expression patterns to exclude specific content in your
-ServiceNow data source. Content that matches the patterns are excluded from the
-index. Content that doesn't match the patterns are included in the index. If any content
-matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence,
-and the content isn't included in the index.
-
-`array (string)`
-
-No
-
-- `inclusionFileTypePatterns`
-
-- `inclusionFileNamePatterns`
-
-A list of regular expression patterns to include specific content in your
-ServiceNow data source. Content that matches the patterns are included in the
-index. Content that doesn't match the patterns are excluded from the index. If any
-content matches both an inclusion and exclusion pattern, the exclusion pattern takes
-precedence, and the content isn't included in the index.
-
-`array (string)`
-
-No
-
-- `isCrawlKnowledgeArticle`
-
-- `isCrawlKnowledgeArticleAttachment`
-
-- `includePublicArticlesOnly`
-
-- `isCrawlServiceCatalog`
-
-- `isCrawlServiceCatalogAttachment`
-
-- `isCrawlActiveServiceCatalog`
-
-- `isCrawlInactiveServiceCatalog`
-
-- `isCrawlIncident`
-
-- `isCrawlIncidentAttachment`
-
-- `isCrawlActiveIncident`
-
-- `isCrawlInactiveIncident`
-
-- `applyACLForKnowledgeArticle`
-
-- `applyACLForServiceCatalog`
-
-- `applyACLForIncident`
-
-Specify `true` to index ServiceNow knowledge articles, service
-catalogs, incidents, and attachments and their ACLs.
-
-`boolean`
-
-No
-
-`type`
-
-The type of data source. We recommend that you use `SERVICENOWV2` as
-your data source type.
-
-`string`
-
-Valid values are `SERVICENOWV2` and
-`SERVICENOW`.
-
-Yes
-
-`enableIdentityCrawler`
-
-`true` to activate identity crawler. Identity crawler is activated
-by default. Crawling identity information on users and groups with access to specific
-documents is useful for user context filtering. Search results are filtered based on
-the user or their group access to documents.
-
-###### Note
-
-Amazon Q Business crawls identity information from your data source by
-default to ensure responses are generated only from documents end users have access
-to. For more information, see [Identity crawler](connector-concepts.md#connector-identity-crawler).
-
-`boolean`
-
-No
-
-`syncMode`
-
-Specify whether Amazon Q should update your index by syncing all
-documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options:
-
-- Use `FORCED_FULL_CRAWL` to freshly re-crawl all
-content and replace existing content each time your data source syncs with your
-index.
-
-- Use `FULL_CRAWL` to incrementally crawl only new,
-modified, and deleted content each time your data source syncs with your
-index.
-
-Yes
-
-`secretARN`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that
-contains the key-value pairs required to connect to your
-ServiceNow.
-
-`string`
-
-The secret must contain a JSON structure with the following keys:
-
-```json
-
-{
-    "username": "user name",
-    "password": "password"
-}
-```
-
-If you use OAuth2 authentication, your secret must contain a JSON structure with
-the following keys:
-
-```json
-
-{
-    "username": "user name",
-    "password": "password",
-    "clientId": "client id",
-    "clientSecret": "client secret"
-}
-```
-
-Yes
-
-`version`
-
-The version of the template that's currently supported.
-
-`string`
-
-No
+<a name="servicenow-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-property: `hostUrl`, `authType`. | Yes |
+| `hostUrl` | The ServiceNow host URL. For example, {{your-domain.service-now.com}}. | `string` | Yes |
+| `authType` | The type of authentication you are using, either basicAuth or OAuth2. | `string` | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. |
+|  +  `knowledgeArticle` <br />+  `attachment` <br />+  `serviceCatalog` <br />+  `incident`   | A list of ServiceNow objects that Amazon Q crawls and maps the attributes of to Amazon Q index field names. | `object`<br />This property has the following sub-properties: `indexFieldName`, `indexFieldType`, `dataSourceFieldName`, and `dateFieldFormat`. | Yes |
+| `indexFieldName` | The field name of your ServiceNow pages and assets. | `string` | Yes |
+| `indexFieldType` | The field type of your ServiceNow pages and assets. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, `DATE`, and `LONG`. | Yes |
+| `dataSourceFieldName` | The data source field name of your ServiceNow pages and assets. | `string` | Yes |
+| `dateFieldFormat` | The date format of your ServiceNow pages and assets. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties.+  `applyACLForKnowledgeArticle` <br />+  `applyACLForServiceCatalog` <br />+  `applyACLForIncident` <br />+  `isCrawlKnowledgeArticle` <br />+  `isCrawlKnowledgeArticleAttachment` <br />+  `includePublicArticlesOnly` <br />+  `knowledgeArticleFilter` <br />+  `knowledgeArticleTitleRegExp` <br />+  `isCrawlServiceCatalog` <br />+  `isCrawlServiceCatalogAttachment` <br />+  `isCrawlActiveServiceCatalog` <br />+  `isCrawlInactiveServiceCatalog` <br />+  `serviceCatalogQueryFilter` <br />+  `serviceCatalogTitleRegExp` <br />+  `isCrawlIncident` <br />+  `isCrawlIncidentAttachment` <br />+  `isCrawlActiveIncident` <br />+  `isCrawlInactiveIncident` <br />+  `incidentStateType` <br />+  `incidentQueryFilter` <br />+  `incidentTitleRegExp` <br />+  `maxFileSizeInMegaBytes` <br />+  `inclusionFileTypePatterns` <br />+  `exclusionFileTypePatterns` <br />+  `inclusionFileNamePatterns` <br />+  `exclusionFileNamePatterns`  | Yes |
+| `maxFileSizeInMegaBytes` | Specify the file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| +  `knowledgeArticleFilter` <br />+  `incidentQueryFilter` <br />+  `serviceCatalogQueryFilter`  | Specify specific knowledge articles, incident queries, and service catalog queries to crawl. | `string` | No |
+| `incidentStateType` | Specify incidents to crawl by state type: whether Open, Open - Unassigned, Resolved, or All. | `array (string)` | No |
+|  +  `knowledgeArticleTitleRegExp` <br />+  `serviceCatalogTitleRegExp` <br />+  `incidentTitleRegExp`   | A list of regular expression patterns to include and exclude specific files in your ServiceNow data source. Files that match the patterns are included in the index. Files that don't match the patterns are excluded from the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the file isn't included in the index. | `string` | No |
+|  +  `exclusionFileTypePatterns` <br />+  `exclusionFileNamePatterns`   | A list of regular expression patterns to exclude specific content in your ServiceNow data source. Content that matches the patterns are excluded from the index. Content that doesn't match the patterns are included in the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array (string)` | No |
+|  +  `inclusionFileTypePatterns` <br />+  `inclusionFileNamePatterns`   | A list of regular expression patterns to include specific content in your ServiceNow data source. Content that matches the patterns are included in the index. Content that doesn't match the patterns are excluded from the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array (string)` | No |
+|  +  `isCrawlKnowledgeArticle` <br />+  `isCrawlKnowledgeArticleAttachment` <br />+  `includePublicArticlesOnly` <br />+  `isCrawlServiceCatalog` <br />+  `isCrawlServiceCatalogAttachment` <br />+  `isCrawlActiveServiceCatalog` <br />+  `isCrawlInactiveServiceCatalog` <br />+  `isCrawlIncident` <br />+  `isCrawlIncidentAttachment` <br />+  `isCrawlActiveIncident` <br />+  `isCrawlInactiveIncident` <br />+  `applyACLForKnowledgeArticle` <br />+  `applyACLForServiceCatalog` <br />+  `applyACLForIncident`   | Specify true to index ServiceNow knowledge articles, service catalogs, incidents, and attachments and their ACLs. | `boolean` | No |
+| `type` | The type of data source. We recommend that you use SERVICENOWV2 as your data source type. | `string`<br />Valid values are `SERVICENOWV2` and `SERVICENOW`. | Yes |
+| `enableIdentityCrawler` | `true` to activate identity crawler. Identity crawler is activated by default. Crawling identity information on users and groups with access to specific documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents. Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | No |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. | `string`<br />You can choose between the following options:+  Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index. <br />+  Use `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index.  | Yes |
+| `secretARN` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your ServiceNow. | `string`<br />The secret must contain a JSON structure with the following keys:<pre>{<br />    "username": {{"user name"}},<br />    "password": {{"password"}}<br />}</pre><br />If you use OAuth2 authentication, your secret must contain a JSON structure with the following keys:<pre>{<br />    "username": {{"user name"}},<br />    "password": {{"password"}},<br />    "clientId": {{"client id"}},<br />    "clientSecret": {{"client secret"}}          <br />}</pre> | Yes |
+| `version` | The version of the template that's currently supported. | `string` | No |
 
 ## ServiceNow JSON schema for using the configuration property with AWS CloudFormation
+<a name="servicenow-cfn-json"></a>
 
-The following is the ServiceNow JSON schema and examples for the configuration
-property for AWS CloudFormation.
+The following is the ServiceNow JSON schema and examples for the configuration property for AWS CloudFormation.
 
-###### Topics
-
-- [ServiceNow JSON schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-json-schema)
-
-- [ServiceNow JSON schema example for using the configuration property with AWS CloudFormation](#servicenow-cfn-json-example)
+**Topics**
++ [ServiceNow JSON schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-json-schema)
++ [ServiceNow JSON schema example for using the configuration property with AWS CloudFormation](#servicenow-cfn-json-example)
 
 ### ServiceNow JSON schema for using the configuration property with AWS CloudFormation
+<a name="servicenow-cfn-json-schema"></a>
 
-The following is the ServiceNow JSON schema for the configuration property for
-CloudFormation
+The following is the ServiceNow JSON schema for the configuration property for CloudFormation
 
-```json
-
+```
 {
   "type": "object",
   "properties": {
@@ -852,15 +506,12 @@ CloudFormation
 }
 ```
 
-Show moreShow less
-
 ### ServiceNow JSON schema example for using the configuration property with AWS CloudFormation
+<a name="servicenow-cfn-json-example"></a>
 
-The following is the ServiceNow JSON schema example for the configuration
-property for CloudFormation
+The following is the ServiceNow JSON schema example for the configuration property for CloudFormation
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation SERVICENOW Data Source Template",
@@ -962,26 +613,21 @@ property for CloudFormation
 }
 ```
 
-Show moreShow less
-
 ## ServiceNow YAML schema for using the configuration property with AWS CloudFormation
+<a name="servicenow-cfn-yaml"></a>
 
-The following is the ServiceNow YAML schema and examples for the configuration
-property for AWS CloudFormation:
+The following is the ServiceNow YAML schema and examples for the configuration property for AWS CloudFormation:
 
-###### Topics
-
-- [ServiceNow YAML schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-yaml-schema)
-
-- [ServiceNow YAML schema example for using the configuration property with AWS CloudFormation](#servicenow-cfn-yaml-example)
+**Topics**
++ [ServiceNow YAML schema for using the configuration property with AWS CloudFormation](#servicenow-cfn-yaml-schema)
++ [ServiceNow YAML schema example for using the configuration property with AWS CloudFormation](#servicenow-cfn-yaml-example)
 
 ### ServiceNow YAML schema for using the configuration property with AWS CloudFormation
+<a name="servicenow-cfn-yaml-schema"></a>
 
-The following is the ServiceNow YAML schema for the configuration property for
-CloudFormation.
+The following is the ServiceNow YAML schema for the configuration property for CloudFormation.
 
-```YAML
-
+```
 type: object
 properties:
   type:
@@ -1303,15 +949,12 @@ properties:
     - additionalProperties
 ```
 
-Show moreShow less
-
 ### ServiceNow YAML schema example for using the configuration property with AWS CloudFormation
+<a name="servicenow-cfn-yaml-example"></a>
 
-The following is the ServiceNow YAML example for the Configuration property for
-CloudFormation:
+The following is the ServiceNow YAML example for the Configuration property for CloudFormation:
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation SERVICENOW Data Source Template
 Resources:
@@ -1393,13 +1036,5 @@ Resources:
           enableDeletionProtection: "false"
           deletionProtectionThreshold: "15"
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the API
-
-ACL crawling
 
 All content copied from https://docs.aws.amazon.com/.

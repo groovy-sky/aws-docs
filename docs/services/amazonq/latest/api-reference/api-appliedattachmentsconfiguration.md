@@ -3,37 +3,25 @@ title: "AppliedAttachmentsConfiguration"
 ---
 
 # AppliedAttachmentsConfiguration
+<a name="API_AppliedAttachmentsConfiguration"></a>
 
-Configuration information about the file upload during chat feature for your
-application.
+Configuration information about the file upload during chat feature for your application.
 
 ## Contents
+<a name="API_AppliedAttachmentsConfiguration_Contents"></a>
 
-**attachmentsControlMode**
-
-Information about whether file upload during chat functionality is activated for your
-application.
-
+ ** attachmentsControlMode **   <a name="qbusiness-Type-AppliedAttachmentsConfiguration-attachmentsControlMode"></a>
+Information about whether file upload during chat functionality is activated for your application.
 Type: String
-
 Valid Values: `ENABLED | DISABLED`
-
 Required: No
 
 ## See Also
+<a name="API_AppliedAttachmentsConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/appliedattachmentsconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/appliedattachmentsconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/appliedattachmentsconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Application
-
-AppliedCreatorModeConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/AppliedAttachmentsConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/AppliedAttachmentsConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/AppliedAttachmentsConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

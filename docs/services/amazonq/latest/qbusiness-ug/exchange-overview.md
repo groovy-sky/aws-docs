@@ -2,63 +2,35 @@
 title: "Microsoft Exchange connector overview"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Microsoft Exchange connector overview
+<a name="exchange-overview"></a>
 
 The following table shows the Amazon Q Business Microsoft Exchange connector features and capabilities.
 
-CategoryFeatureLatest ConnectorLegacy Connector**Security****Authentication type**OAuth 2.0 with Client Credentials FlowOAuth 2.0 with Client Credentials Flow**Authentication credentials**
+- ****Security****
+  - **Feature:** Authentication type / **Latest Connector:** OAuth 2.0 with Client Credentials Flow / **Legacy Connector:** OAuth 2.0 with Client Credentials Flow
+  - **Feature:** Authentication credentials / **Latest Connector:** +  Microsoft Exchange Client ID <br />+  Microsoft Exchange Client secret  / **Legacy Connector:** +  Microsoft Exchange Client ID <br />+  Microsoft Exchange Client secret
+  - **Feature:** [Access Control List (ACL)](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) crawling / **Latest Connector:** Yes. For more information, see [ACL crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/exchange-connector.html#exchange-user-management). / **Legacy Connector:** Yes. For more information, see [ACL crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/exchange-connector.html#exchange-user-management).
+  - **Feature:** [Identity crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) / **Latest Connector:** Yes / **Legacy Connector:** Yes
+  - **Feature:** [VPC](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-vpc) / **Latest Connector:** No / **Legacy Connector:** Yes
 
-- Microsoft Exchange Client ID
+- ****
+  - **Feature:** Customer Managed Key (CMK) support
+  - **Latest Connector:** No
+  - **Legacy Connector:** Yes
 
-- Microsoft Exchange Client secret
+- ****Crawl features****
+  - **Feature:** Custom metadata / **Latest Connector:** No / **Legacy Connector:** No
+  - **Feature:** Entities / **Latest Connector:** Mail only (automatic) / **Legacy Connector:** Yes. The following entities are supported: +  Mail <br />+  Calendar <br />+  Attachment <br />+  OneNotes <br />+  Contacts See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
+  - **Feature:** [Field mappings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-field-mappings) / **Latest Connector:** Yes (Automatic) / **Legacy Connector:** Yes. Supports both default and custom field mappings. For more information, see [Field mappings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/exchange-field-mappings.html).
+  - **Feature:** Filters / **Latest Connector:** Date range only / **Legacy Connector:** Yes. The following filters are supported: +  Include/exclue Calendars <br />+  Include/exclude OneNotes <br />+  Include/exclude Contacts <br />+  Include/exclude using file user email ID <br />+  Include/exclude using date <br />+  Include/exclude using email to, from, subjects, domains <br />+  Include/exclude by file name regex patterns <br />+  Include/exclude by file type regex patterns
+  - **Feature:** [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) / **Latest Connector:** Full sync only / **Legacy Connector:** Supports full and incremental sync
 
-- Microsoft Exchange Client ID
-
-- Microsoft Exchange Client secret
-
-**[Access Control List (ACL)](connector-concepts.md#connector-authorization)**
-**crawling**Yes. For more information, see [ACL crawling](exchange-connector.md#exchange-user-management).Yes. For more information, see [ACL crawling](exchange-connector.md#exchange-user-management).**[Identity\**
-**crawling](connector-concepts.md#connector-identity-crawler)**YesYes**[VPC](connector-concepts.md#connector-vpc)**NoYes**Customer Managed Key (CMK) support**NoYes**Crawl features****Custom metadata**NoNo**Entities**Mail only (automatic)Yes. The following entities are supported:
-
-- Mail
-
-- Calendar
-
-- Attachment
-
-- OneNotes
-
-- Contacts
-
-See [What is a document?](connector-doc-crawl.md) for more
-details on what each connector crawls as a document.
-
-**[Field mappings](connector-concepts.md#connector-field-mappings)**Yes (Automatic)Yes. Supports both default and custom field mappings. For more
-information, see [Field mappings](exchange-field-mappings.md).**Filters**Date range onlyYes. The following filters are supported:
-
-- Include/exclue Calendars
-
-- Include/exclude OneNotes
-
-- Include/exclude Contacts
-
-- Include/exclude using file user email ID
-
-- Include/exclude using date
-
-- Include/exclude using email to, from, subjects,
-domains
-
-- Include/exclude by file name regex patterns
-
-- Include/exclude by file type regex patterns
-
-**[Sync mode](connector-concepts.md#connector-sync-mode)**Full sync onlySupports full and incremental sync**[File types](doc-types.md)**File typesNoSupports all files supported by Amazon Q.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Known limitations
-
-Prerequisites
+- ****[File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html)****
+  - **Feature:** File types
+  - **Latest Connector:** No
+  - **Legacy Connector:** Supports all files supported by Amazon Q.
 
 All content copied from https://docs.aws.amazon.com/.

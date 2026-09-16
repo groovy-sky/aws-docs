@@ -3,57 +3,38 @@ title: "PrincipalOutput"
 ---
 
 # PrincipalOutput
+<a name="API_qapps_PrincipalOutput"></a>
 
 The principal for which the permission applies.
 
 ## Contents
+<a name="API_qapps_PrincipalOutput_Contents"></a>
 
-**email**
-
+ ** email **   <a name="qbusiness-Type-qapps_PrincipalOutput-email"></a>
 The email address associated with the user.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: No
 
-**userId**
-
+ ** userId **   <a name="qbusiness-Type-qapps_PrincipalOutput-userId"></a>
 The unique identifier of the user.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: No
 
-**userType**
-
+ ** userType **   <a name="qbusiness-Type-qapps_PrincipalOutput-userType"></a>
 The type of the user.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Valid Values: `owner | user`
-
 Required: No
 
 ## See Also
+<a name="API_qapps_PrincipalOutput_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/principaloutput.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/principaloutput.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/principaloutput.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PredictQAppInputOptions
-
-QAppSessionData
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/PrincipalOutput)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/PrincipalOutput)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/PrincipalOutput)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,47 +2,39 @@
 title: "IAM role for Amazon Q Business data source connectors"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # IAM role for Amazon Q Business data source connectors
+<a name="iam-roles-ds"></a>
 
-You can use either the Amazon Q Business console or the [CreateDataSource](../api-reference/api-createdatasource.md) API operation to connect your data source.
-However, you must first provide Amazon Q Business with an IAM role that
-has permissions to access the data source resources.
+You can use either the Amazon Q Business console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to connect your data source. However, you must first provide Amazon Q Business with an IAM role that has permissions to access the data source resources.
 
-If you use the console, you can either create an IAM role when you connect
-your data source to Amazon Q Business or use an existing role. If you use the
-`CreateDataSource` API operation, you must provide the Amazon Resource Name
-(ARN) of an existing IAM role.
+If you use the console, you can either create an IAM role when you connect your data source to Amazon Q Business or use an existing role. If you use the `CreateDataSource` API operation, you must provide the Amazon Resource Name (ARN) of an existing IAM role.
 
 The specific permissions required depend on the data source. At a minimum, your IAM role must include the following:
++ Permission to access the [`BatchPutDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [`BatchDeleteDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
++ Permission to access the User Store APIs needed to ingest access control and identity information from documents.
 
-- Permission to access the [`BatchPutDocument`](../api-reference/api-batchputdocument.md) and [`BatchDeleteDocument`](../api-reference/api-batchdeletedocument.md) API operations in
-order to ingest documents.
-
-- Permission to access the User Store APIs needed to ingest access control and
-identity information from documents.
-
-###### Topics
-
-- [IAM role for Amazon Q Business data source connectors](#iam-roles-ds-general)
-
-- [IAM role for Amazon S3 data sources](#create-s3-datasource-iam-role)
+**Topics**
++ [IAM role for Amazon Q Business data source connectors](#iam-roles-ds-general)
++ [IAM role for Amazon S3 data sources](#create-s3-datasource-iam-role)
 
 ## IAM role for Amazon Q Business data source connectors
+<a name="iam-roles-ds-general"></a>
 
-When you use an Amazon Q Business data source, you require the following
-permissions, depending on your use case.
+When you use an Amazon Q Business data source, you require the following permissions, depending on your use case.
 
-**To allow Amazon Q Business to connect to your data source,**
-**use the following least-permissions role policy:**
+**To allow Amazon Q Business to connect to your data source, use the following least-permissions role policy:**
 
-###### Note
-
+**Note**
 This policy assumes your data source doesn't use any authentication.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,8 +46,8 @@ JSON
                 "qbusiness:BatchDeleteDocument"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}"
             ]
         },
         {
@@ -69,23 +61,25 @@ JSON
                 "qbusiness:ListGroups"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id/data-source/*"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}/data-source/*"
             ]
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q Business to assume a role, you must also**
-**use the following trust policy:**
+------
 
-JSON
+ **To allow Amazon Q Business to assume a role, you must also use the following trust policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,21 +95,19 @@ JSON
                     "aws:SourceAccount": "111122223333"
                 },
                 "ArnLike": {
-                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
                 }
             }
         }
     ]
 }
-
 ```
 
-**If your data source uses authentication, you must add the**
-**following policy to your IAM role to allow Amazon Q Business to**
-**access your AWS Secrets Manager secret:**
+------
 
-```json
+ **If your data source uses authentication, you must add the following policy to your IAM role to allow Amazon Q Business to access your AWS Secrets Manager secret:**
 
+```
 {
             "Sid": "AllowsAmazonQToGetSecret",
             "Effect": "Allow",
@@ -128,13 +120,14 @@ JSON
         }
 ```
 
-**If you are using an Amazon VPC, you must add the following**
-**VPC access permissions to your policy:**
+ **If you are using an Amazon VPC, you must add the following VPC access permissions to your policy:**
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +153,7 @@ JSON
             "Resource": "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
             "Condition": {
                 "StringLike": {
-                    "aws:RequestTag/AMAZON_Q": "qbusiness_111122223333_application-id_*"
+                    "aws:RequestTag/AMAZON_Q": "qbusiness_111122223333_{{application-id}}_*"
                 },
                 "ForAllValues:StringEquals": {
                     "aws:TagKeys": [
@@ -191,7 +184,7 @@ JSON
             "Resource": "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/AMAZON_Q": "qbusiness_111122223333_application-id_*"
+                    "aws:ResourceTag/AMAZON_Q": "qbusiness_111122223333_{{application-id}}_*"
                 }
             }
         },
@@ -211,15 +204,13 @@ JSON
         }
     ]
 }
-
 ```
 
-**If your Secrets Manager secret is encrypted, you must add**
-**permissions for AWS KMS key to decrypt the username and password secret**
-**stored by Secrets Manager:**
+------
 
-```json
+ **If your Secrets Manager secret is encrypted, you must add permissions for AWS KMS key to decrypt the username and password secret stored by Secrets Manager:**
 
+```
 {
     "Effect": "Allow",
     "Action": [
@@ -239,18 +230,12 @@ JSON
 }
 ```
 
-**If your Amazon Q Business data source connector needs access**
-**to an object stored in an Amazon S3 bucket (such as an SSL certificate), you**
-**must add the following permissions to your IAM role:**
+ **If your Amazon Q Business data source connector needs access to an object stored in an Amazon S3 bucket (such as an SSL certificate), you must add the following permissions to your IAM role: **
 
-###### Note
+**Note**
+Check that the file path to the object in your Amazon S3 bucket is of the following format: {{s3://BucketName/FolderName/FileName.extension}}.
 
-Check that the file path to the object in your Amazon S3 bucket is of the
-following format:
-`s3://BucketName/FolderName/FileName.extension`.
-
-```json
-
+```
 {
             "Sid": "AllowsAmazonQToGetS3Objects",
             "Action": [
@@ -269,37 +254,28 @@ following format:
 ```
 
 ## IAM role for Amazon S3 data sources
+<a name="create-s3-datasource-iam-role"></a>
 
-If you use the AWS CLI or an AWS SDK, you must create an AWS Identity and Access Management (IAM) policy
-before you create an Amazon Q Business resource. When you call the [CreateDataSource](../api-reference/api-createdatasource.md) operation, you provide the Amazon Resource Name (ARN) role with the
-policy attached.
+If you use the AWS CLI or an AWS SDK, you must create an AWS Identity and Access Management (IAM) policy before you create an Amazon Q Business resource. When you call the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation, you provide the Amazon Resource Name (ARN) role with the policy attached.
 
-If you use the AWS Management Console, you can create a new IAM role in the Amazon Q console or use an existing IAM role while creating your data
-source.
+If you use the AWS Management Console, you can create a new IAM role in the Amazon Q console or use an existing IAM role while creating your data source.
 
-###### Note
+**Note**
+To learn how to create an IAM role, see [Create a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
 
-To learn how to create an IAM role, see [Create a\
-role to delegate permissions to an AWS service](../../../iam/latest/userguide/id-roles-create-for-service.md).
+When you use an Amazon S3 bucket as a data source, you must provide a role that has permissions to:
++ Access your Amazon S3 bucket.
++ Permission to access the [`BatchPutDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [`BatchDeleteDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
++ Access the Principal Store APIs needed to ingest access control and identity information from documents.
 
-When you use an Amazon S3 bucket as a data source, you must provide a role that has
-permissions to:
+**To allow Amazon Q to use an Amazon S3 bucket as a data source, use the following role policy:**
 
-- Access your Amazon S3 bucket.
+------
+#### [ JSON ]
 
-- Permission to access the [`BatchPutDocument`](../api-reference/api-batchputdocument.md) and [`BatchDeleteDocument`](../api-reference/api-batchdeletedocument.md) API operations in order to ingest
-documents.
+****
 
-- Access the Principal Store APIs needed to ingest access control and identity information
-from documents.
-
-**To allow Amazon Q to use an Amazon S3 bucket as a**
-**data source, use the following role policy:**
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -341,8 +317,8 @@ JSON
                 "qbusiness:BatchDeleteDocument"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}"
             ]
         },
         {
@@ -356,22 +332,20 @@ JSON
                 "qbusiness:ListGroups"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id/data-source/*"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}/data-source/*"
             ]
         }
     ]
 }
-
 ```
 
-**If the documents in the Amazon S3 bucket are encrypted, you**
-**must provide the following permissions to use the AWS KMS key to decrypt the**
-**documents:**
+------
 
-```json
+**If the documents in the Amazon S3 bucket are encrypted, you must provide the following permissions to use the AWS KMS key to decrypt the documents:**
 
+```
 {
       "Sid": "AllowsAmazonQToDecryptSecret",
       "Effect": "Allow",
@@ -391,13 +365,14 @@ JSON
     }
 ```
 
-**If you are using an Amazon VPC, you must add the following VPC**
-**access permissions to your policy:**
+**If you are using an Amazon VPC, you must add the following VPC access permissions to your policy:**
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -439,8 +414,8 @@ JSON
                 "qbusiness:BatchDeleteDocument"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}"
             ]
         },
         {
@@ -454,9 +429,9 @@ JSON
                 "qbusiness:ListGroups"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/index/index-id/data-source/*"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/index/{{index-id}}/data-source/*"
             ]
         },
         {
@@ -481,7 +456,7 @@ JSON
             "Resource": "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
             "Condition": {
                 "StringLike": {
-                    "aws:RequestTag/AMAZON_Q": "qbusiness_111122223333_application-id_*"
+                    "aws:RequestTag/AMAZON_Q": "qbusiness_111122223333_{{application-id}}_*"
                 },
                 "ForAllValues:StringEquals": {
                     "aws:TagKeys": [
@@ -512,7 +487,7 @@ JSON
             "Resource": "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/AMAZON_Q": "qbusiness_111122223333_application-id_*"
+                    "aws:ResourceTag/AMAZON_Q": "qbusiness_111122223333_{{application-id}}_*"
                 }
             }
         },
@@ -532,16 +507,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q to assume a role, use the following trust**
-**policy:**
+------
 
-JSON
+**To allow Amazon Q to assume a role, use the following trust policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -557,19 +534,14 @@ JSON
                     "aws:SourceAccount": "111122223333"
                 },
                 "ArnLike": {
-                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
                 }
             }
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Q Apps
-
-Plugins
+------
 
 All content copied from https://docs.aws.amazon.com/.

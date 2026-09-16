@@ -2,14 +2,14 @@
 title: "GetDocumentContent Output Schema"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # GetDocumentContent Output Schema
+<a name="document-content-schema"></a>
 
-When you use the [GetDocumentContent](../api-reference/api-getdocumentcontent.md) API with `outputFormat`
-set to `EXTRACTED`, the response returns extracted text content in JSON
-format. The output schema is presented in JSON format:
+When you use the [GetDocumentContent](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetDocumentContent.html) API with `outputFormat` set to `EXTRACTED`, the response returns extracted text content in JSON format. The output schema is presented in JSON format:
 
-```json
-
+```
 {
    // always V1 for now
    schemaVersionId: string;
@@ -25,11 +25,9 @@ format. The output schema is presented in JSON format:
 }
 ```
 
-The schema for non-plaintext documents includes the
-`ExtractedDocumentBodyElement` which includes:
+The schema for non-plaintext documents includes the `ExtractedDocumentBodyElement` which includes:
 
-```json
-
+```
 {
    text: string;
 
@@ -103,25 +101,19 @@ The schema for non-plaintext documents includes the
 ```
 
 ## Example Output
+<a name="document-content-examples"></a>
 
 ### Plaintext Document Example
+<a name="plaintext-example"></a>
 
-For plaintext documents, the extracted content is returned in the
-`plainTextDocumentContent` field:
+For plaintext documents, the extracted content is returned in the `plainTextDocumentContent` field:
 
-```json
-
+```
 {
   "schemaVersionId": "V1",
   "outputFormat": "JSON",
   "plainTextDocumentContent": "This is the extracted text content from a plain text document."
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Upload documents directly
-
-Creating a web experience
 
 All content copied from https://docs.aws.amazon.com/.

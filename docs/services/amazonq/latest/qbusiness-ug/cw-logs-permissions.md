@@ -2,15 +2,19 @@
 title: "Permissions for monitoring Amazon Q Business with Amazon CloudWatch Logs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Permissions for monitoring Amazon Q Business with Amazon CloudWatch Logs
+<a name="cw-logs-permissions"></a>
 
-To set up Amazon CloudWatch Logs for Amazon Q Business, use the following IAM policy to grant the necessary
-permissions.
+To set up Amazon CloudWatch Logs for Amazon Q Business, use the following IAM policy to grant the necessary permissions.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -29,22 +33,15 @@ JSON
             "Effect": "Allow",
             "Action": "qbusiness:AllowVendedLogDeliveryForResource",
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
             ]
         }
     ]
 }
-
 ```
 
-For example IAM policies with all the required permissions for your specific logging
-destination, see [Enable logging from\
-AWS services](../../../amazoncloudwatch/latest/logs/aws-logs-and-resource-policy.md) in the _Amazon CloudWatch Logs User Guide_.
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Log examples
-
-Enabling logging
+For example IAM policies with all the required permissions for your specific logging destination, see [Enable logging from AWS services](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html) in the *Amazon CloudWatch Logs User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,57 +3,38 @@ title: "PrincipalGroup"
 ---
 
 # PrincipalGroup
+<a name="API_PrincipalGroup"></a>
 
 Provides information about a group associated with the principal.
 
 ## Contents
+<a name="API_PrincipalGroup_Contents"></a>
 
-**access**
-
+ ** access **   <a name="qbusiness-Type-PrincipalGroup-access"></a>
 Provides information about whether to allow or deny access to the principal.
-
 Type: String
-
 Valid Values: `ALLOW | DENY`
-
 Required: Yes
 
-**membershipType**
-
+ ** membershipType **   <a name="qbusiness-Type-PrincipalGroup-membershipType"></a>
 The type of group.
-
 Type: String
-
 Valid Values: `INDEX | DATASOURCE`
-
 Required: No
 
-**name**
-
+ ** name **   <a name="qbusiness-Type-PrincipalGroup-name"></a>
 The name of the group.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Pattern: `\P{C}*`
-
 Required: No
 
 ## See Also
+<a name="API_PrincipalGroup_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/principalgroup.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/principalgroup.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/principalgroup.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Principal
-
-PrincipalUser
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/PrincipalGroup)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/PrincipalGroup)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/PrincipalGroup)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,46 +3,32 @@ title: "Principal"
 ---
 
 # Principal
+<a name="API_Principal"></a>
 
-Provides user and group information used for filtering documents to use for generating
-Amazon Q Business conversation responses.
+Provides user and group information used for filtering documents to use for generating Amazon Q Business conversation responses.
 
 ## Contents
+<a name="API_Principal_Contents"></a>
 
-###### Important
-
+**Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
-**group**
-
-The group associated with the principal.
-
-Type: [PrincipalGroup](api-principalgroup.md) object
-
+ ** group **   <a name="qbusiness-Type-Principal-group"></a>
+ The group associated with the principal.
+Type: [PrincipalGroup](API_PrincipalGroup.md) object
 Required: No
 
-**user**
-
+ ** user **   <a name="qbusiness-Type-Principal-user"></a>
 The user associated with the principal.
-
-Type: [PrincipalUser](api-principaluser.md) object
-
+Type: [PrincipalUser](API_PrincipalUser.md) object
 Required: No
 
 ## See Also
+<a name="API_Principal_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/principal.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/principal.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/principal.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginTypeMetadataSummary
-
-PrincipalGroup
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/Principal)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/Principal)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/Principal)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,50 +3,31 @@ title: "AutoSubscriptionConfiguration"
 ---
 
 # AutoSubscriptionConfiguration
+<a name="API_AutoSubscriptionConfiguration"></a>
 
-Subscription configuration information for an Amazon Q Business application
-using IAM identity federation for user management.
+Subscription configuration information for an Amazon Q Business application using IAM identity federation for user management.
 
 ## Contents
+<a name="API_AutoSubscriptionConfiguration_Contents"></a>
 
-**autoSubscribe**
-
-Describes whether automatic subscriptions are enabled for an Amazon Q Business
-application using IAM identity federation for user management.
-
+ ** autoSubscribe **   <a name="qbusiness-Type-AutoSubscriptionConfiguration-autoSubscribe"></a>
+Describes whether automatic subscriptions are enabled for an Amazon Q Business application using IAM identity federation for user management.
 Type: String
-
 Valid Values: `ENABLED | DISABLED`
-
 Required: Yes
 
-**defaultSubscriptionType**
-
-Describes the default subscription type assigned to an Amazon Q Business
-application using IAM identity federation for user management. If the
-value for `autoSubscribe` is set to `ENABLED` you must select a
-value for this field.
-
+ ** defaultSubscriptionType **   <a name="qbusiness-Type-AutoSubscriptionConfiguration-defaultSubscriptionType"></a>
+Describes the default subscription type assigned to an Amazon Q Business application using IAM identity federation for user management. If the value for `autoSubscribe` is set to `ENABLED` you must select a value for this field.
 Type: String
-
 Valid Values: `Q_LITE | Q_BUSINESS`
-
 Required: No
 
 ## See Also
+<a name="API_AutoSubscriptionConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/autosubscriptionconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/autosubscriptionconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/autosubscriptionconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthChallengeResponseEvent
-
-BasicAuthConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/AutoSubscriptionConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/AutoSubscriptionConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/AutoSubscriptionConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,47 +3,30 @@ title: "AccessControl"
 ---
 
 # AccessControl
+<a name="API_AccessControl"></a>
 
-A list of principals. Each principal can be either a `USER` or a
-`GROUP` and can be designated document access permissions of either
-`ALLOW` or `DENY`.
+A list of principals. Each principal can be either a `USER` or a `GROUP` and can be designated document access permissions of either `ALLOW` or `DENY`.
 
 ## Contents
+<a name="API_AccessControl_Contents"></a>
 
-**principals**
-
-Contains a list of principals, where a principal can be either a `USER` or
-a `GROUP`. Each principal can be have the following type of document access:
-`ALLOW` or `DENY`.
-
-Type: Array of [Principal](api-principal.md) objects
-
+ ** principals **   <a name="qbusiness-Type-AccessControl-principals"></a>
+Contains a list of principals, where a principal can be either a `USER` or a `GROUP`. Each principal can be have the following type of document access: `ALLOW` or `DENY`.
+Type: Array of [Principal](API_Principal.md) objects
 Required: Yes
 
-**memberRelation**
-
+ ** memberRelation **   <a name="qbusiness-Type-AccessControl-memberRelation"></a>
 Describes the member relation within a principal list.
-
 Type: String
-
 Valid Values: `AND | OR`
-
 Required: No
 
 ## See Also
+<a name="API_AccessControl_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/accesscontrol.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/accesscontrol.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/accesscontrol.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessConfiguration
-
-ActionConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/AccessControl)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/AccessControl)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/AccessControl)
 
 All content copied from https://docs.aws.amazon.com/.

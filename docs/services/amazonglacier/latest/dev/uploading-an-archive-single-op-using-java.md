@@ -4,44 +4,37 @@ title: "Uploading an Archive in a Single Operation Using the AWS SDK for Java"
 
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
-If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).
+If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/).
 
-Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3).
+Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/).
 
 # Uploading an Archive in a Single Operation Using the AWS SDK for Java
+<a name="uploading-an-archive-single-op-using-java"></a>
 
-Both the [high-level and low-level APIs](../../../../reference/amazonglacier/latest/dev/using-aws-sdk.md) provided by the Amazon SDK for Java provide a method to upload an archive.
+Both the [high-level and low-level APIs](using-aws-sdk.md) provided by the Amazon SDK for Java provide a method to upload an archive.
 
-###### Topics
-
-- [Uploading an Archive Using the High-Level API of the AWS SDK for Java](#uploading-an-archive-single-op-high-level-using-java)
-
-- [Uploading an Archive in a Single Operation Using the Low-Level API of the AWS SDK for Java](#uploading-an-archive-single-op-low-level-using-java)
+**Topics**
++ [Uploading an Archive Using the High-Level API of the AWS SDK for Java](#uploading-an-archive-single-op-high-level-using-java)
++ [Uploading an Archive in a Single Operation Using the Low-Level API of the AWS SDK for Java](#uploading-an-archive-single-op-low-level-using-java)
 
 ## Uploading an Archive Using the High-Level API of the AWS SDK for Java
+<a name="uploading-an-archive-single-op-high-level-using-java"></a>
 
-The `ArchiveTransferManager` class of the high-level API provides the
-`upload` method, which you can use to upload an archive to a vault.
+The `ArchiveTransferManager` class of the high-level API provides the `upload` method, which you can use to upload an archive to a vault.
 
-###### Note
-
-You can use the `upload` method to upload small or large archives. Depending on the
-archive size you are uploading, this method determines whether to upload it in a single
-operation or use the multipart upload API to upload the archive in parts.
+**Note**
+You can use the `upload` method to upload small or large archives. Depending on the archive size you are uploading, this method determines whether to upload it in a single operation or use the multipart upload API to upload the archive in parts.
 
 ### Example: Uploading an Archive Using the High-Level API of the AWS SDK for Java
+<a name="upload-archive-high-level-java-example"></a>
 
-The following Java code example uploads an archive to a vault ( `examplevault`) in
-the US West (Oregon) Region ( `us-west-2`). For a list of supported AWS Regions
-and endpoints, see [Accessing Amazon Glacier](amazon-glacier-accessing.md).
+The following Java code example uploads an archive to a vault (`examplevault`) in the US West (Oregon) Region (`us-west-2`). For a list of supported AWS Regions and endpoints, see [Accessing Amazon Glacier](amazon-glacier-accessing.md).
 
-For step-by-step instructions on how to run this example, see [Running Java Examples for Amazon Glacier Using Eclipse](../../../../reference/amazonglacier/latest/dev/using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You need to
-update the code as shown with the name of the vault you want to upload to and the name of the file you want to upload.
+For step-by-step instructions on how to run this example, see [Running Java Examples for Amazon Glacier Using Eclipse](using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You need to update the code as shown with the name of the vault you want to upload to and the name of the file you want to upload.
 
-###### Example
+**Example**
 
 ```
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
@@ -76,40 +69,30 @@ public class ArchiveUploadHighLevel {
         }
     }
 }
-
 ```
 
 ## Uploading an Archive in a Single Operation Using the Low-Level API of the AWS SDK for Java
+<a name="uploading-an-archive-single-op-low-level-using-java"></a>
 
-The low-level API provides methods for all the archive operations. The following are
-the steps to upload an archive using the AWS SDK for Java.
+The low-level API provides methods for all the archive operations. The following are the steps to upload an archive using the AWS SDK for Java.
 
-1. Create an instance of the `AmazonGlacierClient` class (the
-    client).
+1. Create an instance of the `AmazonGlacierClient` class (the client).
 
-You need to specify an AWS Region where you want to upload the
-    archive. All operations you perform using this client apply to that AWS Region.
+   You need to specify an AWS Region where you want to upload the archive. All operations you perform using this client apply to that AWS Region.
 
-2. Provide request information by creating an instance of the
-    `UploadArchiveRequest` class.
+1. Provide request information by creating an instance of the `UploadArchiveRequest` class.
 
-In addition to the data you want to upload, you need to provide a checksum (SHA-256 tree hash) of the
-    payload, the vault name, the content length of the data, and your account ID.
+   In addition to the data you want to upload, you need to provide a checksum (SHA-256 tree hash) of the payload, the vault name, the content length of the data, and your account ID.
 
-If you don't provide an account ID, then the account ID associated with the
-    credentials you provide to sign the request is assumed. For more
-    information, see [Using the AWS SDK for Java with Amazon Glacier](../../../../reference/amazonglacier/latest/dev/using-aws-sdk-for-java.md).
+   If you don't provide an account ID, then the account ID associated with the credentials you provide to sign the request is assumed. For more information, see [Using the AWS SDK for Java with Amazon Glacier](using-aws-sdk-for-java.md).
 
-3. Run the `uploadArchive` method by providing the request object as a
-    parameter.
+1. Run the `uploadArchive` method by providing the request object as a parameter.
 
-In response, Amazon Glacier (Amazon Glacier) returns an archive ID of the newly uploaded
-    archive.
+   In response, Amazon Glacier (Amazon Glacier) returns an archive ID of the newly uploaded archive.
 
 The following Java code snippet illustrates the preceding steps.
 
 ```
-
 AmazonGlacierClient client;
 
 UploadArchiveRequest request = new UploadArchiveRequest()
@@ -124,13 +107,11 @@ System.out.println("Location (includes ArchiveID): " + uploadArchiveResult.getLo
 ```
 
 ### Example: Uploading an Archive in a Single Operation Using the Low-Level API of the AWS SDK for Java
+<a name="uploding-single-archive-using-java-example"></a>
 
-The following Java code example uses the AWS SDK for Java to upload an archive to a vault
-( `examplevault`). For step-by-step instructions on how to run this example, see [Running Java Examples for Amazon Glacier Using Eclipse](../../../../reference/amazonglacier/latest/dev/using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You need to
-update the code as shown with the name of the vault you want to upload to and the name of the file you want to upload.
+The following Java code example uses the AWS SDK for Java to upload an archive to a vault (`examplevault`). For step-by-step instructions on how to run this example, see [Running Java Examples for Amazon Glacier Using Eclipse](using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You need to update the code as shown with the name of the vault you want to upload to and the name of the file you want to upload.
 
 ```
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -180,13 +161,6 @@ public class ArchiveUploadLowLevel {
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Uploading an Archive in a Single Operation Using the AWS CLI
-
-Uploading an Archive in a Single Operation Using .NET
 
 All content copied from https://docs.aws.amazon.com/.

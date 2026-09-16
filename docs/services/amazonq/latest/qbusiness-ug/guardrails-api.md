@@ -2,27 +2,17 @@
 title: "Managing admin controls and guardrails using APIs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Managing admin controls and guardrails using APIs
+<a name="guardrails-api"></a>
 
-Amazon Q Business supports admin controls and guardrails configuration through
-both the console and the APIs.
+Amazon Q Business supports admin controls and guardrails configuration through both the console and the APIs.
 
-API actionAPI descriptionRelevant User Guide topic[UpdateChatControlsConfiguration](../api-reference/api-updatechatcontrolsconfiguration.md)Updates an set of chat controls configured for an existing Amazon Q Business application
-
-- [Customizing global\
-controls](guardrails-global-controls.md#guardrails-global-controls-customizing)
-
-- [Creating topic\
-controls](guardrails-topic-controls.md#guardrails-topic-controls-customizing)
-
-[DeleteChatControlsConfiguration](../api-reference/api-deletechatcontrolsconfiguration.md)Deletes chat controls configured for an existing Amazon Q Business application[Deleting topic controls](guardrails-management.md)[GetChatControlsConfiguration](../api-reference/api-getchatcontrolsconfiguration.md)Gets information about chat controls configured for an existing
-Amazon Q Business application.[Getting topic control\
-properties](guardrails-management.md#topic-control-properties)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Plugins
-
-User feedback
+| API action | API description | Relevant User Guide topic |
+| --- | --- | --- |
+| [UpdateChatControlsConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html) | Updates an set of chat controls configured for an existing Amazon Q Business application | +  [Customizing global controls](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-controls-customizing) <br />+  [Creating topic controls](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-topic-controls.html#guardrails-topic-controls-customizing)  |
+| [DeleteChatControlsConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatControlsConfiguration.html) | Deletes chat controls configured for an existing Amazon Q Business application | [Deleting topic controls](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-management.html) |
+| [GetChatControlsConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatControlsConfiguration.html) | Gets information about chat controls configured for an existing Amazon Q Business application. |  [Getting topic control properties](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-management.html#topic-control-properties) |
 
 All content copied from https://docs.aws.amazon.com/.

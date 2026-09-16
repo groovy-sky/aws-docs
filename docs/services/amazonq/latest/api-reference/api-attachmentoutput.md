@@ -3,77 +3,50 @@ title: "AttachmentOutput"
 ---
 
 # AttachmentOutput
+<a name="API_AttachmentOutput"></a>
 
 The details of a file uploaded during chat.
 
 ## Contents
+<a name="API_AttachmentOutput_Contents"></a>
 
-**attachmentId**
-
+ ** attachmentId **   <a name="qbusiness-Type-AttachmentOutput-attachmentId"></a>
 The unique identifier of the Amazon Q Business attachment.
-
 Type: String
-
 Pattern: `[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`
-
 Required: No
 
-**conversationId**
-
+ ** conversationId **   <a name="qbusiness-Type-AttachmentOutput-conversationId"></a>
 The unique identifier of the Amazon Q Business conversation.
-
 Type: String
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]{35}`
-
 Required: No
 
-**error**
-
+ ** error **   <a name="qbusiness-Type-AttachmentOutput-error"></a>
 An error associated with a file uploaded during chat.
-
-Type: [ErrorDetail](api-errordetail.md) object
-
+Type: [ErrorDetail](API_ErrorDetail.md) object
 Required: No
 
-**name**
-
+ ** name **   <a name="qbusiness-Type-AttachmentOutput-name"></a>
 The name of a file uploaded during chat.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1000.
-
 Pattern: `\P{C}*`
-
 Required: No
 
-**status**
-
+ ** status **   <a name="qbusiness-Type-AttachmentOutput-status"></a>
 The status of a file uploaded during chat.
-
 Type: String
-
 Valid Values: `FAILED | SUCCESS`
-
 Required: No
 
 ## See Also
+<a name="API_AttachmentOutput_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/attachmentoutput.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/attachmentoutput.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/attachmentoutput.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttachmentInputEvent
-
-AttachmentsConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/AttachmentOutput)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/AttachmentOutput)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/AttachmentOutput)
 
 All content copied from https://docs.aws.amazon.com/.

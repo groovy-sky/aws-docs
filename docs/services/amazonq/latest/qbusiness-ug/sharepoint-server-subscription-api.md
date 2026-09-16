@@ -2,524 +2,64 @@
 title: "Connecting Amazon Q Business to SharePoint Server (Subscription Edition) using APIs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to SharePoint Server (Subscription Edition) using APIs
+<a name="sharepoint-server-subscription-api"></a>
 
-You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your
-Amazon Q application. You can also use the [UpdateDataSource](../api-reference/api-updatedatasource.md) action to modify an existing data source configuration.
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
 
-Then, you use the
-`configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
 
-For an example of the API request, see [CreateDataSource](../api-reference/api-createdatasource.md) and [UpdateDataSource](../api-reference/api-updatedatasource.md) in the Amazon Q API Reference.
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
 
-###### Topics
-
-- [SharePoint Server (Subscription Edition) configuration properties](#sharepoint-server-subscription-configuration-keys)
-
-- [SharePoint Server (Subscription Edition) JSON schema](#sharepoint-server-subscription-json)
-
-- [SharePoint Server (Subscription Edition) JSON schema example](#sharepoint-server-subscription-api-json-example)
+**Topics**
++ [SharePoint Server (Subscription Edition) configuration properties](#sharepoint-server-subscription-configuration-keys)
++ [SharePoint Server (Subscription Edition) JSON schema](#sharepoint-server-subscription-json)
++ [SharePoint Server (Subscription Edition) JSON schema example](#sharepoint-server-subscription-api-json-example)
 
 ## SharePoint Server (Subscription Edition) configuration properties
-
-ConfigurationDescriptionTypeRequired
-
-`connectionConfiguration`
-
-Configuration information for the endpoint for the data
-source.
-
-`object`
-
-This property has a sub-property called
-`repositoryEndpointMetadata`.
-
-Yes
-
-`repositoryEndpointMetadata`
-
-The endpoint information for the data source.
-
-`object`
-
-This property has the following sub-properties.
-
-- `siteUrls`
-
-- `domain`
-
-- `repositoryAdditionalProperties`
-
-- `tenantId`
-
-Yes
-
-`tenantId`
-
-The tenant id of your SharePoint account.
-
-`string`
-
-OAuth2 series required
-
-Yes
-
-`domain`
-
-The domain of your SharePoint account.
-
-`string`
-
-Yes
-
-`siteUrls`
-
-The host URLs of your SharePoint account.
-
-`array (string)`
-
-Specify the URL in the pattern `https://*`
-
-Yes
-
-`repositoryAdditionalProperties`
-
-Additional properties to connect with your repository
-endpoint.
-
-`object`
-
-This property has the following sub-properties.
-
-- `version`
-
-- `authType`
-
-- `onPremVersion`
-
-Yes
-
-`authType`
-
-The type of authentication you are using:
-`NTLM`, `Kerberos`, or `OAuth2App`.
-
-`string`
-
-Yes
-
-`version`
-
-The SharePoint version you are using:
-`Sever`.
-
-`string (Server)`
-
-Yes
-
-`onPremVersion`
-
-The SharePoint version that you are using.
-
-`string`
-
-Valid values are ` ` (empty), `2013`, `2016`, `2019`, and `SubscriptionEdition`.
-
-Yes
-
-`repositoryConfigurations`
-
-Configuration information for the content of the data source. For
-example, configuring specific types of content and field
-mappings.
-
-`object`
-
-This property has the following sub-properties.
-
-- `event`
-
-- `page`
-
-- `file`
-
-- `link`
-
-- `attachment`
-
-- `comment`
-
-Yes
-
-- `event`
-
-- `page`
-
-- `file`
-
-- `link`
-
-- `attachment`
-
-- `comment`
-
-A list of objects that map the attributes or field names of your
-SharePoint Server (Subscription Edition) pages and assets to Amazon Q index field
-names.
-
-`object`
-
-These properties have the following sub-properties.
-
-- `indexFieldName`
-
-- `indexFieldType`
-
-- `dataSourceFieldName`
-
-- `dateFieldFormat`
-
-No
-
-`indexFieldName`
-
-The field name of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`, and `DATE`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd"T"HH:mm:ss"Z"`
-
-No
-
-`additionalProperties`
-
-Additional configuration options for your content in your data
-source.
-
-`object`
-
-This property has the following sub-properties:
-
-- `crawlAcl`
-
-- `crawlFiles`
-
-- `crawlPages`
-
-- `crawlEvents`
-
-- `crawlComments`
-
-- `crawlLinks`
-
-- `crawlAttachments`
-
-- `crawlListData`
-
-- `isCrawlLocalGroupMapping`
-
-- `isCrawlAdGroupMapping`
-
-- `aclConfiguration`
-
-- `emailDomain`
-
-- `maxFileSizeInMegaBytes`
-
-- `eventTitleFilterRegEx`
-
-- `pageTitleFilterRegEx`
-
-- `linkTitleFilterRegEx`
-
-- `inclusionFilePath`
-
-- `exclusionFilePath`
-
-- `inclusionFileTypePatterns`
-
-- `exclusionFileTypePatterns`
-
-- `inclusionFileNamePatterns`
-
-- `exclusionFileNamePatterns`
-
-- `inclusionOneNoteSectionNamePatterns`
-
-- `exclusionOneNoteSectionNamePatterns`
-
-- `inclusionOneNotePageNamePatterns`
-
-- `exclusionOneNotePageNamePatterns`
-
-- `proxyHost`
-
-- `proxyPort`
-
-Yes
-
-- `eventTitleFilterRegEx`
-
-- `pageTitleFilterRegEx`
-
-- `linkTitleFilterRegEx`
-
-- `inclusionFilePath`
-
-- `exclusionFilePath`
-
-- `inclusionFileTypePatterns`
-
-- `exclusionFileTypePatterns`
-
-- `inclusionFileNamePatterns`
-
-- `exclusionFileNamePatterns`
-
-- `inclusionOneNoteSectionNamePatterns`
-
-- `exclusionOneNoteSectionNamePatterns`
-
-- `inclusionOneNotePageNamePatterns`
-
-- `exclusionOneNotePageNamePatterns`
-
-- `emailDomain`
-
-A list of regular expression patterns to include/exclude specific
-files in your SharePoint data source. Files that match
-the patterns are included in the index. File that don&t match the
-patterns are excluded from the index. If a file matches both an
-inclusion and exclusion pattern, the exclusion pattern takes precedence,
-and the file isn&t included in the index.
-
-`array (string)`
-
-No
-
-`aclConfiguration`
-
-Specifes how your ACL is configured.
-
-`string>`
-
-Valid values are `ACLWithLDAPEmailFmt`, `ACLWithManualEmailFmt`, or `ACLWithUsernameFmt`.
-
-No
-
-`proxyHost`
-
-The host where the web proxy is required. The host name should be without protocol
-(http:// or https://).
-
-`string`
-
-Yes
-
-`proxyPort`
-
-Port used by the host URL transport protocol. The port number should be a numeric
-value between 0 and 65535.
-
-`string`
-
-Yes
-
-- `crawlAcl`
-
-- `crawlFiles`
-
-- `crawlPages`
-
-- `crawlEvents`
-
-- `crawlComments`
-
-- `crawlLinks`
-
-- `crawlAttachments`
-
-- `crawlListData`
-
-- `isCrawlLocalGroupMapping`
-
-- `isCrawlAdGroupMapping`
-
-Input `TRUE` to index.
-
-`boolean`
-
-No
-
-`maxFileSizeInMegaBytes`
-
-Specify the maximum single file size limit in MBs that Amazon Q will
-crawl. Amazon Q will crawl only the files within the size limit you
-define. The default file size is 50MB. The maximum file size should be
-greater than 0MB and less than or equal to 50MB.
-
-`string`
-
-No
-
-`sslCertificatePath`
-
-Configuration information to access the SSL certificate stored in your Amazon S3
-bucket.
-
-`object`
-
-This property has the following sub-properties.
-
-- `bucket`
-
-- `key`
-
-No
-
-`bucket`
-
-The name of the Amazon S3 bucket that stores your Microsoft Entra ID (formerly Azure AD)
-self-signed X.509 certificate.
-
-`string`
-
-Yes
-
-`key`
-
-The name of the SSL certificate stored in your Amazon S3
-bucket.
-
-`string`
-
-Yes
-
-`type`
-
-We recommend that you use `SHAREPOINTV2` as your data source type.
-
-`string`
-
-Valid values are `SHAREPOINTV2` and `SHAREPOINT`.
-
-Yes
-
-`enableIdentityCrawler`
-
-`true` to activate identity crawler. Identity crawler is
-activated by default. Crawling identity information on users and groups
-with access to specific documents is useful for user context filtering.
-Search results are filtered based on the user or their group access to
-documents. See [Identity crawler](connector-concepts.md#connector-identity-crawler) for more information.
-
-`boolean`
-
-Yes
-
-`syncMode`
-
-Specify whether Amazon Q should update your index by
-syncing all documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options:
-
-- Use `FORCED_FULL_CRAWL` to freshly re-crawl all
-content and replace existing content each time your data
-source syncs with your index
-
-- Use `FULL_CRAWL` to incrementally crawl only
-new, modified, and deleted content each time your data
-source syncs with your index
-
-- Use `CHANGE_LOG` to incrementally crawl only
-new and modified content each time your data source syncs
-with your index
-
-Yes
-
-`secretARN`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret
-that contains the key-value pairs required to connect to your
-SharePoint. If you use OAuth2App authentication, provide the client ID, client secret, LDAP URL, LDAP base DN, LDAP user name, and LDAP password. If you use NTLM or Kerberos authentication, provide the user name, password, LDAP URL, Base DN, LDAP user, and LDAP password.
-
-`string`
-
-The minimum length is 20 and the maximum length is 2,048 characters.
-
-If you use Sharepoint App-Only authentication ( `authType` should be `OAuth2App` authentication) the secret must contain a JSON structure with the following keys:
-
-```json
-
-{
-    "clientId": "client ID",
-    "clientSecret": "client secret",
-    "ldapUrl": "LDAP URL",
-    "ldbaseDn": "LDAP base DN",
-    "ldapUser": "LDAP user name",
-    "ldapPassword": "LDAP password"
-}
-```
-
-If you use NTLM authentication or Kerberos authentication, the secret must contain a JSON structure with the following keys:
-
-```json
-
-{
-  "userName": "SharePoint account user name",
-  "password": "SharePoint account password",
-  "ldapUrl": "LDAP URL",
-  "baseDn": "LDAP base DN",
-  "ldapUser": "LDAP user name",
-  "ldapPassword": "LDAP password"
-}
-```
-
-Yes
-
-`version`
-
-The version of this template that&s currently supported.
-
-`string`
-
-No
+<a name="sharepoint-server-subscription-configuration-keys"></a>
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has a sub-property called `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-properties.+  `siteUrls` <br />+  `domain` <br />+  `repositoryAdditionalProperties` <br />+  `tenantId`  | Yes |
+| `tenantId` | The tenant id of your SharePoint account. | `string`<br />OAuth2 series required | Yes |
+| `domain` | The domain of your SharePoint account. | `string` | Yes |
+| `siteUrls` | The host URLs of your SharePoint account. | `array (string)`<br />Specify the URL in the pattern `https://*` | Yes |
+| `repositoryAdditionalProperties` | Additional properties to connect with your repository endpoint. | `object`<br />This property has the following sub-properties.+  `version` <br />+  `authType` <br />+  `onPremVersion`  | Yes |
+| `authType` | The type of authentication you are using: NTLM, Kerberos, or OAuth2App. | `string` | Yes |
+| `version` | The SharePoint version you are using: Sever. | `string (Server)` | Yes |
+| `onPremVersion` | The SharePoint version that you are using. | `string`<br />Valid values are ` ` (empty), `2013`, `2016`, `2019`, and `SubscriptionEdition`. | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties.+  `event` <br />+  `page` <br />+  `file` <br />+  `link` <br />+  `attachment` <br />+  `comment`  | Yes |
+|  +  `event` <br />+  `page` <br />+  `file` <br />+  `link` <br />+  `attachment` <br />+  `comment`   | A list of objects that map the attributes or field names of your SharePoint Server (Subscription Edition) pages and assets to Amazon Q index field names. | `object`<br />These properties have the following sub-properties.+  `indexFieldName` <br />+  `indexFieldType` <br />+  `dataSourceFieldName` <br />+  `dateFieldFormat`  | No |
+| `indexFieldName` | The field name of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments. | `string` | Yes |
+| `indexFieldType` | The field type of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments. | `string` | Yes |
+| `dateFieldFormat` | The date format of your SharePoint Server (Subscription Edition) events, pages, files, links, attachments, or comments. | `string`<br />Specify the date format in the form `yyyy-MM-dd"T"HH:mm:ss"Z"` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties:+  `crawlAcl` <br />+  `crawlFiles` <br />+  `crawlPages` <br />+  `crawlEvents` <br />+  `crawlComments` <br />+  `crawlLinks` <br />+  `crawlAttachments` <br />+  `crawlListData` <br />+  `isCrawlLocalGroupMapping` <br />+  `isCrawlAdGroupMapping` <br />+  `aclConfiguration` <br />+  `emailDomain` <br />+  `maxFileSizeInMegaBytes` <br />+  `eventTitleFilterRegEx` <br />+  `pageTitleFilterRegEx` <br />+  `linkTitleFilterRegEx` <br />+  `inclusionFilePath` <br />+  `exclusionFilePath` <br />+  `inclusionFileTypePatterns` <br />+  `exclusionFileTypePatterns` <br />+  `inclusionFileNamePatterns` <br />+  `exclusionFileNamePatterns` <br />+  `inclusionOneNoteSectionNamePatterns` <br />+  `exclusionOneNoteSectionNamePatterns` <br />+  `inclusionOneNotePageNamePatterns` <br />+  `exclusionOneNotePageNamePatterns` <br />+  `proxyHost` <br />+  `proxyPort`  | Yes |
+|  +  `eventTitleFilterRegEx` <br />+  `pageTitleFilterRegEx` <br />+  `linkTitleFilterRegEx` <br />+  `inclusionFilePath` <br />+  `exclusionFilePath` <br />+  `inclusionFileTypePatterns` <br />+  `exclusionFileTypePatterns` <br />+  `inclusionFileNamePatterns` <br />+  `exclusionFileNamePatterns` <br />+  `inclusionOneNoteSectionNamePatterns` <br />+  `exclusionOneNoteSectionNamePatterns` <br />+  `inclusionOneNotePageNamePatterns` <br />+  `exclusionOneNotePageNamePatterns` <br />+  `emailDomain`  | A list of regular expression patterns to include/exclude specific files in your SharePoint data source. Files that match the patterns are included in the index. File that don&t match the patterns are excluded from the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file isn&t included in the index. | `array (string)` | No |
+| `aclConfiguration` | Specifes how your ACL is configured. | `string>`<br /> Valid values are `ACLWithLDAPEmailFmt`, `ACLWithManualEmailFmt`, or `ACLWithUsernameFmt`. | No |
+| `proxyHost` | The host where the web proxy is required. The host name should be without protocol (http:// or https://). | `string` | Yes |
+| `proxyPort` | Port used by the host URL transport protocol. The port number should be a numeric value between 0 and 65535. | `string` | Yes |
+| +  `crawlAcl` <br />+  `crawlFiles` <br />+  `crawlPages` <br />+  `crawlEvents` <br />+  `crawlComments` <br />+  `crawlLinks` <br />+  `crawlAttachments` <br />+  `crawlListData` <br />+  `isCrawlLocalGroupMapping` <br />+  `isCrawlAdGroupMapping`  | Input TRUE to index. | `boolean` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `sslCertificatePath` | Configuration information to access the SSL certificate stored in your Amazon S3 bucket. | `object`<br />This property has the following sub-properties.+  `bucket` <br />+  `key`  | No |
+| `bucket` | The name of the Amazon S3 bucket that stores your Microsoft Entra ID (formerly Azure AD) self-signed X.509 certificate. | `string` | Yes |
+| `key` | The name of the SSL certificate stored in your Amazon S3 bucket. | `string` | Yes |
+| `type` | We recommend that you use SHAREPOINTV2 as your data source type. | `string`<br />Valid values are `SHAREPOINTV2` and `SHAREPOINT`. | Yes |
+| `enableIdentityCrawler` | true to activate identity crawler. Identity crawler is activated by default. Crawling identity information on users and groups with access to specific documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents. See [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) for more information. | `boolean` | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents.  | `string`<br />You can choose between the following options:+  Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index <br />+  Use `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index <br />+  Use `CHANGE_LOG` to incrementally crawl only new and modified content each time your data source syncs with your index  | Yes |
+| `secretARN` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your SharePoint. If you use OAuth2App authentication, provide the client ID, client secret, LDAP URL, LDAP base DN, LDAP user name, and LDAP password. If you use NTLM or Kerberos authentication, provide the user name, password, LDAP URL, Base DN, LDAP user, and LDAP password. | `string`<br />The minimum length is 20 and the maximum length is 2,048 characters.<br />If you use Sharepoint App-Only authentication (`authType` should be `OAuth2App` authentication) the secret must contain a JSON structure with the following keys: <pre>{<br />    "clientId": "{{client ID}}",<br />    "clientSecret": "{{client secret}}",<br />    "ldapUrl": "{{LDAP URL}}",<br />    "ldbaseDn": "{{LDAP base DN}}",<br />    "ldapUser": "{{LDAP user name}}",<br />    "ldapPassword": "{{LDAP password}}"<br />}</pre><br />If you use NTLM authentication or Kerberos authentication, the secret must contain a JSON structure with the following keys: <pre>{<br />  "userName": "{{SharePoint account user name}}",<br />  "password": "{{SharePoint account password}}",<br />  "ldapUrl": "{{LDAP URL}}",<br />  "baseDn": "{{LDAP base DN}}",<br />  "ldapUser": "{{LDAP user name}}",<br />  "ldapPassword": "{{LDAP password}}"<br />}</pre> | Yes |
+| `version` | The version of this template that&s currently supported. | `string` | No |
 
 ## SharePoint Server (Subscription Edition) JSON schema
+<a name="sharepoint-server-subscription-json"></a>
 
 The following is the SharePoint Server (Subscription Edition) JSON schema:
 
-```json
-
+```
 {
   "type": "object",
   "properties": {
@@ -1076,14 +616,12 @@ The following is the SharePoint Server (Subscription Edition) JSON schema:
 }
 ```
 
-Show moreShow less
-
 ## SharePoint Server (Subscription Edition) JSON schema example
+<a name="sharepoint-server-subscription-api-json-example"></a>
 
 The following is the SharePoint Server (Subscription Edition) JSON schema example:
 
-```json
-
+```
 {
 
   "type": "SHAREPOINTV2",
@@ -1347,13 +885,5 @@ The following is the SharePoint Server (Subscription Edition) JSON schema exampl
 
 }
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the console
-
-Using the CloudFormation
 
 All content copied from https://docs.aws.amazon.com/.

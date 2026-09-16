@@ -3,69 +3,47 @@ title: "CardInput"
 ---
 
 # CardInput
+<a name="API_qapps_CardInput"></a>
 
 The properties defining an input card in an Amazon Q App.
 
 ## Contents
+<a name="API_qapps_CardInput_Contents"></a>
 
-###### Important
-
+**Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
-**fileUpload**
-
+ ** fileUpload **   <a name="qbusiness-Type-qapps_CardInput-fileUpload"></a>
 A container for the properties of the file upload input card.
-
-Type: [FileUploadCardInput](api-qapps-fileuploadcardinput.md) object
-
+Type: [FileUploadCardInput](API_qapps_FileUploadCardInput.md) object
 Required: No
 
-**formInput**
-
+ ** formInput **   <a name="qbusiness-Type-qapps_CardInput-formInput"></a>
 A container for the properties of the form input card.
-
-Type: [FormInputCardInput](api-qapps-forminputcardinput.md) object
-
+Type: [FormInputCardInput](API_qapps_FormInputCardInput.md) object
 Required: No
 
-**qPlugin**
-
+ ** qPlugin **   <a name="qbusiness-Type-qapps_CardInput-qPlugin"></a>
 A container for the properties of the plugin input card.
-
-Type: [QPluginCardInput](api-qapps-qplugincardinput.md) object
-
+Type: [QPluginCardInput](API_qapps_QPluginCardInput.md) object
 Required: No
 
-**qQuery**
-
+ ** qQuery **   <a name="qbusiness-Type-qapps_CardInput-qQuery"></a>
 A container for the properties of the query input card.
-
-Type: [QQueryCardInput](api-qapps-qquerycardinput.md) object
-
+Type: [QQueryCardInput](API_qapps_QQueryCardInput.md) object
 Required: No
 
-**textInput**
-
+ ** textInput **   <a name="qbusiness-Type-qapps_CardInput-textInput"></a>
 A container for the properties of the text input card.
-
-Type: [TextInputCardInput](api-qapps-textinputcardinput.md) object
-
+Type: [TextInputCardInput](API_qapps_TextInputCardInput.md) object
 Required: No
 
 ## See Also
+<a name="API_qapps_CardInput_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/cardinput.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/cardinput.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/cardinput.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Card
-
-CardStatus
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/CardInput)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/CardInput)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/CardInput)
 
 All content copied from https://docs.aws.amazon.com/.

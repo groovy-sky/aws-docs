@@ -3,37 +3,26 @@ title: "KendraIndexConfiguration"
 ---
 
 # KendraIndexConfiguration
+<a name="API_KendraIndexConfiguration"></a>
 
 Stores an Amazon Kendra index as a retriever.
 
 ## Contents
+<a name="API_KendraIndexConfiguration_Contents"></a>
 
-**indexId**
-
+ ** indexId **   <a name="qbusiness-Type-KendraIndexConfiguration-indexId"></a>
 The identifier of the Amazon Kendra index.
-
 Type: String
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]{35}`
-
 Required: Yes
 
 ## See Also
+<a name="API_KendraIndexConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/kendraindexconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/kendraindexconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/kendraindexconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstructionCollection
-
-MediaExtractionConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/KendraIndexConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/KendraIndexConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/KendraIndexConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

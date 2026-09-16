@@ -2,29 +2,27 @@
 title: "Example IAM policies for Amazon Q Business application environment supporting anonymous access"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Example IAM policies for Amazon Q Business application environment supporting anonymous access
+<a name="anonymous-application-iam-policies"></a>
 
-We strongly recommend that you use a restricted policies for the role that will be
-used to call the chat APIs for anonymous access application environments.
+We strongly recommend that you use a restricted policies for the role that will be used to call the chat APIs for anonymous access application environments.
 
-You need permission policies to use Amazon Q Business application environments that
-support anonymous access. The following are examples of such restricted
-policies.
+You need permission policies to use Amazon Q Business application environments that support anonymous access. The following are examples of such restricted policies.
 
-###### Topics
-
-- [Policy for calling relevant APIs](#anonymous-application-iam-policies-api)
-
-- [Policies for using the web experience](#anonymous-application-iam-policies-web-experience)
+**Topics**
++ [Policy for calling relevant APIs](#anonymous-application-iam-policies-api)
++ [Policies for using the web experience](#anonymous-application-iam-policies-web-experience)
 
 ## Policy for calling relevant APIs
+<a name="anonymous-application-iam-policies-api"></a>
 
-###### Example policy to allow the Amazon Q Business APIs for anonymous access
+**Example policy to allow the Amazon Q Business APIs for anonymous access**
 
-```json
-
+```
 {
-    "Version": "2012-10-17",,
+    "Version": "2012-10-17",		 	 	 ,
     "Statement": [{
             "Sid": "QBusinessAnonymousConversationAPIPermissions",
             "Effect": "Allow",
@@ -38,35 +36,30 @@ policies.
 }
 ```
 
-###### Applying your restricted policies to an IAM role for using APIs for Amazon Q application environments supporting anonymous access
+**Applying your restricted policies to an IAM role for using APIs for Amazon Q application environments supporting anonymous access**
 
-1. Create a directory named _policies_.
+1. Create a directory named *policies*.
 
-2. In that directory, create and save a file named
-    _permspolicyforAPIanonymous.json_ with the JSON
-    for allowing Amazon Q Business API calls for anonymous
-    access.
+1. In that directory, create and save a file named *permspolicyforAPIanonymous.json* with the JSON for allowing Amazon Q Business API calls for anonymous access.
 
-3. Finally, create and attach the policy using the following commands in
-    the AWS CLI.
+1. Finally, create and attach the policy using the following commands in the AWS CLI.
 
-**Create and attach policy**
+   **Create and attach policy**
 
-```nohighlight
-
-aws iam \
-create-role \
+   ```
+   aws iam \
+   create-role \
    --policy-document file://policies/permspolicyforAPIanonymous.json
-```
+   ```
 
 ## Policies for using the web experience
+<a name="anonymous-application-iam-policies-web-experience"></a>
 
-###### Example policy to allow the Amazon Q Business web experience for anonymous access
+**Example policy to allow the Amazon Q Business web experience for anonymous access**
 
-```json
-
+```
 {
-    "Version": "2012-10-17",,
+    "Version": "2012-10-17",		 	 	 ,
     "Statement": [{
             "Sid": "QBusinessAnonymousWebExperienceConversationPermissions",
             "Effect": "Allow",
@@ -82,12 +75,11 @@ create-role \
 }
 ```
 
-###### Example trust policy to allow the Amazon Q Business web experience for anonymous access
+**Example trust policy to allow the Amazon Q Business web experience for anonymous access**
 
-```json
-
+```
 {
-    "Version": "2012-10-17",,
+    "Version": "2012-10-17",		 	 	 ,
     "Statement": [
         {
             "Sid": "QBusinessTrustPolicy",
@@ -109,49 +101,37 @@ create-role \
         }
     ]
 }
-
 ```
 
-###### Applying your restricted policies for using the web experience to an IAM role
+**Applying your restricted policies for using the web experience to an IAM role**
 
-1. Create a directory named _policies_.
+1. Create a directory named *policies*.
 
-2. Then, in the same directory, create and save a file named
-    _permspolicyforwebexperienceanonymous_ with the
-    JSON for allowing the Amazon Q Business web experience for
-    anonymous access.
+1. Then, in the same directory, create and save a file named *permspolicyforwebexperienceanonymous* with the JSON for allowing the Amazon Q Business web experience for anonymous access.
 
-3. Then, in the same directory, create and save a file named
-    _trustpolicyforanonymous.json_ with the JSON for
-    the trust policy to allow the Amazon Q Business web experience for
-    anonymous access
+1. Then, in the same directory, create and save a file named *trustpolicyforanonymous.json* with the JSON for the trust policy to allow the Amazon Q Business web experience for anonymous access
 
-4. Finally, create and attach the policies using the following commands
-    in the AWS CLI.
+1. Finally, create and attach the policies using the following commands in the AWS CLI.
 
-**Create and attach policy**
+   **Create and attach policy**
 
-```nohighlight
-
-aws iam \
-create-role \
+   ```
+   aws iam \
+   create-role \
    --role-name --assume-role-policy-document file://policies/trustpolicyforanonymous.json \
    --policy-document file://policies/permspolicyforwebexperienceanonymous.json
+   ```
+**Note**
+For the web experience to work properly with AWS CLI commands both policies are needed
+
+**Amazon Q also supports using a service-linked role (`AWSServiceRoleForQBusiness`) for an Amazon Q application environment. The following is the service-linked role policy:**
+
+------
+#### [ JSON ]
+
+****
+
 ```
-
-###### Note
-
-For the web experience to work properly with AWS CLI commands both
-policies are needed
-
-**Amazon Q also supports using a service-linked role**
-**( `AWSServiceRoleForQBusiness`) for an Amazon Q application environment.**
-**The following is the service-linked role policy:**
-
-JSON
-
-```json
-
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -200,16 +180,10 @@ JSON
         }
     ]
 }
-
 ```
 
-For more information on using service-linked roles for an Amazon Q application environment,
-see [Using service-linked roles](../business-use-dg/using-service-linked-roles.md).
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Managing resources
-
-Managing anonymous application environments
+For more information on using service-linked roles for an Amazon Q application environment, see [Using service-linked roles](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-service-linked-roles.html).
 
 All content copied from https://docs.aws.amazon.com/.

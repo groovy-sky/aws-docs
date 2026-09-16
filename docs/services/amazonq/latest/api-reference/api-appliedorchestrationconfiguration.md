@@ -3,40 +3,27 @@ title: "AppliedOrchestrationConfiguration"
 ---
 
 # AppliedOrchestrationConfiguration
+<a name="API_AppliedOrchestrationConfiguration"></a>
 
-The chat orchestration specific admin controls configured for an Amazon Q Business
-application. Determines whether Amazon Q Business automatically routes chat requests across
-configured plugins and data sources in your Amazon Q Business application.
+The chat orchestration specific admin controls configured for an Amazon Q Business application. Determines whether Amazon Q Business automatically routes chat requests across configured plugins and data sources in your Amazon Q Business application.
 
-For more information, see [Chat orchestration settings](../qbusiness-ug/guardrails-global-controls.md#guardrails-global-orchestration).
+For more information, see [Chat orchestration settings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-orchestration).
 
 ## Contents
+<a name="API_AppliedOrchestrationConfiguration_Contents"></a>
 
-**control**
-
-Information about whether chat orchestration is enabled or disabled for an
-Amazon Q Business application.
-
+ ** control **   <a name="qbusiness-Type-AppliedOrchestrationConfiguration-control"></a>
+ Information about whether chat orchestration is enabled or disabled for an Amazon Q Business application.
 Type: String
-
 Valid Values: `ENABLED | DISABLED`
-
 Required: Yes
 
 ## See Also
+<a name="API_AppliedOrchestrationConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/appliedorchestrationconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/appliedorchestrationconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/appliedorchestrationconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AppliedCreatorModeConfiguration
-
-AssociatedGroup
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/AppliedOrchestrationConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/AppliedOrchestrationConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/AppliedOrchestrationConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

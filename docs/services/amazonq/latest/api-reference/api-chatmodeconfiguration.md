@@ -3,39 +3,29 @@ title: "ChatModeConfiguration"
 ---
 
 # ChatModeConfiguration
+<a name="API_ChatModeConfiguration"></a>
 
 Configuration information for Amazon Q Business conversation modes.
 
-For more information, see [Admin controls and guardrails](../qbusiness-ug/guardrails.md) and [Conversation settings](../business-use-dg/using-web-experience.md#chat-source-scope).
+For more information, see [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [Conversation settings](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-web-experience.html#chat-source-scope).
 
 ## Contents
+<a name="API_ChatModeConfiguration_Contents"></a>
 
-###### Important
-
+**Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
-**pluginConfiguration**
-
+ ** pluginConfiguration **   <a name="qbusiness-Type-ChatModeConfiguration-pluginConfiguration"></a>
 Configuration information required to invoke chat in `PLUGIN_MODE`.
-
-Type: [PluginConfiguration](api-pluginconfiguration.md) object
-
+Type: [PluginConfiguration](API_PluginConfiguration.md) object
 Required: No
 
 ## See Also
+<a name="API_ChatModeConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/chatmodeconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/chatmodeconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/chatmodeconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChatInputStream
-
-ChatOutputStream
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/ChatModeConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/ChatModeConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/ChatModeConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,32 +3,28 @@ title: "Using Amazon Q Developer with Amazon EMR Studio"
 ---
 
 # Using Amazon Q Developer with Amazon EMR Studio
+<a name="emr-setup"></a>
 
-This page describes how to set up and activate Amazon Q Developer for Amazon EMR Studio. Once
-activated, Amazon Q can make code recommendations automatically as you write your ETL
-code.
+This page describes how to set up and activate Amazon Q Developer for Amazon EMR Studio. Once activated, Amazon Q can make code recommendations automatically as you write your ETL code.
 
-###### Note
-
+**Note**
 Amazon Q supports Python, which can be used to code ETL scripts for Spark jobs in Amazon EMR Studio.
 
 Use the following procedure to set up Amazon EMR Studio to work with Amazon Q.
 
-1. Set up [Amazon EMR Studio Notebook](../../../emr/latest/managementguide/emr-managed-notebooks-create.md).
+1. Set up [Amazon EMR Studio Notebook](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-create.html).
 
-2. Attach the following policy to the IAM user role for Amazon EMR Studio Notebook.
+1. Attach the following policy to the IAM user role for Amazon EMR Studio Notebook.
+**Note**
+The `codewhisperer` prefix is a legacy name from a service that merged with Amazon Q Developer. For more information, see [Amazon Q Developer rename - Summary of changes](service-rename.md).
 
-###### Note
+------
+#### [ JSON ]
 
-The `codewhisperer` prefix is a legacy name from a service that merged
-with Amazon Q Developer. For more information, see
-[Amazon Q Developer rename - Summary of changes](service-rename.md).
+****
 
-JSON
-
-```json
-
-{
+   ```
+   {
        "Version":"2012-10-17",
        "Statement": [
            {
@@ -40,20 +36,15 @@ JSON
                "Resource": "*"
            }
        ]
-}
+   }
+   ```
 
-```
+------
 
-3. Open the [Amazon EMR console](https://console.aws.amazon.com/emr).
+1. Open the [Amazon EMR console](https://console.aws.amazon.com/emr).
 
-4. Under Amazon EMR Studio, choose **Workspaces (Notebooks).**
+1. Under Amazon EMR Studio, choose **Workspaces (Notebooks).**
 
-5. Select your desired Workspace and choose **Quick launch**.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JupyterLab
-
-AWS Glue Studio
+1. Select your desired Workspace and choose **Quick launch**.
 
 All content copied from https://docs.aws.amazon.com/.

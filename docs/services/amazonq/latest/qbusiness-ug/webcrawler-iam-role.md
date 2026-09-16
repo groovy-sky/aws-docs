@@ -2,21 +2,18 @@
 title: "IAM role for Amazon Q Business Web Crawler connector"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # IAM role for Amazon Q Business Web Crawler connector
+<a name="webcrawler-iam-role"></a>
 
 To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role that has the following permissions.
 
-**If you're crawling a public website with no**
-**authentication:**
+**If you're crawling a public website with no authentication:**
++ Permission to access the `BatchPutDocument` and `BatchDeleteDocument` operations to ingest documents.
++ Permission to access the [User Store](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html) operations to ingest access control information from documents.
 
-- Permission to access the `BatchPutDocument` and
-`BatchDeleteDocument` operations to ingest documents.
-
-- Permission to access the [User Store](connector-principal-store.md) operations to ingest access control
-information from documents.
-
-```json
-
+```
 {
             "Sid": "AllowsAmazonQToIngestDocuments",
             "Effect": "Allow",
@@ -44,15 +41,10 @@ information from documents.
         }
 ```
 
-**If you're crawling a website which uses**
-**authentication:**
+**If you're crawling a website which uses authentication:**
++ Permission to access the AWS Secrets Manager secret that contains the credentials to connect to websites or a web proxy server backed by basic authentication.
 
-- Permission to access the AWS Secrets Manager secret that contains the
-credentials to connect to websites or a web proxy server backed by basic
-authentication.
-
-```json
-
+```
 {
             "Sid": "AllowsAmazonQToGetSecret",
             "Effect": "Allow",
@@ -65,12 +57,9 @@ authentication.
         }
 ```
 
-**If your Secrets Manager secret is decrypted, add permissions**
-**for a AWS KMS key to decrypt the username and password secret stored by Secrets**
-**Manager:**
+**If your Secrets Manager secret is decrypted, add permissions for a AWS KMS key to decrypt the username and password secret stored by Secrets Manager:**
 
-```json
-
+```
 {
             "Sid": "AllowsAmazonQToDecryptSecret",
             "Effect": "Allow",
@@ -90,19 +79,12 @@ authentication.
         }
 ```
 
-**If your Amazon Q data source connector needs access**
-**to an object stored in an Amazon S3 bucket—like seed URLs or**
-**sitemaps— you must add the following permissions to your IAM**
-**role:**
+**If your Amazon Q data source connector needs access to an object stored in an Amazon S3 bucket—like seed URLs or sitemaps— you must add the following permissions to your IAM role: **
 
-###### Note
+**Note**
+Check that the file path to the object in your Amazon S3 bucket is of the following format: {{s3://BucketName/FolderName/FileName.extension}}.
 
-Check that the file path to the object in your Amazon S3 bucket is of the
-following format:
-`s3://BucketName/FolderName/FileName.extension`.
-
-```json
-
+```
 {
             "Sid": "AllowsAmazonQToGetS3Objects",
             "Action": [
@@ -120,13 +102,14 @@ following format:
         }
 ```
 
-**If you are using an Amazon VPC, you need to add the**
-**following VPC access permissions to your policy:**
+**If you are using an Amazon VPC, you need to add the following VPC access permissions to your policy:**
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -152,7 +135,7 @@ JSON
             "Resource": "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
             "Condition": {
                 "StringLike": {
-                    "aws:RequestTag/AMAZON_Q": "qbusiness_111122223333_application-id_*"
+                    "aws:RequestTag/AMAZON_Q": "qbusiness_111122223333_{{application-id}}_*"
                 },
                 "ForAllValues:StringEquals": {
                     "aws:TagKeys": [
@@ -183,7 +166,7 @@ JSON
             "Resource": "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/AMAZON_Q": "qbusiness_111122223333_application-id_*"
+                    "aws:ResourceTag/AMAZON_Q": "qbusiness_111122223333_{{application-id}}_*"
                 }
             }
         },
@@ -203,16 +186,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q to assume a role, you must also use**
-**the following trust policy:**
+------
 
-JSON
+**To allow Amazon Q to assume a role, you must also use the following trust policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -228,23 +213,16 @@ JSON
                     "aws:SourceAccount": "111122223333"
                 },
                 "ArnEquals": {
-                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
                 }
             }
         }
     ]
 }
-
 ```
 
-For more information on Amazon Q data source connector IAM
-roles, see [IAM\
-roles for Amazon Q data source connectors](iam-roles.md#iam-roles-ds).
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Field mappings
-
-Configuring a robots.txt file
+For more information on Amazon Q data source connector IAM roles, see [IAM roles for Amazon Q data source connectors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/iam-roles.html#iam-roles-ds).
 
 All content copied from https://docs.aws.amazon.com/.

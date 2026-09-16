@@ -3,33 +3,24 @@ title: "IndexStatistics"
 ---
 
 # IndexStatistics
+<a name="API_IndexStatistics"></a>
 
 Provides information about the number of documents in an index.
 
 ## Contents
+<a name="API_IndexStatistics_Contents"></a>
 
-**textDocumentStatistics**
-
+ ** textDocumentStatistics **   <a name="qbusiness-Type-IndexStatistics-textDocumentStatistics"></a>
 The number of documents indexed.
-
-Type: [TextDocumentStatistics](api-textdocumentstatistics.md) object
-
+Type: [TextDocumentStatistics](API_TextDocumentStatistics.md) object
 Required: No
 
 ## See Also
+<a name="API_IndexStatistics_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/indexstatistics.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/indexstatistics.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/indexstatistics.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IndexCapacityConfiguration
-
-InlineDocumentEnrichmentConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/IndexStatistics)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/IndexStatistics)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/IndexStatistics)
 
 All content copied from https://docs.aws.amazon.com/.

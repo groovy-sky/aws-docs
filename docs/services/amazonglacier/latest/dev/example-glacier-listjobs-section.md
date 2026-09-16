@@ -1,36 +1,29 @@
 ---
-title: "Use ListJobs with an AWS SDK or CLI"
+title: "Use `ListJobs` with an AWS SDK or CLI"
 ---
 
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
-If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).
+If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/).
 
-Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3).
+Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/).
 
 # Use `ListJobs` with an AWS SDK or CLI
+<a name="example_glacier_ListJobs_section"></a>
 
 The following code examples show how to use `ListJobs`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in
-context in the following code examples:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
++  [Archive a file, get notifications, and initiate a job](example_glacier_Usage_UploadNotifyInitiate_section.md)
++  [Get archive content and delete the archive](example_glacier_Usage_RetrieveDelete_section.md)
 
-- [Archive a file, get notifications, and initiate a job](example-glacier-usage-uploadnotifyinitiate-section.md)
-
-- [Get archive content and delete the archive](example-glacier-usage-retrievedelete-section.md)
-
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier).
-
-```csharp
-
+```
     /// <summary>
     /// List Amazon S3 Glacier jobs.
     /// </summary>
@@ -51,29 +44,21 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 
         return response.JobList;
     }
-
 ```
++  For API details, see [ListJobs](https://docs.aws.amazon.com/goto/DotNetSDKV3/glacier-2012-06-01/ListJobs) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[ListJobs](../../../../reference/goto/dotnetsdkv3/glacier-2012-06-01/listjobs.md)
-in _AWS SDK for .NET API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 The following command lists in-progress and recently completed jobs for a vault named `my-vault`:
 
-```nohighlight
-
-aws glacier list-jobs --account-id - --vault-name my-vault
-
 ```
-
+aws glacier list{{-}}jobs --account-id - --vault-name {{my-vault}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "JobList": [
         {
@@ -105,25 +90,16 @@ Output:
     ]
 }
 ```
-
 Amazon Glacier requires an account ID argument when performing operations, but you can use a hyphen to specify the in-use account.
++  For API details, see [ListJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glacier/list-jobs.html) in *AWS CLI Command Reference*.
 
-- For API details, see
-[ListJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glacier/list-jobs.html)
-in _AWS CLI Command Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier).
-
-```python
-
+```
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -165,21 +141,11 @@ class GlacierWrapper:
             raise
         else:
             return job_list
-
 ```
++  For API details, see [ListJobs](https://docs.aws.amazon.com/goto/boto3/glacier-2012-06-01/ListJobs) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[ListJobs](../../../goto/boto3/glacier-2012-06-01/listjobs.md)
-in _AWS SDK for Python (Boto3) API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using Amazon Glacier with an AWS SDK](../../../../reference/amazonglacier/latest/dev/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InitiateJob
-
-ListTagsForVault
+For a complete list of AWS SDK developer guides and code examples, see [Using Amazon Glacier with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,113 +2,38 @@
 title: "IAM role for an Amazon Q Business web experience using IAM Federation"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # IAM role for an Amazon Q Business web experience using IAM Federation
+<a name="web-experience-iam-role-iam"></a>
 
-###### Important
-
-This page only applies to Amazon Q Business web experiences connected to
-IAM Federated Amazon Q Business applications.
+**Important**
+This page only applies to Amazon Q Business web experiences connected to IAM Federated Amazon Q Business applications.
 
 **Policy history**
-
-- **Latest policy update:** — December 3,
-2024
++ **Latest policy update:** — December 3, 2024
 
 The following table list and describes the changes to this policy over time.
 
-ChangeDescriptionDate
+| Change | Description | Date |
+| --- | --- | --- |
+| Amazon Q Business now supports deleting attachments | To enable delete attachments support on chats, modify your *Web experience IAM role* by adding the permission `qbusiness:DeleteAttachment`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, users can remove attached files in conversations. | 2/27/2025 |
+| Amazon Q Business plugin actions support | To allow Amazon Q Business to list plugin actions and to allow end users to discover plugins in their web experience, modify the existing *Web experience IAM role* by adding the following permissions: `qbusiness:ListPluginActions`, `qbusiness:ListPluginTypeMetadata`, and `qbusiness:ListPluginTypeActions`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, Amazon Q Business can list plugin actions and web experience users can discover plugins in their web experience. For more information, see [Prerequisites for configuring Amazon Q Business built-in plugins](basic-plugins-prereqs.md). | 12/03/2024 |
+| Embedded visual content support | To enable extracting semantic meaning from embedded visual content, modify the existing *Web experience IAM role* by adding the permission `qbusiness:GetMedia`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, if you enable content extraction for a data source, web experience users can ask questions and get answers related to the images. When an end user asks a question, Amazon Q Business retrieves relevant answers from the text and the images. Answers include the images and links for the documents that contain them. For more information, see [Extracting semantic meaning from embedded visual content with Amazon Q Business](extracting-meaning-from-images.md). | 12/01/2024 |
+| Recent files support | To enable recent files support on web experiences, modify the existing *Web experience IAM role* by adding the permission `qbusiness:ListAttachments`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, users can find and reuse any recently attached files in new conversations without uploading the files again. Additionally, users can now drag and drop files they want to upload directly into any conversation inside their Amazon Q web experience. | 11/21/2024 |
 
-Amazon Q Business now supports deleting
-attachments
+**Note**
+To find the IAM role ARN for your web experience you can go to ****Amazon Q Business** → **Applications** → *choose your application* **Name** → **Web experience settings**** in the Amazon Q Business console.
 
-To enable delete attachments support on chats, modify your
-_Web experience IAM role_ by adding the
-permission `qbusiness:DeleteAttachment`. The scoping for
-this new permission should be similar to other
-`qbusiness:` conversation permissions.
+The following IAM policies allow you to invoke the API operations required for an application environment using Identity Federation through IAM (IAM Federation) to manage user access or deploy a web experience using an external IdP.
 
-With this change, users can remove attached files in
-conversations.
+**Note**
+You must create and update an IAM policy for your Amazon Q Business application (both console and API) before you begin creating it. Amazon Q Business doesn't auto-create IAM roles for your IAM Federation application if you use the console.
 
-2/27/2025
+ To allow an Amazon Q Business web experience to invoke the API operations required to integrate your application environment and deploy your web experience with an AWS Identity and Access Management instance, use the following policy:
 
-Amazon Q Business plugin actions
-support
-
-To allow Amazon Q Business to list plugin actions and to
-allow end users to discover plugins in their web experience, modify
-the existing _Web experience IAM role_ by adding
-the following permissions: `qbusiness:ListPluginActions`,
-`qbusiness:ListPluginTypeMetadata`, and
-`qbusiness:ListPluginTypeActions`. The scoping for
-this new permission should be similar to other
-`qbusiness:` conversation permissions.
-
-With this change, Amazon Q Business can list plugin actions and web
-experience users can discover plugins in their web experience. For
-more information, see [Prerequisites for configuring Amazon Q Business built-in plugins](basic-plugins-prereqs.md).
-
-12/03/2024
-
-Embedded visual content support
-
-To enable extracting semantic meaning from embedded visual
-content, modify the existing _Web experience IAM_
-_role_ by adding the permission
-`qbusiness:GetMedia`. The scoping for this new
-permission should be similar to other `qbusiness:`
-conversation permissions.
-
-With this change, if you enable content extraction for a data
-source, web experience users can ask questions and get answers
-related to the images. When an end user asks a question, Amazon Q Business
-retrieves relevant answers from the text and the images. Answers
-include the images and links for the documents that contain them.
-For more information, see [Extracting semantic meaning from embedded visual content with Amazon Q Business](extracting-meaning-from-images.md).
-
-12/01/2024
-
-Recent files support
-
-To enable recent files support on web experiences, modify the
-existing _Web experience IAM role_ by adding the
-permission `qbusiness:ListAttachments`. The scoping for
-this new permission should be similar to other
-`qbusiness:` conversation permissions.
-
-With this change, users can find and reuse any recently attached
-files in new conversations without uploading the files again.
-Additionally, users can now drag and drop files they want to upload
-directly into any conversation inside their Amazon Q web
-experience.
-
-11/21/2024
-
-###### Note
-
-To find the IAM role ARN for your web experience you can go to
-**Amazon Q Business →**
-**Applications → _choose your_**
-**_application_Name → Web experience**
-**settings** in the Amazon Q Business console.
-
-The following IAM policies allow you to invoke the API operations
-required for an application environment using Identity Federation through IAM (IAM Federation)
-to manage user access or deploy a web experience using an external IdP.
-
-###### Note
-
-You must create and update an IAM policy for your Amazon Q Business
-application (both console and API) before you begin creating it. Amazon Q Business doesn't auto-create IAM roles for your IAM Federation
-application if you use the console.
-
-To allow an Amazon Q Business web experience to invoke the API operations
-required to integrate your application environment and deploy your web experience with
-an AWS Identity and Access Management instance, use the following policy:
-
-###### Note
-
-To make use of the Clickable URL feature, add the following permissions to the IAM role for your Amazon Q web experience.
+**Note**
+ To make use of the Clickable URL feature, add the following permissions to the IAM role for your Amazon Q web experience.
 
 ```
 
@@ -121,13 +46,14 @@ To make use of the Clickable URL feature, add the following permissions to the I
         "arn:aws:qbusiness:{{region}}:{{source_account}}:application/{{application_id}}/index/*"
     ]
 }
-
 ```
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -151,7 +77,7 @@ JSON
                 "qbusiness:GetMedia",
                 "qbusiness:DeleteAttachment"
             ],
-            "Resource": "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+            "Resource": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
         },
         {
             "Sid": "QBusinessPluginDiscoveryPermissions",
@@ -169,8 +95,8 @@ JSON
                 "qbusiness:GetRetriever"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id",
-                "arn:aws:qbusiness:us-east-1:111122223333:application/application-id/retriever/*"
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}",
+                "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}/retriever/*"
             ]
         },
         {
@@ -198,7 +124,7 @@ JSON
                 "kms:Decrypt"
             ],
             "Resource": [
-                "arn:aws:kms:us-east-1:111122223333:key/key-id"
+                "arn:aws:kms:us-east-1:111122223333:key/{{key-id}}"
             ],
             "Condition": {
                 "StringLike": {
@@ -221,7 +147,7 @@ JSON
                 "qapps:ListLibraryItems",
                 "qapps:CreateSubscriptionToken"
             ],
-            "Resource": "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+            "Resource": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
         },
         {
             "Sid": "QAppsAppUniversalPermissions",
@@ -229,7 +155,7 @@ JSON
             "Action": [
                 "qapps:DisassociateQAppFromUser"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/application-id/qapp/*"
+            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/{{application-id}}/qapp/*"
         },
         {
             "Sid": "QAppsAppOwnerPermissions",
@@ -244,7 +170,7 @@ JSON
                 "qapps:UpdateLibraryItem",
                 "qapps:StartQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/application-id/qapp/*",
+            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/{{application-id}}/qapp/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:UserIsAppOwner": "true"
@@ -264,7 +190,7 @@ JSON
                 "qapps:DisassociateLibraryItemReview",
                 "qapps:StartQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/application-id/qapp/*",
+            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/{{application-id}}/qapp/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:AppIsPublished": "true"
@@ -282,7 +208,7 @@ JSON
                 "qapps:UpdateQAppSessionMetadata",
                 "qapps:StopQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/application-id/qapp/*/session/*",
+            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/{{application-id}}/qapp/*/session/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:UserIsSessionModerator": "true"
@@ -298,7 +224,7 @@ JSON
                 "qapps:GetQAppSessionMetadata",
                 "qapps:UpdateQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/application-id/qapp/*/session/*",
+            "Resource": "arn:aws:qapps:us-east-1:111122223333:application/{{application-id}}/qapp/*/session/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:SessionIsShared": "true"
@@ -307,17 +233,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q to assume this role for a web**
-**experience using SAML-compliant identity provider for user management, use the**
-**following trust policy:**
+------
 
-JSON
+**To allow Amazon Q to assume this role for a web experience using SAML-compliant identity provider for user management, use the following trust policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -327,11 +254,11 @@ JSON
             "Effect": "Allow",
             "Condition": {
                 "StringEquals": {
-                    "SAML:aud": "https://q-web-experience-domain/saml"
+                    "SAML:aud": "https://{{q-web-experience-domain}}/saml"
                 }
             },
             "Principal": {
-                "Federated": "arn:aws:iam::111122223333:saml-provider/[[saml_provider]]"
+                "Federated": "arn:aws:iam::111122223333:saml-provider/[[{{saml_provider}}]]"
             }
         },
         {
@@ -344,26 +271,25 @@ JSON
                 }
             },
             "Principal": {
-                "Federated": "arn:aws:iam::111122223333:saml-provider/[[saml_provider]]"
+                "Federated": "arn:aws:iam::111122223333:saml-provider/[[{{saml_provider}}]]"
             }
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q to assume this role for a web**
-**experience using an OIDC-compliant identity provider for user management, use the**
-**following trust policy:**
+------
 
-**To allow an Amazon Q Business web experience to access**
-**AWS KMS to decrypt an OIDC client secret stored in Secrets Manager for an OIDC-based identity**
-**provider:**
+**To allow Amazon Q to assume this role for a web experience using an OIDC-compliant identity provider for user management, use the following trust policy:**
 
-JSON
+**To allow an Amazon Q Business web experience to access AWS KMS to decrypt an OIDC client secret stored in Secrets Manager for an OIDC-based identity provider:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -374,7 +300,7 @@ JSON
                 "secretsmanager:GetSecretValue"
             ],
             "Resource": [
-                "arn:aws:secretsmanager:us-east-1:111122223333:secret:secret-id"
+                "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{secret-id}}"
             ]
         },
         {
@@ -384,7 +310,7 @@ JSON
                 "kms:Decrypt"
             ],
             "Resource": [
-                "arn:aws:kms:us-east-1:111122223333:key/key-id"
+                "arn:aws:kms:us-east-1:111122223333:key/{{key-id}}"
             ],
             "Condition": {
                 "StringLike": {
@@ -396,17 +322,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q to assume the role to decrypt an**
-**OIDC client secret stored in Secrets Manager, use the following trust**
-**policy:**
+------
 
-JSON
+**To allow Amazon Q to assume the role to decrypt an OIDC client secret stored in Secrets Manager, use the following trust policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -422,19 +349,14 @@ JSON
                     "aws:SourceAccount": "111122223333"
                 },
                 "ArnLike": {
-                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/application-id"
+                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
                 }
             }
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IAM Identity Center web experience
-
-Amazon Q Apps
+------
 
 All content copied from https://docs.aws.amazon.com/.

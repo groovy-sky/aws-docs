@@ -3,120 +3,69 @@ title: "AttributeFilter"
 ---
 
 # AttributeFilter
+<a name="API_AttributeFilter"></a>
 
 Enables filtering of responses based on document attributes or metadata fields.
 
 ## Contents
+<a name="API_AttributeFilter_Contents"></a>
 
-**andAllFilters**
-
+ ** andAllFilters **   <a name="qbusiness-Type-AttributeFilter-andAllFilters"></a>
 Performs a logical `AND` operation on all supplied filters.
-
-Type: Array of [AttributeFilter](api-attributefilter.md) objects
-
+Type: Array of [AttributeFilter](#API_AttributeFilter) objects
 Required: No
 
-**containsAll**
-
-Returns `true` when a document contains all the specified document
-attributes or metadata fields. Supported for the following [document attribute value types](api-documentattributevalue.md):
-`stringListValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** containsAll **   <a name="qbusiness-Type-AttributeFilter-containsAll"></a>
+Returns `true` when a document contains all the specified document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `stringListValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**containsAny**
-
-Returns `true` when a document contains any of the specified document
-attributes or metadata fields. Supported for the following [document attribute value types](api-documentattributevalue.md):
-`stringListValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** containsAny **   <a name="qbusiness-Type-AttributeFilter-containsAny"></a>
+Returns `true` when a document contains any of the specified document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `stringListValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**equalsTo**
-
-Performs an equals operation on two document attributes or metadata fields. Supported
-for the following [document attribute value types](api-documentattributevalue.md): `dateValue`,
-`longValue`, `stringListValue` and
-`stringValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** equalsTo **   <a name="qbusiness-Type-AttributeFilter-equalsTo"></a>
+Performs an equals operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue`, `longValue`, `stringListValue` and `stringValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**greaterThan**
-
-Performs a greater than operation on two document attributes or metadata fields.
-Supported for the following [document attribute value types](api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** greaterThan **   <a name="qbusiness-Type-AttributeFilter-greaterThan"></a>
+Performs a greater than operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**greaterThanOrEquals**
-
-Performs a greater or equals than operation on two document attributes or metadata
-fields. Supported for the following [document attribute value types](api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** greaterThanOrEquals **   <a name="qbusiness-Type-AttributeFilter-greaterThanOrEquals"></a>
+Performs a greater or equals than operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**lessThan**
-
-Performs a less than operation on two document attributes or metadata fields.
-Supported for the following [document attribute value types](api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** lessThan **   <a name="qbusiness-Type-AttributeFilter-lessThan"></a>
+Performs a less than operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**lessThanOrEquals**
-
-Performs a less than or equals operation on two document attributes or metadata
-fields.Supported for the following [document attribute value type](api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-Type: [DocumentAttribute](api-documentattribute.md) object
-
+ ** lessThanOrEquals **   <a name="qbusiness-Type-AttributeFilter-lessThanOrEquals"></a>
+Performs a less than or equals operation on two document attributes or metadata fields.Supported for the following [document attribute value type](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+Type: [DocumentAttribute](API_DocumentAttribute.md) object
 Required: No
 
-**notFilter**
-
+ ** notFilter **   <a name="qbusiness-Type-AttributeFilter-notFilter"></a>
 Performs a logical `NOT` operation on all supplied filters.
-
-Type: [AttributeFilter](api-attributefilter.md) object
-
+Type: [AttributeFilter](#API_AttributeFilter) object
 Required: No
 
-**orAllFilters**
-
-Performs a logical `OR` operation on all supplied filters.
-
-Type: Array of [AttributeFilter](api-attributefilter.md) objects
-
+ ** orAllFilters **   <a name="qbusiness-Type-AttributeFilter-orAllFilters"></a>
+ Performs a logical `OR` operation on all supplied filters.
+Type: Array of [AttributeFilter](#API_AttributeFilter) objects
 Required: No
 
 ## See Also
+<a name="API_AttributeFilter_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/attributefilter.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/attributefilter.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/attributefilter.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttachmentsConfiguration
-
-AudioExtractionConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/AttributeFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/AttributeFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/AttributeFilter)
 
 All content copied from https://docs.aws.amazon.com/.

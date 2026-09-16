@@ -2,503 +2,70 @@
 title: "Connecting Amazon Q Business to SharePoint (Online) using AWS CloudFormation"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to SharePoint (Online) using AWS CloudFormation
+<a name="sharepoint-cloud-cfn"></a>
 
-You use the [`AWS::QBusiness::DataSource`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md) resource to connect a data source to
-your Amazon Q application.
+You use the [`AWS::QBusiness::DataSource`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
 
-Use the [`configuration`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary
-configuration details specific to your data source connector.
+Use the [`configuration`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
 
-To learn more about AWS CloudFormation, see
-[What is AWS CloudFormation?](../../../cloudformation/latest/userguide/welcome.md)
-in the _CloudFormation User Guide_.
+To learn more about AWS CloudFormation, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in the *CloudFormation User Guide*.
 
-###### Topics
-
-- [SharePoint (Online) configuration properties](#sharepoint-cloud-configuration-keys)
-
-- [SharePoint (Online) JSON schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-json)
-
-- [SharePoint (Online) YAML schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-yaml)
+**Topics**
++ [SharePoint (Online) configuration properties](#sharepoint-cloud-configuration-keys)
++ [SharePoint (Online) JSON schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-json)
++ [SharePoint (Online) YAML schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-yaml)
 
 ## SharePoint (Online) configuration properties
-
-The following provides information about important configuration properties required in the
-schema.
-
-ConfigurationDescriptionTypeRequired
-
-`connectionConfiguration`
-
-Configuration information for the endpoint for the data source.
-
-`object`
-
-This property has a sub-property called
-`repositoryEndpointMetadata`.
-
-Yes
-
-`repositoryEndpointMetadata`
-
-The endpoint information for the data source.
-
-`object`
-
-This property has the following sub-properties.
-
-- `siteUrls`
-
-- `domain`
-
-- `repositoryAdditionalProperties`
-
-- `tenantId`
-
-Yes
-
-`tenantId`
-
-The tenant id of your SharePoint (Online) account.
-
-`string`
-
-OAuth2 series required
-
-Yes
-
-`domain`
-
-The domain of your SharePoint (Online) account.
-
-`string`
-
-Yes
-
-`siteUrls`
-
-The host URLs of your SharePoint (Online) account.
-
-`array (string)`
-
-Specify the URL in the pattern `https://*`
-
-Yes
-
-`repositoryAdditionalProperties`
-
-Additional properties to connect with your repository endpoint.
-
-`object`
-
-This property has the following sub-properties.
-
-- `version`
-
-- `authType`
-
-- `s3bucketName`
-
-- `s3certificateName`
-
-Yes
-
-`s3bucketName`
-
-The name of the Amazon S3 bucket that stores your Azure AD self-signed
-X.509 certificate.
-
-`string`
-
-Azure AD App-Only auth required
-
-No
-
-`s3certificateName`
-
-The name of the SSL certificate stored in your Amazon S3 bucket.
-
-`string`
-
-Azure AD App-Only auth required
-
-No
-
-`authType`
-
-The type of authentication you are using: `OAuth2`,
-`OAuth2Certificate`, `OAuth2App`, or `Basic`.
-
-`string`
-
-Yes
-
-`version`
-
-The SharePoint version you are using: `Online`.
-
-`string (Online)`
-
-Azure AD App-Only auth required
-
-Yes
-
-`repositoryConfigurations`
-
-Configuration information for the content of the data source. For example,
-configuring specific types of content and field mappings.
-
-`object`
-
-This property has the following sub-properties.
-
-- `event`
-
-- `page`
-
-- `file`
-
-- `link`
-
-- `attachment`
-
-- `comment`
-
-Yes
-
-- `event`
-
-- `page`
-
-- `file`
-
-- `link`
-
-- `attachment`
-
-- `comment`
-
-A list of objects that map the attributes or field names of your SharePoint (Online)
-pages and assets to Amazon Q index field names.
-
-`object`
-
-These properties have the following sub-properties.
-
-- `indexFieldName`
-
-- `indexFieldType`
-
-- `dataSourceFieldName`
-
-- `dateFieldFormat`
-
-No
-
-`indexFieldName`
-
-The field name of your SharePoint (Online) events, pages, files, links, attachments,
-or comments.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your SharePoint (Online) events, pages, files, links, attachments,
-or comments.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`, and
-`DATE`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your SharePoint (Online) events, pages, files, links,
-attachments, or comments.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your SharePoint (Online) events, pages, files, links,
-attachments, or comments.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'`
-
-No
-
-`additionalProperties`
-
-Additional configuration options for your content in your data source.
-
-`object`
-
-This property has the following sub-properties:
-
-- `crawlAcl`
-
-- `crawlFiles`
-
-- `crawlPages`
-
-- `crawlEvents`
-
-- `crawlComments`
-
-- `crawlLinks`
-
-- `crawlAttachments`
-
-- `crawlListData`
-
-- `isCrawlLocalGroupMapping`
-
-- `maxFileSizeInMegaBytes`
-
-- `eventTitleFilterRegEx`
-
-- `pageTitleFilterRegEx`
-
-- `linkTitleFilterRegEx`
-
-- `inclusionFilePath`
-
-- `exclusionFilePath`
-
-- `inclusionFileTypePatterns`
-
-- `exclusionFileTypePatterns`
-
-- `inclusionFileNamePatterns`
-
-- `exclusionFileNamePatterns`
-
-- `inclusionOneNoteSectionNamePatterns`
-
-- `exclusionOneNoteSectionNamePatterns`
-
-- `inclusionOneNotePageNamePatterns`
-
-- `exclusionOneNotePageNamePatterns`
-
-Yes
-
-- `eventTitleFilterRegEx`
-
-- `pageTitleFilterRegEx`
-
-- `linkTitleFilterRegEx`
-
-- `inclusionFilePath`
-
-- `exclusionFilePath`
-
-- `inclusionFileTypePatterns`
-
-- `exclusionFileTypePatterns`
-
-- `inclusionFileNamePatterns`
-
-- `exclusionFileNamePatterns`
-
-- `inclusionOneNoteSectionNamePatterns`
-
-- `exclusionOneNoteSectionNamePatterns`
-
-- `inclusionOneNotePageNamePatterns`
-
-- `exclusionOneNotePageNamePatterns`
-
-A list of regular expression patterns to include/exclude specific files in your
-SharePoint (Online) data source. Files that match the patterns are included in the index.
-File that don't match the patterns are excluded from the index. If a file matches both
-an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file
-isn't included in the index.
-
-`array (string)`
-
-No
-
-- `crawlFiles`
-
-- `crawlPages`
-
-- `crawlEvents`
-
-- `crawlComments`
-
-- `crawlLinks`
-
-- `crawlAttachments`
-
-- `crawlListData`
-
-- `crawlAcl`
-
-###### Note
-
-Amazon Q Business crawls ACL information by default to ensure
-responses are generated only from documents your end users have access to. See
-[Authorization](connector-concepts.md#connector-authorization) for more details.
-
-- `isCrawlLocalGroupMapping`
-
-- `isCrawlAdGroupMapping`
-
-Input `TRUE` to index.
-
-`boolean`
-
-No
-
-`maxFileSizeInMegaBytes`
-
-Specify the maximum single file size limit in MBs that Amazon Q will crawl.
-Amazon Q will crawl only the files within the size limit you define. The default file
-size is 50MB. The maximum file size should be greater than 0MB and less than or equal to
-50MB.
-
-`string`
-
-No
-
-`type`
-
-We recommend that you use `SHAREPOINTV2` as your data source
-type
-
-`string`
-
-Valid values are `SHAREPOINTV2` and
-`SHAREPOINT`.
-
-Yes
-
-`enableIdentityCrawler`
-
-`true` to activate identity crawler. Identity crawler is activated
-by default. Crawling identity information on users and groups with access to specific
-documents is useful for user context filtering. Search results are filtered based on
-the user or their group access to documents.
-
-###### Note
-
-Amazon Q Business crawls identity information from your data source by
-default to ensure responses are generated only from documents end users have access
-to. For more information, see [Identity crawler](connector-concepts.md#connector-identity-crawler).
-
-`boolean`
-
-Yes
-
-`syncMode`
-
-Specify whether Amazon Q should update your index by syncing all
-documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options:
-
-- Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace
-existing content each time your data source syncs with your index
-
-- Use `FULL_CRAWL` to incrementally crawl only new, modified, and
-deleted content each time your data source syncs with your index
-
-- Use `CHANGE_LOG` to incrementally crawl only new and modified
-content each time your data source syncs with your index
-
-Yes
-
-`secretARN`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains
-the key-value pairs required to connect to your SharePoint. If you use basic
-authentication, provide the username and password. If you use OAuth 2.0 authentication,
-provide the username, password, client ID, and client secret.
-
-`string`
-
-The minimum length is 20 and the maximum length is 2,048 characters.
-
-If you
-use basic authentication ( `authType` should be `Basic`), the secret must contain a JSON structure with the
-following keys:
-
-```json
-
-{
-    "username": "SharePoint (Online) account user name",
-    "password": "SharePoint (Online) password"
-}
-```
-
-If you use Azure AD App-only authentication ( `authType` should be
-`OAuth2Certificate`), the secret must contain a JSON structure with the
-following keys:
-
-```json
-
-{
-    "clientId": "SharePoint (Online) client ID",
-    "privateKey": "SharePoint (Online) private key"
-}
-```
-
-If you use OAuth2 authentication ( `authType` should be
-`OAuth`) or Sharepoint App-Only authentication ( `authType`
-should be `OAuth2App`) the secret must contain a JSON structure with the
-following keys:
-
-```json
-
-{
-  "clientId": "SharePoint (Online) client ID",
-  "clientSecret": "SharePoint (Online) client secret",
-  "userName": "SharePoint (Online) account user name",
-  "password": "SharePoint (Online) password"
-}
-```
-
-Yes
-
-`version`
-
-The version of this template that's currently supported.
-
-`string`
-
-No
+<a name="sharepoint-cloud-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has a sub-property called `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-properties.+  `siteUrls` <br />+  `domain` <br />+  `repositoryAdditionalProperties` <br />+  `tenantId`  | Yes |
+| `tenantId` | The tenant id of your SharePoint (Online) account. | `string`<br />OAuth2 series required | Yes |
+| `domain` | The domain of your SharePoint (Online) account. | `string` | Yes |
+| `siteUrls` | The host URLs of your SharePoint (Online) account. | `array (string)`<br />Specify the URL in the pattern `https://*` | Yes |
+| `repositoryAdditionalProperties` | Additional properties to connect with your repository endpoint. | `object`<br />This property has the following sub-properties.+  `version` <br />+  `authType` <br />+  `s3bucketName` <br />+  `s3certificateName`  | Yes |
+| `s3bucketName` | The name of the Amazon S3 bucket that stores your Azure AD self-signed X.509 certificate. | `string`<br />Azure AD App-Only auth required | No |
+| `s3certificateName` | The name of the SSL certificate stored in your Amazon S3 bucket. | `string`<br />Azure AD App-Only auth required | No |
+| `authType` | The type of authentication you are using: OAuth2, OAuth2Certificate, OAuth2App, or Basic. | `string` | Yes |
+| `version` | The SharePoint version you are using: Online. | `string (Online)`<br />Azure AD App-Only auth required | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties.+  `event` <br />+  `page` <br />+  `file` <br />+  `link` <br />+  `attachment` <br />+  `comment`  | Yes |
+|  +  `event` <br />+  `page` <br />+  `file` <br />+  `link` <br />+  `attachment` <br />+  `comment`   | A list of objects that map the attributes or field names of your SharePoint (Online) pages and assets to Amazon Q index field names. | `object`<br />These properties have the following sub-properties.+  `indexFieldName` <br />+  `indexFieldType` <br />+  `dataSourceFieldName` <br />+  `dateFieldFormat`  | No |
+| `indexFieldName` | The field name of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string` | Yes |
+| `indexFieldType` | The field type of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string` | Yes |
+| `dateFieldFormat` | The date format of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties:+  `crawlAcl` <br />+  `crawlFiles` <br />+  `crawlPages` <br />+  `crawlEvents` <br />+  `crawlComments` <br />+  `crawlLinks` <br />+  `crawlAttachments` <br />+  `crawlListData` <br />+  `isCrawlLocalGroupMapping` <br />+  `maxFileSizeInMegaBytes` <br />+  `eventTitleFilterRegEx` <br />+  `pageTitleFilterRegEx` <br />+  `linkTitleFilterRegEx` <br />+  `inclusionFilePath` <br />+  `exclusionFilePath` <br />+  `inclusionFileTypePatterns` <br />+  `exclusionFileTypePatterns` <br />+  `inclusionFileNamePatterns` <br />+  `exclusionFileNamePatterns` <br />+  `inclusionOneNoteSectionNamePatterns` <br />+  `exclusionOneNoteSectionNamePatterns` <br />+  `inclusionOneNotePageNamePatterns` <br />+  `exclusionOneNotePageNamePatterns`  | Yes |
+|  +  `eventTitleFilterRegEx` <br />+  `pageTitleFilterRegEx` <br />+  `linkTitleFilterRegEx` <br />+  `inclusionFilePath` <br />+  `exclusionFilePath` <br />+  `inclusionFileTypePatterns` <br />+  `exclusionFileTypePatterns` <br />+  `inclusionFileNamePatterns` <br />+  `exclusionFileNamePatterns` <br />+  `inclusionOneNoteSectionNamePatterns` <br />+  `exclusionOneNoteSectionNamePatterns` <br />+  `inclusionOneNotePageNamePatterns` <br />+  `exclusionOneNotePageNamePatterns`  | A list of regular expression patterns to include/exclude specific files in your SharePoint (Online) data source. Files that match the patterns are included in the index. File that don't match the patterns are excluded from the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file isn't included in the index. | `array (string)` | No |
+| +  `crawlFiles` <br />+  `crawlPages` <br />+  `crawlEvents` <br />+  `crawlComments` <br />+  `crawlLinks` <br />+  `crawlAttachments` <br />+  `crawlListData` <br />+  `crawlAcl`  Amazon Q Business crawls ACL information by default to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  <br />+  `isCrawlLocalGroupMapping` <br />+  `isCrawlAdGroupMapping`  | Input TRUE to index. | `boolean` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `type` | We recommend that you use SHAREPOINTV2 as your data source type | `string`<br />Valid values are `SHAREPOINTV2` and `SHAREPOINT`. | Yes |
+| `enableIdentityCrawler` | `true` to activate identity crawler. Identity crawler is activated by default. Crawling identity information on users and groups with access to specific documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents. Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents.  | `string`<br />You can choose between the following options:+  Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index <br />+  Use `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index <br />+  Use `CHANGE_LOG` to incrementally crawl only new and modified content each time your data source syncs with your index  | Yes |
+| `secretARN` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your SharePoint. If you use basic authentication, provide the username and password. If you use OAuth 2.0 authentication, provide the username, password, client ID, and client secret. | `string`<br />The minimum length is 20 and the maximum length is 2,048 characters. If you use basic authentication (authType should be Basic), the secret must contain a JSON structure with the following keys: <pre>{<br />    "username": "{{SharePoint (Online) account user name}}",<br />    "password": "{{SharePoint (Online) password}}"<br />}</pre>If you use Azure AD App-only authentication (authType should be OAuth2Certificate), the secret must contain a JSON structure with the following keys: <pre>{<br />    "clientId": "{{SharePoint (Online) client ID}}",<br />    "privateKey": "{{SharePoint (Online) private key}}"<br />}</pre>If you use OAuth2 authentication (authType should be OAuth) or Sharepoint App-Only authentication (authType should be OAuth2App) the secret must contain a JSON structure with the following keys: <pre>{<br />  "clientId": "{{SharePoint (Online) client ID}}",<br />  "clientSecret": "{{SharePoint (Online) client secret}}",<br />  "userName": "{{SharePoint (Online) account user name}}",<br />  "password": "{{SharePoint (Online) password}}"<br />}</pre> | Yes |
+| `version` | The version of this template that's currently supported. | `string` | No |
 
 ## SharePoint (Online) JSON schema for using the configuration property with AWS CloudFormation
+<a name="sharepoint-cloud-cfn-json"></a>
 
-The following is the SharePoint (Online) JSON schema and examples for the configuration
-property for AWS CloudFormation.
+The following is the SharePoint (Online) JSON schema and examples for the configuration property for AWS CloudFormation.
 
-###### Topics
-
-- [SharePoint (Online) JSON schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-json-schema)
-
-- [SharePoint (Online) JSON schema example for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-json-example)
+**Topics**
++ [SharePoint (Online) JSON schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-json-schema)
++ [SharePoint (Online) JSON schema example for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-json-example)
 
 ### SharePoint (Online) JSON schema for using the configuration property with AWS CloudFormation
+<a name="sharepoint-cloud-cfn-json-schema"></a>
 
-The following is the SharePoint (Online) JSON schema for the configuration property for
-CloudFormation
+The following is the SharePoint (Online) JSON schema for the configuration property for CloudFormation
 
-```json
-
+```
 {
   "type": "object",
   "properties": {
@@ -1040,15 +607,12 @@ CloudFormation
 }
 ```
 
-Show moreShow less
-
 ### SharePoint (Online) JSON schema example for using the configuration property with AWS CloudFormation
+<a name="sharepoint-cloud-cfn-json-example"></a>
 
-The following is the SharePoint (Online) JSON schema example for the configuration
-property for CloudFormation
+The following is the SharePoint (Online) JSON schema example for the configuration property for CloudFormation
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation SHAREPOINT Data Source Template",
@@ -1122,26 +686,21 @@ property for CloudFormation
 }
 ```
 
-Show moreShow less
-
 ## SharePoint (Online) YAML schema for using the configuration property with AWS CloudFormation
+<a name="sharepoint-cloud-cfn-yaml"></a>
 
-The following is the SharePoint (Online) YAML schema and examples for the configuration
-property for AWS CloudFormation:
+The following is the SharePoint (Online) YAML schema and examples for the configuration property for AWS CloudFormation:
 
-###### Topics
-
-- [SharePoint (Online) YAML schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-yaml-schema)
-
-- [SharePoint (Online) YAML schema example for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-yaml-example)
+**Topics**
++ [SharePoint (Online) YAML schema for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-yaml-schema)
++ [SharePoint (Online) YAML schema example for using the configuration property with AWS CloudFormation](#sharepoint-cloud-cfn-yaml-example)
 
 ### SharePoint (Online) YAML schema for using the configuration property with AWS CloudFormation
+<a name="sharepoint-cloud-cfn-yaml-schema"></a>
 
-The following is the SharePoint (Online) YAML schema for the configuration property for
-CloudFormation.
+The following is the SharePoint (Online) YAML schema for the configuration property for CloudFormation.
 
-```yaml
-
+```
 $schema: http://json-schema.org/draft-04/schema#
 type: object
 properties:
@@ -1540,15 +1099,12 @@ required:
   - additionalProperties
 ```
 
-Show moreShow less
-
 ### SharePoint (Online) YAML schema example for using the configuration property with AWS CloudFormation
+<a name="sharepoint-cloud-cfn-yaml-example"></a>
 
-The following is the SharePoint (Online) YAML example for the Configuration property for
-CloudFormation:
+The following is the SharePoint (Online) YAML example for the Configuration property for CloudFormation:
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation SHAREPOINT Data Source Template
 Resources:
@@ -1612,13 +1168,5 @@ Resources:
           enableDeletionProtection: "false"
           maxFileSizeInMegaBytes: "50"
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the API
-
-ACL crawling
 
 All content copied from https://docs.aws.amazon.com/.

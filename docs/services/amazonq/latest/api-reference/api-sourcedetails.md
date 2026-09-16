@@ -3,53 +3,37 @@ title: "SourceDetails"
 ---
 
 # SourceDetails
+<a name="API_SourceDetails"></a>
 
 Container for details about different types of media sources (image, audio, or video).
 
 ## Contents
+<a name="API_SourceDetails_Contents"></a>
 
-###### Important
-
+**Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
-**audioSourceDetails**
-
+ ** audioSourceDetails **   <a name="qbusiness-Type-SourceDetails-audioSourceDetails"></a>
 Details specific to audio content within the source.
-
-Type: [AudioSourceDetails](api-audiosourcedetails.md) object
-
+Type: [AudioSourceDetails](API_AudioSourceDetails.md) object
 Required: No
 
-**imageSourceDetails**
-
+ ** imageSourceDetails **   <a name="qbusiness-Type-SourceDetails-imageSourceDetails"></a>
 Details specific to image content within the source.
-
-Type: [ImageSourceDetails](api-imagesourcedetails.md) object
-
+Type: [ImageSourceDetails](API_ImageSourceDetails.md) object
 Required: No
 
-**videoSourceDetails**
-
+ ** videoSourceDetails **   <a name="qbusiness-Type-SourceDetails-videoSourceDetails"></a>
 Details specific to video content within the source.
-
-Type: [VideoSourceDetails](api-videosourcedetails.md) object
-
+Type: [VideoSourceDetails](API_VideoSourceDetails.md) object
 Required: No
 
 ## See Also
+<a name="API_SourceDetails_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/sourcedetails.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/sourcedetails.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/sourcedetails.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SourceAttribution
-
-StringAttributeBoostingConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/SourceDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/SourceDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/SourceDetails)
 
 All content copied from https://docs.aws.amazon.com/.

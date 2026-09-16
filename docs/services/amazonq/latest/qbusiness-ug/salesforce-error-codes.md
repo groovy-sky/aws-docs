@@ -2,17 +2,29 @@
 title: "Troubleshooting your Salesforce Online connector"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Troubleshooting your Salesforce Online connector
+<a name="salesforce-error-codes"></a>
 
-The following table provides information about error codes you may see for the
-Salesforce Online connector and suggested resolutions.
+The following table provides information about error codes you may see for the Salesforce Online connector and suggested resolutions.
 
-Error codeError messageSuggested resolutionSF-5001Invalid HostURL.Provide valid HostURL.SF-5002Invalid userName or password.Provide valid userName or password.SF-5003Invalid clientSecret.Provide valid clientSecret.SF-5004Invalid clientId.Provide valid clientId.SF-5005Invalid grant type.Provide valid grant type.SF-5006Error while generating Access Token.Provide valid credentials or try again later.SF-5100Null/empty HostUrl.Provide HostUrl.SF-5101Null/empty client ID.Provide client ID.SF-5102Null/empty client secretProvide client secret.SF-5103Null/empty username.Provide username.SF-5104Null/empty password.Provide password.SF-5150Null/empty authentication URL.Provide authentication URL.SF-5151Invalid HostURL pattern.Provide valid HostURL pattern.SF-5152Invalid Authentication URL.Provide valid Authentication URL.SF-5500ContinuableInternalServerError.Try again later.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IAM role
-
-ServiceNow Online
+| Error code | Error message | Suggested resolution |
+| --- | --- | --- |
+| SF-5001 | Invalid HostURL. | Provide valid HostURL. |
+| SF-5002 | Invalid userName or password. | Provide valid userName or password. |
+| SF-5003 | Invalid clientSecret. | Provide valid clientSecret. |
+| SF-5004 | Invalid clientId. | Provide valid clientId. |
+| SF-5005 | Invalid grant type. | Provide valid grant type. |
+| SF-5006 | Error while generating Access Token. | Provide valid credentials or try again later. |
+| SF-5100 | Null/empty HostUrl. | Provide HostUrl. |
+| SF-5101 | Null/empty client ID. | Provide client ID. |
+| SF-5102 | Null/empty client secret | Provide client secret. |
+| SF-5103 | Null/empty username. | Provide username. |
+| SF-5104 | Null/empty password. | Provide password. |
+| SF-5150 | Null/empty authentication URL. | Provide authentication URL. |
+| SF-5151 | Invalid HostURL pattern. | Provide valid HostURL pattern. |
+| SF-5152 | Invalid Authentication URL. | Provide valid Authentication URL. |
+| SF-5500 | ContinuableInternalServerError. | Try again later. |
 
 All content copied from https://docs.aws.amazon.com/.

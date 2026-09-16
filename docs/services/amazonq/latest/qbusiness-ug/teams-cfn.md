@@ -2,432 +2,65 @@
 title: "Connecting Amazon Q Business to Microsoft Teams using AWS CloudFormation"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to Microsoft Teams using AWS CloudFormation
+<a name="teams-cfn"></a>
 
-You use the [`AWS::QBusiness::DataSource`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md) resource to connect a data source to
-your Amazon Q application.
+You use the [`AWS::QBusiness::DataSource`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
 
-Use the [`configuration`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary
-configuration details specific to your data source connector.
+Use the [`configuration`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
 
-To learn more about AWS CloudFormation, see
-[What is AWS CloudFormation?](../../../cloudformation/latest/userguide/welcome.md)
-in the _CloudFormation User Guide_.
+To learn more about AWS CloudFormation, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in the *CloudFormation User Guide*.
 
 ## Microsoft Teams configuration properties
-
-The following provides information about important configuration properties required in the
-schema.
-
-ConfigurationDescriptionTypeRequired
-
-`connectionConfiguration`
-
-Configuration information for endpoint for the data source.
-
-`object`
-
-This property has the following sub-property:
-`repositoryEndpointMetadata`.
-
-Yes
-
-`repositoryEndpointMetadata`
-
-The endpoint information for the data source.
-
-`object`
-
-This property has the following sub-property:
-`tenantId`.
-
-Yes
-
-`tenantId`
-
-The Microsoft 365 tenant ID. You can find your tenant ID in the Properties of your
-Azure Active Directory Portal.
-
-`string`
-
-The string must be 36 characters long and in in the pattern:
-^\[0-9a-f\]{8}-\[0-9a-f\]{4}-\[0-9a-f\]{4}-\[0-9a-f\]{4}-\[0-9a-f\]{12}$
-
-Yes
-
-`repositoryConfigurations`
-
-Configuration information for the content of the data source. For example,
-configuring specific types of content and field mappings.
-
-`object`
-
-This property has the following sub-properties:
-
-- `chatMessage`
-
-- `chatAttachment`
-
-- `channelPost`
-
-- `channelWiki`
-
-- `channelAttachment`
-
-- `meetingChat`
-
-- `meetingFile`
-
-- `meetingNote`
-
-- `calendarMeeting`
-
-Yes
-
-- `chatMessage`
-
-- `chatAttachment`
-
-- `channelPost`
-
-- `channelWiki`
-
-- `channelAttachment`
-
-- `meetingChat`
-
-- `meetingFile`
-
-- `meetingNote`
-
-- `calendarMeeting`
-
-A list of objects that map the attributes or field names of your Microsoft
-Teams content to Amazon Q index field names.
-
-`object`
-
-These properties have the following sub-properties: `indexFieldName`,
-`indexFieldType`, `dataSourceFieldName`, and
-`dateFieldFormat`.
-
-No
-
-`indexFieldName`
-
-The field name of your Microsoft Teams assets.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your Microsoft Teams assets.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`,
-`DATE`, and `LONG`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your Microsoft Teams assets.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your Microsoft Teams assets.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'`
-
-No
-
-`additionalProperties`
-
-Additional configuration options for your content in your data source.
-
-`object`
-
-This property has the following sub-properties.
-
-- `isCrawlAcl`
-
-- `isCrawlChatMessage`
-
-- `isCrawlChatAttachment`
-
-- `isCrawlChannelPost`
-
-- `isCrawlChannelAttachment`
-
-- `isCrawlChannelWiki`
-
-- `isCrawlCalendarMeeting`
-
-- `isCrawlMeetingChat`
-
-- `isCrawlMeetingFile`
-
-- `isCrawlMeetingNote`
-
-- `startCalendarDateTime`
-
-- `endCalendarDateTime`
-
-- `fieldForUserId`
-
-- `paymentModel`
-
-- `maxFileSizeInMegaBytes`
-
-- `inclusionTeamNameFilter`
-
-- `exclusionTeamNameFilter`
-
-- `inclusionChannelNameFilter`
-
-- `exclusionChannelNameFilter`
-
-- `inclusionFileNamePatterns`
-
-- `exclusionFileNamePatterns`
-
-- `inclusionFileTypePatterns`
-
-- `exclusionFileTypePatterns`
-
-- `inclusionUserEmailFilter`
-
-Yes
-
-`isCrawlAcl`
-
-Specify `true` to crawl access control information from documents.
-
-###### Note
-
-Amazon Q Business crawls ACL information by default to ensure responses
-are generated only from documents your end users have access to. See [Authorization](connector-concepts.md#connector-authorization) for more details.
-
-`boolean`
-
-No
-
-`maxFileSizeInMegaBytes`
-
-Specify the maximum single file size limit in MBs that Amazon Q will crawl.
-Amazon Q will crawl only the files within the size limit you define. The default file
-size is 50MB. The maximum file size should be greater than 0MB and less than or equal to
-50MB.
-
-`string`
-
-No
-
-`fieldForUserId`
-
-Specify the field to use for `UserId` for ACL crawling.
-
-`string`
-
-No
-
-- `isCrawlChatMessage`
-
-- `isCrawlChatAttachment`
-
-- `isCrawlChannelPost`
-
-- `isCrawlChannelAttachment`
-
-- `isCrawlChannelWiki`
-
-- `isCrawlCalendarMeeting`
-
-- `isCrawlMeetingChat`
-
-- `isCrawlMeetingFile`
-
-- `isCrawlMeetingNote`
-
-Specify `true` to index this content in your
-Microsoft Teams data source.
-
-`boolean`
-
-No
-
-- `inclusionTeamNameFilter`
-
-- `inclusionChannelNameFilter`
-
-- `inclusionFileNamePatterns`
-
-- `inclusionFileTypePatterns`
-
-- `inclusionUserEmailFilter`
-
-A list of regular expression patterns to include specific content in your
-Microsoft Teams data source. Content that matches the patterns are included in the
-index. Content that doesn't match the patterns are excluded from the index. If any
-content matches both an inclusion and exclusion pattern, the exclusion pattern takes
-precedence, and the content isn't included in the index.
-
-`array (string)`
-
-No
-
-- `exclusionTeamNameFilter`
-
-- `exclusionChannelNameFilter`
-
-- `exclusionFileNamePatterns`
-
-- `exclusionFileTypePatterns`
-
-A list of regular expression patterns to exclude specific content in your
-Microsoft Teams data source. Content that matches the patterns are excluded from the
-index. Content that doesn't match the patterns are included in the index. If any content
-matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence,
-and the content isn't included in the index.
-
-`array (string)`
-
-No
-
-- `startCalendarDateTime`
-
-- `endCalendarDateTime`
-
-You can choose to configure a `startCalendarDateTime` and
-`endCalendarDateTime` parameters so that the Microsoft Teams connector
-crawls content based on a specific date range.
-
-`string`
-
-Specify the date in the form
-`^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$)`
-
-No
-
-`paymentModel`
-
-Specifies what type of payment model to use with your Teams data
-source. Model A payment models are restricted to licensing and payment models that
-require security compliance. Model B payment models are suitable for licensing and
-payment models that don't require security compliance.
-
-`string`
-
-Valid values are `A`, `B`, and `Evaluation
-              Mode`.
-
-No
-
-`syncMode`
-
-Specify whether Amazon Q should update your index by syncing all
-documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options:
-
-- Use `FORCED_FULL_CRAWL` to freshly re-crawl all
-content and replace existing content each time your data source syncs with your
-index.
-
-- Use `FULL_CRAWL` to incrementally crawl only new,
-modified, and deleted content each time your data source syncs with your
-index.
-
-- Use `CHANGE_LOG` to incrementally crawl only new and
-modified content each time your data source syncs with your index.
-
-Yes
-
-`secretARN`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains
-the key-value pairs required to connect to your
-Microsoft Teams.
-
-`string`
-
-The secret must contain a JSON structure with the following keys:
-
-```json
-
-{
-  "clientId": String,
-  "clientSecret": String
-}
-```
-
-Yes
-
-`type`
-
-The type of data source. Specify `MSTEAMS` as your data source
-type.
-
-`string`
-
-Yes
-
-`enableIdentityCrawler`
-
-`true` to activate identity crawler.Crawling identity information
-on users and groups with access to specific documents is useful for user context
-filtering. Search results are filtered based on the user or their group access to
-documents.
-
-###### Note
-
-Amazon Q Business crawls identity information from your data source by
-default to ensure responses are generated only from documents end users have access
-to. For more information, see [Identity crawler](connector-concepts.md#connector-identity-crawler).
-
-`boolean`
-
-No
-
-`version`
-
-The version of this template that's currently supported.
-
-`string`
-
-No
+<a name="teams-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for endpoint for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-property: `tenantId`. | Yes |
+| `tenantId` | The Microsoft 365 tenant ID. You can find your tenant ID in the Properties of your Azure Active Directory Portal. | `string`<br />The string must be 36 characters long and in in the pattern: ^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$ | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties:+  `chatMessage` <br />+  `chatAttachment` <br />+  `channelPost` <br />+  `channelWiki` <br />+  `channelAttachment` <br />+  `meetingChat` <br />+  `meetingFile` <br />+  `meetingNote` <br />+  `calendarMeeting`  | Yes |
+|  +  `chatMessage` <br />+  `chatAttachment` <br />+  `channelPost` <br />+  `channelWiki` <br />+  `channelAttachment` <br />+  `meetingChat` <br />+  `meetingFile` <br />+  `meetingNote` <br />+  `calendarMeeting`   | A list of objects that map the attributes or field names of your Microsoft Teams content to Amazon Q index field names. | `object`<br />These properties have the following sub-properties: `indexFieldName`, `indexFieldType`, `dataSourceFieldName`, and `dateFieldFormat`. | No |
+| `indexFieldName` | The field name of your Microsoft Teams assets. | `string` | Yes |
+| `indexFieldType` | The field type of your Microsoft Teams assets. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, `DATE`, and `LONG`. | Yes |
+| `dataSourceFieldName` | The data source field name of your Microsoft Teams assets. | `string` | Yes |
+| `dateFieldFormat` | The date format of your Microsoft Teams assets. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties.+  `isCrawlAcl` <br />+  `isCrawlChatMessage` <br />+  `isCrawlChatAttachment` <br />+  `isCrawlChannelPost` <br />+  `isCrawlChannelAttachment` <br />+  `isCrawlChannelWiki` <br />+  `isCrawlCalendarMeeting` <br />+  `isCrawlMeetingChat` <br />+  `isCrawlMeetingFile` <br />+  `isCrawlMeetingNote` <br />+  `startCalendarDateTime` <br />+  `endCalendarDateTime` <br />+  `fieldForUserId` <br />+  `paymentModel` <br />+  `maxFileSizeInMegaBytes` <br />+  `inclusionTeamNameFilter` <br />+  `exclusionTeamNameFilter` <br />+  `inclusionChannelNameFilter` <br />+  `exclusionChannelNameFilter` <br />+  `inclusionFileNamePatterns` <br />+  `exclusionFileNamePatterns` <br />+  `inclusionFileTypePatterns` <br />+  `exclusionFileTypePatterns` <br />+  `inclusionUserEmailFilter`  | Yes |
+| `isCrawlAcl` | Specify true to crawl access control information from documents.  Amazon Q Business crawls ACL information by default to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `fieldForUserId` | Specify the field to use for UserId for ACL crawling. | `string` | No |
+|  +  `isCrawlChatMessage` <br />+  `isCrawlChatAttachment` <br />+  `isCrawlChannelPost` <br />+  `isCrawlChannelAttachment` <br />+  `isCrawlChannelWiki` <br />+  `isCrawlCalendarMeeting` <br />+  `isCrawlMeetingChat` <br />+  `isCrawlMeetingFile` <br />+  `isCrawlMeetingNote`   | Specify true to index this content in your Microsoft Teams data source. | `boolean` | No |
+|  +  `inclusionTeamNameFilter` <br />+  `inclusionChannelNameFilter` <br />+  `inclusionFileNamePatterns` <br />+  `inclusionFileTypePatterns` <br />+  `inclusionUserEmailFilter`   | A list of regular expression patterns to include specific content in your Microsoft Teams data source. Content that matches the patterns are included in the index. Content that doesn't match the patterns are excluded from the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array (string)` | No |
+|  +  `exclusionTeamNameFilter` <br />+  `exclusionChannelNameFilter` <br />+  `exclusionFileNamePatterns` <br />+  `exclusionFileTypePatterns`   | A list of regular expression patterns to exclude specific content in your Microsoft Teams data source. Content that matches the patterns are excluded from the index. Content that doesn't match the patterns are included in the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array (string)` | No |
+|  +  `startCalendarDateTime` <br />+  `endCalendarDateTime`   | You can choose to configure a startCalendarDateTime and endCalendarDateTime parameters so that the Microsoft Teams connector crawls content based on a specific date range. | `string`<br />Specify the date in the form `^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$)` | No |
+| `paymentModel` | Specifies what type of payment model to use with your Teams data source. Model A payment models are restricted to licensing and payment models that require security compliance. Model B payment models are suitable for licensing and payment models that don't require security compliance. | `string`<br />Valid values are `A`, `B`, and `Evaluation Mode`. | No |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. | `string`<br />You can choose between the following options:+  Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index. <br />+  Use `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index. <br />+  Use `CHANGE_LOG` to incrementally crawl only new and modified content each time your data source syncs with your index.  | Yes |
+| `secretARN` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Microsoft Teams. | `string`<br />The secret must contain a JSON structure with the following keys:<pre>{<br />  "clientId": {{String}},<br />  "clientSecret": {{String}}<br />}</pre> | Yes |
+| `type` | The type of data source. Specify MSTEAMS as your data source type. | `string` | Yes |
+| `enableIdentityCrawler` | `true` to activate identity crawler.Crawling identity information on users and groups with access to specific documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents. Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | No |
+| `version` | The version of this template that's currently supported. | `string` | No |
 
 ## Microsoft Teams JSON schema for using the CloudFormation
 
 ## Microsoft Teams JSON schema for using the configuration property with AWS CloudFormation
+<a name="teams-cfn-json"></a>
 
-The following is the Microsoft Teams JSON schema and examples for the configuration
-property for AWS CloudFormation.
+The following is the Microsoft Teams JSON schema and examples for the configuration property for AWS CloudFormation.
 
-###### Topics
-
-- [Microsoft Teams JSON schema for using the configuration property with AWS CloudFormation](#teams-cfn-json-schema)
-
-- [Microsoft Teams JSON schema example for using the configuration property with AWS CloudFormation](#teams-cfn-json-example)
+**Topics**
++ [Microsoft Teams JSON schema for using the configuration property with AWS CloudFormation](#teams-cfn-json-schema)
++ [Microsoft Teams JSON schema example for using the configuration property with AWS CloudFormation](#teams-cfn-json-example)
 
 ### Microsoft Teams JSON schema for using the configuration property with AWS CloudFormation
+<a name="teams-cfn-json-schema"></a>
 
-The following is the Microsoft Teams JSON schema for the configuration property for
-CloudFormation
+The following is the Microsoft Teams JSON schema for the configuration property for CloudFormation
 
-```json
-
+```
 {
   "type": "object",
   "properties": {
@@ -1033,15 +666,12 @@ CloudFormation
 }
 ```
 
-Show moreShow less
-
 ### Microsoft Teams JSON schema example for using the configuration property with AWS CloudFormation
+<a name="teams-cfn-json-example"></a>
 
-The following is the Microsoft Teams JSON schema example for the configuration
-property for CloudFormation
+The following is the Microsoft Teams JSON schema example for the configuration property for CloudFormation
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation MSTEAMS Data Source Template",
@@ -1190,26 +820,21 @@ property for CloudFormation
 }
 ```
 
-Show moreShow less
-
 ## Microsoft Teams YAML schema for using the configuration property with AWS CloudFormation
+<a name="teams-cfn-yaml"></a>
 
-The following is the Microsoft Teams YAML schema and examples for the configuration
-property for AWS CloudFormation:
+The following is the Microsoft Teams YAML schema and examples for the configuration property for AWS CloudFormation:
 
-###### Topics
-
-- [Microsoft Teams YAML schema for using the configuration property with AWS CloudFormation](#teams-cfn-yaml-schema)
-
-- [Microsoft Teams YAML schema example for using the configuration property with AWS CloudFormation](#teams-cfn-yaml-example)
+**Topics**
++ [Microsoft Teams YAML schema for using the configuration property with AWS CloudFormation](#teams-cfn-yaml-schema)
++ [Microsoft Teams YAML schema example for using the configuration property with AWS CloudFormation](#teams-cfn-yaml-example)
 
 ### Microsoft Teams YAML schema for using the configuration property with AWS CloudFormation
+<a name="teams-cfn-yaml-schema"></a>
 
-The following is the Microsoft Teams YAML schema for the configuration property for
-CloudFormation.
+The following is the Microsoft Teams YAML schema for the configuration property for CloudFormation.
 
-```yaml
-
+```
 type: object
 properties:
   type:
@@ -1647,15 +1272,12 @@ properties:
     - type
 ```
 
-Show moreShow less
-
 ### Microsoft Teams YAML schema example for using the configuration property with AWS CloudFormation
+<a name="teams-cfn-yaml-example"></a>
 
-The following is the Microsoft Teams YAML example for the Configuration property for
-CloudFormation:
+The following is the Microsoft Teams YAML example for the Configuration property for CloudFormation:
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation MSTEAMS Data Source Template
 Resources:
@@ -1770,13 +1392,5 @@ Resources:
           enableDeletionProtection: "false"
           deletionProtectionThreshold: "15"
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the API (Original connector)
-
-ACL crawling
 
 All content copied from https://docs.aws.amazon.com/.

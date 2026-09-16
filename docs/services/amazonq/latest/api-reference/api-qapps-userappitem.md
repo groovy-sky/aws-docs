@@ -3,97 +3,63 @@ title: "UserAppItem"
 ---
 
 # UserAppItem
+<a name="API_qapps_UserAppItem"></a>
 
 An Amazon Q App associated with a user, either owned by the user or favorited.
 
 ## Contents
+<a name="API_qapps_UserAppItem_Contents"></a>
 
-**appArn**
-
+ ** appArn **   <a name="qbusiness-Type-qapps_UserAppItem-appArn"></a>
 The Amazon Resource Name (ARN) of the Q App.
-
 Type: String
-
 Required: Yes
 
-**appId**
-
+ ** appId **   <a name="qbusiness-Type-qapps_UserAppItem-appId"></a>
 The unique identifier of the Q App.
-
 Type: String
-
 Pattern: `[\da-f]{8}-[\da-f]{4}-[45][\da-f]{3}-[89ABab][\da-f]{3}-[\da-f]{12}`
-
 Required: Yes
 
-**createdAt**
-
+ ** createdAt **   <a name="qbusiness-Type-qapps_UserAppItem-createdAt"></a>
 The date and time the user's association with the Q App was created.
-
 Type: Timestamp
-
 Required: Yes
 
-**title**
-
+ ** title **   <a name="qbusiness-Type-qapps_UserAppItem-title"></a>
 The title of the Q App.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 100.
-
 Pattern: `[^{}\\"<>]+`
-
 Required: Yes
 
-**canEdit**
-
+ ** canEdit **   <a name="qbusiness-Type-qapps_UserAppItem-canEdit"></a>
 A flag indicating whether the user can edit the Q App.
-
 Type: Boolean
-
 Required: No
 
-**description**
-
+ ** description **   <a name="qbusiness-Type-qapps_UserAppItem-description"></a>
 The description of the Q App.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 500.
-
 Required: No
 
-**isVerified**
-
+ ** isVerified **   <a name="qbusiness-Type-qapps_UserAppItem-isVerified"></a>
 Indicates whether the Q App has been verified.
-
 Type: Boolean
-
 Required: No
 
-**status**
-
+ ** status **   <a name="qbusiness-Type-qapps_UserAppItem-status"></a>
 The status of the user's association with the Q App.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_qapps_UserAppItem_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/userappitem.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/userappitem.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/userappitem.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-User
-
-Common Parameters
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/UserAppItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/UserAppItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/UserAppItem)
 
 All content copied from https://docs.aws.amazon.com/.

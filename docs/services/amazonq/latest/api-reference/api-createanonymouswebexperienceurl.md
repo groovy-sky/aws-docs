@@ -3,63 +3,57 @@ title: "CreateAnonymousWebExperienceUrl"
 ---
 
 # CreateAnonymousWebExperienceUrl
+<a name="API_CreateAnonymousWebExperienceUrl"></a>
+
+**Note**
+Amazon Q Business will no longer be open to new customers starting on July 31, 2026. If you would like to use the service, please sign up prior to July 30. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 Creates a unique URL for anonymous Amazon Q Business web experience. This URL can only be used once and must be used within 5 minutes after it's generated.
 
 ## Request Syntax
+<a name="API_CreateAnonymousWebExperienceUrl_RequestSyntax"></a>
 
-```nohighlight
-
-POST /applications/applicationId/experiences/webExperienceId/anonymous-url HTTP/1.1
+```
+POST /applications/{{applicationId}}/experiences/{{webExperienceId}}/anonymous-url HTTP/1.1
 Content-type: application/json
 
 {
-   "sessionDurationInMinutes": number
+   "sessionDurationInMinutes": {{number}}
 }
 ```
 
 ## URI Request Parameters
+<a name="API_CreateAnonymousWebExperienceUrl_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[applicationId](#API_CreateAnonymousWebExperienceUrl_RequestSyntax)**
-
+ ** [applicationId](#API_CreateAnonymousWebExperienceUrl_RequestSyntax) **   <a name="qbusiness-CreateAnonymousWebExperienceUrl-request-uri-applicationId"></a>
 The identifier of the Amazon Q Business application environment attached to the web experience.
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]{35}`
-
 Required: Yes
 
-**[webExperienceId](#API_CreateAnonymousWebExperienceUrl_RequestSyntax)**
-
+ ** [webExperienceId](#API_CreateAnonymousWebExperienceUrl_RequestSyntax) **   <a name="qbusiness-CreateAnonymousWebExperienceUrl-request-uri-webExperienceId"></a>
 The identifier of the web experience.
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]*`
-
 Required: Yes
 
 ## Request Body
+<a name="API_CreateAnonymousWebExperienceUrl_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[sessionDurationInMinutes](#API_CreateAnonymousWebExperienceUrl_RequestSyntax)**
-
+ ** [sessionDurationInMinutes](#API_CreateAnonymousWebExperienceUrl_RequestSyntax) **   <a name="qbusiness-CreateAnonymousWebExperienceUrl-request-sessionDurationInMinutes"></a>
 The duration of the session associated with the unique URL for the web experience.
-
 Type: Integer
-
 Valid Range: Minimum value of 15. Maximum value of 60.
-
 Required: No
 
 ## Response Syntax
+<a name="API_CreateAnonymousWebExperienceUrl_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -69,134 +63,79 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_CreateAnonymousWebExperienceUrl_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[anonymousUrl](#API_CreateAnonymousWebExperienceUrl_ResponseSyntax)**
-
+ ** [anonymousUrl](#API_CreateAnonymousWebExperienceUrl_ResponseSyntax) **   <a name="qbusiness-CreateAnonymousWebExperienceUrl-response-anonymousUrl"></a>
 The unique URL for accessing the web experience.
-
-###### Important
-
 This URL can only be used once and must be used within 5 minutes after it's generated.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-
 Pattern: `(https?|ftp|file)://([^\s]*)`
 
 ## Errors
+<a name="API_CreateAnonymousWebExperienceUrl_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AccessDeniedException**
-
-You don't have access to perform this action. Make sure you have the required
-permission policies and user accounts and try again.
-
+ ** AccessDeniedException **
+ You don't have access to perform this action. Make sure you have the required permission policies and user accounts and try again.
 HTTP Status Code: 403
 
-**InternalServerException**
-
-An issue occurred with the internal server used for your Amazon Q Business service. Wait
-some minutes and try again, or contact [Support](http://aws.amazon.com/contact-us) for help.
-
+ ** InternalServerException **
+An issue occurred with the internal server used for your Amazon Q Business service. Wait some minutes and try again, or contact [Support](http://aws.amazon.com/contact-us/) for help.
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
-The application or plugin resource you want to use doesn’t exist. Make sure you have
-provided the correct resource and try again.
-
-**message**
-
+ ** ResourceNotFoundException **
+The application or plugin resource you want to use doesn’t exist. Make sure you have provided the correct resource and try again.
+ ** message **
 The message describing a `ResourceNotFoundException`.
-
-**resourceId**
-
+ ** resourceId **
 The identifier of the resource affected.
-
-**resourceType**
-
+ ** resourceType **
 The type of the resource affected.
-
 HTTP Status Code: 404
 
-**ServiceQuotaExceededException**
-
+ ** ServiceQuotaExceededException **
 You have exceeded the set limits for your Amazon Q Business service.
-
-**message**
-
+ ** message **
 The message describing a `ServiceQuotaExceededException`.
-
-**resourceId**
-
+ ** resourceId **
 The identifier of the resource affected.
-
-**resourceType**
-
+ ** resourceType **
 The type of the resource affected.
-
 HTTP Status Code: 402
 
-**ThrottlingException**
-
-The request was denied due to throttling. Reduce the number of requests and try
-again.
-
+ ** ThrottlingException **
+The request was denied due to throttling. Reduce the number of requests and try again.
 HTTP Status Code: 429
 
-**ValidationException**
-
-The input doesn't meet the constraints set by the Amazon Q Business service. Provide the
-correct input and try again.
-
-**fields**
-
+ ** ValidationException **
+The input doesn't meet the constraints set by the Amazon Q Business service. Provide the correct input and try again.
+ ** fields **
 The input field(s) that failed validation.
-
-**message**
-
+ ** message **
 The message describing the `ValidationException`.
-
-**reason**
-
+ ** reason **
 The reason for the `ValidationException`.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_CreateAnonymousWebExperienceUrl_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for Python](../../../goto/boto3/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/createanonymouswebexperienceurl.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CheckDocumentAccess
-
-CreateApplication
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/CreateAnonymousWebExperienceUrl)
 
 All content copied from https://docs.aws.amazon.com/.

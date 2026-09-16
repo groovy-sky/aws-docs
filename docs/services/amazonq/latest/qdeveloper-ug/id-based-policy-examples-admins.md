@@ -3,28 +3,26 @@ title: "Administrator permissions"
 ---
 
 # Administrator permissions
+<a name="id-based-policy-examples-admins"></a>
 
-The following policies allow Amazon Q Developer administrators to perform administrative tasks in
-the Amazon Q subscription management console and Amazon Q Developer console.
+The following policies allow Amazon Q Developer administrators to perform administrative tasks in the Amazon Q subscription management console and Amazon Q Developer console.
 
 For policies that enable the use of Amazon Q Developer features, see [User permissions](id-based-policy-examples-users.md).
 
 ## Allow administrators to use the Amazon Q console
+<a name="q-admin-setup-admin-users-sub"></a>
 
-The following example policy grants permissions for a user to perform actions in the Amazon Q console. The
-Amazon Q console is where you configure Amazon Q's integration with AWS IAM Identity Center and AWS Organizations. Most other
-Amazon Q Developer-related tasks must be completed in the Amazon Q Developer console. For more information, see [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
+The following example policy grants permissions for a user to perform actions in the Amazon Q console. The Amazon Q console is where you configure Amazon Q's integration with AWS IAM Identity Center and AWS Organizations. Most other Amazon Q Developer-related tasks must be completed in the Amazon Q Developer console. For more information, see [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
 
-###### Note
+**Note**
+The `codewhisperer` prefix is a legacy name from a service that merged with Amazon Q Developer. For more information, see [Amazon Q Developer rename - Summary of changes](service-rename.md).
 
-The `codewhisperer` prefix is a legacy name from a service that merged
-with Amazon Q Developer. For more information, see
-[Amazon Q Developer rename - Summary of changes](service-rename.md).
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -135,41 +133,32 @@ JSON
       }
    ]
 }
-
 ```
 
+------
+
 ## Allow administrators to use the Amazon Q Developer console
+<a name="q-admin-setup-admin-users"></a>
 
-The following example policy grants permissions for a user to access the Amazon Q Developer console. In the
-Amazon Q Developer console, administrators perform most Amazon Q Developer-related configuration tasks, including
-tasks related to subscriptions, code references, customizations, and chat plugins. This policy also includes permissions to
-create and configure customer managed KMS keys.
+The following example policy grants permissions for a user to access the Amazon Q Developer console. In the Amazon Q Developer console, administrators perform most Amazon Q Developer-related configuration tasks, including tasks related to subscriptions, code references, customizations, and chat plugins. This policy also includes permissions to create and configure customer managed KMS keys.
 
-There are a few Amazon Q Developer Pro tasks that administrators must complete through the Amazon Q console (instead of the
-Amazon Q Developer console). For more information, see [Allow administrators to use the Amazon Q console](#q-admin-setup-admin-users-sub).
+There are a few Amazon Q Developer Pro tasks that administrators must complete through the Amazon Q console (instead of the Amazon Q Developer console). For more information, see [Allow administrators to use the Amazon Q console](#q-admin-setup-admin-users-sub).
 
-###### Note
+**Note**
+To create customizations or plugins, your Amazon Q Developer Pro administrator will require additional permissions.
+For permissions needed for customizations, see the Prerequisites for customizations section.
+For permissions needed for plugins, see [Allow administrators to configure plugins](#id-based-policy-examples-admin-plugins).
 
-To create customizations or plugins, your Amazon Q Developer Pro administrator will require additional
-permissions.
+You will need one of two policies to use the Amazon Q Developer console. The policy you need depends on if you're setting up Amazon Q Developer for the first time or if you're configuring a legacy Amazon CodeWhisperer profile.
 
-- For permissions needed for customizations, see the Prerequisites for customizations section.
-
-- For permissions needed for plugins, see [Allow administrators to configure plugins](#id-based-policy-examples-admin-plugins).
-
-You will need one of two policies to use the Amazon Q Developer console. The policy you need depends on if
-you're setting up Amazon Q Developer for the first time or if you're configuring a legacy Amazon CodeWhisperer profile.
-
-###### Note
-
-The `codewhisperer` prefix is a legacy name from a service that merged
-with Amazon Q Developer. For more information, see
-[Amazon Q Developer rename - Summary of changes](service-rename.md).
+**Note**
+The `codewhisperer` prefix is a legacy name from a service that merged with Amazon Q Developer. For more information, see [Amazon Q Developer rename - Summary of changes](service-rename.md).
 
 For new administrators of Amazon Q Developer, use the following policy:
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -337,16 +326,13 @@ For new administrators of Amazon Q Developer, use the following policy:
     }
   ]
 }
-
 ```
 
-Show moreShow less
+For legacy Amazon CodeWhisperer profiles, the following policy will enable an IAM principal to administer a CodeWhisperer application.
 
-For legacy Amazon CodeWhisperer profiles, the following policy will enable an IAM principal to administer a
-CodeWhisperer application.
+****
 
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -483,40 +469,29 @@ CodeWhisperer application.
     }
   ]
 }
-
 ```
 
-Show moreShow less
-
 ## Allow administrators to create customizations
+<a name="id-based-policy-examples-allow-customizations"></a>
 
-The following policy grants administrators permission to create and manage customizations
-in Amazon Q Developer.
+The following policy grants administrators permission to create and manage customizations in Amazon Q Developer.
 
-To configure customizations in the Amazon Q Developer console, your Amazon Q Developer administrator will
-require access to the Amazon Q Developer console. For more information, see [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
+To configure customizations in the Amazon Q Developer console, your Amazon Q Developer administrator will require access to the Amazon Q Developer console. For more information, see [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
 
-###### Note
+**Note**
+In the following policy, the IAM service will report errors on the `codeconnections:ListOwners` and `codeconnections:ListRepositories` permissions. Create the policy with these permissions anyway. The permissions are required, and the policy will work despite the errors.
 
-In the following policy, the IAM service will report errors on the
-`codeconnections:ListOwners` and
-`codeconnections:ListRepositories` permissions. Create the policy with
-these permissions anyway. The permissions are required, and the policy will work despite
-the errors.
+**Note**
+The `codewhisperer` prefix is a legacy name from a service that merged with Amazon Q Developer. For more information, see [Amazon Q Developer rename - Summary of changes](service-rename.md).
 
-###### Note
+In the following example, replace {{account number}} with your AWS account number.
 
-The `codewhisperer` prefix is a legacy name from a service that merged
-with Amazon Q Developer. For more information, see
-[Amazon Q Developer rename - Summary of changes](service-rename.md).
+------
+#### [ JSON ]
 
-In the following example, replace `account number` with your
-AWS account number.
+****
 
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -596,23 +571,24 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## Allow administrators to configure plugins
+<a name="id-based-policy-examples-admin-plugins"></a>
 
-The following example policy grants administrators permissions to view and configure
-third party plugins in the Amazon Q Developer console.
+The following example policy grants administrators permissions to view and configure third party plugins in the Amazon Q Developer console.
 
-###### Note
+**Note**
+In order to access the Amazon Q Developer console, administrators also need the permissions defined in [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
 
-In order to access the Amazon Q Developer console, administrators also need the permissions
-defined in [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -652,36 +628,27 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Allow administrators to configure plugins from one provider
+<a name="id-based-policy-examples-admin-plugins-one-provider"></a>
 
-The following example policy grants an administrator permission to configure plugins from
-one provider, specified by the plugin ARN with the name of the plugin provider and a
-wildcard character ( `*`). To use this policy, replace the following in the ARN in
-the Resource field:
+The following example policy grants an administrator permission to configure plugins from one provider, specified by the plugin ARN with the name of the plugin provider and a wildcard character (`*`). To use this policy, replace the following in the ARN in the Resource field:
++ {{AWS-region}} – The AWS Region where the plugin will be created.
++ {{AWS-account-ID}} – The AWS account ID of the account where your plugin is configured.
++ {{plugin-provider}} – The name of the plugin provider that you want to allow configuration for, like `CloudZero`, `Datadog`, or `Wiz`. The plugin provider field is case sensitive.
 
-- `AWS-region` – The AWS Region where the plugin
-will be created.
+**Note**
+In order to access the Amazon Q Developer console, administrators also need the permissions defined in [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
 
-- `AWS-account-ID` – The AWS account ID of the
-account where your plugin is configured.
+------
+#### [ JSON ]
 
-- `plugin-provider` – The name of the plugin provider
-that you want to allow configuration for, like `CloudZero`,
-`Datadog`, or `Wiz`. The plugin provider field is case
-sensitive.
+****
 
-###### Note
-
-In order to access the Amazon Q Developer console, administrators also need the permissions
-defined in [Allow administrators to use the Amazon Q Developer console](#q-admin-setup-admin-users).
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -693,19 +660,23 @@ JSON
                 "q:GetPlugin",
                 "q:DeletePlugin"
             ],
-            "Resource": "arn:aws:qdeveloper:us-east-1:111122223333:plugin/plugin-provider/*"
+            "Resource": "arn:aws:qdeveloper:{{us-east-1}}:{{111122223333}}:plugin/{{plugin-provider}}/*"
         }
     ]
 }
-
 ```
 
+------
+
 ## Allow migration of more than one network or more than one subnet
+<a name="id-based-policy-examples-ezrc"></a>
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -715,7 +686,7 @@ JSON
                 "ec2:CreateSecurityGroup"
             ],
             "Resource": [
-                "arn:aws:ec2:us-east-1:111122223333:vpc/*"
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:vpc/*"
             ],
             "Condition": {
                 "StringEquals": {
@@ -730,8 +701,8 @@ JSON
                 "ec2:CreateSecurityGroup"
             ],
             "Resource": [
-                "arn:aws:ec2:us-east-1:111122223333:security-group/*",
-                "arn:aws:ec2:us-east-1:111122223333:security-group-rule/*"
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:security-group/*",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:security-group-rule/*"
             ],
             "Condition": {
                 "StringEquals": {
@@ -747,11 +718,11 @@ JSON
                 "ec2:CreateTags"
             ],
             "Resource": [
-                "arn:aws:ec2:us-east-1:111122223333:security-group/*",
-                "arn:aws:ec2:us-east-1:111122223333:security-group-rule/*",
-                "arn:aws:ec2:us-east-1:111122223333:network-interface/*",
-                "arn:aws:ec2:us-east-1:111122223333:network-insights-path/*",
-                "arn:aws:ec2:us-east-1:111122223333:network-insights-analysis/*"
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:security-group/*",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:security-group-rule/*",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:network-interface/*",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:network-insights-path/*",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:network-insights-analysis/*"
             ],
             "Condition": {
                 "StringEquals": {
@@ -772,7 +743,7 @@ JSON
                 "ec2:CreateNetworkInterface"
             ],
             "Resource": [
-                "arn:aws:ec2:us-east-1:111122223333:subnet/*"
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:subnet/*"
             ],
             "Condition": {
                 "StringEquals": {
@@ -787,7 +758,7 @@ JSON
                 "ec2:CreateNetworkInterface"
             ],
             "Resource": [
-                "arn:aws:ec2:us-east-1:111122223333:security-group/*"
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:security-group/*"
             ]
         },
         {
@@ -834,14 +805,8 @@ JSON
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Identity-based policy examples
-for Amazon Q
-
-User permissions
+------
 
 All content copied from https://docs.aws.amazon.com/.

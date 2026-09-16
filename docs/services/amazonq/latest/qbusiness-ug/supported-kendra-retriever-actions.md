@@ -2,375 +2,285 @@
 title: "Managing Amazon Kendra indices"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Managing Amazon Kendra indices
+<a name="supported-kendra-retriever-actions"></a>
 
-To manage Amazon Kendra indices being used as retrievers, you can take the following
-actions:
+To manage Amazon Kendra indices being used as retrievers, you can take the following actions:
 
-###### Actions
-
-- [Detaching an Amazon Kendra index](#detach-kendra-retriever)
-
-- [Updating an Amazon Kendra index](#edit-kendra-index)
-
-- [Deleting an Amazon Kendra index](#delete-kendra-index)
-
-- [Deleting an Amazon Kendra retriever](#delete-kendra-retriever)
-
-- [Getting properties of an Amazon Kendra retriever](#describe-kendra-retriever)
-
-- [Listing Amazon Kendra indices](#list-kendra-retriever)
-
-- [Updating an Amazon Kendra retriever](#update-kendra-retriever)
+**Topics**
++ [Detaching an Amazon Kendra index](#detach-kendra-retriever)
++ [Updating an Amazon Kendra index](#edit-kendra-index)
++ [Deleting an Amazon Kendra index](#delete-kendra-index)
++ [Deleting an Amazon Kendra retriever](#delete-kendra-retriever)
++ [Getting properties of an Amazon Kendra retriever](#describe-kendra-retriever)
++ [Listing Amazon Kendra indices](#list-kendra-retriever)
++ [Updating an Amazon Kendra retriever](#update-kendra-retriever)
 
 ## Detaching an Amazon Kendra index
+<a name="detach-kendra-retriever"></a>
 
-To detach an Amazon Kendra index, you can use the console or the [DeleteRetriever](../api-reference/api-deleteretriever.md) API
-operation.
+To detach an Amazon Kendra index, you can use the console or the [DeleteRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteRetriever.html) API operation.
 
-The following tabs provide a procedure for the AWS Management Console and code examples for
-the AWS CLI.
+The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
-Console
+------
+#### [ Console ]
 
-**To detach an Amazon Kendra**
-**index**
+**To detach an Amazon Kendra index**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    your application from the list of applications.
+1. In **Applications**, select the name of your application from the list of applications.
 
-3. From the left navigation menu, choose **Data**
-**sources**.
+1. From the left navigation menu, choose **Data sources**.
 
-4. In the **Data sources** page, from
-    **Index**, select
-    **Edit**.
+1. In the **Data sources** page, from **Index**, select **Edit**.
 
-5. In **Edit index**, choose to update index
-    units provisioned from **Number of units**.
+1. In **Edit index**, choose to update index units provisioned from **Number of units**.
 
-6. Select **Update** to save your
-    changes.
+1. Select **Update** to save your changes.
 
-7. In **Applications**, choose
-    **Actions**.
+1. In **Applications**, choose **Actions**.
 
-8. Choose **Detach**.
+1. Choose **Detach**.
 
-9. In the dialog box that opens, type
-    `confirm` to confirm deletion, and
-    then choose **Detach**.
+1. In the dialog box that opens, type **confirm** to confirm deletion, and then choose **Detach**.
 
-You are returned to the service console while your index
-    is detached and your retriever is deleted. When the process
-    is complete, the console displays a message confirming
-    successful detachment.
+   You are returned to the service console while your index is detached and your retriever is deleted. When the process is complete, the console displays a message confirming successful detachment.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To detach an Amazon Kendra**
-**index**
-
-```nohighlight
-
-aws qbusiness delete-retriever \
---application-id application-id \
---retriever-id retriever-id
+**To detach an Amazon Kendra index**
 
 ```
+aws qbusiness delete-retriever \
+--application-id {{application-id}} \
+--retriever-id {{retriever-id}}
+```
+
+------
 
 ## Updating an Amazon Kendra index
+<a name="edit-kendra-index"></a>
 
-To update an Amazon Kendra index, you can use the Amazon Q Business console or
-the Amazon Kendra [UpdateIndex](../../../../reference/kendra/latest/apireference/api-updateindex.md) API
-operation.
+To update an Amazon Kendra index, you can use the Amazon Q Business console or the Amazon Kendra [UpdateIndex](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateIndex.html) API operation.
 
-###### Note
+**Note**
+You can't update an Amazon Kendra Developer edition index. You can only update an Amazon Kendra Enterprise Edition index or Amazon Kendra GenAI Enterprise Edition index.
 
-You can't update an Amazon Kendra Developer edition index. You can only update an
-Amazon Kendra Enterprise Edition index or Amazon Kendra GenAI Enterprise Edition
-index.
+The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
-The following tabs provide a procedure for the AWS Management Console and code examples for
-the AWS CLI.
+------
+#### [ Console ]
 
-Console
-
-**To update an Amazon Kendra**
-**index**
+**To update an Amazon Kendra index**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    your application from the list of applications.
+1. In **Applications**, select the name of your application from the list of applications.
 
-3. From the left navigation menu, choose **Data**
-**sources**.
+1. From the left navigation menu, choose **Data sources**.
 
-4. In the **Data sources** page, from
-    **Index**, select
-    **Edit**.
+1. In the **Data sources** page, from **Index**, select **Edit**.
 
-5. In **Edit index**, choose between the
-    following values to update"
+1. In **Edit index**, choose between the following values to update"
+   + **Storage capacity** – Update your storage capacity to a value between 1-50 units. Each unit contains 20,000 documents. Index capacity must be more than the data stored in your index. If you need to, delete data and re-sync your data sources before adjusting capacity.
+   + **Query capacity** – Update your query capacity between 1-100 units. Each unit is 0.1 queries per second (QPS), or about 8000 queries per day.
 
-- **Storage capacity** –
-Update your storage capacity to a value between 1-50
-units. Each unit contains 20,000 documents. Index
-capacity must be more than the data stored in your
-index. If you need to, delete data and re-sync your
-data sources before adjusting capacity.
+1. Select **Update** to save your changes.
 
-- **Query capacity** –
-Update your query capacity between 1-100 units. Each
-unit is 0.1 queries per second (QPS), or about 8000
-queries per day.
+------
+#### [ AWS CLI ]
 
-6. Select **Update** to save your
-    changes.
+**To update an Amazon Kendra index**
 
-AWS CLI
-
-**To update an Amazon Kendra**
-**index**
-
-```nohighlight
+```
 
 aws kendra update-index \
---id index-id \
---capacity-units '{"QueryCapacityUnits": 2, "StorageCapacityUnits": 1}'
-
+--id {{index-id}} \
+--capacity-units '{"QueryCapacityUnits": {{2}}, "StorageCapacityUnits": {{1}}}'
 ```
+
+------
 
 ## Deleting an Amazon Kendra index
+<a name="delete-kendra-index"></a>
 
-To detach an Amazon Kendra index, you can use the Amazon Kendra console or the Amazon Kendra [DeleteIndex](../../../../reference/kendra/latest/apireference/api-deleteindex.md) API operation.
+To detach an Amazon Kendra index, you can use the Amazon Kendra console or the Amazon Kendra [DeleteIndex](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DeleteIndex.html) API operation.
 
-Deleting an index removes the index and all associated data sources and
-document data. Deleting an index doesn't remove the original documents from your
-storage.
+Deleting an index removes the index and all associated data sources and document data. Deleting an index doesn't remove the original documents from your storage.
 
-Deleting an index is an asynchronous operation. When you start deleting an
-index, the index status changes to `DELETING`. It remains in the
-`DELETING` state until all of the information related to the
-index is removed. Once the index is deleted, it no longer appears in the results
-of a call to the Amazon Kendra [ListIndices](../../../../reference/kendra/latest/apireference/api-listindices.md)
-API. If you call the Amazon Kendra [DescribeIndex](../../../../reference/kendra/latest/apireference/api-describeindex.md) API with the deleted index's identifier, you receive
-and `ResourceNotFound` exception.
+Deleting an index is an asynchronous operation. When you start deleting an index, the index status changes to `DELETING`. It remains in the `DELETING` state until all of the information related to the index is removed. Once the index is deleted, it no longer appears in the results of a call to the Amazon Kendra [ListIndices](https://docs.aws.amazon.com/kendra/latest/APIReference/API_ListIndices.html) API. If you call the Amazon Kendra [DescribeIndex](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeIndex.html) API with the deleted index's identifier, you receive and `ResourceNotFound` exception.
 
-The following tabs provide a procedure for the AWS Management Console and code examples for
-the AWS CLI.
+The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
-Console
+------
+#### [ Console ]
 
-**To delete an Amazon Kendra**
-**index**
+**To delete an Amazon Kendra index**
 
-1. Sign in to the AWS Management Console and open the Amazon Kendra console at [https://console.aws.amazon.com/kendra/](https://console.aws.amazon.com/kendra).
+1. Sign in to the AWS Management Console and open the Amazon Kendra console at [https://console.aws.amazon.com/kendra/](https://console.aws.amazon.com/kendra/).
 
-2. In the navigation pane, choose
-    **Indexes**, and then choose the index
-    to delete.
+1. In the navigation pane, choose **Indexes**, and then choose the index to delete.
 
-3. Choose **Delete** to delete the selected
-    index.
+1. Choose **Delete** to delete the selected index.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To delete an Amazon Kendra**
-**index**
-
-```nohighlight
-
-aws kendra delete-index \
---id index-id
+**To delete an Amazon Kendra index**
 
 ```
+aws kendra delete-index \
+--id {{index-id}}
+```
+
+------
 
 ## Deleting an Amazon Kendra retriever
+<a name="delete-kendra-retriever"></a>
 
-To delete an Amazon Kendra retriever, you can use the console or the [DeleteRetriever](../api-reference/api-deleteretriever.md) API
-operation.
+To delete an Amazon Kendra retriever, you can use the console or the [DeleteRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteRetriever.html) API operation.
 
-If you use the console, the only ways to delete your Amazon Kendra
-retriever from your Amazon Q Business application environment is to [detach your Amazon Kendra index](supported-kendra-retriever-actions.md#detach-kendra-retriever) from the Amazon Q Business application or delete your Amazon Q Business
-application environment.
+If you use the console, the only ways to delete your Amazon Kendra retriever from your Amazon Q Business application environment is to [detach your Amazon Kendra index](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-kendra-retriever-actions.html#detach-kendra-retriever) from the Amazon Q Business application or delete your Amazon Q Business application environment.
 
-The following tabs provide a procedure for the AWS Management Console and code examples for
-the AWS CLI for the second scenario.
+The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI for the second scenario.
 
-Console
+------
+#### [ Console ]
 
-**To delete an Amazon Kendra**
-**retriever**
+**To delete an Amazon Kendra retriever**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, choose
-    **Actions**.
+1. In **Applications**, choose **Actions**.
 
-3. Choose **Delete**.
+1. Choose **Delete**.
 
-4. In the dialog box that opens, type
-    `Delete` to confirm deletion, and
-    then choose **Delete**.
+1. In the dialog box that opens, type **Delete** to confirm deletion, and then choose **Delete**.
 
-You are returned to the service console while your
-    application environment is deleted. When the deletion process is
-    complete, the console displays a message confirming
-    successful deletion.
+   You are returned to the service console while your application environment is deleted. When the deletion process is complete, the console displays a message confirming successful deletion.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To delete an Amazon Kendra**
-**retriever**
-
-```nohighlight
-
-aws qbusiness delete-retriever \
---application-id application-id \
---retriever-id retriever-id
+**To delete an Amazon Kendra retriever**
 
 ```
+aws qbusiness delete-retriever \
+--application-id {{application-id}} \
+--retriever-id {{retriever-id}}
+```
+
+------
 
 ## Getting properties of an Amazon Kendra retriever
+<a name="describe-kendra-retriever"></a>
 
-To get the properties of an Amazon Kendra retriever, you can use the console or the
-[GetRetriever](../api-reference/api-addretriever.md) API
-operation.
+To get the properties of an Amazon Kendra retriever, you can use the console or the [GetRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AddRetriever.html) API operation.
 
-The following tabs provide a procedure for the AWS Management Console and code examples for
-the AWS CLI.
+The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
-Console
+------
+#### [ Console ]
 
-**To get the properties of an Amazon Kendra retriever**
+**To get the properties of an Amazon Kendra retriever **
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    your application environment from the list of applications.
+1. In **Applications**, select the name of your application environment from the list of applications.
 
-3. From the left navigation menu, choose **Data**
-**sources**.
+1. From the left navigation menu, choose **Data sources**.
 
-4. On the **Data sources** page, under
-    **Index** the following settings are
-    available:
+1. On the **Data sources** page, under **Index** the following settings are available:
+   + **Retriever** – The type of retriever that you're using.
+   + **Document count** – The number of documents that are attached to your index.
+   + **Last modified time** – The time that your index was last modified.
+   + **Index ID** – The ID of the index attached to your retriever.
+   + **Storage used** – The amount of storage that your index is using.
+   + **Index status** – The status of your index.
+**Note**
+You can't edit or update retriever or index settings.
 
-- **Retriever** – The type
-of retriever that you're using.
+------
+#### [ AWS CLI ]
 
-- **Document count** – The
-number of documents that are attached to your index.
-
-- **Last modified time** –
-The time that your index was last modified.
-
-- **Index ID** – The ID of
-the index attached to your retriever.
-
-- **Storage used** – The
-amount of storage that your index is using.
-
-- **Index status** – The
-status of your index.
-
-###### Note
-
-You can't edit or update retriever or index
-settings.
-
-AWS CLI
-
-**To get properties of an Amazon Kendra**
-**retriever**
-
-```nohighlight
-
-aws qbusiness get-retriever \
---application-id application-id \
---retriever-id retriever-id
+**To get properties of an Amazon Kendra retriever **
 
 ```
+aws qbusiness get-retriever \
+--application-id {{application-id}} \
+--retriever-id {{retriever-id}}
+```
+
+------
 
 ## Listing Amazon Kendra indices
+<a name="list-kendra-retriever"></a>
 
-To list your Amazon Kendra indices being used as retrievers, you can use the console
-or the [ListRetrievers](../api-reference/api-listretrievers.md) API
-operation.
+To list your Amazon Kendra indices being used as retrievers, you can use the console or the [ListRetrievers](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListRetrievers.html) API operation.
 
-If you use the console, the list of Amazon Kendra indices being used as retrievers can
-be found within the list of data sources that you have created.
+If you use the console, the list of Amazon Kendra indices being used as retrievers can be found within the list of data sources that you have created.
 
-The following tabs provide a procedure for the AWS Management Console and code examples for
-the AWS CLI.
+The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
-Console
+------
+#### [ Console ]
 
-**To list your Amazon Q Business indices**
-**and retrievers**
+**To list your Amazon Q Business indices and retrievers**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    your application from the list of applications.
+1. In **Applications**, select the name of your application from the list of applications.
 
-3. From the left navigation menu, choose **Data**
-**sources**.
+1. From the left navigation menu, choose **Data sources**.
 
-4. On the **Data sources** page, a list of
-    all indices that you have created is available.
+1. On the **Data sources** page, a list of all indices that you have created is available.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To list Amazon Kendra**
-**retrivers**
-
-```nohighlight
-
-aws qbusiness list-retrievers \
---application-id application-id \
---max-results maximum-result-to-display
+**To list Amazon Kendra retrivers**
 
 ```
+aws qbusiness list-retrievers \
+--application-id {{application-id}} \
+--max-results {{maximum-result-to-display}}
+```
+
+------
 
 ## Updating an Amazon Kendra retriever
+<a name="update-kendra-retriever"></a>
 
-To update your Amazon Kendra retriever, you can use the [UpdateRetriever](../api-reference/api-updateretriever.md) API
-operation.
+To update your Amazon Kendra retriever, you can use the [UpdateRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateRetriever.html) API operation.
 
 You can't update your Amazon Kendra retriever using the console.
 
 The following tab provides code examples for the AWS CLI.
 
-Console
+------
+#### [ Console ]
 
-**This action is not supported on the**
-**console.**
+**This action is not supported on the console.**
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To update an Amazon Kendra**
-**retriever**
-
-```nohighlight
-
-aws qbusiness update-retriever \
---application-id application-id \
---retriever-id retriever-id \
---display-name display-name \
---role-arn roleArn \
---configuration kendraIndexConfiguration="{indexId=<kendra-index-d>}"
+**To update an Amazon Kendra retriever**
 
 ```
+aws qbusiness update-retriever \
+--application-id {{application-id}} \
+--retriever-id {{retriever-id}} \
+--display-name {{display-name}} \
+--role-arn {{roleArn}} \
+--configuration {{kendraIndexConfiguration="{indexId=<kendra-index-d>}"}}
+```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Managing Amazon Q Business indices
-
-Managing data sources
+------
 
 All content copied from https://docs.aws.amazon.com/.

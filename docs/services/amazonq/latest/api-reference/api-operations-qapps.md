@@ -3,83 +3,43 @@ title: "QApps"
 ---
 
 # QApps
+<a name="API_Operations_QApps"></a>
 
 The following actions are supported by QApps:
-
-- [AssociateLibraryItemReview](api-qapps-associatelibraryitemreview.md)
-
-- [AssociateQAppWithUser](api-qapps-associateqappwithuser.md)
-
-- [BatchCreateCategory](api-qapps-batchcreatecategory.md)
-
-- [BatchDeleteCategory](api-qapps-batchdeletecategory.md)
-
-- [BatchUpdateCategory](api-qapps-batchupdatecategory.md)
-
-- [CreateLibraryItem](api-qapps-createlibraryitem.md)
-
-- [CreatePresignedUrl](api-qapps-createpresignedurl.md)
-
-- [CreateQApp](api-qapps-createqapp.md)
-
-- [DeleteLibraryItem](api-qapps-deletelibraryitem.md)
-
-- [DeleteQApp](api-qapps-deleteqapp.md)
-
-- [DescribeQAppPermissions](api-qapps-describeqapppermissions.md)
-
-- [DisassociateLibraryItemReview](api-qapps-disassociatelibraryitemreview.md)
-
-- [DisassociateQAppFromUser](api-qapps-disassociateqappfromuser.md)
-
-- [ExportQAppSessionData](api-qapps-exportqappsessiondata.md)
-
-- [GetLibraryItem](api-qapps-getlibraryitem.md)
-
-- [GetQApp](api-qapps-getqapp.md)
-
-- [GetQAppSession](api-qapps-getqappsession.md)
-
-- [GetQAppSessionMetadata](api-qapps-getqappsessionmetadata.md)
-
-- [ImportDocument](api-qapps-importdocument.md)
-
-- [ListCategories](api-qapps-listcategories.md)
-
-- [ListLibraryItems](api-qapps-listlibraryitems.md)
-
-- [ListQApps](api-qapps-listqapps.md)
-
-- [ListQAppSessionData](api-qapps-listqappsessiondata.md)
-
-- [ListTagsForResource](api-qapps-listtagsforresource.md)
-
-- [PredictQApp](api-qapps-predictqapp.md)
-
-- [StartQAppSession](api-qapps-startqappsession.md)
-
-- [StopQAppSession](api-qapps-stopqappsession.md)
-
-- [TagResource](api-qapps-tagresource.md)
-
-- [UntagResource](api-qapps-untagresource.md)
-
-- [UpdateLibraryItem](api-qapps-updatelibraryitem.md)
-
-- [UpdateLibraryItemMetadata](api-qapps-updatelibraryitemmetadata.md)
-
-- [UpdateQApp](api-qapps-updateqapp.md)
-
-- [UpdateQAppPermissions](api-qapps-updateqapppermissions.md)
-
-- [UpdateQAppSession](api-qapps-updateqappsession.md)
-
-- [UpdateQAppSessionMetadata](api-qapps-updateqappsessionmetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateWebExperience
-
-AssociateLibraryItemReview
++  [AssociateLibraryItemReview](API_qapps_AssociateLibraryItemReview.md)
++  [AssociateQAppWithUser](API_qapps_AssociateQAppWithUser.md)
++  [BatchCreateCategory](API_qapps_BatchCreateCategory.md)
++  [BatchDeleteCategory](API_qapps_BatchDeleteCategory.md)
++  [BatchUpdateCategory](API_qapps_BatchUpdateCategory.md)
++  [CreateLibraryItem](API_qapps_CreateLibraryItem.md)
++  [CreatePresignedUrl](API_qapps_CreatePresignedUrl.md)
++  [CreateQApp](API_qapps_CreateQApp.md)
++  [DeleteLibraryItem](API_qapps_DeleteLibraryItem.md)
++  [DeleteQApp](API_qapps_DeleteQApp.md)
++  [DescribeQAppPermissions](API_qapps_DescribeQAppPermissions.md)
++  [DisassociateLibraryItemReview](API_qapps_DisassociateLibraryItemReview.md)
++  [DisassociateQAppFromUser](API_qapps_DisassociateQAppFromUser.md)
++  [ExportQAppSessionData](API_qapps_ExportQAppSessionData.md)
++  [GetLibraryItem](API_qapps_GetLibraryItem.md)
++  [GetQApp](API_qapps_GetQApp.md)
++  [GetQAppSession](API_qapps_GetQAppSession.md)
++  [GetQAppSessionMetadata](API_qapps_GetQAppSessionMetadata.md)
++  [ImportDocument](API_qapps_ImportDocument.md)
++  [ListCategories](API_qapps_ListCategories.md)
++  [ListLibraryItems](API_qapps_ListLibraryItems.md)
++  [ListQApps](API_qapps_ListQApps.md)
++  [ListQAppSessionData](API_qapps_ListQAppSessionData.md)
++  [ListTagsForResource](API_qapps_ListTagsForResource.md)
++  [PredictQApp](API_qapps_PredictQApp.md)
++  [StartQAppSession](API_qapps_StartQAppSession.md)
++  [StopQAppSession](API_qapps_StopQAppSession.md)
++  [TagResource](API_qapps_TagResource.md)
++  [UntagResource](API_qapps_UntagResource.md)
++  [UpdateLibraryItem](API_qapps_UpdateLibraryItem.md)
++  [UpdateLibraryItemMetadata](API_qapps_UpdateLibraryItemMetadata.md)
++  [UpdateQApp](API_qapps_UpdateQApp.md)
++  [UpdateQAppPermissions](API_qapps_UpdateQAppPermissions.md)
++  [UpdateQAppSession](API_qapps_UpdateQAppSession.md)
++  [UpdateQAppSessionMetadata](API_qapps_UpdateQAppSessionMetadata.md)
 
 All content copied from https://docs.aws.amazon.com/.

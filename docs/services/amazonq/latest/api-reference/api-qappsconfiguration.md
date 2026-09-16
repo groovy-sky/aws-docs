@@ -3,36 +3,25 @@ title: "QAppsConfiguration"
 ---
 
 # QAppsConfiguration
+<a name="API_QAppsConfiguration"></a>
 
 Configuration information about Amazon Q Apps.
 
 ## Contents
+<a name="API_QAppsConfiguration_Contents"></a>
 
-**qAppsControlMode**
-
-Status information about whether end users can create and use Amazon Q Apps in the web
-experience.
-
+ ** qAppsControlMode **   <a name="qbusiness-Type-QAppsConfiguration-qAppsControlMode"></a>
+Status information about whether end users can create and use Amazon Q Apps in the web experience.
 Type: String
-
 Valid Values: `ENABLED | DISABLED`
-
 Required: Yes
 
 ## See Also
+<a name="API_QAppsConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/qappsconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/qappsconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/qappsconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrincipalUser
-
-QuickSightConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/QAppsConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/QAppsConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/QAppsConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

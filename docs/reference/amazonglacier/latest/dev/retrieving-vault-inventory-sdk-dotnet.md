@@ -4,120 +4,96 @@ title: "Downloading a Vault Inventory in Amazon Glacier Using the AWS SDK for .N
 
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
-If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).
+If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/).
 
-Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3).
+Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/).
 
 # Downloading a Vault Inventory in Amazon Glacier Using the AWS SDK for .NET
+<a name="retrieving-vault-inventory-sdk-dotnet"></a>
 
 The following are the steps to retrieve a vault inventory using the low-level API of the AWS SDK for .NET. The high-level API does not support retrieving a vault inventory.
 
 1. Create an instance of the `AmazonGlacierClient` class (the client).
 
-You need to specify an AWS Region where the vault resides. All operations you perform
-    using this client apply to that AWS Region.
+   You need to specify an AWS Region where the vault resides. All operations you perform using this client apply to that AWS Region.
 
-2. Initiate an inventory retrieval job by executing the `InitiateJob`
-    method.
+1. Initiate an inventory retrieval job by executing the `InitiateJob` method.
 
-You provide job information in an `InitiateJobRequest` object. Amazon Glacier (Amazon Glacier) returns a job ID in response. The response is available in an instance of the
-    `InitiateJobResponse` class.
+   You provide job information in an `InitiateJobRequest` object. Amazon Glacier (Amazon Glacier) returns a job ID in response. The response is available in an instance of the `InitiateJobResponse` class.
 
-```
+   ```
+   AmazonGlacierClient client;
+   client = new AmazonGlacierClient(Amazon.RegionEndpoint.USWest2);
 
-AmazonGlacierClient client;
-client = new AmazonGlacierClient(Amazon.RegionEndpoint.USWest2);
-
-InitiateJobRequest initJobRequest = new InitiateJobRequest()
-{
+   InitiateJobRequest initJobRequest = new InitiateJobRequest()
+   {
      VaultName = vaultName,
      JobParameters = new JobParameters()
      {
        Type = "inventory-retrieval",
        SNSTopic = "*** Provide Amazon SNS topic arn ***",
      }
-};
-InitiateJobResponse initJobResponse = client.InitiateJob(initJobRequest);
-string jobId = initJobResponse.JobId;
-```
+   };
+   InitiateJobResponse initJobResponse = client.InitiateJob(initJobRequest);
+   string jobId = initJobResponse.JobId;
+   ```
 
-3. Wait for the job to complete.
+1. Wait for the job to complete.
 
-You must wait until the job
-    output is ready for you to download. If you have either set a notification configuration
-    on the vault identifying an Amazon Simple Notification Service (Amazon SNS) topic, or
-    specified an Amazon SNS topic when you initiated a job, Amazon Glacier sends a message to
-    that topic after it completes the job. The code example given in the following section
-    uses Amazon SNS for Amazon Glacier to publish a message.
+   You must wait until the job output is ready for you to download. If you have either set a notification configuration on the vault identifying an Amazon Simple Notification Service (Amazon SNS) topic, or specified an Amazon SNS topic when you initiated a job, Amazon Glacier sends a message to that topic after it completes the job. The code example given in the following section uses Amazon SNS for Amazon Glacier to publish a message.
 
-You can also poll Amazon Glacier by calling the `DescribeJob` method to
-    determine job completion status. Although using Amazon SNS topic for notification is the
-    recommended approach.
+   You can also poll Amazon Glacier by calling the `DescribeJob` method to determine job completion status. Although using Amazon SNS topic for notification is the recommended approach.
 
-4. Download the job output (vault inventory data) by executing the `GetJobOutput`
-    method.
+1. Download the job output (vault inventory data) by executing the `GetJobOutput` method.
 
-You provide your account ID, vault name, and the job ID information by creating an
-    instance of the `GetJobOutputRequest` class. If you don't
-    provide an account ID, then the account ID associated with the credentials you
-    provide to sign the request is assumed. For more information, see [Using the AWS SDK for .NET with Amazon Glacier](using-aws-sdk-for-dot-net.md).
+   You provide your account ID, vault name, and the job ID information by creating an instance of the `GetJobOutputRequest` class. If you don't provide an account ID, then the account ID associated with the credentials you provide to sign the request is assumed. For more information, see [Using the AWS SDK for .NET with Amazon Glacier](using-aws-sdk-for-dot-net.md).
 
-The output that Amazon Glacier returns
-    is available in the `GetJobOutputResponse` object.
+   The output that Amazon Glacier returns is available in the `GetJobOutputResponse` object.
 
-```
-
-GetJobOutputRequest getJobOutputRequest = new GetJobOutputRequest()
-{
+   ```
+   GetJobOutputRequest getJobOutputRequest = new GetJobOutputRequest()
+   {
      JobId = jobId,
      VaultName = vaultName
-};
+   };
 
-GetJobOutputResponse getJobOutputResponse = client.GetJobOutput(getJobOutputRequest);
-using (Stream webStream = getJobOutputResponse.Body)
-{
+   GetJobOutputResponse getJobOutputResponse = client.GetJobOutput(getJobOutputRequest);
+   using (Stream webStream = getJobOutputResponse.Body)
+   {
       using (Stream fileToSave = File.OpenWrite(fileName))
       {
         CopyStream(webStream, fileToSave);
       }
-}
-```
+   }
+   ```
 
-###### Note
-
-For information about the job related underlying REST API, see [Job Operations](../../../../services/amazonglacier/latest/dev/job-operations.md).
+**Note**
+For information about the job related underlying REST API, see [Job Operations](job-operations.md).
 
 ## Example: Retrieving a Vault Inventory Using the Low-Level API of the AWS SDK for .NET
+<a name="creating-vaults-sdk-dotnet-example-inventory"></a>
 
-The following C# code example retrieves the vault inventory for the specified vault.
+The following C\# code example retrieves the vault inventory for the specified vault.
 
 The example performs the following tasks:
 
-- Set up an Amazon SNS topic.
++ Set up an Amazon SNS topic.
 
-Amazon Glacier sends notification to this topic after it completes the job.
+  Amazon Glacier sends notification to this topic after it completes the job.
++ Set up an Amazon SQS queue.
 
-- Set up an Amazon SQS queue.
+  The example attaches a policy to the queue to enable the Amazon SNS topic to post messages.
++ Initiate a job to download the specified archive.
 
-The example attaches a policy to the queue to enable the Amazon SNS topic to post
-messages.
+  In the job request, the example specifies the Amazon SNS topic so that Amazon Glacier can send a message after it completes the job.
++ Periodically check the Amazon SQS queue for a message.
 
-- Initiate a job to download the specified archive.
+  If there is a message, parse the JSON and check if the job completed successfully. If it did, download the archive. The code example uses the JSON.NET library (see [JSON.NET](http://json.codeplex.com/)) to parse the JSON.
++ Clean up by deleting the Amazon SNS topic and the Amazon SQS queue it created.
 
-In the job request, the example specifies the Amazon SNS topic so that Amazon Glacier
-can send a message after it completes the job.
-
-- Periodically check the Amazon SQS queue for a message.
-
-If there is a message, parse the JSON and check if the job completed successfully.
-If it did, download the archive. The code example uses the JSON.NET library (see [JSON.NET](http://json.codeplex.com/)) to parse the JSON.
-
-- Clean up by deleting the Amazon SNS topic and the Amazon SQS queue it created.
-
-###### Example
+**Example**
 
 ```
-
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -319,11 +295,5 @@ namespace glacier.amazon.com.docsamples
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Downloading a Vault Inventory Using Java
-
-Downloading a Vault Inventory Using REST
 
 All content copied from https://docs.aws.amazon.com/.

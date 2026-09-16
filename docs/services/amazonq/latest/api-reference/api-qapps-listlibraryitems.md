@@ -3,55 +3,48 @@ title: "ListLibraryItems"
 ---
 
 # ListLibraryItems
+<a name="API_qapps_ListLibraryItems"></a>
 
-Lists the library items for Amazon Q Apps that are published and available for users in your
-AWS account.
+Lists the library items for Amazon Q Apps that are published and available for users in your AWS account.
 
 ## Request Syntax
+<a name="API_qapps_ListLibraryItems_RequestSyntax"></a>
 
-```nohighlight
-
-GET /catalog.list?categoryId=categoryId&limit=limit&nextToken=nextToken HTTP/1.1
-instance-id: instanceId
-
+```
+GET /catalog.list?categoryId={{categoryId}}&limit={{limit}}&nextToken={{nextToken}} HTTP/1.1
+instance-id: {{instanceId}}
 ```
 
 ## URI Request Parameters
+<a name="API_qapps_ListLibraryItems_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[categoryId](#API_qapps_ListLibraryItems_RequestSyntax)**
-
+ ** [categoryId](#API_qapps_ListLibraryItems_RequestSyntax) **   <a name="qbusiness-qapps_ListLibraryItems-request-uri-categoryId"></a>
 Optional category to filter the library items by.
-
 Pattern: `[\da-f]{8}-[\da-f]{4}-[45][\da-f]{3}-[89ABab][\da-f]{3}-[\da-f]{12}`
 
-**[instanceId](#API_qapps_ListLibraryItems_RequestSyntax)**
-
+ ** [instanceId](#API_qapps_ListLibraryItems_RequestSyntax) **   <a name="qbusiness-qapps_ListLibraryItems-request-instanceId"></a>
 The unique identifier of the Amazon Q Business application environment instance.
-
 Required: Yes
 
-**[limit](#API_qapps_ListLibraryItems_RequestSyntax)**
-
+ ** [limit](#API_qapps_ListLibraryItems_RequestSyntax) **   <a name="qbusiness-qapps_ListLibraryItems-request-uri-limit"></a>
 The maximum number of library items to return in the response.
-
 Valid Range: Minimum value of 1. Maximum value of 100.
 
-**[nextToken](#API_qapps_ListLibraryItems_RequestSyntax)**
-
+ ** [nextToken](#API_qapps_ListLibraryItems_RequestSyntax) **   <a name="qbusiness-qapps_ListLibraryItems-request-uri-nextToken"></a>
 The token to request the next page of results.
-
 Length Constraints: Minimum length of 0. Maximum length of 300.
 
 ## Request Body
+<a name="API_qapps_ListLibraryItems_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_qapps_ListLibraryItems_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -85,116 +78,74 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_qapps_ListLibraryItems_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[libraryItems](#API_qapps_ListLibraryItems_ResponseSyntax)**
-
+ ** [libraryItems](#API_qapps_ListLibraryItems_ResponseSyntax) **   <a name="qbusiness-qapps_ListLibraryItems-response-libraryItems"></a>
 The list of library items meeting the request criteria.
+Type: Array of [LibraryItemMember](API_qapps_LibraryItemMember.md) objects
 
-Type: Array of [LibraryItemMember](api-qapps-libraryitemmember.md) objects
-
-**[nextToken](#API_qapps_ListLibraryItems_ResponseSyntax)**
-
+ ** [nextToken](#API_qapps_ListLibraryItems_ResponseSyntax) **   <a name="qbusiness-qapps_ListLibraryItems-response-nextToken"></a>
 The token to use to request the next page of results.
-
 Type: String
 
 ## Errors
+<a name="API_qapps_ListLibraryItems_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AccessDeniedException**
-
+ ** AccessDeniedException **
 The client is not authorized to perform the requested operation.
-
 HTTP Status Code: 403
 
-**InternalServerException**
-
+ ** InternalServerException **
 An internal service error occurred while processing the request.
-
-**retryAfterSeconds**
-
+ ** retryAfterSeconds **
 The number of seconds to wait before retrying the operation
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The requested resource could not be found.
-
-**resourceId**
-
+ ** resourceId **
 The unique identifier of the resource
-
-**resourceType**
-
+ ** resourceType **
 The type of the resource
-
 HTTP Status Code: 404
 
-**ThrottlingException**
-
-The requested operation could not be completed because too many requests were sent at
-once. Wait a bit and try again later.
-
-**quotaCode**
-
+ ** ThrottlingException **
+The requested operation could not be completed because too many requests were sent at once. Wait a bit and try again later.
+ ** quotaCode **
 The code of the quota that was exceeded
-
-**retryAfterSeconds**
-
+ ** retryAfterSeconds **
 The number of seconds to wait before retrying the operation
-
-**serviceCode**
-
+ ** serviceCode **
 The code for the service where the quota was exceeded
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The client is not authenticated or authorized to perform the requested operation.
-
 HTTP Status Code: 401
 
-**ValidationException**
-
+ ** ValidationException **
 The input failed to satisfy the constraints specified by the service.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_qapps_ListLibraryItems_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for Python](../../../goto/boto3/qapps-2023-11-27/listlibraryitems.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/listlibraryitems.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListCategories
-
-ListQApps
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/qapps-2023-11-27/ListLibraryItems)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/ListLibraryItems)
 
 All content copied from https://docs.aws.amazon.com/.

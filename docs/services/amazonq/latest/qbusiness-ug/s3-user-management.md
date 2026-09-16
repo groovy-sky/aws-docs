@@ -2,40 +2,29 @@
 title: "How Amazon Q Business connector crawls Amazon S3 ACLs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # How Amazon Q Business connector crawls Amazon S3 ACLs
+<a name="s3-user-management"></a>
 
-You add access control information to a document in an Amazon S3 data source using
-a metadata file associated with the document. You specify the file using the console or as
-the `aclConfigurationFilePath` parameter when you call the
-`CreateDataSource` or `UpdateDataSource` API and use the
-`configuration` parameter.
+You add access control information to a document in an Amazon S3 data source using a metadata file associated with the document. You specify the file using the console or as the `aclConfigurationFilePath` parameter when you call the `CreateDataSource` or `UpdateDataSource` API and use the `configuration` parameter.
 
-###### Note
-
+**Note**
 The ACL file and data should be stored in the same Amazon S3 bucket.
 
-The configuration file contains a JSON structure that identifies an Amazon S3
-prefix and lists the access settings for the prefix. The prefix can be a path, or it can be
-an individual file. If the prefix is a path, the access settings apply to all of the files
-in that path.
+The configuration file contains a JSON structure that identifies an Amazon S3 prefix and lists the access settings for the prefix. The prefix can be a path, or it can be an individual file. If the prefix is a path, the access settings apply to all of the files in that path.
 
 You provide three pieces of information in the file:
++ The access that the entity should have. You can use `ALLOW` or `DENY`.
++ The type of entity. You can use `USER` or `GROUP`.
++ The name of the entity.
 
-- The access that the entity should have. You can use `ALLOW` or
-`DENY`.
-
-- The type of entity. You can use `USER` or `GROUP`.
-
-- The name of the entity.
-
-###### Important
-
+**Important**
 The system grants ALL users access to prefixes that do NOT appear in the ACL file.
 
 The JSON structure for the configuration file must be in the following format:
 
-```json
-
+```
 [
     {
         "keyPrefix": "s3://BUCKETNAME/prefix1/",
@@ -75,20 +64,9 @@ The JSON structure for the configuration file must be in the following format:
 ]
 ```
 
-For more
-information, see:
-
-- [Authorization](connector-concepts.md#connector-authorization)
-
-- [Identity crawler](connector-concepts.md#connector-identity-crawler)
-
-- [Understanding\
-User Store](connector-principal-store.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Adding metadata
-
-Error codes
+ For more information, see:
++ [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization)
++ [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler)
++ [Understanding User Store](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -4,46 +4,37 @@ title: "Downloading an Archive in Amazon Glacier Using the AWS SDK for Java"
 
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
-If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).
+If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/).
 
-Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3).
+Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/).
 
 # Downloading an Archive in Amazon Glacier Using the AWS SDK for Java
+<a name="downloading-an-archive-using-java"></a>
 
-Both the [high-level and low-level APIs](../../../../reference/amazonglacier/latest/dev/using-aws-sdk.md) provided by the Amazon SDK for Java provide a method to download an archive.
+Both the [high-level and low-level APIs](using-aws-sdk.md) provided by the Amazon SDK for Java provide a method to download an archive.
 
-###### Topics
-
-- [Downloading an Archive Using the High-Level API of the AWS SDK for Java](#downloading-an-archive-using-java-highlevel-api)
-
-- [Downloading an Archive Using the Low-Level API of the AWS SDK for Java](#downloading-an-archive-using-java-lowlevel-api)
+**Topics**
++ [Downloading an Archive Using the High-Level API of the AWS SDK for Java](#downloading-an-archive-using-java-highlevel-api)
++ [Downloading an Archive Using the Low-Level API of the AWS SDK for Java](#downloading-an-archive-using-java-lowlevel-api)
 
 ## Downloading an Archive Using the High-Level API of the AWS SDK for Java
+<a name="downloading-an-archive-using-java-highlevel-api"></a>
 
-The `ArchiveTransferManager` class of the high-level API provides the
-`download` method you can use to download an archive.
+The `ArchiveTransferManager` class of the high-level API provides the `download` method you can use to download an archive.
 
-###### Important
-
-The `ArchiveTransferManager` class creates an Amazon Simple Notification Service (Amazon SNS) topic, and an
-Amazon Simple Queue Service (Amazon SQS) queue that is subscribed to that topic. It then initiates the
-archive retrieval job and polls the queue for the archive to be available. When the
-archive is available, download begins. For information about retrieval times, see
-[Archive Retrieval Options](downloading-an-archive-two-steps.md#api-downloading-an-archive-two-steps-retrieval-options).
+**Important**
+The `ArchiveTransferManager` class creates an Amazon Simple Notification Service (Amazon SNS) topic, and an Amazon Simple Queue Service (Amazon SQS) queue that is subscribed to that topic. It then initiates the archive retrieval job and polls the queue for the archive to be available. When the archive is available, download begins. For information about retrieval times, see [Archive Retrieval Options](downloading-an-archive-two-steps.md#api-downloading-an-archive-two-steps-retrieval-options).
 
 ### Example: Downloading an Archive Using the High-Level API of the AWS SDK for Java
+<a name="download-archives-java-highlevel-example"></a>
 
-The following Java code example downloads an archive from a vault
-( `examplevault`) in the US West (Oregon) Region ( `us-west-2`).
+The following Java code example downloads an archive from a vault (`examplevault`) in the US West (Oregon) Region (`us-west-2`).
 
-For step-by-step instructions to run this sample, see [Running Java Examples for Amazon Glacier Using Eclipse](../../../../reference/amazonglacier/latest/dev/using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You need to update the code
-as shown with an existing archive ID and the local file path where you want to save
-the downloaded archive.
+For step-by-step instructions to run this sample, see [Running Java Examples for Amazon Glacier Using Eclipse](using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You need to update the code as shown with an existing archive ID and the local file path where you want to save the downloaded archive.
 
-###### Example
+**Example**
 
 ```
-
 import java.io.File;
 import java.io.IOException;
 
@@ -86,164 +77,112 @@ public class ArchiveDownloadHighLevel {
         }
     }
 }
-
 ```
 
 ## Downloading an Archive Using the Low-Level API of the AWS SDK for Java
+<a name="downloading-an-archive-using-java-lowlevel-api"></a>
 
-The following are the steps to retrieve a vault inventory using the AWS SDK for Java
-low-level API.
+The following are the steps to retrieve a vault inventory using the AWS SDK for Java low-level API.
 
 1. Create an instance of the `AmazonGlacierClient` class (the client).
 
-You need to specify an AWS Region from where you want to download the archive. All
-    operations you perform using this client apply to that AWS Region.
+   You need to specify an AWS Region from where you want to download the archive. All operations you perform using this client apply to that AWS Region.
 
-2. Initiate an `archive-retrieval` job by executing the `initiateJob`
-    method.
+1. Initiate an `archive-retrieval` job by executing the `initiateJob` method.
 
-You provide job information, such as the archive ID of the archive you want to download
-    and the optional Amazon SNS topic to which you want Amazon Glacier (Amazon Glacier) to post a
-    job completion message, by creating an instance of the
-    `InitiateJobRequest` class. Amazon Glacier returns a job ID
-    in response. The response is available in an instance of the
-    `InitiateJobResult` class.
+   You provide job information, such as the archive ID of the archive you want to download and the optional Amazon SNS topic to which you want Amazon Glacier (Amazon Glacier) to post a job completion message, by creating an instance of the `InitiateJobRequest` class. Amazon Glacier returns a job ID in response. The response is available in an instance of the `InitiateJobResult` class.
 
-```
-
-JobParameters jobParameters = new JobParameters()
+   ```
+   JobParameters jobParameters = new JobParameters()
        .withArchiveId("*** provide an archive id ***")
        .withDescription("archive retrieval")
        .withRetrievalByteRange("*** provide a retrieval range***") // optional
        .withType("archive-retrieval");
 
-InitiateJobResult initiateJobResult = client.initiateJob(new InitiateJobRequest()
+   InitiateJobResult initiateJobResult = client.initiateJob(new InitiateJobRequest()
        .withJobParameters(jobParameters)
        .withVaultName(vaultName));
 
-String jobId = initiateJobResult.getJobId();
-```
+   String jobId = initiateJobResult.getJobId();
+   ```
 
-You can optionally specify a byte range to request Amazon Glacier to
-    prepare only a portion of the archive. For example, you can update the
-    preceding request by adding the following statement to request Amazon Glacier to prepare only the 1 MB to 2 MB portion of the archive.
+   You can optionally specify a byte range to request Amazon Glacier to prepare only a portion of the archive. For example, you can update the preceding request by adding the following statement to request Amazon Glacier to prepare only the 1 MB to 2 MB portion of the archive.
 
-```
+   ```
+   int ONE_MEG = 1048576;
+   String retrievalByteRange = String.format("%s-%s", ONE_MEG, 2*ONE_MEG -1);
 
-int ONE_MEG = 1048576;
-String retrievalByteRange = String.format("%s-%s", ONE_MEG, 2*ONE_MEG -1);
-
-JobParameters jobParameters = new JobParameters()
+   JobParameters jobParameters = new JobParameters()
        .withType("archive-retrieval")
        .withArchiveId(archiveId)
        .withRetrievalByteRange(retrievalByteRange)
        .withSNSTopic(snsTopicARN);
 
-InitiateJobResult initiateJobResult = client.initiateJob(new InitiateJobRequest()
+   InitiateJobResult initiateJobResult = client.initiateJob(new InitiateJobRequest()
        .withJobParameters(jobParameters)
        .withVaultName(vaultName));
 
-String jobId = initiateJobResult.getJobId();
-```
+   String jobId = initiateJobResult.getJobId();
+   ```
 
-3. Wait for the job to complete.
+1. Wait for the job to complete.
 
-You must wait until
-    the job output is ready for you to download. If you have either set a
-    notification configuration on the vault identifying an Amazon Simple Notification Service (Amazon SNS) topic or specified an Amazon SNS topic
-    when you initiated a job, Amazon Glacier sends a message to that topic after
-    it completes the job.
+   You must wait until the job output is ready for you to download. If you have either set a notification configuration on the vault identifying an Amazon Simple Notification Service (Amazon SNS) topic or specified an Amazon SNS topic when you initiated a job, Amazon Glacier sends a message to that topic after it completes the job.
 
-You can also poll Amazon Glacier by calling the `describeJob` method to determine
-    the job completion status. Although, using an Amazon SNS topic for
-    notification is the recommended approach.
+   You can also poll Amazon Glacier by calling the `describeJob` method to determine the job completion status. Although, using an Amazon SNS topic for notification is the recommended approach.
 
-4. Download the job output (archive data) by executing the `getJobOutput`
-    method.
+1. Download the job output (archive data) by executing the `getJobOutput` method.
 
-You provide the request information such as the job ID and vault name by creating an
-    instance of the `GetJobOutputRequest` class. The output that
-    Amazon Glacier returns is available in the `GetJobOutputResult`
-    object.
+   You provide the request information such as the job ID and vault name by creating an instance of the `GetJobOutputRequest` class. The output that Amazon Glacier returns is available in the `GetJobOutputResult` object.
 
-```
-
-GetJobOutputRequest jobOutputRequest = new GetJobOutputRequest()
+   ```
+   GetJobOutputRequest jobOutputRequest = new GetJobOutputRequest()
            .withJobId("*** provide a job ID ***")
            .withVaultName("*** provide a vault name ****");
-GetJobOutputResult jobOutputResult = client.getJobOutput(jobOutputRequest);
+   GetJobOutputResult jobOutputResult = client.getJobOutput(jobOutputRequest);
 
-// jobOutputResult.getBody() // Provides the input stream.
-```
+   // jobOutputResult.getBody() // Provides the input stream.
+   ```
 
-The preceding code snippet downloads the entire job output. You can optionally
-    retrieve only a portion of the output, or download the entire output in smaller chunks
-    by specifying the byte range in your `GetJobOutputRequest`.
+   The preceding code snippet downloads the entire job output. You can optionally retrieve only a portion of the output, or download the entire output in smaller chunks by specifying the byte range in your `GetJobOutputRequest`.
 
-```
-
-GetJobOutputRequest jobOutputRequest = new GetJobOutputRequest()
+   ```
+   GetJobOutputRequest jobOutputRequest = new GetJobOutputRequest()
            .withJobId("*** provide a job ID ***")
            .withRange("bytes=0-1048575")   // Download only the first 1 MB of the output.
            .withVaultName("*** provide a vault name ****");
-```
+   ```
 
-In response to your `GetJobOutput` call, Amazon Glacier returns the checksum of the portion of
-    the data you downloaded, if certain conditions are met. For more information, see
-    [Receiving Checksums When Downloading Data](checksum-calculations-range.md).
+   In response to your `GetJobOutput` call, Amazon Glacier returns the checksum of the portion of the data you downloaded, if certain conditions are met. For more information, see [Receiving Checksums When Downloading Data](checksum-calculations-range.md).
 
-To verify there are no errors in the download, you can then compute the checksum on
-    the client-side and compare it with the checksum Amazon Glacier sent in the response.
+   To verify there are no errors in the download, you can then compute the checksum on the client-side and compare it with the checksum Amazon Glacier sent in the response.
 
-For an archive retrieval job with the optional range specified, when you get the job
-    description, it includes the checksum of the range you are retrieving
-    (SHA256TreeHash). You can use this value to further verify the accuracy of
-    the entire byte range that you later download. For example, if you initiate
-    a job to retrieve a tree-hash aligned archive range and then download output
-    in chunks such that each of your `GetJobOutput` requests return a
-    checksum, then you can compute checksum of each portion you download on the
-    client-side and then compute the tree hash. You can compare it with the
-    checksum Amazon Glacier returns in response to your describe job request to verify
-    that the entire byte range you have downloaded is the same as the byte range
-    that is stored in Amazon Glacier.
+   For an archive retrieval job with the optional range specified, when you get the job description, it includes the checksum of the range you are retrieving (SHA256TreeHash). You can use this value to further verify the accuracy of the entire byte range that you later download. For example, if you initiate a job to retrieve a tree-hash aligned archive range and then download output in chunks such that each of your `GetJobOutput` requests return a checksum, then you can compute checksum of each portion you download on the client-side and then compute the tree hash. You can compare it with the checksum Amazon Glacier returns in response to your describe job request to verify that the entire byte range you have downloaded is the same as the byte range that is stored in Amazon Glacier.
 
     For a working example, see [Example 2: Retrieving an Archive Using the Low-Level API of the AWS SDK for Java—Download Output in Chunks](#downloading-an-archive-with-range-using-java-example).
 
 ### Example 1: Retrieving an Archive Using the Low-Level API of the AWS SDK for Java
+<a name="downloading-an-archive-using-java-example"></a>
 
-The following Java code example downloads an archive from the specified vault.
-After the job completes, the example downloads the entire output in a single
-`getJobOutput` call. For an example of downloading output in chunks,
-see [Example 2: Retrieving an Archive Using the Low-Level API of the AWS SDK for Java—Download Output in Chunks](#downloading-an-archive-with-range-using-java-example).
+The following Java code example downloads an archive from the specified vault. After the job completes, the example downloads the entire output in a single `getJobOutput` call. For an example of downloading output in chunks, see [Example 2: Retrieving an Archive Using the Low-Level API of the AWS SDK for Java—Download Output in Chunks](#downloading-an-archive-with-range-using-java-example).
 
 The example performs the following tasks:
 
-- Creates an Amazon Simple Notification Service (Amazon SNS) topic.
++ Creates an Amazon Simple Notification Service (Amazon SNS) topic.
 
-Amazon Glacier sends a notification to this topic after it completes the
-job.
+  Amazon Glacier sends a notification to this topic after it completes the job.
++ Creates an Amazon Simple Queue Service (Amazon SQS) queue.
 
-- Creates an Amazon Simple Queue Service (Amazon SQS) queue.
+  The example attaches a policy to the queue to enable the Amazon SNS topic to post messages to the queue.
++ Initiates a job to download the specified archive.
 
-The example attaches a policy to the queue to enable the Amazon SNS topic
-to post messages to the queue.
+  In the job request, the Amazon SNS topic that was created is specified so that Amazon Glacier can publish a notification to the topic after it completes the job.
++ Periodically checks the Amazon SQS queue for a message that contains the job ID.
 
-- Initiates a job to download the specified archive.
-
-In the job request, the Amazon SNS topic that was created is specified so
-that Amazon Glacier can publish a notification to the topic after it completes
-the job.
-
-- Periodically checks the Amazon SQS queue for a message that contains the job ID.
-
-If there is a message, parse the JSON and check if the job completed
-successfully. If it did, download the archive.
-
-- Cleans up by deleting the Amazon SNS topic and the Amazon SQS queue that
-it created.
+  If there is a message, parse the JSON and check if the job completed successfully. If it did, download the archive.
++ Cleans up by deleting the Amazon SNS topic and the Amazon SQS queue that it created.
 
 ```
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -469,17 +408,14 @@ public class AmazonGlacierDownloadArchiveWithSQSPolling {
         sqsClient.deleteQueue(new DeleteQueueRequest(sqsQueueURL));
     }
 }
-
 ```
 
 ### Example 2: Retrieving an Archive Using the Low-Level API of the AWS SDK for Java—Download Output in Chunks
+<a name="downloading-an-archive-with-range-using-java-example"></a>
 
-The following Java code example retrieves an archive from Amazon Glacier. The code example
-downloads the job output in chunks by specifying byte range in a
-`GetJobOutputRequest` object.
+The following Java code example retrieves an archive from Amazon Glacier. The code example downloads the job output in chunks by specifying byte range in a `GetJobOutputRequest` object.
 
 ```
-
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
@@ -725,13 +661,6 @@ public class ArchiveDownloadLowLevelWithRange {
         sqsClient.deleteQueue(new DeleteQueueRequest(sqsQueueURL));
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Retrieving Archives
-
-Downloading an Archive Using .NET
 
 All content copied from https://docs.aws.amazon.com/.

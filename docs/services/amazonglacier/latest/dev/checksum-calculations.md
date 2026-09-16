@@ -4,113 +4,66 @@ title: "Computing Checksums"
 
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
-If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).
+If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/).
 
-Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3).
+Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/).
 
 # Computing Checksums
+<a name="checksum-calculations"></a>
 
-When uploading an archive, you must include both the `x-amz-sha256-tree-hash` and
-`x-amz-content-sha256` headers. The `x-amz-sha256-tree-hash`
-header is a checksum of the payload in your request body. This topic describes how to
-calculate the `x-amz-sha256-tree-hash` header. The
-`x-amz-content-sha256` header is a hash of the entire payload and is required
-for authorization. For more information, see [Example Signature Calculation for Streaming API](amazon-glacier-signing-requests.md#example-signature-calculation-streaming).
+When uploading an archive, you must include both the `x-amz-sha256-tree-hash` and `x-amz-content-sha256` headers. The `x-amz-sha256-tree-hash` header is a checksum of the payload in your request body. This topic describes how to calculate the `x-amz-sha256-tree-hash` header. The `x-amz-content-sha256` header is a hash of the entire payload and is required for authorization. For more information, see [Example Signature Calculation for Streaming API](amazon-glacier-signing-requests.md#example-signature-calculation-streaming).
 
 The payload of your request can be an:
 
-- Entire archive— When uploading an archive in a
-single request using the Upload Archive API, you send the entire archive in the
-request body. In this case, you must include the checksum of the entire archive.
++ **Entire archive—** When uploading an archive in a single request using the Upload Archive API, you send the entire archive in the request body. In this case, you must include the checksum of the entire archive.
++ **Archive part—** When uploading an archive in parts using the multipart upload API, you send only a part of the archive in the request body. In this case, you include the checksum of the archive part. And after you upload all the parts, you send a Complete Multipart Upload request, which must include the checksum of the entire archive.
 
-- Archive part— When uploading an archive in parts
-using the multipart upload API, you send only a part of the archive in the
-request body. In this case, you include the checksum of the archive part. And
-after you upload all the parts, you send a Complete Multipart Upload request,
-which must include the checksum of the entire archive.
+The checksum of the payload is a SHA-256 tree hash. It is called a tree hash because in the process of computing the checksum you compute a tree of SHA-256 hash values. The hash value at the root is the checksum for the entire archive.
 
-The checksum of the payload is a SHA-256 tree hash. It is called a tree hash because in the
-process of computing the checksum you compute a tree of SHA-256 hash values.
-The
-hash value at the root is the checksum for the entire archive.
-
-###### Note
-
-This section describes a way to compute the SHA-256 tree hash. However, you may use any
-procedure as long as it produces the same result.
+**Note**
+This section describes a way to compute the SHA-256 tree hash. However, you may use any procedure as long as it produces the same result.
 
 You compute the SHA-256 tree hash as follows:
 
-1. For each 1 MB chunk of payload data, compute the SHA-256 hash. The last chunk of data can
-    be less than 1 MB. For example, if you are uploading a 3.2 MB archive, you
-    compute the SHA-256 hash values for each of the first three 1 MB chunks of data,
-    and then compute the SHA-256 hash of the remaining 0.2 MB data. These hash
-    values form the leaf nodes of the tree.
+1. For each 1 MB chunk of payload data, compute the SHA-256 hash. The last chunk of data can be less than 1 MB. For example, if you are uploading a 3.2 MB archive, you compute the SHA-256 hash values for each of the first three 1 MB chunks of data, and then compute the SHA-256 hash of the remaining 0.2 MB data. These hash values form the leaf nodes of the tree.
 
-2. Build the next level of the tree.
+1. Build the next level of the tree.
 
-1. Concatenate two consecutive child node hash values and compute the SHA-256 hash of the
-    concatenated hash values. This concatenation and generation of the
-    SHA-256 hash produces a parent node for the two child nodes.
+   1. Concatenate two consecutive child node hash values and compute the SHA-256 hash of the concatenated hash values. This concatenation and generation of the SHA-256 hash produces a parent node for the two child nodes.
 
-2. If only one child node remains, promote that hash value to the next level in the
-    tree.
+   1. If only one child node remains, promote that hash value to the next level in the tree.
 
-3. Repeat step 2 until the resulting tree has a root. The root of the tree provides a hash of
-    the entire archive and a root of the appropriate subtree provides the hash for
-    the part in a multipart upload.
+1. Repeat step 2 until the resulting tree has a root. The root of the tree provides a hash of the entire archive and a root of the appropriate subtree provides the hash for the part in a multipart upload.
 
-###### Topics
-
-- [Tree Hash Example 1: Uploading an archive in a single request](#checksum-calculations-upload-archive-in-single-payload)
-
-- [Tree Hash Example 2: Uploading an archive using a multipart upload](#checksum-calculations-upload-archive-using-mpu)
-
-- [Computing the Tree Hash of a File](#checksum-calculations-examples)
-
-- [Receiving Checksums When Downloading Data](checksum-calculations-range.md)
+**Topics**
++ [Tree Hash Example 1: Uploading an archive in a single request](#checksum-calculations-upload-archive-in-single-payload)
++ [Tree Hash Example 2: Uploading an archive using a multipart upload](#checksum-calculations-upload-archive-using-mpu)
++ [Computing the Tree Hash of a File](#checksum-calculations-examples)
++ [Receiving Checksums When Downloading Data](checksum-calculations-range.md)
 
 ## Tree Hash Example 1: Uploading an archive in a single request
+<a name="checksum-calculations-upload-archive-in-single-payload"></a>
 
-When you upload an archive in a single request using the Upload Archive API (see [Upload Archive (POST archive)](api-archive-post.md)), the request payload
-includes the entire archive. Accordingly, you must include the tree hash of the entire
-archive in the `x-amz-sha256-tree-hash` request header. Suppose you want to
-upload a 6.5 MB archive. The following diagram illustrates the process of creating the
-SHA-256 hash of the archive. You read the archive and compute the SHA-256 hash for each
-1 MB chunk. You also compute the hash for the remaining 0.5 MB data and then build the
-tree as outlined in the preceding procedure.
+When you upload an archive in a single request using the Upload Archive API (see [Upload Archive (POST archive)](api-archive-post.md)), the request payload includes the entire archive. Accordingly, you must include the tree hash of the entire archive in the `x-amz-sha256-tree-hash` request header. Suppose you want to upload a 6.5 MB archive. The following diagram illustrates the process of creating the SHA-256 hash of the archive. You read the archive and compute the SHA-256 hash for each 1 MB chunk. You also compute the hash for the remaining 0.5 MB data and then build the tree as outlined in the preceding procedure.
 
-![Diagram showing tree hash example uploading an archive in a single request.](https://docs.aws.amazon.com/images/amazonglacier/latest/dev/images/TreeHash-ArchiveUploadSingleRequest.png)
+![Diagram showing tree hash example uploading an archive in a single request.](https://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-ArchiveUploadSingleRequest.png)
 
 ## Tree Hash Example 2: Uploading an archive using a multipart upload
+<a name="checksum-calculations-upload-archive-using-mpu"></a>
 
-The process of computing the tree hash when uploading an archive using multipart upload is
-the same when uploading the archive in a single request. The only difference is that in
-a multipart upload you upload only a part of the archive in each request (using the
-[Upload Part (PUT uploadID)](api-upload-part.md) API), and therefore
-you provide the checksum of only the part in the `x-amz-sha256-tree-hash`
-request header. However, after you upload all parts, you must send the Complete
-Multipart Upload (see [Complete Multipart Upload (POST uploadID)](api-multipart-complete-upload.md)) request with a tree hash of the entire
-archive in the `x-amz-sha256-tree-hash` request header.
+The process of computing the tree hash when uploading an archive using multipart upload is the same when uploading the archive in a single request. The only difference is that in a multipart upload you upload only a part of the archive in each request (using the [Upload Part (PUT uploadID)](api-upload-part.md) API), and therefore you provide the checksum of only the part in the `x-amz-sha256-tree-hash` request header. However, after you upload all parts, you must send the Complete Multipart Upload (see [Complete Multipart Upload (POST uploadID)](api-multipart-complete-upload.md)) request with a tree hash of the entire archive in the `x-amz-sha256-tree-hash` request header.
 
-![Diagram showing tree hash example uploading an archive using a multipart upload.](https://docs.aws.amazon.com/images/amazonglacier/latest/dev/images/TreeHash-MPU.png)
+![Diagram showing tree hash example uploading an archive using a multipart upload.](https://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-MPU.png)
 
 ## Computing the Tree Hash of a File
+<a name="checksum-calculations-examples"></a>
 
-The algorithms shown here are selected for demonstration purposes. You can optimize the code
-as needed for your implementation scenario. If you are using an Amazon SDK to program
-against Amazon Glacier (Amazon Glacier), the tree hash calculation is done for you and you only need to
-provide the file reference.
+The algorithms shown here are selected for demonstration purposes. You can optimize the code as needed for your implementation scenario. If you are using an Amazon SDK to program against Amazon Glacier (Amazon Glacier), the tree hash calculation is done for you and you only need to provide the file reference.
 
-###### Example 1: Java Example
-
-The following example shows how to calculate the SHA256 tree hash of a file using
-Java. You can run this example by either supplying a file location as an argument or
-you can use the `TreeHashExample.computeSHA256TreeHash` method directly
-from your code.
+**Example 1: Java Example**
+The following example shows how to calculate the SHA256 tree hash of a file using Java. You can run this example by either supplying a file location as an argument or you can use the `TreeHashExample.computeSHA256TreeHash` method directly from your code.
 
 ```
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -308,13 +261,10 @@ static final int ONE_MB = 1024 * 1024;
 }
 ```
 
-###### Example 2: C\# .NET Example
-
-The following example shows how to calculate the SHA256 tree hash of a file. You can run
-this example by supplying a file location as an argument.
+**Example 2: C\# .NET Example**
+The following example shows how to calculate the SHA256 tree hash of a file. You can run this example by supplying a file location as an argument.
 
 ```
-
 using System;
 using System.IO;
 
@@ -499,11 +449,5 @@ namespace ExampleTreeHash
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Signing Requests
-
-Receiving Checksums When Downloading Data
 
 All content copied from https://docs.aws.amazon.com/.

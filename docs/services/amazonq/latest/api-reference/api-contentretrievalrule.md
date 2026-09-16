@@ -3,37 +3,25 @@ title: "ContentRetrievalRule"
 ---
 
 # ContentRetrievalRule
+<a name="API_ContentRetrievalRule"></a>
 
-Rules for retrieving content from data sources connected to a Amazon Q Business
-application for a specific topic control configuration.
+Rules for retrieving content from data sources connected to a Amazon Q Business application for a specific topic control configuration.
 
 ## Contents
+<a name="API_ContentRetrievalRule_Contents"></a>
 
-**eligibleDataSources**
-
-Specifies data sources in a Amazon Q Business application to use for content
-generation.
-
-Type: Array of [EligibleDataSource](api-eligibledatasource.md) objects
-
+ ** eligibleDataSources **   <a name="qbusiness-Type-ContentRetrievalRule-eligibleDataSources"></a>
+Specifies data sources in a Amazon Q Business application to use for content generation.
+Type: Array of [EligibleDataSource](API_EligibleDataSource.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
-
 Required: No
 
 ## See Also
+<a name="API_ContentRetrievalRule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/contentretrievalrule.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/contentretrievalrule.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/contentretrievalrule.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContentBlockerRule
-
-ContentSource
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/ContentRetrievalRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/ContentRetrievalRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/ContentRetrievalRule)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,338 +3,278 @@ title: "Opt out of data sharing in the IDE and command line"
 ---
 
 # Opt out of data sharing in the IDE and command line
+<a name="opt-out-IDE"></a>
 
-This page explains how to opt out of sharing your data in the IDE or command line where
-you use Amazon Q, including third-party IDEs and AWS coding environments. For information
-on how Amazon Q uses this data, see [Amazon Q Developer service improvement](service-improvement.md).
+This page explains how to opt out of sharing your data in the IDE or command line where you use Amazon Q, including third-party IDEs and AWS coding environments. For information on how Amazon Q uses this data, see [Amazon Q Developer service improvement](service-improvement.md).
 
 ## Opting out of sharing your client-side telemetry
+<a name="opt-out-IDE-telemetry"></a>
 
-Your client-side telemetry quantifies your usage of the service. For example, AWS
-may track whether you accept or reject a recommendation. Your client-side telemetry does
-not contain actual code.
+Your client-side telemetry quantifies your usage of the service. For example, AWS may track whether you accept or reject a recommendation. Your client-side telemetry does not contain actual code.
 
-To learn more about the telemetry data collected by Amazon Q in the IDE, see the [commonDefinitions.json](https://github.com/aws/aws-toolkit-common/blob/main/telemetry/definitions/commonDefinitions.json) document in the
-`aws-toolkit-common` Github repository.
+### Telemetry collected in IDEs
+<a name="IDE-telemetry"></a>
 
-For detailed information about the telemetry data collected by each IDE where you use
-Amazon Q, reference the resource documents in the following GitHub repositories:
+To learn more about the telemetry data collected by Amazon Q in the IDE, see the [commonDefinitions.json](https://github.com/aws/aws-toolkit-common/blob/main/telemetry/definitions/commonDefinitions.json) document in the `aws-toolkit-common` Github repository.
 
-- [Amazon Q extension for VS Code](https://github.com/aws/aws-toolkit-vscode/blob/master/packages/core/src/shared/telemetry/vscodeTelemetry.json)
+For detailed information about the telemetry data collected by each IDE where you use Amazon Q, reference the resource documents in the following GitHub repositories:
++ [Amazon Q extension for VS Code](https://github.com/aws/aws-toolkit-vscode/blob/master/packages/core/src/shared/telemetry/vscodeTelemetry.json)
++ [Amazon Q plugin for JetBrains](https://github.com/aws/aws-toolkit-jetbrains/blob/main/plugins/core/jetbrains-community/resources/telemetryOverride.json)
++ [Amazon Q plugin for Eclipse](https://github.com/aws/amazon-q-eclipse/blob/main/plugin/codegen-resources/definitions/commonDefinitions.json)
++ [AWS Visual Studio Toolkit with Amazon Q](https://github.com/aws/aws-toolkit-visual-studio/blob/main/Telemetry/vs-telemetry-definitions.json)
 
-- [Amazon Q plugin for JetBrains](https://github.com/aws/aws-toolkit-jetbrains/blob/main/plugins/core/jetbrains-community/resources/telemetryOverride.json)
+### Telemetry collected in the Q CLI
+<a name="w2aac21c13c19b5b7b1"></a>
 
-- [Amazon Q plugin for Eclipse](https://github.com/aws/amazon-q-eclipse/blob/main/plugin/codegen-resources/definitions/commonDefinitions.json)
+To learn more about the telemetry data collected by the Q CLI, see the [telemetry\_definitions.json](https://github.com/aws/amazon-q-developer-cli/blob/main/crates/chat-cli/telemetry_definitions.json) document in the `amazon-q-developer-cli` Github repository.
 
-- [AWS Visual Studio Toolkit with Amazon Q](https://github.com/aws/aws-toolkit-visual-studio/blob/main/Telemetry/vs-telemetry-definitions.json)
+### Telemetry collected in the command line tool for transformations
+<a name="w2aac21c13c19b5b9b1"></a>
 
-To learn more about the telemetry data collected by the Q CLI, see the [telemetry\_definitions.json](https://github.com/aws/amazon-q-developer-cli/blob/main/crates/chat-cli/telemetry_definitions.json) document in the
-`amazon-q-developer-cli` Github repository.
+Telemetry collection helps AWS understand how the Q command line transformation tool is performing, learn how features are used, and improve our services. For transformations on the command line, we collect telemetry on your tool version and Maven plugin version.
 
-Telemetry collection helps AWS understand how the Q command line transformation tool
-is performing, learn how features are used, and improve our services. For
-transformations on the command line, we collect telemetry on your tool version and Maven
-plugin version.
+**Note**
+Don’t add personally identifiable information (PII) or other confidential or sensitive information in free text fields.
 
-###### Note
+Choose your IDE for instructions on opting out of sharing your client-side telemetry.
 
-Don’t add personally identifiable information (PII) or other confidential or
-sensitive information in free text fields.
+------
+#### [ Visual Studio Code ]
 
-Choose your IDE for instructions on opting out of sharing your client-side
-telemetry.
-
-Visual Studio Code
-
-To opt out of sharing your telemetry data in VS Code, use this
-procedure:
+To opt out of sharing your telemetry data in VS Code, use this procedure:
 
 1. Open **Settings** in VS Code.
 
-2. If you are using VS Code workspaces, switch to the
-    **Workspace** sub-tab. In VS Code, workspace
-    settings override user settings.
+1. If you are using VS Code workspaces, switch to the **Workspace** sub-tab. In VS Code, workspace settings override user settings.
 
-3. In the Settings search bar, enter `Amazon Q:
-                              Telemetry`.
+1. In the Settings search bar, enter `Amazon Q: Telemetry`.
 
-4. Deselect the box.
+1. Deselect the box.
 
-###### Note
+**Note**
+This is a decision for each developer to make inside their own IDE. If you are using Amazon Q as part of an enterprise, your administrator will not be able to change this setting for you.
 
-This is a decision for each developer to make inside their own IDE. If
-you are using Amazon Q as part of an enterprise, your administrator will not
-be able to change this setting for you.
+------
+#### [ JetBrains ]
 
-JetBrains
+To opt out of sharing your telemetry data in JetBrains, use this procedure:
 
-To opt out of sharing your telemetry data in JetBrains, use this
-procedure:
+1. In your JetBrains IDE, open **Preferences** (on a Mac, this will be under **Settings**).
 
-1. In your JetBrains IDE, open **Preferences** (on a Mac,
-    this will be under **Settings**).
+1. In the left navigation bar, choose **Tools**, and then choose **AWS**.
 
-2. In the left navigation bar, choose **Tools**, and
-    then choose **AWS**.
+1. Deselect **Send usage metrics to AWS**.
 
-3. Deselect **Send usage metrics to AWS**.
+![The settings panel in JetBrains](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/JB-usage.png)
 
-![The settings panel in JetBrains](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/JB-usage.png)
+**Note**
+This is a decision for each developer to make inside their own IDE. If you are using Amazon Q as part of an enterprise, your administrator will not be able to change this setting for you.
 
-###### Note
+------
+#### [ Eclipse ]
 
-This is a decision for each developer to make inside their own IDE. If
-you are using Amazon Q as part of an enterprise, your administrator will not
-be able to change this setting for you.
-
-Eclipse
-
-To opt out of sharing your telemetry data in Eclipse IDEs, use this
-procedure:
+To opt out of sharing your telemetry data in Eclipse IDEs, use this procedure:
 
 1. Open **Settings** in your Eclipse IDE.
 
-2. Choose **Amazon Q** from the left navigation
-    bar.
+1. Choose **Amazon Q** from the left navigation bar.
 
-3. Deselect the box next to **Send usage metrics to**
-**AWS**.
+1. Deselect the box next to **Send usage metrics to AWS**.
 
-4. Choose **Apply** to save your changes.
+1. Choose **Apply** to save your changes.
 
-###### Note
+**Note**
+This is a decision for each developer to make inside their own IDE. If you are using Amazon Q as part of an enterprise, your administrator will not be able to change this setting for you.
 
-This is a decision for each developer to make inside their own IDE. If
-you are using Amazon Q as part of an enterprise, your administrator will not
-be able to change this setting for you.
+------
+#### [ Visual Studio ]
 
-Visual Studio
+To opt out of sharing your telemetry data in the AWS Toolkit for Visual Studio, use this procedure:
 
-To opt out of sharing your telemetry data in the AWS Toolkit for Visual
-Studio, use this procedure:
+1. Under **Tools**, choose **Options**.
 
-1. Under **Tools**, choose
-    **Options**.
+1. In the **Options** pane, choose **AWS Toolkit**, and then choose **General**.
 
-2. In the **Options** pane, choose
-    **AWS Toolkit**, and then choose
-    **General**.
+1. Deselect **Allow AWS Toolkit to collect usage information**.
 
-3. Deselect **Allow AWS Toolkit to collect usage**
-**information**.
+**Note**
+This is a decision for each developer to make inside their own IDE. If you are using Amazon Q as part of an enterprise, your administrator will not be able to change this setting for you.
 
-###### Note
+------
+#### [ AWS Cloud9 ]
 
-This is a decision for each developer to make inside their own IDE. If
-you are using Amazon Q as part of an enterprise, your administrator will not
-be able to change this setting for you.
+1. From inside your AWS Cloud9 IDE, choose the Cloud9 logo in the menu bar, then choose **Preferences**.
 
-AWS Cloud9
+1. On the **Preferences** tab choose **AWS Toolkit**.
 
-1. From inside your AWS Cloud9 IDE, choose the AWS Cloud9 logo at the top of the
-    window, then choose **Preferences**.
+1. Next to **AWS: client-side telemetry**, toggle the switch to the off position.
 
-2. On the **Preferences** tab choose **AWS**
-**Toolkit**.
+**Note**
+This setting affects whether or not you share your AWS Cloud9 client-side telemetry in general, not just for Amazon Q.
 
-3. Next to **AWS: client-side telemetry**, toggle the
-    switch to the off position.
+------
+#### [ Lambda ]
 
-###### Note
+When you use Amazon Q with Lambda, Amazon Q does not share your client-side telemetry with AWS.
 
-This setting affects whether or not you share your AWS Cloud9 client-side
-telemetry in general, not just for Amazon Q.
+------
+#### [ SageMaker AI Studio ]
 
-Lambda
+1. From the top of the SageMaker AI Studio window choose **Settings**.
 
-When you use Amazon Q with Lambda, Amazon Q does not share your client-side
-telemetry with AWS.
+1. From the **Settings** dropdown, choose **Advanced Settings Editor**.
 
-SageMaker AI Studio
+1. In the Amazon Q dropdown, select or deselect the box next to **Share usage data with Amazon Q**.
 
-1. From the top of the SageMaker AI Studio window choose
-    **Settings**.
+------
+#### [ JupyterLab ]
 
-2. From the **Settings** dropdown, choose
-    **Advanced Settings Editor**.
+1. From the top of the JupyterLab window choose **Settings**.
 
-3. In the Amazon Q dropdown, select or deselect the box next to
-    **Share usage data with Amazon Q**.
+1. From the **Settings** dropdown, choose **Advanced Settings Editor**.
 
-JupyterLab
+1. In the Amazon Q dropdown, select or deselect the box next to **Share usage data with Amazon Q**.
 
-1. From the top of the JupyterLab window choose
-    **Settings**.
+------
+#### [ AWS Glue Studio Notebook ]
 
-2. From the **Settings** dropdown, choose
-    **Advanced Settings Editor**.
+1. From the bottom of the AWS Glue Studio Notebook window choose **Amazon Q**.
 
-3. In the Amazon Q dropdown, select or deselect the box next to
-    **Share usage data with Amazon Q**.
+1. From the pop-up menu, toggle the switch next to **Share telemetry with AWS**.
 
-AWS Glue Studio Notebook
+**Note**
+Pausing the sharing of client-side telemetry will be valid only for the duration of the current AWS Glue Studio Notebook.
 
-1. From the bottom of the AWS Glue Studio Notebook window choose
-    **Amazon Q**.
+------
+#### [ Command line ]
 
-2. From the pop-up menu, toggle the switch next to **Share**
-**telemetry with AWS**.
+In the command line tool, under **Preferences**, toggle **Telemetry**.
 
-###### Note
+------
+#### [ Transformations on the command line ]
 
-Pausing the sharing of client-side telemetry will be valid only for the
-duration of the current AWS Glue Studio Notebook.
+Telemetry collection is enabled by default with the command line tool for transformations. To disable it, complete the following procedure.
 
-Command line
+**To update telemetry preferences**
 
-In the command line tool, under **Preferences**, toggle
-**Telemetry**.
+1. Run `qct configure` and provide the requested configuration details, or press enter to use the existing configuration.
 
-Transformations on the command line
+1. When prompted whether you want to allow telemetry collection, enter `N` to prevent AWS from collecting telemetry data.
 
-Telemetry collection is enabled by default with the command line tool for
-transformations. To disable it, complete the following procedure.
+1. If you'd like to re-enable telemetry collection, run `qct configure` again and enter `Y` when prompted.
 
-###### To update telemetry preferences
-
-1. Run `qct configure` and provide the requested configuration
-    details, or press enter to use the existing configuration.
-
-2. When prompted whether you want to allow telemetry collection, enter
-    `N` to prevent AWS from collecting telemetry data.
-
-3. If you'd like to re-enable telemetry collection, run `qct configure` again and enter
-    `Y` when prompted.
+------
 
 ## Opting out of sharing your content
+<a name="opt-out-IDE-content"></a>
 
 For information on content AWS uses, see [Amazon Q Developer service improvement](service-improvement.md).
 
-Visual Studio Code
+------
+#### [ Visual Studio Code ]
 
 At the Amazon Q Developer Pro Tier, Amazon Q does not collect your content.
 
-At the Amazon Q Developer Free Tier, to opt out of sharing your content in
-VS Code, use the following procedure.
+At the Amazon Q Developer Free Tier, to opt out of sharing your content in VS Code, use the following procedure.
 
 1. Open **Settings** in VS Code.
 
-2. If you are using VS Code workspaces, switch to the
-    **Workspace** sub-tab. In VS Code, workspace
-    settings override user settings.
+1. If you are using VS Code workspaces, switch to the **Workspace** sub-tab. In VS Code, workspace settings override user settings.
 
-3. In the Settings search bar, enter `Amazon Q: Share
-                              Content`.
+1. In the Settings search bar, enter `Amazon Q: Share Content`.
 
-4. Deselect the box.
+1. Deselect the box.
 
-JetBrains
+------
+#### [ JetBrains ]
 
 At the Amazon Q Developer Pro Tier, Amazon Q does not collect your content.
 
-At the Amazon Q Developer Free Tier, to opt out of sharing Amazon Q data in JetBrains, use
-the following procedure.
+At the Amazon Q Developer Free Tier, to opt out of sharing Amazon Q data in JetBrains, use the following procedure.
 
 1. Make sure you are using the latest version of JetBrains.
 
-2. In your JetBrains IDE, open **Preferences** (on a Mac,
-    this will be under **Settings**).
+1. In your JetBrains IDE, open **Preferences** (on a Mac, this will be under **Settings**).
 
-3. In the left navigation bar, choose **Tools** -->
-    **AWS** --\> **Amazon Q**.
+1. In the left navigation bar, choose **Tools** --> **AWS** --> **Amazon Q**.
 
-4. Under **Data sharing**, deselect **Share**
-**Amazon Q content with AWS**.
+1. Under **Data sharing**, deselect **Share Amazon Q content with AWS**.
 
-![Options for sharing Amazon Q data in VS Code.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/JB-content.png)
+![Options for sharing Amazon Q data in VS Code.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/JB-content.png)
 
-Eclipse
+------
+#### [ Eclipse ]
 
 At the Amazon Q Developer Pro tier, Amazon Q does not collect your content.
 
-At the Amazon Q Developer Free tier, to opt out of sharing Amazon Q data in Eclipse
-IDEs, use the following procedure.
+At the Amazon Q Developer Free tier, to opt out of sharing Amazon Q data in Eclipse IDEs, use the following procedure.
 
 1. Make sure you are using the latest version of your Eclipse IDE.
 
-2. In your Eclipse IDE, open **Settings**.
+1. In your Eclipse IDE, open **Settings**.
 
-3. In the left navigation bar, choose **Amazon Q**.
+1. In the left navigation bar, choose **Amazon Q**.
 
-4. Deselect the box next to **Share Amazon Q content with**
-**AWS**.
+1. Deselect the box next to **Share Amazon Q content with AWS**.
 
-5. Choose **Apply** to save your changes.
+1. Choose **Apply** to save your changes.
 
-Visual Studio
+------
+#### [ Visual Studio ]
 
 At the Amazon Q Developer Pro Tier, Amazon Q does not collect your content.
 
-At the Amazon Q Developer Free Tier, to opt out of sharing your content in
-Visual Studio, use the following procedure.
+At the Amazon Q Developer Free Tier, to opt out of sharing your content in Visual Studio, use the following procedure.
 
-Go to **Tools** -\> **Options** ->
-**AWS Toolkit** ->
-**Amazon Q**
+Go to **Tools** -> **Options** -> **AWS Toolkit** -> **Amazon Q**
 
-Toggle **Share Amazon Q Content with AWS** to
-**True** or **False**.
+Toggle **Share Amazon Q Content with AWS** to **True** or **False**.
 
-AWS Cloud9
+------
+#### [ AWS Cloud9 ]
 
-When you use Amazon Q with AWS Cloud9, Amazon Q does not share your content with
-AWS.
+When you use Amazon Q with AWS Cloud9, Amazon Q does not share your content with AWS.
 
-###### Note
+**Note**
+The AWS Cloud9 settings do contain a toggle switch for sharing Amazon Q content with AWS, but that switch is non-functional.
 
-The AWS Cloud9 settings do contain a toggle switch for sharing Amazon Q content
-with AWS, but that switch is non-functional.
+------
+#### [ Lambda ]
 
-Lambda
+When you use Amazon Q with Lambda, Amazon Q does not share your content with AWS.
 
-When you use Amazon Q with Lambda, Amazon Q does not share your content with
-AWS.
+**Note**
+The Lambda settings do contain a toggle switch for sharing Amazon Q content with AWS, but that switch is non-functional.
 
-###### Note
+------
+#### [ SageMaker AI Studio ]
 
-The Lambda settings do contain a toggle switch for sharing Amazon Q content
-with AWS, but that switch is non-functional.
+When you use Amazon Q with SageMaker AI Studio, Amazon Q does not share your content with AWS.
 
-SageMaker AI Studio
+------
+#### [ JupyterLab ]
 
-When you use Amazon Q with SageMaker AI Studio, Amazon Q does not share your content
-with AWS.
+1. From the top of the JupyterLab window choose **Settings**.
 
-JupyterLab
+1. From the **Settings** dropdown, choose **Advanced Settings Editor**.
 
-1. From the top of the JupyterLab window choose
-    **Settings**.
+1. In the Amazon Q dropdown, select or deselect the box next to **Share content with Amazon Q**.
 
-2. From the **Settings** dropdown, choose
-    **Advanced Settings Editor**.
+------
+#### [ AWS Glue Studio Notebook ]
 
-3. In the Amazon Q dropdown, select or deselect the box next to
-    **Share content with Amazon Q**.
+When you use Amazon Q with AWS Glue Studio Notebook, Amazon Q does not share your content with AWS.
 
-AWS Glue Studio Notebook
+------
+#### [ Command line ]
 
-When you use Amazon Q with AWS Glue Studio Notebook, Amazon Q does not share your
-content with AWS.
+In the command line tool, under **Preferences**, toggle **Share Amazon Q content with AWS**.
 
-Command line
+------
+#### [ Transformations on the command line ]
 
-In the command line tool, under **Preferences**, toggle
-**Share Amazon Q content with AWS**.
+When you use the Amazon Q command line tool for transformation, Amazon Q does not share your content with AWS.
 
-Transformations on the command line
-
-When you use the Amazon Q command line tool for transformation, Amazon Q does not share your
-content with AWS.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Service improvement
-
-Cross-region processing
+------
 
 All content copied from https://docs.aws.amazon.com/.

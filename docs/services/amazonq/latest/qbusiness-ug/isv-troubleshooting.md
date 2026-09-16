@@ -2,22 +2,17 @@
 title: "Troubleshooting"
 ---
 
-# Troubleshooting
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
-If ISVs encounter issues with accessing the Amazon Q index, consider the
-following.
+# Troubleshooting
+<a name="isv-troubleshooting"></a>
+
+If ISVs encounter issues with accessing the Amazon Q index, consider the following.
 
 1. Verify the Identity and Access Management (IAM) role and permissions.
 
-2. Check the configuration of the redirect URL for the oauth flow.
+1. Check the configuration of the redirect URL for the oauth flow.
 
-3. Confirm that the customer has granted the necessary access permissions to the
-    ISV.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating an Amazon Q index
-
-Security
+1. Confirm that the customer has granted the necessary access permissions to the ISV.
 
 All content copied from https://docs.aws.amazon.com/.

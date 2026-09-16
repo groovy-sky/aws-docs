@@ -2,662 +2,103 @@
 title: "Connecting Amazon Q Business to Jira using APIs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to Jira using APIs
+<a name="jira-api"></a>
 
-You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your
-Amazon Q application. You can also use the [UpdateDataSource](../api-reference/api-updatedatasource.md) action to modify an existing data source configuration.
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
 
-Then, you use the
-`configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
 
-For an example of the API request, see [CreateDataSource](../api-reference/api-createdatasource.md) and [UpdateDataSource](../api-reference/api-updatedatasource.md) in the Amazon Q API Reference.
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
 
-###### Topics
-
-- [Jira configuration properties](#jira-configuration-keys)
-
-- [Jira JSON schema](#jira-json)
+**Topics**
++ [Jira configuration properties](#jira-configuration-keys)
++ [Jira JSON schema](#jira-json)
 
 ## Jira configuration properties
-
-The following provides information about important configuration properties required in the
-schema.
-
-ConfigurationDescriptionTypeRequired
-
-`connectionConfiguration`
-
-Configuration information for the endpoint for the data source.
-
-`object`
-
-This property has the following sub-property:
-`repositoryEndpointMetadata`.
-
-Yes
-
-`repositoryEndpointMetadata`
-
-The endpoint information for the data source.
-
-`object`
-
-This property has the following sub-property:
-`jiraAccountUrl`.
-
-Yes
-
-`jiraAccountUrl`
-
-Enter the Jira account URL from your Jira account
-settings. For example,
-`https://company.atlassian.net/`.
-
-`string`
-
-Yes
-
-`repositoryConfigurations`
-
-Configuration information for the content of the data source. For example,
-configuring specific types of content and field mappings.
-
-`object`
-
-This property has the following sub-properties: `project`,
-`attachment`, `comment`, `issue`,
-`worklog`.
-
-Yes
-
-- `project`
-
-- `attachment`
-
-- `comment`
-
-- `issue`
-
-- `worklog`
-
-A list of objects that map the attributes or field names of your
-Jira pages and assets to Amazon Q index field names.
-
-`object`
-
-These properties have the following sub-properties.
-
-- `indexFieldName`
-
-- `indexFieldType`
-
-- `dataSourceFieldName`
-
-- `dateFieldFormat`
-
-Yes
-
-`indexFieldName`
-
-The field name of your Jira project, attachment, comment, issue, or
-worklog.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your Jira project, attachment, comment, issue, or
-worklog.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`, and
-`DATE`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your Jira project, attachment,
-comment, issue, or worklog.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your Jira project, attachment, comment, issue, or
-worklog.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'`
-
-No
-
-`additionalProperties`
-
-Additional configuration options for your content in your data source.
-
-`object`
-
-This property has the following sub-properties:
-
-- `isCrawlAcl`
-
-- `isRotateSecret`
-
-- `issuetype`
-
-- `status`
-
-- `fieldForUserId`
-
-- `maxFileSizeInMegaBytes`
-
-- `project`
-
-- `issueSubEntityFilter`
-
-- `inclusionPatterns`
-
-- `exclusionPatterns`
-
-Yes
-
-`isCrawlAcl`
-
-Specify `true` to crawl access control information from documents.
-
-###### Note
-
-Amazon Q Business crawls ACL information by default to ensure responses
-are generated only from documents your end users have access to. See [Authorization](connector-concepts.md#connector-authorization) for more details.
-
-`boolean`
-
-No
-
-`isRotateSecret`
-
-Specify `true` if you want to automatically rotate the secret.
-
-`boolean`
-
-No
-
-`issuetype`
-
-Customize the issue types to crawl.
-
-`array`
-
-The allowed values are `Bug`, `Story`, `Epic`,
-`Task`.
-
-No
-
-- `status`
-
-- `project`
-
-- `issueSubEntityFilter`
-
-Customize the status types, projects, and additional elements to crawl.
-
-`array`
-
-No
-
-`maxFileSizeInMegaBytes`
-
-Specify the maximum single file size limit in MBs that Amazon Q will crawl.
-Amazon Q will crawl only the files within the size limit you define. The default file
-size is 50MB. The maximum file size should be greater than 0MB and less than or equal to
-50MB.
-
-`string`
-
-No
-
-`fieldForUserId`
-
-Specify field to use for `UserId` for ACL crawling.
-
-`string`
-
-No
-
-`inclusionPatterns`
-
-A list of regular expression patterns to include specific content in your
-Jira data source. Content that matches the patterns are included in the
-index. Contents that doesn't match the pattern are excluded from the index. If any
-content matches both an inclusion and exclusion pattern, the exclusion pattern takes
-precedence, and the content isn't included in the index.
-
-`array`
-
-No
-
-`exclusionPatterns`
-
-A list of regular expression patterns to exclude specific content in your
-Jira data source. Content that matches the patterns are excluded from
-the index. Content that doesn't match the patterns are included in the index. If any
-content matches both an inclusion and exclusion pattern, the exclusion pattern takes
-precedence, and the content isn't included in the index.
-
-`array`
-
-No
-
-`type`
-
-The type of data source. Specify `JIRA` as your data source
-type.
-
-`string`
-
-Yes
-
-`enableIdentityCrawler`
-
-Specify `true` to use the Amazon Q identity crawler to sync
-identity/principal information on users and groups with access to specific documents.
-
-###### Note
-
-Amazon Q Business crawls identity information from your data source by
-default to ensure responses are generated only from documents end users have access
-to. For more information, see [Identity crawler](connector-concepts.md#connector-identity-crawler).
-
-`boolean`
-
-Yes
-
-`syncMode`
-
-Specify whether Amazon Q should update your index by syncing all
-documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options:
-
-- Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace
-existing content each time your data source syncs with your index
-
-- Use `FULL_CRAWL` to incrementally crawl only new, modified, and
-deleted content each time your data source syncs with your index
-
-- Use `CHANGE_LOG` to incrementally crawl only new and
-modified content each time your data source syncs with your index.
-
-Yes
-
-`secretArn`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains
-the key-value pairs required to connect to your Jira.
-
-`string`
-
-The secret must contain a JSON structure with the following keys:
-
-```json
-
-{
-    "Jira ID": "Jira user name or email host URL",
-    "Password/Token": "Jira API token"
-}
-```
-
-Yes
-
-`version`
-
-The version of this template that's currently supported.
-
-`string`
-
-No
+<a name="jira-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-property: `jiraAccountUrl`. | Yes |
+| `jiraAccountUrl` | Enter the Jira account URL from your Jira account settings. For example, {{https://company.atlassian.net/}}. | `string` | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties: `project`, `attachment`, `comment`, `issue`, `worklog`. | Yes |
+|  +  `project` <br />+  `attachment` <br />+  `comment` <br />+  `issue` <br />+  `worklog`   | A list of objects that map the attributes or field names of your Jira pages and assets to Amazon Q index field names. | `object`<br />These properties have the following sub-properties.+  `indexFieldName` <br />+  `indexFieldType` <br />+  `dataSourceFieldName` <br />+  `dateFieldFormat`  | Yes |
+| `indexFieldName` | The field name of your Jira project, attachment, comment, issue, or worklog. | `string` | Yes |
+| `indexFieldType` | The field type of your Jira project, attachment, comment, issue, or worklog. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your Jira project, attachment, comment, issue, or worklog. | `string` | Yes |
+| `dateFieldFormat` | The date format of your Jira project, attachment, comment, issue, or worklog. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties:+  `isCrawlAcl` <br />+  `isRotateSecret` <br />+  `issuetype` <br />+  `status` <br />+  `fieldForUserId` <br />+  `maxFileSizeInMegaBytes` <br />+  `project` <br />+  `issueSubEntityFilter` <br />+  `inclusionPatterns` <br />+  `exclusionPatterns`  | Yes |
+| `isCrawlAcl` | Specify true to crawl access control information from documents.  Amazon Q Business crawls ACL information by default to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | No |
+| `isRotateSecret` | Specify true if you want to automatically rotate the secret. | `boolean` | No |
+| `issuetype` | Customize the issue types to crawl. | `array`<br />The allowed values are `Bug`, `Story`, `Epic`, `Task`. | No |
+|  +  `status` <br />+  `project` <br />+  `issueSubEntityFilter`   | Customize the status types, projects, and additional elements to crawl. | `array` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `fieldForUserId` | Specify field to use for UserId for ACL crawling. | `string` | No |
+| `inclusionPatterns` | A list of regular expression patterns to include specific content in your Jira data source. Content that matches the patterns are included in the index. Contents that doesn't match the pattern are excluded from the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array` | No |
+| `exclusionPatterns` | A list of regular expression patterns to exclude specific content in your Jira data source. Content that matches the patterns are excluded from the index. Content that doesn't match the patterns are included in the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array` | No |
+| `type` | The type of data source. Specify JIRA as your data source type. | `string` | Yes |
+| `enableIdentityCrawler` | Specify true to use the Amazon Q identity crawler to sync identity/principal information on users and groups with access to specific documents.  Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. | `string`<br />You can choose between the following options:+  Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index <br />+  Use `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index <br />+  Use `CHANGE_LOG` to incrementally crawl only new and modified content each time your data source syncs with your index.  | Yes |
+| `secretArn` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Jira. | `string`<br />The secret must contain a JSON structure with the following keys:<pre>{<br />    "Jira ID": "{{Jira user name or email host URL}}",<br />    "Password/Token": "{{Jira API token}}"<br />}</pre> | Yes |
+| `version` | The version of this template that's currently supported. | `string` | No |
 
 ## Jira JSON schema
+<a name="jira-json"></a>
 
-You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your
-Amazon Q application. You can also use the [UpdateDataSource](../api-reference/api-updatedatasource.md) action to modify an existing data source configuration.
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
 
-Then, you use the
-`configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
 
-For an example of the API request, see [CreateDataSource](../api-reference/api-createdatasource.md) and [UpdateDataSource](../api-reference/api-updatedatasource.md) in the Amazon Q API Reference.
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
 
-###### Topics
-
-- [Jira configuration properties](#jira-configuration-keys)
-
-- [Jira JSON schema](#jira-json)
-
-- [Jira JSON schema example](#jira-api-json-example)
+**Topics**
++ [Jira configuration properties](#jira-configuration-keys)
++ [Jira JSON schema](#jira-json)
++ [Jira JSON schema example](#jira-api-json-example)
 
 ### Jira configuration properties
-
-The following provides information about important configuration properties required in the
-schema.
-
-ConfigurationDescriptionTypeRequired
-
-`connectionConfiguration`
-
-Configuration information for the endpoint for the data source.
-
-`object`
-
-This property has the following sub-property:
-`repositoryEndpointMetadata`.
-
-Yes
-
-`repositoryEndpointMetadata`
-
-The endpoint information for the data source.
-
-`object`
-
-This property has the following sub-property:
-`jiraAccountUrl`.
-
-Yes
-
-`jiraAccountUrl`
-
-Enter the Jira account URL from your Jira account
-settings. For example,
-`https://company.atlassian.net/`.
-
-`string`
-
-Yes
-
-`repositoryConfigurations`
-
-Configuration information for the content of the data source. For example,
-configuring specific types of content and field mappings.
-
-`object`
-
-This property has the following sub-properties: `project`,
-`attachment`, `comment`, `issue`,
-`worklog`.
-
-Yes
-
-- `project`
-
-- `attachment`
-
-- `comment`
-
-- `issue`
-
-- `worklog`
-
-A list of objects that map the attributes or field names of your
-Jira pages and assets to Amazon Q index field names.
-
-`object`
-
-These properties have the following sub-properties.
-
-- `indexFieldName`
-
-- `indexFieldType`
-
-- `dataSourceFieldName`
-
-- `dateFieldFormat`
-
-Yes
-
-`indexFieldName`
-
-The field name of your Jira project, attachment, comment, issue, or
-worklog.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your Jira project, attachment, comment, issue, or
-worklog.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`, and
-`DATE`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your Jira project, attachment,
-comment, issue, or worklog.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your Jira project, attachment, comment, issue, or
-worklog.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'`
-
-No
-
-`additionalProperties`
-
-Additional configuration options for your content in your data source.
-
-`object`
-
-This property has the following sub-properties:
-
-- `isCrawlAcl`
-
-- `isRotateSecret`
-
-- `issuetype`
-
-- `status`
-
-- `fieldForUserId`
-
-- `maxFileSizeInMegaBytes`
-
-- `project`
-
-- `issueSubEntityFilter`
-
-- `inclusionPatterns`
-
-- `exclusionPatterns`
-
-Yes
-
-`isCrawlAcl`
-
-Specify `true` to crawl access control information from documents.
-
-###### Note
-
-Amazon Q Business crawls ACL information by default to ensure responses
-are generated only from documents your end users have access to. See [Authorization](connector-concepts.md#connector-authorization) for more details.
-
-`boolean`
-
-No
-
-`isRotateSecret`
-
-Specify `true` if you want to automatically rotate the secret.
-
-`boolean`
-
-No
-
-`issuetype`
-
-Customize the issue types to crawl.
-
-`array`
-
-The allowed values are `Bug`, `Story`, `Epic`,
-`Task`.
-
-No
-
-- `status`
-
-- `project`
-
-- `issueSubEntityFilter`
-
-Customize the status types, projects, and additional elements to crawl.
-
-`array`
-
-No
-
-`maxFileSizeInMegaBytes`
-
-Specify the maximum single file size limit in MBs that Amazon Q will crawl.
-Amazon Q will crawl only the files within the size limit you define. The default file
-size is 50MB. The maximum file size should be greater than 0MB and less than or equal to
-50MB.
-
-`string`
-
-No
-
-`fieldForUserId`
-
-Specify field to use for `UserId` for ACL crawling.
-
-`string`
-
-No
-
-`inclusionPatterns`
-
-A list of regular expression patterns to include specific content in your
-Jira data source. Content that matches the patterns are included in the
-index. Contents that doesn't match the pattern are excluded from the index. If any
-content matches both an inclusion and exclusion pattern, the exclusion pattern takes
-precedence, and the content isn't included in the index.
-
-`array`
-
-No
-
-`exclusionPatterns`
-
-A list of regular expression patterns to exclude specific content in your
-Jira data source. Content that matches the patterns are excluded from
-the index. Content that doesn't match the patterns are included in the index. If any
-content matches both an inclusion and exclusion pattern, the exclusion pattern takes
-precedence, and the content isn't included in the index.
-
-`array`
-
-No
-
-`type`
-
-The type of data source. Specify `JIRA` as your data source
-type.
-
-`string`
-
-Yes
-
-`enableIdentityCrawler`
-
-Specify `true` to use the Amazon Q identity crawler to sync
-identity/principal information on users and groups with access to specific documents.
-
-###### Note
-
-Amazon Q Business crawls identity information from your data source by
-default to ensure responses are generated only from documents end users have access
-to. For more information, see [Identity crawler](connector-concepts.md#connector-identity-crawler).
-
-`boolean`
-
-Yes
-
-`syncMode`
-
-Specify whether Amazon Q should update your index by syncing all
-documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options:
-
-- Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace
-existing content each time your data source syncs with your index
-
-- Use `FULL_CRAWL` to incrementally crawl only new, modified, and
-deleted content each time your data source syncs with your index
-
-- Use `CHANGE_LOG` to incrementally crawl only new and
-modified content each time your data source syncs with your index.
-
-Yes
-
-`secretArn`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains
-the key-value pairs required to connect to your Jira.
-
-`string`
-
-The secret must contain a JSON structure with the following keys:
-
-```json
-
-{
-    "Jira ID": "Jira user name or email host URL",
-    "Password/Token": "Jira API token"
-}
-```
-
-Yes
-
-`version`
-
-The version of this template that's currently supported.
-
-`string`
-
-No
+<a name="jira-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-property: `jiraAccountUrl`. | Yes |
+| `jiraAccountUrl` | Enter the Jira account URL from your Jira account settings. For example, {{https://company.atlassian.net/}}. | `string` | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties: `project`, `attachment`, `comment`, `issue`, `worklog`. | Yes |
+|  +  `project` <br />+  `attachment` <br />+  `comment` <br />+  `issue` <br />+  `worklog`   | A list of objects that map the attributes or field names of your Jira pages and assets to Amazon Q index field names. | `object`<br />These properties have the following sub-properties.+  `indexFieldName` <br />+  `indexFieldType` <br />+  `dataSourceFieldName` <br />+  `dateFieldFormat`  | Yes |
+| `indexFieldName` | The field name of your Jira project, attachment, comment, issue, or worklog. | `string` | Yes |
+| `indexFieldType` | The field type of your Jira project, attachment, comment, issue, or worklog. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your Jira project, attachment, comment, issue, or worklog. | `string` | Yes |
+| `dateFieldFormat` | The date format of your Jira project, attachment, comment, issue, or worklog. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties:+  `isCrawlAcl` <br />+  `isRotateSecret` <br />+  `issuetype` <br />+  `status` <br />+  `fieldForUserId` <br />+  `maxFileSizeInMegaBytes` <br />+  `project` <br />+  `issueSubEntityFilter` <br />+  `inclusionPatterns` <br />+  `exclusionPatterns`  | Yes |
+| `isCrawlAcl` | Specify true to crawl access control information from documents.  Amazon Q Business crawls ACL information by default to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | No |
+| `isRotateSecret` | Specify true if you want to automatically rotate the secret. | `boolean` | No |
+| `issuetype` | Customize the issue types to crawl. | `array`<br />The allowed values are `Bug`, `Story`, `Epic`, `Task`. | No |
+|  +  `status` <br />+  `project` <br />+  `issueSubEntityFilter`   | Customize the status types, projects, and additional elements to crawl. | `array` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `fieldForUserId` | Specify field to use for UserId for ACL crawling. | `string` | No |
+| `inclusionPatterns` | A list of regular expression patterns to include specific content in your Jira data source. Content that matches the patterns are included in the index. Contents that doesn't match the pattern are excluded from the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array` | No |
+| `exclusionPatterns` | A list of regular expression patterns to exclude specific content in your Jira data source. Content that matches the patterns are excluded from the index. Content that doesn't match the patterns are included in the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array` | No |
+| `type` | The type of data source. Specify JIRA as your data source type. | `string` | Yes |
+| `enableIdentityCrawler` | Specify true to use the Amazon Q identity crawler to sync identity/principal information on users and groups with access to specific documents.  Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. | `string`<br />You can choose between the following options:+  Use `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index <br />+  Use `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index <br />+  Use `CHANGE_LOG` to incrementally crawl only new and modified content each time your data source syncs with your index.  | Yes |
+| `secretArn` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Jira. | `string`<br />The secret must contain a JSON structure with the following keys:<pre>{<br />    "Jira ID": "{{Jira user name or email host URL}}",<br />    "Password/Token": "{{Jira API token}}"<br />}</pre> | Yes |
+| `version` | The version of this template that's currently supported. | `string` | No |
 
 ### Jira JSON schema
+<a name="jira-json"></a>
 
 The following is the Jira JSON schema:
 
-```json
-
+```
 {
   "type": "object",
   "properties": {
@@ -978,14 +419,12 @@ The following is the Jira JSON schema:
 }
 ```
 
-Show moreShow less
-
 ### Jira JSON schema example
+<a name="jira-api-json-example"></a>
 
 The following is the Jira JSON schema example:
 
-```json
-
+```
 {
   "type": "JIRA",
   "syncMode": "FULL_CRAWL",
@@ -1063,13 +502,5 @@ The following is the Jira JSON schema example:
   }
 }
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the console
-
-Using CloudFormation
 
 All content copied from https://docs.aws.amazon.com/.

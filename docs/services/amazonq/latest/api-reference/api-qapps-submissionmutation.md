@@ -3,45 +3,31 @@ title: "SubmissionMutation"
 ---
 
 # SubmissionMutation
+<a name="API_qapps_SubmissionMutation"></a>
 
 Represents an action performed on a submission.
 
 ## Contents
+<a name="API_qapps_SubmissionMutation_Contents"></a>
 
-**mutationType**
-
+ ** mutationType **   <a name="qbusiness-Type-qapps_SubmissionMutation-mutationType"></a>
 The operation that is performed on a submission.
-
 Type: String
-
 Valid Values: `edit | delete | add`
-
 Required: Yes
 
-**submissionId**
-
+ ** submissionId **   <a name="qbusiness-Type-qapps_SubmissionMutation-submissionId"></a>
 The unique identifier of the submission.
-
 Type: String
-
 Pattern: `[\da-f]{8}-[\da-f]{4}-[45][\da-f]{3}-[89ABab][\da-f]{3}-[\da-f]{12}`
-
 Required: Yes
 
 ## See Also
+<a name="API_qapps_SubmissionMutation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/submissionmutation.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/submissionmutation.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/submissionmutation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Submission
-
-TextInputCard
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/SubmissionMutation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/SubmissionMutation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/SubmissionMutation)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,40 +3,26 @@ title: "QuickSightConfiguration"
 ---
 
 # QuickSightConfiguration
+<a name="API_QuickSightConfiguration"></a>
 
-The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider.
-For more information, see [Creating an\
-Amazon Quick integrated application](../qbusiness-ug/create-quicksight-integrated-application.md).
+The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an Amazon Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
 
 ## Contents
+<a name="API_QuickSightConfiguration_Contents"></a>
 
-**clientNamespace**
-
-The Amazon Quick namespace that is used as the identity provider. For more information about Quick namespaces, see
-[Namespace operations](../../../quicksight/latest/developerguide/namespace-operations.md).
-
+ ** clientNamespace **   <a name="qbusiness-Type-QuickSightConfiguration-clientNamespace"></a>
+The Amazon Quick namespace that is used as the identity provider. For more information about Quick namespaces, see [Namespace operations](https://docs.aws.amazon.com/quicksight/latest/developerguide/namespace-operations.html).
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 64.
-
 Pattern: `[a-zA-Z0-9._-]*`
-
 Required: Yes
 
 ## See Also
+<a name="API_QuickSightConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/quicksightconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/quicksightconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/quicksightconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QAppsConfiguration
-
-RelevantContent
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/QuickSightConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/QuickSightConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/QuickSightConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

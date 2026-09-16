@@ -2,50 +2,41 @@
 title: "AWS managed policies for Amazon Q Business"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # AWS managed policies for Amazon Q Business
+<a name="security-iam-awsmanpol"></a>
 
-An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed
-to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
+An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
 
-Keep in mind that AWS managed policies might not grant least-privilege permissions for your specific use cases because
-they're available for all AWS customers to use. We recommend that you reduce permissions further by defining
-[customer managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#customer-managed-policies) that are specific to your use cases.
+Keep in mind that AWS managed policies might not grant least-privilege permissions for your specific use cases because they're available for all AWS customers to use. We recommend that you reduce permissions further by defining [ customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#customer-managed-policies) that are specific to your use cases.
 
-You cannot change the permissions defined in AWS managed policies. If AWS updates the permissions defined in an AWS
-managed policy, the update affects all principal identities (users, groups, and roles) that the policy is attached to. AWS is
-most likely to update an AWS managed policy when a new AWS service is launched or new API operations become available for
-existing services.
+You cannot change the permissions defined in AWS managed policies. If AWS updates the permissions defined in an AWS managed policy, the update affects all principal identities (users, groups, and roles) that the policy is attached to. AWS is most likely to update an AWS managed policy when a new AWS service is launched or new API operations become available for existing services.
 
-For more information, see [AWS managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies) in the
-_IAM User Guide_.
+For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 
-###### Topics
-
-- [AWS managed policy: QBusinessServiceRolePolicy](#security-iam-awsmanpol-amazonq-app-role-policy)
-
-- [AWS managed policy: QBusinessQuicksightPluginPolicy](#security-iam-awsmanpol-amazonq-quicksight-policy)
-
-- [Amazon Q Business updates to AWS managed policies](#security-iam-awsmanpol-updates)
+**Topics**
++ [AWS managed policy: QBusinessServiceRolePolicy](#security-iam-awsmanpol-amazonq-app-role-policy)
++ [AWS managed policy: QBusinessQuicksightPluginPolicy](#security-iam-awsmanpol-amazonq-quicksight-policy)
++ [Amazon Q Business updates to AWS managed policies](#security-iam-awsmanpol-updates)
 
 ## AWS managed policy: QBusinessServiceRolePolicy
+<a name="security-iam-awsmanpol-amazonq-app-role-policy"></a>
 
-Amazon Q Business uses a `QBusinessServiceRolePolicy` to enable an
-Amazon Q Business application to access CloudWatch resources and write CloudWatch logs. You
-can't attach `QBusinessServiceRolePolicy` to your IAM entities. This policy is
-attached to a service-linked role that allows Amazon Q Business to perform actions on
-your behalf. For more information, see [Using service-linked roles for Amazon Q Business](using-service-linked-roles.md).
+Amazon Q Business uses a `QBusinessServiceRolePolicy` to enable an Amazon Q Business application to access CloudWatch resources and write CloudWatch logs. You can't attach `QBusinessServiceRolePolicy` to your IAM entities. This policy is attached to a service-linked role that allows Amazon Q Business to perform actions on your behalf. For more information, see [Using service-linked roles for Amazon Q Business](using-service-linked-roles.md).
 
 **Permissions details**
 
 This policy includes the following permissions.
 
-- `logs` – Allows Amazon Q Business to describe and write to
-CloudWatch log streams.
++ `logs` – Allows Amazon Q Business to describe and write to CloudWatch log streams.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -109,27 +100,24 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## AWS managed policy: QBusinessQuicksightPluginPolicy
+<a name="security-iam-awsmanpol-amazonq-quicksight-policy"></a>
 
-Amazon Q Business uses a `QBusinessQuicksightPluginPolicy` to enable an
-Amazon Q Business application to access Amazon Quick topics and dashboards for the
-Amazon Q Business Quick plugin. When you configure the plugin, you specify a
-service role that has `PredictQAResults` permissions for Quick topics and
-dashboards. You can use the following `QBusinessQuicksightPluginPolicy` policy
-to grant these permissions.
+Amazon Q Business uses a `QBusinessQuicksightPluginPolicy` to enable an Amazon Q Business application to access Amazon Quick topics and dashboards for the Amazon Q Business Quick plugin. When you configure the plugin, you specify a service role that has `PredictQAResults` permissions for Quick topics and dashboards. You can use the following `QBusinessQuicksightPluginPolicy` policy to grant these permissions.
 
-###### Note
+**Note**
+To grant the necessary permissions, the trust policy of the role must grant Quick assume role permissions. For more information see [Using the Quick plugin to get insights from structured data](quicksight-plugin.md).
 
-To grant the necessary permissions, the trust policy of the role must grant Quick
-assume role permissions. For more information see [Using the Quick plugin to get insights from structured data](quicksight-plugin.md).
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -146,35 +134,18 @@ JSON
     }
   ]
 }
-
 ```
 
+------
+
 ## Amazon Q Business updates to AWS managed policies
+<a name="security-iam-awsmanpol-updates"></a>
 
-View details about updates to AWS managed policies for Amazon Q Business since
-this service began tracking these changes. For automatic alerts about changes to this page,
-subscribe to the RSS feed on the [Amazon Q Business Document history page](../business-use-dg/doc-history.md).
+View details about updates to AWS managed policies for Amazon Q Business since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the [Amazon Q Business Document history page](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/doc-history.html).
 
-ChangeDescriptionDate
-
-AWS managed policy: QBusinessQuicksightPluginPolicy
-
-Added AWS managed policy QBusinessQuicksightPluginPolicy to access
-Amazon Quick resources for the QuickSight plugin.
-
-December 3, 2024
-
-Amazon Q Business started tracking changes
-
-Amazon Q Business started tracking changes for its AWS managed
-policies.
-
-April 30, 2024
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Identity-based policy examples
-
-AWS managed policies for Q App
+| Change | Description | Date |
+| --- | --- | --- |
+| AWS managed policy: QBusinessQuicksightPluginPolicy | Added AWS managed policy QBusinessQuicksightPluginPolicy to access Amazon Quick resources for the QuickSight plugin. | December 3, 2024 |
+| Amazon Q Business started tracking changes | Amazon Q Business started tracking changes for its AWS managed policies. | April 30, 2024 |
 
 All content copied from https://docs.aws.amazon.com/.

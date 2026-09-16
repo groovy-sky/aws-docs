@@ -2,42 +2,38 @@
 title: "Checking Confluence (Server/Data Center) connectivity"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Checking Confluence (Server/Data Center) connectivity
+<a name="confluence-server-connection-check"></a>
 
-Before you sync your Confluence (Server/Data Center) data source connector after [configuring it](confluence-server-console.md), we recommend you check the connection
-between Amazon Q Business and Confluence (Server/Data Center). The following are the cURL commands you need
-to check Confluence (Server/Data Center) connectivity.
+Before you sync your Confluence (Server/Data Center) data source connector after [configuring it](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/confluence-server-console.html), we recommend you check the connection between Amazon Q Business and Confluence (Server/Data Center). The following are the cURL commands you need to check Confluence (Server/Data Center) connectivity.
 
-###### Topics
-
-- [Checking basic authentication connectivity](#confluence-server-connection-check-basic)
-
-- [Checking personal access token connectivity](#confluence-server-connection-check-pat)
+**Topics**
++ [Checking basic authentication connectivity](#confluence-server-connection-check-basic)
++ [Checking personal access token connectivity](#confluence-server-connection-check-pat)
 
 ## Checking basic authentication connectivity
+<a name="confluence-server-connection-check-basic"></a>
 
-To check connectivity for a Confluence (Server/Data Center) data source connector using basic
-authentication, use the following cURL command:
+To check connectivity for a Confluence (Server/Data Center) data source connector using basic authentication, use the following cURL command:
 
-```nohighlight
-
-curl --location 'https://<confluence_host-url>/wiki/rest/api/user/current'
---header 'Authorization: Basic <Base64 encoded username and password>'
+```
+curl --location '{{https://<confluence_host-url>/wiki/rest/api/user/current}}'
+--header 'Authorization: Basic <{{Base64 encoded username and password}}>'
 ```
 
-If your data source is connected as expected, the JSON response should resemble
-the following:
+If your data source is connected as expected, the JSON response should resemble the following:
 
-```json
-
+```
 {
     "type": "known",
-    "accountId": "accountId",
+    "accountId": "{{accountId}}",
     "accountType": "atlassian",
-    "email": "email",
+    "email": "{{email}}",
     "publicName": "Administrator",
     "profilePicture": {
-        "path": "/wiki/aa-avatar/<accountId>",
+        "path": "{{/wiki/aa-avatar/<accountId>}}",
         "width": 48,
         "height": 48,
         "isDefault": false
@@ -49,45 +45,39 @@ the following:
         "personalSpace": ""
     },
     "_links": {
-        "self": "https://<host_url>/wiki/rest/api/user?accountId=<accountId>",
-        "base": "https://<host_url>/wiki",
+        "self": "{{https://<host_url>/wiki/rest/api/user?accountId=<accountId>}}",
+        "base": "{{https://<host_url>/wiki}}",
         "context": "/wiki"
     }
 }
 ```
 
-If your Confluence (Server/Data Center) connector is not connected correctly, you will see the
-following error:
+If your Confluence (Server/Data Center) connector is not connected correctly, you will see the following error:
++ CNF-5123: The profile value is invalid. Try again after sometime.
 
-- CNF-5123: The profile value is invalid. Try again after sometime.
-
-To troubleshoot the issue, check your Confluence (Server/Data Center) URL and make sure it's
-correct.
+To troubleshoot the issue, check your Confluence (Server/Data Center) URL and make sure it's correct.
 
 ## Checking personal access token connectivity
+<a name="confluence-server-connection-check-pat"></a>
 
-To check connectivity for a Confluence (Server/Data Center) data source connector using
-personal access token authentication, use the following cURL command:
+To check connectivity for a Confluence (Server/Data Center) data source connector using personal access token authentication, use the following cURL command:
 
-```nohighlight
-
-curl --location 'https://<confluence_server_host_url>/rest/api/user/current'
---header 'Authorization: Bearer <PAT_TOKEN>'
+```
+curl --location '{{https://<confluence_server_host_url>/rest/api/user/current}}'
+--header 'Authorization: Bearer {{<PAT_TOKEN>}}'
 ```
 
-If your data source is connected as expected, the JSON response should resemble
-the following:
+If your data source is connected as expected, the JSON response should resemble the following:
 
-```json
-
+```
 {
     "type": "known",
-    "accountId": "accountId",
+    "accountId": "{{accountId}}",
     "accountType": "atlassian",
-    "email": "email",
+    "email": "{{email}}",
     "publicName": "Administrator",
     "profilePicture": {
-        "path": "/wiki/aa-avatar/<accountId>",
+        "path": "{{/wiki/aa-avatar/<accountId>}}",
         "width": 48,
         "height": 48,
         "isDefault": false
@@ -99,25 +89,16 @@ the following:
         "personalSpace": ""
     },
     "_links": {
-        "self": "https://<host_url>/wiki/rest/api/user?accountId=<accountId>",
-        "base": "https://<host_url>/wiki",
+        "self": "{{https://<host_url>/wiki/rest/api/user?accountId=<accountId>}}",
+        "base": "{{https://<host_url>/wiki}}",
         "context": "/wiki"
     }
 }
 ```
 
-If your Confluence (Server/Data Center) connector is not connected correctly, you will see the
-following error:
+If your Confluence (Server/Data Center) connector is not connected correctly, you will see the following error:
++ CNF-5123: The profile value is invalid. Try again after sometime.
 
-- CNF-5123: The profile value is invalid. Try again after sometime.
-
-To troubleshoot the issue, check your Confluence (Server/Data Center) URL and make sure it's
-correct.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Prerequisites for connecting Amazon Q to Confluence (Server/Data Center)
-
-Connecting Amazon Q Business to Confluence (Server/Data Center) using the console
+To troubleshoot the issue, check your Confluence (Server/Data Center) URL and make sure it's correct.
 
 All content copied from https://docs.aws.amazon.com/.

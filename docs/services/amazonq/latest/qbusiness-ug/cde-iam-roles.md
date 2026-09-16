@@ -2,42 +2,30 @@
 title: "IAM roles for custom document enrichment in Amazon Q Business"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # IAM roles for custom document enrichment in Amazon Q Business
+<a name="cde-iam-roles"></a>
 
-Custom document enrichment (CDE) is an Amazon Q Business feature that you can use to
-manipulate your document content and document attributes. When you use the Lambda functions for CDE, you need an IAM role for the following:
+Custom document enrichment (CDE) is an Amazon Q Business feature that you can use to manipulate your document content and document attributes. When you use the Lambda functions for CDE, you need an IAM role for the following:
++ A role for `PreExtractionHookConfiguration` with permissions to run `PreExtractionHookConfiguration` and to access the Amazon S3 bucket when you use `PreExtractionHookConfiguration`.
++ A role for `PostExtractionHookConfiguration` with permissions to run `PreExtractionHookConfiguration` and to access the Amazon S3 bucket when you use `PostExtractionHookConfiguration`.
 
-- A role for `PreExtractionHookConfiguration` with permissions to run
-`PreExtractionHookConfiguration` and to access the Amazon S3 bucket when
-you use `PreExtractionHookConfiguration`.
-
-- A role for `PostExtractionHookConfiguration` with permissions to run
-`PreExtractionHookConfiguration` and to access the Amazon S3 bucket when
-you use `PostExtractionHookConfiguration`.
-
-###### Important
-
-IAM roles for Custom Document Enrichmmnt (CDE) Lambda functions should belong to the
-same account as the account using [BatchPutDocument](../api-reference/api-batchputdocument.md) API operation or the [CreateDataSource](../api-reference/api-createdatasource.md) operation to configure CDE.
+**Important**
+IAM roles for Custom Document Enrichmmnt (CDE) Lambda functions should belong to the same account as the account using [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation to configure CDE.
 
 Both AWS Identity and Access Management (IAM) roles must have the permissions to:
++ Run `PreExtractionHookConfiguration` and/or `PostExtractionHookConfiguration`. To apply advanced alterations of your document metadata and content during the ingestion process, configure a Lambda function for `PreExtractionHookConfiguration` and/or `PostExtractionHookConfiguration`.
++ (Optional) If you choose to activate Server Side Encryption for your Amazon S3 bucket, you must provide permissions to use the AWS KMS key customer to encrypt and decrypt the objects stored in your Amazon S3 bucket.
 
-- Run `PreExtractionHookConfiguration` and/or
-`PostExtractionHookConfiguration`. To apply advanced alterations of
-your document metadata and content during the ingestion process, configure a Lambda function for `PreExtractionHookConfiguration` and/or
-`PostExtractionHookConfiguration`.
+**A role policy to allow Amazon Q to run `PreExtractionHookConfiguration` with encryption for your Amazon S3 bucket.**
 
-- (Optional) If you choose to activate Server Side Encryption for your Amazon S3 bucket, you must provide permissions to use the AWS KMS key
-customer
-to encrypt and decrypt the objects stored in your Amazon S3 bucket.
+------
+#### [ JSON ]
 
-**A role policy to allow Amazon Q to run**
-**`PreExtractionHookConfiguration` with encryption for your Amazon S3 bucket.**
+****
 
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,7 +57,7 @@ JSON
                 "kms:GenerateDataKey"
             ],
             "Resource": [
-                "arn:aws:kms:us-east-1:111122223333:key/key-id"
+                "arn:aws:kms:us-east-1:111122223333:key/{{key-id}}"
             ],
             "Effect": "Allow",
             "Sid": "KMSPermissions"
@@ -78,22 +66,24 @@ JSON
             "Action": [
                 "lambda:InvokeFunction"
             ],
-            "Resource": "arn:aws:lambda:us-east-1:111122223333:function:pre-extraction-lambda-function",
+            "Resource": "arn:aws:lambda:us-east-1:111122223333:function:{{pre-extraction-lambda-function}}",
             "Effect": "Allow",
             "Sid": "LambdaPermissions"
         }
     ]
 }
-
 ```
 
-**An role policy to allow Amazon Q to run**
-**`PreExtractionHookConfiguration` without encryption.**
+------
 
-JSON
+**An role policy to allow Amazon Q to run `PreExtractionHookConfiguration` without encryption.**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -129,16 +119,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**A role policy to allow Amazon Q to run**
-**`PostExtractionHookConfiguration` with encryption for your Amazon S3 bucket.**
+------
 
-JSON
+**A role policy to allow Amazon Q to run `PostExtractionHookConfiguration` with encryption for your Amazon S3 bucket.**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -185,16 +177,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**An role policy to allow Amazon Q to run**
-**`PostExtractionHookConfiguration` without encryption.**
+------
 
-JSON
+**An role policy to allow Amazon Q to run `PostExtractionHookConfiguration` without encryption.**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -230,22 +224,18 @@ JSON
         }
     ]
 }
-
 ```
 
-We recommend that you include `aws:sourceAccount` and
-`aws:sourceArn` in the trust policy. Their inclusion limits permissions and
-securely checks if `aws:sourceAccount` and `aws:sourceArn` are the
-same values as provided in the IAM role policy for the
-`sts:AssumeRole` action. This approach prevents unauthorized entities from
-accessing your IAM roles and their permissions. For more information, see
-[confused\
-deputy problem](../../../iam/latest/userguide/confused-deputy.md) in the _IAM User Guide_.
+------
 
-JSON
+We recommend that you include `aws:sourceAccount` and `aws:sourceArn` in the trust policy. Their inclusion limits permissions and securely checks if `aws:sourceAccount` and `aws:sourceArn` are the same values as provided in the IAM role policy for the `sts:AssumeRole` action. This approach prevents unauthorized entities from accessing your IAM roles and their permissions. For more information, see [confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *IAM User Guide*.
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -269,13 +259,8 @@ JSON
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Plugins
-
-Amazon Kendra retriever
+------
 
 All content copied from https://docs.aws.amazon.com/.

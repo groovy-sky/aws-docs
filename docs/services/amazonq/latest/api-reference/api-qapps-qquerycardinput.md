@@ -3,85 +3,55 @@ title: "QQueryCardInput"
 ---
 
 # QQueryCardInput
+<a name="API_qapps_QQueryCardInput"></a>
 
 The input shape for defining a query card in an Amazon Q App.
 
 ## Contents
+<a name="API_qapps_QQueryCardInput_Contents"></a>
 
-**id**
-
+ ** id **   <a name="qbusiness-Type-qapps_QQueryCardInput-id"></a>
 The unique identifier of the query card.
-
 Type: String
-
 Pattern: `[\da-f]{8}-[\da-f]{4}-[45][\da-f]{3}-[89ABab][\da-f]{3}-[\da-f]{12}`
-
 Required: Yes
 
-**prompt**
-
+ ** prompt **   <a name="qbusiness-Type-qapps_QQueryCardInput-prompt"></a>
 The prompt or instructions displayed for the query card.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 50000.
-
 Required: Yes
 
-**title**
-
+ ** title **   <a name="qbusiness-Type-qapps_QQueryCardInput-title"></a>
 The title or label of the query card.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 100.
-
 Pattern: `[^{}\\"<>]+`
-
 Required: Yes
 
-**type**
-
+ ** type **   <a name="qbusiness-Type-qapps_QQueryCardInput-type"></a>
 The type of the card.
-
 Type: String
-
 Valid Values: `text-input | q-query | file-upload | q-plugin | form-input`
-
 Required: Yes
 
-**attributeFilter**
-
+ ** attributeFilter **   <a name="qbusiness-Type-qapps_QQueryCardInput-attributeFilter"></a>
 Turns on filtering of responses based on document attributes or metadata fields.
-
-Type: [AttributeFilter](api-qapps-attributefilter.md) object
-
+Type: [AttributeFilter](API_qapps_AttributeFilter.md) object
 Required: No
 
-**outputSource**
-
+ ** outputSource **   <a name="qbusiness-Type-qapps_QQueryCardInput-outputSource"></a>
 The source or type of output to generate for the query card.
-
 Type: String
-
 Valid Values: `approved-sources | llm`
-
 Required: No
 
 ## See Also
+<a name="API_qapps_QQueryCardInput_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/qquerycardinput.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/qquerycardinput.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/qquerycardinput.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QQueryCard
-
-SessionSharingConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/QQueryCardInput)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/QQueryCardInput)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/QQueryCardInput)
 
 All content copied from https://docs.aws.amazon.com/.

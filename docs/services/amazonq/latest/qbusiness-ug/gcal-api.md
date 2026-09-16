@@ -2,239 +2,54 @@
 title: "Connecting Amazon Q Business to Google Calendar using APIs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to Google Calendar using APIs
+<a name="gcal-api"></a>
 
-You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your
-Amazon Q application. You can also use the [UpdateDataSource](../api-reference/api-updatedatasource.md) action to modify an existing data source configuration.
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
 
-Then, you use the
-`configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
 
-For an example of the API request, see [CreateDataSource](../api-reference/api-createdatasource.md) and [UpdateDataSource](../api-reference/api-updatedatasource.md) in the Amazon Q API Reference.
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
 
-###### Topics
-
-- [Google Calendar configuration properties](#gcal-configuration-keys)
-
-- [Google Calendar JSON schema](#gcal-json)
-
-- [Google Calendar JSON schema example](#s3-api-json-example)
+**Topics**
++ [Google Calendar configuration properties](#gcal-configuration-keys)
++ [Google Calendar JSON schema](#gcal-json)
++ [Google Calendar JSON schema example](#s3-api-json-example)
 
 ## Google Calendar configuration properties
-
-The following table provides information about configuration properties required in the
-schema.
-
-ConfigurationDescriptionTypeRequired`connectionConfiguration`Configuration information for the data source.
-
-`object`
-
-This property has the following sub-property:
-`repositoryEndpointMetadata`.
-
-Yes`repositoryEndpointMetadata`The endpoint information for the data source. This data source doesn't specify an
-endpoint. You choose your authentication type: `serviceAccount` and
-`OAuth2`. The connection information is included in an AWS Secrets Manager secret that you provide the `secretArn`.
-
-`object`
-
-This property has the following sub-property:
-`authType`.
-
-Yes`authType`Choose between `serviceAccount` and `OAuth2`, based on your
-use case.
-
-`string`
-
-Yes`repositoryConfigurations`Configuration information for the content of the data source. For example,
-configuring specific types of content and field mappings.
-
-`object`
-
-This property has the following sub-properties: `file` and
-`comment`.
-
-Yes
-
-- 1) Calendar
-
-- 2) Event
-
-A list of objects that map the attributes or field names of your Google
-calendar to Amazon Q index field names.
-
-`object`
-
-`object`
-
-These properties have the following sub-properties.
-
-- `indexFieldName`
-
-- `indexFieldType`
-
-- `dataSourceFieldName`
-
-- `dateFieldFormat`
-
-No
-
-`indexFieldName`
-
-The field name of your Google Drive to Amazon Q index
-field names.
-
-`string`
-
-Yes
-
-`indexFieldType`
-
-The field type of your Google Drive to Amazon Q index
-field names.
-
-`string`
-
-The allowed values are `STRING`, `STRING_LIST`, and
-`DATE`.
-
-Yes
-
-`dataSourceFieldName`
-
-The data source field name of your Google Calendar to Amazon Q index field names.
-
-`string`
-
-Yes
-
-`dateFieldFormat`
-
-The date format of your Google Calendar to Amazon Q index
-field names.
-
-`string`
-
-Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'`
-
-No`additionalProperties`Additional configuration options for your content in your data source
-
-`object`
-
-This property has the following sub-properties.
-
-- `isCrawlAcl`
-
-- `fielForUserId`
-
-- `InclusionUserList`
-
-- `exclusionUserList`
-
-- `enableDeletionProtection`
-
-- `DeletionProtectionThreshold`
-
-Yes`isCrawlAcl`Specify `true` to crawl access control information by default from
-documents.
-
-###### Note
-
-Amazon Q Business crawls ACL information to ensure responses are generated
-only from documents your end users have access to. See [Authorization](connector-concepts.md#connector-authorization) for more details.
-
-`boolean`
-
-No`fieldForUserId`Specify field to use for `UserId` for ACL crawling.
-
-`string`
-
-No`inclusionUsersList exclusionUsersLists`
-
-A list of email IDs to exclude specific users from your Google
-Calendardata source. Users whose email IDs match these will be excluded from
-the index, while users whose email IDs do not match will be included. If a file
-matches both an exclusion and an inclusion, the exclusion takes precedence, and the
-file will not be included in the index.
-
-`array`
-
-No
-
-- `type`
-
-The type of source. We recommend GOOGLECALENDAR as your data source
-type.
-
-`string`
-
-Valid values are GOOGLECALENDAR.
-
-No
-
-- ` enableIdentityCrawler `
-
-`true` to activate identity crawler. Identity crawler is activated by
-default. Crawling identity information on users and groups with access to certain
-documents is useful for user context filtering. Search results are filtered based on the
-user or their group access to documents.
-
-###### Note
-
-Amazon Q Business crawls ACL information to ensure responses are generated
-only from documents your end users have access to. See [Authorization](connector-concepts.md#connector-authorization) for more details.
-
-`boolean`
-
-Yes
-
-- ` syncMode `
-
-Specify whether Amazon Q should update your index by syncing all
-documents or only new, modified, and deleted documents.
-
-`string`
-
-You can choose between the following options: Use `FORCED FULL CRAWL`
-to freshly re-crawl all content and replace existing content each time your data
-source syncs with your indexUse.Use `FULL CRAWL` to incrementally crawl
-only new, modified, and deleted content each time your data source syncs with your
-index
-
-Yes
-
-- `SecretARN`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that
-contains the key-value pairs required to connect to your Google Drive.
-
-.
-
-`string`
-
-The secret must contain a JSON structure with the following keys:
-
-If using Google Service Account authentication: `{"clientEmail": "user
-                account email","adminAccountEmail": "service account email","privateKey": "private
-                key"}If using OAuth 2.0 authentication:{"clientID": "OAuth client
-                ID","clientSecret": "client secret","refreshToken": "refresh token"}`
-
-No
-
-- `version`
-
-The version of this template that's currently supported.
-
-`string`
-
-No
+<a name="gcal-configuration-keys"></a>
+
+The following table provides information about configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| connectionConfiguration | Configuration information for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| repositoryEndpointMetadata | The endpoint information for the data source. This data source doesn't specify an endpoint. You choose your authentication type: serviceAccount and OAuth2. The connection information is included in an AWS Secrets Manager secret that you provide the secretArn. | `object`<br />This property has the following sub-property: `authType`. | Yes |
+| authType | Choose between serviceAccount and OAuth2, based on your use case. | `string` | Yes |
+| repositoryConfigurations | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties: `file` and `comment`. | Yes |
+|  +  1) Calendar <br />+  2) Event    | A list of objects that map the attributes or field names of your Google calendar to Amazon Q index field names.  | `object`<br />`object`<br />These properties have the following sub-properties.+  `indexFieldName` <br />+  `indexFieldType` <br />+  `dataSourceFieldName` <br />+  `dateFieldFormat`  | No |
+| `indexFieldName` | The field name of your Google Drive to Amazon Q index field names. | `string` | Yes |
+| `indexFieldType` | The field type of your Google Drive to Amazon Q index field names. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your Google Calendar to Amazon Q index field names. | `string` | Yes |
+| `dateFieldFormat` | The date format of your Google Calendar to Amazon Q index field names. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| additionalProperties | Additional configuration options for your content in your data source | `object`<br />This property has the following sub-properties.+  `isCrawlAcl` <br />+  `fielForUserId` <br />+  `InclusionUserList` <br />+  `exclusionUserList` <br />+  `enableDeletionProtection` <br />+  `DeletionProtectionThreshold`  | Yes |
+| isCrawlAcl | Specify true to crawl access control information by default from documents.  Amazon Q Business crawls ACL information to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | No |
+| fieldForUserId | Specify field to use for UserId for ACL crawling. | `string` | No |
+| inclusionUsersList exclusionUsersLists |  A list of email IDs to exclude specific users from your Google Calendardata source. Users whose email IDs match these will be excluded from the index, while users whose email IDs do not match will be included. If a file matches both an exclusion and an inclusion, the exclusion takes precedence, and the file will not be included in the index.  | `array` | No |
+|  +  `type`   | The type of source. We recommend GOOGLECALENDAR as your data source type. | `string`<br />Valid values are GOOGLECALENDAR. | No |
+|  +  ` enableIdentityCrawler `   | true to activate identity crawler. Identity crawler is activated by default. Crawling identity information on users and groups with access to certain documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents.  Amazon Q Business crawls ACL information to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | Yes |
+|  +  ` syncMode `   |  Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents.  | `string`<br /> You can choose between the following options: Use `FORCED FULL CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your indexUse.Use `FULL CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index  | Yes |
+|  +  `SecretARN`   |  The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Google Drive. . | `string`<br /> The secret must contain a JSON structure with the following keys: <br /> If using Google Service Account authentication: `{"clientEmail": "user account email","adminAccountEmail": "service account email","privateKey": "private key"}If using OAuth 2.0 authentication:{"clientID": "OAuth client ID","clientSecret": "client secret","refreshToken": "refresh token"}`  | No |
+|  +  `version`   |  The version of this template that's currently supported.  | `string` | No |
 
 ## Google Calendar JSON schema
+<a name="gcal-json"></a>
 
 The following is the Google Calendar JSON schema:
 
-```json
-
+```
 {
 
 {
@@ -425,17 +240,14 @@ The following is the Google Calendar JSON schema:
     "type"
   ]
 }
-
 ```
 
-Show moreShow less
-
 ## Google Calendar JSON schema example
+<a name="s3-api-json-example"></a>
 
 The following is the Google Calendar JSON schema example:
 
-```json
-
+```
 {
 
 {
@@ -536,15 +348,6 @@ The following is the Google Calendar JSON schema example:
   "secretArn": "arn:aws::secretsmanager:us-west-2:123:secret:AmazonKendra-GoogleCalendar",
   "version": "1.0.0"
 }
-
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the console
-
-ACL crawling
 
 All content copied from https://docs.aws.amazon.com/.

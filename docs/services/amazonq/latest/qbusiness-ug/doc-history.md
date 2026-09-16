@@ -2,407 +2,69 @@
 title: "Document history"
 ---
 
-# Document history
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
-- **Latest documentation update:** August 14, 2025
+# Document history
+<a name="doc-history"></a>
++ **Latest documentation update:** August 14, 2025
 
 The following table describes important changes in each release of Amazon Q Business.
 
-ChangeDescriptionDate
-
-New Agentic RAG feature
-
-Enhance Amazon Q Business standard retrieval augmented generation (RAG) capabilities
-with agentic workflows. For more information, see [Agentic RAG in Amazon Q Business](agentic-rag.md).
-
-August 14, 2025
-
-Added support for Clickable S3 Link Feature
-
-Added support for Clickable S3 Link Feature, allowing users to access source documents
-from S3 through citation links in chat responses, regardless of whether a source URI is
-configured.
-
-July 22, 2025
-
-Relevancy tuning replaces metadata boosting on new applications
-
-Admins can now control the search results in Amazon Q Business based on when the document was
-created or modified or where the document is stored. For more information see [Tuning the query\
-results based on document attribute relevancy](relevancy-tuning.md).
-
-July 1, 2025
-
-New response customization feature
-
-Customize Amazon Q Business chat responses. For more information, see [Customizing\
-responses in Amazon Q Business](response-customization.md).
-
-July 1, 2025
-
-Amazon Q Business application environments for anonymous access
-
-You can now create Amazon Q Business application environments for anonymous access. For more information,
-see [Creating an Amazon Q Business application environment for anonymous access](create-anonymous-application.md).
-
-April 29, 2025
-
-New hallucination mitigation feature
-
-Reduce response hallucinations during Amazon Q Business chat. For more information, see [Hallucination mitigation in Amazon Q Business](hallucination-reduction.md).
-
-April 10, 2025
-
-Introducing support to use private Amazon S3 buckets to store web customization artifacts
-
-Save your Amazon Q Business web experience customizations in private S3 buckets. For more
-information, see [Customizing visual themes](customizing-web-experience-themes.md) in your Amazon Q web experience.
-
-March 18, 2025
-
-Introducing the Amazon Q Business integration for Microsoft Word
-
-The Amazon Q Business can enhance your users' Microsoft Word experience by
-increasing their productivity, bringing Amazon Q Business's AI-powered assistance
-directly into their daily documentation workflows. For more information, see [Integrating\
-Microsoft Word with the Amazon Q Business Add-in](integration-msword.md).
-
-February 27, 2025
-
-Introducing the Amazon Q Business integration for Microsoft Outlook
-
-The Amazon Q Business can enhance your users' Microsoft Outlook experience by
-increasing their productivity, bringing Amazon Q Business's AI-powered assistance
-directly into their daily email workflows. For more information, see [Integrating\
-Microsoft Outlook with the Amazon Q Business Add-in](integration-msoutlook.md).
-
-February 27, 2025
-
-New Amazon Q Business chat orchestration controls
-
-You can now use Amazon Q Business
-[Admin controls and guardrails](guardrails-global-controls.md) to configure chat orchestration settings. For more
-information, see [Chat orchestration settings](guardrails-global-controls.md#guardrails-global-orchestration).
-
-February 4, 2025
-
-Amazon Q Business now supports Amazon Kendra GenAI Enterprise Edition indices
-
-You can now use an Amazon Kendra GenAI Enterprise Edition index with Amazon Q Business. For
-more information, see [Creating an index for an Amazon Q Business application environment](select-retriever.md).
-
-December 4, 2024
-
-Q Apps plugins support
-
-Q Apps now supports all Amazon Q Business plugins (built-in and custom, including
-legacy built-in plugins) with more supported actions. For more information, see [Using plugins in\
-Q Apps](qapps-plugins.md).
-
-December 3, 2024
-
-New managed policy: QBusinessQuicksightPluginPolicy
-
-The [QBusinessQuicksightPluginPolicy](../business-use-dg/security-iam-awsmanpol.md#security-iam-awsmanpol-amazonq-quicksight-policy) managed policy provides
-permissions for an Amazon Q Business application environment to communicate with Amazon Quick.
-
-December 3, 2024
-
-New Quick plugin
-
-You can now use a new fully integrated Quick plugin to get insights from structured
-data through Amazon Quick. For more information, see [Configuring the Quick plugin to\
-get insights from structured data](quicksight-plugin.md).
-
-December 3, 2024
-
-New Amazon Q Business plugins
-
-Amazon Q Business now has an updated plugins experience with new plugins and more
-supported actions. For more information, see [Plugins](plugins.md).
-
-December 3, 2024
-
-Amazon Quick-integrated Amazon Q Business application environment
-
-You can now create an Amazon Quick-integrated Amazon Q Business application environment. For more information,
-see [Creating an\
-Amazon Quick-integrated Amazon Q Business application environment](create-application-quicksight.md).
-
-December 3, 2024
-
-Amazon Q Business now supports customizing visual themes
-
-Amazon Q Business offers customization options for your web experience, allowing you
-to align the interface visual elements with your organization's branding and user needs. For
-more information, see [Customizing visual themes](customizing-web-experience-themes.md).
-
-December 3, 2024
-
-Amazon Q Business now support data accessors
-
-Amazon Q Business data accessors feature allows you to securely share your
-enterprise data with verified software providers (ISVs) using the Amazon Q index.
-For more information, see [Data Accessors](data-accessors.md).
-
-December 3, 2024
-
-Amazon Q Business introduces Amazon Q index for software providers
-
-The Amazon Q index allows independent software vendors (ISVs) to access and
-integrate a company's data into their application environments, enhancing their customer's end user
-productivity by providing seamless access to company data sources across the ISV's
-application environments. . For more information, see [Amazon Q index for software providers (ISVs)](isv.md).
-
-December 3, 2024
-
-Introducing the Amazon Q Business Slack integration
-
-The Amazon Q Business can enhance your users' Slack experience by increasing their
-productivity, bringing Amazon Q Business's AI-powered assistance directly into their
-daily workflows. . For more information, see [Integrating Slack with\
-Amazon Q Business](slack.md).
-
-December 1, 2024
-
-Introducing the Amazon Q Business Microsoft Teams integration
-
-The Amazon Q Business can enhance your users' Microsoft Teams experience by
-increasing their productivity, bringing Amazon Q Business's AI-powered assistance
-directly into their daily workflows. . For more information, see [Integrating Microsoft Team\
-with Amazon Q Business](msteams.md).
-
-December 1, 2024
-
-Extracting semantic meaning from embedded visual content
-
-Amazon Q Business can now extract semantic meaning from embedded visual content. For
-more information, see [Extracting semantic meaning from embedded visual content](extracting-meaning-from-images.md).
-
-December 1, 2024
-
-Data collection in Amazon Q Apps
-
-You can now create a data collection app in Q Apps to gather multiple pieces of
-information from app users. A data collection app can leverage generative AI to analyze the
-collected data, identify common themes, summarize ideas, and provide actionable insights. For
-more information, see [Data collection in Amazon Q Apps](q-apps-forms.md).
-
-November 26, 2024
-
-Introducing the Amazon Q Business browser extensions
-
-The Amazon Q Business browser extension enhances your users' web browsing
-experience. For more information, see [Enhancing web\
-browsing with Amazon Q Business](browser-extensions.md).
-
-November 22, 2024
-
-Smartsheet connector
-
-Amazon Q Business now supports a Smartsheet data source connector. For more
-information, see [Smartsheet](smartsheet-connector.md).
-
-November 21, 2024
-
-Recent file support
-
-Amazon Q Business now supports recent files. For more information, see [IAM\
-role for an Amazon Q Business web experience](deploy-experience-iam-role.md) to update your policy to support
-this feature.
-
-November 21, 2024
-
-Cross-region inference in Amazon Q Business
-
-Amazon Q Business can now select the optimal region within your geography to process
-your inference request, maximizing available compute resources and model availability. For more
-information, see [Cross-region inference in Amazon Q Business](cross-region-inference.md).
-
-November 19, 2024
-
-Custom labels for Amazon Q Apps
-
-Administrators can now customize the labels available for published Q Apps. For more
-information, see [Custom labels for Amazon Q Apps](qapps-custom-labels.md).
-
-November 7, 2024
-
-Service-linked role support for Amazon Q Apps
-
-Amazon Q Apps now supports a service-linked role for creating application environments with enabled
-Q Apps. For more information, see [Using Service Linked Role for Q Apps](../business-use-dg/using-service-linked-roles-qapps.md).
-
-October 22, 2024
-
-Q App Analytics dashboard
-
-You can now use a new Q App Analytics dashboard to learn how your users are interacting
-with Q Apps. For example, you can identify the average daily users creating, updating, or
-running Q Apps over a specific time period. For more information, see [Viewing\
-Amazon Q Business and Q App metrics in analytics dashboards](analytics-dashboard.md).
-
-October 22, 2024
-
-New managed policy for Amazon Q Apps: QAppsServiceRolePolicy
-
-The [QAppsServiceRolePolicy](../business-use-dg/security-iam-awsmanpol-qapps.md) managed policy provides permissions to
-publish metrics.
-
-October 22, 2024
-
-Monitor user conversations with Amazon CloudWatch Logs
-
-You can use Amazon CloudWatch Logs to monitor and analyze user conversations and response feedback in
-Amazon Q Business. For more information, see [Monitoring Amazon Q Business user conversations with Amazon CloudWatch Logs](monitoring-cloudwatch-logs.md).
-
-October 22, 2024
-
-Monitor Q Apps with Amazon CloudWatch
-
-You can now monitor Q Apps with Amazon CloudWatch metrics. For more information, see [Monitoring\
-Amazon Q Business and Amazon Q Apps with Amazon CloudWatch](monitoring-cloudwatch.md).
-
-October 22, 2024
-
-Embed Amazon Q Business into trusted websites
-
-Admins can embed the Amazon Q Business assistant within trusted websites. This
-allows end users to receive immediate, permissions-aware responses from enterprise data
-sources, with citations from Amazon Q. For more information, see [Amazon Q embedded](embed-amazon-q-business.md).
-
-October 15, 2024
-
-Admins can now verify Amazon Q Apps
-
-Admins can review your published apps and update the status to
-_Verified_ if they determine the app meets your organization's criteria.
-For more information, see [Verifying Amazon Q Apps](purpose-built-qapps-web-experience.md#verified).
-
-September 10, 2024
-
-Identity federation through IAM support
-
-You can now use IAM Federation to manage end user access to Amazon Q Business
-application environments. For more information, see [Creating an\
-Amazon Q Business application environment using IAM Federation](create-application-iam.md).
-
-August 22, 2024
-
-Cross-region IAM Identity Center support
-
-You can now create cross-region IAM Identity Center and Amazon Q Business integrations to manage
-end user access for your application environment. For more information, see [Creating a cross-region IAM Identity Center integration](setting-up.md#cross-region-idc).
-
-July 25, 2024
-
-Introducing new CW metrics for Amazon Q Business
-
-Introducing new chat metrics for Amazon Q. For more information, see
-[Amazon Q Business chat metrics](monitoring-cloudwatch.md#qbusiness-metrics-chat).
-
-July 24, 2024
-
-General availability (GA) of Amazon Q Apps
-
-You can now create lightweight, purpose-built Amazon Q Apps within your broader Amazon Q Business application environment. For more information, see [Amazon Q Apps](purpose-built-qapps.md).
-
-July 10, 2024
-
-Amazon Q Business personalized chats
-
-Amazon Q Business now supports personalized chat responses for end users. For more
-information, see [Personalizing chat responses](personalizing-chat-responses.md).
-
-July 5, 2024
-
-Amazon Q Business scanned PDF support
-
-Amazon Q Business now supports uploading scanned PDFs into data source connectors
-and application environments. For more information, see [Supported document\
-types](doc-types.md).
-
-July 2, 2024
-
-Service-linked role support
-
-Amazon Q Business now supports a service-linked role for creating application environments.
-For more information, see [Using service-linked roles](../business-use-dg/using-service-linked-roles.md).
-
-April 30, 2024
-
-Preview release of Amazon Q Apps
-
-You can now create lightweight, purpose-built Amazon Q Apps within your broader Amazon Q Business
-application environment. For more information, see [Amazon Q Apps](purpose-built-qapps.md).
-
-April 30, 2024
-
-Migrating Amazon Q Business application environments to IAM Identity Center
-
-Amazon Q Business now supports migrating your SAML 2.0 compliant application environment to
-IAM Identity Center. For more details, see [Migrating an Amazon Q Business application environment](migrate-application.md).
-
-April 30, 2024
-
-Amazon Q Business now supports creating custom plugins
-
-Create custom plugins for your Amazon Q Business application environment. For more details,
-see [Creating\
-custom plugins](custom-plugin.md).
-
-April 30, 2024
-
-Amazon Q Business now supports a streaming chat API
-
-Amazon Q Business now supports a streaming chat API. For more details, see [Chat](../api-reference/api-chat.md) and [Setting up a\
-streaming chat](conversation-api.md).
-
-April 30, 2024
-
-Amazon Q Business general release
-
-Amazon Q Business is now generally available.
-
-April 30, 2024
-
-Amazon Q Business now integrates with IAM Identity Center
-
-You can now use IAM Identity Center to manage user access for your Amazon Q Business
-application environment. For more details, see [How Amazon Q Business works](how-it-works.md).
-
-April 16, 2024
-
-Amazon Q Business admin controls and guardrails update
-
-The Amazon Q Business now supports new web experience chat modes, configurable using
-admin controls. For more details, see [Admin controls and guardrails](guardrails.md) and [Conversation settings](../business-use-dg/using-web-experience.md#chat-source-scope).
-
-April 16, 2024
-
-Amazon Q Business (For Business Use) guide name update
-
-The Amazon Q Business (For Business Use) Developer Guide is now called the Amazon Q Business User Guide.
-
-March 29, 2024
-
-Boosting chat results using document attributes
-
-Amazon Q Business now supports boosting content used to generate chat responses
-using document attributes. For more information, see [Boosting using\
-document attributes](metadata-boosting.md).
-
-February 14, 2024
-
-Preview release
-
-This is the initial preview release of the Amazon Q Business (For Business Use)
-Developer Guide.
-
-November 28, 2023
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-User feedback
+| Change | Description | Date |
+| --- |--- |--- |
+| [Amazon Q Business availability change](#doc-history) | Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html). | July 31, 2026 |
+| [Amazon Q Business availability change](#doc-history) | Amazon Q Business will no longer be open to new customers starting on July 31, 2026. If you would like to use the service, please sign up prior to July 30. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html). | June 30, 2026 |
+| [New Agentic RAG feature](#doc-history) | Enhance Amazon Q Business standard retrieval augmented generation (RAG) capabilities with agentic workflows. For more information, see [Agentic RAG in Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/agentic-rag.html). | August 14, 2025 |
+| [Added support for Clickable S3 Link Feature](#doc-history) | Added support for Clickable S3 Link Feature, allowing users to access source documents from S3 through citation links in chat responses, regardless of whether a source URI is configured. | July 22, 2025 |
+| [Relevancy tuning replaces metadata boosting on new applications](#doc-history) | Admins can now control the search results in Amazon Q Business based on when the document was created or modified or where the document is stored. For more information see [Tuning the query results based on document attribute relevancy](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/relevancy-tuning.html). | July 1, 2025 |
+| [New response customization feature](#doc-history) | Customize Amazon Q Business chat responses. For more information, see [Customizing responses in Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/response-customization.html). | July 1, 2025 |
+| [Amazon Q Business application environments for anonymous access](#doc-history) | You can now create Amazon Q Business application environments for anonymous access. For more information, see [Creating an Amazon Q Business application environment for anonymous access](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-anonymous-application.html). | April 29, 2025 |
+| [New hallucination mitigation feature](#doc-history) | Reduce response hallucinations during Amazon Q Business chat. For more information, see [Hallucination mitigation in Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/hallucination-reduction.html). | April 10, 2025 |
+| [Introducing support to use private Amazon S3 buckets to store web customization artifacts](#doc-history) | Save your Amazon Q Business web experience customizations in private S3 buckets. For more information, see [Customizing visual themes](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/customizing-web-experience-themes.html) in your Amazon Q web experience. | March 18, 2025 |
+| [Introducing the Amazon Q Business integration for Microsoft Word](#doc-history) | The Amazon Q Business can enhance your users' Microsoft Word experience by increasing their productivity, bringing Amazon Q Business's AI-powered assistance directly into their daily documentation workflows. For more information, see [Integrating Microsoft Word with the Amazon Q Business Add-in](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/integration-msword.html). | February 27, 2025 |
+| [Introducing the Amazon Q Business integration for Microsoft Outlook](#doc-history) | The Amazon Q Business can enhance your users' Microsoft Outlook experience by increasing their productivity, bringing Amazon Q Business's AI-powered assistance directly into their daily email workflows. For more information, see [Integrating Microsoft Outlook with the Amazon Q Business Add-in](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/integration-msoutlook.html). | February 27, 2025 |
+| [New Amazon Q Business chat orchestration controls](#doc-history) | You can now use Amazon Q Business [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html) to configure chat orchestration settings. For more information, see [Chat orchestration settings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-orchestration).  | February 4, 2025 |
+| [Amazon Q Business now supports Amazon Kendra GenAI Enterprise Edition indices](#doc-history) | You can now use an Amazon Kendra GenAI Enterprise Edition index with Amazon Q Business. For more information, see [Creating an index for an Amazon Q Business application environment](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/select-retriever.html).  | December 4, 2024 |
+| [Q Apps plugins support](#doc-history) | Q Apps now supports all Amazon Q Business plugins (built-in and custom, including legacy built-in plugins) with more supported actions. For more information, see [Using plugins in Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qapps-plugins.html). | December 3, 2024 |
+| [New managed policy: QBusinessQuicksightPluginPolicy](#doc-history) |  The [QBusinessQuicksightPluginPolicy](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/security-iam-awsmanpol.html#security-iam-awsmanpol-amazonq-quicksight-policy) managed policy provides permissions for an Amazon Q Business application environment to communicate with Amazon Quick.  | December 3, 2024 |
+| [New Quick plugin](#doc-history) |  You can now use a new fully integrated Quick plugin to get insights from structured data through Amazon Quick. For more information, see [Configuring the Quick plugin to get insights from structured data](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/quicksight-plugin.html).  | December 3, 2024 |
+| [New Amazon Q Business plugins](#doc-history) | Amazon Q Business now has an updated plugins experience with new plugins and more supported actions. For more information, see [Plugins](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/plugins.html).  | December 3, 2024 |
+| [Amazon Quick-integrated Amazon Q Business application environment](#doc-history) | You can now create an Amazon Quick-integrated Amazon Q Business application environment. For more information, see [Creating an Amazon Quick-integrated Amazon Q Business application environment](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application-quicksight.html). | December 3, 2024 |
+| [Amazon Q Business now supports customizing visual themes](#doc-history) | Amazon Q Business offers customization options for your web experience, allowing you to align the interface visual elements with your organization's branding and user needs. For more information, see [Customizing visual themes](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/customizing-web-experience-themes.html).  | December 3, 2024 |
+| [Amazon Q Business now support data accessors](#doc-history) | Amazon Q Business data accessors feature allows you to securely share your enterprise data with verified software providers (ISVs) using the Amazon Q index. For more information, see [Data Accessors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/data-accessors.html).  | December 3, 2024 |
+| [Amazon Q Business introduces Amazon Q index for software providers](#doc-history) | The Amazon Q index allows independent software vendors (ISVs) to access and integrate a company's data into their application environments, enhancing their customer's end user productivity by providing seamless access to company data sources across the ISV's application environments. . For more information, see [Amazon Q index for software providers (ISVs)](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv.html).  | December 3, 2024 |
+| [Introducing the Amazon Q Business Slack integration](#doc-history) | The Amazon Q Business can enhance your users' Slack experience by increasing their productivity, bringing Amazon Q Business's AI-powered assistance directly into their daily workflows. . For more information, see [Integrating Slack with Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/slack.html). | December 1, 2024 |
+| [Introducing the Amazon Q Business Microsoft Teams integration](#doc-history) | The Amazon Q Business can enhance your users' Microsoft Teams experience by increasing their productivity, bringing Amazon Q Business's AI-powered assistance directly into their daily workflows. . For more information, see [Integrating Microsoft Team with Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/msteams.html). | December 1, 2024 |
+| [Extracting semantic meaning from embedded visual content](#doc-history) | Amazon Q Business can now extract semantic meaning from embedded visual content. For more information, see [Extracting semantic meaning from embedded visual content](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/extracting-meaning-from-images.html). | December 1, 2024 |
+| [Data collection in Amazon Q Apps](#doc-history) | You can now create a data collection app in Q Apps to gather multiple pieces of information from app users. A data collection app can leverage generative AI to analyze the collected data, identify common themes, summarize ideas, and provide actionable insights. For more information, see [Data collection in Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/q-apps-forms.html).  | November 26, 2024 |
+| [Introducing the Amazon Q Business browser extensions](#doc-history) | The Amazon Q Business browser extension enhances your users' web browsing experience. For more information, see [Enhancing web browsing with Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/browser-extensions.html). | November 22, 2024 |
+| [Smartsheet connector](#doc-history) | Amazon Q Business now supports a Smartsheet data source connector. For more information, see [Smartsheet](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/smartsheet-connector.html). | November 21, 2024 |
+| [Recent file support](#doc-history) | Amazon Q Business now supports recent files. For more information, see [IAM role for an Amazon Q Business web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/deploy-experience-iam-role.html) to update your policy to support this feature. | November 21, 2024 |
+| [Cross-region inference in Amazon Q Business](#doc-history) | Amazon Q Business can now select the optimal region within your geography to process your inference request, maximizing available compute resources and model availability. For more information, see [Cross-region inference in Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cross-region-inference.html).  | November 19, 2024 |
+| [Custom labels for Amazon Q Apps](#doc-history) | Administrators can now customize the labels available for published Q Apps. For more information, see [Custom labels for Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qapps-custom-labels.html).  | November 7, 2024 |
+| [Service-linked role support for Amazon Q Apps](#doc-history) |  Amazon Q Apps now supports a service-linked role for creating application environments with enabled Q Apps. For more information, see [ Using Service Linked Role for Q Apps ](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-service-linked-roles-qapps.html).  | October 22, 2024 |
+| [Q App Analytics dashboard](#doc-history) |  You can now use a new Q App Analytics dashboard to learn how your users are interacting with Q Apps. For example, you can identify the average daily users creating, updating, or running Q Apps over a specific time period. For more information, see [Viewing Amazon Q Business and Q App metrics in analytics dashboards](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/analytics-dashboard.html). | October 22, 2024 |
+| [New managed policy for Amazon Q Apps: QAppsServiceRolePolicy](#doc-history) |  The [QAppsServiceRolePolicy](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/security-iam-awsmanpol-qapps.html) managed policy provides permissions to publish metrics.  | October 22, 2024 |
+| [Monitor user conversations with Amazon CloudWatch Logs](#doc-history) | You can use Amazon CloudWatch Logs to monitor and analyze user conversations and response feedback in Amazon Q Business. For more information, see [Monitoring Amazon Q Business user conversations with Amazon CloudWatch Logs](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/monitoring-cloudwatch-logs.html).  | October 22, 2024 |
+| [Monitor Q Apps with Amazon CloudWatch](#doc-history) |  You can now monitor Q Apps with Amazon CloudWatch metrics. For more information, see [ Monitoring Amazon Q Business and Amazon Q Apps with Amazon CloudWatch ](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/monitoring-cloudwatch.html).  | October 22, 2024 |
+| [Embed Amazon Q Business into trusted websites](#doc-history) | Admins can embed the Amazon Q Business assistant within trusted websites. This allows end users to receive immediate, permissions-aware responses from enterprise data sources, with citations from Amazon Q. For more information, see [Amazon Q embedded](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/embed-amazon-q-business). | October 15, 2024 |
+| [Admins can now verify Amazon Q Apps](#doc-history) | Admins can review your published apps and update the status to *Verified* if they determine the app meets your organization's criteria. For more information, see [Verifying Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/purpose-built-qapps-web-experience.html#verified). | September 10, 2024 |
+| [Identity federation through IAM support](#doc-history) | You can now use IAM Federation to manage end user access to Amazon Q Business application environments. For more information, see [Creating an Amazon Q Business application environment using IAM Federation](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application-iam.html). | August 22, 2024 |
+| [Cross-region IAM Identity Center support](#doc-history) | You can now create cross-region IAM Identity Center and Amazon Q Business integrations to manage end user access for your application environment. For more information, see [Creating a cross-region IAM Identity Center integration](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/setting-up.html#cross-region-idc). | July 25, 2024 |
+| [Introducing new CW metrics for Amazon Q Business](#doc-history) | Introducing new chat metrics for Amazon Q. For more information, see [Amazon Q Business chat metrics](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/monitoring-cloudwatch.html#qbusiness-metrics-chat). | July 24, 2024 |
+| [General availability (GA) of Amazon Q Apps](#doc-history) | You can now create lightweight, purpose-built Amazon Q Apps within your broader Amazon Q Business application environment. For more information, see [Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/purpose-built-qapps.html). | July 10, 2024 |
+| [Amazon Q Business personalized chats](#doc-history) | Amazon Q Business now supports personalized chat responses for end users. For more information, see [Personalizing chat responses](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/personalizing-chat-responses.html). | July 5, 2024 |
+| [Amazon Q Business scanned PDF support](#doc-history) | Amazon Q Business now supports uploading scanned PDFs into data source connectors and application environments. For more information, see [Supported document types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html). | July 2, 2024 |
+| [Service-linked role support](#doc-history) | Amazon Q Business now supports a service-linked role for creating application environments. For more information, see [Using service-linked roles](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-service-linked-roles.html). | April 30, 2024 |
+| [Preview release of Amazon Q Apps](#doc-history) | You can now create lightweight, purpose-built Amazon Q Apps within your broader Amazon Q Business application environment. For more information, see [Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/purpose-built-qapps.html). | April 30, 2024 |
+| [Migrating Amazon Q Business application environments to IAM Identity Center](#doc-history) | Amazon Q Business now supports migrating your SAML 2.0 compliant application environment to IAM Identity Center. For more details, see [Migrating an Amazon Q Business application environment](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/migrate-application.html). | April 30, 2024 |
+| [Amazon Q Business now supports creating custom plugins](#doc-history) | Create custom plugins for your Amazon Q Business application environment. For more details, see [Creating custom plugins](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/custom-plugin.html). | April 30, 2024 |
+| [Amazon Q Business now supports a streaming chat API](#doc-history) | Amazon Q Business now supports a streaming chat API. For more details, see [Chat](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Chat.html) and [Setting up a streaming chat](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/conversation-api.html). | April 30, 2024 |
+| [Amazon Q Business general release](#doc-history) | Amazon Q Business is now generally available. | April 30, 2024 |
+| [Amazon Q Business now integrates with IAM Identity Center](#doc-history) | You can now use IAM Identity Center to manage user access for your Amazon Q Business application environment. For more details, see [How Amazon Q Business works](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/how-it-works.html). | April 16, 2024 |
+| [Amazon Q Business admin controls and guardrails update](#doc-history) | The Amazon Q Business now supports new web experience chat modes, configurable using admin controls. For more details, see [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [Conversation settings](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-web-experience.html#chat-source-scope). | April 16, 2024 |
+| [Amazon Q Business (For Business Use) guide name update](#doc-history) | The Amazon Q Business (For Business Use) Developer Guide is now called the Amazon Q Business User Guide. | March 29, 2024 |
+| [Boosting chat results using document attributes](#doc-history) | Amazon Q Business now supports boosting content used to generate chat responses using document attributes. For more information, see [Boosting using document attributes](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/metadata-boosting.html). | February 14, 2024 |
+| [Preview release](#doc-history) | This is the initial preview release of the Amazon Q Business (For Business Use) Developer Guide. | November 28, 2023 |
 
 All content copied from https://docs.aws.amazon.com/.

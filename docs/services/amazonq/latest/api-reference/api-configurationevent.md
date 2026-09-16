@@ -3,71 +3,41 @@ title: "ConfigurationEvent"
 ---
 
 # ConfigurationEvent
+<a name="API_ConfigurationEvent"></a>
 
-A configuration event activated by an end user request to select a specific chat
-mode.
+A configuration event activated by an end user request to select a specific chat mode.
 
 ## Contents
+<a name="API_ConfigurationEvent_Contents"></a>
 
-**attributeFilter**
-
+ ** attributeFilter **   <a name="qbusiness-Type-ConfigurationEvent-attributeFilter"></a>
 Enables filtering of responses based on document attributes or metadata fields.
-
-Type: [AttributeFilter](api-attributefilter.md) object
-
+Type: [AttributeFilter](API_AttributeFilter.md) object
 Required: No
 
-**chatMode**
-
+ ** chatMode **   <a name="qbusiness-Type-ConfigurationEvent-chatMode"></a>
 The chat modes available to an Amazon Q Business end user.
-
-- `RETRIEVAL_MODE` \- The default chat mode for an
-Amazon Q Business application. When this mode is enabled, Amazon Q Business generates
-responses only from data sources connected to an Amazon Q Business
-application.
-
-- `CREATOR_MODE` \- By selecting this mode, users can choose to
-generate responses only from the LLM knowledge, without consulting connected
-data sources, for a chat request.
-
-- `PLUGIN_MODE` \- By selecting this mode, users can choose to
-use plugins in chat.
-
-For more information, see [Admin controls and guardrails](../qbusiness-ug/guardrails.md), [Plugins](../qbusiness-ug/plugins.md),
-and [Conversation settings](../business-use-dg/using-web-experience.md#chat-source-scope).
-
++  `RETRIEVAL_MODE` - The default chat mode for an Amazon Q Business application. When this mode is enabled, Amazon Q Business generates responses only from data sources connected to an Amazon Q Business application.
++  `CREATOR_MODE` - By selecting this mode, users can choose to generate responses only from the LLM knowledge, without consulting connected data sources, for a chat request.
++  `PLUGIN_MODE` - By selecting this mode, users can choose to use plugins in chat.
+For more information, see [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html), [Plugins](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/plugins.html), and [Conversation settings](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-web-experience.html#chat-source-scope).
 Type: String
-
 Valid Values: `RETRIEVAL_MODE | CREATOR_MODE | PLUGIN_MODE`
-
 Required: No
 
-**chatModeConfiguration**
-
+ ** chatModeConfiguration **   <a name="qbusiness-Type-ConfigurationEvent-chatModeConfiguration"></a>
 Configuration information for Amazon Q Business conversation modes.
-
-For more information, see [Admin controls and guardrails](../qbusiness-ug/guardrails.md) and [Conversation settings](../business-use-dg/using-web-experience.md#chat-source-scope).
-
-Type: [ChatModeConfiguration](api-chatmodeconfiguration.md) object
-
-**Note:** This object is a Union. Only one member of this object can be specified or returned.
-
+For more information, see [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [Conversation settings](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-web-experience.html#chat-source-scope).
+Type: [ChatModeConfiguration](API_ChatModeConfiguration.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
 ## See Also
+<a name="API_ConfigurationEvent_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/configurationevent.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/configurationevent.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/configurationevent.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChatResponseConfigurationDetail
-
-ContentBlockerRule
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/ConfigurationEvent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/ConfigurationEvent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/ConfigurationEvent)
 
 All content copied from https://docs.aws.amazon.com/.

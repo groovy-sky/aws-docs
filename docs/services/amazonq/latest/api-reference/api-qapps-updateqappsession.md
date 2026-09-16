@@ -3,74 +3,63 @@ title: "UpdateQAppSession"
 ---
 
 # UpdateQAppSession
+<a name="API_qapps_UpdateQAppSession"></a>
 
-Updates the session for a given Q App `sessionId`. This is only valid when at
-least one card of the session is in the `WAITING` state. Data for each
-`WAITING` card can be provided as input. If inputs are not provided, the call
-will be accepted but session will not move forward. Inputs for cards that are not in the
-`WAITING` status will be ignored.
+Updates the session for a given Q App `sessionId`. This is only valid when at least one card of the session is in the `WAITING` state. Data for each `WAITING` card can be provided as input. If inputs are not provided, the call will be accepted but session will not move forward. Inputs for cards that are not in the `WAITING` status will be ignored.
 
 ## Request Syntax
+<a name="API_qapps_UpdateQAppSession_RequestSyntax"></a>
 
-```nohighlight
-
+```
 POST /runtime.updateQAppSession HTTP/1.1
-instance-id: instanceId
+instance-id: {{instanceId}}
 Content-type: application/json
 
 {
-   "sessionId": "string",
+   "sessionId": "{{string}}",
    "values": [
       {
-         "cardId": "string",
+         "cardId": "{{string}}",
          "submissionMutation": {
-            "mutationType": "string",
-            "submissionId": "string"
+            "mutationType": "{{string}}",
+            "submissionId": "{{string}}"
          },
-         "value": "string"
+         "value": "{{string}}"
       }
    ]
 }
 ```
 
 ## URI Request Parameters
+<a name="API_qapps_UpdateQAppSession_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[instanceId](#API_qapps_UpdateQAppSession_RequestSyntax)**
-
+ ** [instanceId](#API_qapps_UpdateQAppSession_RequestSyntax) **   <a name="qbusiness-qapps_UpdateQAppSession-request-instanceId"></a>
 The unique identifier of the Amazon Q Business application environment instance.
-
 Required: Yes
 
 ## Request Body
+<a name="API_qapps_UpdateQAppSession_RequestBody"></a>
 
 The request accepts the following data in JSON format.
 
-**[sessionId](#API_qapps_UpdateQAppSession_RequestSyntax)**
-
+ ** [sessionId](#API_qapps_UpdateQAppSession_RequestSyntax) **   <a name="qbusiness-qapps_UpdateQAppSession-request-sessionId"></a>
 The unique identifier of the Q App session to provide input for.
-
 Type: String
-
 Pattern: `[\da-f]{8}-[\da-f]{4}-[45][\da-f]{3}-[89ABab][\da-f]{3}-[\da-f]{12}`
-
 Required: Yes
 
-**[values](#API_qapps_UpdateQAppSession_RequestSyntax)**
-
+ ** [values](#API_qapps_UpdateQAppSession_RequestSyntax) **   <a name="qbusiness-qapps_UpdateQAppSession-request-values"></a>
 The input values to provide for the current state of the Q App session.
-
-Type: Array of [CardValue](api-qapps-cardvalue.md) objects
-
+Type: Array of [CardValue](API_qapps_CardValue.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
-
 Required: No
 
 ## Response Syntax
+<a name="API_qapps_UpdateQAppSession_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -81,139 +70,86 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_qapps_UpdateQAppSession_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[sessionArn](#API_qapps_UpdateQAppSession_ResponseSyntax)**
-
+ ** [sessionArn](#API_qapps_UpdateQAppSession_ResponseSyntax) **   <a name="qbusiness-qapps_UpdateQAppSession-response-sessionArn"></a>
 The Amazon Resource Name (ARN) of the updated Q App session.
-
 Type: String
 
-**[sessionId](#API_qapps_UpdateQAppSession_ResponseSyntax)**
-
+ ** [sessionId](#API_qapps_UpdateQAppSession_ResponseSyntax) **   <a name="qbusiness-qapps_UpdateQAppSession-response-sessionId"></a>
 The unique identifier of the updated Q App session.
-
 Type: String
 
 ## Errors
+<a name="API_qapps_UpdateQAppSession_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AccessDeniedException**
-
+ ** AccessDeniedException **
 The client is not authorized to perform the requested operation.
-
 HTTP Status Code: 403
 
-**InternalServerException**
-
+ ** InternalServerException **
 An internal service error occurred while processing the request.
-
-**retryAfterSeconds**
-
+ ** retryAfterSeconds **
 The number of seconds to wait before retrying the operation
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The requested resource could not be found.
-
-**resourceId**
-
+ ** resourceId **
 The unique identifier of the resource
-
-**resourceType**
-
+ ** resourceType **
 The type of the resource
-
 HTTP Status Code: 404
 
-**ServiceQuotaExceededException**
-
-The requested operation could not be completed because it would exceed the service's quota
-or limit.
-
-**quotaCode**
-
+ ** ServiceQuotaExceededException **
+The requested operation could not be completed because it would exceed the service's quota or limit.
+ ** quotaCode **
 The code of the quota that was exceeded
-
-**resourceId**
-
+ ** resourceId **
 The unique identifier of the resource
-
-**resourceType**
-
+ ** resourceType **
 The type of the resource
-
-**serviceCode**
-
+ ** serviceCode **
 The code for the service where the quota was exceeded
-
 HTTP Status Code: 402
 
-**ThrottlingException**
-
-The requested operation could not be completed because too many requests were sent at
-once. Wait a bit and try again later.
-
-**quotaCode**
-
+ ** ThrottlingException **
+The requested operation could not be completed because too many requests were sent at once. Wait a bit and try again later.
+ ** quotaCode **
 The code of the quota that was exceeded
-
-**retryAfterSeconds**
-
+ ** retryAfterSeconds **
 The number of seconds to wait before retrying the operation
-
-**serviceCode**
-
+ ** serviceCode **
 The code for the service where the quota was exceeded
-
 HTTP Status Code: 429
 
-**UnauthorizedException**
-
+ ** UnauthorizedException **
 The client is not authenticated or authorized to perform the requested operation.
-
 HTTP Status Code: 401
 
-**ValidationException**
-
+ ** ValidationException **
 The input failed to satisfy the constraints specified by the service.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_qapps_UpdateQAppSession_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../goto/cli2/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for Python](../../../goto/boto3/qapps-2023-11-27/updateqappsession.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/updateqappsession.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateQAppPermissions
-
-UpdateQAppSessionMetadata
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/qapps-2023-11-27/UpdateQAppSession)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/UpdateQAppSession)
 
 All content copied from https://docs.aws.amazon.com/.

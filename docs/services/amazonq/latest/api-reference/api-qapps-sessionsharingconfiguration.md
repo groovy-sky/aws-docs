@@ -3,50 +3,34 @@ title: "SessionSharingConfiguration"
 ---
 
 # SessionSharingConfiguration
+<a name="API_qapps_SessionSharingConfiguration"></a>
 
 The sharing configuration of an Amazon Q App data collection session.
 
 ## Contents
+<a name="API_qapps_SessionSharingConfiguration_Contents"></a>
 
-**enabled**
-
+ ** enabled **   <a name="qbusiness-Type-qapps_SessionSharingConfiguration-enabled"></a>
 Indicates whether an Q App session is shareable with other users.
-
 Type: Boolean
-
 Required: Yes
 
-**acceptResponses**
-
+ ** acceptResponses **   <a name="qbusiness-Type-qapps_SessionSharingConfiguration-acceptResponses"></a>
 Indicates whether an Q App session can accept responses from users.
-
 Type: Boolean
-
 Required: No
 
-**revealCards**
-
-Indicates whether collected responses for an Q App session are revealed for all
-users.
-
+ ** revealCards **   <a name="qbusiness-Type-qapps_SessionSharingConfiguration-revealCards"></a>
+Indicates whether collected responses for an Q App session are revealed for all users.
 Type: Boolean
-
 Required: No
 
 ## See Also
+<a name="API_qapps_SessionSharingConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qapps-2023-11-27/sessionsharingconfiguration.md)
-
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qapps-2023-11-27/sessionsharingconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qapps-2023-11-27/sessionsharingconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QQueryCardInput
-
-Submission
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qapps-2023-11-27/SessionSharingConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qapps-2023-11-27/SessionSharingConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qapps-2023-11-27/SessionSharingConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

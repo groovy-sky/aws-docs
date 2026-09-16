@@ -2,119 +2,27 @@
 title: "SharePoint Server (Subscription Edition) connector overview"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # SharePoint Server (Subscription Edition) connector overview
+<a name="sharepoint-server-subscription-overview"></a>
 
-The following table gives an overview of the Amazon Q Business
-SharePoint Server (Subscription Edition) connector and its supported features.
+The following table gives an overview of the Amazon Q Business SharePoint Server (Subscription Edition) connector and its supported features.
 
-CategoryFeatureSupport**Security****Authentication type**NTLM, Kerberos, SharePoint App-Only (Client Credentials Flow)**Authentication credentials**
+- ****Security****
+  - **Feature:** Authentication type / **Support:** NTLM, Kerberos, SharePoint App-Only (Client Credentials Flow)
+  - **Feature:** Authentication credentials / **Support:** +  SharePoint admin username <br />+  SharePoint admin password  +  LDAP Server Endpoint <br />+  LDAP Search Base <br />+  LDAP username <br />+  LDAP password  +  SharePoint admin username <br />+  SharePoint admin password  +  LDAP Server Endpoint <br />+  LDAP Search Base <br />+  LDAP username <br />+  LDAP password  +  Tenant ID <br />+  SharePoint App-Only client ID <br />+  SharePoint App-Only client secret  +  LDAP Server Endpoint <br />+  LDAP Search Base <br />+  LDAP username <br />+  LDAP password
+  - **Feature:** [Access Control List (ACL)](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) crawling / **Support:** Yes. For more information, see [ACL crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-server-subscription-user-management.html).
+  - **Feature:** Integration with Identity Provider (IdP) / **Support:** Yes. LDAP.
+  - **Feature:** [Identity crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) / **Support:** Yes
+  - **Feature:** [VPC](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-vpc) / **Support:** Yes
 
-**NTLM**
-
-- SharePoint admin username
-
-- SharePoint admin password
-
-If you're using **Email ID with Domain from**
-**IDP** to crawl ACLs, then you also need to add
-a:
-
-- LDAP Server Endpoint
-
-- LDAP Search Base
-
-- LDAP username
-
-- LDAP password
-
-**Kerberos**
-
-- SharePoint admin username
-
-- SharePoint admin password
-
-If you're using **Email ID with Domain from**
-**IDP** to crawl ACLs, then you also need to add
-a:
-
-- LDAP Server Endpoint
-
-- LDAP Search Base
-
-- LDAP username
-
-- LDAP password
-
-**SharePoint App-Only (Client Credentials**
-**Flow)**
-
-- Tenant ID
-
-- SharePoint App-Only client ID
-
-- SharePoint App-Only client secret
-
-If you're using **Email ID with Domain from**
-**IDP** to crawl ACLs, then you also need to add
-a:
-
-- LDAP Server Endpoint
-
-- LDAP Search Base
-
-- LDAP username
-
-- LDAP password
-
-**[Access Control List (ACL)](connector-concepts.md#connector-authorization)**
-**crawling**Yes. For more information, see [ACL crawling](sharepoint-server-subscription-user-management.md).
-**Integration with Identity Provider**
-**(IdP)**Yes. LDAP.**[Identity\**
-**crawling](connector-concepts.md#connector-identity-crawler)**Yes**[VPC](connector-concepts.md#connector-vpc)**Yes**Crawl features****Custom metadata**Yes. Supports custom metadata for **File** entity
-only.**Entities**Yes. The following entities are supported:
-
-- Files
-
-- Attachments
-
-- Link
-
-- Pages
-
-- Events
-
-- Comments
-
-See [What is a document?](connector-doc-crawl.md) for more
-details on what each connector crawls as a document.
-
-**[Field mappings](connector-concepts.md#connector-field-mappings)**Yes. Supports both default and custom field mappings. For more
-information, see [Field mappings](sharepoint-server-subscription-field-mappings.md).**Filters**Yes. The following filters are supported:
-
-- Include/exclude by **Links**
-
-- Include/exclude by **Pages**
-
-- Include/exclude by **Events**
-
-- Include/exclude by file name
-
-- Include/exclude by file path
-
-- Include/exclude by file type
-
-- Include/exclude by **OneNote Section**
-name
-
-- Include/exclude by **OneNote Page**
-name
-
-**[Sync mode](connector-concepts.md#connector-sync-mode)**Supports full and incremental sync.**[File types](doc-types.md)**Supports all files supported by Amazon Q.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Known limitations
-
-Prerequisites
+- ****Crawl features****
+  - **Feature:** Custom metadata / **Support:** Yes. Supports custom metadata for File entity only.
+  - **Feature:** Entities / **Support:** Yes. The following entities are supported: +  Files <br />+  Attachments <br />+  Link <br />+  Pages <br />+  Events <br />+  Comments See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
+  - **Feature:** [Field mappings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-field-mappings) / **Support:** Yes. Supports both default and custom field mappings. For more information, see [Field mappings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-server-subscription-field-mappings.html).
+  - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Include/exclude by **Links** <br />+  Include/exclude by **Pages** <br />+  Include/exclude by **Events** <br />+  Include/exclude by file name <br />+  Include/exclude by file path <br />+  Include/exclude by file type <br />+  Include/exclude by **OneNote Section** name <br />+  Include/exclude by **OneNote Page** name
+  - **Feature:** [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) / **Support:** Supports full and incremental sync.
+  - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all files supported by Amazon Q.
 
 All content copied from https://docs.aws.amazon.com/.

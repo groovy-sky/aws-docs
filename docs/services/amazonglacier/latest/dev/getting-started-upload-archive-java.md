@@ -4,42 +4,27 @@ title: "Upload an Archive to a Vault in Amazon Glacier by Using the AWS SDK for 
 
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
-If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).
+If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/).
 
-Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3).
+Amazon Glacier (original standalone vault-based service) is no longer accepting new customers. Amazon Glacier is a standalone service with its own APIs that stores data in vaults and is distinct from Amazon S3 and the Amazon S3 Glacier storage classes. Your existing data will remain secure and accessible in Amazon Glacier indefinitely. No migration is required. For low-cost, long-term archival storage, AWS recommends the [Amazon S3 Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier/), which deliver a superior customer experience with S3 bucket-based APIs, full AWS Region availability, lower costs, and AWS service integration. If you want enhanced capabilities, consider migrating to Amazon S3 Glacier storage classes by using our [AWS Solutions Guidance for transferring data from Amazon Glacier vaults to Amazon S3 Glacier storage classes](https://aws.amazon.com/solutions/guidance/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/).
 
 # Upload an Archive to a Vault in Amazon Glacier by Using the AWS SDK for Java
+<a name="getting-started-upload-archive-java"></a>
 
-The following Java code example uses the high-level API of the AWS SDK for Java to upload a sample
-archive to the vault. In the code example, note the following:
+The following Java code example uses the high-level API of the AWS SDK for Java to upload a sample archive to the vault. In the code example, note the following:
++ The example creates an instance of the `AmazonGlacierClient` class.
++ The example uses the `upload` API operation of the `ArchiveTransferManager` class from the high-level API of the AWS SDK for Java.
++ The example uses the US West (Oregon) Region (`us-west-2`).
 
-- The example creates an instance of the `AmazonGlacierClient` class.
+For step-by-step instructions on how to run this example, see [Running Java Examples for Amazon Glacier Using Eclipse](using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You must update the code as shown with the name of the archive file that you want to upload.
 
-- The example uses the `upload` API operation of the
-`ArchiveTransferManager` class from the high-level API of the
-AWS SDK for Java.
-
-- The example uses the US West (Oregon) Region ( `us-west-2`).
-
-For step-by-step instructions on how to run this example, see [Running Java Examples for Amazon Glacier Using Eclipse](../../../../reference/amazonglacier/latest/dev/using-aws-sdk-for-java.md#setting-up-and-testing-sdk-java). You must update the code as shown with the name of the
-archive file that you want to upload.
-
-###### Note
-
-Amazon Glacier keeps an inventory of all the archives in your vaults. When you upload the archive
-in the following example, it will not appear in a vault in the management console until
-the vault inventory has been updated. This update usually happens once a day.
+**Note**
+Amazon Glacier keeps an inventory of all the archives in your vaults. When you upload the archive in the following example, it will not appear in a vault in the management console until the vault inventory has been updated. This update usually happens once a day.
 
 **SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glacier#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glacier).
-
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.glacier.GlacierClient;
 import software.amazon.awssdk.services.glacier.model.UploadArchiveRequest;
@@ -239,17 +224,7 @@ public class UploadArchive {
         return sb.toString().toLowerCase();
     }
 }
-
 ```
-
-- For API details, see
-[UploadArchive](../../../../reference/goto/sdkforjavav2/glacier-2012-06-01/uploadarchive.md)
-in _AWS SDK for Java 2.x API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 3: Upload an Archive to a Vault
-
-Upload an Archive by Using .NET
++  For API details, see [UploadArchive](https://docs.aws.amazon.com/goto/SdkForJavaV2/glacier-2012-06-01/UploadArchive) in *AWS SDK for Java 2.x API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

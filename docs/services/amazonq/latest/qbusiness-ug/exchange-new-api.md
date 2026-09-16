@@ -2,22 +2,23 @@
 title: "Connecting Amazon Q Business to Microsoft Exchange (New connector) using APIs"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Connecting Amazon Q Business to Microsoft Exchange (New connector) using APIs
+<a name="exchange-new-api"></a>
 
-You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your
-Amazon Q application. You can also use the [UpdateDataSource](../api-reference/api-updatedatasource.md) action to modify an existing data source configuration.
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
 
-Then, you use the
-`configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
 
-For an example of the API request, see [CreateDataSource](../api-reference/api-createdatasource.md) and [UpdateDataSource](../api-reference/api-updatedatasource.md) in the Amazon Q API Reference.
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
 
 ## Microsoft Exchange new connector JSON schema
+<a name="exchange-new-json"></a>
 
 The following shows the Microsoft Exchange new connector JSON schema:
 
-```json
-
+```
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
@@ -82,21 +83,28 @@ The following shows the Microsoft Exchange new connector JSON schema:
 }
 ```
 
-Show moreShow less
-
 The following table provides information about important JSON keys to configure for the new Microsoft Exchange connector.
 
-ConfigurationDescription`type`The type of data source. Specify `MSEXCHANGEV2` for the new Microsoft Exchange connector.`connectionConfiguration`Configuration information for connecting to the Microsoft Exchange data source.`secretArn`The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains
-the key-value pairs required to connect to your Exchange data source. This includes your
-client ID and your client secret.`tenantId`The Microsoft 365 tenant ID (UUID v4 format). You can find your tenant ID in the Properties of your
-Azure Active Directory Portal.`dataEntityConfiguration`Configuration for the types of data entities to crawl from Microsoft Exchange.`filterConfiguration`Optional configuration for filtering content during the crawl process.`startDateFilter`Specify the start date for filtering emails. Only emails created on or after this date will be crawled. Format: ISO 8601 date-time (e.g., `2025-06-01T00:00:00Z`).`endDateFilter`Specify the end date for filtering emails. Only emails created on or before this date will be crawled. Format: ISO 8601 date-time (e.g., `2025-07-01T00:00:00Z`).`deletionProtectionConfiguration`Optional configuration to protect against accidental deletion of large amounts of content.`enableDeletionProtection`A Boolean value to enable deletion protection. When enabled, the connector will not delete more than the specified threshold of documents in a single sync.`deletionProtectionThreshold`The maximum percentage of documents that can be deleted in a single sync when deletion protection is enabled. Must be a string representing a number from 1-100 (e.g., "10" for 10%).
+| Configuration | Description |
+| --- | --- |
+| type | The type of data source. Specify MSEXCHANGEV2 for the new Microsoft Exchange connector. |
+| connectionConfiguration | Configuration information for connecting to the Microsoft Exchange data source. |
+| secretArn | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Exchange data source. This includes your client ID and your client secret. |
+| tenantId | The Microsoft 365 tenant ID (UUID v4 format). You can find your tenant ID in the Properties of your Azure Active Directory Portal. |
+| dataEntityConfiguration | Configuration for the types of data entities to crawl from Microsoft Exchange. |
+| filterConfiguration | Optional configuration for filtering content during the crawl process. |
+| startDateFilter | Specify the start date for filtering emails. Only emails created on or after this date will be crawled. Format: ISO 8601 date-time (e.g., 2025-06-01T00:00:00Z). |
+| endDateFilter | Specify the end date for filtering emails. Only emails created on or before this date will be crawled. Format: ISO 8601 date-time (e.g., 2025-07-01T00:00:00Z). |
+| deletionProtectionConfiguration | Optional configuration to protect against accidental deletion of large amounts of content. |
+| enableDeletionProtection | A Boolean value to enable deletion protection. When enabled, the connector will not delete more than the specified threshold of documents in a single sync. |
+| deletionProtectionThreshold | The maximum percentage of documents that can be deleted in a single sync when deletion protection is enabled. Must be a string representing a number from 1-100 (e.g., "10" for 10%). |
 
 ## Sample configuration for the new Microsoft Exchange connector
+<a name="exchange-new-sample"></a>
 
 The following is a sample configuration for the new Microsoft Exchange connector:
 
-```json
-
+```
 {
     "displayName": "mail-0910-sample",
     "configuration": {
@@ -123,13 +131,5 @@ The following is a sample configuration for the new Microsoft Exchange connector
     "mediaExtractionConfiguration": {}
 }
 ```
-
-Show moreShow less
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using the API
-
-ACL crawling
 
 All content copied from https://docs.aws.amazon.com/.

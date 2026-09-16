@@ -2,204 +2,143 @@
 title: "Managing user subscriptions for IAM Identity Center-integrated applications"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # Managing user subscriptions for IAM Identity Center-integrated applications
+<a name="manage-user-subscriptions"></a>
 
-To manage user subscriptions added to an application environment, you can perform the
-following actions:
+To manage user subscriptions added to an application environment, you can perform the following actions:
 
-###### Actions
-
-- [Updating user subscriptions](#update-user-subscriptions)
-
-- [Canceling user or group subscriptions](#delete-user-subscriptions)
-
-- [Listing user subscriptions](#list-user-subscriptions)
+**Topics**
++ [Updating user subscriptions](#update-user-subscriptions)
++ [Canceling user or group subscriptions](#delete-user-subscriptions)
++ [Listing user subscriptions](#list-user-subscriptions)
 
 ## Updating user subscriptions
+<a name="update-user-subscriptions"></a>
 
-To update a subscription in an Amazon Q Business application, you can
-use either the AWS Management Console or the [UpdateSubscription](../api-reference/api-updatesubscription.md) API
-operation.
+To update a subscription in an Amazon Q Business application, you can use either the AWS Management Console or the [UpdateSubscription](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html) API operation.
 
-For more information on user subscriptions for an IAM Identity Center-integrated Amazon Q Business application, see [Subscriptions for applications using\
-IAM Identity Center](tiers.md#managing-sub-tiers-sso).
+For more information on user subscriptions for an IAM Identity Center-integrated Amazon Q Business application, see [Subscriptions for applications using IAM Identity Center](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/tiers.html#managing-sub-tiers-sso).
 
-Console
+------
+#### [ Console ]
 
-**To update user or group subscription**
-**tier**
+**To update user or group subscription tier**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    the application environment you created.
+1. In **Applications**, select the name of the application environment you created.
 
-3. From your applications page, from the **User**
-**access** section, select **Manage user**
-**access**.
+1. From your applications page, from the **User access** section, select **Manage user access**.
 
-4. From **Manage access and subscriptions**
-    select the subscription you want to update. Then, select
-    **Edit subscription**.
+1. From **Manage access and subscriptions** select the subscription you want to update. Then, select **Edit subscription**.
 
-5. In the **Confirm subscription change**
-    dialog box that opens, from the **New**
-**subscription** dropdown select **Q**
-**Business Lite** or **Q Business**
-**Pro**.
+1. In the **Confirm subscription change** dialog box that opens, from the **New subscription** dropdown select **Q Business Lite** or **Q Business Pro**.
 
-6. Then, select **Confirm**. You will see
-    the subscription status notification change next to the user
-    you've added the subscription to.
+1. Then, select **Confirm**. You will see the subscription status notification change next to the user you've added the subscription to.
 
-7. Then, select **Confirm** to save your
-    changes.
+1. Then, select **Confirm** to save your changes.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To update user or group subscription**
-**tier**
+**To update user or group subscription tier**
 
-```nohighlight
-
-aws qbusiness update-subscription \
---application-id application-id \
---subscription-id subscription-id \
---type subscription-type
 ```
+aws qbusiness update-subscription \
+--application-id {{application-id}} \
+--subscription-id {{subscription-id}} \
+--type {{subscription-type}}
+```
+
+------
 
 ## Canceling user or group subscriptions
+<a name="delete-user-subscriptions"></a>
 
-To cancel subscriptions, you can use the AWS Management Console or the [CancelSubscription](../api-reference/api-cancelsubscription.md) API
-operation.
+To cancel subscriptions, you can use the AWS Management Console or the [CancelSubscription](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CancelSubscription.html) API operation.
 
-When you unsubscribe and remove a user or group, it unsubscribes them from the
-application environment and removes them from the user list.
+When you unsubscribe and remove a user or group, it unsubscribes them from the application environment and removes them from the user list.
 
-For more information on user subscriptions for an IAM Identity Center-integrated Amazon Q Business application, see [Subscriptions for applications using\
-IAM Identity Center](tiers.md#managing-sub-tiers-sso).
+For more information on user subscriptions for an IAM Identity Center-integrated Amazon Q Business application, see [Subscriptions for applications using IAM Identity Center](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/tiers.html#managing-sub-tiers-sso).
 
-Console
+------
+#### [ Console ]
 
-**To unsubscribe a user or group from an**
-**Amazon Q Business application environment**
+**To unsubscribe a user or group from an Amazon Q Business application environment**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    the application environment you created.
+1. In **Applications**, select the name of the application environment you created.
 
-3. From your applications page, from the **User**
-**access** section, select **Manage user**
-**access**.
+1. From your applications page, from the **User access** section, select **Manage user access**.
 
-4. From **Manage access and subscriptions**
-    select the user or group subscription you want to update.
-    Then, select **Remove and**
-**unsubscribe**.
+1. From **Manage access and subscriptions** select the user or group subscription you want to update. Then, select **Remove and unsubscribe**.
 
-5. Then, from the **Unsubscribe and remove**
-    dialog box, **Confirm**.
+1. Then, from the **Unsubscribe and remove** dialog box, **Confirm**.
 
-6. Then, select **Confirm** to save your
-    changes.
+1. Then, select **Confirm** to save your changes.
 
-This step cancels subscriptions for the selected users and
-    groups and also removes them from your Amazon Q Business application environment.
+   This step cancels subscriptions for the selected users and groups and also removes them from your Amazon Q Business application environment.
+**Note**
+To stop subscription charges for a user, ensure you have unsubscribed that user from all Amazon Q Business application environments and Quick instances. For instructions on how to unsubscribe a user from Quick, see [Unsubscribing from Quick Q](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-q-unsubscribe.html) in the Quick User Guide.
+To stop charges for an Amazon Q Business index, you must delete either your Amazon Q Business index or [delete your Amazon Q Business application environment](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-app-actions.html#delete-app). If you use the console, deleting your application environment is the only way to delete an index associated with it.
 
-###### Note
+------
+#### [ AWS CLI ]
 
-To stop subscription charges for a user, ensure you
-have unsubscribed that user from all Amazon Q Business application environments and Quick
-instances. For instructions on how to unsubscribe a user
-from Quick, see [Unsubscribing from Quick Q](../../../quicksight/latest/user/quicksight-q-unsubscribe.md) in the Quick User
-Guide.
+**To cancel user or group subscriptions to Amazon Q Business**
 
-To stop charges for an Amazon Q Business index,
-you must delete either your Amazon Q Business
-index or [delete your Amazon Q Business application environment](supported-app-actions.md#delete-app). If you use
-the console, deleting your application environment is the only way
-to delete an index associated with it.
-
-AWS CLI
-
-**To cancel user or group subscriptions to**
-**Amazon Q Business**
-
-```nohighlight
-
-aws qbusiness cancel-subscription \
---application-id application-id \
---subscription-id subscription-id \
---type subscription-type
 ```
+aws qbusiness cancel-subscription \
+--application-id {{application-id}} \
+--subscription-id {{subscription-id}} \
+--type {{subscription-type}}
+```
+
+------
 
 ## Listing user subscriptions
+<a name="list-user-subscriptions"></a>
 
-To see a list of user and group subscriptions within a specific Amazon Q Business
-application, you can use the AWS Management Console or the [ListSubscriptions](../api-reference/api-listsubscriptions.md) API
-operation.
+To see a list of user and group subscriptions within a specific Amazon Q Business application, you can use the AWS Management Console or the [ListSubscriptions](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html) API operation.
 
-For a consolidated view of your user subscriptions—including a list of
-subscribed users, their subscription status, and applications, accounts, or
-services a user can access through their subscriptions—you can also view
-the [Amazon Q\
-subscriptions page](https://console.aws.amazon.com/amazonq/subscriptions).
+For a consolidated view of your user subscriptions—including a list of subscribed users, their subscription status, and applications, accounts, or services a user can access through their subscriptions—you can also view the [Amazon Q subscriptions page](https://console.aws.amazon.com/amazonq/subscriptions).
 
-Console
+------
+#### [ Console ]
 
-**To view a list of user and group**
-**subscriptions in an Amazon Q Business**
-**application environment**
+**To view a list of user and group subscriptions in an Amazon Q Business application environment**
 
 1. Sign in to the AWS Management Console and open the Amazon Q Business console.
 
-2. In **Applications**, select the name of
-    the application environment you created.
+1. In **Applications**, select the name of the application environment you created.
 
-3. From your applications page, from the **User**
-**access** section, select **Manage user**
-**access**.
+1. From your applications page, from the **User access** section, select **Manage user access**.
 
-4. In the **Manage access and**
-**subscriptions** select
-    **Users** if you want to view user
-    subscriptions or **Groups** if you want to
-    list group subscriptions.
+1. In the **Manage access and subscriptions** select **Users** if you want to view user subscriptions or **Groups** if you want to list group subscriptions.
 
-**To view a consolidated list of all user**
-**and group subscriptions across all Amazon Q Business**
-**application environments**
+**To view a consolidated list of all user and group subscriptions across all Amazon Q Business application environments**
 
-1. Sign in to the AWS Management Console and open the Amazon Q
-    console.
+1. Sign in to the AWS Management Console and open the Amazon Q console.
 
-2. From the left navigation menu, choose
-    **Subscriptions**,and then select
-    **Users** if you want to view user
-    subscriptions or **Groups** if you want to
-    list group subscriptions.
+1. From the left navigation menu, choose **Subscriptions**,and then select **Users** if you want to view user subscriptions or **Groups** if you want to list group subscriptions.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-**To list user or group subscriptions in an**
-**Amazon Q Business application**
+**To list user or group subscriptions in an Amazon Q Business application**
 
-```nohighlight
-
+```
 aws qbusiness list-subscriptions \
---application-id application-id
+--application-id {{application-id}}
 ```
 
-**To list user or group subscriptions across**
-**all Amazon Q Business applications**
+**To list user or group subscriptions across all Amazon Q Business applications**
 
 This action is not supported.
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Managing web experiences
-
-Tagging resources
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,20 +2,21 @@
 title: "IAM role for an Amazon Q Business application"
 ---
 
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
 # IAM role for an Amazon Q Business application
+<a name="create-application-iam-role"></a>
 
-When you create an Amazon Q Business application, you must provide Amazon Q with an
-IAM role with permissions to write to an Amazon CloudWatch log and assign user
-subscriptions to applications. You must also provide a trust policy that allows Amazon Q to
-assume the role. The following are the policies that must be provided.
+When you create an Amazon Q Business application, you must provide Amazon Q with an IAM role with permissions to write to an Amazon CloudWatch log and assign user subscriptions to applications. You must also provide a trust policy that allows Amazon Q to assume the role. The following are the policies that must be provided.
 
-**To allow Amazon Q to access a CloudWatch log and assign user**
-**subscriptions, use the following role policy:**
+**To allow Amazon Q to access a CloudWatch log and assign user subscriptions, use the following role policy:**
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,16 +65,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**To allow Amazon Q to assume a role, use the following**
-**trust policy:**
+------
 
-JSON
+**To allow Amazon Q to assume a role, use the following trust policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -95,17 +98,18 @@ JSON
         }
     ]
 }
-
 ```
 
-**Amazon Q also supports using a service-linked role**
-**( `AWSServiceRoleForQBusiness`) for an Amazon Q application. The**
-**following is the service-linked role policy:**
+------
 
-JSON
+**Amazon Q also supports using a service-linked role (`AWSServiceRoleForQBusiness`) for an Amazon Q application. The following is the service-linked role policy:**
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,16 +158,10 @@ JSON
         }
     ]
 }
-
 ```
 
-For more information on using service-linked roles for an Amazon Q application, see
-[Using service-linked roles](../business-use-dg/using-service-linked-roles.md).
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IAM roles
-
-Amazon Q Business web experience
+For more information on using service-linked roles for an Amazon Q application, see [Using service-linked roles](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-service-linked-roles.html).
 
 All content copied from https://docs.aws.amazon.com/.
