@@ -3,44 +3,39 @@ title: "DescribeBatchDeleteConfigurationTask"
 ---
 
 # DescribeBatchDeleteConfigurationTask
+<a name="API_DescribeBatchDeleteConfigurationTask"></a>
 
-###### Important
+**Important**
+ AWS Application Discovery Service is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Application Discovery Service availability change](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html).
 
-AWS Application Discovery Service is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see
-[AWS Application Discovery Service availability change](../../../../services/application-discovery/latest/userguide/application-discovery-service-availability-change.md).
-
-Takes a unique deletion task identifier as input and returns metadata about a
-configuration deletion task.
+ Takes a unique deletion task identifier as input and returns metadata about a configuration deletion task.
 
 ## Request Syntax
+<a name="API_DescribeBatchDeleteConfigurationTask_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "taskId": "string"
+   "taskId": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_DescribeBatchDeleteConfigurationTask_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[taskId](#API_DescribeBatchDeleteConfigurationTask_RequestSyntax)**
-
-The ID of the task to delete.
-
+ ** [taskId](#API_DescribeBatchDeleteConfigurationTask_RequestSyntax) **   <a name="DiscServ-DescribeBatchDeleteConfigurationTask-request-taskId"></a>
+ The ID of the task to delete.
 Type: String
-
 Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_DescribeBatchDeleteConfigurationTask_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "task": {
       "configurationType": "string",
@@ -69,75 +64,64 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_DescribeBatchDeleteConfigurationTask_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[task](#API_DescribeBatchDeleteConfigurationTask_ResponseSyntax)**
-
-The `BatchDeleteConfigurationTask` that represents the deletion task being
-executed.
-
-Type: [BatchDeleteConfigurationTask](api-batchdeleteconfigurationtask.md) object
+ ** [task](#API_DescribeBatchDeleteConfigurationTask_ResponseSyntax) **   <a name="DiscServ-DescribeBatchDeleteConfigurationTask-response-task"></a>
+ The `BatchDeleteConfigurationTask` that represents the deletion task being executed.
+Type: [BatchDeleteConfigurationTask](API_BatchDeleteConfigurationTask.md) object
 
 ## Errors
+<a name="API_DescribeBatchDeleteConfigurationTask_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AuthorizationErrorException**
-
-The user does not have permission to perform the action. Check the IAM policy
-associated with this user.
-
+ ** AuthorizationErrorException **
+The user does not have permission to perform the action. Check the IAM policy associated with this user.
 HTTP Status Code: 400
 
-**HomeRegionNotSetException**
-
-###### Important
-
-AWS Application Discovery Service is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see
-[AWS Application Discovery Service availability change](../../../../services/application-discovery/latest/userguide/application-discovery-service-availability-change.md).
-
+ ** HomeRegionNotSetException **
+ AWS Application Discovery Service is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Application Discovery Service availability change](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html).
 The home Region is not set. Set the home Region to continue.
-
 HTTP Status Code: 400
 
-**InvalidParameterValueException**
-
-The value of one or more parameters are either invalid or out of range. Verify the
-parameter values and try again.
-
+ ** InvalidParameterValueException **
+The value of one or more parameters are either invalid or out of range. Verify the parameter values and try again.
 HTTP Status Code: 400
 
-**ServerInternalErrorException**
-
+ ** ServerInternalErrorException **
 The server experienced an internal error. Try again.
-
 HTTP Status Code: 500
 
 ## Examples
+<a name="API_DescribeBatchDeleteConfigurationTask_Examples"></a>
 
-The following example shows the request syntax for a deletion task that was
-previously started using [StartBatchDeleteConfigurationTask](api-startbatchdeleteconfigurationtask.md) specified by
-the value passed to the required `taskId` parameter.
+###
+<a name="API_DescribeBatchDeleteConfigurationTask_Example_1"></a>
+
+The following example shows the request syntax for a deletion task that was previously started using [StartBatchDeleteConfigurationTask](API_StartBatchDeleteConfigurationTask.md) specified by the value passed to the required `taskId` parameter.
 
 #### Sample Request
+<a name="API_DescribeBatchDeleteConfigurationTask_Example_1_Request"></a>
 
 ```
-
 {
     "taskId": "b941cc54-b0df-4cdd-90fc-70ef4293dfce"
 }
 ```
 
-The following example shows the response for a successful
-`DescribeBatchDeleteConfigurationTask` API call.
+###
+<a name="API_DescribeBatchDeleteConfigurationTask_Example_2"></a>
+
+The following example shows the response for a successful `DescribeBatchDeleteConfigurationTask` API call.
 
 #### Sample Response
+<a name="API_DescribeBatchDeleteConfigurationTask_Example_2_Response"></a>
 
 ```
-
 {
       "task": {
         "configurationType": "SERVER",
@@ -154,33 +138,18 @@ The following example shows the response for a successful
 ```
 
 ## See Also
+<a name="API_DescribeBatchDeleteConfigurationTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/discovery-2015-11-01/describebatchdeleteconfigurationtask.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeAgents
-
-DescribeConfigurations
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/discovery-2015-11-01/DescribeBatchDeleteConfigurationTask)
 
 All content copied from https://docs.aws.amazon.com/.
