@@ -3,21 +3,14 @@ title: "Welcome"
 ---
 
 # Welcome
+<a name="Welcome"></a>
 
-Amazon Application Recovery Controller (ARC) Region switch helps you to quickly and reliably shift traffic
-away from an impaired AWS Region to a healthy Region. With Region switch, you can create plans
-that define the steps to shift traffic for your application from one AWS Region to another.
+Amazon Application Recovery Controller (ARC) Region switch helps you to quickly and reliably shift traffic away from an impaired AWS Region to a healthy Region. With Region switch, you can create plans that define the steps to shift traffic for your application from one AWS Region to another.
 
-Region switch provides a structured approach to multi-Region failover, helping you to meet your recovery
-time objectives (RTOs) and maintain business continuity during regional disruptions.
+Region switch provides a structured approach to multi-Region failover, helping you to meet your recovery time objectives (RTOs) and maintain business continuity during regional disruptions.
 
-For more information, see [Region switch in ARC](../../../r53recovery/latest/dg/region-switch.md) in the _Amazon Application_
-_Recovery Controller User Guide_.
+For more information, see [Region switch in ARC](https://docs.aws.amazon.com/r53recovery/latest/dg/region-switch.html) in the *Amazon Application Recovery Controller User Guide*.
 
-This document was last published on April 29, 2026.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Actions
+This document was last published on September 16, 2026.
 
 All content copied from https://docs.aws.amazon.com/.
