@@ -3,83 +3,53 @@ title: "Build specification reference"
 ---
 
 # Build specification reference
+<a name="yml-specification-syntax"></a>
 
-The build specification (buildspec) for an Amplify application is a collection of YAML settings and
-build commands that Amplify uses to run your build. The following list describes these
-settings and how they are used.
+The build specification (buildspec) for an Amplify application is a collection of YAML settings and build commands that Amplify uses to run your build. The following list describes these settings and how they are used.
 
 **version**
-
 The Amplify YAML version number.
 
 **appRoot**
-
-The path within the repository that this application resides in. _Ignored unless multiple applications are defined._
+The path within the repository that this application resides in. *Ignored unless multiple applications are defined.*
 
 **env**
-
-Add environment variables to this section. You can also add environment variables
-using the console.
+Add environment variables to this section. You can also add environment variables using the console.
 
 **backend**
-
-Run Amplify CLI commands to provision a backend, update Lambda functions, or
-GraphQL schemas as part of continuous deployment.
+Run Amplify CLI commands to provision a backend, update Lambda functions, or GraphQL schemas as part of continuous deployment.
 
 **frontend**
-
 Run frontend build commands.
 
 **test**
-
-Run commands during a test phase. Learn how to [add\
-tests to your app](running-tests.md).
+Run commands during a test phase. Learn how to [add tests to your app](running-tests.md).
 
 **build phases**
-
-The frontend, backend, and test have three _phases_ that
-represent the commands run during each sequence of the build.
-
-- **preBuild** \- The preBuild script runs before the
-actual build starts, but after Amplify installs dependencies.
-
-- **build** \- Your build commands.
-
-- **postBuild** \- The post-build script runs after the
-build has finished and Amplify has copied all the necessary artifacts to the
-output directory.
+The frontend, backend, and test have three *phases* that represent the commands run during each sequence of the build.
++  **preBuild** - The preBuild script runs before the actual build starts, but after Amplify installs dependencies.
++  **build** - Your build commands.
++  **postBuild** - The post-build script runs after the build has finished and Amplify has copied all the necessary artifacts to the output directory.
 
 **buildpath**
-
-The path to use to run the build. Amplify uses this path to locate your build
-artifacts. If you don't specify a path, Amplify uses the monorepo app root, for
-example `apps/app`.
+The path to use to run the build. Amplify uses this path to locate your build artifacts. If you don't specify a path, Amplify uses the monorepo app root, for example `apps/app`.
 
 **artifacts>base-directory**
-
 The directory in which your build artifacts exist.
 
 **artifacts>files**
-
-Specify files from your artifacts you want to deploy. Enter `**/*` to
-include all files.
+Specify files from your artifacts you want to deploy. Enter `**/*` to include all files.
 
 **cache**
+Specifies build-time dependencies such as the *node\_modules* folder. During the first build, paths provided here are cached. On subsequent builds, Amplify restores the cache to the same paths before it runs your commands.
+Amplify considers all provided cache paths to be relative to your project root. However, Amplify doesn't allow traversing outside of the project root. For example, if you specify an absolute path, the build will succeed without an error, but the path won't be cached.
 
-Specifies build-time dependencies such as the _node\_modules_ folder. During the first build, paths provided here are
-cached. On subsequent builds, Amplify restores the cache to the same paths before it runs your
-commands.
+## Build specification YAML syntax reference
+<a name="build-yaml-syntax"></a>
 
-Amplify considers all provided cache paths to be relative to your project root.
-However, Amplify doesn't allow traversing outside of the project root. For example, if you
-specify an absolute path, the build will succeed without an error, but the path won't be
-cached.
+The following example of a build specification demonstrates the basic YAML syntax.
 
-The following example of a build specification demonstrates the basic YAML
-syntax.
-
-```yaml
-
+```
 version: 1
 env:
   variables:
@@ -132,13 +102,6 @@ test:
         - location
     configFilePath: *location*
     baseDirectory: *location*
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configuring build settings
-
-Editing the build specification
 
 All content copied from https://docs.aws.amazon.com/.
