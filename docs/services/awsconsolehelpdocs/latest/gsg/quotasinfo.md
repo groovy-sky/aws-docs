@@ -3,24 +3,18 @@ title: "Accessing service quota information in the AWS Management Console"
 ---
 
 # Accessing service quota information in the AWS Management Console
+<a name="quotasinfo"></a>
 
-If you have the necessary permissions, you can access information about service quotas
-from the console.
+If you have the necessary permissions, you can access information about service quotas from the console.
 
-###### To access service quota information
+**To access service quota information**
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/).
 
-2. On the navigation bar, choose your account name.
+1. On the navigation bar, choose your account name.
 
-3. Choose **Service Quotas**.
+1. Choose **Service Quotas**.
 
-4. View and manage your service quota information.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Accessing organization information
-
-Accessing billing information
+1. View and manage your service quota information.
 
 All content copied from https://docs.aws.amazon.com/.

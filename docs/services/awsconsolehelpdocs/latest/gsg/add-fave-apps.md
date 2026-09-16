@@ -3,33 +3,29 @@ title: "Adding applications to your favorites in the AWS Management Console"
 ---
 
 # Adding applications to your favorites in the AWS Management Console
+<a name="add-fave-apps"></a>
 
 You can add applications to your favorites from the **Services** menu.
 
-###### To add favorites from the Services menu
+**To add favorites from the Services menu**
 
 1. Open the [AWS Management Console](https://console.aws.amazon.com/).
 
-2. In the navigation bar, choose **Services (⋮⋮⋮)**.
+1. In the navigation bar, choose **Services (⋮⋮⋮)**.
 
-3. (Optional) Add a recently visited application to your favorites:
-1. In **Recently visited**, hover your cursor over an application.
+1. (Optional) Add a recently visited application to your favorites:
 
-2. Select the star next to the application's name.
-4. Choose **Applications**.
+   1. In **Recently visited**, hover your cursor over an application.
 
-5. Hover your cursor over your chosen application.
+   1. Select the star next to the application's name.
 
-6. Select the star next to the application's name.
+1. Choose **Applications**.
 
-###### Note
+1. Hover your cursor over your chosen application.
 
+1. Select the star next to the application's name.
+
+**Note**
 After you add an application to your favorites, it's added to the favorites quickbar following the navigation bar.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Adding services
-
-Accessing favorites
 
 All content copied from https://docs.aws.amazon.com/.

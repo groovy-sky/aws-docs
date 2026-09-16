@@ -3,24 +3,18 @@ title: "Accessing organization information in the AWS Management Console"
 ---
 
 # Accessing organization information in the AWS Management Console
+<a name="organizationsinfo"></a>
 
-If you have the necessary permissions, you can access information about your AWS organizations
-from the console.
+If you have the necessary permissions, you can access information about your AWS organizations from the console.
 
-###### To access organization information
+**To access organization information**
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/).
 
-2. On the navigation bar, choose your account name.
+1. On the navigation bar, choose your account name.
 
-3. Choose **Organizations**.
+1. Choose **Organizations**.
 
-4. View your organization information.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Accessing account information
-
-Accessing service quota information
+1. View your organization information.
 
 All content copied from https://docs.aws.amazon.com/.
