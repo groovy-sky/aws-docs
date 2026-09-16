@@ -3,101 +3,75 @@ title: "Using EXPLAIN and EXPLAIN ANALYZE in Athena"
 ---
 
 # Using EXPLAIN and EXPLAIN ANALYZE in Athena
+<a name="athena-explain-statement"></a>
 
-The `EXPLAIN` statement shows the logical or distributed execution plan of a
-specified SQL statement, or validates the SQL statement. You can output the results in text
-format or in a data format for rendering into a graph.
+The `EXPLAIN` statement shows the logical or distributed execution plan of a specified SQL statement, or validates the SQL statement. You can output the results in text format or in a data format for rendering into a graph.
 
-###### Note
+**Note**
+You can view graphical representations of logical and distributed plans for your queries in the Athena console without using the `EXPLAIN` syntax. For more information, see [View execution plans for SQL queries](query-plans.md).
 
-You can view graphical representations of logical and distributed plans for your
-queries in the Athena console without using the `EXPLAIN` syntax. For more
-information, see [View execution plans for SQL queries](query-plans.md).
-
-The `EXPLAIN ANALYZE` statement shows both the distributed execution plan of a
-specified SQL statement and the computational cost of each operation in a SQL query. You can
-output the results in text or JSON format.
+The `EXPLAIN ANALYZE` statement shows both the distributed execution plan of a specified SQL statement and the computational cost of each operation in a SQL query. You can output the results in text or JSON format.
 
 ## Considerations and limitations
+<a name="athena-explain-statement-considerations-and-limitations"></a>
 
-The `EXPLAIN` and `EXPLAIN ANALYZE` statements in Athena have the
-following limitations.
-
-- Because `EXPLAIN` queries do not scan any data, Athena does not
-charge for them. However, because `EXPLAIN` queries make calls to
-AWS Glue to retrieve table metadata, you may incur charges from Glue if the calls
-go above the [free tier limit for glue](https://aws.amazon.com/free?all-free-tier.q=glue&all-free-tier.q_operator=AND&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free+Tier+Categories=categories%23analytics).
-
-- Because `EXPLAIN ANALYZE` queries are executed, they do scan data,
-and Athena charges for the amount of data scanned.
-
-- Row or cell filtering information defined in Lake Formation and query stats information
-are not shown in the output of `EXPLAIN` and `EXPLAIN
-                          ANALYZE`.
+The `EXPLAIN` and `EXPLAIN ANALYZE` statements in Athena have the following limitations.
++ Because `EXPLAIN` queries do not scan any data, Athena does not charge for them. However, because `EXPLAIN` queries make calls to AWS Glue to retrieve table metadata, you may incur charges from Glue if the calls go above the [free tier limit for glue](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Categories=categories%23analytics&all-free-tier.q=glue&all-free-tier.q_operator=AND).
++ Because `EXPLAIN ANALYZE` queries are executed, they do scan data, and Athena charges for the amount of data scanned.
++ Row or cell filtering information defined in Lake Formation and query stats information are not shown in the output of `EXPLAIN` and `EXPLAIN ANALYZE`.
 
 ## EXPLAIN syntax
+<a name="athena-explain-statement-syntax-athena-engine-version-2"></a>
 
-```sql
-
-EXPLAIN [ ( option [, ...]) ] statement
+```
+EXPLAIN [ ( {{option}} [, ...]) ] {{statement}}
 ```
 
-`option` can be one of the following:
+{{option}} can be one of the following:
 
-```sql
-
+```
 FORMAT { TEXT | GRAPHVIZ | JSON }
 TYPE { LOGICAL | DISTRIBUTED | VALIDATE | IO }
 ```
 
-If the `FORMAT` option is not specified, the output defaults to
-`TEXT` format. The `IO` type provides information about the
-tables and schemas that the query reads.
+If the `FORMAT` option is not specified, the output defaults to `TEXT` format. The `IO` type provides information about the tables and schemas that the query reads.
 
 ## EXPLAIN ANALYZE syntax
+<a name="athena-explain-analyze-statement"></a>
 
-In addition to the output included in `EXPLAIN`, `EXPLAIN
-                ANALYZE` output also includes runtime statistics for the specified query such
-as CPU usage, the number of rows input, and the number of rows output.
+In addition to the output included in `EXPLAIN`, `EXPLAIN ANALYZE` output also includes runtime statistics for the specified query such as CPU usage, the number of rows input, and the number of rows output.
 
-```sql
-
-EXPLAIN ANALYZE [ ( option [, ...]) ] statement
+```
+EXPLAIN ANALYZE [ ( {{option}} [, ...]) ] {{statement}}
 ```
 
-`option` can be one of the following:
+{{option}} can be one of the following:
 
-```sql
-
+```
 FORMAT { TEXT | JSON }
 ```
 
-If the `FORMAT` option is not specified, the output defaults to
-`TEXT` format. Because all queries for `EXPLAIN ANALYZE` are
-`DISTRIBUTED`, the `TYPE` option is not available for
-`EXPLAIN ANALYZE`.
+If the `FORMAT` option is not specified, the output defaults to `TEXT` format. Because all queries for `EXPLAIN ANALYZE` are `DISTRIBUTED`, the `TYPE` option is not available for `EXPLAIN ANALYZE`.
 
-`statement` can be one of the following:
+{{statement}} can be one of the following:
 
-```nohighlight
-
+```
 SELECT
 CREATE TABLE AS SELECT
 INSERT
-UNLOAD
 ```
 
 ## EXPLAIN examples
+<a name="athena-explain-statement-examples"></a>
 
-The following examples for `EXPLAIN` progress from the more straightforward
-to the more complex.
+The following examples for `EXPLAIN` progress from the more straightforward to the more complex.
 
-In the following example, `EXPLAIN` shows the execution plan for a
-`SELECT` query on Elastic Load Balancing logs. The format defaults to text
-output.
+### Example 1: Use the EXPLAIN statement to show a query plan in text format
+<a name="athena-explain-statement-example-text-query-plan"></a>
 
-```sql
+In the following example, `EXPLAIN` shows the execution plan for a `SELECT` query on Elastic Load Balancing logs. The format defaults to text output.
 
+```
 EXPLAIN
 SELECT
    request_timestamp,
@@ -107,9 +81,9 @@ FROM sampledb.elb_logs;
 ```
 
 #### Results
+<a name="athena-explain-statement-example-text-query-plan-results"></a>
 
-```nohighlight
-
+```
 - Output[request_timestamp, elb_name, request_ip] => [[request_timestamp, elb_name, request_ip]]
     - RemoteExchange[GATHER] => [[request_timestamp, elb_name, request_ip]]
         - TableScan[awsdatacatalog:HiveTableHandle{schemaName=sampledb, tableName=elb_logs,
@@ -120,12 +94,12 @@ analyzePartitionValues=Optional.empty}] => [[request_timestamp, elb_name, reques
                 elb_name := elb_name:string:1:REGULAR
 ```
 
-You can use the Athena console to graph a query plan for you. Enter a
-`SELECT` statement like the following into the Athena query
-editor, and then choose **EXPLAIN**.
+### Example 2: Use EXPLAIN to graph a query plan
+<a name="athena-explain-statement-example-graph-a-query-plan"></a>
 
-```sql
+You can use the Athena console to graph a query plan for you. Enter a `SELECT` statement like the following into the Athena query editor, and then choose **EXPLAIN**.
 
+```
 SELECT
       c.c_custkey,
       o.o_orderkey,
@@ -135,34 +109,23 @@ SELECT
        ON c.c_custkey = o.o_custkey
 ```
 
-The **Explain** page of the Athena query editor opens and
-shows you a distributed plan and a logical plan for the query. The following
-graph shows the logical plan for the example.
+The **Explain** page of the Athena query editor opens and shows you a distributed plan and a logical plan for the query. The following graph shows the logical plan for the example.
 
-![Graph of the query plan rendered by the Athena query editor.](https://docs.aws.amazon.com/images/athena/latest/ug/images/athena-explain-statement-tpch.png)
+![Graph of the query plan rendered by the Athena query editor.](https://docs.aws.amazon.com/athena/latest/ug/images/athena-explain-statement-tpch.png)
 
-###### Important
+**Important**
+Currently, some partition filters may not be visible in the nested operator tree graph even though Athena does apply them to your query. To verify the effect of such filters, run `EXPLAIN` or `EXPLAIN ANALYZE` on your query and view the results.
 
-Currently, some partition filters may not be visible in the nested
-operator tree graph even though Athena does apply them to your query. To
-verify the effect of such filters, run `EXPLAIN` or `EXPLAIN
-                            ANALYZE` on your query and view the results.
+For more information about using the query plan graphing features in the Athena console, see [View execution plans for SQL queries](query-plans.md).
 
-For more information about using the query plan graphing features in the Athena
-console, see [View execution plans for SQL queries](query-plans.md).
+### Example 3: Use the EXPLAIN statement to verify partition pruning
+<a name="athena-explain-statement-example-verify-partition-pruning"></a>
 
-When you use a filtering predicate on a partitioned key to query a partitioned
-table, the query engine applies the predicate to the partitioned key to reduce
-the amount of data read.
+When you use a filtering predicate on a partitioned key to query a partitioned table, the query engine applies the predicate to the partitioned key to reduce the amount of data read.
 
-The following example uses an `EXPLAIN` query to verify partition
-pruning for a `SELECT` query on a partitioned table. First, a
-`CREATE TABLE` statement creates the
-`tpch100.orders_partitioned` table. The table is partitioned on
-column `o_orderdate`.
+The following example uses an `EXPLAIN` query to verify partition pruning for a `SELECT` query on a partitioned table. First, a `CREATE TABLE` statement creates the `tpch100.orders_partitioned` table. The table is partitioned on column `o_orderdate`.
 
-```sql
-
+```
 CREATE TABLE `tpch100.orders_partitioned`(
   `o_orderkey` int,
   `o_custkey` int,
@@ -181,15 +144,12 @@ STORED AS INPUTFORMAT
 OUTPUTFORMAT
   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
 LOCATION
-  's3://amzn-s3-demo-bucket/<your_directory_path>/'
+  's3://amzn-s3-demo-bucket/{{<your_directory_path>}}/'
 ```
 
-The `tpch100.orders_partitioned` table has several partitions on
-`o_orderdate`, as shown by the `SHOW PARTITIONS`
-command.
+The `tpch100.orders_partitioned` table has several partitions on `o_orderdate`, as shown by the `SHOW PARTITIONS` command.
 
-```sql
-
+```
 SHOW PARTITIONS tpch100.orders_partitioned;
 
 o_orderdate=1994
@@ -202,11 +162,9 @@ o_orderdate=1992
 o_orderdate=1996
 ```
 
-The following `EXPLAIN` query verifies partition pruning on the
-specified `SELECT` statement.
+The following `EXPLAIN` query verifies partition pruning on the specified `SELECT` statement.
 
-```sql
-
+```
 EXPLAIN
 SELECT
    o_orderkey,
@@ -217,9 +175,9 @@ WHERE o_orderdate = '1995'
 ```
 
 #### Results
+<a name="athena-explain-statement-example-verify-partition-pruning-results"></a>
 
-```nohighlight
-
+```
 Query Plan
 - Output[o_orderkey, o_custkey, o_orderdate] => [[o_orderkey, o_custkey, o_orderdate]]
     - RemoteExchange[GATHER] => [[o_orderkey, o_custkey, o_orderdate]]
@@ -232,16 +190,14 @@ analyzePartitionValues=Optional.empty}] => [[o_orderkey, o_custkey, o_orderdate]
                 o_orderkey := o_orderkey:int:0:REGULAR
 ```
 
-The bold text in the result shows that the predicate `o_orderdate =
-                            '1995'` was applied on the `PARTITION_KEY`.
+The bold text in the result shows that the predicate `o_orderdate = '1995'` was applied on the `PARTITION_KEY`.
 
-The following `EXPLAIN` query checks the `SELECT`
-statement's join order and join type. Use a query like this to examine query
-memory usage so that you can reduce the chances of getting an
-`EXCEEDED_LOCAL_MEMORY_LIMIT` error.
+### Example 4: Use an EXPLAIN query to check the join order and join type
+<a name="athena-explain-statement-example-check-join-order-and-type"></a>
 
-```sql
+The following `EXPLAIN` query checks the `SELECT` statement's join order and join type. Use a query like this to examine query memory usage so that you can reduce the chances of getting an `EXCEEDED_LOCAL_MEMORY_LIMIT` error.
 
+```
 EXPLAIN (TYPE DISTRIBUTED)
    SELECT
       c.c_custkey,
@@ -254,9 +210,9 @@ EXPLAIN (TYPE DISTRIBUTED)
 ```
 
 #### Results
+<a name="athena-explain-statement-example-check-join-order-and-type-results"></a>
 
-```nohighlight
-
+```
 Query Plan
 Fragment 0 [SINGLE]
     Output layout: [c_custkey, o_orderkey, o_orderstatus]
@@ -292,34 +248,15 @@ filterPredicate = ("o_custkey" = 123)] => [[o_orderstatus, o_orderkey]]
             o_orderkey := o_orderkey:int:0:REGULAR
 ```
 
-The example query was optimized into a cross join for better performance.
-The results show that `tpch100.orders` will be distributed as the
-`BROADCAST` distribution type. This implies that the
-`tpch100.orders` table will be distributed to all nodes that
-perform the join operation. The `BROADCAST` distribution type
-will require that the all of the filtered results of the
-`tpch100.orders` table fit into the memory of each node that
-performs the join operation.
+The example query was optimized into a cross join for better performance. The results show that `tpch100.orders` will be distributed as the `BROADCAST` distribution type. This implies that the `tpch100.orders` table will be distributed to all nodes that perform the join operation. The `BROADCAST` distribution type will require that the all of the filtered results of the `tpch100.orders` table fit into the memory of each node that performs the join operation.
 
-However, the `tpch100.customer` table is smaller than
-`tpch100.orders`. Because `tpch100.customer`
-requires less memory, you can rewrite the query to `BROADCAST
-                            tpch100.customer` instead of `tpch100.orders`. This
-reduces the chance of the query receiving the
-`EXCEEDED_LOCAL_MEMORY_LIMIT` error. This strategy assumes
-the following points:
-
-- The `tpch100.customer.c_custkey` is unique in the
-`tpch100.customer` table.
-
-- There is a one-to-many mapping relationship between
-`tpch100.customer` and
-`tpch100.orders`.
+However, the `tpch100.customer` table is smaller than `tpch100.orders`. Because `tpch100.customer` requires less memory, you can rewrite the query to `BROADCAST tpch100.customer` instead of `tpch100.orders`. This reduces the chance of the query receiving the `EXCEEDED_LOCAL_MEMORY_LIMIT` error. This strategy assumes the following points:
++ The `tpch100.customer.c_custkey` is unique in the `tpch100.customer` table.
++ There is a one-to-many mapping relationship between `tpch100.customer` and `tpch100.orders`.
 
 The following example shows the rewritten query.
 
-```sql
-
+```
 SELECT
     c.c_custkey,
     o.o_orderkey,
@@ -330,12 +267,12 @@ JOIN tpch100.customer c -- the filtered results of tpch100.customer are distribu
 WHERE c.c_custkey = 123
 ```
 
-You can use an `EXPLAIN` query to check the effectiveness of
-filtering predicates. You can use the results to remove predicates that have no
-effect, as in the following example.
+### Example 5: Use an EXPLAIN query to remove predicates that have no effect
+<a name="athena-explain-statement-example-remove-unneeded-predicates"></a>
 
-```sql
+You can use an `EXPLAIN` query to check the effectiveness of filtering predicates. You can use the results to remove predicates that have no effect, as in the following example.
 
+```
 EXPLAIN
    SELECT
       c.c_name
@@ -346,9 +283,9 @@ EXPLAIN
 ```
 
 #### Results
+<a name="athena-explain-statement-example-remove-unneeded-predicates-results"></a>
 
-```nohighlight
-
+```
 Query Plan
 - Output[c_name] => [[c_name]]
     - RemoteExchange[GATHER] => [[c_name]]
@@ -362,40 +299,34 @@ CAST(("random"() * 1E3) AS int)))] => [[c_name]]
                 c_name := c_name:string:1:REGULAR
 ```
 
-The `filterPredicate` in the results shows that the optimizer
-merged the original three predicates into two predicates and changed their
-order of application.
+The `filterPredicate` in the results shows that the optimizer merged the original three predicates into two predicates and changed their order of application.
 
-```nohighlight
-
+```
 filterPredicate = (("c_custkey" = 1500) AND ("c_custkey" = CAST(("random"() * 1E3) AS int)))
 ```
 
-Because the results show that the predicate `AND c.c_custkey BETWEEN
-                            1000 AND 2000` has no effect, you can remove this predicate
-without changing the query results.
+Because the results show that the predicate `AND c.c_custkey BETWEEN 1000 AND 2000` has no effect, you can remove this predicate without changing the query results.
 
-For information about the terms used in the results of
-`EXPLAIN` queries, see [Understand Athena EXPLAIN statement results](athena-explain-statement-understanding.md).
+For information about the terms used in the results of `EXPLAIN` queries, see [Understand Athena EXPLAIN statement results](athena-explain-statement-understanding.md).
 
 ## EXPLAIN ANALYZE examples
+<a name="athena-explain-analyze-examples"></a>
 
-The following examples show example `EXPLAIN ANALYZE` queries and
-outputs.
+The following examples show example `EXPLAIN ANALYZE` queries and outputs.
 
-In the following example, `EXPLAIN ANALYZE` shows the execution
-plan and computational costs for a `SELECT` query on CloudFront logs. The
-format defaults to text output.
+### Example 1: Use EXPLAIN ANALYZE to show a query plan and computational cost in text format
+<a name="athena-explain-analyze-example-cflogs-text"></a>
 
-```sql
+In the following example, `EXPLAIN ANALYZE` shows the execution plan and computational costs for a `SELECT` query on CloudFront logs. The format defaults to text output.
 
+```
 EXPLAIN ANALYZE SELECT FROM cloudfront_logs LIMIT 10
 ```
 
 #### Results
+<a name="athena-explain-analyze-example-cflogs-text-results"></a>
 
-```nohighlight
-
+```
  Fragment 1
      CPU: 24.60ms, Input: 10 rows (1.48kB); per task: std.dev.: 0.00, Output: 10 rows (1.48kB)
      Output layout: [date, time, location, bytes, requestip, method, host, uri, status, referrer,\
@@ -442,19 +373,19 @@ grouped = false] => [[date, time, location, bytes, requestip, method, host, uri,
                  status := status:int:8:REGULAR
 ```
 
-The following example shows the execution plan and computational costs for a
-`SELECT` query on CloudFront logs. The example specifies JSON as the
-output format.
+### Example 2: Use EXPLAIN ANALYZE to show a query plan in JSON format
+<a name="athena-explain-analyze-example-cflogs-json"></a>
 
-```sql
+The following example shows the execution plan and computational costs for a `SELECT` query on CloudFront logs. The example specifies JSON as the output format.
 
+```
 EXPLAIN ANALYZE (FORMAT JSON) SELECT * FROM cloudfront_logs LIMIT 10
 ```
 
 #### Results
+<a name="athena-explain-analyze-example-cflogs-json-results"></a>
 
-```nohighlight
-
+```
 {
     "fragments": [{
         "id": "1",
@@ -583,28 +514,16 @@ EXPLAIN ANALYZE (FORMAT JSON) SELECT * FROM cloudfront_logs LIMIT 10
 ```
 
 ## Additional resources
+<a name="athena-explain-statement-additional-resources"></a>
 
 For additional information, see the following resources.
++  [Understand Athena EXPLAIN statement results](athena-explain-statement-understanding.md)
++  [View execution plans for SQL queries](query-plans.md)
++  [View statistics and execution details for completed queries](query-stats.md)
++ Trino [`EXPLAIN`](https://trino.io/docs/current/sql/explain.html) documentation
++ Trino [`EXPLAIN ANALYZE`](https://trino.io/docs/current/sql/explain-analyze.html) documentation
++  [Optimize Federated Query Performance using EXPLAIN and EXPLAIN ANALYZE in Amazon Athena](https://aws.amazon.com/blogs/big-data/optimize-federated-query-performance-using-explain-and-explain-analyze-in-amazon-athena/) in the *AWS Big Data Blog*.
 
-- [Understand Athena EXPLAIN statement results](athena-explain-statement-understanding.md)
-
-- [View execution plans for SQL queries](query-plans.md)
-
-- [View statistics and execution details for completed queries](query-stats.md)
-
-- Trino [`EXPLAIN`](https://trino.io/docs/current/sql/explain.html) documentation
-
-- Trino [`EXPLAIN ANALYZE`](https://trino.io/docs/current/sql/explain-analyze.html) documentation
-
-- [Optimize Federated Query Performance using EXPLAIN and EXPLAIN ANALYZE in\
-Amazon Athena](https://aws.amazon.com/blogs/big-data/optimize-federated-query-performance-using-explain-and-explain-analyze-in-amazon-athena) in the _AWS Big Data Blog_.
-
-Visual query execution analysis in Amazon Athena (AWS YouTube channel)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VACUUM
-
-Understand EXPLAIN results
+[![AWS Videos](https://img.youtube.com/vi/7JUyTqglmNU/0.jpg)](https://www.youtube.com/watch?v=7JUyTqglmNU)
 
 All content copied from https://docs.aws.amazon.com/.

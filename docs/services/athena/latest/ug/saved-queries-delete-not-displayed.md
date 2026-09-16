@@ -3,25 +3,18 @@ title: "Delete an undisplayed saved query"
 ---
 
 # Delete an undisplayed saved query
+<a name="saved-queries-delete-not-displayed"></a>
 
-###### To delete a saved query not displayed in the query editor
+**To delete a saved query not displayed in the query editor**
 
-1. In the Athena console, choose the **Saved queries**
-    tab.
+1. In the Athena console, choose the **Saved queries** tab.
 
-2. Select one or more check boxes for the queries that you want to delete.
+1. Select one or more check boxes for the queries that you want to delete.
 
-3. Choose **Delete**.
+1. Choose **Delete**.
 
-4. At the confirmation prompt, choose **Delete**.
+1. At the confirmation prompt, choose **Delete**.
 
-One or more queries are removed from the **Saved queries**
-    list.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Rename an undisplayed saved query
-
-Use the Athena API to update saved queries
+   One or more queries are removed from the **Saved queries** list.
 
 All content copied from https://docs.aws.amazon.com/.

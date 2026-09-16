@@ -3,17 +3,18 @@ title: "Session level cost attribution"
 ---
 
 # Session level cost attribution
+<a name="notebooks-spark-cost-attribution"></a>
 
 From Apache Spark version 3.5 release version onward, Athena allows tracking costs for each session. You can define cost allocation tags when starting a session and the reported costs for a session will appear in Cost Explorer or on AWS Billing cost allocation reports. You can also apply cost allocation tags at the Workgroup level and those get copied over to any sessions started on that workgroup.
 
 ## Using Session Level Cost Attribution
+<a name="notebooks-spark-cost-attribution-usage"></a>
 
 By default, any cost allocation tags specified at the workgroup level is copied over to interactive sessions started on that workgroup.
 
 To disable tags to be copied from the Workgroup when starting an interactive session from the AWS CLI:
 
 ```
-
 aws athena start-session \
   --region "REGION" \
   --work-group "WORKGROUP" \
@@ -29,7 +30,6 @@ aws athena start-session \
 To enable tags to be copied from the Workgroup when starting an interactive session from the AWS CLI:
 
 ```
-
 aws athena start-session \
   --region "REGION" \
   --work-group "WORKGROUP" \
@@ -37,13 +37,7 @@ aws athena start-session \
 ```
 
 ## Considerations and Limitations
-
-- Session tags overrides workgroup tags with the same keys.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Monitor Apache Spark
-
-Logging and monitoring
+<a name="notebooks-spark-cost-attribution-considerations"></a>
++ Session tags overrides workgroup tags with the same keys.
 
 All content copied from https://docs.aws.amazon.com/.

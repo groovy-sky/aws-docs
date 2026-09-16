@@ -3,32 +3,23 @@ title: "Escape reserved keywords in queries"
 ---
 
 # Escape reserved keywords in queries
+<a name="reserved-words"></a>
 
-When you run queries in Athena that include reserved keywords, you must escape them by
-enclosing them in special characters. Use the lists in this topic to check which keywords
-are reserved in Athena.
+When you run queries in Athena that include reserved keywords, you must escape them by enclosing them in special characters. Use the lists in this topic to check which keywords are reserved in Athena.
 
-To escape reserved keywords in DDL statements, enclose them in backticks (\`). To escape
-reserved keywords in SQL `SELECT` statements and in queries on [views](views.md), enclose them in double quotes
-('').
-
-- [Reserved keywords to escape in DDL statements](#list-of-ddl-reserved-words)
-
-- [Reserved keywords to escape in SQL SELECT statements](#list-of-reserved-words-sql-select)
-
-- [Examples of queries with reserved words](#examples-reserved-words)
+To escape reserved keywords in DDL statements, enclose them in backticks (`). To escape reserved keywords in SQL `SELECT` statements and in queries on [views](views.md), enclose them in double quotes ('').
++  [Reserved keywords to escape in DDL statements](#list-of-ddl-reserved-words)
++  [Reserved keywords to escape in SQL SELECT statements](#list-of-reserved-words-sql-select)
++  [Examples of queries with reserved words](#examples-reserved-words)
 
 ## Reserved keywords to escape in DDL statements
+<a name="list-of-ddl-reserved-words"></a>
 
-Athena uses the following list of reserved keywords in its DDL statements. If you use
-them without escaping them, Athena issues an error. To escape them, enclose them in
-backticks (\`).
+Athena uses the following list of reserved keywords in its DDL statements. If you use them without escaping them, Athena issues an error. To escape them, enclose them in backticks (`).
 
-You cannot use DDL reserved keywords as identifier names in DDL statements without
-enclosing them in backticks (\`).
+You cannot use DDL reserved keywords as identifier names in DDL statements without enclosing them in backticks (`).
 
-```nohighlight
-
+```
 ALL, ALTER, AND, ARRAY, AS, AUTHORIZATION, BETWEEN, BIGINT,
 BINARY, BOOLEAN, BOTH, BY, CASE, CASHE, CAST, CHAR, COLUMN,
 CONF, CONSTRAINT, COMMIT, CREATE, CROSS, CUBE, CURRENT,
@@ -51,15 +42,13 @@ WINDOW, WITH
 ```
 
 ## Reserved keywords to escape in SQL SELECT statements
+<a name="list-of-reserved-words-sql-select"></a>
 
-Athena uses the following list of reserved keywords in SQL `SELECT`
-statements and in queries on views.
+Athena uses the following list of reserved keywords in SQL `SELECT` statements and in queries on views.
 
-If you use these keywords as identifiers, you must enclose them in double quotes (")
-in your query statements.
+If you use these keywords as identifiers, you must enclose them in double quotes (") in your query statements.
 
-```nohighlight
-
+```
 ALTER, AND, AS, BETWEEN, BY, CASE, CAST, CONSTRAINT, CREATE,
 CROSS, CUBE, CURRENT_CATALOG, CURRENT_DATE, CURRENT_PATH,
 CURRENT_SCHEMA, CURRENT_TIME, CURRENT_TIMESTAMP, CURRENT_USER,
@@ -75,65 +64,46 @@ UNNEST, USING, VALUES, WHEN, WHERE, WITH
 ```
 
 ## Examples of queries with reserved words
+<a name="examples-reserved-words"></a>
 
-The query in the following example uses backticks (\`) to escape the DDL-related
-reserved keywords _partition_ and _date_ that are
-used for a table name and one of the column names:
+The query in the following example uses backticks (`) to escape the DDL-related reserved keywords *partition* and *date* that are used for a table name and one of the column names:
 
-```sql
-
-CREATE EXTERNAL TABLE `partition` (
-`date` INT,
+```
+CREATE EXTERNAL TABLE {{`partition`}} (
+{{`date`}} INT,
 col2 STRING
 )
 PARTITIONED BY (year STRING)
 STORED AS TEXTFILE
 LOCATION 's3://amzn-s3-demo-bucket/test_examples/';
-
 ```
 
-The following example queries include a column name containing the DDL-related
-reserved keywords in `ALTER TABLE ADD PARTITION` and `ALTER TABLE DROP
-                PARTITION` statements. The DDL reserved keywords are enclosed in backticks
-(\`):
+The following example queries include a column name containing the DDL-related reserved keywords in `ALTER TABLE ADD PARTITION` and `ALTER TABLE DROP PARTITION` statements. The DDL reserved keywords are enclosed in backticks (`):
 
-```sql
-
+```
 ALTER TABLE test_table
-ADD PARTITION (`date` = '2018-05-14')
+ADD PARTITION ({{`date`}} = '2018-05-14')
 ```
 
-```sql
-
+```
 ALTER TABLE test_table
-DROP PARTITION (`partition` = 'test_partition_value')
+DROP PARTITION ({{`partition`}} = 'test_partition_value')
 ```
 
-The following example query includes a reserved keyword (end) as an identifier in a
-`SELECT` statement. The keyword is escaped in double quotes:
+The following example query includes a reserved keyword (end) as an identifier in a `SELECT` statement. The keyword is escaped in double quotes:
 
-```sql
-
+```
 SELECT *
 FROM TestTable
 WHERE "end" != nil;
 ```
 
-The following example query includes a reserved keyword (first) in a
-`SELECT` statement. The keyword is escaped in double quotes:
+The following example query includes a reserved keyword (first) in a `SELECT` statement. The keyword is escaped in double quotes:
 
 ```
-
 SELECT "itemId"."first"
 FROM testTable
 LIMIT 10;
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Name databases, tables, and columns
-
-Create a table from query results (CTAS)
 
 All content copied from https://docs.aws.amazon.com/.

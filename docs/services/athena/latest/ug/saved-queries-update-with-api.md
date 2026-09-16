@@ -3,13 +3,8 @@ title: "Use the Athena API to update saved queries"
 ---
 
 # Use the Athena API to update saved queries
+<a name="saved-queries-update-with-api"></a>
 
-For information about using the Athena API to update a saved query, see the [UpdateNamedQuery](../../../../reference/athena/latest/apireference/api-updatenamedquery.md) action in the Athena API Reference.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Delete an undisplayed saved query
-
-Use parameterized queries
+For information about using the Athena API to update a saved query, see the [UpdateNamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNamedQuery.html) action in the Athena API Reference.
 
 All content copied from https://docs.aws.amazon.com/.

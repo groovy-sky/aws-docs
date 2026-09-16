@@ -1,14 +1,13 @@
 ---
-title: "Change field names in arrays using CAST"
+title: "Change field names in arrays using `CAST`"
 ---
 
 # Change field names in arrays using `CAST`
+<a name="changing-row-arrays-with-cast"></a>
 
-To change the field name in an array that contains `ROW` values, you can
-`CAST` the `ROW` declaration:
+To change the field name in an array that contains `ROW` values, you can `CAST` the `ROW` declaration:
 
-```sql
-
+```
 WITH dataset AS (
   SELECT
     CAST(
@@ -21,7 +20,6 @@ SELECT * FROM dataset
 This query returns:
 
 ```
-
 +--------------------+
 | users              |
 +--------------------+
@@ -29,17 +27,7 @@ This query returns:
 +--------------------+
 ```
 
-###### Note
-
-In the example above, you declare `name` as a `VARCHAR`
-because this is its type in Presto. If you declare this `STRUCT` inside a
-`CREATE TABLE` statement, use `String` type because Hive
-defines this data type as `String`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create a ROW
-
-Filter arrays using the . notation
+**Note**
+In the example above, you declare `name` as a `VARCHAR` because this is its type in Presto. If you declare this `STRUCT` inside a `CREATE TABLE` statement, use `String` type because Hive defines this data type as `String`.
 
 All content copied from https://docs.aws.amazon.com/.

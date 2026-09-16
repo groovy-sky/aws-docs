@@ -1,57 +1,82 @@
 ---
-title: "DataZone IAM Credentials Provider"
+title: "SageMaker IAM Credentials Provider"
 ---
 
-# DataZone IAM Credentials Provider
+# SageMaker IAM Credentials Provider
+<a name="jdbc-v3-driver-datazone-iamcp"></a>
 
-An authentication mechanism that uses IAM credentials to connect to
-DataZone-governed data in Athena.
+An authentication plugin that uses IAM credentials to connect to Amazon Athena through SageMaker Unified Studio. This plugin authenticates using IAM credentials (static access key/secret key or the AWS default credential chain) and retrieves Athena connection credentials via the SageMaker connection service.
+
+## Credentials provider
+<a name="jdbc-v3-driver-datazone-iamcp-credentials-provider"></a>
+
+The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `SageMakerIam`.
+
+| Parameter name | Alias | Parameter type | Default value | Value to use |
+| --- | --- | --- | --- | --- |
+| CredentialsProvider | AWSCredentialsProviderClass (deprecated), DataZoneIam | Required | none | SageMakerIam |
 
 ## DataZone domain identifier
+<a name="jdbc-v3-driver-datazone-iamcp-datazone-domain-identifier"></a>
 
 Identifier of the DataZone domain to use.
 
-Parameter nameAliasParameter typeDefault valueDataZoneDomainIdnoneRequirednone
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| DataZoneDomainId | none | Required | none |
+
+## DataZone project identifier
+<a name="jdbc-v3-driver-datazone-iamcp-datazone-project-identifier"></a>
+
+Identifier of the DataZone project to use.
+
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| DataZoneProjectId | none | Optional | none |
 
 ## DataZone environment identifier
+<a name="jdbc-v3-driver-datazone-iamcp-datazone-environment-identifier"></a>
 
-Identifier of the DataZone environment to use.
+Identifier of the DataZone environment to use. Required if `DataZoneProjectId` is not specified.
 
-Parameter nameAliasParameter typeDefault valueDataZoneEnvironmentIdnoneRequirednone
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| DataZoneEnvironmentId | none | Optional | none |
 
 ## DataZone domain region
+<a name="jdbc-v3-driver-datazone-iamcp-datazone-domain-region"></a>
 
 The AWS Region where your DataZone domain is provisioned.
 
-Parameter nameAliasParameter typeDefault valueDataZoneDomainRegionnoneRequirednone
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| DataZoneDomainRegion | none | Required | none |
 
 ## DataZone endpoint override
+<a name="jdbc-v3-driver-datazone-iamcp-datazone-endpoint-override"></a>
 
-The DataZone API endpoint to use instead of the endpoint default for the provided
-AWS Region.
+The DataZone API endpoint to use instead of the endpoint default for the provided AWS Region.
 
-Parameter nameAliasParameter typeDefault valueDataZoneEndpointOverridenoneOptionalnone
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| DataZoneEndpointOverride | none | Optional | none |
 
 ## User
+<a name="jdbc-v3-driver-datazone-iamcp-user"></a>
 
-Your AWS access key ID. For more information about access keys, see [AWS\
-security credentials](../../../iam/latest/userguide/security-creds.md) in the _IAM User_
-_Guide_.
+Your AWS access key ID. For more information about access keys, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) in the *IAM User Guide*.
 
-Parameter nameAliasParameter typeDefault valueUserAccessKeyIdOptionalnone
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| User | AccessKeyId | Optional | none |
 
 ## Password
+<a name="jdbc-v3-driver-datazone-iamcp-password"></a>
 
-Your AWS secret key ID. For more information about access keys, see [AWS\
-security credentials](../../../iam/latest/userguide/security-creds.md) in the _IAM User_
-_Guide_.
+Your AWS secret key ID. For more information about access keys, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) in the *IAM User Guide*.
 
-Parameter nameAliasParameter typeDefault valuePasswordSecretAccessKeyOptionalnone
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataZone IdC
-
-Other JDBC 3.x configuration
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| Password | SecretAccessKey | Optional | none |
 
 All content copied from https://docs.aws.amazon.com/.

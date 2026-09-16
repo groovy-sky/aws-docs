@@ -3,12 +3,11 @@ title: "Sort arrays"
 ---
 
 # Sort arrays
+<a name="sorting-arrays"></a>
 
-To create a sorted array of unique values from a set of rows, you can use the [array\_sort](https://prestodb.io/docs/current/functions/array.html)
-function, as in the following example.
+To create a sorted array of unique values from a set of rows, you can use the [array\_sort](https://prestodb.io/docs/current/functions/array.html#array_sort) function, as in the following example.
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT ARRAY[3,1,2,5,2,3,6,3,4,5] AS items
@@ -21,7 +20,6 @@ CROSS JOIN UNNEST(items) AS t(i)
 This query returns:
 
 ```
-
 +--------------------+
 | array_items        |
 +--------------------+
@@ -30,11 +28,5 @@ This query returns:
 ```
 
 For information about expanding an array into multiple rows, see [Flatten nested arrays](flattening-arrays.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Filter arrays
-
-Use aggregation functions with arrays
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,15 +3,11 @@ title: "Create tables for flow logs in Apache Parquet format using partition pro
 ---
 
 # Create tables for flow logs in Apache Parquet format using partition projection
+<a name="vpc-flow-logs-partition-projection-parquet-example"></a>
 
-The following partition projection `CREATE TABLE` statement for VPC flow
-logs is in Apache Parquet format, not Hive compatible, and partitioned by hour and by
-date instead of day. Replace the table name `test_table_vpclogs_parquet` in
-the example with the name of your table. Edit the `LOCATION` clause to
-specify the Amazon S3 bucket that contains your Amazon VPC log data.
+The following partition projection `CREATE TABLE` statement for VPC flow logs is in Apache Parquet format, not Hive compatible, and partitioned by hour and by date instead of day. Replace the table name `test_table_vpclogs_parquet` in the example with the name of your table. Edit the `LOCATION` clause to specify the Amazon S3 bucket that contains your Amazon VPC log data.
 
-```sql
-
+```
 CREATE EXTERNAL TABLE IF NOT EXISTS test_table_vpclogs_parquet (
   version int,
   account_id string,
@@ -49,7 +45,7 @@ STORED AS INPUTFORMAT
 'org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat'
 OUTPUTFORMAT
 'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
-LOCATION 's3://amzn-s3-demo-bucket/prefix/AWSLogs/{account_id}/vpcflowlogs/'
+LOCATION 's3://amzn-s3-demo-bucket/{{prefix}}/AWSLogs/{{{account_id}}}/vpcflowlogs/'
 TBLPROPERTIES (
 "EXTERNAL"="true",
 "skip.header.line.count" = "1",
@@ -62,14 +58,8 @@ TBLPROPERTIES (
 "projection.hour.type" = "integer",
 "projection.hour.range" = "00,23",
 "projection.hour.digits" = "2",
-"storage.location.template" = "s3://amzn-s3-demo-bucket/prefix/AWSLogs/${account_id}/vpcflowlogs/${region}/${date}/${hour}"
+"storage.location.template" = "s3://amzn-s3-demo-bucket/{{prefix}}/AWSLogs/{{${account_id}}}/vpcflowlogs/${region}/${date}/${hour}"
 )
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Use partition projection
-
-Additional resources
 
 All content copied from https://docs.aws.amazon.com/.

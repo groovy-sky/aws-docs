@@ -3,132 +3,92 @@ title: "Use the AWS CLI to recreate an AWS Glue database and its tables"
 ---
 
 # Use the AWS CLI to recreate an AWS Glue database and its tables
+<a name="glue-recreate-db-and-tables-cli"></a>
 
-Renaming a AWS Glue database directly is not possible, but you can copy its definition,
-modify the definition, and use the definition to recreate the database with a different
-name. Similarly, you can copy the definitions of the tables in the old database, modify the
-definitions, and use the modified definitions to recreate the tables in the new
-database.
+Renaming a AWS Glue database directly is not possible, but you can copy its definition, modify the definition, and use the definition to recreate the database with a different name. Similarly, you can copy the definitions of the tables in the old database, modify the definitions, and use the modified definitions to recreate the tables in the new database.
 
-###### Note
+**Note**
+ The method presented does not copy table partitioning.
 
-The method presented does not copy table partitioning.
+The following procedure for Windows assumes that your AWS CLI is configured for JSON output. To change the default output format in the AWS CLI, run `aws configure`.
 
-The following procedure for Windows assumes that your AWS CLI is configured for JSON output.
-To change the default output format in the AWS CLI, run `aws configure`.
+**To copy an AWS Glue Database using the AWS CLI**
 
-###### To copy an AWS Glue Database using the AWS CLI
+1. At a command prompt, run the following AWS CLI command to retrieve the definition of the AWS Glue database that you want to copy.
 
-1. At a command prompt, run the following AWS CLI command to retrieve the definition of
-    the AWS Glue database that you want to copy.
+   ```
+   aws glue get-database --name {{database_name}}
+   ```
 
-```nohighlight
+   For more information about the `get-database` command, see [get-database](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/get-database.html).
 
-aws glue get-database --name database_name
-```
+1. Save the JSON output to a file with the name of the new database (for example, `{{new_database_name}}.json`) to your desktop.
 
-For more information about the `get-database` command, see [get-database](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/get-database.html).
+1. Open the `{{new_database_name}}.json` file in a text editor.
 
-2. Save the JSON output to a file with the name of the new database (for example,
-    `new_database_name.json`) to
-    your desktop.
+1. In the JSON file, perform the following steps:
 
-3. Open the `new_database_name.json`
-    file in a text editor.
+   1. Remove the outer `{ "Database":` entry and the corresponding closing brace `}` at the end of the file.
 
-4. In the JSON file, perform the following steps:
-1. Remove the outer `{ "Database":` entry and the corresponding
-       closing brace `}` at the end of the file.
+   1. Change the `Name` entry to the new database name.
 
-2. Change the `Name` entry to the new database name.
+   1. Remove the `CatalogId` field.
 
-3. Remove the `CatalogId` field.
-5. Save the file.
+1. Save the file.
 
-6. At a command prompt, run the following AWS CLI command to use the modified database
-    definition file to create the database with the new name.
+1. At a command prompt, run the following AWS CLI command to use the modified database definition file to create the database with the new name.
 
-```nohighlight
+   ```
+   aws glue create-database --database-input "file://~/Desktop\{{new_database_name}}.json"
+   ```
 
-aws glue create-database --database-input "file://~/Desktop\new_database_name.json"
-```
+   For more information about the `create-database` command, see [create-database](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/create-database.html). For information about loading AWS CLI parameters from a file, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html) in the *AWS Command Line Interface User Guide*.
 
-For more information about the `create-database` command, see [create-database](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/create-database.html). For information about loading AWS CLI parameters from a
-    file, see [Loading AWS CLI\
-    parameters from a file](../../../cli/latest/userguide/cli-usage-parameters-file.md) in the _AWS Command Line Interface User Guide_.
+1. To verify that the new database has been created in AWS Glue, run the following command:
 
-7. To verify that the new database has been created in AWS Glue, run the following
-    command:
+   ```
+   aws glue get-database --name {{new_database_name}}
+   ```
 
-```nohighlight
+Now you are ready to get the definition for a table that you want to copy to the new database, modify the definition, and use the modified definition to recreate the table in the new database. This procedure does not change the table name.
 
-aws glue get-database --name new_database_name
-```
-
-Now you are ready to get the definition for a table that you want to copy to the new
-database, modify the definition, and use the modified definition to recreate the table in
-the new database. This procedure does not change the table name.
-
-###### To copy an AWS Glue table using the AWS CLI
+**To copy an AWS Glue table using the AWS CLI**
 
 1. At a command prompt, run the following AWS CLI command.
 
-```nohighlight
+   ```
+   aws glue get-table --database-name {{database_name}} --name {{table_name}}
+   ```
 
-aws glue get-table --database-name database_name --name table_name
-```
+   For more information about the `get-table` command, see [get-table](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/get-table.html).
 
-For more information about the `get-table` command, see [get-table](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/get-table.html).
+1. Save the JSON output to a file with the name of the table (for example, {{table\_name}}.json) to your Windows desktop.
 
-2. Save the JSON output to a file with the name of the table (for example,
-    `table_name`.json) to your Windows desktop.
+1. Open the file in a text editor.
 
-3. Open the file in a text editor.
+1. In the JSON file, remove the outer `{"Table": ` entry and the corresponding closing brace `}` at the end of the file.
 
-4. In the JSON file, remove the outer `{"Table": ` entry and the
-    corresponding closing brace `}` at the end of the file.
+1. In the JSON file, remove the following entries and their values:
+   + `DatabaseName` – This entry is not required because the `create-table` CLI command uses the `--database-name` parameter.
+   + `CreateTime`
+   + `UpdateTime`
+   + `CreatedBy`
+   + `IsRegisteredWithLakeFormation`
+   + `CatalogId`
+   + `VersionId`
 
-5. In the JSON file, remove the following entries and their values:
+1. Save the table definition file.
 
-- `DatabaseName` – This entry is not required because the
-`create-table` CLI command uses the
-`--database-name` parameter.
+1. At a command prompt, run the following AWS CLI command to recreate the table in the new database:
 
-- `CreateTime`
+   ```
+   aws glue create-table --database-name {{new_database_name}} --table-input "file://~/Desktop\{{table_name}}.json"
+   ```
 
-- `UpdateTime`
+   For more information about the `create-table` command, see [create-table](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/create-table.html).
 
-- `CreatedBy`
+   The table now appears in the new database in AWS Glue and can be queried from Athena.
 
-- `IsRegisteredWithLakeFormation`
-
-- `CatalogId`
-
-- `VersionId`
-
-6. Save the table definition file.
-
-7. At a command prompt, run the following AWS CLI command to recreate the table in the
-    new database:
-
-```nohighlight
-
-aws glue create-table --database-name new_database_name --table-input "file://~/Desktop\table_name.json"
-```
-
-For more information about the `create-table` command, see [create-table](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/create-table.html).
-
-The table now appears in the new database in AWS Glue and can be queried from
-    Athena.
-
-8. Repeat the steps to copy each additional table to the new database in
-    AWS Glue.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Use partition indexing and
-filtering
-
-Create tables for ETL jobs
+1. Repeat the steps to copy each additional table to the new database in AWS Glue.
 
 All content copied from https://docs.aws.amazon.com/.

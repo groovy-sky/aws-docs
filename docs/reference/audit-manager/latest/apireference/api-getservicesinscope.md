@@ -3,42 +3,36 @@ title: "GetServicesInScope"
 ---
 
 # GetServicesInScope
+<a name="API_GetServicesInScope"></a>
 
-Gets a list of the AWS services from which Audit Manager can collect
-evidence.
+Gets a list of the AWS services from which Audit Manager can collect evidence.
 
-Audit Manager defines which AWS services are in scope for an
-assessment. Audit Manager infers this scope by examining the assessment’s controls and
-their data sources, and then mapping this information to one or more of the corresponding
-AWS services that are in this list.
+Audit Manager defines which AWS services are in scope for an assessment. Audit Manager infers this scope by examining the assessment’s controls and their data sources, and then mapping this information to one or more of the corresponding AWS services that are in this list.
 
-###### Note
-
-For information about why it's no longer possible to specify services in scope manually, see
-[I can't edit the services in scope for my assessment](../../../../services/audit-manager/latest/userguide/evidence-collection-issues.md#unable-to-edit-services) in
-the _Troubleshooting_ section of the AWS Audit Manager user
-guide.
+**Note**
+For information about why it's no longer possible to specify services in scope manually, see [I can't edit the services in scope for my assessment](https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.html#unable-to-edit-services) in the *Troubleshooting* section of the AWS Audit Manager user guide.
 
 ## Request Syntax
+<a name="API_GetServicesInScope_RequestSyntax"></a>
 
 ```
-
 GET /services HTTP/1.1
-
 ```
 
 ## URI Request Parameters
+<a name="API_GetServicesInScope_RequestParameters"></a>
 
 The request does not use any URI parameters.
 
 ## Request Body
+<a name="API_GetServicesInScope_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetServicesInScope_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -55,61 +49,49 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetServicesInScope_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[serviceMetadata](#API_GetServicesInScope_ResponseSyntax)**
-
-The metadata that's associated with the AWS service.
-
-Type: Array of [ServiceMetadata](api-servicemetadata.md) objects
+ ** [serviceMetadata](#API_GetServicesInScope_ResponseSyntax) **   <a name="auditmanager-GetServicesInScope-response-serviceMetadata"></a>
+ The metadata that's associated with the AWS service.
+Type: Array of [ServiceMetadata](API_ServiceMetadata.md) objects
 
 ## Errors
+<a name="API_GetServicesInScope_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AccessDeniedException**
-
-Your account isn't registered with AWS Audit Manager. Check the delegated
-administrator setup on the Audit Manager settings page, and try again.
-
+ ** AccessDeniedException **
+ Your account isn't registered with AWS Audit Manager. Check the delegated administrator setup on the Audit Manager settings page, and try again.
 HTTP Status Code: 403
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
-**ValidationException**
-
-The request has invalid or missing parameters.
-
-**fields**
-
-The fields that caused the error, if applicable.
-
-**reason**
-
-The reason the request failed validation.
-
+ ** ValidationException **
+ The request has invalid or missing parameters.
+ ** fields **
+ The fields that caused the error, if applicable.
+ ** reason **
+ The reason the request failed validation.
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_GetServicesInScope_Examples"></a>
 
 ### Retrieving the list of available services for an assessment
+<a name="API_GetServicesInScope_Example_1"></a>
 
-This is an example response for the `GetServicesInScope` API operation.
-You can use this response to see the supported AWS services that
-Audit Manager can collect evidence from.
+This is an example response for the `GetServicesInScope` API operation. You can use this response to see the supported AWS services that Audit Manager can collect evidence from.
 
 #### Sample Response
+<a name="API_GetServicesInScope_Example_1_Response"></a>
 
-```json
-
+```
 {
     "serviceMetadata": [
         {
@@ -1040,33 +1022,18 @@ Audit Manager can collect evidence from.
 ```
 
 ## See Also
+<a name="API_GetServicesInScope_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/getservicesinscope.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/getservicesinscope.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetOrganizationAdminAccount
-
-GetSettings
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/GetServicesInScope)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/GetServicesInScope)
 
 All content copied from https://docs.aws.amazon.com/.

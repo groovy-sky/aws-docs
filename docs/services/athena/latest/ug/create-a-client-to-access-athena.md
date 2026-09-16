@@ -3,12 +3,11 @@ title: "Create a client to access Athena"
 ---
 
 # Create a client to access Athena
+<a name="create-a-client-to-access-athena"></a>
 
-The `AthenaClientFactory.java` class shows how to create and configure an
-Amazon Athena client.
+The `AthenaClientFactory.java` class shows how to create and configure an Amazon Athena client.
 
-```java
-
+```
 package aws.example.athena;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -25,13 +24,6 @@ public class AthenaClientFactory {
         return builder.build();
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Constants
-
-Start query execution
 
 All content copied from https://docs.aws.amazon.com/.

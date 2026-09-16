@@ -3,11 +3,11 @@ title: "Query Delta Lake tables with SQL"
 ---
 
 # Query Delta Lake tables with SQL
+<a name="delta-lake-tables-querying"></a>
 
 To query a Delta Lake table, use standard SQL `SELECT` syntax:
 
-```nohighlight
-
+```
 [ WITH with_query [, ...] ]SELECT [ ALL | DISTINCT ] select_expression [, ...]
 [ FROM from_item [, ...] ]
 [ WHERE condition ]
@@ -21,14 +21,6 @@ To query a Delta Lake table, use standard SQL `SELECT` syntax:
 
 For more information about `SELECT` syntax, see [SELECT](select.md) in the Athena documentation.
 
-The Delta Lake format stores the minimum and maximum values per column of each data
-file. Athena makes use of this information to enable file skipping on predicates to
-eliminate unnecessary files from consideration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Get started with Delta Lake tables
-
-Synchronize Delta Lake metadata
+The Delta Lake format stores the minimum and maximum values per column of each data file. Athena makes use of this information to enable file skipping on predicates to eliminate unnecessary files from consideration.
 
 All content copied from https://docs.aws.amazon.com/.

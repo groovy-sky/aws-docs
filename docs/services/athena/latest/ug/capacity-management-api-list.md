@@ -3,30 +3,16 @@ title: "Athena capacity reservation APIs"
 ---
 
 # Athena capacity reservation APIs
+<a name="capacity-management-api-list"></a>
 
-The following list contains reference links to Athena capacity reservation API actions. For
-data structures and other Athena API actions, see the [_Amazon Athena API Reference_](../../../../reference/athena/latest/apireference.md).
-
-- [CancelCapacityReservation](../../../../reference/athena/latest/apireference/api-cancelcapacityreservation.md)
-
-- [CreateCapacityReservation](../../../../reference/athena/latest/apireference/api-createcapacityreservation.md)
-
-- [DeleteCapacityReservation](../../../../reference/athena/latest/apireference/api-deletecapacityreservation.md)
-
-- [GetCapacityAssignmentConfiguration](../../../../reference/athena/latest/apireference/api-getcapacityassignmentconfiguration.md)
-
-- [GetCapacityReservation](../../../../reference/athena/latest/apireference/api-getcapacityreservation.md)
-
-- [ListCapacityReservations](../../../../reference/athena/latest/apireference/api-listcapacityreservations.md)
-
-- [PutCapacityAssignmentConfiguration](../../../../reference/athena/latest/apireference/api-putcapacityassignmentconfiguration.md)
-
-- [UpdateCapacityReservation](../../../../reference/athena/latest/apireference/api-updatecapacityreservation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Example policies
-
-Optimize performance
+The following list contains reference links to Athena capacity reservation API actions. For data structures and other Athena API actions, see the [*Amazon Athena API Reference*](https://docs.aws.amazon.com/athena/latest/APIReference/).
++  [CancelCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_CancelCapacityReservation.html)
++  [CreateCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateCapacityReservation.html)
++  [DeleteCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteCapacityReservation.html)
++  [GetCapacityAssignmentConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCapacityAssignmentConfiguration.html)
++  [GetCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCapacityReservation.html)
++  [ListCapacityReservations](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCapacityReservations.html)
++  [PutCapacityAssignmentConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_PutCapacityAssignmentConfiguration.html)
++  [UpdateCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateCapacityReservation.html)
 
 All content copied from https://docs.aws.amazon.com/.

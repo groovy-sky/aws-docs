@@ -3,17 +3,15 @@ title: "Configure access to prepared statements"
 ---
 
 # Configure access to prepared statements
+<a name="security-iam-athena-prepared-statements"></a>
 
-This topic covers IAM permissions for prepared statements in Amazon Athena.
-Whenever you use IAM policies, make sure that you follow IAM best practices. For more information, see [Security best practices in IAM](../../../iam/latest/userguide/best-practices.md) in the _IAM User Guide_.
+This topic covers IAM permissions for prepared statements in Amazon Athena. Whenever you use IAM policies, make sure that you follow IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
 
 For more information about prepared statements, see [Use parameterized queries](querying-with-prepared-statements.md).
 
-The following IAM permissions are required for creating, managing, and executing
-prepared statements.
+The following IAM permissions are required for creating, managing, and executing prepared statements.
 
-```sql
-
+```
 athena:CreatePreparedStatement
 athena:UpdatePreparedStatement
 athena:GetPreparedStatement
@@ -23,18 +21,24 @@ athena:DeletePreparedStatement
 
 Use these permissions as shown in the following table.
 
-To do thisUse these permissionsRun a `PREPARE` query`athena:StartQueryExecution` `athena:CreatePreparedStatement`Re-run a `PREPARE` query to update an existing prepared
-statement`athena:StartQueryExecution` `athena:UpdatePreparedStatement`Run an `EXECUTE` query`athena:StartQueryExecution` `athena:GetPreparedStatement`Run a `DEALLOCATE PREPARE` query`athena:StartQueryExecution` `athena:DeletePreparedStatement`
+| To do this | Use these permissions |
+| --- | --- |
+| Run a PREPARE query | athena:StartQueryExecution athena:CreatePreparedStatement |
+| Re-run a PREPARE query to update an existing prepared statement | athena:StartQueryExecution athena:UpdatePreparedStatement |
+| Run an EXECUTE query | athena:StartQueryExecution athena:GetPreparedStatement |
+| Run a DEALLOCATE PREPARE query | athena:StartQueryExecution athena:DeletePreparedStatement |
 
 ## Example
+<a name="security-iam-athena-prepared-statements-example"></a>
 
-The following example IAM policy grants permissions to manage and run prepared
-statements on a specified account ID and workgroup.
+The following example IAM policy grants permissions to manage and run prepared statements on a specified account ID and workgroup.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,18 +53,13 @@ JSON
                 "athena:ListPreparedStatements"
             ],
             "Resource": [
-                "arn:aws:athena:*:111122223333:workgroup/<workgroup-name>"
+                "arn:aws:athena:*:{{111122223333}}:workgroup/{{<workgroup-name>}}"
             ]
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configure minimum encryption
-
-Use CalledVia context keys
+------
 
 All content copied from https://docs.aws.amazon.com/.

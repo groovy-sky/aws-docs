@@ -3,15 +3,13 @@ title: "Filter arrays with nested values"
 ---
 
 # Filter arrays with nested values
+<a name="filtering-nested-with-dot"></a>
 
-Large arrays often contain nested structures, and you need to be able to filter, or
-search, for values within them.
+Large arrays often contain nested structures, and you need to be able to filter, or search, for values within them.
 
-To define a dataset for an array of values that includes a nested `BOOLEAN`
-value, issue this query:
+To define a dataset for an array of values that includes a nested `BOOLEAN` value, issue this query:
 
-```sql
-
+```
 WITH dataset AS (
   SELECT
     CAST(
@@ -24,7 +22,6 @@ SELECT * FROM dataset
 It returns this result:
 
 ```
-
 +----------------------------------------------------------+
 | sites                                                    |
 +----------------------------------------------------------+
@@ -32,11 +29,9 @@ It returns this result:
 +----------------------------------------------------------+
 ```
 
-Next, to filter and access the `BOOLEAN` value of that element, continue to
-use the dot `.` notation.
+Next, to filter and access the `BOOLEAN` value of that element, continue to use the dot `.` notation.
 
-```sql
-
+```
 WITH dataset AS (
   SELECT
     CAST(
@@ -50,18 +45,11 @@ FROM dataset
 This query selects the nested fields and returns this result:
 
 ```
-
 +------------------------+
 | hostname       | isnew |
 +------------------------+
 | aws.amazon.com | true  |
 +------------------------+
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Filter arrays using the . notation
-
-Filter arrays using UNNEST
 
 All content copied from https://docs.aws.amazon.com/.

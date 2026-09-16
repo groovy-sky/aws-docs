@@ -3,14 +3,16 @@ title: "Permissions required to create connector and Athena catalog"
 ---
 
 # Permissions required to create connector and Athena catalog
+<a name="athena-catalog-access"></a>
 
-To invoke Athena `CreateDataCatalog` you must create a role that has the
-following permissions:
+To invoke Athena `CreateDataCatalog` you must create a role that has the following permissions:
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -95,19 +97,14 @@ JSON
   "iam:UpdateRole"
   ],
   "Resource": [
-  "arn:aws:iam::*:role/RoleName",
-  "arn:aws:iam::111122223333:policy/*"
+  "arn:aws:iam::*:role/{{RoleName}}",
+  "arn:aws:iam::{{111122223333}}:policy/*"
   ]
   }
   ]
   }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Allow Lambda function access to external Hive metastores
-
-Allow access to Athena Federated Query
+------
 
 All content copied from https://docs.aws.amazon.com/.

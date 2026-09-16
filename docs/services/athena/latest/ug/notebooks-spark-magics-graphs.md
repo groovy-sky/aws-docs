@@ -3,33 +3,27 @@ title: "Use magics to create data graphs"
 ---
 
 # Use magics to create data graphs
+<a name="notebooks-spark-magics-graphs"></a>
 
-The line magics in this section specialize in rendering data for particular types of data
-or in conjunction with graphing libraries.
+The line magics in this section specialize in rendering data for particular types of data or in conjunction with graphing libraries.
 
 ## %table
+<a name="notebooks-spark-magics-graphs-table"></a>
 
-You can use the `%table` magic command to display dataframe data in table
-format.
+You can use the `%table` magic command to display dataframe data in table format.
 
-The following example creates a dataframe with two columns and three rows of data,
-then displays the data in table format.
+The following example creates a dataframe with two columns and three rows of data, then displays the data in table format.
 
-![Using the %table magic command.](https://docs.aws.amazon.com/images/athena/latest/ug/images/notebooks-spark-magics-graphs-1.png)
+![Using the %table magic command.](https://docs.aws.amazon.com/athena/latest/ug/images/notebooks-spark-magics-graphs-1.png)
 
 ## %matplot
+<a name="notebooks-spark-magics-graphs-matplot"></a>
 
-[Matplotlib](https://matplotlib.org/) is a comprehensive library for
-creating static, animated, and interactive visualizations in Python. You can use the
-`%matplot` magic command to create a graph after you import the
-matplotlib library into a notebook cell.
+[Matplotlib](https://matplotlib.org/) is a comprehensive library for creating static, animated, and interactive visualizations in Python. You can use the `%matplot` magic command to create a graph after you import the matplotlib library into a notebook cell.
 
-The following example imports the matplotlib library, creates a set of x and y
-coordinates, and then uses the use the `%matplot` magic command to create a
-graph of the points.
+The following example imports the matplotlib library, creates a set of x and y coordinates, and then uses the use the `%matplot` magic command to create a graph of the points.
 
-```python
-
+```
 import matplotlib.pyplot as plt
 x=[3,4,5,6,7,8,9,10,11,12]
 y= [9,16,25,36,49,64,81,100,121,144]
@@ -37,21 +31,16 @@ plt.plot(x,y)
 %matplot plt
 ```
 
-![Using the %matplot magic command.](https://docs.aws.amazon.com/images/athena/latest/ug/images/notebooks-spark-magics-graphs-2.png)
+![Using the %matplot magic command.](https://docs.aws.amazon.com/athena/latest/ug/images/notebooks-spark-magics-graphs-2.png)
 
 ### Use the matplotlib and seaborn libraries together
+<a name="notebooks-spark-magics-graphs-using-the-matplotlib-and-seaborn-libraries-together"></a>
 
-[Seaborn](https://seaborn.pydata.org/tutorial/introduction) is a
-library for making statistical graphics in Python. It builds on top of matplotlib
-and integrates closely with [pandas](https://pandas.pydata.org/)
-(Python data analysis) data structures. You can also use the `%matplot`
-magic command to render seaborn data.
+[Seaborn](https://seaborn.pydata.org/tutorial/introduction) is a library for making statistical graphics in Python. It builds on top of matplotlib and integrates closely with [pandas](https://pandas.pydata.org/) (Python data analysis) data structures. You can also use the `%matplot` magic command to render seaborn data.
 
-The following example uses both the matplotlib and seaborn libraries to create a
-simple bar graph.
+The following example uses both the matplotlib and seaborn libraries to create a simple bar graph.
 
-```py
-
+```
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -62,19 +51,16 @@ sns.barplot(x, y)
 %matplot plt
 ```
 
-![Using %matplot to render seaborn data.](https://docs.aws.amazon.com/images/athena/latest/ug/images/notebooks-spark-magics-graphs-3.png)
+![Using %matplot to render seaborn data.](https://docs.aws.amazon.com/athena/latest/ug/images/notebooks-spark-magics-graphs-3.png)
 
 ## %plotly
+<a name="notebooks-spark-magics-graphs-plotly"></a>
 
-[Plotly](https://plotly.com/python) is an open source graphing
-library for Python that you can use to make interactive graphs. You use the
-`%ploty` magic command to render ploty data.
+[Plotly](https://plotly.com/python/) is an open source graphing library for Python that you can use to make interactive graphs. You use the `%ploty` magic command to render ploty data.
 
-The following example uses the [StringIO](https://docs.python.org/3.13/library/io.html), plotly, and pandas libraries on stock price data to create a graph of
-stock activity from February and March of 2015.
+The following example uses the [StringIO](https://docs.python.org/3.13/library/io.html#io.StringIO), plotly, and pandas libraries on stock price data to create a graph of stock activity from February and March of 2015.
 
-```py
-
+```
 from io import StringIO
 csvString = """
 Date,AAPL.Open,AAPL.High,AAPL.Low,AAPL.Close,AAPL.Volume,AAPL.Adjusted,dn,mavg,up,direction
@@ -110,12 +96,6 @@ close=df['AAPL.Close'])])
 %plotly fig
 ```
 
-![Using the %ploty magic command.](https://docs.aws.amazon.com/images/athena/latest/ug/images/notebooks-spark-magics-graphs-4.png)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Line Magics
-
-Non-Hive table formats
+![Using the %ploty magic command.](https://docs.aws.amazon.com/athena/latest/ug/images/notebooks-spark-magics-graphs-4.png)
 
 All content copied from https://docs.aws.amazon.com/.

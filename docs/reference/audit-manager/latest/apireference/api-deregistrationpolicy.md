@@ -3,60 +3,32 @@ title: "DeregistrationPolicy"
 ---
 
 # DeregistrationPolicy
+<a name="API_DeregistrationPolicy"></a>
 
-The deregistration policy for the data that's stored in AWS Audit Manager. You can
-use this attribute to determine how your data is handled when you [deregister Audit Manager](api-deregisteraccount.md).
+The deregistration policy for the data that's stored in AWS Audit Manager. You can use this attribute to determine how your data is handled when you [deregister Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_DeregisterAccount.html).
 
-By default, Audit Manager retains evidence data for two years from the time of its
-creation. Other Audit Manager resources (including assessments, custom controls, and
-custom frameworks) remain in Audit Manager indefinitely, and are available if you
-[re-register Audit Manager](api-registeraccount.md) in the future. For more
-information about data retention, see [Data\
-Protection](../../../../services/audit-manager/latest/userguide/data-protection.md) in the _AWS Audit Manager User Guide_.
+By default, Audit Manager retains evidence data for two years from the time of its creation. Other Audit Manager resources (including assessments, custom controls, and custom frameworks) remain in Audit Manager indefinitely, and are available if you [re-register Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_RegisterAccount.html) in the future. For more information about data retention, see [Data Protection](https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.html) in the * AWS Audit Manager User Guide*.
 
-###### Important
-
-If you choose to delete all data, this action permanently deletes all evidence data
-in your account within seven days. It also deletes all of the Audit Manager
-resources that you created, including assessments, custom controls, and custom
-frameworks. Your data will not be available if you re-register Audit Manager in the
-future.
+**Important**
+If you choose to delete all data, this action permanently deletes all evidence data in your account within seven days. It also deletes all of the Audit Manager resources that you created, including assessments, custom controls, and custom frameworks. Your data will not be available if you re-register Audit Manager in the future.
 
 ## Contents
+<a name="API_DeregistrationPolicy_Contents"></a>
 
-**deleteResources**
-
+ ** deleteResources **   <a name="auditmanager-Type-DeregistrationPolicy-deleteResources"></a>
 Specifies which Audit Manager data will be deleted when you deregister Audit Manager.
-
-- If you set the value to `ALL`, all of your data is deleted within seven
-days of deregistration.
-
-- If you set the value to `DEFAULT`, none of your data is deleted at the
-time of deregistration. However, keep in mind that the Audit Manager data
-retention policy still applies. As a result, any evidence data will be deleted two
-years after its creation date. Your other Audit Manager resources will continue
-to exist indefinitely.
-
++ If you set the value to `ALL`, all of your data is deleted within seven days of deregistration.
++ If you set the value to `DEFAULT`, none of your data is deleted at the time of deregistration. However, keep in mind that the Audit Manager data retention policy still applies. As a result, any evidence data will be deleted two years after its creation date. Your other Audit Manager resources will continue to exist indefinitely.
 Type: String
-
 Valid Values: `ALL | DEFAULT`
-
 Required: No
 
 ## See Also
+<a name="API_DeregistrationPolicy_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/deregistrationpolicy.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/deregistrationpolicy.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/deregistrationpolicy.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DelegationMetadata
-
-Evidence
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/DeregistrationPolicy)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/DeregistrationPolicy)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/DeregistrationPolicy)
 
 All content copied from https://docs.aws.amazon.com/.

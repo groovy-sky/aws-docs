@@ -3,34 +3,24 @@ title: "ResultSetMetadata"
 ---
 
 # ResultSetMetadata
+<a name="API_ResultSetMetadata"></a>
 
-The metadata that describes the column structure and data types of a table of query
-results. To return a `ResultSetMetadata` object, use [GetQueryResults](api-getqueryresults.md).
+The metadata that describes the column structure and data types of a table of query results. To return a `ResultSetMetadata` object, use [GetQueryResults](API_GetQueryResults.md).
 
 ## Contents
+<a name="API_ResultSetMetadata_Contents"></a>
 
-**ColumnInfo**
-
+ ** ColumnInfo **   <a name="athena-Type-ResultSetMetadata-ColumnInfo"></a>
 Information about the columns returned in a query result metadata.
-
-Type: Array of [ColumnInfo](api-columninfo.md) objects
-
+Type: Array of [ColumnInfo](API_ColumnInfo.md) objects
 Required: No
 
 ## See Also
+<a name="API_ResultSetMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/resultsetmetadata.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/resultsetmetadata.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/resultsetmetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResultSet
-
-Row
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/ResultSetMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/ResultSetMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/ResultSetMetadata)
 
 All content copied from https://docs.aws.amazon.com/.

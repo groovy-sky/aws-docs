@@ -3,76 +3,50 @@ title: "DESCRIBE"
 ---
 
 # DESCRIBE
+<a name="describe-table"></a>
 
-Shows one or more columns, including partition columns, for the specified table. This
-command is useful for examining the attributes of complex columns.
+Shows one or more columns, including partition columns, for the specified table. This command is useful for examining the attributes of complex columns.
 
 ## Synopsis
+<a name="synopsis"></a>
 
-```sql
-
+```
 DESCRIBE [EXTENDED | FORMATTED] [db_name.]table_name [PARTITION partition_spec] [col_name ( [.field_name] | [.'$elem$'] | [.'$key$'] | [.'$value$'] )]
 ```
 
-###### Important
-
-The syntax for this statement is `DESCRIBE
-                        table_name`, not `DESCRIBE TABLE
-                        table_name`. Using the latter syntax
-results in the error message **`FAILED: SemanticException [Error 10001]:**
-**Table not found table`**.
+**Important**
+The syntax for this statement is `DESCRIBE {{table_name}}`, not `DESCRIBE TABLE {{table_name}}`. Using the latter syntax results in the error message FAILED: SemanticException [Error 10001]: Table not found table.
 
 ## Parameters
+<a name="parameters"></a>
 
-**\[EXTENDED \| FORMATTED\]**
+**[EXTENDED \| FORMATTED]**
+Determines the format of the output. Omitting these parameters shows column names and their corresponding data types, including partition columns, in tabular format. Specifying `FORMATTED` not only shows column names and data types in tabular format, but also detailed table and storage information. `EXTENDED` shows column and data type information in tabular format, and detailed metadata for the table in Thrift serialized form. This format is less readable and is useful primarily for debugging.
 
-Determines the format of the output. Omitting these parameters shows
-column names and their corresponding data types, including partition
-columns, in tabular format. Specifying `FORMATTED` not only shows
-column names and data types in tabular format, but also detailed table and
-storage information. `EXTENDED` shows column and data type
-information in tabular format, and detailed metadata for the table in Thrift
-serialized form. This format is less readable and is useful primarily for
-debugging.
+**[PARTITION partition\_spec]**
+If included, lists the metadata for the partition specified by `partition_spec`, where `partition_spec` is in the format `(partition_column = partition_col_value, partition_column = partition_col_value, ...)`.
 
-**\[PARTITION partition\_spec\]**
-
-If included, lists the metadata for the partition specified by
-`partition_spec`, where `partition_spec` is in the
-format `(partition_column = partition_col_value, partition_column =
-                            partition_col_value, ...)`.
-
-**\[col\_name ( \[.field\_name\] \| \[.'$elem$'\] \| \[.'$key$'\] \| \[.'$value$'\] )\***
-**\]**
-
-Specifies the column and attributes to examine. You can specify
-`.field_name` for an element of a struct,
-`'$elem$'` for array element, `'$key$'` for a map
-key, and `'$value$'` for map value. You can specify this
-recursively to further explore the complex column.
+**[col\_name ( [.field\_name] \| [.'$elem$'] \| [.'$key$'] \| [.'$value$'] )\* ]**
+Specifies the column and attributes to examine. You can specify `.field_name` for an element of a struct, `'$elem$'` for array element, `'$key$'` for a map key, and `'$value$'` for map value. You can specify this recursively to further explore the complex column.
 
 ### Examples
+<a name="examples"></a>
 
-```sql
-
+```
 DESCRIBE orders
 ```
 
-```sql
-
+```
 DESCRIBE FORMATTED mydatabase.mytable PARTITION (part_col = 100) columnA;
 ```
 
-The following query and output shows column and data type information from an
-`impressions` table based on Amazon EMR sample data.
+The following query and output shows column and data type information from an `impressions` table based on Amazon EMR sample data.
 
-```sql
-
+```
 DESCRIBE impressions
 ```
 
-```nohighlight
-
+```
 requestbegintime          string                                         from deserializer
 adid                      string                                         from deserializer
 impressionid              string                                         from deserializer
@@ -96,16 +70,13 @@ dt                        string
 dt                        string
 ```
 
-The following example query and output show the result for the same table when the
-`FORMATTED` option is used.
+The following example query and output show the result for the same table when the `FORMATTED` option is used.
 
-```sql
-
+```
 DESCRIBE FORMATTED impressions
 ```
 
-```nohighlight
-
+```
 requestbegintime          string                                         from deserializer
 adid                      string                                         from deserializer
 impressionid              string                                         from deserializer
@@ -154,17 +125,13 @@ Storage Desc Params:
         serialization.format                   1
 ```
 
-The following example query and output show the result for the same table when the
-`EXTENDED` option is used. The detailed table information is output
-on a single line, but is formatted here for readability.
+The following example query and output show the result for the same table when the `EXTENDED` option is used. The detailed table information is output on a single line, but is formatted here for readability.
 
-```sql
-
+```
 DESCRIBE EXTENDED impressions
 ```
 
-```nohighlight
-
+```
 requestbegintime          string                                         from deserializer
 adid                      string                                         from deserializer
 impressionid              string                                         from deserializer
@@ -206,11 +173,5 @@ storedAsSubDirectories:false), partitionKeys:[FieldSchema(name:dt, type:string, 
 parameters:{EXTERNAL=TRUE, transient_lastDdlTime=1587610521}, viewOriginalText:null, viewExpandedText:null,
 tableType:EXTERNAL_TABLE)
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CREATE VIEW
-
-DESCRIBE VIEW
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,65 +3,34 @@ title: "Use Athena Spark APIs"
 ---
 
 # Use Athena Spark APIs
+<a name="notebooks-spark-api-list"></a>
 
-###### Note
+**Note**
+Athena notebooks and Calculations APIs are available in the release version Pyspark engine version 3. Notebooks and Calculations APIs are not supported in the release version Apache Spark version 3.5.
 
-Athena notebooks and Calculations APIs are available in the release version Pyspark engine version 3.
-Notebooks and Calculations APIs are not supported in the release version Apache Spark version 3.5.
-
-The following list contains reference links to the Athena notebook API actions. For data
-structures and other Athena API actions, see the [_Amazon Athena API Reference_](../../../../reference/athena/latest/apireference.md).
-
-- [CreateNotebook](../../../../reference/athena/latest/apireference/api-createnotebook.md)
-
-- [CreatePresignedNotebookUrl](../../../../reference/athena/latest/apireference/api-createpresignednotebookurl.md)
-
-- [DeleteNotebook](../../../../reference/athena/latest/apireference/api-deletenotebook.md)
-
-- [ExportNotebook](../../../../reference/athena/latest/apireference/api-exportnotebook.md)
-
-- [GetCalculationExecution](../../../../reference/athena/latest/apireference/api-getcalculationexecution.md)
-
-- [GetCalculationExecutionCode](../../../../reference/athena/latest/apireference/api-getcalculationexecutioncode.md)
-
-- [GetCalculationExecutionStatus](../../../../reference/athena/latest/apireference/api-getcalculationexecutionstatus.md)
-
-- [GetNotebookMetadata](../../../../reference/athena/latest/apireference/api-getnotebookmetadata.md)
-
-- [GetSession](../../../../reference/athena/latest/apireference/api-getsession.md)
-
-- [GetSessionStatus](../../../../reference/athena/latest/apireference/api-getsessionstatus.md)
-
-- [ImportNotebook](../../../../reference/athena/latest/apireference/api-importnotebook.md)
-
-- [ListApplicationDPUSizes](../../../../reference/athena/latest/apireference/api-listapplicationdpusizes.md)
-
-- [ListCalculationExecutions](../../../../reference/athena/latest/apireference/api-listcalculationexecutions.md)
-
-- [ListExecutors](../../../../reference/athena/latest/apireference/api-listexecutors.md)
-
-- [ListNotebookMetadata](../../../../reference/athena/latest/apireference/api-listnotebookmetadata.md)
-
-- [ListNotebookSessions](../../../../reference/athena/latest/apireference/api-listnotebooksessions.md)
-
-- [ListSessions](../../../../reference/athena/latest/apireference/api-listsessions.md)
-
-- [StartCalculationExecution](../../../../reference/athena/latest/apireference/api-startcalculationexecution.md)
-
-- [StartSession](../../../../reference/athena/latest/apireference/api-startsession.md)
-
-- [StopCalculationExecution](../../../../reference/athena/latest/apireference/api-stopcalculationexecution.md)
-
-- [TerminateSession](../../../../reference/athena/latest/apireference/api-terminatesession.md)
-
-- [UpdateNotebook](../../../../reference/athena/latest/apireference/api-updatenotebook.md)
-
-- [UpdateNotebookMetadata](../../../../reference/athena/latest/apireference/api-updatenotebookmetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Service quotas
-
-Troubleshoot
+The following list contains reference links to the Athena notebook API actions. For data structures and other Athena API actions, see the [*Amazon Athena API Reference*](https://docs.aws.amazon.com/athena/latest/APIReference/).
++  [CreateNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateNotebook.html)
++  [CreatePresignedNotebookUrl](https://docs.aws.amazon.com/athena/latest/APIReference/API_CreatePresignedNotebookUrl.html)
++  [DeleteNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNotebook.html)
++  [ExportNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_ExportNotebook.html)
++  [GetCalculationExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalculationExecution.html)
++  [GetCalculationExecutionCode](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalculationExecutionCode.html)
++  [GetCalculationExecutionStatus](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalculationExecutionStatus.html)
++  [GetNotebookMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetNotebookMetadata.html)
++  [GetSession](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSession.html)
++  [GetSessionStatus](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSessionStatus.html)
++  [ImportNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_ImportNotebook.html)
++  [ListApplicationDPUSizes](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListApplicationDPUSizes.html)
++  [ListCalculationExecutions](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCalculationExecutions.html)
++  [ListExecutors](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListExecutors.html)
++  [ListNotebookMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNotebookMetadata.html)
++  [ListNotebookSessions](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNotebookSessions.html)
++  [ListSessions](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListSessions.html)
++  [StartCalculationExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartCalculationExecution.html)
++  [StartSession](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartSession.html)
++  [StopCalculationExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StopCalculationExecution.html)
++  [TerminateSession](https://docs.aws.amazon.com/athena/latest/APIReference/API_TerminateSession.html)
++  [UpdateNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNotebook.html)
++  [UpdateNotebookMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNotebookMetadata.html)
 
 All content copied from https://docs.aws.amazon.com/.

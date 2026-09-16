@@ -3,18 +3,16 @@ title: "Supported column data types"
 ---
 
 # Supported column data types
+<a name="delta-lake-tables-supported-data-types-columns"></a>
 
-This section describes the supported data types for non-partition and partition
-columns.
+This section describes the supported data types for non-partition and partition columns.
 
 ## Supported non-partition column data types
+<a name="delta-lake-tables-supported-data-types-non-partition-columns"></a>
 
-For non-partition columns, all data types that Athena supports except
-`CHAR` are supported ( `CHAR` is not supported in the Delta
-Lake protocol itself). Supported data types include:
+For non-partition columns, all data types that Athena supports except `CHAR` are supported (`CHAR` is not supported in the Delta Lake protocol itself). Supported data types include:
 
-```nohighlight
-
+```
 boolean
 tinyint
 smallint
@@ -34,11 +32,11 @@ struct
 ```
 
 ## Supported partition column data types
+<a name="delta-lake-tables-supported-data-types-partition-columns"></a>
 
 For partition columns, Athena supports tables with the following data types:
 
-```nohighlight
-
+```
 boolean
 integer
 smallint
@@ -53,11 +51,5 @@ varchar
 ```
 
 For more information about the data types in Athena, see [Data types in Amazon Athena](data-types.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Query Delta Lake tables
-
-Get started with Delta Lake tables
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,115 +3,72 @@ title: "AssessmentReportMetadata"
 ---
 
 # AssessmentReportMetadata
+<a name="API_AssessmentReportMetadata"></a>
 
-The metadata objects that are associated with the specified assessment report.
+ The metadata objects that are associated with the specified assessment report.
 
 ## Contents
+<a name="API_AssessmentReportMetadata_Contents"></a>
 
-**assessmentId**
-
-The unique identifier for the associated assessment.
-
+ ** assessmentId **   <a name="auditmanager-Type-AssessmentReportMetadata-assessmentId"></a>
+ The unique identifier for the associated assessment.
 Type: String
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
 Required: No
 
-**assessmentName**
-
+ ** assessmentName **   <a name="auditmanager-Type-AssessmentReportMetadata-assessmentName"></a>
 The name of the associated assessment.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 300.
-
 Pattern: `^[^\\]*$`
-
 Required: No
 
-**author**
-
-The name of the user who created the assessment report.
-
+ ** author **   <a name="auditmanager-Type-AssessmentReportMetadata-author"></a>
+ The name of the user who created the assessment report.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Pattern: `^[a-zA-Z0-9-_()\s\+=,.@]+$`
-
 Required: No
 
-**creationTime**
-
-Specifies when the assessment report was created.
-
+ ** creationTime **   <a name="auditmanager-Type-AssessmentReportMetadata-creationTime"></a>
+ Specifies when the assessment report was created.
 Type: Timestamp
-
 Required: No
 
-**description**
-
-The description of the assessment report.
-
+ ** description **   <a name="auditmanager-Type-AssessmentReportMetadata-description"></a>
+ The description of the assessment report.
 Type: String
-
 Length Constraints: Maximum length of 1000.
-
 Pattern: `^[\w\W\s\S]*$`
-
 Required: No
 
-**id**
-
-The unique identifier for the assessment report.
-
+ ** id **   <a name="auditmanager-Type-AssessmentReportMetadata-id"></a>
+ The unique identifier for the assessment report.
 Type: String
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
 Required: No
 
-**name**
-
-The name of the assessment report.
-
+ ** name **   <a name="auditmanager-Type-AssessmentReportMetadata-name"></a>
+ The name of the assessment report.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 300.
-
 Pattern: `^[a-zA-Z0-9-_\.]+$`
-
 Required: No
 
-**status**
-
-The current status of the assessment report.
-
+ ** status **   <a name="auditmanager-Type-AssessmentReportMetadata-status"></a>
+ The current status of the assessment report.
 Type: String
-
 Valid Values: `COMPLETE | IN_PROGRESS | FAILED`
-
 Required: No
 
 ## See Also
+<a name="API_AssessmentReportMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/assessmentreportmetadata.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/assessmentreportmetadata.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/assessmentreportmetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssessmentReportEvidenceError
-
-AssessmentReportsDestination
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/AssessmentReportMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/AssessmentReportMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/AssessmentReportMetadata)
 
 All content copied from https://docs.aws.amazon.com/.

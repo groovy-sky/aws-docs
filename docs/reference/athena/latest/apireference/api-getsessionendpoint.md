@@ -3,38 +3,36 @@ title: "GetSessionEndpoint"
 ---
 
 # GetSessionEndpoint
+<a name="API_GetSessionEndpoint"></a>
 
 Gets a connection endpoint and authentication token for a given session Id.
 
 ## Request Syntax
+<a name="API_GetSessionEndpoint_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "SessionId": "string"
+   "SessionId": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_GetSessionEndpoint_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[SessionId](#API_GetSessionEndpoint_RequestSyntax)**
-
+ ** [SessionId](#API_GetSessionEndpoint_RequestSyntax) **   <a name="athena-GetSessionEndpoint-request-SessionId"></a>
 The session ID.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_GetSessionEndpoint_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "AuthToken": "string",
    "AuthTokenExpirationTime": number,
@@ -43,90 +41,58 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_GetSessionEndpoint_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[AuthToken](#API_GetSessionEndpoint_ResponseSyntax)**
-
+ ** [AuthToken](#API_GetSessionEndpoint_ResponseSyntax) **   <a name="athena-GetSessionEndpoint-response-AuthToken"></a>
 Authentication token for the connection
-
 Type: String
 
-**[AuthTokenExpirationTime](#API_GetSessionEndpoint_ResponseSyntax)**
-
+ ** [AuthTokenExpirationTime](#API_GetSessionEndpoint_ResponseSyntax) **   <a name="athena-GetSessionEndpoint-response-AuthTokenExpirationTime"></a>
 Expiration time of the auth token.
-
 Type: Timestamp
 
-**[EndpointUrl](#API_GetSessionEndpoint_ResponseSyntax)**
-
+ ** [EndpointUrl](#API_GetSessionEndpoint_ResponseSyntax) **   <a name="athena-GetSessionEndpoint-response-EndpointUrl"></a>
 The endpoint for connecting to the session.
-
 Type: String
 
 ## Errors
+<a name="API_GetSessionEndpoint_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-Indicates a platform issue, which may be due to a transient condition or
-outage.
-
+ ** InternalServerException **
+Indicates a platform issue, which may be due to a transient condition or outage.
 HTTP Status Code: 500
 
-**InvalidRequestException**
-
-Indicates that something is wrong with the input to the request. For example, a
-required parameter may be missing or out of range.
-
-**AthenaErrorCode**
-
-The error code returned when the query execution failed to process, or when the
-processing request for the named query failed.
-
+ ** InvalidRequestException **
+Indicates that something is wrong with the input to the request. For example, a required parameter may be missing or out of range.
+ ** AthenaErrorCode **
+The error code returned when the query execution failed to process, or when the processing request for the named query failed.
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource, such as a workgroup, was not found.
-
-**ResourceName**
-
+ ** ResourceName **
 The name of the Amazon resource.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_GetSessionEndpoint_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/getsessionendpoint.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getsessionendpoint.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetSession
-
-GetSessionStatus
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/GetSessionEndpoint)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/GetSessionEndpoint)
 
 All content copied from https://docs.aws.amazon.com/.

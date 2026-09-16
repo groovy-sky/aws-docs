@@ -3,30 +3,20 @@ title: "Create Amazon Ion tables"
 ---
 
 # Create Amazon Ion tables
+<a name="ion-serde-using-create-table"></a>
 
-To create a table in Athena from data stored in Amazon Ion format, you can use one of the
-following techniques in a CREATE TABLE statement:
+To create a table in Athena from data stored in Amazon Ion format, you can use one of the following techniques in a CREATE TABLE statement:
++ Specify `STORED AS ION`. In this usage, you do not have to specify the Amazon Ion Hive SerDe explicitly. This choice is the more straightforward option.
++ Specify the Amazon Ion class paths in the `ROW FORMAT SERDE`, `INPUTFORMAT`, and `OUTPUTFORMAT` fields.
 
-- Specify `STORED AS ION`. In this usage, you do not have to specify the
-Amazon Ion Hive SerDe explicitly. This choice is the more straightforward
-option.
-
-- Specify the Amazon Ion class paths in the `ROW FORMAT SERDE`,
-`INPUTFORMAT`, and `OUTPUTFORMAT` fields.
-
-You can also use `CREATE TABLE AS SELECT` (CTAS) statements to create Amazon
-Ion tables in Athena. For information, see [Use CTAS and INSERT INTO to create Amazon Ion tables](ion-serde-using-ctas-and-insert-into-to-create-ion-tables.md).
+You can also use `CREATE TABLE AS SELECT` (CTAS) statements to create Amazon Ion tables in Athena. For information, see [Use CTAS and INSERT INTO to create Amazon Ion tables](ion-serde-using-ctas-and-insert-into-to-create-ion-tables.md).
 
 ## Specify STORED AS ION
+<a name="ion-serde-specifying-stored-as-ion"></a>
 
-The following example `CREATE TABLE` statement uses `STORED AS
-                ION` before the `LOCATION` clause to create a table based on flight
-data in Amazon Ion format. The `LOCATION` clause specifies the bucket or
-folder where the input files in Ion format are located. All files in the specified
-location are scanned.
+The following example `CREATE TABLE` statement uses `STORED AS ION` before the `LOCATION` clause to create a table based on flight data in Amazon Ion format. The `LOCATION` clause specifies the bucket or folder where the input files in Ion format are located. All files in the specified location are scanned.
 
-```sql
-
+```
 CREATE EXTERNAL TABLE flights_ion (
     yr INT,
     quarter INT,
@@ -42,18 +32,19 @@ LOCATION 's3://amzn-s3-demo-bucket/'
 ```
 
 ## Specify the Amazon Ion class paths
+<a name="ion-serde-specifying-the-ion-class-paths"></a>
 
-Instead of using the `STORED AS ION` syntax, you can explicitly specify the
-Ion class path values for the `ROW FORMAT SERDE`, `INPUTFORMAT`,
-and `OUTPUTFORMAT` clauses as follows.
+Instead of using the `STORED AS ION` syntax, you can explicitly specify the Ion class path values for the `ROW FORMAT SERDE`, `INPUTFORMAT`, and `OUTPUTFORMAT` clauses as follows.
 
-ParameterIon class path`ROW FORMAT SERDE``'com.amazon.ionhiveserde.IonHiveSerDe'``STORED AS INPUTFORMAT``'com.amazon.ionhiveserde.formats.IonInputFormat'``OUTPUTFORMAT``'com.amazon.ionhiveserde.formats.IonOutputFormat'`
+| Parameter | Ion class path |
+| --- | --- |
+| ROW FORMAT SERDE | 'com.amazon.ionhiveserde.IonHiveSerDe' |
+| STORED AS INPUTFORMAT | 'com.amazon.ionhiveserde.formats.IonInputFormat' |
+| OUTPUTFORMAT | 'com.amazon.ionhiveserde.formats.IonOutputFormat' |
 
-The following DDL query uses this technique to create the same external table as in
-the previous example.
+The following DDL query uses this technique to create the same external table as in the previous example.
 
-```sql
-
+```
 CREATE EXTERNAL TABLE flights_ion (
     yr INT,
     quarter INT,
@@ -73,13 +64,6 @@ OUTPUTFORMAT
 LOCATION 's3://amzn-s3-demo-bucket/'
 ```
 
-For information about the SerDe properties for `CREATE TABLE` statements in
-Athena, see [Amazon Ion SerDe property reference](ion-serde-using-ion-serde-properties.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Ion Hive SerDe
-
-Use CTAS to create Amazon Ion tables
+For information about the SerDe properties for `CREATE TABLE` statements in Athena, see [Amazon Ion SerDe property reference](ion-serde-using-ion-serde-properties.md).
 
 All content copied from https://docs.aws.amazon.com/.

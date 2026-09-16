@@ -3,39 +3,36 @@ title: "GetSession"
 ---
 
 # GetSession
+<a name="API_GetSession"></a>
 
-Gets the full details of a previously created session, including the session status
-and configuration.
+Gets the full details of a previously created session, including the session status and configuration.
 
 ## Request Syntax
+<a name="API_GetSession_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "SessionId": "string"
+   "SessionId": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_GetSession_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[SessionId](#API_GetSession_RequestSyntax)**
-
+ ** [SessionId](#API_GetSession_RequestSyntax) **   <a name="athena-GetSession-request-SessionId"></a>
 The session ID.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_GetSession_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "Description": "string",
    "EngineConfiguration": {
@@ -105,144 +102,91 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_GetSession_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[Description](#API_GetSession_ResponseSyntax)**
-
+ ** [Description](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-Description"></a>
 The session description.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
-**[EngineConfiguration](#API_GetSession_ResponseSyntax)**
-
+ ** [EngineConfiguration](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-EngineConfiguration"></a>
 Contains engine configuration information like DPU usage.
+Type: [EngineConfiguration](API_EngineConfiguration.md) object
 
-Type: [EngineConfiguration](api-engineconfiguration.md) object
-
-**[EngineVersion](#API_GetSession_ResponseSyntax)**
-
-The engine version used by the session (for example, `PySpark engine version
-                3`). You can get a list of engine versions by calling [ListEngineVersions](api-listengineversions.md).
-
+ ** [EngineVersion](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-EngineVersion"></a>
+The engine version used by the session (for example, `PySpark engine version 3`). You can get a list of engine versions by calling [ListEngineVersions](API_ListEngineVersions.md).
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
 
-**[MonitoringConfiguration](#API_GetSession_ResponseSyntax)**
+ ** [MonitoringConfiguration](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-MonitoringConfiguration"></a>
+Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc.
+Type: [MonitoringConfiguration](API_MonitoringConfiguration.md) object
 
-Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets,
-Amazon CloudWatch log groups etc.
-
-Type: [MonitoringConfiguration](api-monitoringconfiguration.md) object
-
-**[NotebookVersion](#API_GetSession_ResponseSyntax)**
-
+ ** [NotebookVersion](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-NotebookVersion"></a>
 The notebook version.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
 
-**[SessionConfiguration](#API_GetSession_ResponseSyntax)**
-
+ ** [SessionConfiguration](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-SessionConfiguration"></a>
 Contains the workgroup configuration information used by the session.
+Type: [SessionConfiguration](API_SessionConfiguration.md) object
 
-Type: [SessionConfiguration](api-sessionconfiguration.md) object
-
-**[SessionId](#API_GetSession_ResponseSyntax)**
-
+ ** [SessionId](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-SessionId"></a>
 The session ID.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
 
-**[Statistics](#API_GetSession_ResponseSyntax)**
-
+ ** [Statistics](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-Statistics"></a>
 Contains the DPU execution time.
+Type: [SessionStatistics](API_SessionStatistics.md) object
 
-Type: [SessionStatistics](api-sessionstatistics.md) object
-
-**[Status](#API_GetSession_ResponseSyntax)**
-
+ ** [Status](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-Status"></a>
 Contains information about the status of the session.
+Type: [SessionStatus](API_SessionStatus.md) object
 
-Type: [SessionStatus](api-sessionstatus.md) object
-
-**[WorkGroup](#API_GetSession_ResponseSyntax)**
-
+ ** [WorkGroup](#API_GetSession_ResponseSyntax) **   <a name="athena-GetSession-response-WorkGroup"></a>
 The workgroup to which the session belongs.
-
 Type: String
-
 Pattern: `[a-zA-Z0-9._-]{1,128}`
 
 ## Errors
+<a name="API_GetSession_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerException**
-
-Indicates a platform issue, which may be due to a transient condition or
-outage.
-
+ ** InternalServerException **
+Indicates a platform issue, which may be due to a transient condition or outage.
 HTTP Status Code: 500
 
-**InvalidRequestException**
-
-Indicates that something is wrong with the input to the request. For example, a
-required parameter may be missing or out of range.
-
-**AthenaErrorCode**
-
-The error code returned when the query execution failed to process, or when the
-processing request for the named query failed.
-
+ ** InvalidRequestException **
+Indicates that something is wrong with the input to the request. For example, a required parameter may be missing or out of range.
+ ** AthenaErrorCode **
+The error code returned when the query execution failed to process, or when the processing request for the named query failed.
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 A resource, such as a workgroup, was not found.
-
-**ResourceName**
-
+ ** ResourceName **
 The name of the Amazon resource.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_GetSession_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/getsession.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getsession.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetResourceDashboard
-
-GetSessionEndpoint
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/GetSession)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/GetSession)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/GetSession)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/GetSession)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/GetSession)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/GetSession)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/GetSession)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/GetSession)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/GetSession)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/GetSession)
 
 All content copied from https://docs.aws.amazon.com/.

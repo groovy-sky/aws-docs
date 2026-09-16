@@ -3,72 +3,47 @@ title: "SessionSummary"
 ---
 
 # SessionSummary
+<a name="API_SessionSummary"></a>
 
 Contains summary information about a session.
 
 ## Contents
+<a name="API_SessionSummary_Contents"></a>
 
-**Description**
-
+ ** Description **   <a name="athena-Type-SessionSummary-Description"></a>
 The session description.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
-**EngineVersion**
-
-The engine version used by the session (for example, `PySpark engine version
-                3`).
-
-Type: [EngineVersion](api-engineversion.md) object
-
+ ** EngineVersion **   <a name="athena-Type-SessionSummary-EngineVersion"></a>
+The engine version used by the session (for example, `PySpark engine version 3`).
+Type: [EngineVersion](API_EngineVersion.md) object
 Required: No
 
-**NotebookVersion**
-
+ ** NotebookVersion **   <a name="athena-Type-SessionSummary-NotebookVersion"></a>
 The notebook version.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Required: No
 
-**SessionId**
-
+ ** SessionId **   <a name="athena-Type-SessionSummary-SessionId"></a>
 The session ID.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: No
 
-**Status**
-
+ ** Status **   <a name="athena-Type-SessionSummary-Status"></a>
 Contains information about the session status.
-
-Type: [SessionStatus](api-sessionstatus.md) object
-
+Type: [SessionStatus](API_SessionStatus.md) object
 Required: No
 
 ## See Also
+<a name="API_SessionSummary_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/sessionsummary.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/sessionsummary.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/sessionsummary.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SessionStatus
-
-TableMetadata
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/SessionSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/SessionSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/SessionSummary)
 
 All content copied from https://docs.aws.amazon.com/.

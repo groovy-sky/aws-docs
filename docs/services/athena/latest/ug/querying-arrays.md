@@ -3,42 +3,23 @@ title: "Query arrays"
 ---
 
 # Query arrays
+<a name="querying-arrays"></a>
 
-Amazon Athena lets you create arrays, concatenate them, convert them to different data types,
-and then filter, flatten, and sort them.
+Amazon Athena lets you create arrays, concatenate them, convert them to different data types, and then filter, flatten, and sort them.
 
-###### Topics
-
-- [Create arrays](creating-arrays.md)
-
-- [Concatenate strings and arrays](concatenating-strings-and-arrays.md)
-
-- [Convert array data types](converting-array-data-types.md)
-
-- [Find array lengths](finding-lengths.md)
-
-- [Access array elements](accessing-array-elements.md)
-
-- [Flatten nested arrays](flattening-arrays.md)
-
-- [Create arrays from subqueries](creating-arrays-from-subqueries.md)
-
-- [Filter arrays](filtering-arrays.md)
-
-- [Sort arrays](sorting-arrays.md)
-
-- [Use aggregation functions with arrays](arrays-and-aggregation.md)
-
-- [Convert arrays to strings](converting-arrays-to-strings.md)
-
-- [Use arrays to create maps](arrays-create-maps.md)
-
-- [Query arrays with complex types](rows-and-structs.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Update tables with partitions
-
-Create arrays
+**Topics**
++ [Create arrays](creating-arrays.md)
++ [Concatenate strings and arrays](concatenating-strings-and-arrays.md)
++ [Convert array data types](converting-array-data-types.md)
++ [Find array lengths](finding-lengths.md)
++ [Access array elements](accessing-array-elements.md)
++ [Flatten nested arrays](flattening-arrays.md)
++ [Create arrays from subqueries](creating-arrays-from-subqueries.md)
++ [Filter arrays](filtering-arrays.md)
++ [Sort arrays](sorting-arrays.md)
++ [Use aggregation functions with arrays](arrays-and-aggregation.md)
++ [Convert arrays to strings](converting-arrays-to-strings.md)
++ [Use arrays to create maps](arrays-create-maps.md)
++ [Query arrays with complex types](rows-and-structs.md)
 
 All content copied from https://docs.aws.amazon.com/.

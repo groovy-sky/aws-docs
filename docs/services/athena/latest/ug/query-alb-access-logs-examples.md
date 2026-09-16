@@ -3,12 +3,11 @@ title: "Example queries for ALB access logs"
 ---
 
 # Example queries for ALB access logs
+<a name="query-alb-access-logs-examples"></a>
 
-The following query counts the number of HTTP GET requests received by the load
-balancer grouped by the client IP address:
+The following query counts the number of HTTP GET requests received by the load balancer grouped by the client IP address:
 
-```sql
-
+```
 SELECT COUNT(request_verb) AS
  count,
  request_verb,
@@ -20,19 +19,16 @@ LIMIT 100;
 
 Another query shows the URLs visited by Safari browser users:
 
-```sql
-
+```
 SELECT request_url
 FROM alb_access_logs
 WHERE user_agent LIKE '%Safari%'
 LIMIT 10;
 ```
 
-The following query shows records that have ELB status code values greater than or
-equal to 500.
+The following query shows records that have ELB status code values greater than or equal to 500.
 
-```sql
-
+```
 SELECT * FROM alb_access_logs
 WHERE elb_status_code >= 500
 ```
@@ -40,7 +36,6 @@ WHERE elb_status_code >= 500
 The following example shows how to parse the logs by `datetime`:
 
 ```
-
 SELECT client_ip, sum(received_bytes)
 FROM alb_access_logs
 WHERE parse_datetime(time,'yyyy-MM-dd''T''HH:mm:ss.SSSSSS''Z')
@@ -49,20 +44,12 @@ WHERE parse_datetime(time,'yyyy-MM-dd''T''HH:mm:ss.SSSSSS''Z')
 GROUP BY client_ip;
 ```
 
-The following query queries the table that uses partition projection for all ALB
-access logs from the specified day.
+The following query queries the table that uses partition projection for all ALB access logs from the specified day.
 
-```sql
-
+```
 SELECT *
 FROM alb_access_logs
 WHERE day = '2022/02/12'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Partition projection with access logs
-
-Connection logs
 
 All content copied from https://docs.aws.amazon.com/.

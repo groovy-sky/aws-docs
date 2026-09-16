@@ -3,153 +3,78 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported:
-
-- [BatchGetNamedQuery](api-batchgetnamedquery.md)
-
-- [BatchGetPreparedStatement](api-batchgetpreparedstatement.md)
-
-- [BatchGetQueryExecution](api-batchgetqueryexecution.md)
-
-- [CancelCapacityReservation](api-cancelcapacityreservation.md)
-
-- [CreateCapacityReservation](api-createcapacityreservation.md)
-
-- [CreateDataCatalog](api-createdatacatalog.md)
-
-- [CreateNamedQuery](api-createnamedquery.md)
-
-- [CreateNotebook](api-createnotebook.md)
-
-- [CreatePreparedStatement](api-createpreparedstatement.md)
-
-- [CreatePresignedNotebookUrl](api-createpresignednotebookurl.md)
-
-- [CreateWorkGroup](api-createworkgroup.md)
-
-- [DeleteCapacityReservation](api-deletecapacityreservation.md)
-
-- [DeleteDataCatalog](api-deletedatacatalog.md)
-
-- [DeleteNamedQuery](api-deletenamedquery.md)
-
-- [DeleteNotebook](api-deletenotebook.md)
-
-- [DeletePreparedStatement](api-deletepreparedstatement.md)
-
-- [DeleteWorkGroup](api-deleteworkgroup.md)
-
-- [ExportNotebook](api-exportnotebook.md)
-
-- [GetCalculationExecution](api-getcalculationexecution.md)
-
-- [GetCalculationExecutionCode](api-getcalculationexecutioncode.md)
-
-- [GetCalculationExecutionStatus](api-getcalculationexecutionstatus.md)
-
-- [GetCapacityAssignmentConfiguration](api-getcapacityassignmentconfiguration.md)
-
-- [GetCapacityReservation](api-getcapacityreservation.md)
-
-- [GetDatabase](api-getdatabase.md)
-
-- [GetDataCatalog](api-getdatacatalog.md)
-
-- [GetNamedQuery](api-getnamedquery.md)
-
-- [GetNotebookMetadata](api-getnotebookmetadata.md)
-
-- [GetPreparedStatement](api-getpreparedstatement.md)
-
-- [GetQueryExecution](api-getqueryexecution.md)
-
-- [GetQueryResults](api-getqueryresults.md)
-
-- [GetQueryRuntimeStatistics](api-getqueryruntimestatistics.md)
-
-- [GetResourceDashboard](api-getresourcedashboard.md)
-
-- [GetSession](api-getsession.md)
-
-- [GetSessionEndpoint](api-getsessionendpoint.md)
-
-- [GetSessionStatus](api-getsessionstatus.md)
-
-- [GetTableMetadata](api-gettablemetadata.md)
-
-- [GetWorkGroup](api-getworkgroup.md)
-
-- [ImportNotebook](api-importnotebook.md)
-
-- [ListApplicationDPUSizes](api-listapplicationdpusizes.md)
-
-- [ListCalculationExecutions](api-listcalculationexecutions.md)
-
-- [ListCapacityReservations](api-listcapacityreservations.md)
-
-- [ListDatabases](api-listdatabases.md)
-
-- [ListDataCatalogs](api-listdatacatalogs.md)
-
-- [ListEngineVersions](api-listengineversions.md)
-
-- [ListExecutors](api-listexecutors.md)
-
-- [ListNamedQueries](api-listnamedqueries.md)
-
-- [ListNotebookMetadata](api-listnotebookmetadata.md)
-
-- [ListNotebookSessions](api-listnotebooksessions.md)
-
-- [ListPreparedStatements](api-listpreparedstatements.md)
-
-- [ListQueryExecutions](api-listqueryexecutions.md)
-
-- [ListSessions](api-listsessions.md)
-
-- [ListTableMetadata](api-listtablemetadata.md)
-
-- [ListTagsForResource](api-listtagsforresource.md)
-
-- [ListWorkGroups](api-listworkgroups.md)
-
-- [PutCapacityAssignmentConfiguration](api-putcapacityassignmentconfiguration.md)
-
-- [StartCalculationExecution](api-startcalculationexecution.md)
-
-- [StartQueryExecution](api-startqueryexecution.md)
-
-- [StartSession](api-startsession.md)
-
-- [StopCalculationExecution](api-stopcalculationexecution.md)
-
-- [StopQueryExecution](api-stopqueryexecution.md)
-
-- [TagResource](api-tagresource.md)
-
-- [TerminateSession](api-terminatesession.md)
-
-- [UntagResource](api-untagresource.md)
-
-- [UpdateCapacityReservation](api-updatecapacityreservation.md)
-
-- [UpdateDataCatalog](api-updatedatacatalog.md)
-
-- [UpdateNamedQuery](api-updatenamedquery.md)
-
-- [UpdateNotebook](api-updatenotebook.md)
-
-- [UpdateNotebookMetadata](api-updatenotebookmetadata.md)
-
-- [UpdatePreparedStatement](api-updatepreparedstatement.md)
-
-- [UpdateWorkGroup](api-updateworkgroup.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-BatchGetNamedQuery
++  [BatchGetNamedQuery](API_BatchGetNamedQuery.md)
++  [BatchGetPreparedStatement](API_BatchGetPreparedStatement.md)
++  [BatchGetQueryExecution](API_BatchGetQueryExecution.md)
++  [CancelCapacityReservation](API_CancelCapacityReservation.md)
++  [CreateCapacityReservation](API_CreateCapacityReservation.md)
++  [CreateDataCatalog](API_CreateDataCatalog.md)
++  [CreateNamedQuery](API_CreateNamedQuery.md)
++  [CreateNotebook](API_CreateNotebook.md)
++  [CreatePreparedStatement](API_CreatePreparedStatement.md)
++  [CreatePresignedNotebookUrl](API_CreatePresignedNotebookUrl.md)
++  [CreateWorkGroup](API_CreateWorkGroup.md)
++  [DeleteCapacityReservation](API_DeleteCapacityReservation.md)
++  [DeleteDataCatalog](API_DeleteDataCatalog.md)
++  [DeleteNamedQuery](API_DeleteNamedQuery.md)
++  [DeleteNotebook](API_DeleteNotebook.md)
++  [DeletePreparedStatement](API_DeletePreparedStatement.md)
++  [DeleteWorkGroup](API_DeleteWorkGroup.md)
++  [ExportNotebook](API_ExportNotebook.md)
++  [GetCalculationExecution](API_GetCalculationExecution.md)
++  [GetCalculationExecutionCode](API_GetCalculationExecutionCode.md)
++  [GetCalculationExecutionStatus](API_GetCalculationExecutionStatus.md)
++  [GetCapacityAssignmentConfiguration](API_GetCapacityAssignmentConfiguration.md)
++  [GetCapacityReservation](API_GetCapacityReservation.md)
++  [GetDatabase](API_GetDatabase.md)
++  [GetDataCatalog](API_GetDataCatalog.md)
++  [GetNamedQuery](API_GetNamedQuery.md)
++  [GetNotebookMetadata](API_GetNotebookMetadata.md)
++  [GetPreparedStatement](API_GetPreparedStatement.md)
++  [GetQueryExecution](API_GetQueryExecution.md)
++  [GetQueryResults](API_GetQueryResults.md)
++  [GetQueryRuntimeStatistics](API_GetQueryRuntimeStatistics.md)
++  [GetResourceDashboard](API_GetResourceDashboard.md)
++  [GetSession](API_GetSession.md)
++  [GetSessionEndpoint](API_GetSessionEndpoint.md)
++  [GetSessionStatus](API_GetSessionStatus.md)
++  [GetTableMetadata](API_GetTableMetadata.md)
++  [GetWorkGroup](API_GetWorkGroup.md)
++  [ImportNotebook](API_ImportNotebook.md)
++  [ListApplicationDPUSizes](API_ListApplicationDPUSizes.md)
++  [ListCalculationExecutions](API_ListCalculationExecutions.md)
++  [ListCapacityReservations](API_ListCapacityReservations.md)
++  [ListDatabases](API_ListDatabases.md)
++  [ListDataCatalogs](API_ListDataCatalogs.md)
++  [ListEngineVersions](API_ListEngineVersions.md)
++  [ListExecutors](API_ListExecutors.md)
++  [ListNamedQueries](API_ListNamedQueries.md)
++  [ListNotebookMetadata](API_ListNotebookMetadata.md)
++  [ListNotebookSessions](API_ListNotebookSessions.md)
++  [ListPreparedStatements](API_ListPreparedStatements.md)
++  [ListQueryExecutions](API_ListQueryExecutions.md)
++  [ListSessions](API_ListSessions.md)
++  [ListTableMetadata](API_ListTableMetadata.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [ListWorkGroups](API_ListWorkGroups.md)
++  [PutCapacityAssignmentConfiguration](API_PutCapacityAssignmentConfiguration.md)
++  [StartCalculationExecution](API_StartCalculationExecution.md)
++  [StartQueryExecution](API_StartQueryExecution.md)
++  [StartSession](API_StartSession.md)
++  [StopCalculationExecution](API_StopCalculationExecution.md)
++  [StopQueryExecution](API_StopQueryExecution.md)
++  [TagResource](API_TagResource.md)
++  [TerminateSession](API_TerminateSession.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateCapacityReservation](API_UpdateCapacityReservation.md)
++  [UpdateDataCatalog](API_UpdateDataCatalog.md)
++  [UpdateNamedQuery](API_UpdateNamedQuery.md)
++  [UpdateNotebook](API_UpdateNotebook.md)
++  [UpdateNotebookMetadata](API_UpdateNotebookMetadata.md)
++  [UpdatePreparedStatement](API_UpdatePreparedStatement.md)
++  [UpdateWorkGroup](API_UpdateWorkGroup.md)
 
 All content copied from https://docs.aws.amazon.com/.

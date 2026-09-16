@@ -3,20 +3,24 @@ title: "Use tag-based IAM access control policies"
 ---
 
 # Use tag-based IAM access control policies
+<a name="tags-access-control"></a>
 
-Having tags allows you to write an IAM policy that includes the
-`Condition` block to control access to a resource based on its tags. This
-section includes tag policy examples for workgroup and data catalog resources.
+Having tags allows you to write an IAM policy that includes the `Condition` block to control access to a resource based on its tags. This section includes tag policy examples for workgroup and data catalog resources.
 
 ## Tag policy examples for workgroups
+<a name="tag-policy-examples-workgroups"></a>
 
-The following IAM policy allows you to run queries and interact with
-tags for the workgroup named `workgroupA`:
+### Example – Basic tagging policy
+<a name="tag-policy-examples-workgroups-basic"></a>
 
-JSON
+The following IAM policy allows you to run queries and interact with tags for the workgroup named `workgroupA`:
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,22 +62,25 @@ JSON
                 "athena:UpdatePreparedStatement",
                 "athena:DeletePreparedStatement"
             ],
-            "Resource": "arn:aws:athena:us-east-1:123456789012:workgroup/workgroupA"
+            "Resource": "arn:aws:athena:{{us-east-1}}:{{123456789012}}:workgroup/{{workgroupA}}"
         }
     ]
 }
-
 ```
 
-Tags that are associated with a resource like a workgroup are referred to
-as resource tags. Resource tags let you write policy blocks like the
-following that deny the listed actions on any workgroup tagged with a
-key-value pair like `stack`, `production`.
+------
 
-JSON
+### Example – Policy block that denies actions on a workgroup based on a tag key and tag value pair
+<a name="tag-policy-examples-workgroups-basic"></a>
 
-```json
+Tags that are associated with a resource like a workgroup are referred to as resource tags. Resource tags let you write policy blocks like the following that deny the listed actions on any workgroup tagged with a key-value pair like `stack`, `production`.
 
+------
+#### [ JSON ]
+
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -104,36 +111,33 @@ JSON
                 "athena:UpdatePreparedStatement",
                 "athena:DeletePreparedStatement"
             ],
-            "Resource": "arn:aws:athena:us-east-1:123456789012:workgroup/*",
+            "Resource": "arn:aws:athena:{{us-east-1}}:{{123456789012}}:workgroup/*",
             "Condition": {
                 "StringEquals": {
-                    "aws:ResourceTag/stack": "production"
+                    "aws:ResourceTag/{{stack}}": "{{production}}"
                 }
             }
         }
     ]
 }
-
 ```
 
-Tags that are passed in as parameters to operations that change tags (for
-example, `TagResource`, `UntagResource`, or
-`CreateWorkGroup` with tags) are referred to as request tags.
-The following example policy block allows the `CreateWorkGroup`
-operation only if one of the tags passed has the key `costcenter`
-and the value `1`, `2`, or `3`.
+------
 
-###### Note
+### Example – Policy block that restricts tag-changing action requests to specified tags
+<a name="tag-policy-examples-workgroups-restricted-specific"></a>
 
-If you want to allow an IAM role to pass in tags as part of a
-`CreateWorkGroup` operation, make sure that you give the
-role permissions to the `TagResource` and
-`CreateWorkGroup` actions.
+Tags that are passed in as parameters to operations that change tags (for example, `TagResource`, `UntagResource`, or `CreateWorkGroup` with tags) are referred to as request tags. The following example policy block allows the `CreateWorkGroup` operation only if one of the tags passed has the key `costcenter` and the value `1`, `2`, or `3`.
 
-JSON
+**Note**
+If you want to allow an IAM role to pass in tags as part of a `CreateWorkGroup` operation, make sure that you give the role permissions to the `TagResource` and `CreateWorkGroup` actions.
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -143,31 +147,37 @@ JSON
                 "athena:CreateWorkGroup",
                 "athena:TagResource"
             ],
-            "Resource": "arn:aws:athena:us-east-1:123456789012:workgroup/*",
+            "Resource": "arn:aws:athena:{{us-east-1}}:{{123456789012}}:workgroup/*",
             "Condition": {
                 "StringEquals": {
-                    "aws:RequestTag/costcenter": [
-                        "1",
-                        "2",
-                        "3"
+                    "aws:RequestTag/{{costcenter}}": [
+                        "{{1}}",
+                        "{{2}}",
+                        "{{3}}"
                     ]
                 }
             }
         }
     ]
 }
-
 ```
 
+------
+
 ## Tag policy examples for data catalogs
+<a name="tag-policy-examples-data-catalogs"></a>
 
-The following IAM policy allows you to interact with tags for the data
-catalog named `datacatalogA`:
+### Example – Basic tagging policy
+<a name="tag-policy-examples-data-catalogs-basic"></a>
 
-JSON
+The following IAM policy allows you to interact with tags for the data catalog named `datacatalogA`:
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -205,7 +215,7 @@ JSON
                 "athena:DeleteNamedQuery"
             ],
             "Resource": [
-                "arn:aws:athena:us-east-1:123456789012:workgroup/*"
+                "arn:aws:athena:{{us-east-1}}:{{123456789012}}:workgroup/*"
             ]
         },
         {
@@ -223,22 +233,25 @@ JSON
                 "athena:UntagResource",
                 "athena:ListTagsForResource"
             ],
-            "Resource": "arn:aws:athena:us-east-1:123456789012:datacatalog/datacatalogA"
+            "Resource": "arn:aws:athena:{{us-east-1}}:{{123456789012}}:datacatalog/{{datacatalogA}}"
         }
     ]
 }
-
 ```
 
-You can use resource tags to write policy blocks that deny specific
-actions on data catalogs that are tagged with specific tag key-value pairs.
-The following example policy denies actions on data catalogs that have the
-tag key-value pair `stack`, `production`.
+------
 
-JSON
+### Example – Policy block that denies actions on a Data Catalog based on a tag key and tag value pair
+<a name="tag-policy-examples-data-catalogs-deny-actions"></a>
 
-```json
+You can use resource tags to write policy blocks that deny specific actions on data catalogs that are tagged with specific tag key-value pairs. The following example policy denies actions on data catalogs that have the tag key-value pair `stack`, `production`.
 
+------
+#### [ JSON ]
+
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -258,37 +271,33 @@ JSON
                 "athena:UntagResource",
                 "athena:ListTagsForResource"
             ],
-            "Resource": "arn:aws:athena:us-east-1:123456789012:datacatalog/*",
+            "Resource": "arn:aws:athena:{{us-east-1}}:{{123456789012}}:datacatalog/*",
             "Condition": {
                 "StringEquals": {
-                    "aws:ResourceTag/stack": "production"
+                    "aws:ResourceTag/{{stack}}": "{{production}}"
                 }
             }
         }
     ]
 }
-
 ```
 
-Tags that are passed in as parameters to operations that change tags (for
-example, `TagResource`, `UntagResource`, or
-`CreateDataCatalog` with tags) are referred to as request
-tags. The following example policy block allows the
-`CreateDataCatalog` operation only if one of the tags passed
-has the key `costcenter` and the value `1`,
-`2`, or `3`.
+------
 
-###### Note
+### Example – Policy block that restricts tag-changing action requests to specified tags
+<a name="tag-policy-examples-data-catalogs-action-specific-tags"></a>
 
-If you want to allow an IAM role to pass in tags as part of a
-`CreateDataCatalog` operation, make sure that you give
-the role permissions to the `TagResource` and
-`CreateDataCatalog` actions.
+Tags that are passed in as parameters to operations that change tags (for example, `TagResource`, `UntagResource`, or `CreateDataCatalog` with tags) are referred to as request tags. The following example policy block allows the `CreateDataCatalog` operation only if one of the tags passed has the key `costcenter` and the value `1`, `2`, or `3`.
 
-JSON
+**Note**
+If you want to allow an IAM role to pass in tags as part of a `CreateDataCatalog` operation, make sure that you give the role permissions to the `TagResource` and `CreateDataCatalog` actions.
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -298,26 +307,21 @@ JSON
                 "athena:CreateDataCatalog",
                 "athena:TagResource"
             ],
-            "Resource": "arn:aws:athena:us-east-1:123456789012:datacatalog/*",
+            "Resource": "arn:aws:athena:{{us-east-1}}:{{123456789012}}:datacatalog/*",
             "Condition": {
                 "StringEquals": {
-                    "aws:RequestTag/costcenter": [
-                        "1",
-                        "2",
-                        "3"
+                    "aws:RequestTag/{{costcenter}}": [
+                        "{{1}}",
+                        "{{2}}",
+                        "{{3}}"
                     ]
                 }
             }
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-API and CLI tag operations
-
-Service Quotas
+------
 
 All content copied from https://docs.aws.amazon.com/.

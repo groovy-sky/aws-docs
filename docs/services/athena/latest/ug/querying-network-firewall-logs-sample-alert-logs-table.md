@@ -3,15 +3,12 @@ title: "Create and query a table for alert logs"
 ---
 
 # Create and query a table for alert logs
+<a name="querying-network-firewall-logs-sample-alert-logs-table"></a>
 
-1. Modify the following sample DDL statement to conform to the structure of your
-    alert log. You may need to update the statement to include the columns for the
-    latest version of the logs. For more information, see [Contents of a firewall log](../../../network-firewall/latest/developerguide/firewall-logging.md#firewall-logging-contents) in the
-    _AWS Network Firewall Developer Guide_.
+1. Modify the following sample DDL statement to conform to the structure of your alert log. You may need to update the statement to include the columns for the latest version of the logs. For more information, see [Contents of a firewall log](https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-logging.html#firewall-logging-contents) in the *AWS Network Firewall Developer Guide*.
 
-```sql
-
-CREATE EXTERNAL TABLE network_firewall_alert_logs (
+   ```
+   CREATE EXTERNAL TABLE network_firewall_alert_logs (
      firewall_name string,
      availability_zone string,
      event_timestamp string,
@@ -58,37 +55,25 @@ CREATE EXTERNAL TABLE network_firewall_alert_logs (
        user_agent:string,
        url:string
       >
-)
+   )
     ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
-    LOCATION 's3://amzn-s3-demo-bucket/path_to_alert_logs_folder/';
-```
+    LOCATION 's3://amzn-s3-demo-bucket/{{path_to_alert_logs_folder}}/';
+   ```
 
-2. Modify the `LOCATION` clause to specify the folder for your logs in
-    Amazon S3.
+1. Modify the `LOCATION` clause to specify the folder for your logs in Amazon S3.
 
-3. Run your `CREATE TABLE` query in the Athena query editor. After the
-    query completes, Athena registers the `network_firewall_alert_logs`
-    table, making the data that it points to ready for queries.
+1. Run your `CREATE TABLE` query in the Athena query editor. After the query completes, Athena registers the `network_firewall_alert_logs` table, making the data that it points to ready for queries.
 
 ## Example query
+<a name="querying-network-firewall-logs-alert-log-sample-query"></a>
 
-The sample alert log query in this section filters for events in which TLS
-inspection was performed that have alerts with a severity level of 2 or
-higher.
+The sample alert log query in this section filters for events in which TLS inspection was performed that have alerts with a severity level of 2 or higher.
 
-The query uses aliases to create output column headings that show the
-`struct` that the column belongs to. For example, the column heading
-for the `event.alert.category` field is `event_alert_category`
-instead of just `category`. To customize the column names further, you
-can modify the aliases to suit your preferences. For example, you can use
-underscores or other separators to delimit the `struct` names and field
-names.
+The query uses aliases to create output column headings that show the `struct` that the column belongs to. For example, the column heading for the `event.alert.category` field is `event_alert_category` instead of just `category`. To customize the column names further, you can modify the aliases to suit your preferences. For example, you can use underscores or other separators to delimit the `struct` names and field names.
 
-Remember to modify column names and `struct` references based on your
-table definition and on the fields that you want in the query result.
+Remember to modify column names and `struct` references based on your table definition and on the fields that you want in the query result.
 
-```sql
-
+```
 SELECT
   firewall_name,
   availability_zone,
@@ -137,11 +122,5 @@ WHERE
   AND event.tls_inspected = true
 LIMIT 10;
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Network Firewall
-
-Netflow logs
 
 All content copied from https://docs.aws.amazon.com/.

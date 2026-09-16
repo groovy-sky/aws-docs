@@ -3,23 +3,16 @@ title: "Allow access to Athena UDFs: Example policies"
 ---
 
 # Allow access to Athena UDFs: Example policies
+<a name="udf-iam-access"></a>
 
-The permission policy examples in this topic demonstrate required allowed actions and the
-resources for which they are allowed. Examine these policies carefully and modify them
-according to your requirements before you attach similar permissions policies to IAM
-identities.
+The permission policy examples in this topic demonstrate required allowed actions and the resources for which they are allowed. Examine these policies carefully and modify them according to your requirements before you attach similar permissions policies to IAM identities.
++  [Example Policy to Allow an IAM Principal to Run and Return Queries that Contain an Athena UDF Statement](#udf-using-iam)
++  [Example Policy to Allow an IAM Principal to Create an Athena UDF](#udf-creating-iam)
 
-- [Example Policy to Allow an IAM Principal to Run and Return Queries that Contain an Athena UDF Statement](#udf-using-iam)
+**Example – Allow an IAM principal to run and return queries that contain an Athena UDF statement**
+The following identity-based permissions policy allows actions that a user or other IAM principal requires to run queries that use Athena UDF statements.
 
-- [Example Policy to Allow an IAM Principal to Create an Athena UDF](#udf-creating-iam)
-
-###### Example     – Allow an IAM principal to run and return queries that contain an Athena UDF statement
-
-The following identity-based permissions policy allows actions that a user or other
-IAM principal requires to run queries that use Athena UDF statements.
-
-```json
-
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -40,10 +33,10 @@ IAM principal requires to run queries that use Athena UDF statements.
                 "s3:GetBucketLocation"
             ],
             "Resource": [
-                "arn:aws:athena:*:MyAWSAcctId:workgroup/MyAthenaWorkGroup",
-                "arn:aws:s3:::MyQueryResultsBucket/*",
-                "arn:aws:lambda:*:MyAWSAcctId:function:OneAthenaLambdaFunction",
-                "arn:aws:lambda:*:MyAWSAcctId:function:AnotherAthenaLambdaFunction"
+                "arn:aws:athena:*:{{MyAWSAcctId}}:workgroup/{{MyAthenaWorkGroup}}",
+                "arn:aws:s3:::{{MyQueryResultsBucket}}/*",
+                "arn:aws:lambda:*:{{MyAWSAcctId}}:function:{{OneAthenaLambdaFunction}}",
+                "arn:aws:lambda:*:{{MyAWSAcctId}}:function:{{AnotherAthenaLambdaFunction}}"
             ]
         },
         {
@@ -56,65 +49,17 @@ IAM principal requires to run queries that use Athena UDF statements.
 }
 ```
 
-Explanation of permissionsAllowed actionsExplanation
+**Explanation of permissions**
 
-```json
+| Allowed actions | Explanation |
+| --- | --- |
+|  <pre>"athena:StartQueryExecution",<br /> "athena:GetQueryResults",<br /> "athena:GetWorkGroup",<br /> "athena:StopQueryExecution",<br /> "athena:GetQueryExecution",<br /></pre>  | Athena permissions that are required to run queries in the `MyAthenaWorkGroup` work group. |
+|  <pre>"s3:PutObject",<br />"s3:GetObject",<br />"s3:AbortMultipartUpload"</pre>  | `s3:PutObject` and `s3:AbortMultipartUpload` allow writing query results to all sub-folders of the query results bucket as specified by the `arn:aws:s3:::{{MyQueryResultsBucket}}/*` resource identifier, where {{MyQueryResultsBucket}} is the Athena query results bucket. For more information, see [Work with query results and recent queries](querying.md).<br />`s3:GetObject` allows reading of query results and query history for the resource specified as `arn:aws:s3:::{{MyQueryResultsBucket}}`, where {{MyQueryResultsBucket}} is the Athena query results bucket. For more information, see [Work with query results and recent queries](querying.md).<br />`s3:GetObject` also allows reading from the resource specified as `"arn:aws:s3:::{{MyLambdaSpillBucket}}/{{MyLambdaSpillPrefix}}*"`, where {{MyLambdaSpillPrefix}} is specified in the configuration of the Lambda function or functions being invoked. |
+|  <pre>"lambda:InvokeFunction"</pre>  | Allows queries to invoke the AWS Lambda functions specified in the Resource block. For example, arn:aws:lambda:\*:{{MyAWSAcctId}}:function:{{MyAthenaLambdaFunction}}, where {{MyAthenaLambdaFunction}} specifies the name of a Lambda function to be invoked. Multiple functions can be specified as shown in the example. |
 
-"athena:StartQueryExecution",
- "athena:GetQueryResults",
- "athena:GetWorkGroup",
- "athena:StopQueryExecution",
- "athena:GetQueryExecution",
+**Example – Allow an IAM principal to create an Athena UDF**
 
 ```
-
-Athena permissions that are required to run queries in the
-`MyAthenaWorkGroup` work group.
-
-```json
-
-"s3:PutObject",
-"s3:GetObject",
-"s3:AbortMultipartUpload"
-```
-
-`s3:PutObject` and `s3:AbortMultipartUpload`
-allow writing query results to all sub-folders of the query results
-bucket as specified by the
-`arn:aws:s3:::MyQueryResultsBucket/*`
-resource identifier, where
-`MyQueryResultsBucket` is the Athena
-query results bucket. For more information, see [Work with query results and recent queries](querying.md).
-
-`s3:GetObject` allows reading of query results and
-query history for the resource specified as
-`arn:aws:s3:::MyQueryResultsBucket`,
-where `MyQueryResultsBucket` is the Athena
-query results bucket. For more information, see [Work with query results and recent queries](querying.md).
-
-`s3:GetObject` also allows reading from the resource
-specified as
-`"arn:aws:s3:::MyLambdaSpillBucket/MyLambdaSpillPrefix*"`,
-where `MyLambdaSpillPrefix` is specified in
-the configuration of the Lambda function or functions being
-invoked.
-
-```json
-
-"lambda:InvokeFunction"
-```
-
-Allows queries to invoke the AWS Lambda functions specified in the
-`Resource` block. For example,
-`arn:aws:lambda:*:MyAWSAcctId:function:MyAthenaLambdaFunction`,
-where `MyAthenaLambdaFunction` specifies the
-name of a Lambda function to be invoked. Multiple functions can be
-specified as shown in the example.
-
-###### Example     – Allow an IAM principal to create an Athena UDF
-
-```json
-
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -154,10 +99,10 @@ specified as shown in the example.
                 "lambda:GetPolicy"
             ],
             "Resource": [
-                "arn:aws:lambda:*:111122223333:function:MyAthenaLambdaFunctionsPrefix*",
-                "arn:aws:s3:::awsserverlessrepo-changesets-1iiv3xa62ln3m/*",
-                "arn:aws:iam::*:role/RoleName",
-                "arn:aws:iam::111122223333:policy/*"
+                "arn:aws:lambda:*:{{111122223333}}:function:{{MyAthenaLambdaFunctionsPrefix}}*",
+                "arn:aws:s3:::awsserverlessrepo-changesets-{{1iiv3xa62ln3m}}/*",
+                "arn:aws:iam::*:role/{{RoleName}}",
+                "arn:aws:iam::{{111122223333}}:policy/*"
             ]
         },
         {
@@ -188,11 +133,11 @@ specified as shown in the example.
             "Effect": "Allow",
             "Action": "cloudformation:*",
             "Resource": [
-                "arn:aws:cloudformation:*:111122223333:stack/aws-serverless-repository-MyCFStackPrefix*/*",
-                "arn:aws:cloudformation:*:111122223333:stack/serverlessrepo-MyCFStackPrefix*/*",
+                "arn:aws:cloudformation:*:{{111122223333}}:stack/aws-serverless-repository-{{MyCFStackPrefix}}*/*",
+                "arn:aws:cloudformation:*:{{111122223333}}:stack/serverlessrepo-{{MyCFStackPrefix}}*/*",
                 "arn:aws:cloudformation:*:*:transform/Serverless-*",
-                "arn:aws:cloudformation:*:111122223333:stackset/aws-serverless-repository-MyCFStackPrefix*:*",
-                "arn:aws:cloudformation:*:111122223333:stackset/serverlessrepo-MyCFStackPrefix*:*"
+                "arn:aws:cloudformation:*:{{111122223333}}:stackset/aws-serverless-repository-{{MyCFStackPrefix}}*:*",
+                "arn:aws:cloudformation:*:{{111122223333}}:stackset/serverlessrepo-{{MyCFStackPrefix}}*:*"
             ]
         },
         {
@@ -212,76 +157,15 @@ specified as shown in the example.
         }
     ]
 }
-
 ```
 
-Explanation of permissionsAllowed actionsExplanation
+**Explanation of permissions**
 
-```json
-
-"lambda:CreateFunction",
-"lambda:ListVersionsByFunction",
-"lambda:GetFunctionConfiguration",
-"lambda:PutFunctionConcurrency",
-"lambda:ListTags",
-"lambda:DeleteFunction",
-"lambda:GetAlias",
-"lambda:InvokeFunction",
-"lambda:GetFunction",
-"lambda:ListAliases",
-"lambda:UpdateFunctionConfiguration",
-"lambda:UpdateFunctionCode",
-"lambda:AddPermission",
-"lambda:DeleteFunctionConcurrency",
-"lambda:RemovePermission",
-"lambda:GetPolicy"
-"lambda:GetAccountSettings",
-"lambda:ListFunctions",
-"lambda:ListEventSourceMappings",
-
-```
-
-Allow the creation and management of Lambda functions listed as
-resources. In the example, a name prefix is used in the resource
-identifier
-`arn:aws:lambda:*:MyAWSAcctId:function:MyAthenaLambdaFunctionsPrefix*`,
-where `MyAthenaLambdaFunctionsPrefix` is a
-shared prefix used in the name of a group of Lambda functions so that
-they don't need to be specified individually as resources. You can
-specify one or more Lambda function resources.
-
-```json
-
-"s3:GetObject"
-```
-
-Allows reading of a bucket that AWS Serverless Application Repository requires as specified by the
-resource identifier
-`arn:aws:s3:::awsserverlessrepo-changesets-1iiv3xa62ln3m/*`.
-
-```
-
-"cloudformation:*"
-```
-
-Allows the creation and management of CloudFormation stacks specified by
-the resource `MyCFStackPrefix`. These
-stacks and stacksets are how AWS Serverless Application Repository deploys connectors and
-UDFs.
-
-```json
-
-"serverlessrepo:*"
-```
-
-Allows searching, viewing, publishing, and updating applications in
-the AWS Serverless Application Repository, specified by the resource identifier
-`arn:aws:serverlessrepo:*:*:applications/*`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Allow access to Athena Federated Query
-
-Allow access for ML with Athena
+| Allowed actions | Explanation |
+| --- | --- |
+|  <pre>"lambda:CreateFunction",<br />"lambda:ListVersionsByFunction",<br />"lambda:GetFunctionConfiguration",<br />"lambda:PutFunctionConcurrency",<br />"lambda:ListTags",<br />"lambda:DeleteFunction",<br />"lambda:GetAlias",<br />"lambda:InvokeFunction",<br />"lambda:GetFunction",<br />"lambda:ListAliases",<br />"lambda:UpdateFunctionConfiguration",<br />"lambda:UpdateFunctionCode",<br />"lambda:AddPermission",<br />"lambda:DeleteFunctionConcurrency",<br />"lambda:RemovePermission",<br />"lambda:GetPolicy"<br />"lambda:GetAccountSettings",<br />"lambda:ListFunctions",<br />"lambda:ListEventSourceMappings",<br /></pre>  | Allow the creation and management of Lambda functions listed as resources. In the example, a name prefix is used in the resource identifier `arn:aws:lambda:*:{{MyAWSAcctId}}:function:{{MyAthenaLambdaFunctionsPrefix}}*`, where {{MyAthenaLambdaFunctionsPrefix}} is a shared prefix used in the name of a group of Lambda functions so that they don't need to be specified individually as resources. You can specify one or more Lambda function resources. |
+|  <pre>"s3:GetObject"</pre>  | Allows reading of a bucket that AWS Serverless Application Repository requires as specified by the resource identifier arn:aws:s3:::awsserverlessrepo-changesets-{{1iiv3xa62ln3m}}/\*. |
+|  <pre>"cloudformation:*"</pre>  | Allows the creation and management of CloudFormation stacks specified by the resource {{MyCFStackPrefix}}. These stacks and stacksets are how AWS Serverless Application Repository deploys connectors and UDFs. |
+|  <pre>"serverlessrepo:*"</pre>  | Allows searching, viewing, publishing, and updating applications in the AWS Serverless Application Repository, specified by the resource identifier arn:aws:serverlessrepo:\*:\*:applications/\*. |
 
 All content copied from https://docs.aws.amazon.com/.

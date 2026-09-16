@@ -3,24 +3,18 @@ title: "Query Network Load Balancer logs"
 ---
 
 # Query Network Load Balancer logs
+<a name="networkloadbalancer-classic-logs"></a>
 
-Use Athena to analyze and process logs from Network Load Balancer. These logs receive detailed information
-about the Transport Layer Security (TLS) requests sent to the Network Load Balancer. You can use these
-access logs to analyze traffic patterns and troubleshoot issues.
+Use Athena to analyze and process logs from Network Load Balancer. These logs receive detailed information about the Transport Layer Security (TLS) requests sent to the Network Load Balancer. You can use these access logs to analyze traffic patterns and troubleshoot issues.
 
-Before you analyze the Network Load Balancer access logs, enable and configure them for saving in the
-destination Amazon S3 bucket. For more information, and for information about each Network Load Balancer access
-log entry, see [Access logs for your Network Load Balancer](../../../elasticloadbalancing/latest/network/load-balancer-access-logs.md).
+Before you analyze the Network Load Balancer access logs, enable and configure them for saving in the destination Amazon S3 bucket. For more information, and for information about each Network Load Balancer access log entry, see [ Access logs for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-access-logs.html).
 
-###### To create the table for Network Load Balancer logs
+**To create the table for Network Load Balancer logs**
 
-1. Copy and paste the following DDL statement into the Athena console. Check the
-    [syntax](../../../elasticloadbalancing/latest/network/load-balancer-access-logs.md#access-log-file-format) of the Network Load Balancer log records. Update the statement as required to
-    include the columns and the regex corresponding to your log records.
+1. Copy and paste the following DDL statement into the Athena console. Check the [syntax ](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-access-logs.html#access-log-file-format) of the Network Load Balancer log records. Update the statement as required to include the columns and the regex corresponding to your log records.
 
-```sql
-
-CREATE EXTERNAL TABLE IF NOT EXISTS nlb_tls_logs (
+   ```
+   CREATE EXTERNAL TABLE IF NOT EXISTS nlb_tls_logs (
                type string,
                version string,
                time string,
@@ -52,22 +46,19 @@ CREATE EXTERNAL TABLE IF NOT EXISTS nlb_tls_logs (
                'input.regex' =
                '([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*):([0-9]*) ([^ ]*):([0-9]*) ([-.0-9]*) ([-.0-9]*) ([-0-9]*) ([-0-9]*) ([-0-9]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*) ?([^ ]*)?( .*)?'
                )
-               LOCATION 's3://amzn-s3-demo-bucket/AWSLogs/AWS_account_ID/elasticloadbalancing/region';
-```
+               LOCATION 's3://amzn-s3-demo-bucket/AWSLogs/{{AWS_account_ID}}/elasticloadbalancing/{{region}}';
+   ```
 
-2. Modify the `LOCATION` Amazon S3 bucket to specify the destination of your
-    Network Load Balancer logs.
+1. Modify the `LOCATION` Amazon S3 bucket to specify the destination of your Network Load Balancer logs.
 
-3. Run the query in the Athena console. After the query completes, Athena registers the
-    `nlb_tls_logs` table, making the data in it ready for queries.
+1. Run the query in the Athena console. After the query completes, Athena registers the `nlb_tls_logs` table, making the data in it ready for queries.
 
 ## Example queries
+<a name="query-nlb-example"></a>
 
-To see how many times a certificate is used, use a query similar to this
-example:
+To see how many times a certificate is used, use a query similar to this example:
 
-```sql
-
+```
 SELECT count(*) AS
          ct,
          cert_arn
@@ -75,11 +66,9 @@ FROM "nlb_tls_logs"
 GROUP BY  cert_arn;
 ```
 
-The following query shows how many users are using a TLS version earlier than
-1.3:
+The following query shows how many users are using a TLS version earlier than 1.3:
 
-```sql
-
+```
 SELECT tls_protocol_version,
          COUNT(tls_protocol_version) AS
          num_connections,
@@ -89,22 +78,18 @@ WHERE tls_protocol_version < 'tlsv13'
 GROUP BY tls_protocol_version, client_ip;
 ```
 
-Use the following query to identify connections that take a long TLS handshake
-time:
+Use the following query to identify connections that take a long TLS handshake time:
 
-```sql
-
+```
 SELECT *
 FROM "nlb_tls_logs"
 ORDER BY  tls_handshake_time_ms DESC
 LIMIT 10;
 ```
 
-Use the following query to identify and count which TLS protocol versions and cipher
-suites have been negotiated in the past 30 days.
+Use the following query to identify and count which TLS protocol versions and cipher suites have been negotiated in the past 30 days.
 
-```sql
-
+```
 SELECT tls_cipher_suite,
          tls_protocol_version,
          COUNT(*) AS ct
@@ -114,11 +99,5 @@ WHERE from_iso8601_timestamp(time) > current_timestamp - interval '30' day
 GROUP BY tls_cipher_suite, tls_protocol_version
 ORDER BY ct DESC;
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Netflow logs
-
-Route 53
 
 All content copied from https://docs.aws.amazon.com/.

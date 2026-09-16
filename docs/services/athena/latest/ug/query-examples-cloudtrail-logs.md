@@ -3,16 +3,13 @@ title: "Example CloudTrail log queries"
 ---
 
 # Example CloudTrail log queries
+<a name="query-examples-cloudtrail-logs"></a>
 
-The following example shows a portion of a query that returns all anonymous (unsigned)
-requests from the table created for CloudTrail event logs. This query selects those requests
-where `useridentity.accountid` is anonymous, and
-`useridentity.arn` is not specified:
+The following example shows a portion of a query that returns all anonymous (unsigned) requests from the table created for CloudTrail event logs. This query selects those requests where `useridentity.accountid` is anonymous, and `useridentity.arn` is not specified:
 
-```sql
-
+```
 SELECT *
-FROM cloudtrail_logs
+FROM {{cloudtrail_logs}}
 WHERE
     eventsource = 's3.amazonaws.com' AND
     eventname in ('GetObject') AND
@@ -21,20 +18,16 @@ WHERE
     requestparameters LIKE '%[your bucket name ]%';
 ```
 
-For more information, see the AWS Big Data blog post [Analyze security, compliance, and operational activity using AWS CloudTrail and\
-Amazon Athena](https://aws.amazon.com/blogs/big-data/aws-cloudtrail-and-amazon-athena-dive-deep-to-analyze-security-compliance-and-operational-activity).
+For more information, see the AWS Big Data blog post [Analyze security, compliance, and operational activity using AWS CloudTrail and Amazon Athena](https://aws.amazon.com/blogs/big-data/aws-cloudtrail-and-amazon-athena-dive-deep-to-analyze-security-compliance-and-operational-activity/).
 
 ## Query nested fields in CloudTrail logs
+<a name="cloudtrail-logs-nested-fields"></a>
 
-Because the `userIdentity` and `resources` fields are nested
-data types, querying them requires special treatment.
+Because the `userIdentity` and `resources` fields are nested data types, querying them requires special treatment.
 
-The `userIdentity` object consists of nested `STRUCT` types.
-These can be queried using a dot to separate the fields, as in the following
-example:
+The `userIdentity` object consists of nested `STRUCT` types. These can be queried using a dot to separate the fields, as in the following example:
 
-```sql
-
+```
 SELECT
     eventsource,
     eventname,
@@ -46,16 +39,11 @@ ORDER BY eventsource, eventname
 LIMIT 10
 ```
 
-The `resources` field is an array of `STRUCT` objects. For
-these arrays, use `CROSS JOIN UNNEST` to unnest the array so that you can
-query its objects.
+The `resources` field is an array of `STRUCT` objects. For these arrays, use `CROSS JOIN UNNEST` to unnest the array so that you can query its objects.
 
-The following example returns all rows where the resource ARN ends in
-`example/datafile.txt`. For readability, the [replace](https://prestodb.io/docs/current/functions/string.html) function removes the initial `arn:aws:s3:::`
-substring from the ARN.
+The following example returns all rows where the resource ARN ends in `example/datafile.txt`. For readability, the [replace](https://prestodb.io/docs/current/functions/string.html#replace) function removes the initial `arn:aws:s3:::` substring from the ARN.
 
-```sql
-
+```
 SELECT
     awsregion,
     replace(unnested.resources_entry.ARN,'arn:aws:s3:::') as s3_resource,
@@ -68,12 +56,9 @@ WHERE unnested.resources_entry.ARN LIKE '%example/datafile.txt'
 ORDER BY eventtime
 ```
 
-The following example queries for `DeleteBucket` events. The query
-extracts the name of the bucket and the account ID to which the bucket belongs from
-the `resources` object.
+The following example queries for `DeleteBucket` events. The query extracts the name of the bucket and the account ID to which the bucket belongs from the `resources` object.
 
-```sql
-
+```
 SELECT
     awsregion,
     replace(unnested.resources_entry.ARN,'arn:aws:s3:::') as deleted_bucket,
@@ -89,51 +74,30 @@ ORDER BY eventtime
 For more information about unnesting, see [Filter arrays](filtering-arrays.md).
 
 ## Tips for querying CloudTrail logs
+<a name="tips-for-querying-cloudtrail-logs"></a>
 
 Consider the following when exploring CloudTrail log data:
++ Before querying the logs, verify that your logs table looks the same as the one in [Create a table for CloudTrail logs in Athena using manual partitioning](create-cloudtrail-table.md). If it is not the first table, delete the existing table using the following command: `DROP TABLE cloudtrail_logs`.
++ After you drop the existing table, re-create it. For more information, see [Create a table for CloudTrail logs in Athena using manual partitioning](create-cloudtrail-table.md).
 
-- Before querying the logs, verify that your logs table looks the same as
-the one in [Create a table for CloudTrail logs in Athena using manual partitioning](create-cloudtrail-table.md). If it is not the first
-table, delete the existing table using the following command: `DROP
-                              TABLE cloudtrail_logs`.
+  Verify that fields in your Athena query are listed correctly. For information about the full list of fields in a CloudTrail record, see [CloudTrail record contents](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html).
 
-- After you drop the existing table, re-create it. For more information, see
-[Create a table for CloudTrail logs in Athena using manual partitioning](create-cloudtrail-table.md).
+  If your query includes fields in JSON formats, such as `STRUCT`, extract data from JSON. For more information, see [Extract JSON data from strings](extracting-data-from-JSON.md).
 
-Verify that fields in your Athena query are listed correctly. For
-information about the full list of fields in a CloudTrail record, see [CloudTrail record contents](../../../awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.md).
+  Some suggestions for issuing queries against your CloudTrail table:
++ Start by looking at which users called which API operations and from which source IP addresses.
++ Use the following basic SQL query as your template. Paste the query to the Athena console and run it.
 
-If your query includes fields in JSON formats, such as
-`STRUCT`, extract data from JSON. For more information, see [Extract JSON data from strings](extracting-data-from-json.md).
-
-Some suggestions for issuing queries against your CloudTrail table:
-
-- Start by looking at which users called which API operations and from which
-source IP addresses.
-
-- Use the following basic SQL query as your template. Paste the query to the
-Athena console and run it.
-
-```sql
-
-SELECT
-useridentity.arn,
-eventname,
-sourceipaddress,
-eventtime
-FROM cloudtrail_logs
-LIMIT 100;
-```
-
-- Modify the query to further explore your data.
-
-- To improve performance, include the `LIMIT` clause to return a
-specified subset of rows.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Use partition projection
-
-Amazon EMR
+  ```
+  SELECT
+   useridentity.arn,
+   eventname,
+   sourceipaddress,
+   eventtime
+  FROM cloudtrail_logs
+  LIMIT 100;
+  ```
++ Modify the query to further explore your data.
++ To improve performance, include the `LIMIT` clause to return a specified subset of rows.
 
 All content copied from https://docs.aws.amazon.com/.

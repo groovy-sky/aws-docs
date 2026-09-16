@@ -3,17 +3,18 @@ title: "Spark Connect support"
 ---
 
 # Spark Connect support
+<a name="notebooks-spark-connect"></a>
 
 Spark Connect is a client-server architecture for Apache Spark that decouples the application client from the Spark cluster's driver process, allowing remote connectivity to Spark from supported clients. Spark Connect also enables interactive debugging during development directly from your favorite IDEs/clients.
 
 From Apache Spark version 3.5 release version onward, Athena supports Spark Connect as an AWS endpoint accessible using the `GetSessionEndpoint` API.
 
 ## API/CLI examples (GetSessionEndpoint)
+<a name="notebooks-spark-connect-api-examples"></a>
 
 You can use the `GetSessionEndpoint` API to get the Spark Connect endpoint for an interactive session.
 
 ```
-
 aws athena get-session-endpoint \
   --region "REGION" \
   --session-id "SESSION_ID"
@@ -22,7 +23,6 @@ aws athena get-session-endpoint \
 This API returns the Spark Connect endpoint URL for that session.
 
 ```
-
 {
   "EndpointUrl": "ENDPOINT_URL",
   "AuthToken": "AUTH_TOKEN",
@@ -31,15 +31,16 @@ This API returns the Spark Connect endpoint URL for that session.
 ```
 
 ## Connecting from self-managed clients
+<a name="notebooks-spark-connect-self-managed"></a>
 
 You can connect to an Athena Spark Interactive Session from self-managed clients.
 
 ### Pre-requisites
+<a name="notebooks-spark-connect-prerequisites"></a>
 
 Install the pyspark-connect client for Spark 3.5.6 and the AWS SDK for Python.
 
 ```
-
 pip install --user pyspark[connect]==3.5.6
 pip install --user boto3
 ```
@@ -47,7 +48,6 @@ pip install --user boto3
 The following is a sample Python script to send requests directly to the session endpoint:
 
 ```
-
 import boto3
 import time
 from pyspark.sql import SparkSession
@@ -92,7 +92,6 @@ spark.stop()
 The following is a sample Python script to access the live Spark UI or Spark History Server for a session:
 
 ```
-
 Region='<REGION>'
 WorkGroupName='<WORKGROUP_NAME>'
 SessionId='<SESSION_ID>'
@@ -107,11 +106,5 @@ response = client.get_resource_dashboard(
 )
 response['Url']
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Spark UI access
-
-Enable requester pays buckets
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,50 +3,34 @@ title: "MonitoringConfiguration"
 ---
 
 # MonitoringConfiguration
+<a name="API_MonitoringConfiguration"></a>
 
-Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets,
-Amazon CloudWatch log groups etc.
+Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc.
 
 ## Contents
+<a name="API_MonitoringConfiguration_Contents"></a>
 
-**CloudWatchLoggingConfiguration**
-
+ ** CloudWatchLoggingConfiguration **   <a name="athena-Type-MonitoringConfiguration-CloudWatchLoggingConfiguration"></a>
 Configuration settings for delivering logs to Amazon CloudWatch log groups.
-
-Type: [CloudWatchLoggingConfiguration](api-cloudwatchloggingconfiguration.md) object
-
+Type: [CloudWatchLoggingConfiguration](API_CloudWatchLoggingConfiguration.md) object
 Required: No
 
-**ManagedLoggingConfiguration**
-
+ ** ManagedLoggingConfiguration **   <a name="athena-Type-MonitoringConfiguration-ManagedLoggingConfiguration"></a>
 Configuration settings for managed log persistence.
-
-Type: [ManagedLoggingConfiguration](api-managedloggingconfiguration.md) object
-
+Type: [ManagedLoggingConfiguration](API_ManagedLoggingConfiguration.md) object
 Required: No
 
-**S3LoggingConfiguration**
-
+ ** S3LoggingConfiguration **   <a name="athena-Type-MonitoringConfiguration-S3LoggingConfiguration"></a>
 Configuration settings for delivering logs to Amazon S3 buckets.
-
-Type: [S3LoggingConfiguration](api-s3loggingconfiguration.md) object
-
+Type: [S3LoggingConfiguration](API_S3LoggingConfiguration.md) object
 Required: No
 
 ## See Also
+<a name="API_MonitoringConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/monitoringconfiguration.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/monitoringconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/monitoringconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManagedQueryResultsEncryptionConfiguration
-
-NamedQuery
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/MonitoringConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/MonitoringConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/MonitoringConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

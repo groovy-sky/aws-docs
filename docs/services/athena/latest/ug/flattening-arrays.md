@@ -3,25 +3,22 @@ title: "Flatten nested arrays"
 ---
 
 # Flatten nested arrays
+<a name="flattening-arrays"></a>
 
-When working with nested arrays, you often need to expand nested array elements into a
-single array, or expand the array into multiple rows.
+When working with nested arrays, you often need to expand nested array elements into a single array, or expand the array into multiple rows.
 
 ## Use the flatten function
+<a name="flattening-arrays-flatten-function"></a>
 
-To flatten a nested array's elements into a single array of values, use the
-`flatten` function. This query returns a row for each element in the
-array.
+To flatten a nested array's elements into a single array of values, use the `flatten` function. This query returns a row for each element in the array.
 
-```sql
-
+```
 SELECT flatten(ARRAY[ ARRAY[1,2], ARRAY[3,4] ]) AS items
 ```
 
 This query returns:
 
 ```
-
 +-----------+
 | items     |
 +-----------+
@@ -30,12 +27,11 @@ This query returns:
 ```
 
 ## Use CROSS JOIN and UNNEST
+<a name="flattening-arrays-cross-join-and-unnest"></a>
 
-To flatten an array into multiple rows, use `CROSS JOIN` in conjunction
-with the `UNNEST` operator, as in this example:
+To flatten an array into multiple rows, use `CROSS JOIN` in conjunction with the `UNNEST` operator, as in this example:
 
-```sql
-
+```
 WITH dataset AS (
   SELECT
     'engineering' as department,
@@ -48,7 +44,6 @@ CROSS JOIN UNNEST(users) as t(names)
 This query returns:
 
 ```
-
 +----------------------+
 | department  | names  |
 +----------------------+
@@ -62,11 +57,9 @@ This query returns:
 +----------------------+
 ```
 
-To flatten an array of key-value pairs, transpose selected keys into columns, as in
-this example:
+To flatten an array of key-value pairs, transpose selected keys into columns, as in this example:
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT
@@ -87,7 +80,6 @@ CROSS JOIN UNNEST(people) AS t(names)
 This query returns:
 
 ```
-
 +--------------------------------------+
 | first_name | last_name | department  |
 +--------------------------------------+
@@ -97,13 +89,9 @@ This query returns:
 +--------------------------------------+
 ```
 
-From a list of employees, select the employee with the highest combined scores.
-`UNNEST` can be used in the `FROM` clause without a preceding
-`CROSS JOIN` as it is the default join operator and therefore
-implied.
+From a list of employees, select the employee with the highest combined scores. `UNNEST` can be used in the `FROM` clause without a preceding `CROSS JOIN` as it is the default join operator and therefore implied.
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT ARRAY[
@@ -128,7 +116,6 @@ LIMIT 1
 This query returns:
 
 ```
-
 +---------------------------------+
 | name | department | total_score |
 +---------------------------------+
@@ -136,11 +123,9 @@ This query returns:
 +---------------------------------+
 ```
 
-From a list of employees, select the employee with the highest individual
-score.
+From a list of employees, select the employee with the highest individual score.
 
-```sql
-
+```
 WITH
 dataset AS (
  SELECT ARRAY[
@@ -164,7 +149,6 @@ LIMIT 1
 This query returns:
 
 ```
-
 +--------------+
 | name | score |
 +--------------+
@@ -173,16 +157,13 @@ This query returns:
 ```
 
 ### Considerations for CROSS JOIN and UNNEST
+<a name="flattening-arrays-cross-join-and-unnest-considerations"></a>
 
-If `UNNEST` is used on one or more arrays in the query, and one of the
-arrays is `NULL`, the query returns no rows. If `UNNEST` is
-used on an array that is an empty string, the empty string is returned.
+If `UNNEST` is used on one or more arrays in the query, and one of the arrays is `NULL`, the query returns no rows. If `UNNEST` is used on an array that is an empty string, the empty string is returned.
 
-For example, in the following query, because the second array is null, the query
-returns no rows.
+For example, in the following query, because the second array is null, the query returns no rows.
 
-```sql
-
+```
 SELECT
     col1,
     col2
@@ -190,24 +171,14 @@ FROM UNNEST (ARRAY ['apples','oranges','lemons']) AS t(col1)
 CROSS JOIN UNNEST (ARRAY []) AS t(col2)
 ```
 
-In this next example, the second array is modified to contain an empty string. For
-each row, the query returns the value in `col1` and an empty string for
-the value in `col2`. The empty string in the second array is required in
-order for the values in the first array to be returned.
+In this next example, the second array is modified to contain an empty string. For each row, the query returns the value in `col1` and an empty string for the value in `col2`. The empty string in the second array is required in order for the values in the first array to be returned.
 
-```sql
-
+```
 SELECT
     col1,
     col2
 FROM UNNEST (ARRAY ['apples','oranges','lemons']) AS t(col1)
 CROSS JOIN UNNEST (ARRAY ['']) AS t(col2)
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Access array elements
-
-Create arrays from subqueries
 
 All content copied from https://docs.aws.amazon.com/.

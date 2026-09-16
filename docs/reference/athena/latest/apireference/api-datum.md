@@ -3,33 +3,24 @@ title: "Datum"
 ---
 
 # Datum
+<a name="API_Datum"></a>
 
 A piece of data (a field in the table).
 
 ## Contents
+<a name="API_Datum_Contents"></a>
 
-**VarCharValue**
-
+ ** VarCharValue **   <a name="athena-Type-Datum-VarCharValue"></a>
 The value of the datum.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_Datum_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/datum.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/datum.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/datum.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataCatalogSummary
-
-EncryptionConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/Datum)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/Datum)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/Datum)
 
 All content copied from https://docs.aws.amazon.com/.

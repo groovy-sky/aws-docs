@@ -3,18 +3,11 @@ title: "Functions in Amazon Athena"
 ---
 
 # Functions in Amazon Athena
+<a name="functions"></a>
 
-For changes in functions between Athena engine versions, see [Athena engine versioning](engine-versions.md). For a list of the time
-zones that can be used with the `AT TIME ZONE` operator, see [Use supported time zones](athena-supported-time-zones.md).
+For changes in functions between Athena engine versions, see [Athena engine versioning](engine-versions.md). For a list of the time zones that can be used with the `AT TIME ZONE` operator, see [Use supported time zones](athena-supported-time-zones.md).
 
-###### Topics
-
-- [Athena engine version 3](functions-env3.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UNLOAD
-
-Athena engine version 3
+**Topics**
++ [Athena engine version 3](functions-env3.md)
 
 All content copied from https://docs.aws.amazon.com/.

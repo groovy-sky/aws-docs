@@ -3,92 +3,82 @@ title: "Concatenate strings and arrays"
 ---
 
 # Concatenate strings and arrays
+<a name="concatenating-strings-and-arrays"></a>
 
 Concatenating strings and concatenating arrays use similar techniques.
 
 ## Concatenate strings
+<a name="concatenating-strings"></a>
 
-To concatenate two strings, you can use the double pipe `||` operator, as
-in the following example.
+To concatenate two strings, you can use the double pipe `||` operator, as in the following example.
 
-```sql
-
+```
 SELECT 'This' || ' is' || ' a' || ' test.' AS Concatenated_String
 ```
 
 This query returns:
 
-#Concatenated\_String`1`
-
-`This is a test.`
+| \# | Concatenated\_String |
+| --- | --- |
+| 1 | `This is a test.` |
 
 You can use the `concat()` function to achieve the same result.
 
-```sql
-
+```
 SELECT concat('This', ' is', ' a', ' test.') AS Concatenated_String
 ```
 
 This query returns:
 
-#Concatenated\_String`1`
+| \# | Concatenated\_String |
+| --- | --- |
+| 1 | `This is a test.` |
 
-`This is a test.`
+You can use the `concat_ws()` function to concatenate strings with the separator specified in the first argument.
 
-You can use the `concat_ws()` function to concatenate strings with the
-separator specified in the first argument.
-
-```sql
-
+```
 SELECT concat_ws(' ', 'This', 'is', 'a', 'test.') as Concatenated_String
 ```
 
 This query returns:
 
-#Concatenated\_String`1`
+| \# | Concatenated\_String |
+| --- | --- |
+| 1 | `This is a test.` |
 
-`This is a test.`
+To concatenate two columns of the string data type using a dot, reference the two columns using double quotes, and enclose the dot in single quotes as a hard-coded string. If a column is not of the string data type, you can use `CAST("{{column_name}}" as VARCHAR)` to cast the column first.
 
-To concatenate two columns of the string data type using a dot, reference the two
-columns using double quotes, and enclose the dot in single quotes as a hard-coded
-string. If a column is not of the string data type, you can use
-`CAST("column_name" as VARCHAR)` to cast
-the column first.
-
-```sql
-
+```
 SELECT "col1" || '.' || "col2" as Concatenated_String
-FROM my_table
+FROM {{my_table}}
 ```
 
 This query returns:
 
-#Concatenated\_String`1`
-
-`col1_string_value.col2_string_value`
+| \# | Concatenated\_String |
+| --- | --- |
+| 1 | `{{col1_string_value}}.{{col2_string_value}}` |
 
 ## Concatenate arrays
+<a name="concatenating-arrays"></a>
 
 You can use the same techniques to concatenate arrays.
 
 To concatenate multiple arrays, use the double pipe `||` operator.
 
-```sql
-
+```
 SELECT ARRAY [4,5] || ARRAY[ ARRAY[1,2], ARRAY[3,4] ] AS items
 ```
 
 This query returns:
 
-#items`1`
+| \# | items |
+| --- | --- |
+| 1 | `[[4, 5], [1, 2], [3, 4]]` |
 
-`[[4, 5], [1, 2], [3, 4]]`
+To combine multiple arrays into a single array, use the double pipe operator or the `concat()` function.
 
-To combine multiple arrays into a single array, use the double pipe operator or the
-`concat()` function.
-
-```sql
-
+```
 WITH
 dataset AS (
   SELECT
@@ -101,17 +91,10 @@ FROM dataset
 
 This query returns:
 
-#welcome\_msg`1`
+| \# | welcome\_msg |
+| --- | --- |
+| 1 | `[Hello, Amazon, Athena, Hi, Alexa]` |
 
-`[Hello, Amazon, Athena, Hi, Alexa]`
-
-For more information about `concat()` other string functions, see [String functions and\
-operators](https://trino.io/docs/current/functions/string.html) in the Trino documentation.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create arrays
-
-Convert array data types
+For more information about `concat()` other string functions, see [String functions and operators](https://trino.io/docs/current/functions/string.html) in the Trino documentation.
 
 All content copied from https://docs.aws.amazon.com/.

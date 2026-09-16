@@ -3,20 +3,16 @@ title: "Create a table for CloudFront logs in Athena using manual partitioning w
 ---
 
 # Create a table for CloudFront logs in Athena using manual partitioning with Parquet
+<a name="create-cloudfront-table-manual-parquet"></a>
 
-###### To create a table for CloudFront standard log file fields using a Parquet format
+**To create a table for CloudFront standard log file fields using a Parquet format**
 
-1. Copy and paste the following example DDL statement into the Query Editor in
-    the Athena console. The example statement uses the log file fields documented in
-    the [Standard log file fields](../../../amazoncloudfront/latest/developerguide/accesslogs.md#BasicDistributionFileFormat) section of the _Amazon CloudFront_
-_Developer Guide_.
+1. Copy and paste the following example DDL statement into the Query Editor in the Athena console. The example statement uses the log file fields documented in the [Standard log file fields](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html#BasicDistributionFileFormat) section of the *Amazon CloudFront Developer Guide*.
 
-This query uses ParquetHiveSerDe with the following SerDe properties to read
-    Parquet fields correctly in Athena.
+   This query uses ParquetHiveSerDe with the following SerDe properties to read Parquet fields correctly in Athena.
 
-```sql
-
-CREATE EXTERNAL TABLE `cf_logs_manual_partition_parquet`(
+   ```
+   CREATE EXTERNAL TABLE `cf_logs_manual_partition_parquet`(
      `date` string,
      `time` string,
      `x_edge_location` string,
@@ -50,45 +46,33 @@ CREATE EXTERNAL TABLE `cf_logs_manual_partition_parquet`(
      `sc_content_len` string,
      `sc_range_start` string,
      `sc_range_end` string)
-ROW FORMAT SERDE
+   ROW FORMAT SERDE
      'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
-STORED AS INPUTFORMAT
+   STORED AS INPUTFORMAT
      'org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat'
-OUTPUTFORMAT
+   OUTPUTFORMAT
      'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
-LOCATION
+   LOCATION
      's3://amzn-s3-demo-bucket/'
-```
+   ```
 
-2. Run the query in Athena console. After the query completes, Athena registers the
-    `cf_logs_manual_partition_parquet` table, making the data in it
-    ready for you to issue queries.
+1. Run the query in Athena console. After the query completes, Athena registers the `cf_logs_manual_partition_parquet` table, making the data in it ready for you to issue queries.
 
 ## Example queries
+<a name="query-examples-cloudfront-logs-manual-parquet"></a>
 
-The following query adds up the number of bytes served by CloudFront for January 19,
-2025.
+The following query adds up the number of bytes served by CloudFront for January 19, 2025.
 
-```sql
-
+```
 SELECT sum(cast("sc_bytes" as BIGINT)) as sc
 FROM cf_logs_manual_partition_parquet
 WHERE "date"='2025-01-19'
 ```
 
-To eliminate duplicate rows (for example, duplicate empty rows) from the query
-results, you can use the `SELECT DISTINCT` statement, as in the following
-example.
+To eliminate duplicate rows (for example, duplicate empty rows) from the query results, you can use the `SELECT DISTINCT` statement, as in the following example.
 
 ```
-
 SELECT DISTINCT * FROM cf_logs_manual_partition_parquet
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Manual partitioning (JSON)
-
-Partition projection (JSON)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,11 +3,11 @@ title: "Create a named query"
 ---
 
 # Create a named query
+<a name="create-a-named-query"></a>
 
 The `CreateNamedQueryExample` shows how to create a named query.
 
-```java
-
+```
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;
@@ -68,13 +68,6 @@ public class CreateNamedQueryExample {
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-List query executions
-
-Delete a named query
 
 All content copied from https://docs.aws.amazon.com/.

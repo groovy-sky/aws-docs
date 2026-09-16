@@ -3,27 +3,20 @@ title: "Other JDBC 3.x configuration"
 ---
 
 # Other JDBC 3.x configuration
+<a name="jdbc-v3-driver-other-configuration"></a>
 
-The following sections describe some additional configuration settings for the JDBC
-3.x driver.
+The following sections describe some additional configuration settings for the JDBC 3.x driver.
 
 ## Network timeout
+<a name="jdbc-v3-driver-network-timeout"></a>
 
-The network timeout controls the amount of time in milliseconds that the driver
-waits for a network connection to be established. This includes the time it takes to
-send API requests. After this time, the driver throws a timeout exception. In rare
-circumstances, it may be useful to change the network timeout. For example, you
-might want to increase the timeout for long garbage collection pauses.
+The network timeout controls the amount of time in milliseconds that the driver waits for a network connection to be established. This includes the time it takes to send API requests. After this time, the driver throws a timeout exception. In rare circumstances, it may be useful to change the network timeout. For example, you might want to increase the timeout for long garbage collection pauses.
 
-To set it, call the `setNetworkTimeout` method on a JDBC
-`Connection` object. This value can be changed during the lifecycle
-of the JDBC connection. For more information, see [setNetworkTimeout](https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html) in the Oracle JDBC API documentation. Using the
-`setNetworkTimeout` method is equivalent to setting the [Network timeout](jdbc-v3-driver-advanced-connection-parameters.md#jdbc-v3-driver-networktimeoutmillis) connection parameter.
+To set it, call the `setNetworkTimeout` method on a JDBC `Connection` object. This value can be changed during the lifecycle of the JDBC connection. For more information, see [setNetworkTimeout](https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html#setNetworkTimeout-java.util.concurrent.Executor-int-) in the Oracle JDBC API documentation. Using the `setNetworkTimeout` method is equivalent to setting the [Network timeout](jdbc-v3-driver-advanced-connection-parameters.md#jdbc-v3-driver-networktimeoutmillis) connection parameter.
 
 The following example sets the network timeout to 5000 milliseconds.
 
-```nohighlight
-
+```
 ...
 AthenaDriver driver = new AthenaDriver();
 Connection connection = driver.connect(url, connectionParameters);
@@ -32,21 +25,15 @@ connection.setNetworkTimeout(null, 5000);
 ```
 
 ## Query timeout
+<a name="jdbc-v3-driver-query-timeout"></a>
 
-The amount of time, in seconds, the driver will wait for a query to complete on
-Athena after a query has been submitted. After this time, the driver attempts to
-cancel the submitted query and throws a timeout exception.
+The amount of time, in seconds, the driver will wait for a query to complete on Athena after a query has been submitted. After this time, the driver attempts to cancel the submitted query and throws a timeout exception.
 
-The query timeout cannot be set as a connection parameter. To set it, call the
-`setQueryTimeout` method on a JDBC `Statement` object.
-This value can be changed during the lifecycle of a JDBC statement. The default
-value of this parameter is `0` (zero). A value of `0` means
-that queries can run until they complete (subject to [Service Quotas](service-limits.md)).
+The query timeout cannot be set as a connection parameter. To set it, call the `setQueryTimeout` method on a JDBC `Statement` object. This value can be changed during the lifecycle of a JDBC statement. The default value of this parameter is `0` (zero). A value of `0` means that queries can run until they complete (subject to [Service Quotas](service-limits.md)).
 
 The following example sets the query timeout to 5 seconds.
 
-```nohighlight
-
+```
 ...
 AthenaDriver driver = new AthenaDriver();
 Connection connection = driver.connect(url, connectionParameters);
@@ -54,11 +41,5 @@ Statement statement = connection.createStatement();
 statement.setQueryTimeout(5);
 ...
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataZone IAM
-
-JDBC 3.x release notes
 
 All content copied from https://docs.aws.amazon.com/.

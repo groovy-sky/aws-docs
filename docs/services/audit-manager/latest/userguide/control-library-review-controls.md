@@ -2,31 +2,17 @@
 title: "Reviewing a control in AWS Audit Manager"
 ---
 
-AWS Audit Manager will no longer be open to new customers starting
-April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
-can continue to use the service as normal. For more information, see
-[AWS Audit Manager availability change](audit-manager-availability-change.md).
+AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Reviewing a control in AWS Audit Manager
+<a name="control-library-review-controls"></a>
 
-You can review the details of a control by using the Audit Manager console, the Audit Manager API, or the
-AWS Command Line Interface (AWS CLI).
+You can review the details of a control by using the Audit Manager console, the Audit Manager API, or the AWS Command Line Interface (AWS CLI).
 
-To get started with reviewing a control in Audit Manager, follow the procedures that are outlined
-here.
-
-- [Reviewing a common control](control-library-review-common-controls.md)
-
-- [Reviewing a core control](control-library-review-core-controls.md)
-
-- [Reviewing a standard control](control-library-review-standard-controls.md)
-
-- [Reviewing a custom control](control-library-review-custom-controls.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Finding a control
-
-Common controls
+To get started with reviewing a control in Audit Manager, follow the procedures that are outlined here.
++ [Reviewing a common control](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-library-review-common-controls.html)
++ [Reviewing a core control](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-library-review-core-controls.html)
++ [Reviewing a standard control](control-library-review-standard-controls.md)
++ [Reviewing a custom control](control-library-review-custom-controls.md)
 
 All content copied from https://docs.aws.amazon.com/.

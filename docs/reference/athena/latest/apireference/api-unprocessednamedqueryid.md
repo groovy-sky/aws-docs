@@ -3,57 +3,37 @@ title: "UnprocessedNamedQueryId"
 ---
 
 # UnprocessedNamedQueryId
+<a name="API_UnprocessedNamedQueryId"></a>
 
 Information about a named query ID that could not be processed.
 
 ## Contents
+<a name="API_UnprocessedNamedQueryId_Contents"></a>
 
-**ErrorCode**
-
-The error code returned when the processing request for the named query failed, if
-applicable.
-
+ ** ErrorCode **   <a name="athena-Type-UnprocessedNamedQueryId-ErrorCode"></a>
+The error code returned when the processing request for the named query failed, if applicable.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 256.
-
 Required: No
 
-**ErrorMessage**
-
-The error message returned when the processing request for the named query failed, if
-applicable.
-
+ ** ErrorMessage **   <a name="athena-Type-UnprocessedNamedQueryId-ErrorMessage"></a>
+The error message returned when the processing request for the named query failed, if applicable.
 Type: String
-
 Required: No
 
-**NamedQueryId**
-
+ ** NamedQueryId **   <a name="athena-Type-UnprocessedNamedQueryId-NamedQueryId"></a>
 The unique identifier of the named query.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Pattern: `\S+`
-
 Required: No
 
 ## See Also
+<a name="API_UnprocessedNamedQueryId_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/unprocessednamedqueryid.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/unprocessednamedqueryid.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/unprocessednamedqueryid.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-UnprocessedPreparedStatementName
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/UnprocessedNamedQueryId)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/UnprocessedNamedQueryId)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/UnprocessedNamedQueryId)
 
 All content copied from https://docs.aws.amazon.com/.

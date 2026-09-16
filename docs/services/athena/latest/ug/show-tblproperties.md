@@ -3,38 +3,32 @@ title: "SHOW TBLPROPERTIES"
 ---
 
 # SHOW TBLPROPERTIES
+<a name="show-tblproperties"></a>
 
 Lists table properties for the named table.
 
 ## Synopsis
+<a name="synopsis"></a>
 
-```sql
-
+```
 SHOW TBLPROPERTIES table_name [('property_name')]
 ```
 
 ## Parameters
+<a name="parameters"></a>
 
-**\[('property\_name')\]**
-
+**[('property\_name')]**
 If included, only the value of the property named `property_name` is listed.
 
 ## Examples
+<a name="examples"></a>
 
-```sql
-
+```
 SHOW TBLPROPERTIES orders;
 ```
 
-```sql
-
+```
 SHOW TBLPROPERTIES orders('comment');
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SHOW TABLES
-
-SHOW VIEWS
 
 All content copied from https://docs.aws.amazon.com/.

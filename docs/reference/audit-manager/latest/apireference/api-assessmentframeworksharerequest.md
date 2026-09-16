@@ -3,182 +3,112 @@ title: "AssessmentFrameworkShareRequest"
 ---
 
 # AssessmentFrameworkShareRequest
+<a name="API_AssessmentFrameworkShareRequest"></a>
 
-Represents a share request for a custom framework in AWS Audit Manager.
+ Represents a share request for a custom framework in AWS Audit Manager.
 
 ## Contents
+<a name="API_AssessmentFrameworkShareRequest_Contents"></a>
 
-**comment**
-
-An optional comment from the sender about the share request.
-
+ ** comment **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-comment"></a>
+ An optional comment from the sender about the share request.
 Type: String
-
 Length Constraints: Maximum length of 500.
-
 Pattern: `^[\w\W\s\S]*$`
-
 Required: No
 
-**complianceType**
-
-The compliance type that the shared custom framework supports, such as CIS or
-HIPAA.
-
+ ** complianceType **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-complianceType"></a>
+The compliance type that the shared custom framework supports, such as CIS or HIPAA.
 Type: String
-
 Length Constraints: Maximum length of 100.
-
 Pattern: `^[\w\W\s\S]*$`
-
 Required: No
 
-**creationTime**
-
-The time when the share request was created.
-
+ ** creationTime **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-creationTime"></a>
+ The time when the share request was created.
 Type: Timestamp
-
 Required: No
 
-**customControlsCount**
-
+ ** customControlsCount **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-customControlsCount"></a>
 The number of custom controls that are part of the shared custom framework.
-
 Type: Integer
-
 Required: No
 
-**destinationAccount**
-
-The AWS account of the recipient.
-
+ ** destinationAccount **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-destinationAccount"></a>
+ The AWS account of the recipient.
 Type: String
-
 Length Constraints: Fixed length of 12.
-
 Pattern: `^[0-9]{12}$`
-
 Required: No
 
-**destinationRegion**
-
-The AWS Region of the recipient.
-
+ ** destinationRegion **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-destinationRegion"></a>
+ The AWS Region of the recipient.
 Type: String
-
 Pattern: `^[a-z]{2}-[a-z]+-[0-9]{1}$`
-
 Required: No
 
-**expirationTime**
-
-The time when the share request expires.
-
+ ** expirationTime **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-expirationTime"></a>
+ The time when the share request expires.
 Type: Timestamp
-
 Required: No
 
-**frameworkDescription**
-
+ ** frameworkDescription **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-frameworkDescription"></a>
 The description of the shared custom framework.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1000.
-
 Pattern: `^[\w\W\s\S]*$`
-
 Required: No
 
-**frameworkId**
-
+ ** frameworkId **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-frameworkId"></a>
 The unique identifier for the shared custom framework.
-
 Type: String
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
 Required: No
 
-**frameworkName**
-
-The name of the custom framework that the share request is for.
-
+ ** frameworkName **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-frameworkName"></a>
+ The name of the custom framework that the share request is for.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 300.
-
 Pattern: `^[^\\]*$`
-
 Required: No
 
-**id**
-
-The unique identifier for the share request.
-
+ ** id **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-id"></a>
+ The unique identifier for the share request.
 Type: String
-
 Length Constraints: Fixed length of 36.
-
 Pattern: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
 Required: No
 
-**lastUpdated**
-
-Specifies when the share request was last updated.
-
+ ** lastUpdated **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-lastUpdated"></a>
+ Specifies when the share request was last updated.
 Type: Timestamp
-
 Required: No
 
-**sourceAccount**
-
-The AWS account of the sender.
-
+ ** sourceAccount **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-sourceAccount"></a>
+ The AWS account of the sender.
 Type: String
-
 Length Constraints: Fixed length of 12.
-
 Pattern: `^[0-9]{12}$`
-
 Required: No
 
-**standardControlsCount**
-
+ ** standardControlsCount **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-standardControlsCount"></a>
 The number of standard controls that are part of the shared custom framework.
-
 Type: Integer
-
 Required: No
 
-**status**
-
-The status of the share request.
-
+ ** status **   <a name="auditmanager-Type-AssessmentFrameworkShareRequest-status"></a>
+ The status of the share request.
 Type: String
-
 Valid Values: `ACTIVE | REPLICATING | SHARED | EXPIRING | FAILED | EXPIRED | DECLINED | REVOKED`
-
 Required: No
 
 ## See Also
+<a name="API_AssessmentFrameworkShareRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/assessmentframeworksharerequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/assessmentframeworksharerequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/assessmentframeworksharerequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssessmentFrameworkMetadata
-
-AssessmentMetadata
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/AssessmentFrameworkShareRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/AssessmentFrameworkShareRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/AssessmentFrameworkShareRequest)
 
 All content copied from https://docs.aws.amazon.com/.

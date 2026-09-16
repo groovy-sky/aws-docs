@@ -3,21 +3,18 @@ title: "Use the Spark EXPLAIN statement to troubleshoot Spark SQL"
 ---
 
 # Use the Spark EXPLAIN statement to troubleshoot Spark SQL
+<a name="notebooks-spark-troubleshooting-explain"></a>
 
-You can use the Spark `EXPLAIN` statement with Spark SQL to troubleshoot your
-Spark code. The following code and output examples show this usage.
+You can use the Spark `EXPLAIN` statement with Spark SQL to troubleshoot your Spark code. The following code and output examples show this usage.
 
-###### Example– Spark SELECT statement
+**Example – Spark SELECT statement**
 
-```sql
-
+```
 spark.sql("select * from select_taxi_table").explain(True)
 ```
-
 **Output**
 
-```nohighlight
-
+```
 Calculation started (calculation_id=20c1ebd0-1ccf-ef14-db35-7c1844876a7e) in
 (session=24c1ebcb-57a8-861e-1023-736f5ae55386).
 Checking calculation status...
@@ -48,21 +45,16 @@ PartitionFilters: [], PushedFilters: [],
 ReadSchema: struct<VendorID:bigint,passenger_count:bigint,count:bigint>
 ```
 
-###### Example– Spark data frame
+**Example – Spark data frame**
+The following example shows how to use `EXPLAIN` with a Spark data frame.
 
-The following example shows how to use `EXPLAIN` with a Spark data
-frame.
-
-```sql
-
+```
 taxi1_df=taxi_df.groupBy("VendorID", "passenger_count").count()
 taxi1_df.explain("extended")
 ```
-
 **Output**
 
-```nohighlight
-
+```
 Calculation started (calculation_id=d2c1ebd1-f9f0-db25-8477-3effc001b309) in
 (session=24c1ebcb-57a8-861e-1023-736f5ae55386).
 Checking calculation status...
@@ -113,11 +105,5 @@ output=[VendorID#49L, passenger_count#52L, count#321L])
             PushedFilters: [],
             ReadSchema: struct<VendorID:bigint,passenger_count:bigint>
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Spark-enabled workgroups
-
-Log application events
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,11 +3,11 @@ title: "Convert Athena data types to JSON"
 ---
 
 # Convert Athena data types to JSON
+<a name="converting-native-data-types-to-json"></a>
 
 To convert Athena data types to JSON, use `CAST`.
 
-```sql
-
+```
 WITH dataset AS (
   SELECT
     CAST('HELLO ATHENA' AS JSON) AS hello_msg,
@@ -20,18 +20,11 @@ SELECT * FROM dataset
 This query returns:
 
 ```
-
 +-------------------------------------------+
 | hello_msg      | some_int | some_map      |
 +-------------------------------------------+
 | "HELLO ATHENA" | 12345    | {"a":1,"b":2} |
 +-------------------------------------------+
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Best practices for reading JSON data
-
-Convert JSON to Athena data types
 
 All content copied from https://docs.aws.amazon.com/.

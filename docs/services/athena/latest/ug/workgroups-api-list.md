@@ -3,26 +3,13 @@ title: "Use Athena workgroup APIs"
 ---
 
 # Use Athena workgroup APIs
+<a name="workgroups-api-list"></a>
 
-The following are some of the REST API operations used for Athena workgroups. In all of the
-following operations except for `ListWorkGroups`, you must specify a workgroup.
-In other operations, such as `StartQueryExecution`, the workgroup parameter is
-optional and the operations are not listed here. For the full list of operations, see [Amazon Athena API Reference](../../../../reference/athena/latest/apireference.md).
-
-- [CreateWorkGroup](../../../../reference/athena/latest/apireference/api-createworkgroup.md)
-
-- [DeleteWorkGroup](../../../../reference/athena/latest/apireference/api-deleteworkgroup.md)
-
-- [GetWorkGroup](../../../../reference/athena/latest/apireference/api-getworkgroup.md)
-
-- [ListWorkGroups](../../../../reference/athena/latest/apireference/api-listworkgroups.md)
-
-- [UpdateWorkGroup](../../../../reference/athena/latest/apireference/api-updateworkgroup.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configure data usage controls
-
-Troubleshoot workgroups
+The following are some of the REST API operations used for Athena workgroups. In all of the following operations except for `ListWorkGroups`, you must specify a workgroup. In other operations, such as `StartQueryExecution`, the workgroup parameter is optional and the operations are not listed here. For the full list of operations, see [Amazon Athena API Reference](https://docs.aws.amazon.com/athena/latest/APIReference/).
++  [CreateWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateWorkGroup.html)
++  [DeleteWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteWorkGroup.html)
++  [GetWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetWorkGroup.html)
++  [ListWorkGroups](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListWorkGroups.html)
++  [UpdateWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateWorkGroup.html)
 
 All content copied from https://docs.aws.amazon.com/.

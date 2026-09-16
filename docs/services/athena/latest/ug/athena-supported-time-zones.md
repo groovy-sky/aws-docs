@@ -3,20 +3,17 @@ title: "Use supported time zones"
 ---
 
 # Use supported time zones
+<a name="athena-supported-time-zones"></a>
 
-You can use the `AT TIME ZONE` operator in a `SELECT timestamp`
-statement to specify the timezone for the timestamp that is returned, as in the following
-example:
+You can use the `AT TIME ZONE` operator in a `SELECT timestamp` statement to specify the timezone for the timestamp that is returned, as in the following example:
 
-```sql
-
+```
 SELECT timestamp '2012-10-31 01:00 UTC' AT TIME ZONE 'America/Los_Angeles' AS la_time;
 ```
 
 **Results**
 
-```sql
-
+```
 la_time
 
 2012-10-30 18:00:00.000 America/Los_Angeles
@@ -25,89 +22,68 @@ la_time
 For a list of supported time zones in Athena, expand the [List of supported time zones](#athena-supported-time-zones-list) at the end of this topic.
 
 ## Timezone functions and examples
+<a name="athena-supported-time-zones-functions-examples"></a>
 
 Following are some additional timezone related functions and examples.
++ **at\_timezone({{timestamp}}, {{zone}})** – Returns the value of {{timestamp}} in the corresponding local time for {{zone}}.
 
-- at\_timezone( `timestamp`,
-`zone`) – Returns the value of
-`timestamp` in the corresponding local time for
-`zone`.
+  **Example**
 
-**Example**
+  ```
+  SELECT at_timezone(timestamp '2021-08-22 00:00 UTC', 'Canada/Newfoundland')
+  ```
 
-```sql
+  **Result**
 
-SELECT at_timezone(timestamp '2021-08-22 00:00 UTC', 'Canada/Newfoundland')
-```
+  ```
+  2021-08-21 21:30:00.000 Canada/Newfoundland
+  ```
++ **timezone\_hour({{timestamp}})** – Returns the hour of the time zone offset from timestamp as a `bigint`.
 
-**Result**
+  **Example**
 
-```nohighlight
+  ```
+  SELECT timezone_hour(timestamp '2021-08-22 04:00 UTC' AT TIME ZONE 'Canada/Newfoundland')
+  ```
 
-2021-08-21 21:30:00.000 Canada/Newfoundland
-```
+  **Result**
 
-- timezone\_hour( `timestamp`) –
-Returns the hour of the time zone offset from timestamp as a
-`bigint`.
-
-**Example**
-
-```sql
-
-SELECT timezone_hour(timestamp '2021-08-22 04:00 UTC' AT TIME ZONE 'Canada/Newfoundland')
-```
-
-**Result**
-
-```nohighlight
-
+  ```
   -2
-```
+  ```
++ **timezone\_minute({{timestamp}})** – Returns the minute of the time zone offset from {{timestamp}} as a `bigint`.
 
-- timezone\_minute( `timestamp`) –
-Returns the minute of the time zone offset from
-`timestamp` as a `bigint`.
+  **Example**
 
-**Example**
+  ```
+  SELECT timezone_minute(timestamp '2021-08-22 04:00 UTC' AT TIME ZONE 'Canada/Newfoundland')
+  ```
 
-```sql
+  **Result**
 
-SELECT timezone_minute(timestamp '2021-08-22 04:00 UTC' AT TIME ZONE 'Canada/Newfoundland')
-```
-
-**Result**
-
-```nohighlight
-
+  ```
   -30
-```
+  ```
++ **with\_timezone({{timestamp}}, {{zone}})** – Returns a timestamp with time zone from the specified {{timestamp}} and {{zone}} values.
 
-- with\_timezone( `timestamp`,
-`zone`) – Returns a timestamp
-with time zone from the specified `timestamp` and
-`zone` values.
+  **Example**
 
-**Example**
+  ```
+  SELECT with_timezone(timestamp '2021-08-22 04:00', 'Canada/Newfoundland')
+  ```
 
-```sql
+  **Result**
 
-SELECT with_timezone(timestamp '2021-08-22 04:00', 'Canada/Newfoundland')
-```
+  ```
+  2021-08-22 04:00:00.000 Canada/Newfoundland
+  ```
 
-**Result**
+## List of supported time zones
+<a name="athena-supported-time-zones-list"></a>
 
-```nohighlight
-
-2021-08-22 04:00:00.000 Canada/Newfoundland
-```
-
-The following list contains the time zones that can be used with the `AT TIME
-                    ZONE` operator in Athena. For additional timezone related functions and
-examples, see [Timezone functions and examples](#athena-supported-time-zones-functions-examples).
+The following list contains the time zones that can be used with the `AT TIME ZONE` operator in Athena. For additional timezone related functions and examples, see [Timezone functions and examples](#athena-supported-time-zones-functions-examples).
 
 ```
-
 Africa/Abidjan
 Africa/Accra
 Africa/Addis_Ababa
@@ -651,11 +627,5 @@ US/Samoa
 W-SU
 WET
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Athena engine version 3
-
-DDL statements
 
 All content copied from https://docs.aws.amazon.com/.

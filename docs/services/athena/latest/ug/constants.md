@@ -3,13 +3,11 @@ title: "Constants"
 ---
 
 # Constants
+<a name="constants"></a>
 
-The `ExampleConstants.java` class demonstrates how to query a table created
-by the [Get started](getting-started.md) tutorial in
-Athena.
+The `ExampleConstants.java` class demonstrates how to query a table created by the [Get started](getting-started.md) tutorial in Athena.
 
-```java
-
+```
 package aws.example.athena;
 
 public class ExampleConstants {
@@ -26,13 +24,6 @@ public class ExampleConstants {
     public static final String ATHENA_DEFAULT_DATABASE = "mydatabase"; // change the database to match your database
 
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Code samples
-
-Create a client to access Athena
 
 All content copied from https://docs.aws.amazon.com/.

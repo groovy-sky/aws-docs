@@ -3,74 +3,53 @@ title: "Use a SerDe to create a table"
 ---
 
 # Use a SerDe to create a table
+<a name="serde-create-a-table"></a>
 
-To use a SerDe when creating a table in Athena, use one of the following
-methods:
+To use a SerDe when creating a table in Athena, use one of the following methods:
++ Specify `ROW FORMAT DELIMITED` and then use DDL statements to specify field delimiters, as in the following example. When you specify `ROW FORMAT DELIMITED`, Athena uses the LazySimpleSerDe by default.
 
-- Specify `ROW FORMAT DELIMITED` and then use DDL statements to
-specify field delimiters, as in the following example. When you specify
-`ROW FORMAT DELIMITED`, Athena uses the LazySimpleSerDe by
-default.
+  ```
+  ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY ','
+  ESCAPED BY '\\'
+  COLLECTION ITEMS TERMINATED BY '|'
+  MAP KEYS TERMINATED BY ':'
+  ```
 
-```sql
+  For examples of `ROW FORMAT DELIMITED`, see the following topics:
 
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-ESCAPED BY '\\'
-COLLECTION ITEMS TERMINATED BY '|'
-MAP KEYS TERMINATED BY ':'
-```
+  [Lazy Simple SerDe for CSV, TSV, and custom-delimited files](lazy-simple-serde.md)
 
-For examples of `ROW FORMAT DELIMITED`, see the following
-topics:
+  [Query Amazon CloudFront logs](cloudfront-logs.md)
 
-[Lazy Simple SerDe for CSV, TSV, and custom-delimited files](lazy-simple-serde.md)
+  [Query Amazon EMR logs](emr-logs.md)
 
-[Query Amazon CloudFront logs](cloudfront-logs.md)
+  [Query Amazon VPC flow logs](vpc-flow-logs.md)
 
-[Query Amazon EMR logs](emr-logs.md)
+  [Use CTAS and INSERT INTO for ETL and data analysis](ctas-insert-into-etl.md)
++ Use `ROW FORMAT SERDE` to explicitly specify the type of SerDe that Athena should use when it reads and writes data to the table. The following example specifies the LazySimpleSerDe. To specify the delimiters, use `WITH SERDEPROPERTIES`. The properties specified by `WITH SERDEPROPERTIES` correspond to the separate statements (like `FIELDS TERMINATED BY`) in the `ROW FORMAT DELIMITED` example.
 
-[Query Amazon VPC flow logs](vpc-flow-logs.md)
+  ```
+  ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
+  WITH SERDEPROPERTIES (
+  'serialization.format' = ',',
+  'field.delim' = ',',
+  'collection.delim' = '|',
+  'mapkey.delim' = ':',
+  'escape.delim' = '\\'
+  )
+  ```
 
-[Use CTAS and INSERT INTO for ETL and data analysis](ctas-insert-into-etl.md)
+  For examples of `ROW FORMAT SERDE`, see the following topics:
 
-- Use `ROW FORMAT SERDE` to explicitly specify the type of SerDe that
-Athena should use when it reads and writes data to the table. The following
-example specifies the LazySimpleSerDe. To specify the delimiters, use `WITH
-                      SERDEPROPERTIES`. The properties specified by `WITH
-                          SERDEPROPERTIES` correspond to the separate statements (like
-`FIELDS TERMINATED BY`) in the `ROW FORMAT DELIMITED`
-example.
+  [Avro SerDe](avro-serde.md)
 
-```sql
+  [Grok SerDe](grok-serde.md)
 
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
-WITH SERDEPROPERTIES (
-'serialization.format' = ',',
-'field.delim' = ',',
-'collection.delim' = '|',
-'mapkey.delim' = ':',
-'escape.delim' = '\\'
-)
-```
+  [JSON SerDe libraries](json-serde.md)
 
-For examples of `ROW FORMAT SERDE`, see the following
-topics:
+  [Open CSV SerDe for processing CSV](csv-serde.md)
 
-[Avro SerDe](avro-serde.md)
-
-[Grok SerDe](grok-serde.md)
-
-[JSON SerDe libraries](json-serde.md)
-
-[Open CSV SerDe for processing CSV](csv-serde.md)
-
-[Regex SerDe](regex-serde.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Choose a SerDe for your data
-
-Amazon Ion Hive SerDe
+  [Regex SerDe](regex-serde.md)
 
 All content copied from https://docs.aws.amazon.com/.

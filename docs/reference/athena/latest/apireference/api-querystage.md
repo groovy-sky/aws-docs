@@ -3,98 +3,64 @@ title: "QueryStage"
 ---
 
 # QueryStage
+<a name="API_QueryStage"></a>
 
-Stage statistics such as input and output rows and bytes, execution time and stage
-state. This information also includes substages and the query stage plan.
+Stage statistics such as input and output rows and bytes, execution time and stage state. This information also includes substages and the query stage plan.
 
 ## Contents
+<a name="API_QueryStage_Contents"></a>
 
-**ExecutionTime**
-
+ ** ExecutionTime **   <a name="athena-Type-QueryStage-ExecutionTime"></a>
 Time taken to execute this stage.
-
 Type: Long
-
 Required: No
 
-**InputBytes**
-
+ ** InputBytes **   <a name="athena-Type-QueryStage-InputBytes"></a>
 The number of bytes input into the stage for execution.
-
 Type: Long
-
 Required: No
 
-**InputRows**
-
+ ** InputRows **   <a name="athena-Type-QueryStage-InputRows"></a>
 The number of rows input into the stage for execution.
-
 Type: Long
-
 Required: No
 
-**OutputBytes**
-
+ ** OutputBytes **   <a name="athena-Type-QueryStage-OutputBytes"></a>
 The number of bytes output from the stage after execution.
-
 Type: Long
-
 Required: No
 
-**OutputRows**
-
+ ** OutputRows **   <a name="athena-Type-QueryStage-OutputRows"></a>
 The number of rows output from the stage after execution.
-
 Type: Long
-
 Required: No
 
-**QueryStagePlan**
-
+ ** QueryStagePlan **   <a name="athena-Type-QueryStage-QueryStagePlan"></a>
 Stage plan information such as name, identifier, sub plans, and source stages.
-
-Type: [QueryStagePlanNode](api-querystageplannode.md) object
-
+Type: [QueryStagePlanNode](API_QueryStagePlanNode.md) object
 Required: No
 
-**StageId**
-
+ ** StageId **   <a name="athena-Type-QueryStage-StageId"></a>
 The identifier for a stage.
-
 Type: Long
-
 Required: No
 
-**State**
-
+ ** State **   <a name="athena-Type-QueryStage-State"></a>
 State of the stage after query execution.
-
 Type: String
-
 Required: No
 
-**SubStages**
-
+ ** SubStages **   <a name="athena-Type-QueryStage-SubStages"></a>
 List of sub query stages that form this stage execution plan.
-
-Type: Array of [QueryStage](api-querystage.md) objects
-
+Type: Array of [QueryStage](#API_QueryStage) objects
 Required: No
 
 ## See Also
+<a name="API_QueryStage_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/querystage.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/querystage.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/querystage.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QueryRuntimeStatisticsTimeline
-
-QueryStagePlanNode
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/QueryStage)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/QueryStage)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/QueryStage)
 
 All content copied from https://docs.aws.amazon.com/.

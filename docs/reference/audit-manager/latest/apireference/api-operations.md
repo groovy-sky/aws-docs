@@ -3,137 +3,70 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported:
-
-- [AssociateAssessmentReportEvidenceFolder](api-associateassessmentreportevidencefolder.md)
-
-- [BatchAssociateAssessmentReportEvidence](api-batchassociateassessmentreportevidence.md)
-
-- [BatchCreateDelegationByAssessment](api-batchcreatedelegationbyassessment.md)
-
-- [BatchDeleteDelegationByAssessment](api-batchdeletedelegationbyassessment.md)
-
-- [BatchDisassociateAssessmentReportEvidence](api-batchdisassociateassessmentreportevidence.md)
-
-- [BatchImportEvidenceToAssessmentControl](api-batchimportevidencetoassessmentcontrol.md)
-
-- [CreateAssessment](api-createassessment.md)
-
-- [CreateAssessmentFramework](api-createassessmentframework.md)
-
-- [CreateAssessmentReport](api-createassessmentreport.md)
-
-- [CreateControl](api-createcontrol.md)
-
-- [DeleteAssessment](api-deleteassessment.md)
-
-- [DeleteAssessmentFramework](api-deleteassessmentframework.md)
-
-- [DeleteAssessmentFrameworkShare](api-deleteassessmentframeworkshare.md)
-
-- [DeleteAssessmentReport](api-deleteassessmentreport.md)
-
-- [DeleteControl](api-deletecontrol.md)
-
-- [DeregisterAccount](api-deregisteraccount.md)
-
-- [DeregisterOrganizationAdminAccount](api-deregisterorganizationadminaccount.md)
-
-- [DisassociateAssessmentReportEvidenceFolder](api-disassociateassessmentreportevidencefolder.md)
-
-- [GetAccountStatus](api-getaccountstatus.md)
-
-- [GetAssessment](api-getassessment.md)
-
-- [GetAssessmentFramework](api-getassessmentframework.md)
-
-- [GetAssessmentReportUrl](api-getassessmentreporturl.md)
-
-- [GetChangeLogs](api-getchangelogs.md)
-
-- [GetControl](api-getcontrol.md)
-
-- [GetDelegations](api-getdelegations.md)
-
-- [GetEvidence](api-getevidence.md)
-
-- [GetEvidenceByEvidenceFolder](api-getevidencebyevidencefolder.md)
-
-- [GetEvidenceFileUploadUrl](api-getevidencefileuploadurl.md)
-
-- [GetEvidenceFolder](api-getevidencefolder.md)
-
-- [GetEvidenceFoldersByAssessment](api-getevidencefoldersbyassessment.md)
-
-- [GetEvidenceFoldersByAssessmentControl](api-getevidencefoldersbyassessmentcontrol.md)
-
-- [GetInsights](api-getinsights.md)
-
-- [GetInsightsByAssessment](api-getinsightsbyassessment.md)
-
-- [GetOrganizationAdminAccount](api-getorganizationadminaccount.md)
-
-- [GetServicesInScope](api-getservicesinscope.md)
-
-- [GetSettings](api-getsettings.md)
-
-- [ListAssessmentControlInsightsByControlDomain](api-listassessmentcontrolinsightsbycontroldomain.md)
-
-- [ListAssessmentFrameworks](api-listassessmentframeworks.md)
-
-- [ListAssessmentFrameworkShareRequests](api-listassessmentframeworksharerequests.md)
-
-- [ListAssessmentReports](api-listassessmentreports.md)
-
-- [ListAssessments](api-listassessments.md)
-
-- [ListControlDomainInsights](api-listcontroldomaininsights.md)
-
-- [ListControlDomainInsightsByAssessment](api-listcontroldomaininsightsbyassessment.md)
-
-- [ListControlInsightsByControlDomain](api-listcontrolinsightsbycontroldomain.md)
-
-- [ListControls](api-listcontrols.md)
-
-- [ListKeywordsForDataSource](api-listkeywordsfordatasource.md)
-
-- [ListNotifications](api-listnotifications.md)
-
-- [ListTagsForResource](api-listtagsforresource.md)
-
-- [RegisterAccount](api-registeraccount.md)
-
-- [RegisterOrganizationAdminAccount](api-registerorganizationadminaccount.md)
-
-- [StartAssessmentFrameworkShare](api-startassessmentframeworkshare.md)
-
-- [TagResource](api-tagresource.md)
-
-- [UntagResource](api-untagresource.md)
-
-- [UpdateAssessment](api-updateassessment.md)
-
-- [UpdateAssessmentControl](api-updateassessmentcontrol.md)
-
-- [UpdateAssessmentControlSetStatus](api-updateassessmentcontrolsetstatus.md)
-
-- [UpdateAssessmentFramework](api-updateassessmentframework.md)
-
-- [UpdateAssessmentFrameworkShare](api-updateassessmentframeworkshare.md)
-
-- [UpdateAssessmentStatus](api-updateassessmentstatus.md)
-
-- [UpdateControl](api-updatecontrol.md)
-
-- [UpdateSettings](api-updatesettings.md)
-
-- [ValidateAssessmentReportIntegrity](api-validateassessmentreportintegrity.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-AssociateAssessmentReportEvidenceFolder
++  [AssociateAssessmentReportEvidenceFolder](API_AssociateAssessmentReportEvidenceFolder.md)
++  [BatchAssociateAssessmentReportEvidence](API_BatchAssociateAssessmentReportEvidence.md)
++  [BatchCreateDelegationByAssessment](API_BatchCreateDelegationByAssessment.md)
++  [BatchDeleteDelegationByAssessment](API_BatchDeleteDelegationByAssessment.md)
++  [BatchDisassociateAssessmentReportEvidence](API_BatchDisassociateAssessmentReportEvidence.md)
++  [BatchImportEvidenceToAssessmentControl](API_BatchImportEvidenceToAssessmentControl.md)
++  [CreateAssessment](API_CreateAssessment.md)
++  [CreateAssessmentFramework](API_CreateAssessmentFramework.md)
++  [CreateAssessmentReport](API_CreateAssessmentReport.md)
++  [CreateControl](API_CreateControl.md)
++  [DeleteAssessment](API_DeleteAssessment.md)
++  [DeleteAssessmentFramework](API_DeleteAssessmentFramework.md)
++  [DeleteAssessmentFrameworkShare](API_DeleteAssessmentFrameworkShare.md)
++  [DeleteAssessmentReport](API_DeleteAssessmentReport.md)
++  [DeleteControl](API_DeleteControl.md)
++  [DeregisterAccount](API_DeregisterAccount.md)
++  [DeregisterOrganizationAdminAccount](API_DeregisterOrganizationAdminAccount.md)
++  [DisassociateAssessmentReportEvidenceFolder](API_DisassociateAssessmentReportEvidenceFolder.md)
++  [GetAccountStatus](API_GetAccountStatus.md)
++  [GetAssessment](API_GetAssessment.md)
++  [GetAssessmentFramework](API_GetAssessmentFramework.md)
++  [GetAssessmentReportUrl](API_GetAssessmentReportUrl.md)
++  [GetChangeLogs](API_GetChangeLogs.md)
++  [GetControl](API_GetControl.md)
++  [GetDelegations](API_GetDelegations.md)
++  [GetEvidence](API_GetEvidence.md)
++  [GetEvidenceByEvidenceFolder](API_GetEvidenceByEvidenceFolder.md)
++  [GetEvidenceFileUploadUrl](API_GetEvidenceFileUploadUrl.md)
++  [GetEvidenceFolder](API_GetEvidenceFolder.md)
++  [GetEvidenceFoldersByAssessment](API_GetEvidenceFoldersByAssessment.md)
++  [GetEvidenceFoldersByAssessmentControl](API_GetEvidenceFoldersByAssessmentControl.md)
++  [GetInsights](API_GetInsights.md)
++  [GetInsightsByAssessment](API_GetInsightsByAssessment.md)
++  [GetOrganizationAdminAccount](API_GetOrganizationAdminAccount.md)
++  [GetServicesInScope](API_GetServicesInScope.md)
++  [GetSettings](API_GetSettings.md)
++  [ListAssessmentControlInsightsByControlDomain](API_ListAssessmentControlInsightsByControlDomain.md)
++  [ListAssessmentFrameworks](API_ListAssessmentFrameworks.md)
++  [ListAssessmentFrameworkShareRequests](API_ListAssessmentFrameworkShareRequests.md)
++  [ListAssessmentReports](API_ListAssessmentReports.md)
++  [ListAssessments](API_ListAssessments.md)
++  [ListControlDomainInsights](API_ListControlDomainInsights.md)
++  [ListControlDomainInsightsByAssessment](API_ListControlDomainInsightsByAssessment.md)
++  [ListControlInsightsByControlDomain](API_ListControlInsightsByControlDomain.md)
++  [ListControls](API_ListControls.md)
++  [ListKeywordsForDataSource](API_ListKeywordsForDataSource.md)
++  [ListNotifications](API_ListNotifications.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [RegisterAccount](API_RegisterAccount.md)
++  [RegisterOrganizationAdminAccount](API_RegisterOrganizationAdminAccount.md)
++  [StartAssessmentFrameworkShare](API_StartAssessmentFrameworkShare.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateAssessment](API_UpdateAssessment.md)
++  [UpdateAssessmentControl](API_UpdateAssessmentControl.md)
++  [UpdateAssessmentControlSetStatus](API_UpdateAssessmentControlSetStatus.md)
++  [UpdateAssessmentFramework](API_UpdateAssessmentFramework.md)
++  [UpdateAssessmentFrameworkShare](API_UpdateAssessmentFrameworkShare.md)
++  [UpdateAssessmentStatus](API_UpdateAssessmentStatus.md)
++  [UpdateControl](API_UpdateControl.md)
++  [UpdateSettings](API_UpdateSettings.md)
++  [ValidateAssessmentReportIntegrity](API_ValidateAssessmentReportIntegrity.md)
 
 All content copied from https://docs.aws.amazon.com/.

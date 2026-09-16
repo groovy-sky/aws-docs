@@ -3,24 +3,13 @@ title: "Example queries for AWS WAF logs"
 ---
 
 # Example queries for AWS WAF logs
+<a name="query-examples-waf-logs"></a>
 
-Many of the example queries in this section use the partition projection table created
-previously. Modify the table name, column values, and other variables
-in the examples according to your requirements. To improve the performance of your
-queries and reduce cost, add the partition column in the filter condition.
+Many of the example queries in this section use the partition projection table created previously. Modify the table name, column values, and other variables in the examples according to your requirements. To improve the performance of your queries and reduce cost, add the partition column in the filter condition.
 
-###### Topics
-
-- [Count referrers, IP addresses, or matched rules](query-examples-waf-logs-count.md)
-
-- [Query using date and time](query-examples-waf-logs-date-time.md)
-
-- [Query for blocked requests or addresses](query-examples-waf-logs-blocked-requests.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create a table without partitioning
-
-Query for counts
+**Topics**
++ [Count referrers, IP addresses, or matched rules](query-examples-waf-logs-count.md)
++ [Query using date and time](query-examples-waf-logs-date-time.md)
++ [Query for blocked requests or addresses](query-examples-waf-logs-blocked-requests.md)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,12 +3,11 @@ title: "List query executions"
 ---
 
 # List query executions
+<a name="list-query-executions"></a>
 
-The `ListQueryExecutionsExample` shows how to obtain a list of query
-execution IDs.
+The `ListQueryExecutionsExample` shows how to obtain a list of query execution IDs.
 
-```java
-
+```
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;
@@ -53,13 +52,6 @@ public class ListQueryExecutionsExample {
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Stop query execution
-
-Create a named query
 
 All content copied from https://docs.aws.amazon.com/.

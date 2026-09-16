@@ -1,15 +1,13 @@
 ---
-title: "Filter arrays using the . notation"
+title: "Filter arrays using the `.` notation"
 ---
 
 # Filter arrays using the `.` notation
+<a name="filtering-with-dot"></a>
 
-In the following example, select the `accountId` field from the
-`userIdentity` column of a AWS CloudTrail logs table by using the dot
-`.` notation. For more information, see [Querying AWS CloudTrail Logs](cloudtrail-logs.md).
+In the following example, select the `accountId` field from the `userIdentity` column of a AWS CloudTrail logs table by using the dot `.` notation. For more information, see [Querying AWS CloudTrail Logs](cloudtrail-logs.md).
 
-```sql
-
+```
 SELECT
   CAST(useridentity.accountid AS bigint) as newid
 FROM cloudtrail_logs
@@ -19,7 +17,6 @@ LIMIT 2;
 This query returns:
 
 ```
-
 +--------------+
 | newid        |
 +--------------+
@@ -31,8 +28,7 @@ This query returns:
 
 To query an array of values, issue this query:
 
-```sql
-
+```
 WITH dataset AS (
   SELECT ARRAY[
     CAST(ROW('Bob', 38) AS ROW(name VARCHAR, age INTEGER)),
@@ -46,18 +42,11 @@ SELECT * FROM dataset
 It returns this result:
 
 ```
-
 +-----------------------------------------------------------------+
 | users                                                           |
 +-----------------------------------------------------------------+
 | [{NAME=Bob, AGE=38}, {NAME=Alice, AGE=35}, {NAME=Jane, AGE=27}] |
 +-----------------------------------------------------------------+
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Change field names in arrays using CAST
-
-Filter arrays with nested values
 
 All content copied from https://docs.aws.amazon.com/.

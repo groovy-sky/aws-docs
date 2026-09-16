@@ -3,48 +3,53 @@ title: "Basic connection parameters"
 ---
 
 # Basic connection parameters
+<a name="jdbc-v3-driver-basic-connection-parameters"></a>
 
-The following sections describe the basic connection parameters for the JDBC 3.x
-driver.
+The following sections describe the basic connection parameters for the JDBC 3.x driver.
 
 ## Region
+<a name="jdbc-v3-driver-region"></a>
 
-The AWS Region where queries will be run. For a list of regions, see [Amazon Athena endpoints and\
-quotas](../../../../general/latest/gr/athena.md).
+The AWS Region where queries will be run. For a list of regions, see [Amazon Athena endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/athena.html).
 
-Parameter nameAliasParameter typeDefault valueRegionAwsRegion (deprecated)Mandatory (but if not provided, will be searched using the [DefaultAwsRegionProviderChain](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/regions/providers/DefaultAwsRegionProviderChain.html)) none
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| Region | AwsRegion (deprecated) | Mandatory (but if not provided, will be searched using the [DefaultAwsRegionProviderChain](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/regions/providers/DefaultAwsRegionProviderChain.html))  | none |
 
 ## Catalog
+<a name="jdbc-v3-driver-catalog"></a>
 
-The catalog that contains the databases and the tables that will be accessed with the
-driver. For information about catalogs, see [DataCatalog](../../../../reference/athena/latest/apireference/api-datacatalog.md).
+The catalog that contains the databases and the tables that will be accessed with the driver. For information about catalogs, see [DataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_DataCatalog.html).
 
-Parameter nameAliasParameter typeDefault valueCatalognoneOptionalAwsDataCatalog
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| Catalog | none | Optional | AwsDataCatalog |
 
 ## Database
+<a name="jdbc-v3-driver-database"></a>
 
-The database where queries will run. Tables that are not explicitly qualified with a
-database name are resolved to this database. For information about databases, see [Database](../../../../reference/athena/latest/apireference/api-database.md).
+The database where queries will run. Tables that are not explicitly qualified with a database name are resolved to this database. For information about databases, see [Database](https://docs.aws.amazon.com/athena/latest/APIReference/API_Database.html).
 
-Parameter nameAliasParameter typeDefault valueDatabaseSchemaOptionaldefault
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| Database | Schema | Optional | default |
 
 ## Workgroup
+<a name="jdbc-v3-driver-workgroup"></a>
 
-The workgroup in which queries will run. For information about workgroups, see [WorkGroup](../../../../reference/athena/latest/apireference/api-workgroup.md).
+The workgroup in which queries will run. For information about workgroups, see [WorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_WorkGroup.html).
 
-Parameter nameAliasParameter typeDefault valueWorkGroupnoneOptionalprimary
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| WorkGroup | none | Optional | primary |
 
 ## Output location
+<a name="jdbc-v3-driver-output-location"></a>
 
-The location in Amazon S3 where query results will be stored. For information about output
-location, see [ResultConfiguration](../../../../reference/athena/latest/apireference/api-resultconfiguration.md).
+The location in Amazon S3 where query results will be stored. For information about output location, see [ResultConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfiguration.html).
 
-Parameter nameAliasParameter typeDefault valueOutputLocationS3OutputLocation (deprecated)Mandatory (unless the workgroup specifies an output location)none
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JDBC 3.x connection parameters
-
-Advanced
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| OutputLocation | S3OutputLocation (deprecated) | Mandatory (unless the workgroup specifies an output location) | none |
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,57 +3,38 @@ title: "Step 3: Query data"
 ---
 
 # Step 3: Query data
+<a name="step-3-query-data"></a>
 
-Now that you have the `cloudfront_logs` table created in Athena based on the
-data in Amazon S3, you can run SQL queries on the table and see the results in Athena. For
-more information about using SQL in Athena, see [SQL reference for Athena](ddl-sql-reference.md).
+Now that you have the `cloudfront_logs` table created in Athena based on the data in Amazon S3, you can run SQL queries on the table and see the results in Athena. For more information about using SQL in Athena, see [SQL reference for Athena](ddl-sql-reference.md).
 
-###### To run a query
+**To run a query**
 
-1. Choose the plus ( **+**) sign to open a new query tab and
-    enter the following SQL statement in the query pane.
+1. Choose the plus (**\+**) sign to open a new query tab and enter the following SQL statement in the query pane.
 
-```sql
+   ```
+   SELECT os, COUNT(*) count
+   FROM cloudfront_logs
+   WHERE date BETWEEN date '2014-07-05' AND date '2014-08-05'
+   GROUP BY os
+   ```
 
-SELECT os, COUNT(*) count
-FROM cloudfront_logs
-WHERE date BETWEEN date '2014-07-05' AND date '2014-08-05'
-GROUP BY os
-```
+1. Choose **Run**.
 
-2. Choose **Run**.
+   The results look like the following:
+![Viewing query results in the Athena console.](https://docs.aws.amazon.com/athena/latest/ug/images/getting-started-query-results.png)
 
-The results look like the following:
+1. To save the results of the query to a `.csv` file, choose **Download results**.
+![Downloading query results in CSV format.](https://docs.aws.amazon.com/athena/latest/ug/images/getting-started-query-results-download-csv.png)
 
-![Viewing query results in the Athena console.](https://docs.aws.amazon.com/images/athena/latest/ug/images/getting-started-query-results.png)
+1. To view or run previous queries, choose the **Recent queries** tab.
+![Choose Recent queries to view previous queries.](https://docs.aws.amazon.com/athena/latest/ug/images/getting-started-recent-queries.png)
 
-3. To save the results of the query to a `.csv` file, choose
-    **Download results**.
+1. To download the results of a previous query from the **Recent queries** tab, select the query, and then choose **Download results**. Queries are retained for 45 days.
+![Viewing and downloading recent queries in the Athena console.](https://docs.aws.amazon.com/athena/latest/ug/images/getting-started-recent-queries-tab-download.png)
 
-![Downloading query results in CSV format.](https://docs.aws.amazon.com/images/athena/latest/ug/images/getting-started-query-results-download-csv.png)
+1. To download one or more recent SQL query strings to a CSV file, choose **Download CSV**.
+![Downloading recent query strings to a CSV file.](https://docs.aws.amazon.com/athena/latest/ug/images/getting-started-recent-queries-tab-download-csv.png)
 
-4. To view or run previous queries, choose the **Recent**
-**queries** tab.
-
-![Choose Recent queries to view previous queries.](https://docs.aws.amazon.com/images/athena/latest/ug/images/getting-started-recent-queries.png)
-
-5. To download the results of a previous query from the **Recent**
-**queries** tab, select the query, and then choose **Download**
-**results**. Queries are retained for 45 days.
-
-![Viewing and downloading recent queries in the Athena console.](https://docs.aws.amazon.com/images/athena/latest/ug/images/getting-started-recent-queries-tab-download.png)
-
-6. To download one or more recent SQL query strings to a CSV file, choose
-    **Download CSV**.
-
-![Downloading recent query strings to a CSV file.](https://docs.aws.amazon.com/images/athena/latest/ug/images/getting-started-recent-queries-tab-download-csv.png)
-
-For more information, see [Work with query results and recent queries](querying.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 2: Create a table
-
-Step 4: Use named queries
+   For more information, see [Work with query results and recent queries](querying.md).
 
 All content copied from https://docs.aws.amazon.com/.

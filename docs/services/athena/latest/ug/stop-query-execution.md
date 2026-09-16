@@ -3,12 +3,11 @@ title: "Stop query execution"
 ---
 
 # Stop query execution
+<a name="stop-query-execution"></a>
 
-The `StopQueryExecutionExample` runs an example query, immediately stops
-the query, and checks the status of the query to ensure that it was canceled.
+The `StopQueryExecutionExample` runs an example query, immediately stops the query, and checks the status of the query to ensure that it was canceled.
 
-```java
-
+```
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;
@@ -97,13 +96,6 @@ public class StopQueryExecutionExample {
 
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Start query execution
-
-List query executions
 
 All content copied from https://docs.aws.amazon.com/.

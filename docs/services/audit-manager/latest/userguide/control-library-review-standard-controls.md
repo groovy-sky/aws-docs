@@ -2,221 +2,106 @@
 title: "Reviewing a standard control"
 ---
 
-AWS Audit Manager will no longer be open to new customers starting
-April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
-can continue to use the service as normal. For more information, see
-[AWS Audit Manager availability change](audit-manager-availability-change.md).
+AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Reviewing a standard control
+<a name="control-library-review-standard-controls"></a>
 
-You can review the details of a standard control by using the Audit Manager console, the Audit Manager
-API, or the AWS Command Line Interface (AWS CLI).
+You can review the details of a standard control by using the Audit Manager console, the Audit Manager API, or the AWS Command Line Interface (AWS CLI).
 
 ## Prerequisites
+<a name="control-library-review-standard-controls-prerequisites"></a>
 
-Make sure your IAM identity has appropriate permissions to view controls in
-AWS Audit Manager. Two suggested policies that grant these permissions are [AWSAuditManagerAdministratorAccess](../../../aws-managed-policy/latest/reference/awsauditmanageradministratoraccess.md) and [Allow users management access to AWS Audit Manager](security-iam-id-based-policy-examples.md#management-access).
+Make sure your IAM identity has appropriate permissions to view controls in AWS Audit Manager. Two suggested policies that grant these permissions are [AWSAuditManagerAdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerAdministratorAccess.html) and [Allow users management access to AWS Audit Manager](security_iam_id-based-policy-examples.md#management-access).
 
 ## Procedure
+<a name="control-library-review-standard-controls-procedure"></a>
 
-You can review the details of a standard control by using the Audit Manager console, the Audit Manager
-API, or the AWS Command Line Interface (AWS CLI).
+You can review the details of a standard control by using the Audit Manager console, the Audit Manager API, or the AWS Command Line Interface (AWS CLI).
 
-Audit Manager console
+------
+#### [ Audit Manager console ]
 
-###### To view standard control details on the Audit Manager console
+**To view standard control details on the Audit Manager console**
 
 1. Open the AWS Audit Manager console at [https://console.aws.amazon.com/auditmanager/home](https://console.aws.amazon.com/auditmanager/home).
 
-2. In the navigation pane, choose **Control library**.
+1. In the navigation pane, choose **Control library**.
 
-3. Choose **Standard** to see the standard controls that are
-    provided by AWS.
+1. Choose **Standard** to see the standard controls that are provided by AWS.
 
-4. Choose any standard control name to view the details for that
-    control.
+1. Choose any standard control name to view the details for that control.
 
-5. Review the standard control details using the following information as
-    reference.
+1. Review the standard control details using the following information as reference.
 
 **Overview section**
-
-This section describes the standard control and lists the [data\
-source types](concepts.md#control-data-source) that it uses to collect evidence.
+This section describes the standard control and lists the [data source types](https://docs.aws.amazon.com/audit-manager/latest/userguide/concepts.html#control-data-source) that it uses to collect evidence.
 
 **Evidence sources tab**
-
 This tab includes the following information:
-
-NameDescription
-
-**Core controls**
-
-These are the core controls that collect evidence to support the
-standard control.
-
-Each core control uses a predefined grouping of
-data sources to collect evidence about an AWS service. These data
-sources are managed for you by AWS, and are automatically updated
-whenever regulations and standards change and new data sources are
-identified. Choose any core control to see the underlying data
-sources.
-
-**Data sources**
-
-These are the other AWS managed data sources that collect
-evidence to support the standard control.
-
-- **Mapping** – The specific keyword
-that's used to collect evidence.
-
-- If the type is _AWS Config_, the mapping is an AWS Config rule
-(such as `SNS_ENCRYPTED_KMS`).
-
-- If the type is _AWS Security Hub CSPM_, the mapping is a Security Hub CSPM control
-(such as `EC2.1`).
-
-- If the type is _AWS API_
-_calls_, the mapping is an API call (such as
-`kms_ListKeys`).
-
-- If the type is _AWS CloudTrail_, the mapping is a CloudTrail event (such as
-`CreateAccessKey`).
-
-- **Type** – The type of data source
-that the evidence comes from.
-
-- If Audit Manager collects the evidence, the type can be _AWS Security Hub CSPM_, _AWS Config_, _AWS CloudTrail_, or _AWS API_
-_calls_.
-
-- If you upload your own evidence, the type is _Manual_. A description indicates
-if the required manual evidence is a _File upload_ or a _Text_
-_response_.
-
-- **Frequency** – How often Audit Manager
-collects evidence for an AWS API call data source.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/control-library-review-standard-controls.html)
 
 **Details tab**
-
 This tab includes the following information:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/control-library-review-standard-controls.html)
 
-NameDescription
+------
+#### [ AWS CLI ]
 
-**Instructions**
+**To view standard control details in the AWS CLI**
 
-The directions that describe how to test and remediate the
-control.
+1. Follow the steps to [find a control](https://docs.aws.amazon.com/audit-manager/latest/userguide/access-available-controls.html). Make sure to set the `--control-type` as `Standard`, and apply any optional filters as needed.
 
-**Testing information**
+   ```
+   aws auditmanager list-controls --control-type Standard
+   ```
 
-The recommended testing procedures.
+1. In the response, identify the control that you want to review and take note of the control ID and Amazon Resource Name (ARN).
 
-**Action plan**
+1. Run the [get-control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/get-control.html) command and specify the `--control-id`. In the following example, replace the {{placeholder text}} with your own information.
 
-The recommended actions to take if you need to remediate the
-control.
+   ```
+   aws auditmanager get-control --control-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
+   ```
+**Tip**
+The control details are returned in JSON format. To help you understand this data, see [get-control Output](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/get-control.html#output) in the *AWS CLI Command Reference*
 
-**Tags**
+1. To see tag details, run the [list-tags-for-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/list-tags-for-resource.html) command and specify the `--resource-arn`. In the following example, replace the {{placeholder text}} with your own information.
 
-The tags that are associated with the control.
+   ```
+   aws auditmanager list-tags-for-resource --resource-arn arn:aws:auditmanager:{{us-east-1}}:111122223333:control/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
+   ```
 
-**Key**
+------
+#### [ Audit Manager API ]
 
-The tag key (for example, a compliance standard, regulation, or
-category).
+**To view standard control details using the API**
 
-**Value**
+1. Follow the steps to [find a control](https://docs.aws.amazon.com/audit-manager/latest/userguide/access-available-controls.html). Make sure to set the [controlType](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListControls.html#auditmanager-ListControls-request-controlType) as `Standard`, and apply any optional filters as needed.
 
-The tag value.
+1. In the response, identify the control that you want to review and take note of the control ID and Amazon Resource Name (ARN).
 
-AWS CLI
+1. Use the [GetControl](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetControl.html) operation and specify the [controlId](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetControl.html#auditmanager-GetControl-request-controlId) that you noted in step 2.
+**Tip**
+The control details are returned in JSON format. To help you understand this data, see [GetControl Response Elements](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetControl.html#API_GetControl_ResponseElements) in the *AWS Audit Manager API Reference*.
 
-###### To view standard control details in the AWS CLI
+1. To see tag details, use the [ListTagsForResource](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListTagsForResource.html) operation and specify the [resourceArn](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListTagsForResource.html#auditmanager-ListTagsForResource-request-resourceArn) that you noted in step 2.
 
-1. Follow the steps to [find a\
-    control](access-available-controls.md). Make sure to set the `--control-type` as
-    `Standard`, and apply any optional filters as needed.
+For more information about these API operations, choose any of the links in this procedure to read more in the *AWS Audit Manager API Reference*. This includes information about how to use these operations and parameters in one of the language-specific AWS SDKs.
 
-```
-
-aws auditmanager list-controls --control-type Standard
-```
-
-2. In the response, identify the control that you want to review and take note of
-    the control ID and Amazon Resource Name (ARN).
-
-3. Run the [get-control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/get-control.html) command and specify the `--control-id`. In the
-    following example, replace the `placeholder text` with
-    your own information.
-
-```nohighlight
-
-aws auditmanager get-control --control-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
-```
-
-###### Tip
-
-The control details are returned in JSON format. To help you understand this
-data, see [get-control Output](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/get-control.html) in the _AWS CLI Command_
-_Reference_
-
-4. To see tag details, run the [list-tags-for-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/list-tags-for-resource.html) command and specify the
-    `--resource-arn`. In the following example, replace the
-    `placeholder text` with your own information.
-
-```nohighlight
-
-aws auditmanager list-tags-for-resource --resource-arn arn:aws:auditmanager:us-east-1:111122223333:control/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
-```
-
-Audit Manager API
-
-###### To view standard control details using the API
-
-1. Follow the steps to [find a\
-    control](access-available-controls.md). Make sure to set the [controlType](../../../../reference/audit-manager/latest/apireference/api-listcontrols.md#auditmanager-ListControls-request-controlType) as `Standard`, and apply any optional filters as
-    needed.
-
-2. In the response, identify the control that you want to review and take note of
-    the control ID and Amazon Resource Name (ARN).
-
-3. Use the [GetControl](../../../../reference/audit-manager/latest/apireference/api-getcontrol.md)
-    operation and specify the [controlId](../../../../reference/audit-manager/latest/apireference/api-getcontrol.md#auditmanager-GetControl-request-controlId) that you noted in step 2.
-
-###### Tip
-
-The control details are returned in JSON format. To help you understand this
-data, see [GetControl Response Elements](../../../../reference/audit-manager/latest/apireference/api-getcontrol.md#API_GetControl_ResponseElements) in the _AWS Audit Manager_
-_API Reference_.
-
-4. To see tag details, use the [ListTagsForResource](../../../../reference/audit-manager/latest/apireference/api-listtagsforresource.md) operation and specify the
-    [resourceArn](../../../../reference/audit-manager/latest/apireference/api-listtagsforresource.md#auditmanager-ListTagsForResource-request-resourceArn) that you noted in step 2.
-
-For more information about these API operations, choose any of the links in this
-procedure to read more in the _AWS Audit Manager API_
-_Reference_. This includes information about how to use these operations
-and parameters in one of the language-specific AWS SDKs.
+------
 
 ## Next steps
+<a name="control-library-review-standard-controls-next-steps"></a>
 
-You can add a standard control to any of your custom frameworks. For instructions, see
-[Creating a custom framework in AWS Audit Manager](custom-frameworks.md).
+You can add a standard control to any of your custom frameworks. For instructions, see [Creating a custom framework in AWS Audit Manager](custom-frameworks.md).
 
-You can also customize any standard control so that it meets your needs. For
-instructions, see [Making an editable copy of a control in AWS Audit Manager](customize-control-from-existing.md).
+You can also customize any standard control so that it meets your needs. For instructions, see [Making an editable copy of a control in AWS Audit Manager](customize-control-from-existing.md).
 
 ## Additional resources
-
-- [Reviewing a common control](control-library-review-common-controls.md)
-
-- [Reviewing a core control](control-library-review-core-controls.md)
-
-- [Reviewing a custom control](control-library-review-custom-controls.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Core controls
-
-Custom controls
+<a name="control-library-review-standard-controls-additional-resources"></a>
++ [Reviewing a common control](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-library-review-common-controls.html)
++ [Reviewing a core control](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-library-review-core-controls.html)
++ [Reviewing a custom control](control-library-review-custom-controls.md)
 
 All content copied from https://docs.aws.amazon.com/.

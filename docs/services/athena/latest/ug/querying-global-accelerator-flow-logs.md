@@ -3,28 +3,20 @@ title: "Query AWS Global Accelerator flow logs"
 ---
 
 # Query AWS Global Accelerator flow logs
+<a name="querying-global-accelerator-flow-logs"></a>
 
-You can use AWS Global Accelerator to create accelerators that direct network traffic to optimal
-endpoints over the AWS global network. For more information about Global Accelerator, see [What is AWS Global Accelerator](../../../global-accelerator/latest/dg/what-is-global-accelerator.md).
+You can use AWS Global Accelerator to create accelerators that direct network traffic to optimal endpoints over the AWS global network. For more information about Global Accelerator, see [What is AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html).
 
-Global Accelerator flow logs enable you to capture information about the IP address traffic going to
-and from network interfaces in your accelerators. Flow log data is published to Amazon S3, where
-you can retrieve and view your data. For more information, see [Flow logs in\
-AWS Global Accelerator](../../../global-accelerator/latest/dg/monitoring-global-accelerator-flow-logs.md).
+Global Accelerator flow logs enable you to capture information about the IP address traffic going to and from network interfaces in your accelerators. Flow log data is published to Amazon S3, where you can retrieve and view your data. For more information, see [Flow logs in AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/monitoring-global-accelerator.flow-logs.html).
 
-You can use Athena to query your Global Accelerator flow logs by creating a table that specifies their
-location in Amazon S3.
+You can use Athena to query your Global Accelerator flow logs by creating a table that specifies their location in Amazon S3.
 
-###### To create the table for Global Accelerator flow logs
+**To create the table for Global Accelerator flow logs**
 
-1. Copy and paste the following DDL statement into the Athena console. This query
-    specifies _ROW FORMAT DELIMITED_ and omits specifying a [SerDe](serde-reference.md), which
-    means that the query uses the [LazySimpleSerDe](lazy-simple-serde.md). In this
-    query, fields are terminated by a space.
+1. Copy and paste the following DDL statement into the Athena console. This query specifies *ROW FORMAT DELIMITED* and omits specifying a [SerDe](serde-reference.md), which means that the query uses the [`LazySimpleSerDe`](lazy-simple-serde.md). In this query, fields are terminated by a space.
 
-```sql
-
-CREATE EXTERNAL TABLE IF NOT EXISTS aga_flow_logs (
+   ```
+   CREATE EXTERNAL TABLE IF NOT EXISTS aga_flow_logs (
      version string,
      account string,
      acceleratorid string,
@@ -49,47 +41,37 @@ CREATE EXTERNAL TABLE IF NOT EXISTS aga_flow_logs (
      direction string,
      vpc_id string,
      reject_reason string
-)
-PARTITIONED BY (dt string)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ' '
-LOCATION 's3://amzn-s3-demo-bucket/prefix/AWSLogs/account_id/globalaccelerator/region/'
-TBLPROPERTIES ("skip.header.line.count"="1");
-```
+   )
+   PARTITIONED BY (dt string)
+   ROW FORMAT DELIMITED
+   FIELDS TERMINATED BY ' '
+   LOCATION 's3://amzn-s3-demo-bucket/prefix/AWSLogs/account_id/globalaccelerator/region/'
+   TBLPROPERTIES ("skip.header.line.count"="1");
+   ```
 
-2. Modify the `LOCATION` value to point to the Amazon S3 bucket that contains
-    your log data.
+1. Modify the `LOCATION` value to point to the Amazon S3 bucket that contains your log data.
 
-```nohighlight
+   ```
+   's3://amzn-s3-demo-bucket/{{prefix}}/AWSLogs/{{account_id}}/globalaccelerator/{{region_code}}/'
+   ```
 
-'s3://amzn-s3-demo-bucket/prefix/AWSLogs/account_id/globalaccelerator/region_code/'
-```
+1. Run the query in the Athena console. After the query completes, Athena registers the `aga_flow_logs` table, making the data in it available for queries.
 
-3. Run the query in the Athena console. After the query completes, Athena registers the
-    `aga_flow_logs` table, making the data in it available for
-    queries.
+1. Create partitions to read the data, as in the following sample query. The query creates a single partition for a specified date. Replace the placeholders for date and location.
 
-4. Create partitions to read the data, as in the following sample query. The query
-    creates a single partition for a specified date. Replace the placeholders for date
-    and location.
-
-```sql
-
-ALTER TABLE aga_flow_logs
-ADD PARTITION (dt='YYYY-MM-dd')
-LOCATION 's3://amzn-s3-demo-bucket/prefix/AWSLogs/account_id/globalaccelerator/region_code/YYYY/MM/dd';
-```
+   ```
+   ALTER TABLE aga_flow_logs
+   ADD PARTITION (dt={{'YYYY-MM-dd}}')
+   LOCATION 's3://amzn-s3-demo-bucket/{{prefix}}/AWSLogs/{{account_id}}/globalaccelerator/{{region_code}}/{{YYYY}}/{{MM}}/{{dd}}';
+   ```
 
 ## Example queries for AWS Global Accelerator flow logs
+<a name="querying-global-accelerator-flow-logs-examples"></a>
 
-###### Example– List the requests that pass through a specific edge location
+**Example – List the requests that pass through a specific edge location**
+The following example query lists requests that passed through the LHR edge location. Use the `LIMIT` operator to limit the number of logs to query at one time.
 
-The following example query lists requests that passed through the LHR edge
-location. Use the `LIMIT` operator to limit the number of logs to query
-at one time.
-
-```sql
-
+```
 SELECT
   clientip,
   agaregion,
@@ -103,15 +85,10 @@ LIMIT
   100;
 ```
 
-###### Example– List the endpoint IP addresses that receive the most HTTPS requests
+**Example – List the endpoint IP addresses that receive the most HTTPS requests**
+To see which endpoint IP addresses are receiving the highest number of HTTPS requests, use the following query. This query counts the number of packets received on HTTPS port 443, groups them by destination IP address, and returns the top 10 IP addresses.
 
-To see which endpoint IP addresses are receiving the highest number of HTTPS
-requests, use the following query. This query counts the number of packets received
-on HTTPS port 443, groups them by destination IP address, and returns the top 10 IP
-addresses.
-
-```sql
-
+```
 SELECT
   SUM(numpackets) AS packetcount,
   endpointip
@@ -126,11 +103,5 @@ ORDER BY
 LIMIT
   10;
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Query a partitioned table
-
-GuardDuty
 
 All content copied from https://docs.aws.amazon.com/.

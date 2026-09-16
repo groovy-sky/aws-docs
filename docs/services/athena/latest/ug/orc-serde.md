@@ -3,25 +3,24 @@ title: "ORC SerDe"
 ---
 
 # ORC SerDe
+<a name="orc-serde"></a>
 
 Use the ORC SerDe to create Athena tables from ORC data.
 
 ## Serialization library name
+<a name="orc-serde-library-name"></a>
 
-The serialization library for the ORC SerDe is
-`org.apache.hadoop.hive.ql.io.orc.OrcSerde`, but in your `CREATE
-                TABLE` statements, you specify this with the clause `STORED AS
-            ORC`. For source code information, see [OrcSerde.java](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/io/orc/OrcSerde.java) on GitHub.com.
+The serialization library for the ORC SerDe is `org.apache.hadoop.hive.ql.io.orc.OrcSerde`, but in your `CREATE TABLE` statements, you specify this with the clause `STORED AS ORC`. For source code information, see [OrcSerde.java](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/io/orc/OrcSerde.java) on GitHub.com.
 
-###### Note
+## Example: create a table for ORC flight data
+<a name="orc-serde-example"></a>
 
-Replace `myregion` in `s3://athena-examples-myregion/path/to/data/` with the region identifier where you run Athena, for example, `s3://athena-examples-us-west-1/path/to/data/`.
+**Note**
+Replace {{myregion}} in `s3://athena-examples-{{myregion}}/path/to/data/` with the region identifier where you run Athena, for example, `s3://athena-examples-us-west-1/path/to/data/`.
 
-The following example creates a table for the flight delays data in ORC. The table
-includes partitions:
+The following example creates a table for the flight delays data in ORC. The table includes partitions:
 
-```sql
-
+```
 DROP TABLE flight_delays_orc;
 CREATE EXTERNAL TABLE flight_delays_orc (
     yr INT,
@@ -136,22 +135,19 @@ CREATE EXTERNAL TABLE flight_delays_orc (
 )
 PARTITIONED BY (year String)
 STORED AS ORC
-LOCATION 's3://athena-examples-myregion/flight/orc/'
+LOCATION 's3://athena-examples-{{myregion}}/flight/orc/'
 tblproperties ("orc.compress"="ZLIB");
 ```
 
-Run the `MSCK REPAIR TABLE` statement on the table to refresh partition
-metadata:
+Run the `MSCK REPAIR TABLE` statement on the table to refresh partition metadata:
 
-```sql
-
+```
 MSCK REPAIR TABLE flight_delays_orc;
 ```
 
 Use this query to obtain the top 10 routes delayed by more than 1 hour:
 
-```sql
-
+```
 SELECT origin, dest, count(*) as delays
 FROM flight_delays_orc
 WHERE depdelayminutes > 60
@@ -159,11 +155,5 @@ GROUP BY origin, dest
 ORDER BY 3 DESC
 LIMIT 10;
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OpenCSVSerDe
-
-Parquet SerDe
 
 All content copied from https://docs.aws.amazon.com/.

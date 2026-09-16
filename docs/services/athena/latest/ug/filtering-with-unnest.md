@@ -1,18 +1,15 @@
 ---
-title: "Filter arrays using UNNEST"
+title: "Filter arrays using `UNNEST`"
 ---
 
 # Filter arrays using `UNNEST`
+<a name="filtering-with-unnest"></a>
 
-To filter an array that includes a nested structure by one of its child elements,
-issue a query with an `UNNEST` operator. For more information about
-`UNNEST`, see [Flattening Nested\
-Arrays](flattening-arrays.md).
+To filter an array that includes a nested structure by one of its child elements, issue a query with an `UNNEST` operator. For more information about `UNNEST`, see [Flattening Nested Arrays](flattening-arrays.md).
 
 For example, this query finds host names of sites in the dataset.
 
-```sql
-
+```
 WITH dataset AS (
   SELECT ARRAY[
     CAST(
@@ -34,18 +31,11 @@ WHERE sites.flaggedActivity.isNew = true
 It returns:
 
 ```
-
 +------------------------+
 | hostname       | isnew |
 +------------------------+
 | aws.amazon.com | true  |
 +------------------------+
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Filter arrays with nested values
-
-Find keywords in arrays using regexp\_like
 
 All content copied from https://docs.aws.amazon.com/.

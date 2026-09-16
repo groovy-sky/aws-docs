@@ -3,25 +3,17 @@ title: "Add columns at the beginning or in the middle of the table"
 ---
 
 # Add columns at the beginning or in the middle of the table
+<a name="updates-add-columns-beginning-middle-of-table"></a>
 
-Adding columns is one of the most frequent schema changes. For example, you may add a
-new column to enrich the table with new data. Or, you may add a new column if the source
-for an existing column has changed, and keep the previous version of this column, to
-adjust applications that depend on them.
+Adding columns is one of the most frequent schema changes. For example, you may add a new column to enrich the table with new data. Or, you may add a new column if the source for an existing column has changed, and keep the previous version of this column, to adjust applications that depend on them.
 
-To add columns at the beginning or in the middle of the table, and continue running
-queries against existing tables, use AVRO, JSON, and Parquet and ORC if their SerDe
-property is set to read by name. For information, see [Understand index access for Apache ORC and Apache Parquet](handling-schema-updates-chapter.md#index-access).
+To add columns at the beginning or in the middle of the table, and continue running queries against existing tables, use AVRO, JSON, and Parquet and ORC if their SerDe property is set to read by name. For information, see [Understand index access for Apache ORC and Apache Parquet](handling-schema-updates-chapter.md#index-access).
 
-Do not add columns at the beginning or in the middle of the table in CSV and TSV, as
-these formats depend on ordering. Adding a column in such cases will lead to schema
-mismatch errors when the schema of partitions changes.
+Do not add columns at the beginning or in the middle of the table in CSV and TSV, as these formats depend on ordering. Adding a column in such cases will lead to schema mismatch errors when the schema of partitions changes.
 
-The following example creates a new table that adds an `o_comment` column
-in the middle of a table based on JSON data.
+ The following example creates a new table that adds an `o_comment` column in the middle of a table based on JSON data.
 
-```sql
-
+```
 CREATE EXTERNAL TABLE orders_json_column_addition (
    `o_orderkey` int,
    `o_custkey` int,
@@ -35,13 +27,6 @@ CREATE EXTERNAL TABLE orders_json_column_addition (
 )
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 LOCATION 's3://amzn-s3-demo-bucket/orders_json/';
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Make schema updates
-
-Add columns at the end of the table
 
 All content copied from https://docs.aws.amazon.com/.

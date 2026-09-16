@@ -3,18 +3,12 @@ title: "Rename or delete a saved query"
 ---
 
 # Rename or delete a saved query
+<a name="saved-queries-rename-or-delete"></a>
 
-###### To rename or delete a saved query already displayed in the query editor
+**To rename or delete a saved query already displayed in the query editor**
 
-1. Choose the three vertical dots on the tab for the query, and then choose
-    **Rename** or **Delete**.
+1. Choose the three vertical dots on the tab for the query, and then choose **Rename** or **Delete**.
 
-2. Follow the prompts to rename or delete the query.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Edit a saved query
-
-Rename an undisplayed saved query
+1. Follow the prompts to rename or delete the query.
 
 All content copied from https://docs.aws.amazon.com/.

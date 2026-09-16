@@ -2,44 +2,30 @@
 title: "Resource-based policy examples for AWS Audit Manager"
 ---
 
-AWS Audit Manager will no longer be open to new customers starting
-April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
-can continue to use the service as normal. For more information, see
-[AWS Audit Manager availability change](audit-manager-availability-change.md).
+AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Resource-based policy examples for AWS Audit Manager
+<a name="security_iam_resource-based-policy-examples"></a>
 
 ## Amazon S3 bucket policy
+<a name="s3-resource-policy"></a>
 
-The following policy allows CloudTrail to deliver evidence finder query results to the
-specified S3 bucket. As a security best practice, the IAM global condition key
-`aws:SourceArn` helps ensure that CloudTrail writes to the S3 bucket only
-for the event data store.
+The following policy allows CloudTrail to deliver evidence finder query results to the specified S3 bucket. As a security best practice, the IAM global condition key `aws:SourceArn` helps ensure that CloudTrail writes to the S3 bucket only for the event data store.
 
-###### Important
+**Important**
+You must specify an S3 bucket for CloudTrail Lake query results delivery. For more information, see [Specifying an existing bucket for CloudTrail Lake query results ](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/s3-bucket-policy-lake-query-results.html#specify-an-existing-bucket-for-cloudtrail-query-results-delivery).
 
-You must specify an S3 bucket for CloudTrail Lake query results delivery. For more
-information, see [Specifying an existing bucket for CloudTrail Lake query\
-results](../../../awscloudtrail/latest/userguide/s3-bucket-policy-lake-query-results.md#specify-an-existing-bucket-for-cloudtrail-query-results-delivery).
+Replace the {{placeholder text}} with your own information, as follows:
++ Replace {{amzn-s3-demo-destination-bucket}} with the S3 bucket that you use as your export destination.
++ Replace {{myQueryRunningRegion}} with the appropriate AWS Region for your configuration.
++ Replace {{myAccountID}} with the AWS account ID that's used for CloudTrail. This might not be the same as the AWS account ID for the S3 bucket. If this is an organization event data store, you must use the AWS account for the management account.
 
-Replace the `placeholder text` with your own information,
-as follows:
+------
+#### [ JSON ]
 
-- Replace `amzn-s3-demo-destination-bucket` with
-the S3 bucket that you use as your export destination.
+****
 
-- Replace `myQueryRunningRegion` with the
-appropriate AWS Region for your configuration.
-
-- Replace `myAccountID` with the AWS account ID
-that's used for CloudTrail. This might not be the same as the AWS account ID for
-the S3 bucket. If this is an organization event data store, you must use the
-AWS account for the management account.
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -77,19 +63,21 @@ JSON
         }
     ]
     }
-
 ```
 
+------
+
 ## AWS Key Management Service policy
+<a name="kms-resource-policy"></a>
 
-If your S3 bucket has the default encryption set to `SSE-KMS`, grant
-access to CloudTrail in your AWS Key Management Service key's resource policy so it can use the key. In
-this case, add the following resource policy to the AWS KMS key.
+If your S3 bucket has the default encryption set to `SSE-KMS`, grant access to CloudTrail in your AWS Key Management Service key's resource policy so it can use the key. In this case, add the following resource policy to the AWS KMS key.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
  "Version":"2012-10-17",
     "Statement": [
@@ -117,13 +105,8 @@ JSON
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Cross-service confused deputy prevention
-
-AWS managed policies
+------
 
 All content copied from https://docs.aws.amazon.com/.

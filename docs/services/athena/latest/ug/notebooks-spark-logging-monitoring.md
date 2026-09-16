@@ -3,23 +3,28 @@ title: "Logging and monitoring for Apache Spark sessions"
 ---
 
 # Logging and monitoring for Apache Spark sessions
+<a name="notebooks-spark-logging-monitoring"></a>
 
 From the release Apache Spark version 3.5 onwards, you can specify managed, Amazon S3, or CloudWatch logging as your logging options.
 
 With managed logging and S3 logging, the following table lists the log locations and UI availability that you can expect if you choose those options.
 
-OptionEvent logsContainer logsApplication UIManaged logging (default)Stored in managed S3 bucketStored in managed S3 bucketSupportedBoth managed logging and S3 bucketStored in both placesStored in S3 bucketSupportedAmazon S3 bucketStored in S3 bucketStored in S3 bucketNot supported1
+| Option | Event logs | Container logs | Application UI |
+| --- | --- | --- | --- |
+| Managed logging (default) | Stored in managed S3 bucket | Stored in managed S3 bucket | Supported |
+| Both managed logging and S3 bucket | Stored in both places | Stored in S3 bucket | Supported |
+| Amazon S3 bucket | Stored in S3 bucket | Stored in S3 bucket | Not supported1 |
 
 1 We suggest that you keep the Managed logging option selected. Otherwise, you can't use the built-in application UIs.
 
 ## Managed logging
+<a name="notebooks-spark-logging-monitoring-managed"></a>
 
 By default, Athena Spark workgroups stores application logs securely in service-managed S3 buckets for a maximum of 30 days.
 
 You can optionally provide a KMS key (key id, arn, alias, or alias arn) that the service will use to encrypt the managed logs.
 
 ```
-
 aws athena start-session \
   --work-group "WORKGROUP" \
   --monitoring-configuration '{
@@ -31,14 +36,12 @@ aws athena start-session \
   --engine-configuration ''
 ```
 
-###### Note
-
+**Note**
 If you turn off managed logging, Athena can't troubleshoot your sessions on your behalf. Example: You will not be access the Spark-UI from Amazon SageMaker AI Studio Notebooks or using the `GetResourceDashboard` API.
 
 To turn off this option from the AWS CLI, use the `ManagedLoggingConfiguration` configuration when you start an interactive session.
 
 ```
-
 aws athena start-session \
   --work-group "WORKGROUP" \
   --monitoring-configuration '{
@@ -50,11 +53,11 @@ aws athena start-session \
 ```
 
 ### Required permissions for managed logging
+<a name="notebooks-spark-logging-monitoring-managed-permissions"></a>
 
-If you provided a KMS key, you will need the following permissions in the permissions policy for the execution role.
+If you provided a KMS key, add the Athena service principal to the allow list in the KMS key permissions policy.
 
 ```
-
 {
     "Action": [
         "kms:Encrypt",
@@ -64,18 +67,26 @@ If you provided a KMS key, you will need the following permissions in the permis
         "kms:DescribeKey"
     ],
     "Resource": "*",
-    "Effect": "Allow"
+    "Effect": "Allow",
+    "Principal":{
+        "Service":"athena.amazonaws.com"
+    },
+    "Condition": {
+        "StringEquals": {
+            "aws:SourceAccount": "YOUR_ACCOUNT_ID"
+        }
+    }
 }
 ```
 
 ## Amazon S3 logging
+<a name="notebooks-spark-logging-monitoring-s3"></a>
 
 You can configure log delivery to Amazon S3 buckets.
 
 To enable S3 log delivery from the AWS CLI, use the `S3LoggingConfiguration` configuration when you start an interactive session.
 
 ```
-
 aws athena start-session \
   --work-group "WORKGROUP" \
   --monitoring-configuration '{
@@ -90,7 +101,6 @@ aws athena start-session \
 You can optionally provide a KMS key (key id, arn, alias, or alias arn) that the service will use to encrypt the S3 logs.
 
 ```
-
 aws athena start-session \
   --work-group "WORKGROUP" \
   --monitoring-configuration '{
@@ -104,11 +114,11 @@ aws athena start-session \
 ```
 
 ### Required permissions for log delivery to Amazon S3
+<a name="notebooks-spark-logging-monitoring-s3-permissions"></a>
 
 Before your sessions can deliver logs to Amazon S3 buckets, include the following permissions in the permissions policy for the execution role.
 
 ```
-
 {
     "Action": "s3:*",
     "Resource": "*",
@@ -119,7 +129,6 @@ Before your sessions can deliver logs to Amazon S3 buckets, include the followin
 If you provided a KMS key, you will also need the following permissions in the permissions policy for the execution role.
 
 ```
-
 {
     "Action": [
         "kms:Encrypt",
@@ -136,7 +145,6 @@ If you provided a KMS key, you will also need the following permissions in the p
 If kms key and bucket are not from same account then KMS needs to allow S3 service principal.
 
 ```
-
 {
   "Effect": "Allow",
   "Principal": { "Service": "s3.amazonaws.com" },
@@ -155,13 +163,13 @@ If kms key and bucket are not from same account then KMS needs to allow S3 servi
 ```
 
 ## CloudWatch logging
+<a name="notebooks-spark-logging-monitoring-cloudwatch"></a>
 
 You can configure log delivery to CloudWatch log groups.
 
 To enable S3 log delivery from the AWS CLI, use the `CloudWatchLoggingConfiguration` configuration when you start an interactive session.
 
 ```
-
 aws athena start-session \
   --work-group "WORKGROUP" \
   --monitoring-configuration '{
@@ -177,7 +185,6 @@ aws athena start-session \
 All logs will be delivered by default, but you can optionally specify which log types to include.
 
 ```
-
 aws athena start-session \
   --work-group "WORKGROUP" \
   --monitoring-configuration '{
@@ -201,11 +208,11 @@ aws athena start-session \
 ```
 
 ### Required permissions for log delivery to CloudWatch
+<a name="notebooks-spark-logging-monitoring-cloudwatch-permissions"></a>
 
 Before your sessions can deliver logs to CloudWatch log groups, include the following permissions in the permissions policy for the execution role.
 
 ```
-
 {
     "Action": [
         "logs:CreateLogGroup",
@@ -222,7 +229,6 @@ Before your sessions can deliver logs to CloudWatch log groups, include the foll
 And following permission to KMS key resource policy.
 
 ```
-
 {
   "Effect": "Allow",
   "Principal": {
@@ -240,13 +246,13 @@ And following permission to KMS key resource policy.
 ```
 
 ## Configuring logging defaults at the Workgroup
+<a name="notebooks-spark-logging-monitoring-workgroup-defaults"></a>
 
 You can also specify default logging options at the Workgroup level.
 
 To specify default logging options from the AWS CLI for a workgroup, use the `monitoring-configuration` configuration when creating a new Workgroup:
 
 ```
-
 aws athena create-work-group \
   --region "REGION" \
   --name "WORKGROUP_NAME" \
@@ -291,7 +297,6 @@ aws athena create-work-group \
 To modify defaults logging options from the AWS CLI for a workgroup, use the `monitoring-configuration` configuration when updating a Workgroup. The changes apply to new interactive sessions going forward.
 
 ```
-
 aws athena update-work-group \
   --region "REGION" \
   --work-group "WORKGROUP_NAME"
@@ -332,11 +337,5 @@ aws athena update-work-group \
         }
     }'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Cost attribution
-
-Spark UI access
 
 All content copied from https://docs.aws.amazon.com/.

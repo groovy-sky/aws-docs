@@ -3,11 +3,11 @@ title: "List of preinstalled Python libraries"
 ---
 
 # List of preinstalled Python libraries
+<a name="notebooks-spark-preinstalled-python-libraries"></a>
 
 Preinstalled Python libraries include the following.
 
-```nohighlight
-
+```
 boto3==1.24.31
 botocore==1.27.31
 certifi==2022.6.15
@@ -48,19 +48,10 @@ pyarrow==9.0.0
 ```
 
 ## Notes
-
-- MLlib (Apache Spark machine learning library) and the
-`pyspark.ml` package are not supported.
-
-- Currently, `pip install` is not supported in Athena for Spark
-sessions.
+<a name="notebooks-spark-preinstalled-python-libraries-notes"></a>
++ MLlib (Apache Spark machine learning library) and the `pyspark.ml` package are not supported.
++ Currently, `pip install` is not supported in Athena for Spark sessions.
 
 For information on importing Python libraries to Amazon Athena for Apache Spark, see [Import files and Python libraries to Athena for Spark](notebooks-import-files-libraries.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Python library support
-
-Import files and libraries
 
 All content copied from https://docs.aws.amazon.com/.

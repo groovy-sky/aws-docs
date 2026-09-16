@@ -3,15 +3,16 @@ title: "Get the length and size of JSON arrays"
 ---
 
 # Get the length and size of JSON arrays
+<a name="length-and-size"></a>
 
 To get the length and size of JSON arrays, you can use the `json_array_length` and `json_size` functions.
 
 ## Example: `json_array_length`
+<a name="example-json-array-length"></a>
 
 To obtain the length of a JSON-encoded array, use the `json_array_length` function.
 
-```sql
-
+```
 WITH dataset AS (
   SELECT * FROM (VALUES
     (JSON '{"name":
@@ -38,7 +39,6 @@ ORDER BY count DESC
 This query returns this result:
 
 ```
-
 +---------------------+
 | name        | count |
 +---------------------+
@@ -51,11 +51,11 @@ This query returns this result:
 ```
 
 ## Example: `json_size`
+<a name="example-json-size"></a>
 
 To obtain the size of a JSON-encoded array or object, use the `json_size` function, and specify the column containing the JSON string and the `JSONPath` expression to the array or object.
 
-```sql
-
+```
 WITH dataset AS (
   SELECT * FROM (VALUES
     (JSON '{"name": "Bob Smith", "org": "legal", "projects": [{"name":"project1", "completed":false}]}'),
@@ -73,7 +73,6 @@ ORDER BY count DESC
 This query returns this result:
 
 ```
-
 +---------------------+
 | name        | count |
 +---------------------+
@@ -84,11 +83,5 @@ This query returns this result:
 | Jane Smith  | 1     |
 +---------------------+
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Search for values in JSON arrays
-
-Troubleshoot JSON queries
 
 All content copied from https://docs.aws.amazon.com/.

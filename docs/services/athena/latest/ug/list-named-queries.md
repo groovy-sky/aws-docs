@@ -3,12 +3,11 @@ title: "List named queries"
 ---
 
 # List named queries
+<a name="list-named-queries"></a>
 
-The `ListNamedQueryExample` shows how to obtain a list of named query
-IDs.
+The `ListNamedQueryExample` shows how to obtain a list of named query IDs.
 
-```java
-
+```
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;
@@ -55,13 +54,6 @@ public class ListNamedQueryExample {
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Delete a named query
-
-Use Apache Spark
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,91 +3,68 @@ title: "Monitor Apache Spark with CloudWatch metrics"
 ---
 
 # Monitor Apache Spark with CloudWatch metrics
+<a name="notebooks-spark-metrics"></a>
 
-Athena publishes calculation-related metrics to Amazon CloudWatch when the **[Publish CloudWatch metrics](notebooks-spark-getting-started.md#notebook-gs-metrics)** option for
-your Spark-enabled workgroup is selected. You can create custom dashboards, set alarms and
-triggers on metrics in the CloudWatch console.
+Athena publishes calculation-related metrics to Amazon CloudWatch when the **[Publish CloudWatch metrics](notebooks-spark-getting-started.md#notebook-gs-metrics)** option for your Spark-enabled workgroup is selected. You can create custom dashboards, set alarms and triggers on metrics in the CloudWatch console.
 
-Athena publishes the following metric to the CloudWatch console under the
-`AmazonAthenaForApacheSpark` namespace:
-
-- `DPUCount` – number of DPUs consumed during the session to
-execute the calculations.
+Athena publishes the following metric to the CloudWatch console under the `AmazonAthenaForApacheSpark` namespace:
++ `DPUCount` – number of DPUs consumed during the session to execute the calculations.
 
 This metric has the following dimensions:
++ `SessionId` – The ID of the session in which the calculations are submitted.
++ `WorkGroup` – Name of the workgroup.
 
-- `SessionId` – The ID of the session in which the calculations
-are submitted.
+**To view metrics for Spark-enabled workgroups in the Amazon CloudWatch console**
 
-- `WorkGroup` – Name of the workgroup.
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
 
-###### To view metrics for Spark-enabled workgroups in the Amazon CloudWatch console
+1. In the navigation pane, choose **Metrics**, **All metrics**.
 
-1. Open the CloudWatch console at
-    [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
+1. Select the **AmazonAthenaForApacheSpark** namespace.
 
-2. In the navigation pane, choose **Metrics**, **All**
-**metrics**.
+**To view metrics with the CLI**
++ Do one of the following:
+  + To list the metrics for Athena Spark-enabled workgroups, open a command prompt, and use the following command:
 
-3. Select the **AmazonAthenaForApacheSpark** namespace.
+    ```
+    aws cloudwatch list-metrics --namespace "AmazonAthenaForApacheSpark"
+    ```
+  + To list all available metrics, use the following command:
 
-###### To view metrics with the CLI
+    ```
+    aws cloudwatch list-metrics
+    ```
 
-- Do one of the following:
+## List of CloudWatch metrics and dimensions for Apache Spark calculations in Athena
+<a name="notebooks-spark-metrics-metrics-table"></a>
 
-- To list the metrics for Athena Spark-enabled workgroups, open a command
-prompt, and use the following command:
+If you've enabled CloudWatch metrics in your Spark-enabled Athena workgroup, Athena sends the following metric to CloudWatch per workgroup. The metric uses the `AmazonAthenaForApacheSpark` namespace.
 
-```nohighlight
-
-aws cloudwatch list-metrics --namespace "AmazonAthenaForApacheSpark"
-```
-
-- To list all available metrics, use the following command:
-
-```nohighlight
-
-aws cloudwatch list-metrics
-```
-
-If you've enabled CloudWatch metrics in your Spark-enabled Athena workgroup, Athena sends
-the following metric to CloudWatch per workgroup. The metric uses the
-`AmazonAthenaForApacheSpark` namespace.
-
-Metric nameDescriptionDPUCount Number of DPUs (data processing units) consumed during the
-session to execute the calculations. A DPU is a relative measure of
-processing power that consists of 4 vCPUs of compute capacity and 16
-GB of memory.
+| Metric name | Description |
+| --- | --- |
+| DPUCount  | Number of DPUs (data processing units) consumed during the session to execute the calculations. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. |
 
 This metric has the following dimensions.
 
-DimensionDescriptionSessionId
+| Dimension | Description |
+| --- | --- |
+| SessionId | The ID of the session in which the calculations are submitted. |
+| WorkGroup | The name of the workgroup. |
 
-The ID of the session in which the calculations are
-submitted.
-
-WorkGroup
-
-The name of the workgroup.
+## List of CloudWatch metrics and dimensions for Athena Spark interactive sessions
+<a name="notebooks-spark-metrics-interactive-sessions"></a>
 
 In the release version Apache Spark version 3.5, if you've enabled CloudWatch metrics in your Athena Spark workgroup, Athena sends the following metric to CloudWatch. The metric uses the `AmazonAthenaForApacheSpark` namespace.
 
-NameDescriptionDPUConsumedThe number of DPUs actively consumed by queries in a RUNNING state at a given time in the workgroup.
+| Name | Description |
+| --- | --- |
+| DPUConsumed | The number of DPUs actively consumed by queries in a RUNNING state at a given time in the workgroup. |
 
 This metric has the following dimensions.
 
-DimensionDescriptionAccount
-
-The AWS account ID.
-
-WorkGroup
-
-The name of the workgroup.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Supported data and storage formats
-
-Cost attribution
+| Dimension | Description |
+| --- | --- |
+| Account | The AWS account ID. |
+| WorkGroup | The name of the workgroup. |
 
 All content copied from https://docs.aws.amazon.com/.

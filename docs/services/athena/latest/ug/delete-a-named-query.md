@@ -3,12 +3,11 @@ title: "Delete a named query"
 ---
 
 # Delete a named query
+<a name="delete-a-named-query"></a>
 
-The `DeleteNamedQueryExample` shows how to delete a named query by using
-the named query ID.
+The `DeleteNamedQueryExample` shows how to delete a named query by using the named query ID.
 
-```java
-
+```
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;
@@ -85,13 +84,6 @@ public class DeleteNamedQueryExample {
         return null;
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create a named query
-
-List named queries
 
 All content copied from https://docs.aws.amazon.com/.

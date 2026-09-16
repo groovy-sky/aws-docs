@@ -3,37 +3,136 @@ title: "Athena error catalog"
 ---
 
 # Athena error catalog
+<a name="error-reference"></a>
 
-Athena provides standardized error information to help you understand failed queries and
-take steps after a query failure occurs. The `AthenaError` feature includes an
-`ErrorCategory` field and an `ErrorType` field.
-`ErrorCategory` specifies whether the cause of the failed query is due to
-system error, user error, or other error. `ErrorType` provides more granular
-information regarding the source of the failure. By combining the two fields, you can get a
-better understanding of the circumstances surrounding and causes for the specific error that
-occurred.
+Athena provides standardized error information to help you understand failed queries and take steps after a query failure occurs. The `AthenaError` feature includes an `ErrorCategory` field and an `ErrorType` field. `ErrorCategory` specifies whether the cause of the failed query is due to system error, user error, or other error. `ErrorType` provides more granular information regarding the source of the failure. By combining the two fields, you can get a better understanding of the circumstances surrounding and causes for the specific error that occurred.
 
 ## Error category
+<a name="error-reference-error-category"></a>
 
 The following table lists the Athena error category values and their meanings.
 
-Error categorySource1SYSTEM2USER3OTHER
+| Error category | Source |
+| --- | --- |
+| 1 | SYSTEM |
+| 2 | USER |
+| 3 | OTHER |
 
 ## Error type reference
+<a name="error-reference-error-type-reference"></a>
 
 The following table lists the Athena error type values and their meanings.
 
-Error typeDescription0Query exhausted resources at this scale factor1Query exhausted resources at this scale factor2Query exhausted resources at this scale factor3Query exhausted resources at this scale factor4Query exhausted resources at this scale factor5Query exhausted resources at this scale factor6Query exhausted resources at this scale factor7Query exhausted resources at this scale factor8Query exhausted resources at this scale factor100Internal service error200Query engine had an internal error201Query engine had an internal error202Query engine had an internal error203Driver error204The metastore had an error205Query engine had an internal error206Query timed out207Query engine had an internal error208Query engine had an internal error209Failed to cancel query210Query timed out211Query engine had an internal error212Query engine had an internal error213Query engine had an internal error214Query engine had an internal error215Query engine had an internal error216Query engine had an internal error217Query engine had an internal error218Query engine had an internal error219Query engine had an internal error220Query engine had an internal error221Query engine had an internal error222Query engine had an internal error223Query engine had an internal error224Query engine had an internal error225Query engine had an internal error226Query engine had an internal error227Query engine had an internal error228Query engine had an internal error229Query engine had an internal error230Query engine had an internal error231Query engine had an internal error232Query engine had an internal error233Iceberg error234Lake Formation error235Query engine had an internal error236Query engine had an internal error237Serialization error238Failed to upload metadata to Amazon S3239General persistence error240Failed to submit query300Internal service error301Internal service error302Internal service error303Internal service error400Internal service error401Failed to write query results to Amazon S3402Failed to write query results to Amazon S31000User error1001Data error1002Data error1003DDL task failed1004Schema error1005Serialization error1006Syntax error1007Data error1008Query rejected1009Query failed1010Internal service error1011Query canceled by user1012Query engine had an internal error1013Query engine had an internal error1014Query canceled by user1100Invalid argument provided1101Invalid property provided1102Query engine had an internal error1103Invalid table property provided1104Query engine had an internal error1105Query engine had an internal error1106Invalid function argument provided1107Invalid view1108Failed to register function1109Provided Amazon S3 path not found1110Provided table or view does not exist1200Query not supported1201Provided decoder not supported1202Query type not supported1300General not found error1301General entity not found1302File not found1303Provided function or function implementation not found1304Query engine had an internal error1305Query engine had an internal error1306Amazon S3 bucket not found1307Selected engine not found1308Query engine had an internal error1400Throttling error1401Query failed due to AWS Glue throttling1402Query failed due to too many table versions in AWS Glue1403Query failed due to Amazon S3 throttling1404Query failed due to Amazon Athena throttling1405Query failed due to Amazon Athena throttling1406Query failed due to Amazon Athena throttling1500Permission error1501Amazon S3 permission error1602
-
-Exceeded reserved capacity limit. Insufficient capacity to execute
-this query.
-
-1700Query failed due to a Lake Formation internal exception1701Query failed due to an AWS Glue internal exception9999Internal service error
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Troubleshoot issues
-
-Code samples
+| Error type | Description |
+| --- | --- |
+| 0 | Query exhausted resources at this scale factor |
+| 1 | Query exhausted resources at this scale factor |
+| 2 | Query exhausted resources at this scale factor |
+| 3 | Query exhausted resources at this scale factor |
+| 4 | Query exhausted resources at this scale factor |
+| 5 | Query exhausted resources at this scale factor |
+| 6 | Query exhausted resources at this scale factor |
+| 7 | Query exhausted resources at this scale factor |
+| 8 | Query exhausted resources at this scale factor |
+| 100 | Internal service error |
+| 200 | Query engine had an internal error |
+| 201 | Query engine had an internal error |
+| 202 | Query engine had an internal error |
+| 203 | Driver error |
+| 204 | The metastore had an error |
+| 205 | Query engine had an internal error |
+| 206 | Query timed out |
+| 207 | Query engine had an internal error |
+| 208 | Query engine had an internal error |
+| 209 | Failed to cancel query |
+| 210 | Query timed out |
+| 211 | Query engine had an internal error |
+| 212 | Query engine had an internal error |
+| 213 | Query engine had an internal error |
+| 214 | Query engine had an internal error |
+| 215 | Query engine had an internal error |
+| 216 | Query engine had an internal error |
+| 217 | Query engine had an internal error |
+| 218 | Query engine had an internal error |
+| 219 | Query engine had an internal error |
+| 220 | Query engine had an internal error |
+| 221 | Query engine had an internal error |
+| 222 | Query engine had an internal error |
+| 223 | Query engine had an internal error |
+| 224 | Query engine had an internal error |
+| 225 | Query engine had an internal error |
+| 226 | Query engine had an internal error |
+| 227 | Query engine had an internal error |
+| 228 | Query engine had an internal error |
+| 229 | Query engine had an internal error |
+| 230 | Query engine had an internal error |
+| 231 | Query engine had an internal error |
+| 232 | Query engine had an internal error |
+| 233 | Iceberg error |
+| 234 | Lake Formation error |
+| 235 | Query engine had an internal error |
+| 236 | Query engine had an internal error |
+| 237 | Serialization error |
+| 238 | Failed to upload metadata to Amazon S3 |
+| 239 | General persistence error |
+| 240 | Failed to submit query |
+| 300 | Internal service error |
+| 301 | Internal service error |
+| 302 | Internal service error |
+| 303 | Internal service error |
+| 400 | Internal service error |
+| 401 | Failed to write query results to Amazon S3 |
+| 402 | Failed to write query results to Amazon S3 |
+| 1000 | User error |
+| 1001 | Data error |
+| 1002 | Data error |
+| 1003 | DDL task failed |
+| 1004 | Schema error |
+| 1005 | Serialization error |
+| 1006 | Syntax error |
+| 1007 | Data error |
+| 1008 | Query rejected |
+| 1009 | Query failed |
+| 1010 | Internal service error |
+| 1011 | Query canceled by user |
+| 1012 | Query engine had an internal error |
+| 1013 | Query engine had an internal error |
+| 1014 | Query canceled by user |
+| 1100 | Invalid argument provided |
+| 1101 | Invalid property provided |
+| 1102 | Query engine had an internal error |
+| 1103 | Invalid table property provided |
+| 1104 | Query engine had an internal error |
+| 1105 | Query engine had an internal error |
+| 1106 | Invalid function argument provided |
+| 1107 | Invalid view |
+| 1108 | Failed to register function |
+| 1109 | Provided Amazon S3 path not found |
+| 1110 | Provided table or view does not exist |
+| 1200 | Query not supported |
+| 1201 | Provided decoder not supported |
+| 1202 | Query type not supported |
+| 1300 | General not found error |
+| 1301 | General entity not found |
+| 1302 | File not found |
+| 1303 | Provided function or function implementation not found |
+| 1304 | Query engine had an internal error |
+| 1305 | Query engine had an internal error |
+| 1306 | Amazon S3 bucket not found |
+| 1307 | Selected engine not found |
+| 1308 | Query engine had an internal error |
+| 1400 | Throttling error |
+| 1401 | Query failed due to AWS Glue throttling |
+| 1402 | Query failed due to too many table versions in AWS Glue |
+| 1403 | Query failed due to Amazon S3 throttling |
+| 1404 | Query failed due to Amazon Athena throttling |
+| 1405 | Query failed due to Amazon Athena throttling |
+| 1406 | Query failed due to Amazon Athena throttling |
+| 1500 | Permission error |
+| 1501 | Amazon S3 permission error |
+| 1602 | Exceeded reserved capacity limit. Insufficient capacity to execute this query. |
+| 1700 | Query failed due to a Lake Formation internal exception |
+| 1701 | Query failed due to an AWS Glue internal exception |
+| 9999 | Internal service error |
 
 All content copied from https://docs.aws.amazon.com/.

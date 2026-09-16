@@ -3,44 +3,39 @@ title: "GetSettings"
 ---
 
 # GetSettings
+<a name="API_GetSettings"></a>
 
-###### Important
+**Important**
+ AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
-AWS Audit Manager will no longer be open to new
-customers starting April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see
-[AWS Audit Manager availability change](../../../../services/audit-manager/latest/userguide/audit-manager-availability-change.md).
-
-Gets the settings for a specified AWS account.
+ Gets the settings for a specified AWS account.
 
 ## Request Syntax
+<a name="API_GetSettings_RequestSyntax"></a>
 
-```nohighlight
-
-GET /settings/attribute HTTP/1.1
-
+```
+GET /settings/{{attribute}} HTTP/1.1
 ```
 
 ## URI Request Parameters
+<a name="API_GetSettings_RequestParameters"></a>
 
 The request uses the following URI parameters.
 
-**[attribute](#API_GetSettings_RequestSyntax)**
-
-The list of setting attribute enum values.
-
+ ** [attribute](#API_GetSettings_RequestSyntax) **   <a name="auditmanager-GetSettings-request-uri-attribute"></a>
+ The list of setting attribute enum values.
 Valid Values: `ALL | IS_AWS_ORG_ENABLED | SNS_TOPIC | DEFAULT_ASSESSMENT_REPORTS_DESTINATION | DEFAULT_PROCESS_OWNERS | EVIDENCE_FINDER_ENABLEMENT | DEREGISTRATION_POLICY | DEFAULT_EXPORT_DESTINATION`
-
 Required: Yes
 
 ## Request Body
+<a name="API_GetSettings_RequestBody"></a>
 
 The request does not have a request body.
 
 ## Response Syntax
+<a name="API_GetSettings_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 HTTP/1.1 200
 Content-type: application/json
 
@@ -77,60 +72,46 @@ Content-type: application/json
 ```
 
 ## Response Elements
+<a name="API_GetSettings_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[settings](#API_GetSettings_ResponseSyntax)**
-
-The settings object that holds all supported Audit Manager settings.
-
-Type: [Settings](api-settings.md) object
+ ** [settings](#API_GetSettings_ResponseSyntax) **   <a name="auditmanager-GetSettings-response-settings"></a>
+ The settings object that holds all supported Audit Manager settings.
+Type: [Settings](API_Settings.md) object
 
 ## Errors
+<a name="API_GetSettings_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**AccessDeniedException**
-
-Your account isn't registered with AWS Audit Manager. Check the delegated
-administrator setup on the Audit Manager settings page, and try again.
-
+ ** AccessDeniedException **
+ Your account isn't registered with AWS Audit Manager. Check the delegated administrator setup on the Audit Manager settings page, and try again.
 HTTP Status Code: 403
 
-**InternalServerException**
-
-An internal service error occurred during the processing of your request. Try again
-later.
-
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
 HTTP Status Code: 500
 
 ## Examples
+<a name="API_GetSettings_Examples"></a>
 
 ### Confirming the status of evidence finder
+<a name="API_GetSettings_Example_1"></a>
 
-This is an example response for the `GetSettings` API operation, where
-the `attribute` parameter is set to
-`EVIDENCE_FINDER_ENABLEMENT`.
+This is an example response for the `GetSettings` API operation, where the `attribute` parameter is set to `EVIDENCE_FINDER_ENABLEMENT`.
 
 This response returns the following evidence finder settings:
-
-- `eventDataStoreArn` shows the ARN of the event data store that
-was created when evidence finder was enabled.
-
-- `enablementStatus` shows the current status of evidence finder.
-In this case, `ENABLED` indicates that evidence finder was
-successfully enabled.
-
-- `backfillStatus` shows the current status of the evidence data
-backfill. In this case, `IN_PROGRESS` indicates that the backfill is
-not yet complete.
++  `eventDataStoreArn` shows the ARN of the event data store that was created when evidence finder was enabled.
++  `enablementStatus` shows the current status of evidence finder. In this case, `ENABLED` indicates that evidence finder was successfully enabled.
++  `backfillStatus` shows the current status of the evidence data backfill. In this case, `IN_PROGRESS` indicates that the backfill is not yet complete.
 
 #### Sample Response
+<a name="API_GetSettings_Example_1_Response"></a>
 
-```json
-
+```
 {
     "settings": {
         "evidenceFinderEnablement": {
@@ -143,21 +124,16 @@ not yet complete.
 ```
 
 ### Reviewing your data retention settings
+<a name="API_GetSettings_Example_2"></a>
 
-This is an example response for the `GetSettings` API operation, where
-the `attribute` parameter is set to
-`DEREGISTRATION_POLICY`.
+This is an example response for the `GetSettings` API operation, where the `attribute` parameter is set to `DEREGISTRATION_POLICY`.
 
-This response returns your current data retention preferences. In this case,
-`deleteResources` has a value of `DEFAULT`. This indicates
-that your Audit Manager data is subject to default data retention policies. For
-more information about data retention, see [Data Protection](../../../../services/audit-manager/latest/userguide/data-protection.md)
-in the _AWS Audit Manager User Guide._
+This response returns your current data retention preferences. In this case, `deleteResources` has a value of `DEFAULT`. This indicates that your Audit Manager data is subject to default data retention policies. For more information about data retention, see [Data Protection](https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.html) in the * AWS Audit Manager User Guide.*
 
 #### Sample Response
+<a name="API_GetSettings_Example_2_Response"></a>
 
-```json
-
+```
 {
     "settings": {
         "deregistrationPolicy": {
@@ -168,16 +144,16 @@ in the _AWS Audit Manager User Guide._
 ```
 
 ### Reviewing your Audit Manager notification settings
+<a name="API_GetSettings_Example_3"></a>
 
-This is an example response for the `GetSettings` API operation, where
-the `attribute` parameter is set to `SNS_TOPIC`.
+This is an example response for the `GetSettings` API operation, where the `attribute` parameter is set to `SNS_TOPIC`.
 
 If an SNS topic is in use, the response returns the ARN for that topic.
 
 #### Sample Response
+<a name="API_GetSettings_Example_3_Response"></a>
 
-```json
-
+```
 {
     "settings": {
         "snsTopic": "arn:aws:sns:us-east-1:111122223333:my-assessment-topic"
@@ -186,18 +162,16 @@ If an SNS topic is in use, the response returns the ARN for that topic.
 ```
 
 ### Reviewing the default audit owners for your Audit Manager assessments
+<a name="API_GetSettings_Example_4"></a>
 
-This is an example response for the `GetSettings` API operation, where
-the `attribute` parameter is set to
-`DEFAULT_PROCESS_OWNERS`.
+This is an example response for the `GetSettings` API operation, where the `attribute` parameter is set to `DEFAULT_PROCESS_OWNERS`.
 
-If one or more default audit owners were specified, the response returns the ARN
-for each audit owner's role.
+If one or more default audit owners were specified, the response returns the ARN for each audit owner's role.
 
 #### Sample Response
+<a name="API_GetSettings_Example_4_Response"></a>
 
-```json
-
+```
 {
     "settings": {
         "defaultProcessOwners": [
@@ -211,33 +185,18 @@ for each audit owner's role.
 ```
 
 ## See Also
+<a name="API_GetSettings_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/getsettings.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/getsettings.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GetServicesInScope
-
-ListAssessmentControlInsightsByControlDomain
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/GetSettings)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/GetSettings)
 
 All content copied from https://docs.aws.amazon.com/.

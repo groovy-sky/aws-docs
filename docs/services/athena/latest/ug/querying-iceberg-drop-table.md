@@ -3,32 +3,25 @@ title: "DROP TABLE"
 ---
 
 # DROP TABLE
+<a name="querying-iceberg-drop-table"></a>
 
 Drops an Iceberg table.
 
-###### Warning
-
-Because Iceberg tables are considered managed tables in Athena, dropping an
-Iceberg table also removes all the data in the table.
+**Warning**
+Because Iceberg tables are considered managed tables in Athena, dropping an Iceberg table also removes all the data in the table.
 
 ## Synopsis
+<a name="querying-iceberg-drop-table-synopsis"></a>
 
-```sql
-
-DROP TABLE [IF EXISTS] [db_name.]table_name
+```
+DROP TABLE [IF EXISTS] [{{db_name}}.]{{table_name}}
 ```
 
 ## Example
+<a name="querying-iceberg-drop-table-example"></a>
 
-```sql
-
+```
 DROP TABLE iceberg_table
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DESCRIBE
-
-SHOW CREATE TABLE
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,22 +3,22 @@ title: "Create arrays"
 ---
 
 # Create arrays
+<a name="creating-arrays"></a>
 
 To build an array literal in Athena, use the `ARRAY` keyword, followed by brackets `[ ]`, and include the array elements separated by commas.
 
 ## Examples
+<a name="examples"></a>
 
 This query creates one array with four elements.
 
-```sql
-
+```
 SELECT ARRAY [1,2,3,4] AS items
 ```
 
 It returns:
 
 ```
-
 +-----------+
 | items     |
 +-----------+
@@ -28,15 +28,13 @@ It returns:
 
 This query creates two arrays.
 
-```sql
-
+```
 SELECT ARRAY[ ARRAY[1,2], ARRAY[3,4] ] AS items
 ```
 
 It returns:
 
 ```
-
 +--------------------+
 | items              |
 +--------------------+
@@ -46,8 +44,7 @@ It returns:
 
 To create an array from selected columns of compatible types, use a query, as in this example:
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT 1 AS x, 2 AS y, 3 AS z
@@ -58,7 +55,6 @@ SELECT ARRAY [x,y,z] AS items FROM dataset
 This query returns:
 
 ```
-
 +-----------+
 | items     |
 +-----------+
@@ -68,8 +64,7 @@ This query returns:
 
 In the following example, two arrays are selected and returned as a welcome message.
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT
@@ -83,7 +78,6 @@ FROM dataset
 This query returns:
 
 ```
-
 +----------------------------------------+
 | welcome_msg                            |
 +----------------------------------------+
@@ -93,8 +87,7 @@ This query returns:
 
 To create an array of key-value pairs, use the `MAP` operator that takes an array of keys followed by an array of values, as in this example:
 
-```sql
-
+```
 SELECT ARRAY[
    MAP(ARRAY['first', 'last', 'age'],ARRAY['Bob', 'Smith', '40']),
    MAP(ARRAY['first', 'last', 'age'],ARRAY['Jane', 'Doe', '30']),
@@ -105,18 +98,11 @@ SELECT ARRAY[
 This query returns:
 
 ```
-
 +-----------------------------------------------------------------------------------------------------+
 | people                                                                                              |
 +-----------------------------------------------------------------------------------------------------+
 | [{last=Smith, first=Bob, age=40}, {last=Doe, first=Jane, age=30}, {last=Smith, first=Billy, age=8}] |
 +-----------------------------------------------------------------------------------------------------+
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Query arrays
-
-Concatenate strings and arrays
 
 All content copied from https://docs.aws.amazon.com/.

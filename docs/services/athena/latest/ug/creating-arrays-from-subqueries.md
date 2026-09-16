@@ -3,11 +3,11 @@ title: "Create arrays from subqueries"
 ---
 
 # Create arrays from subqueries
+<a name="creating-arrays-from-subqueries"></a>
 
 Create an array from a collection of rows.
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT ARRAY[1,2,3,4,5] AS items
@@ -20,7 +20,6 @@ CROSS JOIN UNNEST(items) AS t(i)
 This query returns:
 
 ```
-
 +-----------------+
 | array_items     |
 +-----------------+
@@ -28,11 +27,9 @@ This query returns:
 +-----------------+
 ```
 
-To create an array of unique values from a set of rows, use the `distinct`
-keyword.
+To create an array of unique values from a set of rows, use the `distinct` keyword.
 
-```sql
-
+```
 WITH
 dataset AS (
   SELECT ARRAY [1,2,2,3,3,4,5] AS items
@@ -45,7 +42,6 @@ CROSS JOIN UNNEST(items) AS t(i)
 This query returns the following result. Note that ordering is not guaranteed.
 
 ```
-
 +-----------------+
 | array_items     |
 +-----------------+
@@ -54,11 +50,5 @@ This query returns the following result. Note that ordering is not guaranteed.
 ```
 
 For more information about using the `array_agg` function, see [Aggregate functions](https://trino.io/docs/current/functions/aggregate.html) in the Trino documentation.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Flatten nested arrays
-
-Filter arrays
 
 All content copied from https://docs.aws.amazon.com/.

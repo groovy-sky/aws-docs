@@ -3,35 +3,25 @@ title: "CapacityAssignment"
 ---
 
 # CapacityAssignment
+<a name="API_CapacityAssignment"></a>
 
 A mapping between one or more workgroups and a capacity reservation.
 
 ## Contents
+<a name="API_CapacityAssignment_Contents"></a>
 
-**WorkGroupNames**
-
+ ** WorkGroupNames **   <a name="athena-Type-CapacityAssignment-WorkGroupNames"></a>
 The list of workgroup names for the capacity assignment.
-
 Type: Array of strings
-
 Pattern: `[a-zA-Z0-9._-]{1,128}`
-
 Required: No
 
 ## See Also
+<a name="API_CapacityAssignment_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/capacityassignment.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/capacityassignment.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/capacityassignment.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityAllocation
-
-CapacityAssignmentConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/CapacityAssignment)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/CapacityAssignment)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/CapacityAssignment)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,39 +3,54 @@ title: "AWS configuration profile credentials"
 ---
 
 # AWS configuration profile credentials
+<a name="jdbc-v3-driver-aws-configuration-profile-credentials"></a>
 
-You can use credentials stored in an AWS configuration profile by setting the
-following connection parameters. AWS configuration profiles are typically stored in
-files in the `~/.aws` directory). For information about AWS
-configuration profiles, see [Use\
-profiles](../../../../reference/sdk-for-java/latest/developer-guide/credentials-profiles.md) in the _AWS SDK for Java Developer Guide_.
+You can use credentials stored in an AWS configuration profile by setting the following connection parameters. AWS configuration profiles are typically stored in files in the `~/.aws` directory). For information about AWS configuration profiles, see [Use profiles](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials-profiles.html) in the *AWS SDK for Java Developer Guide*.
 
 ## Credentials provider
+<a name="jdbc-v3-driver-aws-configuration-profile-credentials-provider"></a>
 
-The credentials provider that will be used to authenticate requests to AWS. Set
-the value of this parameter to `ProfileCredentials`.
+The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `ProfileCredentials`.
 
-Parameter nameAliasParameter typeDefault valueValue to useCredentialsProvider_AWSCredentialsProviderClass_
-_(deprecated)_Requirednone`ProfileCredentials`
+| Parameter name | Alias | Parameter type | Default value | Value to use |
+| --- | --- | --- | --- | --- |
+| CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | ProfileCredentials |
 
 ## Profile name
+<a name="jdbc-v3-driver-profile-name"></a>
 
-The name of the AWS configuration profile whose credentials should be used to
-authenticate the request to Athena.
+The name of the AWS configuration profile whose credentials should be used to authenticate the request to Athena.
 
-Parameter nameAliasParameter typeDefault valueProfileNamenoneRequirednone
+| Parameter name | Alias | Parameter type | Default value |
+| --- | --- | --- | --- |
+| ProfileName | none | Required | none |
 
-###### Note
+**Note**
+The profile name can also be specified as the value of the `CredentialsProviderArguments` parameter, although this use is deprecated.
 
-The profile name can also be specified as the value of the
-`CredentialsProviderArguments` parameter, although this use is
-deprecated.
+## Authenticating with an IAM Identity Center profile
+<a name="jdbc-v3-driver-identity-center-profile-example"></a>
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+Use an IAM Identity Center profile with the `ProfileCredentials` provider to authenticate requests to AWS. This approach uses SSO-managed credentials instead of long-term access keys. The following example shows the required entries in the `~/.aws/config` file.
 
-Default
+```
+[profile athena-idc]
+sso_session = athena-idc-session
+sso_account_id = 111122223333
+sso_role_name = AthenaQueryRole
+region = us-east-1
 
-Instance
-profile
+[sso-session athena-idc-session]
+sso_start_url = https://example.awsapps.com/start
+sso_region = us-east-1
+sso_registration_scopes = sso:account:access
+```
+
+Before opening the JDBC connection, sign in to the profile. For example, use `aws sso login --profile athena-idc`. Then configure the JDBC connection with the following parameters.
+
+```
+CredentialsProvider=ProfileCredentials;
+ProfileName=athena-idc;
+```
 
 All content copied from https://docs.aws.amazon.com/.
