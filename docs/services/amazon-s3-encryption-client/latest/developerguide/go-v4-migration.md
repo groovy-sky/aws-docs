@@ -1,90 +1,83 @@
 ---
-title: "S3 Encryption Client Migration (3.x to 4.x)"
+title: "S3 Encryption Client Migration (3.*x* to 4.*x*)"
 ---
 
-# S3 Encryption Client Migration (3. _x_ to 4. _x_)
+# S3 Encryption Client Migration (3.*x* to 4.*x*)
+<a name="go-v4-migration"></a>
 
-**Note:** If you're using version 2. _x_ of the Amazon S3 Encryption Client for Go and want to migrate to version 4. _x_, you must first migrate to version 3. _x_. See [S3 Encryption Client Migration (2.x to 3.x)](go-v3-migration.md).
+**Note:** If you're using version 2.*x* of the Amazon S3 Encryption Client for Go and want to migrate to version 4.*x*, you must first migrate to version 3.*x*. See [S3 Encryption Client Migration (2.*x* to 3.*x*)](go-v3-migration.md).
 
-Version 4. _x_ of the Amazon S3 Encryption Client for Go introduces AES GCM with Key Commitment (ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY) and Commitment Policies to enhance security by protecting against data key tampering in Instruction Files. This migration guide explains the two-phase approach to safely upgrade from 3. _x_ to 4. _x_ while maintaining backward compatibility during the transition.
+Version 4.*x* of the Amazon S3 Encryption Client for Go introduces AES GCM with Key Commitment (ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY) and Commitment Policies to enhance security by protecting against data key tampering in Instruction Files. This migration guide explains the two-phase approach to safely upgrade from 3.*x* to 4.*x* while maintaining backward compatibility during the transition.
 
 ## Migration Overview
+<a name="go-v4-migration-overview"></a>
 
-Migrating from version 3. _x_ to version 4. _x_ of the Amazon S3 Encryption Client for Go requires a two-phase approach to ensure compatibility and security:
+Migrating from version 3.*x* to version 4.*x* of the Amazon S3 Encryption Client for Go requires a two-phase approach to ensure compatibility and security:
 
-1. **Phase 1: Update existing 3. _x_ clients to read 4. _x_ formats**
+1. **Phase 1: Update existing 3.*x* clients to read 4.*x* formats**
 
-First, update all existing 3. _x_ clients in your environment to a version that can read objects encrypted with 4. _x_ algorithms and commitment policies (Amazon S3 Encryption Client for Go version 3.2.0 or greater). This ensures that when you start encrypting with 4. _x_, your existing applications can still decrypt the new objects.
+   First, update all existing 3.*x* clients in your environment to a version that can read objects encrypted with 4.*x* algorithms and commitment policies (Amazon S3 Encryption Client for Go version 3.2.0 or greater). This ensures that when you start encrypting with 4.*x*, your existing applications can still decrypt the new objects.
 
-2. **Phase 2: Migrate encryption and decryption clients to 4. _x_**
+1. **Phase 2: Migrate encryption and decryption clients to 4.*x***
 
-After all clients can read 4. _x_ formats, migrate your encryption and decryption operations to use 4. _x_ clients with the appropriate Commitment Policy. This phase introduces the enhanced security features while maintaining backward compatibility with existing encrypted objects.
+   After all clients can read 4.*x* formats, migrate your encryption and decryption operations to use 4.*x* clients with the appropriate Commitment Policy. This phase introduces the enhanced security features while maintaining backward compatibility with existing encrypted objects.
 
 This phased approach prevents compatibility issues and ensures that all encrypted objects remain accessible throughout the migration process.
 
-## Understanding 4. _x_ Concepts
+## Understanding 4.*x* Concepts
+<a name="go-v4-migration-concepts"></a>
 
-Version 4. _x_ introduces two key security concepts that enhance protection against data key tampering:
+Version 4.*x* introduces two key security concepts that enhance protection against data key tampering:
 
 ### Commitment Policy
+<a name="go-v4-migration-commitment-policy"></a>
 
 Commitment Policy controls how the encryption client handles key commitment during encryption and decryption operations. There are three Commitment Policies:
 
 `FORBID_ENCRYPT_ALLOW_DECRYPT`
-
 **Encryption:** Encrypts without commitment.
-
 **Decryption:** Allows decryption of both committing and non-committing objects.
-
 **Security:** Does not enforce commitment and may allow for tampering of data keys in Instruction Files. Use only during migration for backward compatibility.
-
-**Version Compatibility:** Objects encrypted with this policy can be read by 2. _x_, 3. _x_, and 4. _x_ clients.
+**Version Compatibility:** Objects encrypted with this policy can be read by 2.*x*, 3.*x*, and 4.*x* clients.
 
 `REQUIRE_ENCRYPT_ALLOW_DECRYPT`
-
 **Encryption:** Encrypts with commitment (uses ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY algorithm).
-
 **Decryption:** Allows decryption of both committing and non-committing objects.
-
 **Security:** New objects are protected against tampering in Instruction Files. Old objects remain readable, but are not protected against data key tampering.
+**Version Compatibility:** Objects encrypted with this policy can only be read by 3.*x* clients (Amazon S3 Encryption Client for Go version 3.2.0 or greater) and 4.*x* clients.
 
-**Version Compatibility:** Objects encrypted with this policy can only be read by 3. _x_ clients (Amazon S3 Encryption Client for Go version 3.2.0 or greater) and 4. _x_ clients.
-
-`REQUIRE_ENCRYPT_REQUIRE_DECRYPT` (Default for 4. _x_)
-
+`REQUIRE_ENCRYPT_REQUIRE_DECRYPT` (Default for 4.*x*)
 **Encryption:** Encrypts with commitment (uses ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY algorithm).
-
 **Decryption:** Only allows decryption of objects encrypted with key commitment.
-
 **Security:** Strict commitment enforcement provides protection against tampered data keys.
-
-**Version Compatibility:** Objects encrypted with this policy can only be read by 3. _x_ clients (version 3.2.0 or greater) and 4. _x_ clients. This policy will reject non-committing objects during decryption.
+**Version Compatibility:** Objects encrypted with this policy can only be read by 3.*x* clients (version 3.2.0 or greater) and 4.*x* clients. This policy will reject non-committing objects during decryption.
 
 ### AES GCM with Key Commitment
+<a name="go-v4-migration-aes-gcm-kc"></a>
 
-AES GCM with Key Commitment (ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY) is the new encryption algorithm suite introduced in version 4. _x_ that protects against data key tampering in Instruction Files by cryptographically binding the key to its intended use.
+AES GCM with Key Commitment (ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY) is the new encryption algorithm suite introduced in version 4.*x* that protects against data key tampering in Instruction Files by cryptographically binding the key to its intended use.
 
-**Version Compatibility:** Objects encrypted with ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY can only be decrypted by 3. _x_ clients (version 3.2.0 or greater) or 4. _x_ clients. 2. _x_ and earlier 3. _x_ clients (v3.1.0 and earlier) cannot read these objects.
+**Version Compatibility:** Objects encrypted with ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY can only be decrypted by 3.*x* clients (version 3.2.0 or greater) or 4.*x* clients. 2.*x* and earlier 3.*x* clients (v3.1.0 and earlier) cannot read these objects.
 
 ## Update Existing Clients
+<a name="go-v4-migration-update-clients"></a>
 
-Before migrating to 4. _x_ encryption, you must first update all existing 3. _x_ clients to a version that can read 4. _x_ encrypted objects. This ensures compatibility when you begin encrypting with 4. _x_.
+Before migrating to 4.*x* encryption, you must first update all existing 3.*x* clients to a version that can read 4.*x* encrypted objects. This ensures compatibility when you begin encrypting with 4.*x*.
 
 ### Build and Install the Latest SDK Version
+<a name="go-v4-migration-build-install"></a>
 
-Update your Go module dependencies to use the latest version of the Amazon S3 Encryption Client for Go 3. _x_ that includes support for reading 4. _x_ messages:
+Update your Go module dependencies to use the latest version of the Amazon S3 Encryption Client for Go 3.*x* that includes support for reading 4.*x* messages:
 
 **Update Go modules:**
 
-```bash
-
+```
 go get github.com/aws/amazon-s3-encryption-client-go/v3@latest
 ```
 
 **Update your go.mod file if needed:**
 
-```go
-
+```
 module your-application
 
 go 1.24
@@ -97,38 +90,38 @@ require (
 ```
 
 ### Build, Install, and Deploy Applications
+<a name="go-v4-migration-build-deploy"></a>
 
 After updating your dependencies, rebuild and deploy your applications:
 
 1. **Clean and rebuild:**
 
-```bash
+   ```
+   go mod tidy
+   go build ./...
+   ```
 
-go mod tidy
-go build ./...
-```
+1. **Run your tests:**
 
-2. **Run your tests:**
+   ```
+   go test ./...
+   ```
 
-```bash
-
-go test ./...
-```
-
-3. **Deploy updated applications:** Deploy the updated applications to all environments where S3 Encryption Client is used. Ensure all applications can successfully decrypt existing V3 encrypted objects before proceeding to the next phase.
+1. **Deploy updated applications:** Deploy the updated applications to all environments where S3 Encryption Client is used. Ensure all applications can successfully decrypt existing V3 encrypted objects before proceeding to the next phase.
 
 ## Migrate to V4
+<a name="go-v4-migration-migrate"></a>
 
-After all clients in your environment can read 4. _x_ formats, you can migrate your encryption and decryption operations to use 4. _x_ clients. The following examples demonstrate the transition from 3. _x_ to 4. _x_ clients.
+After all clients in your environment can read 4.*x* formats, you can migrate your encryption and decryption operations to use 4.*x* clients. The following examples demonstrate the transition from 3.*x* to 4.*x* clients.
 
 ### Client Migration Examples
+<a name="go-v4-migration-client-transition"></a>
 
-The following examples show how to migrate from 3. _x_ to 4. _x_ clients using different Commitment Policies during the transition:
+The following examples show how to migrate from 3.*x* to 4.*x* clients using different Commitment Policies during the transition:
 
-**Pre-migration (3. _x_ Client)**
+**Pre-migration (3.*x* Client)**
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -188,21 +181,19 @@ func V3EncryptionExample() error {
 }
 ```
 
-**During Migration (4. _x_ Client with FORBID\_ENCRYPT\_ALLOW\_DECRYPT Policy)**
+**During Migration (4.*x* Client with FORBID\_ENCRYPT\_ALLOW\_DECRYPT Policy)**
 
-Update your Go module dependencies to use the latest version of the Amazon S3 Encryption Client for Go 4. _x_:
+Update your Go module dependencies to use the latest version of the Amazon S3 Encryption Client for Go 4.*x*:
 
 **Upgrade Go modules:**
 
-```bash
-
+```
 go get github.com/aws/amazon-s3-encryption-client-go/v4@latest
 ```
 
 **Update your go.mod file if needed:**
 
-```go
-
+```
 module your-application
 
 go 1.24
@@ -214,11 +205,9 @@ require (
 )
 ```
 
-After updating your dependencies, make code changes as described below.
-This should result in no functional changes to your application.
+After updating your dependencies, make code changes as described below. This should result in no functional changes to your application.
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -286,13 +275,11 @@ func V4ForbidAllowExample() error {
 }
 ```
 
-**During migration (4. _x_ Client with REQUIRE\_ENCRYPT\_ALLOW\_DECRYPT Policy)**
+**During migration (4.*x* Client with REQUIRE\_ENCRYPT\_ALLOW\_DECRYPT Policy)**
 
-After deploying the FORBID\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below.
-This will cause your application to start writing objects encrypted with key committing algorithms.
+After deploying the FORBID\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below. This will cause your application to start writing objects encrypted with key committing algorithms.
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -381,14 +368,11 @@ func V4RequireAllowExample() error {
 }
 ```
 
-**Post-migration (4. _x_ Client with default commitment policy)**
+**Post-migration (4.*x* Client with default commitment policy)**
 
-After deploying the REQUIRE\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below.
-This will cause your application to stop reading objects encrypted without key committing algorithms.
-Before deploying this change, ensure all existing objects are now encrypted with key commiting algorithms.
+After deploying the REQUIRE\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below. This will cause your application to stop reading objects encrypted without key committing algorithms. Before deploying this change, ensure all existing objects are now encrypted with key commiting algorithms.
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -471,15 +455,16 @@ func V4KeyCommitmentExample() error {
 ```
 
 ## Additional Examples
+<a name="go-v4-migration-examples"></a>
 
-The following examples demonstrate specific 4. _x_ configuration scenarios for different migration and operational needs.
+The following examples demonstrate specific 4.*x* configuration scenarios for different migration and operational needs.
 
-### Enable Legacy Support for Reading 1. _x_/2. _x_ Objects
+### Enable Legacy Support for Reading 1.*x*/2.*x* Objects
+<a name="go-v4-migration-legacy-support"></a>
 
-During migration, you may need to read objects encrypted with legacy algorithms. Configure your 4. _x_ client to support backward compatibility:
+During migration, you may need to read objects encrypted with legacy algorithms. Configure your 4.*x* client to support backward compatibility:
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -543,11 +528,5 @@ func V4WithLegacySupportExample() error {
 	return nil
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Examples
-
-Migrate from 2.x to 3.x
 
 All content copied from https://docs.aws.amazon.com/.

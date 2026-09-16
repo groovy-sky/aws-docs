@@ -261,6 +261,12 @@ Required: No
          "WriteCapacityUnits": number
       },
       "TableName": "string",
+      "VectorIndexes": {
+         "string" : {
+            "VectorSearchRequestBytes": number,
+            "VectorWriteRequestBytes": number
+         }
+      },
       "WriteCapacityUnits": number
    },
    "ItemCollectionMetrics": {
@@ -301,6 +307,7 @@ Key Length Constraints: Maximum length of 65535.
 
  ** [ConsumedCapacity](#API_DeleteItem_ResponseSyntax) **   <a name="DDB-DeleteItem-response-ConsumedCapacity"></a>
 The capacity units consumed by the `DeleteItem` operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. `ConsumedCapacity` is only returned if the `ReturnConsumedCapacity` parameter was specified. For more information, see [Provisioned capacity mode](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html) in the *Amazon DynamoDB Developer Guide*.
+If the table has vector indexes, the response includes a `VectorIndexes` field with `VectorWriteRequestBytes` consumed for each affected vector index.
 Type: [ConsumedCapacity](API_ConsumedCapacity.md) object
 
  ** [ItemCollectionMetrics](#API_DeleteItem_ResponseSyntax) **   <a name="DDB-DeleteItem-response-ItemCollectionMetrics"></a>
@@ -454,7 +461,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/DeleteItem)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/DeleteItem)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteItem)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteItem)
 
 All content copied from https://docs.aws.amazon.com/.

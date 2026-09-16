@@ -80,7 +80,27 @@ title: "ImportTable"
          "KMSMasterKeyId": "{{string}}",
          "SSEType": "{{string}}"
       },
-      "TableName": "{{string}}"
+      "TableName": "{{string}}",
+      "VectorIndexes": [
+         {
+            "Dimensions": {{number}},
+            "DistanceFunction": "{{string}}",
+            "IndexName": "{{string}}",
+            "Projection": {
+               "NonKeyAttributes": [ "{{string}}" ],
+               "ProjectionType": "{{string}}"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "{{string}}",
+                  "SearchSchemaElementType": "{{string}}"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "{{string}}"
+            }
+         }
+      ]
    }
 }
 ```
@@ -214,7 +234,27 @@ Required: No
             "KMSMasterKeyId": "string",
             "SSEType": "string"
          },
-         "TableName": "string"
+         "TableName": "string",
+         "VectorIndexes": [
+            {
+               "Dimensions": number,
+               "DistanceFunction": "string",
+               "IndexName": "string",
+               "Projection": {
+                  "NonKeyAttributes": [ "string" ],
+                  "ProjectionType": "string"
+               },
+               "SearchSchema": [
+                  {
+                     "AttributeName": "string",
+                     "SearchSchemaElementType": "string"
+                  }
+               ],
+               "VectorAttribute": {
+                  "AttributeName": "string"
+               }
+            }
+         ]
       },
       "TableId": "string"
    }
@@ -275,7 +315,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/ImportTable)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/ImportTable)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/ImportTable)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ImportTable)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ImportTable)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ImportTable)
 
 All content copied from https://docs.aws.amazon.com/.

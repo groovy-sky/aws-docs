@@ -1,78 +1,68 @@
 ---
-title: "S3 Encryption Client Migration (2.x to 3.x)"
+title: "S3 Encryption Client Migration (2.*x* to 3.*x*)"
 ---
 
-# S3 Encryption Client Migration (2. _x_ to 3. _x_)
+# S3 Encryption Client Migration (2.*x* to 3.*x*)
+<a name="go-v3-migration"></a>
 
-**Note:** If you're using version 3. _x_ of the Amazon S3 Encryption Client for Go and want to migrate to version 4. _x_, see [S3 Encryption Client Migration (3.x to 4.x)](go-v4-migration.md).
+**Note:** If you're using version 3.*x* of the Amazon S3 Encryption Client for Go and want to migrate to version 4.*x*, see [S3 Encryption Client Migration (3.*x* to 4.*x*)](go-v4-migration.md).
 
-With version 3. _x_ of the Amazon S3 Encryption Client for Go, you create one client for both encryption and
-decryption. Version 3. _x_ replaces the cipher data generators with the cryptographic materials manager
-(CMM), and replaces the KMS key providers, `NewKMSContextKeyGenerator`,
-with the `NewKmsKeyring`.
+With version 3.*x* of the Amazon S3 Encryption Client for Go, you create one client for both encryption and decryption. Version 3.*x* replaces the cipher data generators with the cryptographic materials manager (CMM), and replaces the KMS key providers, `NewKMSContextKeyGenerator`, with the `NewKmsKeyring`.
 
-When updating from earlier versions of the Amazon S3 Encryption Client to version 3. _x_, you need to update your
-client builder code to use the new, simpler client. If you're decrypting ciphertext that was
-encrypted by earlier versions of the Amazon S3 Encryption Client, you might also need to allow the Amazon S3 Encryption Client to
-[decrypt legacy encryption algorithms](#enable-legacy-go-v3).
+When updating from earlier versions of the Amazon S3 Encryption Client to version 3.*x*, you need to update your client builder code to use the new, simpler client. If you're decrypting ciphertext that was encrypted by earlier versions of the Amazon S3 Encryption Client, you might also need to allow the Amazon S3 Encryption Client to [decrypt legacy encryption algorithms](#enable-legacy-go-v3).
 
-The following examples show the equivalent code required to specify a KMS key provider
-with a KMS key ID in versions 1. _x_, 2. _x_, and 3. _x_ of the Amazon S3 Encryption Client.
+The following examples show the equivalent code required to specify a KMS key provider with a KMS key ID in versions 1.*x*, 2.*x*, and 3.*x* of the Amazon S3 Encryption Client.
 
-Version 1.x
+------
+#### [ Version 1.*x* ]
 
-In version 1. _x_, you use the `NewKMSKeyGeneratorWith` function to
-construct the `cipherDataGenerator`.
+In version 1.*x*, you use the `NewKMSKeyGeneratorWith` function to construct the `cipherDataGenerator`.
 
-```go
-
+```
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
 
-cipherDataGenerator := s3crypto.NewKMSKeyGenerator(kmsClient, kmsKeyID)
+cipherDataGenerator := s3crypto.NewKMSKeyGenerator(kmsClient, {{kmsKeyID}})
 ```
 
-Version 2.x
+------
+#### [ Version 2.*x* ]
 
-In version 2. _x_, you use the `NewKMSContextKeyGenerator` function
-to construct the `cipherDataGenerator`.
+In version 2.*x*, you use the `NewKMSContextKeyGenerator` function to construct the `cipherDataGenerator`.
 
-```go
-
+```
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
 var matDesc s3crypto.MaterialDescription
 
 // changed NewKMSKeyGenerator to NewKMSContextKeyGenerator
-cipherDataGenerator := s3crypto.NewKMSContextKeyGenerator(kmsClient, kmsKeyID, matDesc)
+cipherDataGenerator := s3crypto.NewKMSContextKeyGenerator(kmsClient, {{kmsKeyID}}, matDesc)
 ```
 
-Version 3.x
+------
+#### [ Version 3.*x* ]
 
-In version 3. _x_, you use the `NewKmsKeyring` function to construct
-your cryptographic materials manager (CMM).
+In version 3.*x*, you use the `NewKmsKeyring` function to construct your cryptographic materials manager (CMM).
 
-```go
-
+```
 s3Client := s3.NewFromConfig(cfg)
 kmsClient := kms.NewFromConfig(cfg)
-cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, kmsKeyID))
+cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, {{kmsKeyID}}))
 	if err != nil {
 		return fmt.Errorf("error while creating new CMM")
 	}
 ```
 
-## Migrating from version 2. _x_
+------
 
-The following example demonstrates how to migrate a version 2. _x_ application that uses
-the `NewKMSContextKeyGenerator` KMS key provider with a material
-description and `AESGCMContentCipherBuilderV2` content cipher to version 3. _x_
-of the Amazon S3 Encryption Client for Go.
+## Migrating from version 2.*x*
+<a name="migrate-v2-to-v3"></a>
 
-```go
+The following example demonstrates how to migrate a version 2.*x* application that uses the `NewKMSContextKeyGenerator` KMS key provider with a material description and `AESGCMContentCipherBuilderV2` content cipher to version 3.*x* of the Amazon S3 Encryption Client for Go.
 
+```
 import (
 	"bytes"
 	"context"
@@ -154,41 +144,24 @@ func KmsContextV2toV3GCMExample() error {
 		t.Fatalf("error while decrypting: %v", err)
 	}
 }
-
 ```
 
 ## Enable legacy decryption modes
+<a name="enable-legacy-go-v3"></a>
 
-If you need to decrypt objects or data keys that were encrypted with a legacy
-algorithm, or you need to partially decrypt an AES-GCM encrypted object when performing
-a [ranged request](java-examples.md#ranged-gets), you need to explicitly enable this
-behavior when you instantiate the client.
+If you need to decrypt objects or data keys that were encrypted with a legacy algorithm, or you need to partially decrypt an AES-GCM encrypted object when performing a [ranged request](java-examples.md#ranged-gets), you need to explicitly enable this behavior when you instantiate the client.
 
-Version 3. _x_ of the Amazon S3 Encryption Client encrypts only with [fully\
-supported algorithms](encryption-algorithms.md#v3-algorithms). It will never encrypt with a legacy algorithm. By
-default, it decrypts only with fully supported algorithms, but you can enable it to
-decrypt with both fully supported and legacy algorithms. For more information, see [Decryption modes (Amazon S3 Encryption Client for Java version 3.x and\
-later)](encryption-algorithms.md#decryption-modes).
+Version 3.*x* of the Amazon S3 Encryption Client encrypts only with [fully supported algorithms](encryption-algorithms.md#v3-algorithms). It will never encrypt with a legacy algorithm. By default, it decrypts only with fully supported algorithms, but you can enable it to decrypt with both fully supported and legacy algorithms. For more information, see [Decryption modes (Amazon S3 Encryption Client for Java version 3.*x* and later)](encryption-algorithms.md#decryption-modes).
 
-The `enableLegacyUnauthenticatedModes` flag enables the Amazon S3 Encryption Client to decrypt
-encrypted objects with a fully supported or legacy encryption algorithm.
+The `enableLegacyUnauthenticatedModes` flag enables the Amazon S3 Encryption Client to decrypt encrypted objects with a fully supported or legacy encryption algorithm.
 
-Version 3. _x_ of the Amazon S3 Encryption Client uses one of the fully supported wrapping algorithms and the
-wrapping key you specify to encrypt and decrypt the data keys. The
-`enableLegacyWrappingAlgorithms` flag enables the Amazon S3 Encryption Client to decrypt
-encrypted data keys with a fully supported or legacy wrapping algorithm.
+Version 3.*x* of the Amazon S3 Encryption Client uses one of the fully supported wrapping algorithms and the wrapping key you specify to encrypt and decrypt the data keys. The `enableLegacyWrappingAlgorithms` flag enables the Amazon S3 Encryption Client to decrypt encrypted data keys with a fully supported or legacy wrapping algorithm.
 
-If your client doesn't include the necessary legacy decryption mode with a value of
-`true`, and it encounters an object encrypted with a legacy algorithm, it
-throws `S3EncryptionClientException`.
+If your client doesn't include the necessary legacy decryption mode with a value of `true`, and it encounters an object encrypted with a legacy algorithm, it throws `S3EncryptionClientException`.
 
-The following example enables the `enableLegacyUnauthenticatedModes` and
-`enableLegacyWrappingAlgorithms` flags. This client always encrypts only
-with fully supported algorithms. However, it can decrypt objects and data keys encrypted
-with fully supported or legacy algorithms.
+The following example enables the `enableLegacyUnauthenticatedModes` and `enableLegacyWrappingAlgorithms` flags. This client always encrypts only with fully supported algorithms. However, it can decrypt objects and data keys encrypted with fully supported or legacy algorithms.
 
-```go
-
+```
 cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, , func(options *materials.KeyringOptions) {
     options.EnableLegacyWrappingAlgorithms = true
 })
@@ -206,14 +179,6 @@ if err != nil {
 }
 ```
 
-The legacy decryption modes are designed to be a temporary fix. After you've
-re-encrypted all of your objects with fully supported algorithms, you can eliminate it
-from your code.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Migrate from 3.x to 4.x
-
-Supported encryption algorithms
+The legacy decryption modes are designed to be a temporary fix. After you've re-encrypted all of your objects with fully supported algorithms, you can eliminate it from your code.
 
 All content copied from https://docs.aws.amazon.com/.

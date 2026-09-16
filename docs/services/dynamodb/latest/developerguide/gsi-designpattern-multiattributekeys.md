@@ -3,45 +3,43 @@ title: "Multi-attribute keys pattern"
 ---
 
 # Multi-attribute keys pattern
+<a name="GSI.DesignPattern.MultiAttributeKeys"></a>
 
 ## Overview
+<a name="GSI.DesignPattern.MultiAttributeKeys.Overview"></a>
 
 Multi-attribute keys allow you to create Global Secondary Index (GSI) partition and sort keys composed of up to four attributes each. This reduces client-side code and makes it easier to initially model data and add new access patterns later.
 
-Consider a common scenario: to create a GSI that queries items by multiple hierarchical attributes, you would traditionally need to create synthetic keys by concatenating values. For example, in a gaming app, to query tournament matches by tournament, region, and round, you might create a synthetic GSI partition key like TOURNAMENT#WINTER2024#REGION#NA-EAST and a synthetic sort key like ROUND#SEMIFINALS#BRACKET#UPPER. This approach works, but requires string concatenation when writing data, parsing when reading, and backfilling synthetic keys across all existing items if you're adding the GSI to an existing table. This makes code more cluttered and challenging to maintain type safety on individual key components.
+Consider a common scenario: to create a GSI that queries items by multiple hierarchical attributes, you would traditionally need to create synthetic keys by concatenating values. For example, in a gaming app, to query tournament matches by tournament, region, and round, you might create a synthetic GSI partition key like TOURNAMENT\#WINTER2024\#REGION\#NA-EAST and a synthetic sort key like ROUND\#SEMIFINALS\#BRACKET\#UPPER. This approach works, but requires string concatenation when writing data, parsing when reading, and backfilling synthetic keys across all existing items if you're adding the GSI to an existing table. This makes code more cluttered and challenging to maintain type safety on individual key components.
 
 Multi-attribute keys solve this problem for GSIs. You define your GSI partition key using multiple existing attributes like tournamentId and region. DynamoDB handles the composite key logic automatically, hashing them together for data distribution. You write items using natural attributes from your domain model, and the GSI automatically indexes them. No concatenation, no parsing, no backfilling. Your code stays clean, your data stays typed, and your queries stay simple. This approach is particularly useful when you have hierarchical data with natural attribute groupings (like tournament → region → round, or organization → department → team).
 
 ## Application example
+<a name="GSI.DesignPattern.MultiAttributeKeys.ApplicationExample"></a>
 
 This guide walks through building a tournament match tracking system for an esports platform. The platform needs to efficiently query matches across multiple dimensions: by tournament and region for bracket management, by player for match history, and by date for scheduling.
 
 ## Data model
+<a name="GSI.DesignPattern.MultiAttributeKeys.DataModel"></a>
 
 In this walkthrough, the tournament match tracking system supports three primary access patterns, each requiring a different key structure:
 
 **Access pattern 1:** Look up a specific match by its unique ID
-
-- **Solution:** Base table with `matchId` as partition key
++ **Solution:** Base table with `matchId` as partition key
 
 **Access pattern 2:** Query all matches for a specific tournament and region, optionally filtering by round, bracket, or match
-
-- **Solution:** Global Secondary Index with multi-attribute partition key ( `tournamentId` \+ `region`) and multi-attribute sort key ( `round` \+ `bracket` \+ `matchId`)
-
-- **Example queries:** "All WINTER2024 matches in NA-EAST region" or "All SEMIFINALS matches in UPPER bracket for WINTER2024/NA-EAST"
++ **Solution:** Global Secondary Index with multi-attribute partition key (`tournamentId` \+ `region`) and multi-attribute sort key (`round` \+ `bracket` \+ `matchId`)
++ **Example queries:** "All WINTER2024 matches in NA-EAST region" or "All SEMIFINALS matches in UPPER bracket for WINTER2024/NA-EAST"
 
 **Access pattern 3:** Query a player's match history, optionally filtering by date range or tournament round
-
-- **Solution:** Global Secondary Index with single partition key ( `player1Id`) and multi-attribute sort key ( `matchDate` \+ `round`)
-
-- **Example queries:** "All matches for player 101" or "Player 101's matches in January 2024"
++ **Solution:** Global Secondary Index with single partition key (`player1Id`) and multi-attribute sort key (`matchDate` \+ `round`)
++ **Example queries:** "All matches for player 101" or "Player 101's matches in January 2024"
 
 The key difference between traditional and multi-attribute approaches becomes clear when examining the item structure:
 
 **Traditional Global Secondary Index approach (concatenated keys):**
 
-```javascript
-
+```
 // Manual concatenation required for GSI keys
 const item = {
     matchId: 'match-001',                                          // Base table PK
@@ -59,8 +57,7 @@ const item = {
 
 **Multi-attribute Global Secondary Index approach (native keys):**
 
-```javascript
-
+```
 // Use existing attributes directly - no concatenation needed
 const item = {
     matchId: 'match-001',                                          // Base table PK
@@ -78,96 +75,115 @@ const item = {
 With multi-attribute keys, you write items once with natural domain attributes. DynamoDB automatically indexes them across multiple GSIs without requiring synthetic concatenated keys.
 
 **Base table schema:**
-
-- Partition key: `matchId` (1 attribute)
++ Partition key: `matchId` (1 attribute)
 
 **Global Secondary Index Schema (TournamentRegionIndex with multi-attribute keys):**
-
-- Partition key: `tournamentId`, `region` (2 attributes)
-
-- Sort key: `round`, `bracket`, `matchId` (3 attributes)
++ Partition key: `tournamentId`, `region` (2 attributes)
++ Sort key: `round`, `bracket`, `matchId` (3 attributes)
 
 **Global Secondary Index Schema (PlayerMatchHistoryIndex with multi-attribute keys):**
-
-- Partition key: `player1Id` (1 attribute)
-
-- Sort key: `matchDate`, `round` (2 attributes)
++ Partition key: `player1Id` (1 attribute)
++ Sort key: `matchDate`, `round` (2 attributes)
 
 ### Base table: TournamentMatches
+<a name="GSI.DesignPattern.MultiAttributeKeys.BaseTable"></a>
 
-matchId (PK)tournamentIdregionroundbracketplayer1Idplayer2IdmatchDatewinnerscorematch-001WINTER2024NA-EASTFINALSCHAMPIONSHIP1011032024-01-201013-1match-002WINTER2024NA-EASTSEMIFINALSUPPER1011052024-01-181013-2match-003WINTER2024NA-EASTSEMIFINALSUPPER1031072024-01-181033-0match-004WINTER2024NA-EASTQUARTERFINALSUPPER1011092024-01-151013-1match-005WINTER2024NA-WESTFINALSCHAMPIONSHIP1021042024-01-201023-2match-006WINTER2024NA-WESTSEMIFINALSUPPER1021062024-01-181023-1match-007SPRING2024NA-EASTQUARTERFINALSUPPER1011082024-03-151013-0match-008SPRING2024NA-EASTQUARTERFINALSLOWER1031102024-03-151033-2
+| matchId (PK) | tournamentId | region | round | bracket | player1Id | player2Id | matchDate | winner | score |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| match-001 | WINTER2024 | NA-EAST | FINALS | CHAMPIONSHIP | 101 | 103 | 2024-01-20 | 101 | 3-1 |
+| match-002 | WINTER2024 | NA-EAST | SEMIFINALS | UPPER | 101 | 105 | 2024-01-18 | 101 | 3-2 |
+| match-003 | WINTER2024 | NA-EAST | SEMIFINALS | UPPER | 103 | 107 | 2024-01-18 | 103 | 3-0 |
+| match-004 | WINTER2024 | NA-EAST | QUARTERFINALS | UPPER | 101 | 109 | 2024-01-15 | 101 | 3-1 |
+| match-005 | WINTER2024 | NA-WEST | FINALS | CHAMPIONSHIP | 102 | 104 | 2024-01-20 | 102 | 3-2 |
+| match-006 | WINTER2024 | NA-WEST | SEMIFINALS | UPPER | 102 | 106 | 2024-01-18 | 102 | 3-1 |
+| match-007 | SPRING2024 | NA-EAST | QUARTERFINALS | UPPER | 101 | 108 | 2024-03-15 | 101 | 3-0 |
+| match-008 | SPRING2024 | NA-EAST | QUARTERFINALS | LOWER | 103 | 110 | 2024-03-15 | 103 | 3-2 |
 
 ### GSI: TournamentRegionIndex (multi-attribute keys)
+<a name="GSI.DesignPattern.MultiAttributeKeys.TournamentRegionIndexTable"></a>
 
-tournamentId (PK)region (PK)round (SK)bracket (SK)matchId (SK)player1Idplayer2IdmatchDatewinnerscoreWINTER2024NA-EASTFINALSCHAMPIONSHIPmatch-0011011032024-01-201013-1WINTER2024NA-EASTQUARTERFINALSUPPERmatch-0041011092024-01-151013-1WINTER2024NA-EASTSEMIFINALSUPPERmatch-0021011052024-01-181013-2WINTER2024NA-EASTSEMIFINALSUPPERmatch-0031031072024-01-181033-0WINTER2024NA-WESTFINALSCHAMPIONSHIPmatch-0051021042024-01-201023-2WINTER2024NA-WESTSEMIFINALSUPPERmatch-0061021062024-01-181023-1SPRING2024NA-EASTQUARTERFINALSLOWERmatch-0081031102024-03-151033-2SPRING2024NA-EASTQUARTERFINALSUPPERmatch-0071011082024-03-151013-0
+| tournamentId (PK) | region (PK) | round (SK) | bracket (SK) | matchId (SK) | player1Id | player2Id | matchDate | winner | score |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINTER2024 | NA-EAST | FINALS | CHAMPIONSHIP | match-001 | 101 | 103 | 2024-01-20 | 101 | 3-1 |
+| WINTER2024 | NA-EAST | QUARTERFINALS | UPPER | match-004 | 101 | 109 | 2024-01-15 | 101 | 3-1 |
+| WINTER2024 | NA-EAST | SEMIFINALS | UPPER | match-002 | 101 | 105 | 2024-01-18 | 101 | 3-2 |
+| WINTER2024 | NA-EAST | SEMIFINALS | UPPER | match-003 | 103 | 107 | 2024-01-18 | 103 | 3-0 |
+| WINTER2024 | NA-WEST | FINALS | CHAMPIONSHIP | match-005 | 102 | 104 | 2024-01-20 | 102 | 3-2 |
+| WINTER2024 | NA-WEST | SEMIFINALS | UPPER | match-006 | 102 | 106 | 2024-01-18 | 102 | 3-1 |
+| SPRING2024 | NA-EAST | QUARTERFINALS | LOWER | match-008 | 103 | 110 | 2024-03-15 | 103 | 3-2 |
+| SPRING2024 | NA-EAST | QUARTERFINALS | UPPER | match-007 | 101 | 108 | 2024-03-15 | 101 | 3-0 |
 
 ### GSI: PlayerMatchHistoryIndex (multi-attribute keys)
+<a name="GSI.DesignPattern.MultiAttributeKeys.PlayerMatchHistoryIndexTable"></a>
 
-player1Id (PK)matchDate (SK)round (SK)tournamentIdregionbracketmatchIdplayer2Idwinnerscore1012024-01-15QUARTERFINALSWINTER2024NA-EASTUPPERmatch-0041091013-11012024-01-18SEMIFINALSWINTER2024NA-EASTUPPERmatch-0021051013-21012024-01-20FINALSWINTER2024NA-EASTCHAMPIONSHIPmatch-0011031013-11012024-03-15QUARTERFINALSSPRING2024NA-EASTUPPERmatch-0071081013-01022024-01-18SEMIFINALSWINTER2024NA-WESTUPPERmatch-0061061023-11022024-01-20FINALSWINTER2024NA-WESTCHAMPIONSHIPmatch-0051041023-21032024-01-18SEMIFINALSWINTER2024NA-EASTUPPERmatch-0031071033-01032024-03-15QUARTERFINALSSPRING2024NA-EASTLOWERmatch-0081101033-2
+| player1Id (PK) | matchDate (SK) | round (SK) | tournamentId | region | bracket | matchId | player2Id | winner | score |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 101 | 2024-01-15 | QUARTERFINALS | WINTER2024 | NA-EAST | UPPER | match-004 | 109 | 101 | 3-1 |
+| 101 | 2024-01-18 | SEMIFINALS | WINTER2024 | NA-EAST | UPPER | match-002 | 105 | 101 | 3-2 |
+| 101 | 2024-01-20 | FINALS | WINTER2024 | NA-EAST | CHAMPIONSHIP | match-001 | 103 | 101 | 3-1 |
+| 101 | 2024-03-15 | QUARTERFINALS | SPRING2024 | NA-EAST | UPPER | match-007 | 108 | 101 | 3-0 |
+| 102 | 2024-01-18 | SEMIFINALS | WINTER2024 | NA-WEST | UPPER | match-006 | 106 | 102 | 3-1 |
+| 102 | 2024-01-20 | FINALS | WINTER2024 | NA-WEST | CHAMPIONSHIP | match-005 | 104 | 102 | 3-2 |
+| 103 | 2024-01-18 | SEMIFINALS | WINTER2024 | NA-EAST | UPPER | match-003 | 107 | 103 | 3-0 |
+| 103 | 2024-03-15 | QUARTERFINALS | SPRING2024 | NA-EAST | LOWER | match-008 | 110 | 103 | 3-2 |
 
 ## Prerequisites
+<a name="GSI.DesignPattern.MultiAttributeKeys.Prerequisites"></a>
 
-Before you begin, ensure you have:
+Before you begin, make sure you have:
 
 ### Account and permissions
+<a name="GSI.DesignPattern.MultiAttributeKeys.Prerequisites.AWSAccount"></a>
++ An active AWS account ([create one here](https://aws.amazon.com/free/) if needed)
++ IAM permissions for DynamoDB operations:
+  + `dynamodb:CreateTable`
+  + `dynamodb:DeleteTable`
+  + `dynamodb:DescribeTable`
+  + `dynamodb:PutItem`
+  + `dynamodb:Query`
+  + `dynamodb:BatchWriteItem`
 
-- An active AWS account ( [create one here](https://aws.amazon.com/free) if needed)
-
-- IAM permissions for DynamoDB operations:
-
-- `dynamodb:CreateTable`
-
-- `dynamodb:DeleteTable`
-
-- `dynamodb:DescribeTable`
-
-- `dynamodb:PutItem`
-
-- `dynamodb:Query`
-
-- `dynamodb:BatchWriteItem`
-
-###### Note
-
+**Note**
 **Security Note:** For production use, create a custom IAM policy with only the permissions you need. For this tutorial, you can use the AWS managed policy `AmazonDynamoDBFullAccessV2`.
 
 ### Development Environment
-
-- Node.js installed on your machine
-
-- AWS credentials configured using one of these methods:
+<a name="GSI.DesignPattern.MultiAttributeKeys.Prerequisites.DevEnvironment"></a>
++ Node.js installed on your machine
++ AWS credentials configured using one of these methods:
 
 **Option 1: AWS CLI**
 
 ```
-
 aws configure
 ```
 
 **Option 2: Environment Variables**
 
 ```
-
 export AWS_ACCESS_KEY_ID=your_access_key_here
 export AWS_SECRET_ACCESS_KEY=your_secret_key_here
 export AWS_DEFAULT_REGION=us-east-1
 ```
 
 ### Install Required Packages
+<a name="GSI.DesignPattern.MultiAttributeKeys.Prerequisites.InstallPackages"></a>
 
 ```
-
 npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
 ```
 
 ## Implementation
+<a name="GSI.DesignPattern.MultiAttributeKeys.Implementation"></a>
 
 ### Step 1: Create table with GSIs using multi-attribute keys
+<a name="GSI.DesignPattern.MultiAttributeKeys.CreateTable"></a>
 
 Create a table with a simple base key structure and GSIs that use multi-attribute keys.
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c11b3b5b1"></a>
 
+```
 import { DynamoDBClient, CreateTableCommand } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({ region: 'us-west-2' });
@@ -224,16 +240,19 @@ console.log("Table with multi-attribute GSI keys created successfully");
 
 **Base table:** The base table uses a simple `matchId` partition key for direct match lookups, keeping the base table structure straightforward while the GSIs provide the complex query patterns.
 
-**TournamentRegionIndex Global Secondary Index:** The `TournamentRegionIndex` Global Secondary Index uses `tournamentId` \+ `region` as a multi-attribute partition key, creating tournament-region isolation where data is distributed by the hash of both attributes combined, enabling efficient queries within a specific tournament-region context. The multi-attribute sort key ( `round` \+ `bracket` \+ `matchId`) provides hierarchical sorting that supports queries at any level of the hierarchy with natural ordering from general (round) to specific (match ID).
+**TournamentRegionIndex Global Secondary Index:** The `TournamentRegionIndex` Global Secondary Index uses `tournamentId` \+ `region` as a multi-attribute partition key, creating tournament-region isolation where data is distributed by the hash of both attributes combined, enabling efficient queries within a specific tournament-region context. The multi-attribute sort key (`round` \+ `bracket` \+ `matchId`) provides hierarchical sorting that supports queries at any level of the hierarchy with natural ordering from general (round) to specific (match ID).
 
-**PlayerMatchHistoryIndex Global Secondary Index:** The `PlayerMatchHistoryIndex` Global Secondary Index reorganizes data by player using `player1Id` as the partition key, enabling cross-tournament queries for a specific player. The multi-attribute sort key ( `matchDate` \+ `round`) provides chronological ordering with the ability to filter by date ranges or specific tournament rounds.
+**PlayerMatchHistoryIndex Global Secondary Index:** The `PlayerMatchHistoryIndex` Global Secondary Index reorganizes data by player using `player1Id` as the partition key, enabling cross-tournament queries for a specific player. The multi-attribute sort key (`matchDate` \+ `round`) provides chronological ordering with the ability to filter by date ranges or specific tournament rounds.
 
 ### Step 2: Insert data with native attributes
+<a name="GSI.DesignPattern.MultiAttributeKeys.InsertData"></a>
 
 Add tournament match data using natural attributes. The GSI will automatically index these attributes without requiring synthetic keys.
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c11b5b5b1"></a>
 
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, PutCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -363,16 +382,19 @@ console.log("No synthetic keys created - GSIs use native attributes automaticall
 
 **Natural attribute usage:** Each attribute represents a real tournament concept with no string concatenation or parsing required, providing direct mapping to the domain model.
 
-**Automatic Global Secondary Index indexing:** The GSIs automatically index items using the existing attributes ( `tournamentId`, `region`, `round`, `bracket`, `matchId` for TournamentRegionIndex and `player1Id`, `matchDate`, `round` for PlayerMatchHistoryIndex) without requiring synthetic concatenated keys.
+**Automatic Global Secondary Index indexing:** The GSIs automatically index items using the existing attributes (`tournamentId`, `region`, `round`, `bracket`, `matchId` for TournamentRegionIndex and `player1Id`, `matchDate`, `round` for PlayerMatchHistoryIndex) without requiring synthetic concatenated keys.
 
 **No backfilling needed:** When you add a new Global Secondary Index with multi-attribute keys to an existing table, DynamoDB automatically indexes all existing items using their natural attributes—no need to update items with synthetic keys.
 
 ### Step 3: Query TournamentRegionIndex Global Secondary Index with all partition key attributes
+<a name="GSI.DesignPattern.MultiAttributeKeys.QueryAllPartitionKeys"></a>
 
-This example queries the TournamentRegionIndex Global Secondary Index which has a multi-attribute partition key ( `tournamentId` \+ `region`). All partition key attributes must be specified with equality conditions in queries—you cannot query with just `tournamentId` alone or use inequality operators on partition key attributes.
+This example queries the TournamentRegionIndex Global Secondary Index which has a multi-attribute partition key (`tournamentId` \+ `region`). All partition key attributes must be specified with equality conditions in queries—you cannot query with just `tournamentId` alone or use inequality operators on partition key attributes.
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c11b7b5b1"></a>
 
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, QueryCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -426,8 +448,7 @@ Found 4 matches for WINTER2024/NA-EAST:
 
 **Invalid queries:**
 
-```javascript
-
+```
 // Missing region attribute
 KeyConditionExpression: 'tournamentId = :tournament'
 
@@ -438,11 +459,14 @@ KeyConditionExpression: 'tournamentId = :tournament AND #region > :region'
 **Performance:** Multi-attribute partition keys are hashed together, providing the same O(1) lookup performance as single-attribute keys.
 
 ### Step 4: Query Global Secondary Index sort keys left-to-right
+<a name="GSI.DesignPattern.MultiAttributeKeys.QuerySortKeysLeftToRight"></a>
 
 Sort key attributes must be queried left-to-right in the order they're defined in the Global Secondary Index. This example demonstrates querying the TournamentRegionIndex at different hierarchy levels: filtering by just `round`, by `round` \+ `bracket`, or by all three sort key attributes. You cannot skip attributes in the middle—for example, you cannot query by `round` and `matchId` while skipping `bracket`.
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c11b9b5b1"></a>
 
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, QueryCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -545,31 +569,27 @@ Query 4: Attempting to skip first sort key attribute (WILL FAIL)
 **Left-to-right query rules:** You must query attributes in order from left to right, without skipping any.
 
 **Valid patterns:**
-
-- First attribute only: `round = 'SEMIFINALS'`
-
-- First two attributes: `round = 'SEMIFINALS' AND bracket = 'UPPER'`
-
-- All three attributes: `round = 'SEMIFINALS' AND bracket = 'UPPER' AND matchId = 'match-002'`
++ First attribute only: `round = 'SEMIFINALS'`
++ First two attributes: `round = 'SEMIFINALS' AND bracket = 'UPPER'`
++ All three attributes: `round = 'SEMIFINALS' AND bracket = 'UPPER' AND matchId = 'match-002'`
 
 **Invalid patterns:**
++ Skipping the first attribute: `bracket = 'UPPER'` (skips round)
++ Querying out of order: `matchId = 'match-002' AND round = 'SEMIFINALS'`
++ Leaving gaps: `round = 'SEMIFINALS' AND matchId = 'match-002'` (skips bracket)
 
-- Skipping the first attribute: `bracket = 'UPPER'` (skips round)
-
-- Querying out of order: `matchId = 'match-002' AND round = 'SEMIFINALS'`
-
-- Leaving gaps: `round = 'SEMIFINALS' AND matchId = 'match-002'` (skips bracket)
-
-###### Note
-
+**Note**
 **Design tip:** Order sort key attributes from most general to most specific to maximize query flexibility.
 
 ### Step 5: Use inequality conditions on Global Secondary Index sort keys
+<a name="GSI.DesignPattern.MultiAttributeKeys.InequalityConditions"></a>
 
-Inequality conditions must be the last condition in your query. This example demonstrates using comparison operators ( `>=`, `BETWEEN`) and prefix matching ( `begins_with()`) on sort key attributes. Once you use an inequality operator, you cannot add any additional sort key conditions after it—the inequality must be the final condition in your key condition expression.
+Inequality conditions must be the last condition in your query. This example demonstrates using comparison operators (`>=`, `BETWEEN`) and prefix matching (`begins_with()`) on sort key attributes. Once you use an inequality operator, you cannot add any additional sort key conditions after it—the inequality must be the final condition in your key condition expression.
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c11c11b5b1"></a>
 
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, QueryCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -652,32 +672,29 @@ try {
 }
 ```
 
-**Inequality operator rules:** You can use comparison operators ( `>`, `>=`, `<`, `<=`), `BETWEEN` for range queries, and `begins_with()` for prefix matching. The inequality must be the last condition in your query.
+**Inequality operator rules:** You can use comparison operators (`>`, `>=`, `<`, `<=`), `BETWEEN` for range queries, and `begins_with()` for prefix matching. The inequality must be the last condition in your query.
 
 **Valid patterns:**
-
-- Equality conditions followed by inequality: `round = 'SEMIFINALS' AND bracket = 'UPPER' AND matchId > 'match-001'`
-
-- Inequality on first attribute: `round BETWEEN 'QUARTERFINALS' AND 'SEMIFINALS'`
-
-- Prefix matching as final condition: `round = 'SEMIFINALS' AND begins_with(bracket, 'U')`
++ Equality conditions followed by inequality: `round = 'SEMIFINALS' AND bracket = 'UPPER' AND matchId > 'match-001'`
++ Inequality on first attribute: `round BETWEEN 'QUARTERFINALS' AND 'SEMIFINALS'`
++ Prefix matching as final condition: `round = 'SEMIFINALS' AND begins_with(bracket, 'U')`
 
 **Invalid patterns:**
++ Adding conditions after an inequality: `round > 'QUARTERFINALS' AND bracket = 'UPPER'`
++ Using multiple inequalities: `round > 'QUARTERFINALS' AND bracket > 'L'`
 
-- Adding conditions after an inequality: `round > 'QUARTERFINALS' AND bracket = 'UPPER'`
-
-- Using multiple inequalities: `round > 'QUARTERFINALS' AND bracket > 'L'`
-
-###### Important
-
+**Important**
 `begins_with()` is treated as an inequality condition, so no additional sort key conditions can follow it.
 
 ### Step 6: Query PlayerMatchHistoryIndex Global Secondary Index with multi-attribute sort key
+<a name="GSI.DesignPattern.MultiAttributeKeys.QueryPlayerHistory"></a>
 
-This example queries the PlayerMatchHistoryIndex which has a single partition key ( `player1Id`) and a multi-attribute sort key ( `matchDate` \+ `round`). This enables cross-tournament analysis by querying all matches for a specific player without knowing tournament IDs—whereas the base table would require separate queries per tournament-region combination.
+This example queries the PlayerMatchHistoryIndex which has a single partition key (`player1Id`) and a multi-attribute sort key (`matchDate` \+ `round`). This enables cross-tournament analysis by querying all matches for a specific player without knowing tournament IDs—whereas the base table would require separate queries per tournament-region combination.
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c11c13b5b1"></a>
 
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, QueryCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -747,13 +764,17 @@ console.log(`  Found ${query4.Items.length} matches\n`);
 ```
 
 ## Pattern variations
+<a name="GSI.DesignPattern.MultiAttributeKeys.PatternVariations"></a>
 
 ### Time-series data with multi-attribute keys
+<a name="GSI.DesignPattern.MultiAttributeKeys.TimeSeries"></a>
 
 Optimize for time-series queries with hierarchical time attributes
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c13b3b5b1"></a>
 
+```
 {
     TableName: 'IoTReadings',
     // Base table: Simple partition key
@@ -796,11 +817,14 @@ Optimize for time-series queries with hierarchical time attributes
 **Benefits:** Natural time hierarchy (year → month → day → timestamp) enables efficient queries at any time granularity without date parsing or manipulation. Global Secondary Index automatically indexes all readings using their natural time attributes.
 
 ### E-commerce orders with multi-attribute keys
+<a name="GSI.DesignPattern.MultiAttributeKeys.ECommerce"></a>
 
 Track orders with multiple dimensions
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c13b5b5b1"></a>
 
+```
 {
     TableName: 'Orders',
     // Base table: Simple partition key
@@ -853,11 +877,14 @@ Track orders with multiple dimensions
 ```
 
 ### Hierarchical organization data
+<a name="GSI.DesignPattern.MultiAttributeKeys.Hierarchical"></a>
 
 Model organizational hierarchies
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c13b7b5b1"></a>
 
+```
 {
     TableName: 'Employees',
     // Base table: Simple partition key
@@ -909,11 +936,14 @@ Model organizational hierarchies
 ```
 
 ### Sparse multi-attribute keys
+<a name="GSI.DesignPattern.MultiAttributeKeys.Sparse"></a>
 
 Combine multi-attribute keys to make a sparse GSI
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c13b9b5b1"></a>
 
+```
 {
     TableName: 'Products',
     // Base table: Simple partition key
@@ -956,11 +986,14 @@ Combine multi-attribute keys to make a sparse GSI
 ```
 
 ### SaaS multi-tenancy
+<a name="GSI.DesignPattern.MultiAttributeKeys.SaaS"></a>
 
 Multi-tenant SaaS platform with customer isolation
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c13c11b5b1"></a>
 
+```
 // Table design
 {
     TableName: 'SaasData',
@@ -1015,11 +1048,14 @@ const documents = await docClient.send(new QueryCommand({
 **Benefits:** Efficient queries within tenant-customer context and natural data organization.
 
 ### Financial transactions
+<a name="GSI.DesignPattern.MultiAttributeKeys.Financial"></a>
 
 Banking system tracking account transactions using GSIs
 
-```javascript
+#### Code example
+<a name="w2aac19c13c49c23b9c13c13b5b1"></a>
 
+```
 // Table design
 {
     TableName: 'BankTransactions',
@@ -1101,11 +1137,14 @@ const deposits = await docClient.send(new QueryCommand({
 ```
 
 ## Complete example
+<a name="GSI.DesignPattern.MultiAttributeKeys.CompleteExample"></a>
 
 The following example demonstrates multi-attribute keys from setup to cleanup:
 
-```javascript
+### Code example
+<a name="w2aac19c13c49c23b9c15b5b1"></a>
 
+```
 import {
     DynamoDBClient,
     CreateTableCommand,
@@ -1230,8 +1269,10 @@ multiAttributeKeysDemo().catch(console.error);
 
 **Minimal code scaffold**
 
-```javascript
+### Code example
+<a name="w2aac19c13c49c23b9c15b9b1"></a>
 
+```
 // 1. Create table with GSI using multi-attribute keys
 await client.send(new CreateTableCommand({
     TableName: 'MyTable',
@@ -1300,19 +1341,10 @@ await docClient.send(new QueryCommand({
 ```
 
 ## Additional resources
-
-- [DynamoDB Best Practices](best-practices.md)
-
-- [Working with Tables and Data](workingwithtables.md)
-
-- [Global Secondary Indexes](gsi.md)
-
-- [Query and Scan Operations](query.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Design patterns
-
-Managing Global Secondary Indexes in DynamoDB
+<a name="GSI.DesignPattern.MultiAttributeKeys.AdditionalResources"></a>
++ [DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
++ [Working with Tables and Data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html)
++ [Global Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html)
++ [Query and Scan Operations](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html)
 
 All content copied from https://docs.aws.amazon.com/.

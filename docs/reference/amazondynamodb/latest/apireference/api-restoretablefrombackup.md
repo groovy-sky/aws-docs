@@ -79,7 +79,27 @@ You must manually set up the following on the restored table:
       "KMSMasterKeyId": "{{string}}",
       "SSEType": "{{string}}"
    },
-   "TargetTableName": "{{string}}"
+   "TargetTableName": "{{string}}",
+   "VectorIndexOverride": [
+      {
+         "Dimensions": {{number}},
+         "DistanceFunction": "{{string}}",
+         "IndexName": "{{string}}",
+         "Projection": {
+            "NonKeyAttributes": [ "{{string}}" ],
+            "ProjectionType": "{{string}}"
+         },
+         "SearchSchema": [
+            {
+               "AttributeName": "{{string}}",
+               "SearchSchemaElementType": "{{string}}"
+            }
+         ],
+         "VectorAttribute": {
+            "AttributeName": "{{string}}"
+         }
+      }
+   ]
 }
 ```
 
@@ -133,6 +153,11 @@ Required: No
  ** [SSESpecificationOverride](#API_RestoreTableFromBackup_RequestSyntax) **   <a name="DDB-RestoreTableFromBackup-request-SSESpecificationOverride"></a>
 The new server-side encryption settings for the restored table.
 Type: [SSESpecification](API_SSESpecification.md) object
+Required: No
+
+ ** [VectorIndexOverride](#API_RestoreTableFromBackup_RequestSyntax) **   <a name="DDB-RestoreTableFromBackup-request-VectorIndexOverride"></a>
+The vector indexes for the restored table. If not specified, all vector indexes from the backup are restored. The indexes provided must match existing vector indexes from the backup. You can choose to exclude some or all of the vector indexes at the time of restore.
+Type: Array of [VectorIndex](API_VectorIndex.md) objects
 Required: No
 
 ## Response Syntax
@@ -309,6 +334,31 @@ Required: No
       "TableName": "string",
       "TableSizeBytes": number,
       "TableStatus": "string",
+      "VectorIndexes": [
+         {
+            "Backfilling": boolean,
+            "Dimensions": number,
+            "DistanceFunction": "string",
+            "IndexArn": "string",
+            "IndexName": "string",
+            "IndexSizeBytes": number,
+            "IndexStatus": "string",
+            "ItemCount": number,
+            "Projection": {
+               "NonKeyAttributes": [ "string" ],
+               "ProjectionType": "string"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "string",
+                  "SearchSchemaElementType": "string"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "string"
+            }
+         }
+      ],
       "WarmThroughput": {
          "ReadUnitsPerSecond": number,
          "Status": "string",
@@ -380,7 +430,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/RestoreTableFromBackup)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/RestoreTableFromBackup)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/RestoreTableFromBackup)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableFromBackup)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableFromBackup)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/RestoreTableFromBackup)
 
 All content copied from https://docs.aws.amazon.com/.

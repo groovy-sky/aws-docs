@@ -7,7 +7,7 @@ title: "Best practices for modeling relational data in DynamoDB"
 
 This section provides best practices for modeling relational data in Amazon DynamoDB. First, we introduce traditional data modeling concepts. Then, we describe the advantages of using DynamoDB over traditional relational database management systems—how it eliminates the need for JOIN operations and reduces overhead.
 
-We then explain how to design a DynamoDB table that scales efficiently. Finally, we provide an example of how to model relational data in DynamoDB.
+This section then explains how to design a DynamoDB table that scales efficiently, and provides an example of how to model relational data in DynamoDB.
 
 **Topics**
 + [Traditional relational database models](#SQLtoNoSQL.relational-modeling2)
@@ -23,7 +23,7 @@ A traditional relational database management system (RDBMS) stores data in a nor
 
 The following schema is an example of a relational data model for a generic order-entry application. The application supports a human resources schema that backs the operational and business support systems of a theoretical manufacturer.
 
-![Example RDBMS schema.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/RDBMS.png)
+![Example RDBMS schema.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/RDBMS.png)
 
 As a non-relational database service, DynamoDB offers many advantages over traditional relational database management systems.
 
@@ -46,7 +46,7 @@ SQL queries of this kind can provide a flexible API for accessing data, but they
 
 Additional factors that can impact how long it takes the queries to run are the size of the tables and whether the columns being joined have indexes. The preceding query initiates complex queries across several tables and then sorts the result set.
 
-Eliminating the need for `JOINs` is at the heart of NoSQL data modeling. This is why we built DynamoDB to support Amazon.com, and why DynamoDB can deliver consistent performance at any scale. Given the runtime complexity of SQL queries and `JOINs`, RDBMS performance is not constant at scale. This causes performance issues as customer applications grow.
+Eliminating the need for `JOINs` is at the heart of NoSQL data modeling. This is why Amazon built DynamoDB to support Amazon.com, and why DynamoDB can deliver consistent performance at any scale. Given the runtime complexity of SQL queries and `JOINs`, RDBMS performance is not constant at scale. This causes performance issues as customer applications grow.
 
 While normalizing data does reduce the amount of data stored to disk, often the most constrained resources that impact performance are CPU time and network latency.
 

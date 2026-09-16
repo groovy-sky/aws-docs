@@ -12,6 +12,7 @@ When you restore using point in time recovery, DynamoDB restores your table data
 Along with data, the following are also included on the new restored table using point in time recovery:
 + Global secondary indexes (GSIs)
 + Local secondary indexes (LSIs)
++ Vector indexes
 + Provisioned read and write capacity
 + Encryption settings
 **Important**
@@ -91,7 +92,27 @@ You must manually set up the following on the restored table:
       "SSEType": "{{string}}"
    },
    "TargetTableName": "{{string}}",
-   "UseLatestRestorableTime": {{boolean}}
+   "UseLatestRestorableTime": {{boolean}},
+   "VectorIndexOverride": [
+      {
+         "Dimensions": {{number}},
+         "DistanceFunction": "{{string}}",
+         "IndexName": "{{string}}",
+         "Projection": {
+            "NonKeyAttributes": [ "{{string}}" ],
+            "ProjectionType": "{{string}}"
+         },
+         "SearchSchema": [
+            {
+               "AttributeName": "{{string}}",
+               "SearchSchemaElementType": "{{string}}"
+            }
+         ],
+         "VectorAttribute": {
+            "AttributeName": "{{string}}"
+         }
+      }
+   ]
 }
 ```
 
@@ -118,6 +139,7 @@ Required: No
 
  ** [GlobalSecondaryIndexOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-GlobalSecondaryIndexOverride"></a>
 List of global secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
+The `WarmThroughput` setting is not supported on global secondary indexes when you use `RestoreTableToPointInTime`. Although `WarmThroughput` appears in the shared index definition, including it in a `GlobalSecondaryIndexOverride` entry causes the request to fail with a validation error.
 Type: Array of [GlobalSecondaryIndex](API_GlobalSecondaryIndex.md) objects
 Required: No
 
@@ -162,6 +184,11 @@ Required: No
  ** [UseLatestRestorableTime](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-UseLatestRestorableTime"></a>
 Restore the table to the latest possible time. `LatestRestorableDateTime` is typically 5 minutes before the current time.
 Type: Boolean
+Required: No
+
+ ** [VectorIndexOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-VectorIndexOverride"></a>
+The vector indexes for the restored table. If not specified, all vector indexes from the source table are restored. The indexes provided must match existing vector indexes from the source table. You can choose to exclude some or all of the vector indexes at the time of restore.
+Type: Array of [VectorIndex](API_VectorIndex.md) objects
 Required: No
 
 ## Response Syntax
@@ -338,6 +365,31 @@ Required: No
       "TableName": "string",
       "TableSizeBytes": number,
       "TableStatus": "string",
+      "VectorIndexes": [
+         {
+            "Backfilling": boolean,
+            "Dimensions": number,
+            "DistanceFunction": "string",
+            "IndexArn": "string",
+            "IndexName": "string",
+            "IndexSizeBytes": number,
+            "IndexStatus": "string",
+            "ItemCount": number,
+            "Projection": {
+               "NonKeyAttributes": [ "string" ],
+               "ProjectionType": "string"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "string",
+                  "SearchSchemaElementType": "string"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "string"
+            }
+         }
+      ],
       "WarmThroughput": {
          "ReadUnitsPerSecond": number,
          "Status": "string",
@@ -413,7 +465,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/RestoreTableToPointInTime)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableToPointInTime)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -7,7 +7,7 @@ title: "Evaluate your costs at the table level"
 
  The Cost Explorer tool found within the AWS Management Console allows you to see costs broken down by type, such as read, write, storage and backup charges. You can also see these costs summarized by period such as month or day.
 
-One challenge administrators can face is when the costs of only one particular table need to be reviewed. Some of this data is available via the DynamoDB console or via calls to the `DescribeTable` API, however Cost Explorer does not, by default, allow you to filter or group by costs associated with a specific table. This section will show you how to use tagging to perform individual table cost analysis in Cost Explorer.
+One challenge administrators can face is when the costs of only one particular table need to be reviewed. Some of this data is available through the DynamoDB console or through calls to the `DescribeTable` API, however Cost Explorer does not, by default, allow you to filter or group by costs associated with a specific table. This section will show you how to use tagging to perform individual table cost analysis in Cost Explorer.
 
 **Topics**
 + [How to view the costs of a single DynamoDB table](#CostOptimization_TableLevelCostAnalysis_ViewInfo)
@@ -29,7 +29,7 @@ If the table is in on-demand capacity mode, then `DescribeTable` will not help e
 
 Cost Explorer's default view provides charts showing the cost of consumed resources such as throughput and storage. You can choose to group costs by period, such as totals by month or by day. The costs of storage, reads, writes, and other features can be broken out and compared as well.
 
-![Cost Explorer's default view showing the cost of consumed resources grouped by usage type.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/CostExplorerView.png)
+![Cost Explorer's default view showing the cost of consumed resources grouped by usage type.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/CostExplorerView.png)
 
 ## How to use and apply table tags in Cost Explorer
 <a name="CostOptimization_TableLevelCostAnalysis_Tagging"></a>
@@ -41,8 +41,8 @@ By default, Cost Explorer does not provide a summary of the costs for any one sp
 1. [Activate the tag within Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html) and then filter on the tag value to gain more visibility into each table's costs.
 
 **Note**
-It may take one or two days for the tag to start appearing in Cost Explorer
+It might take one or two days for the tag to start appearing in Cost Explorer
 
-You can set metadata tags yourself in the console, or via automation such as the AWS CLI or AWS SDK. Consider requiring a **table\_name** tag to be set as part of your organization’s new table creation process. For existing tables, there is a Python utility available that will find and apply these tags to all existing tables in a certain region in your account. See [Eponymous Table Tagger on GitHub](https://github.com/awslabs/amazon-dynamodb-tools#eponymous-table-tagger-tool) for more details.
+You can set metadata tags yourself in the console, or through automation such as the AWS CLI or AWS SDK. Consider requiring a **table\_name** tag to be set as part of your organization’s new table creation process. For existing tables, there is a Python utility available that will find and apply these tags to all existing tables in a certain region in your account. See [Eponymous Table Tagger on GitHub](https://github.com/awslabs/amazon-dynamodb-tools#eponymous-table-tagger-tool) for more details.
 
 All content copied from https://docs.aws.amazon.com/.

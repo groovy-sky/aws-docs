@@ -7,7 +7,7 @@ title: "Overview of AWS SDK support for DynamoDB"
 
 The following diagram provides a high-level overview of Amazon DynamoDB application programming using the AWS SDKs.
 
-![Programming model for using DynamoDB with AWS SDKs.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SDKSupport.png)
+![Programming model for using DynamoDB with AWS SDKs.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SDKSupport.png)
 
 1. You write an application using an AWS SDK for your programming language.
 
@@ -42,6 +42,6 @@ For more information about AWS SDKs, including installation instructions and doc
 
 AWS is rolling out SDK support for AWS-account-based endpoints for DynamoDB, starting with the AWS SDK for Java V1 on September 4, 2024. These new endpoints help AWS to ensure high performance and scalability. The updated SDKs will automatically use the new endpoints, which have the format `https://(account-id).ddb.(region).amazonaws.com`.
 
-If you use a single instance of an SDK client to make requests to multiple accounts, your application will have fewer opportunities to reuse connections. AWS recommends modifying your applications to connect to fewer accounts per SDK client instance. An alternative is to set your SDK client to continue using Regional endpoints using the `ACCOUNT_ID_ENDPOINT_MODE` setting, as documented in the [https://docs.aws.amazon.com/sdkref/latest/guide/feature-account-endpoints.html](https://docs.aws.amazon.com/sdkref/latest/guide/feature-account-endpoints.html).
+If you use a single instance of an SDK client to make requests to multiple accounts, your application will have fewer opportunities to reuse connections. AWS recommends modifying your applications to connect to fewer accounts per SDK client instance. An alternative is to set your SDK client to continue using Regional endpoints using the `ACCOUNT_ID_ENDPOINT_MODE` setting, as documented in the [*AWS SDKs and Tools Reference Guide*](https://docs.aws.amazon.com/sdkref/latest/guide/feature-account-endpoints.html).
 
 All content copied from https://docs.aws.amazon.com/.

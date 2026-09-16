@@ -207,6 +207,31 @@ Required: Yes
       "TableName": "string",
       "TableSizeBytes": number,
       "TableStatus": "string",
+      "VectorIndexes": [
+         {
+            "Backfilling": boolean,
+            "Dimensions": number,
+            "DistanceFunction": "string",
+            "IndexArn": "string",
+            "IndexName": "string",
+            "IndexSizeBytes": number,
+            "IndexStatus": "string",
+            "ItemCount": number,
+            "Projection": {
+               "NonKeyAttributes": [ "string" ],
+               "ProjectionType": "string"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "string",
+                  "SearchSchemaElementType": "string"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "string"
+            }
+         }
+      ],
       "WarmThroughput": {
          "ReadUnitsPerSecond": number,
          "Status": "string",
@@ -355,7 +380,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/DescribeTable)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/DescribeTable)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DescribeTable)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DescribeTable)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DescribeTable)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DescribeTable)
 
 All content copied from https://docs.aws.amazon.com/.

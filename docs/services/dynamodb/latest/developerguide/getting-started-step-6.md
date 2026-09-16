@@ -5,7 +5,7 @@ title: "Step 6: (Optional) Delete your DynamoDB table to clean up resources"
 # Step 6: (Optional) Delete your DynamoDB table to clean up resources
 <a name="getting-started-step-6"></a>
 
-If you no longer need the Amazon DynamoDB table that you created for the tutorial, you can delete it. This step helps ensure that you aren't charged for resources that you aren't using. You can use the DynamoDB console or the AWS CLI to delete the `Music` table that you created in [Step 1: Create a table in DynamoDB](getting-started-step-1.md).
+If you no longer need the Amazon DynamoDB table that you created for the tutorial, you can delete it. This step helps make sure that you aren't charged for resources that you aren't using. You can use the DynamoDB console or the AWS CLI to delete the `Music` table that you created in [Step 1: Create a table in DynamoDB](getting-started-step-1.md).
 
 For more information about table operations in DynamoDB, see [Working with tables and data in DynamoDB](WorkingWithTables.md).
 

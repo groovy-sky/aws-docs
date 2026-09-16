@@ -148,7 +148,7 @@ The following IAM policy grants permissions to upgrade any global table to versi
 
 ```
 {
-    "version": "2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -163,7 +163,7 @@ The following IAM policy grants permissions to upgrade only the `Music` global t
 
 ```
 {
-    "version": "2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -206,7 +206,7 @@ The following IAM policy grants permissions to upgrade only the `Music` global t
   - **Behavior before upgrade:** A single Streams record is generated, which contains both the customer-written attributes and the aws:rep:\* attributes. / **Behavior during upgrade:** A single Streams record is generated, which contains both the customer-written attributes and the aws:rep:\* attributes. / **Behavior after upgrade:** A single Streams record is generated, which contains the customer-written attributes.
   - **Behavior before upgrade:** One rWCU is consumed for each customer delete. / **Behavior during upgrade:** One rWCU is consumed for each customer delete. / **Behavior after upgrade:** One rWCU is consumed for each customer delete.
   - **Behavior before upgrade:** ReplicationLatency and PendingReplicationCount metrics are published in CloudWatch. / **Behavior during upgrade:** ReplicationLatency and PendingReplicationCount metrics are published in CloudWatch. / **Behavior after upgrade:** ReplicationLatency metric is published in CloudWatch.
-  - **Replica Region:** **Destination** / **Behavior before upgrade:** Two-phase deletes take place:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_versions.html) / **Behavior during upgrade:** Deletes the item using DeleteItem. / **Behavior after upgrade:** Deletes the item using DeleteItem.
+  - **Replica Region:** **Destination** / **Behavior before upgrade:** Two-phase deletes take place:+  In Phase 1, UpdateItem sets the deleting flag. <br />+  In Phase 2, DeleteItem deletes the item.  / **Behavior during upgrade:** Deletes the item using DeleteItem. / **Behavior after upgrade:** Deletes the item using DeleteItem.
   - **Behavior before upgrade:** Two Streams records are generated. The first record contains the change to the aws:rep:deleting field. The second record contains the customer-written attributes and the aws:rep:\* attributes. / **Behavior during upgrade:** A single Stream record is generated, which contains the customer-written attributes. / **Behavior after upgrade:** A single Stream record is generated, which contains the customer-written attributes.
   - **Behavior before upgrade:** Two rWCUs are consumed for each customer delete. / **Behavior during upgrade:** One rWCU is consumed for each customer delete. / **Behavior after upgrade:** One rWCU is consumed for each customer delete.
   - **Behavior before upgrade:** ReplicationLatency and PendingReplicationCount metrics are published in CloudWatch. / **Behavior during upgrade:** ReplicationLatency metric is published in CloudWatch. / **Behavior after upgrade:** ReplicationLatency metric is published in CloudWatch.
@@ -225,7 +225,7 @@ Perform the following steps to upgrade your version of DynamoDB global tables us
 1. Choose the **Global Tables** tab.
 
 1. Choose **Update version**.
-![Console screenshot showing the Update version button.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/GlobalTables-upgrade.png)
+![Console screenshot showing the Update version button.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/GlobalTables-upgrade.png)
 
 1. Read and agree to the new requirements, and then choose **Update version**.
 

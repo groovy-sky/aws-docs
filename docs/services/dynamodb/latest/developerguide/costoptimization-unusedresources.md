@@ -5,7 +5,7 @@ title: "Identify your unused resources in DynamoDB"
 # Identify your unused resources in DynamoDB
 <a name="CostOptimization_UnusedResources"></a>
 
-This section provides an overview of how to evaluate your unused resources regularly. As your application requirements evolve you should ensure no resources are unused and contributing to unnecessary Amazon DynamoDB costs. The procedures described below will use Amazon CloudWatch metrics to identify unused resources and will help you identify and take action on those resources to reduce costs.
+This section provides an overview of how to evaluate your unused resources regularly. As your application requirements evolve you should make sure no resources are unused and contributing to unnecessary Amazon DynamoDB costs. The procedures described below will use Amazon CloudWatch metrics to identify unused resources and will help you identify and take action on those resources to reduce costs.
 
 You can monitor DynamoDB using CloudWatch, which collects and processes raw data from DynamoDB into readable, near real-time metrics. These statistics are retained for a period of time, so that you can access historical information to better understand your utilization. By default, DynamoDB metric data is sent to CloudWatch automatically. For more information, see [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) and [Metrics retention](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#metrics-retention) in the *Amazon CloudWatch User Guide*.
 
@@ -141,18 +141,18 @@ The following steps will allow you to evaluate your resources utilization throug
 1. Identify your table name by scrolling down the menu, then select the metrics `ConsumedReadCapacityUnits` and `ConsumedWriteCapacityUnits` for your table.
 
 1. Select the **Graphed metrics (2)** tab and adjust the **Statistic** column to **Sum**.
-![Graphed metrics tab. Statistic is set to Sum to view resource usage data in the console.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/GraphedMetricsTab.png)
+![Graphed metrics tab. Statistic is set to Sum to view resource usage data in the console.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/GraphedMetricsTab.png)
 
 1. To avoid falsely identifying a table as unused, you'll want to evaluate metrics over a longer period. At the top of the graph panel choose an appropriate time frame, such as 1 month, to evaluate your table. Select **Custom**, select **1 Months** in the dropdowns, and choose **Apply**.
-![CloudWatch console. Custom time frame of 1 month is selected to evaluate metrics.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/OneMonthTimeFrame.png)
+![CloudWatch console. Custom time frame of 1 month is selected to evaluate metrics.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/OneMonthTimeFrame.png)
 
 1. Evaluate the graphed metrics for your table to determine if it is being used. Metrics that have gone above **0 **indicate that a table has been used during the evaluated time period. A flat graph at **0 **for both read and write indicates a table that is unused.
 
    The following image shows a table with read traffic:
-![Graph showing the ConsumedReadCapacityUnits for a DynamoDB table, suggesting the table is in use.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/TableWithReadTraffic.png)
+![Graph showing the ConsumedReadCapacityUnits for a DynamoDB table, suggesting the table is in use.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/TableWithReadTraffic.png)
 
    The following image shows a table without read traffic:
-![Graph showing no read activity for a DynamoDB table, suggesting the table isn't in use.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/TableWithoutReadTraffic.png)
+![Graph showing no read activity for a DynamoDB table, suggesting the table isn't in use.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/TableWithoutReadTraffic.png)
 
 ------
 

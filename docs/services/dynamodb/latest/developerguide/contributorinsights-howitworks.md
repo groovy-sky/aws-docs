@@ -5,7 +5,7 @@ title: "CloudWatch contributor insights for DynamoDB: How it works"
 # CloudWatch contributor insights for DynamoDB: How it works
 <a name="contributorinsights_HowItWorks"></a>
 
-Amazon DynamoDB integrates with [CloudWatch Contributor Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html) to provide information about the most accessed and throttled items in a table or global secondary index. DynamoDB delivers this information to you via CloudWatch Contributor Insights [rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights-RuleSyntax.html), [reports](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights-ViewReports.html), and [graphs of report data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights-GraphReportData.html).
+Amazon DynamoDB integrates with [CloudWatch Contributor Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html) to provide information about the most accessed and throttled items in a table or global secondary index. DynamoDB delivers this information to you through CloudWatch Contributor Insights [rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights-RuleSyntax.html), [reports](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights-ViewReports.html), and [graphs of report data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights-GraphReportData.html).
 
 CloudWatch Contributor Insights for DynamoDB is designed to have no performance impact on your DynamoDB table.
 
@@ -162,7 +162,7 @@ In *throttled keys* mode, this is the only type of graph you'll see. The absence
 
 The following example shows the reports generated for a table with both a partition keys and sort keys in *accessed and throttled keys* modes. In *throttled keys* mode, you see only the throttling-related portion of this report.
 
-![4 different Contributor Insights reports showing most accessed items and most throttled items.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CI_Graphs_Example.png)
+![4 different Contributor Insights reports showing most accessed items and most throttled items.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CI_Graphs_Example.png)
 
 ## Interactions with other DynamoDB features
 <a name="contributorinsights_HowItWorks.OtherFeatures"></a>
@@ -208,7 +208,7 @@ You control access to CloudWatch Contributor Insights for DynamoDB using AWS Ide
 ## CloudWatch contributor insights for DynamoDB billing
 <a name="contributorinsights_HowItWorks.Billing"></a>
 
-Charges for CloudWatch Contributor Insights for DynamoDB appear in the [CloudWatch](https://aws.amazon.com/cloudwatch/pricing/) section of your monthly bill. These charges have two components: a fixed monthly charge for each Contributor Insights rule that is created when you enable the feature, and a charge based on the number of DynamoDB events that are processed, which varies with the selected mode.
+Charges for CloudWatch Contributor Insights for DynamoDB appear in the [CloudWatch](https://aws.amazon.com/cloudwatch/pricing/) section of your monthly bill. These charges have two components: a fixed monthly charge for each Contributor Insights rule that is created when you turn on the feature, and a charge based on the number of DynamoDB events that are processed, which varies with the selected mode.
 
 ### Billing by mode
 <a name="contributorinsights_HowItWorks.Billing.ModeComparison"></a>
