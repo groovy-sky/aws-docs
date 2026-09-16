@@ -3,21 +3,11 @@ title: "More Info"
 ---
 
 # More Info
+<a name="active-directory-more-info"></a>
 
 For more information related to this topic, see the following resources:
-
-- [Troubleshooting Notification Codes](troubleshooting-notification-codes.md)—Resolutions to
-notification code errors.
-
-- [Troubleshooting Active Directory](troubleshooting-active-directory.md)—Help with common
-difficulties.
-
-- [Microsoft Active Directory](../../../directoryservice/latest/admin-guide/directory-microsoft-ad.md)—Information about using Directory Service.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Managing WorkSpaces Applications Computer Objects in Active Directory
-
-Add Custom Branding
++ [Troubleshooting Notification Codes](troubleshooting-notification-codes.md)—Resolutions to notification code errors.
++ [Troubleshooting Active Directory](troubleshooting-active-directory.md)—Help with common difficulties.
++ [Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)—Information about using Directory Service.
 
 All content copied from https://docs.aws.amazon.com/.

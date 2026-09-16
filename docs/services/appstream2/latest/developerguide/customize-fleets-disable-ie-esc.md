@@ -3,115 +3,61 @@ title: "Disable Internet Explorer Enhanced Security Configuration in Amazon Work
 ---
 
 # Disable Internet Explorer Enhanced Security Configuration in Amazon WorkSpaces Applications
+<a name="customize-fleets-disable-ie-esc"></a>
 
-Internet Explorer Enhanced Security Configuration (ESC) places servers and Internet
-Explorer in a configuration that limits exposure to the internet. However, this
-configuration can impact the WorkSpaces Applications end user experience. Users who are connected to
-WorkSpaces Applications streaming sessions may find that websites do not display or perform as
-expected when:
+Internet Explorer Enhanced Security Configuration (ESC) places servers and Internet Explorer in a configuration that limits exposure to the internet. However, this configuration can impact the WorkSpaces Applications end user experience. Users who are connected to WorkSpaces Applications streaming sessions may find that websites do not display or perform as expected when:
++ Internet Explorer ESC is enabled on fleet instances from which users' streaming sessions are launched
++ Users run Internet Explorer during their streaming sessions
++ Applications use Internet Explorer to load data
 
-- Internet Explorer ESC is enabled on fleet instances from which users'
-streaming sessions are launched
-
-- Users run Internet Explorer during their streaming sessions
-
-- Applications use Internet Explorer to load data
-
-###### Note
-
+**Note**
 The following steps apply to Windows fleets only.
 
-###### To disable Internet Explorer Enhanced Security Configuration
+**To disable Internet Explorer Enhanced Security Configuration**
 
-01. Connect to the image builder on which to disable Internet Explorer ESC and
-     sign in with an account that has local administrator permissions. To do so, do
-     either of the following:
+1. Connect to the image builder on which to disable Internet Explorer ESC and sign in with an account that has local administrator permissions. To do so, do either of the following:
+   + [Use the WorkSpaces Applications console](managing-image-builders-connect-console.md) (for web connections only)
+   + [Create a streaming URL](managing-image-builders-connect-streaming-URL.md) (for web or WorkSpaces Applications client connections)
+**Note**
+If the image builder that you want to connect to is joined to an Active Directory domain and your organization requires smart card sign in, you must create a streaming URL and use the WorkSpaces Applications client for the connection. For information about smart card sign in, see [Smart Cards](feature-support-USB-devices-qualified.md#feature-support-USB-devices-qualified-smart-cards).
 
-- [Use the WorkSpaces Applications\
-console](managing-image-builders-connect-console.md) (for web connections only)
+1. On the image builder, disable Internet Explorer ESC by doing the following:
 
-- [Create a\
-streaming URL](managing-image-builders-connect-streaming-url.md) (for web or WorkSpaces Applications client connections)
+   1. Open Server Manager. Choose the Windows **Start** button, and then choose **Server Manager**.
 
-###### Note
+   1. In the left navigation pane, choose **Local Server**.
 
-If the image builder that you want to connect to is joined to an
-Active Directory domain and your organization requires smart card
-sign in, you must create a streaming URL and use the WorkSpaces Applications client
-for the connection. For information about smart card sign in, see
-[Smart Cards](feature-support-usb-devices-qualified.md#feature-support-USB-devices-qualified-smart-cards).
+   1. In the right properties pane, choose the **On** link next to IE Enhanced Security Configuration****.
 
-02. On the image builder, disable Internet Explorer ESC by doing the
-     following:
-    1. Open Server Manager. Choose the Windows **Start**
-        button, and then choose **Server Manager**.
+   1. In the **Internet Explorer Enhanced Configuration** dialog box, choose the **Off** option under **Administrators** and **Users**, then choose **OK**.
 
-    2. In the left navigation pane, choose **Local Server**.
+1. In the upper right area of the image builder desktop, choose **Admin Commands**, **Switch User**.
+![Admin Commands menu with Switch User option highlighted.](https://docs.aws.amazon.com/appstream2/latest/developerguide/images/admin-commands-switch-user.png)
 
-    3. In the right properties pane, choose the **On** link
-        next to IE Enhanced Security Configuration.
+1. This disconnects your current session and opens the login menu. Log in to the image builder by doing either of the following:
+   + If your image builder is not joined to an Active Directory domain, on the **Local User** tab, choose **Template User**.
+   + If your image builder is joined to an Active Directory domain, choose the **Directory User** tab, and log in as a domain user who does not have local administrator permissions on the image builder.
 
-    4. In the **Internet Explorer Enhanced Configuration**
-        dialog box, choose the **Off** option under
-        **Administrators** and **Users**,
-        then choose **OK**.
-03. In the upper right area of the image builder desktop, choose **Admin**
-    **Commands**, **Switch User**.
+1. Open Internet Explorer and reset your settings by doing the following:
 
-    ![Admin Commands dropdown menu with Switch User option highlighted.](https://docs.aws.amazon.com/images/appstream2/latest/developerguide/images/admin-commands-switch-user.png)
+   1. In the upper right area of the Internet Explorer browser window, choose the **Tools** icon, then choose **Internet options**.
 
-04. This disconnects your current session and opens the login menu. Log in to the
-     image builder by doing either of the following:
+   1. Choose the **Advanced **tab, then choose **Reset**.
 
-- If your image builder is not joined to an Active Directory domain, on
-the **Local User** tab, choose **Template**
-**User**.
+   1. When prompted to confirm your choice, choose **Reset** again.
 
-- If your image builder is joined to an Active Directory domain, choose
-the **Directory User** tab, and log in as a domain user
-who does not have local administrator permissions on the image
-builder.
+   1. When the **Reset Internet Explorer Settings** message displays, choose **Close**.
 
-05. Open Internet Explorer and reset your settings by doing the following:
-    1. In the upper right area of the Internet Explorer browser window,
-        choose the **Tools** icon, then choose
-        **Internet options**.
+1. Reboot image builder.
 
-    2. Choose the **Advanced** tab, then choose
-        **Reset**.
+1. Choose **Admin Commands**, **Switch User**, and then do either of the following:
+   + If your image builder is not joined to an Active Directory domain, on the **Local User** tab, choose **Administrator**.
+   + If your image builder is joined to an Active Directory domain, choose the **Directory User** tab, and log in with the same domain account that you used in step 4.
 
-    3. When prompted to confirm your choice, choose
-        **Reset** again.
+1. On the image builder desktop, open Image Assistant.
 
-    4. When the **Reset Internet Explorer Settings** message
-        displays, choose **Close**.
-06. Reboot image builder.
+1. In **Step 2. Configure Apps**, choose **Save settings**.
 
-07. Choose **Admin Commands**, **Switch User**,
-     and then do either of the following:
-
-- If your image builder is not joined to an Active Directory domain, on
-the **Local User** tab, choose
-**Administrator**.
-
-- If your image builder is joined to an Active Directory domain, choose
-the **Directory User** tab, and log in with the same
-domain account that you used in step 4.
-
-08. On the image builder desktop, open Image Assistant.
-
-09. In **Step 2. Configure Apps**, choose **Save**
-    **settings**.
-
-10. Follow the necessary steps in Image Assistant to finish creating your image.
-     For more information, see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console](tutorial-image-builder.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Set Default File
-Associations
-
-Change the Default Internet
-Explorer Home Page
+1. Follow the necessary steps in Image Assistant to finish creating your image. For more information, see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console](tutorial-image-builder.md).
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,107 +3,71 @@ title: "Increase the Size of the Application Settings VHD"
 ---
 
 # Increase the Size of the Application Settings VHD
+<a name="app-persistence-increase-VHD-size"></a>
 
-The default VHD maximum size is 1 GB for Elastic fleets and 5GB for Always-On and
-On-Demand fleets. If a user requires additional space for application settings, you
-can download the applicable application settings VHD to a Windows computer to expand
-it. Then, replace the current VHD in the S3 bucket with the larger one. Do not do
-this when the user has an active streaming session.
+The default VHD maximum size is 1 GB for Elastic fleets and 5GB for Always-On and On-Demand fleets. If a user requires additional space for application settings, you can download the applicable application settings VHD to a Windows computer to expand it. Then, replace the current VHD in the S3 bucket with the larger one. Do not do this when the user has an active streaming session.
 
-###### Note
+**Note**
+To reduce the physical size of the virtual hard disk (VHD), clear the recycle bin before ending a session. This also reduces upload and download times, and improves the overall user experience.
 
-To reduce the physical size of the virtual hard disk (VHD), clear the recycle
-bin before ending a session. This also reduces upload and download times, and
-improves the overall user experience.
+**To increase the size of the application settings VHD**
+**Note**
+The full VHD must be downloaded before a user can stream applications. Increasing the size of an application settings VHD can increase the time it takes for users to start application streaming sessions.
 
-###### To increase the size of the application settings VHD
+1. Open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).
 
-###### Note
+1. In the **Bucket name** list, choose the S3 bucket that contains the application settings VHD to expand.
 
-The full VHD must be downloaded before a user can stream applications.
-Increasing the size of an application settings VHD can increase the time it
-takes for users to start application streaming sessions.
+1. Locate and select the folder that contains the VHD. For information about how to navigate the S3 bucket folder structure, see *Amazon S3 Bucket Storage* earlier in this topic.
 
-01. Open the Amazon S3 console at
-     [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3).
+   When you select the folder, the settings VHD and associated metadata file display.
 
-02. In the **Bucket name** list, choose the S3 bucket that
-     contains the application settings VHD to expand.
+1. Download the Profile.vhdx file to a directory on your Windows computer. Do not close your browser after the download completes, because you'll use the browser again later to upload the expanded VHD.
 
-03. Locate and select the folder that contains the VHD. For information about
-     how to navigate the S3 bucket folder structure, see _Amazon S3_
-    _Bucket Storage_ earlier in this topic.
+1. To use Diskpart to increase the size of the VHD to 7 GB, open the command prompt as an administrator, and type the following commands.
 
-    When you select the folder, the settings VHD and associated metadata file
-     display.
+   `diskpart`
 
-04. Download the Profile.vhdx file to a directory on your Windows computer. Do
-     not close your browser after the download completes, because you'll use the
-     browser again later to upload the expanded VHD.
+   `select vdisk file="C:\path\to\application\settings\profile.vhdx"`
 
-05. To use Diskpart to increase the size of the VHD to 7 GB, open the command
-     prompt as an administrator, and type the following commands.
+   `expand vdisk maximum=7000`
 
-    `diskpart`
+1. Then, type the following Diskpart commands to find and attach the VHD, and display the list of volumes:
 
-    `select vdisk
-                                file="C:\path\to\application\settings\profile.vhdx"`
+   `select vdisk file="C:\path\to\application\settings\profile.vhdx"`
 
-    `expand vdisk maximum=7000`
+   `attach vdisk`
 
-06. Then, type the following Diskpart commands to find and attach the VHD, and
-     display the list of volumes:
+   `list volume`
 
-    `select vdisk
-                                file="C:\path\to\application\settings\profile.vhdx"`
+   In the output, make note of the volume number with the label "AppStreamUsers". In the next step, you select this volume so that you can enlarge it.
 
-    `attach vdisk`
+1. Type the following command:
 
-    `list volume`
+   `select volume ###`
 
-    In the output, make note of the volume number with the label
-     "AppStreamUsers". In the next step, you select this volume so that you can
-     enlarge it.
+   where \#\#\# is the number in the list volume output.
 
-07. Type the following command:
+1. Type the following command:
 
-    `select volume ###`
+   `extend`
 
-    where ### is the number in the list volume output.
+1. Type the following commands to confirm that the size of the partition on the VHD increased as expected (2 GB in this example):
 
-08. Type the following command:
+   `diskpart`
 
-    `extend`
+   `select vdisk file="C:\path\to\application\settings\profile.vhdx"`
 
-09. Type the following commands to confirm that the size of the partition on
-     the VHD increased as expected (2 GB in this example):
+   `list volume`
 
-    `diskpart`
+1. Type the following command to detach the VHD so that it can be uploaded:
 
-    `select vdisk
-                                file="C:\path\to\application\settings\profile.vhdx"`
+   `detach vdisk`
 
-    `list volume`
+1. Return to your browser with the Amazon S3 console, choose **Upload**, **Add files**, and then select the enlarged VHD.
 
-10. Type the following command to detach the VHD so that it can be
-     uploaded:
+1. Choose **Upload**.
 
-    `detach vdisk`
-
-11. Return to your browser with the Amazon S3 console, choose
-     **Upload**, **Add files**, and then
-     select the enlarged VHD.
-
-12. Choose **Upload**.
-
-After the VHD is uploaded, the next time the user streams from a fleet on which
-application settings persistence is enabled with the applicable settings group, the
-larger application settings VHD is available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Enable Amazon S3 Object Versioning and Revert a User's Application Settings
-
-Enable Regional Settings for Your Users
+After the VHD is uploaded, the next time the user streams from a fleet on which application settings persistence is enabled with the applicable settings group, the larger application settings VHD is available.
 
 All content copied from https://docs.aws.amazon.com/.

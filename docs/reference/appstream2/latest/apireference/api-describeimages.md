@@ -3,82 +3,64 @@ title: "DescribeImages"
 ---
 
 # DescribeImages
+<a name="API_DescribeImages"></a>
 
 Retrieves a list that describes one or more specified images, if the image names or image ARNs are provided. Otherwise, all images in the account are described.
 
 ## Request Syntax
+<a name="API_DescribeImages_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "Arns": [ "string" ],
-   "MaxResults": number,
-   "Names": [ "string" ],
-   "NextToken": "string",
-   "Type": "string"
+   "Arns": [ "{{string}}" ],
+   "MaxResults": {{number}},
+   "Names": [ "{{string}}" ],
+   "NextToken": "{{string}}",
+   "Type": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_DescribeImages_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[Arns](#API_DescribeImages_RequestSyntax)**
-
+ ** [Arns](#API_DescribeImages_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeImages-request-Arns"></a>
 The ARNs of the public, private, and shared images to describe.
-
 Type: Array of strings
-
 Pattern: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
-
 Required: No
 
-**[MaxResults](#API_DescribeImages_RequestSyntax)**
-
+ ** [MaxResults](#API_DescribeImages_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeImages-request-MaxResults"></a>
 The maximum size of each page of results.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 25.
-
 Required: No
 
-**[Names](#API_DescribeImages_RequestSyntax)**
-
+ ** [Names](#API_DescribeImages_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeImages-request-Names"></a>
 The names of the public or private images to describe.
-
 Type: Array of strings
-
 Length Constraints: Minimum length of 1.
-
 Required: No
 
-**[NextToken](#API_DescribeImages_RequestSyntax)**
-
+ ** [NextToken](#API_DescribeImages_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeImages-request-NextToken"></a>
 The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
-
 Type: String
-
 Length Constraints: Minimum length of 1.
-
 Required: No
 
-**[Type](#API_DescribeImages_RequestSyntax)**
-
+ ** [Type](#API_DescribeImages_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeImages-request-Type"></a>
 The type of image (public, private, or shared) to describe.
-
 Type: String
-
 Valid Values: `PUBLIC | PRIVATE | SHARED`
-
 Required: No
 
 ## Response Syntax
+<a name="API_DescribeImages_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "Images": [
       {
@@ -147,77 +129,51 @@ Required: No
 ```
 
 ## Response Elements
+<a name="API_DescribeImages_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[Images](#API_DescribeImages_ResponseSyntax)**
-
+ ** [Images](#API_DescribeImages_ResponseSyntax) **   <a name="WorkSpacesApplications-DescribeImages-response-Images"></a>
 Information about the images.
+Type: Array of [Image](API_Image.md) objects
 
-Type: Array of [Image](api-image.md) objects
-
-**[NextToken](#API_DescribeImages_ResponseSyntax)**
-
+ ** [NextToken](#API_DescribeImages_ResponseSyntax) **   <a name="WorkSpacesApplications-DescribeImages-response-NextToken"></a>
 The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
-
 Type: String
-
 Length Constraints: Minimum length of 1.
 
 ## Errors
+<a name="API_DescribeImages_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidParameterCombinationException**
-
+ ** InvalidParameterCombinationException **
 Indicates an incorrect combination of parameters, or a missing parameter.
-
-**Message**
-
+ ** Message **
 The error message in the exception.
-
 HTTP Status Code: 400
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The specified resource was not found.
-
-**Message**
-
+ ** Message **
 The error message in the exception.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_DescribeImages_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appstream-2016-12-01/describeimages.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appstream-2016-12-01/describeimages.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeImagePermissions
-
-DescribeSessions
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appstream-2016-12-01/DescribeImages)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appstream-2016-12-01/DescribeImages)
 
 All content copied from https://docs.aws.amazon.com/.

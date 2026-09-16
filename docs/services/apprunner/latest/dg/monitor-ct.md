@@ -2,89 +2,58 @@
 title: "Logging App Runner API calls with AWS CloudTrail"
 ---
 
-AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
-App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
-[AWS App Runner availability\
-change](apprunner-availability-change.md).
+AWS App Runner is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS App Runner availability change](https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html).
 
 # Logging App Runner API calls with AWS CloudTrail
+<a name="monitor-ct"></a>
 
-App Runner is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in App Runner. CloudTrail
-captures all API calls for App Runner as events. The calls captured include calls from the App Runner console and code calls to the App Runner API
-operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for App Runner. If you don't
-configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by
-CloudTrail, you can determine the request that was made to App Runner, the IP address from where the request was made, who made the request, when it was made,
-and additional details.
+App Runner is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in App Runner. CloudTrail captures all API calls for App Runner as events. The calls captured include calls from the App Runner console and code calls to the App Runner API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for App Runner. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to App Runner, the IP address from where the request was made, who made the request, when it was made, and additional details.
 
-To learn more about CloudTrail, see the [AWS CloudTrail User Guide](../../../awscloudtrail/latest/userguide.md).
+To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 
 ## App Runner information in CloudTrail
+<a name="apprunner-info-in-cloudtrail"></a>
 
-CloudTrail is enabled on your AWS account when you create the account. When activity occurs in
-App Runner, that activity is recorded in a CloudTrail event along with other AWS service
-events in **Event history**. You can view, search, and download recent events
-in your AWS account. For more information, see [Viewing Events with CloudTrail Event\
-History](../../../awscloudtrail/latest/userguide/view-cloudtrail-events.md).
+CloudTrail is enabled on your AWS account when you create the account. When activity occurs in App Runner, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html).
 
-For an ongoing record of events in your AWS account, including events for App Runner,
-create a trail. A _trail_ enables CloudTrail to deliver log files to an Amazon S3 bucket.
-By default, when you create a trail in the console, the trail applies to all AWS Regions. The trail logs events
-from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you
-specify. Additionally, you can configure other AWS services to further analyze and act upon
-the event data collected in CloudTrail logs. For more information, see the following:
+For an ongoing record of events in your AWS account, including events for App Runner, create a trail. A *trail* enables CloudTrail to deliver log files to an Amazon S3 bucket. By default, when you create a trail in the console, the trail applies to all AWS Regions. The trail logs events from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you specify. Additionally, you can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs. For more information, see the following:
++ [Overview for Creating a Trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
++ [CloudTrail Supported Services and Integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html#cloudtrail-aws-service-specific-topics-integrations)
++ [Configuring Amazon SNS Notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)
++ [Receiving CloudTrail Log Files from Multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail Log Files from Multiple Accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-- [Overview for Creating a Trail](../../../awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.md)
+All App Runner actions are logged by CloudTrail and are documented in the AWS App Runner API Reference. For example, calls to the `CreateService`, `DeleteConnection`, and `StartDeployment` actions generate entries in the CloudTrail log files.
 
-- [CloudTrail Supported Services and Integrations](../../../awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md#cloudtrail-aws-service-specific-topics-integrations)
+Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
++ Whether the request was made with root or IAM user credentials.
++ Whether the request was made with temporary security credentials for a role or federated user.
++ Whether the request was made by another AWS service.
 
-- [Configuring Amazon SNS Notifications\
-for CloudTrail](../../../awscloudtrail/latest/userguide/getting-notifications-top-level.md)
-
-- [Receiving CloudTrail Log\
-Files from Multiple Regions](../../../awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.md) and [Receiving CloudTrail Log\
-Files from Multiple Accounts](../../../awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.md)
-
-All App Runner actions are logged by CloudTrail and are documented in the
-AWS App Runner API Reference. For example, calls to the
-`CreateService`, `DeleteConnection`, and `StartDeployment` actions generate entries in the CloudTrail log files.
-
-Every event or log entry contains information about who generated the request. The
-identity information helps you determine the following:
-
-- Whether the request was made with root or IAM user credentials.
-
-- Whether the request was made with temporary security credentials for a role or federated user.
-
-- Whether the request was made by another AWS service.
-
-For more information, see the [CloudTrail userIdentity\
-Element](../../../awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.md).
+For more information, see the [CloudTrail userIdentity Element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
 
 ## Understanding App Runner log file entries
+<a name="understanding-apprunner-entries"></a>
 
-A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log
-entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action,
-and request parameters. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
+A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, and request parameters. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateService` action.
 
-###### Note
+**Note**
+For security reasons, some property values are redacted in the logs and replaced with the text `HIDDEN_DUE_TO_SECURITY_REASONS`. This prevents unintended exposure of secret information. However, you can still see that these properties were passed in the request or returned in the response.
 
-For security reasons, some property values are redacted in the logs and replaced with the text `HIDDEN_DUE_TO_SECURITY_REASONS`. This
-prevents unintended exposure of secret information. However, you can still see that these properties were passed in the request or returned in the
-response.
+### Example CloudTrail log entry for the `CreateService` App Runner action
+<a name="understanding-apprunner-entries.example"></a>
 
-```json
-
+```
 {
   "eventVersion": "1.08",
   "userIdentity": {
     "type": "IAMUser",
     "principalId": "AWS_ACCESS_KEY_ID_REDACTED",
-    "arn": "arn:aws:iam::123456789012:user/aws-user",
+    "arn": "arn:aws:iam::123456789012:user/{{aws-user}}",
     "accountId": "123456789012",
     "accessKeyId": "AWS_ACCESS_KEY_ID_REDACTED",
-    "userName": "aws-user"
+    "userName": "{{aws-user}}"
   },
   "eventTime": "2020-10-02T23:25:33Z",
   "eventSource": "apprunner.amazonaws.com",
@@ -96,7 +65,7 @@ response.
     "serviceName": "python-test",
     "sourceConfiguration": {
       "codeRepository": {
-        "repositoryUrl": "https://github.com/github-user/python-hello",
+        "repositoryUrl": "https://github.com/{{github-user}}/python-hello",
         "sourceCodeVersion": {
           "type": "BRANCH",
           "value": "main"
@@ -114,7 +83,7 @@ response.
       },
       "autoDeploymentsEnabled": true,
       "authenticationConfiguration": {
-        "connectionArn": "arn:aws:apprunner:us-east-2:123456789012:connection/your-connection/e7656250f67242d7819feade6800f59e"
+        "connectionArn": "arn:aws:apprunner:us-east-2:123456789012:connection/{{your-connection}}/e7656250f67242d7819feade6800f59e"
       }
     },
     "healthCheckConfiguration": {
@@ -184,11 +153,5 @@ response.
   "recipientAccountId": "123456789012"
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Event handling (EventBridge)
-
-Tracing (X-Ray)
 
 All content copied from https://docs.aws.amazon.com/.

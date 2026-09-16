@@ -3,15 +3,8 @@ title: "Deleting a User in Amazon WorkSpaces Applications"
 ---
 
 # Deleting a User in Amazon WorkSpaces Applications
+<a name="user-pool-admin-deleting-user"></a>
 
-You can enable or disable a user, but you cannot delete a user by using
-the WorkSpaces Applications console. To delete a user, you must use the [DeleteUser](../../../../reference/appstream2/latest/apireference/api-deleteuser.md) API
-action.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating a User
-
-Assigning Stacks to Users
+You can enable or disable a user, but you cannot delete a user by using the WorkSpaces Applications console. To delete a user, you must use the [DeleteUser](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DeleteUser.html) API action.
 
 All content copied from https://docs.aws.amazon.com/.

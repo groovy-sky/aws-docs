@@ -3,15 +3,27 @@ title: "Supported Locales"
 ---
 
 # Supported Locales
+<a name="supported-locales"></a>
 
 WorkSpaces Applications supports the following locales:
 
-LocaleLanguage culture nameChinese (Simplified, China)zh-CNChinese (Simplified, Singapore)zh-SGChinese (Traditional)zh-TWDutch (The Netherlands)nl-NLEnglish (Australia)en-AUEnglish (Canada)en-CAEnglish (United Kingdom)en-GBEnglish (United States)en-USFrench (France)fr-FRGerman (Germany)de-DEItalian (Italy)it-ITJapanese (Japan)ja-JPKorean (Korea)ko-KRPortuguese (Brazil)pt-BRSpanish (Spain, International Sort) es-ESThai (Thailand)th-TH
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Enable Your Users to Configure Their Regional Settings
-
-Enable Regional Settings for Your WorkSpaces Applications Users
+| Locale | Language culture name |
+| --- | --- |
+| Chinese (Simplified, China) | zh-CN |
+| Chinese (Simplified, Singapore) | zh-SG |
+| Chinese (Traditional) | zh-TW |
+| Dutch (The Netherlands) | nl-NL |
+| English (Australia) | en-AU |
+| English (Canada) | en-CA |
+| English (United Kingdom) | en-GB |
+| English (United States) | en-US |
+| French (France) | fr-FR |
+| German (Germany) | de-DE |
+| Italian (Italy) | it-IT |
+| Japanese (Japan) | ja-JP |
+| Korean (Korea) | ko-KR |
+| Portuguese (Brazil) | pt-BR |
+| Spanish (Spain, International Sort)  | es-ES |
+| Thai (Thailand) | th-TH |
 
 All content copied from https://docs.aws.amazon.com/.

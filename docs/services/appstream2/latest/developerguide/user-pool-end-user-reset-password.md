@@ -3,40 +3,24 @@ title: "Resetting a Forgotten Password in Amazon WorkSpaces Applications"
 ---
 
 # Resetting a Forgotten Password in Amazon WorkSpaces Applications
+<a name="user-pool-end-user-reset-password"></a>
 
-If users forget their password, follow these steps to connect to the login portal
-link (provided in the welcome email) and choose a new password.
+If users forget their password, follow these steps to connect to the login portal link (provided in the welcome email) and choose a new password.
 
-###### To choose a new password
+**To choose a new password**
 
-1. Open the WorkSpaces Applications login portal by using the login link provided in the
-    welcome email.
+1. Open the WorkSpaces Applications login portal by using the login link provided in the welcome email.
 
-2. Choose **Forgot Password?**.
+1. Choose **Forgot Password?**.
 
-3. Type the email address that you used to create the user in the user pool,
-    and choose **Next**.
+1. Type the email address that you used to create the user in the user pool, and choose **Next**.
 
-Your email address is case-sensitive. During login, if your email address doesn't use the same
-    capitalization as the email address specified when your user pool account was created, a "user does not exist" error message
-    displays.
+   Your email address is case-sensitive. During login, if your email address doesn't use the same capitalization as the email address specified when your user pool account was created, a "user does not exist" error message displays.
 
-4. Check your email for the password reset request message. If you are having
-    difficulty finding the email, check your spam email folder. Type the
-    verification code from the email in **Verification Code**.
+1. Check your email for the password reset request message. If you are having difficulty finding the email, check your spam email folder. Type the verification code from the email in **Verification Code**.
+**Note**
+The verification code is valid for 24 hours. If a new password is not chosen within this time, request a new verification code.
 
-###### Note
-
-The verification code is valid for 24 hours. If a new password is not chosen
-within this time, request a new verification code.
-
-5. Following the password rules shown, type and confirm your new password.
-    Choose **Reset Password**.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-User Pool End User Experience
-
-User Pool Administration
+1. Following the password rules shown, type and confirm your new password. Choose **Reset Password**.
 
 All content copied from https://docs.aws.amazon.com/.

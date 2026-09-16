@@ -3,22 +3,13 @@ title: "Connect to WorkSpaces Applications on Windows Client"
 ---
 
 # Connect to WorkSpaces Applications on Windows Client
+<a name="client-application-windows-start-streaming-session-user"></a>
 
-After the WorkSpaces Applications client for Windows is installed on your PC, you can use it to
-connect to WorkSpaces Applications.
+After the WorkSpaces Applications client for Windows is installed on your PC, you can use it to connect to WorkSpaces Applications.
 
-###### Topics
-
-- [WorkSpaces Applications Client Connection Modes](client-application-windows-connection-modes-user.md)
-
-- [Connect to WorkSpaces Applications](client-application-windows-how-to-connect-user.md)
-
-- [How to Switch WorkSpaces Applications Connection Modes](client-application-windows-how-to-switch-connection-modes-user.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Setup for Windows
-
-WorkSpaces Applications Client Connection Modes
+**Topics**
++ [WorkSpaces Applications Client Connection Modes](client-application-windows-connection-modes-user.md)
++ [Connect to WorkSpaces Applications](client-application-windows-how-to-connect-user.md)
++ [How to Switch WorkSpaces Applications Connection Modes](client-application-windows-how-to-switch-connection-modes-user.md)
 
 All content copied from https://docs.aws.amazon.com/.

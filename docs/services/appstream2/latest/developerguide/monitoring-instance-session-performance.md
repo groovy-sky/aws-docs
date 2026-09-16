@@ -1,67 +1,38 @@
 ---
-title: "Viewing Instance and Session Performance Metrics Using the Console"
+title: "Viewing instance and session metrics using the console"
 ---
 
-# Viewing Instance and Session Performance Metrics Using the Console
+# Viewing instance and session metrics using the console
+<a name="monitoring-instance-session-performance"></a>
 
-You can monitor Amazon WorkSpaces Applications fleet instances and session performance using the WorkSpaces Applications
-console or the CloudWatch console.
+You can monitor Amazon WorkSpaces Applications fleet instance and session metrics using the WorkSpaces Applications console or the CloudWatch console.
 
-Performance metrics are collected at a 5-minute interval. After a new session is
-provisioned, the first metric data point will show up in 5 minutes. Subsequent metric
-data points will be available at every 5-minute interval.
+These metrics are collected at a 5-minute interval. After a new session is provisioned, the first metric data point appears within 5 minutes. Subsequent metric data points are available at every 5-minute interval.
 
-###### Note
+**To view instance and session in the WorkSpaces Applications console**
 
-Performance metrics are currently available only for multi-session fleets
+1. Open the WorkSpaces Applications console at [https://console.aws.amazon.com/appstream2/home](https://console.aws.amazon.com/appstream2/home).
 
-###### To view instance and session in the WorkSpaces Applications console
+1. In the left pane, choose **Fleets**.
 
-1. Open the WorkSpaces Applications console at
-    [https://console.aws.amazon.com/appstream2/home](https://console.aws.amazon.com/appstream2/home).
+1. Select a fleet and choose **View Details**.
 
-2. In the left pane, choose **Fleets**.
+1. View fleet utilization information under **Sessions on fleet**.
 
-3. Select a fleet and choose **View Details** and **View**
-**Sessions**.
+1. View the list of all active sessions under **Instances with sessions**.
 
-4. Select a session to view the metrics.
+1. Select a session to view the metrics.
 
-5. By default, the graph displays the following metrics:
+1. You can sort and filter the table to find specific user sessions.
 
-- Instance metrics
+**To view instance and session metrics in the CloudWatch console**
 
-- CpuUtilizationInstance
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
 
-- MemoryUtilizationInstance
+1. In the left pane, choose **Metrics**.
 
-- PagingFileUtilizationInstance
+1. Choose the **AppStream** namespace and then choose **Fleet Instance Metrics** or **Fleet Session Metrics**.
 
-- DiskUtilizationInstance
-
-- Session metrics
-
-- CpuUtilizationSession
-
-- MemoryUtilizationSession
-
-###### To view instance and session performance in the CloudWatch console
-
-1. Open the CloudWatch console at
-    [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
-
-2. In the left pane, choose **Metrics**.
-
-3. Choose the **AppStream** namespace and then choose
-    **Fleet Instance Metrics** or **Fleet Session**
-**Metrics**.
-
-4. Select the metrics to graph.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Viewing Fleet Usage Using the Console
-
-WorkSpaces Applications Metrics and Dimensions
+1. Select the metrics to graph.
 
 All content copied from https://docs.aws.amazon.com/.

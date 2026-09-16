@@ -3,49 +3,43 @@ title: "DescribeStacks"
 ---
 
 # DescribeStacks
+<a name="API_DescribeStacks"></a>
 
 Retrieves a list that describes one or more specified stacks, if the stack names are provided. Otherwise, all stacks in the account are described.
 
 ## Request Syntax
+<a name="API_DescribeStacks_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "Names": [ "string" ],
-   "NextToken": "string"
+   "Names": [ "{{string}}" ],
+   "NextToken": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_DescribeStacks_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[Names](#API_DescribeStacks_RequestSyntax)**
-
+ ** [Names](#API_DescribeStacks_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeStacks-request-Names"></a>
 The names of the stacks to describe.
-
 Type: Array of strings
-
 Length Constraints: Minimum length of 1.
-
 Required: No
 
-**[NextToken](#API_DescribeStacks_RequestSyntax)**
-
+ ** [NextToken](#API_DescribeStacks_RequestSyntax) **   <a name="WorkSpacesApplications-DescribeStacks-request-NextToken"></a>
 The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
-
 Type: String
-
 Length Constraints: Minimum length of 1.
-
 Required: No
 
 ## Response Syntax
+<a name="API_DescribeStacks_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "NextToken": "string",
    "Stacks": [
@@ -56,6 +50,19 @@ Required: No
                "VpceId": "string"
             }
          ],
+         "AgentAccessConfig": {
+            "S3BucketArn": "string",
+            "ScreenImageFormat": "string",
+            "ScreenResolution": "string",
+            "ScreenshotsUploadEnabled": boolean,
+            "Settings": [
+               {
+                  "AgentAction": "string",
+                  "Permission": "string"
+               }
+            ],
+            "UserControlMode": "string"
+         },
          "ApplicationSettings": {
             "Enabled": boolean,
             "S3BucketName": "string",
@@ -99,67 +106,45 @@ Required: No
 ```
 
 ## Response Elements
+<a name="API_DescribeStacks_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[NextToken](#API_DescribeStacks_ResponseSyntax)**
-
+ ** [NextToken](#API_DescribeStacks_ResponseSyntax) **   <a name="WorkSpacesApplications-DescribeStacks-response-NextToken"></a>
 The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
-
 Type: String
-
 Length Constraints: Minimum length of 1.
 
-**[Stacks](#API_DescribeStacks_ResponseSyntax)**
-
+ ** [Stacks](#API_DescribeStacks_ResponseSyntax) **   <a name="WorkSpacesApplications-DescribeStacks-response-Stacks"></a>
 Information about the stacks.
-
-Type: Array of [Stack](api-stack.md) objects
+Type: Array of [Stack](API_Stack.md) objects
 
 ## Errors
+<a name="API_DescribeStacks_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**ResourceNotFoundException**
-
+ ** ResourceNotFoundException **
 The specified resource was not found.
-
-**Message**
-
+ ** Message **
 The error message in the exception.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_DescribeStacks_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appstream-2016-12-01/describestacks.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appstream-2016-12-01/describestacks.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeSoftwareAssociations
-
-DescribeThemeForStack
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appstream-2016-12-01/DescribeStacks)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appstream-2016-12-01/DescribeStacks)
 
 All content copied from https://docs.aws.amazon.com/.

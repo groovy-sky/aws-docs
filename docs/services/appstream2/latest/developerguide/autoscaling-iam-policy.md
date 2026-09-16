@@ -3,20 +3,18 @@ title: "Using IAM Policies to Manage Administrator Access to Application Auto Sc
 ---
 
 # Using IAM Policies to Manage Administrator Access to Application Auto Scaling
+<a name="autoscaling-iam-policy"></a>
 
-Automatic scaling for fleets is made possible by a combination of the WorkSpaces Applications,
-Amazon CloudWatch, and Application Auto Scaling APIs. WorkSpaces Applications fleets are created with WorkSpaces Applications, alarms are created
-with CloudWatch, and scaling policies are created with Application Auto Scaling.
+Automatic scaling for fleets is made possible by a combination of the WorkSpaces Applications, Amazon CloudWatch, and Application Auto Scaling APIs. WorkSpaces Applications fleets are created with WorkSpaces Applications, alarms are created with CloudWatch, and scaling policies are created with Application Auto Scaling.
 
-In addition to having the permissions defined in the [AmazonAppStreamFullAccess](managed-policies-required-to-access-appstream-resources.md) policy,
-the IAM user that accesses fleet scaling settings must have the required
-permissions for the services that support dynamic scaling. IAM users must have
-permissions to use the actions shown in the following example policy.
+In addition to having the permissions defined in the [AmazonAppStreamFullAccess](managed-policies-required-to-access-appstream-resources.md) policy, the IAM user that accesses fleet scaling settings must have the required permissions for the services that support dynamic scaling. IAM users must have permissions to use the actions shown in the following example policy.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -51,17 +49,10 @@ JSON
     }
   ]
 }
-
 ```
 
-You can also create your own IAM policies to set more specific permissions for calls
-to the Application Auto Scaling API. For more information, see [Authentication\
-and Access Control](../../../autoscaling/application/userguide/auth-and-access-control.md) in the _Application Auto Scaling User Guide_.
+------
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Checking for the AmazonAppStreamPCAAccess Service Role and Policies
-
-Access to the S3 Bucket for Home Folders and Application Settings Persistence
+You can also create your own IAM policies to set more specific permissions for calls to the Application Auto Scaling API. For more information, see [Authentication and Access Control](https://docs.aws.amazon.com/autoscaling/application/userguide/auth-and-access-control.html) in the *Application Auto Scaling User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,20 +3,8 @@ title: "Special Considerations for Application Settings Persistence"
 ---
 
 # Special Considerations for Application Settings Persistence
+<a name="special-considerations-app-settings-persistence"></a>
 
-When you create a stack in the WorkSpaces Applications console, in **Step 3: User**
-**Settings**, if you use the same settings group under **Application**
-**settings persistence** as another stack that uses different regional
-settings, only one set of regional settings is used for both stacks. For each user, the
-default regional settings for the stack that the user logs into first automatically
-override the default regional settings of any other stacks in the same application
-settings group. To avoid this problem, do not use the same application settings group
-for two different stacks that have different regional settings.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Specify a Default Input Method
-
-Special Considerations for Japanese Language Settings
+When you create a stack in the WorkSpaces Applications console, in **Step 3: User Settings**, if you use the same settings group under **Application settings persistence** as another stack that uses different regional settings, only one set of regional settings is used for both stacks. For each user, the default regional settings for the stack that the user logs into first automatically override the default regional settings of any other stacks in the same application settings group. To avoid this problem, do not use the same application settings group for two different stacks that have different regional settings.
 
 All content copied from https://docs.aws.amazon.com/.

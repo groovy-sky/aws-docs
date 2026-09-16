@@ -2,91 +2,59 @@
 title: "Using AWS CloudShell to work with AWS App Runner"
 ---
 
-AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
-App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
-[AWS App Runner availability\
-change](apprunner-availability-change.md).
+AWS App Runner is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS App Runner availability change](https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html).
 
 # Using AWS CloudShell to work with AWS App Runner
+<a name="api-cshell"></a>
 
-AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the
-AWS Management Console. You can run AWS CLI commands against AWS services (including AWS App Runner) using
-your preferred shell (Bash, PowerShell or Z shell). And you can do this without needing to
-download or install command line tools.
+AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. You can run AWS CLI commands against AWS services (including AWS App Runner) using your preferred shell (Bash, PowerShell or Z shell). And you can do this without needing to download or install command line tools.
 
-You [launch AWS CloudShell from the AWS Management Console](../../../cloudshell/latest/userguide/working-with-cloudshell.md#launch-options), and the AWS credentials you used to sign in to
-the console are automatically available in a new shell session. This pre-authentication of
-AWS CloudShell users allows you to skip configuring credentials when interacting with AWS services
-such as App Runner using AWS CLI version 2 (pre-installed on the shell's compute
-environment).
+You [launch AWS CloudShell from the AWS Management Console](https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-cloudshell.html#launch-options), and the AWS credentials you used to sign in to the console are automatically available in a new shell session. This pre-authentication of AWS CloudShell users allows you to skip configuring credentials when interacting with AWS services such as App Runner using AWS CLI version 2 (pre-installed on the shell's compute environment).
 
-###### Topics
-
-- [Obtaining IAM permissions for AWS CloudShell](#api-cshell.permissions)
-
-- [Interacting with App Runner using AWS CloudShell](#api-cshell.call-apprunner)
-
-- [Verifying your App Runner service using AWS CloudShell](#api-cshell.call-your-service)
+**Topics**
++ [Obtaining IAM permissions for AWS CloudShell](#api-cshell.permissions)
++ [Interacting with App Runner using AWS CloudShell](#api-cshell.call-apprunner)
++ [Verifying your App Runner service using AWS CloudShell](#api-cshell.call-your-service)
 
 ## Obtaining IAM permissions for AWS CloudShell
+<a name="api-cshell.permissions"></a>
 
-Using the access management resources provided by AWS Identity and Access Management, administrators can grant
-permissions to IAM users so they can access AWS CloudShell and use the environment's
-features.
+Using the access management resources provided by AWS Identity and Access Management, administrators can grant permissions to IAM users so they can access AWS CloudShell and use the environment's features.
 
-The quickest way for an administrator to grant access to users is through an AWS managed
-policy. An [AWS managed\
-policy](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies) is a standalone policy that's created and administered by AWS. The
-following AWS managed policy for CloudShell can be attached to IAM identities:
+The quickest way for an administrator to grant access to users is through an AWS managed policy. An [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) is a standalone policy that's created and administered by AWS. The following AWS managed policy for CloudShell can be attached to IAM identities:
++ `AWSCloudShellFullAccess`: Grants permission to use AWS CloudShell with full access to all features.
 
-- `AWSCloudShellFullAccess`: Grants permission to use AWS CloudShell with full
-access to all features.
+ If you want to limit the scope of actions that an IAM user can perform with AWS CloudShell, you can create a custom policy that uses the `AWSCloudShellFullAccess` managed policy as a template. For more information about limiting the actions that are available to users in CloudShell, see [Managing AWS CloudShell access and usage with IAM policies](https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.html) in the *AWS CloudShell User Guide*.
 
-If you want to limit the scope of actions that an IAM user can perform with AWS CloudShell,
-you can create a custom policy that uses the `AWSCloudShellFullAccess` managed
-policy as a template. For more information about limiting the actions that are available to
-users in CloudShell, see [Managing AWS CloudShell access and usage with IAM policies](../../../cloudshell/latest/userguide/sec-auth-with-identities.md) in the
-_AWS CloudShell User Guide_.
-
-###### Note
-
-Your IAM identity also requires a policy that grants permission to make calls to
-App Runner. For more information, see [How App Runner works with IAM](security-iam-service-with-iam.md).
+**Note**
+Your IAM identity also requires a policy that grants permission to make calls to App Runner. For more information, see [How App Runner works with IAM](security_iam_service-with-iam.md).
 
 ## Interacting with App Runner using AWS CloudShell
+<a name="api-cshell.call-apprunner"></a>
 
-After you launch AWS CloudShell from the AWS Management Console, you can immediately start to interact with
-App Runner using the command line interface.
+After you launch AWS CloudShell from the AWS Management Console, you can immediately start to interact with App Runner using the command line interface.
 
 In the following example, you retrieve information about one of your App Runner services using the AWS CLI in CloudShell.
 
-###### Note
+**Note**
+When using AWS CLI in AWS CloudShell, you don't need to download or install any additional resources. Moreover, because you're already authenticated within the shell, you don't need to configure credentials before making calls.
 
-When using AWS CLI in AWS CloudShell, you don't need to download or install any additional
-resources. Moreover, because you're already authenticated within the shell, you don't need to configure credentials before making calls.
-
-###### Example Retrieving App Runner service information using AWS CloudShell
+**Example Retrieving App Runner service information using AWS CloudShell**
 
 1. From the AWS Management Console, you can launch CloudShell by choosing the following options available on the navigation bar:
+   +  Choose the CloudShell icon.
+   + Start typing **cloudshell** in the search box, and then choose the **CloudShell** option when you see it in the search results.
 
-- Choose the CloudShell icon.
+1. To list all current App Runner services in your AWS account in the console session's AWS Region, enter the following command in the CloudShell command line:
 
-- Start typing `cloudshell` in the search box, and then choose the **CloudShell** option when you see
-it in the search results.
+   ```
+   $ aws apprunner list-services
+   ```
 
-2. To list all current App Runner services in your AWS account in the console session's AWS Region, enter the following command in the CloudShell
-    command line:
+   The output lists summary information for your services.
 
-```nohighlight
-
-$ aws apprunner list-services
-```
-
-The output lists summary information for your services.
-
-```json
-
-{
+   ```
+   {
      "ServiceSummaryList": [
        {
          "ServiceName": "my-app-1",
@@ -107,22 +75,19 @@ The output lists summary information for your services.
          "Status": "RUNNING"
        }
      ]
-}
-```
+   }
+   ```
 
-3. To get a detailed description of a particular App Runner service, enter the following command in the CloudShell command line, using one of the ARNs
-    retrieved in the previous step:
+1. To get a detailed description of a particular App Runner service, enter the following command in the CloudShell command line, using one of the ARNs retrieved in the previous step:
 
-```nohighlight
+   ```
+   $ aws apprunner describe-service --service-arn arn:aws:apprunner:us-east-2:123456789012:service/my-app-1/8fe1e10304f84fd2b0df550fe98a71fa
+   ```
 
-$ aws apprunner describe-service --service-arn arn:aws:apprunner:us-east-2:123456789012:service/my-app-1/8fe1e10304f84fd2b0df550fe98a71fa
-```
+   The output lists a detailed description of the service you specified.
 
-The output lists a detailed description of the service you specified.
-
-```json
-
-{
+   ```
+   {
      "Service": {
        "ServiceName": "my-app-1",
        "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
@@ -176,29 +141,22 @@ The output lists a detailed description of the service you specified.
          "AutoScalingConfigurationRevision": 1
        }
      }
-}
-```
+   }
+   ```
 
 ## Verifying your App Runner service using AWS CloudShell
+<a name="api-cshell.call-your-service"></a>
 
-When you [create an App Runner service](manage-create.md), App Runner creates a default domain for your service's website, and shows it in the
-console (or returns it in the API call result). You can use CloudShell to make calls to your website and verify that it's working correctly.
+When you [create an App Runner service](manage-create.md), App Runner creates a default domain for your service's website, and shows it in the console (or returns it in the API call result). You can use CloudShell to make calls to your website and verify that it's working correctly.
 
 For example, after you create an App Runner service as described in [Getting started with App Runner](getting-started.md), run the following command in CloudShell:
 
-```nohighlight
-
+```
 $ curl https://qxuadi4qwp.us-east-2.awsapprunner.com/; echo
 ```
 
 The output should show the expected page content.
 
-![Browser window showing AWS CloudShell with a command to display the content of an App Runner service page](https://docs.aws.amazon.com/images/apprunner/latest/dg/images/api-cshell-curl.png)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-App Runner API
-
-Troubleshooting
+![Browser window showing AWS CloudShell with a command to display the content of an App Runner service page](https://docs.aws.amazon.com/apprunner/latest/dg/images/api-cshell-curl.png)
 
 All content copied from https://docs.aws.amazon.com/.

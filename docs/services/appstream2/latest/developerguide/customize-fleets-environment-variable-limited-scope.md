@@ -3,92 +3,49 @@ title: "Create an Environment Variable That is Limited in Scope"
 ---
 
 # Create an Environment Variable That is Limited in Scope
+<a name="customize-fleets-environment-variable-limited-scope"></a>
 
-Follow these steps to create an environment variable that is limited in scope to
-the processes that are spawned off the script. This approach is useful when you need
-to use the same environment variable name with different values for different
-applications. For example, if you have two different applications that use the
-environment variable "LIC\_SERVER", but each application has a different value for
-"LIC\_SERVER".
+Follow these steps to create an environment variable that is limited in scope to the processes that are spawned off the script. This approach is useful when you need to use the same environment variable name with different values for different applications. For example, if you have two different applications that use the environment variable "LIC\_SERVER", but each application has a different value for "LIC\_SERVER".
 
-###### To create an environment variable that is limited in scope
+**To create an environment variable that is limited in scope**
 
-01. Connect to the image builder on which to create an environment variable
-     that is limited in scope and sign in with an account that has local
-     administrator permissions. To do so, do either of the following:
+1. Connect to the image builder on which to create an environment variable that is limited in scope and sign in with an account that has local administrator permissions. To do so, do either of the following:
+   + [Use the WorkSpaces Applications console](managing-image-builders-connect-console.md) (for web connections only)
+   + [Create a streaming URL](managing-image-builders-connect-streaming-URL.md) (for web or WorkSpaces Applications client connections)
+**Note**
+If the image builder that you want to connect to is joined to an Active Directory domain and your organization requires smart card sign in, you must create a streaming URL and use the WorkSpaces Applications client for the connection. For information about smart card sign in, see [Smart Cards](feature-support-USB-devices-qualified.md#feature-support-USB-devices-qualified-smart-cards).
 
-- [Use the\
-WorkSpaces Applications console](managing-image-builders-connect-console.md) (for web connections only)
+1. Create a child folder of C:\\ drive for the script (for example, C:\\Scripts).
 
-- [Create a streaming URL](managing-image-builders-connect-streaming-url.md) (for web or WorkSpaces Applications client
-connections)
+1. Open Notepad to create the new script, and enter the following lines:
 
-###### Note
+   `set `{{variable}}={{value}}
 
-If the image builder that you want to connect to is joined to
-an Active Directory domain and your organization requires smart
-card sign in, you must create a streaming URL and use the WorkSpaces Applications
-client for the connection. For information about smart card sign
-in, see [Smart Cards](feature-support-usb-devices-qualified.md#feature-support-USB-devices-qualified-smart-cards).
+   `start " " "C:\path\to\application.exe"`
 
-02. Create a child folder of C:\ drive for the script (for example,
-     C:\\Scripts).
+   Where:
 
-03. Open Notepad to create the new script, and enter the following
-     lines:
+   {{variable}} is the variable name to be used
 
-    `set
-                                ` `variable` = `value`
+   {{value}} is the value for the given variable name
+**Note**
+If the application path includes spaces, the entire string must be encapsulated within quotation marks. For example:
+`start " " "C:\Program Files\application.exe"`
 
-    `start " " "C:\path\to\application.exe"`
+1. Choose** File**, **Save**. Name the file and save it with the .bat extension to C:\\Scripts. For example, name the file LaunchApp.bat.
 
-    Where:
+1. If needed, repeat steps 4 and 5 to create a script for each additional application that requires its own environment variable and values.
 
-    `variable` is the variable name to be used
+1. On the image builder desktop, start Image Assistant.
 
-    `value` is the value for the given variable
-     name
+1. Choose **Add App**, navigate to C:\\Scripts, and select one of the scripts that you created in step 5. Choose **Open**.
 
-    ###### Note
+1. In the **App Launch Settings** dialog box, keep or change the settings as needed. When you're done, choose **Save**.
 
-    If the application path includes spaces, the entire string must be
-    encapsulated within quotation marks. For example:
+1. If you created multiple scripts, repeat steps 8 and 9 for each script.
 
-    `start " " "C:\Program
-                                    Files\application.exe"`
+1. Follow the necessary steps in Image Assistant to finish creating your image. For more information, see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console](tutorial-image-builder.md).
 
-04. Choose **File**, **Save**. Name the file
-     and save it with the .bat extension to C:\\Scripts. For example, name the
-     file LaunchApp.bat.
-
-05. If needed, repeat steps 4 and 5 to create a script for each additional
-     application that requires its own environment variable and values.
-
-06. On the image builder desktop, start Image Assistant.
-
-07. Choose **Add App**, navigate to C:\\Scripts, and select
-     one of the scripts that you created in step 5. Choose
-     **Open**.
-
-08. In the **App Launch Settings** dialog box, keep or change
-     the settings as needed. When you're done, choose
-     **Save**.
-
-09. If you created multiple scripts, repeat steps 8 and 9 for each
-     script.
-
-10. Follow the necessary steps in Image Assistant to finish creating your
-     image. For more information, see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console](tutorial-image-builder.md).
-
-    The environment variable and specific value are now available for
-     processes that are run from the script. Other processes cannot access this
-     variable and value.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Change User Environment Variables
-
-Set Default File
-Associations
+   The environment variable and specific value are now available for processes that are run from the script. Other processes cannot access this variable and value.
 
 All content copied from https://docs.aws.amazon.com/.

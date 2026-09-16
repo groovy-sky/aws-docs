@@ -3,19 +3,14 @@ title: "Dynamic Application Framework Thrift Definitions and Named Pipe Name"
 ---
 
 # Dynamic Application Framework Thrift Definitions and Named Pipe Name
+<a name="dynamic-application-framework-thrift-definitions"></a>
 
-Thrift enables you to use simple definition files provided by WorkSpaces Applications to
-compile RPC clients. The RPC clients let you communicate with the WorkSpaces Applications agent
-software running on a streaming instance. For information about how to compile
-the RPC client for your language, see the [Apache Thrift documentation](https://thrift.apache.org/docs).
-After you compile the Thrift libraries for the language of your choice, build a
-Thrift client by using the Named Pipe transport. Use
-D56C0258-2173-48D5-B0E6-1EC85AC67893 as the pipe name.
+Thrift enables you to use simple definition files provided by WorkSpaces Applications to compile RPC clients. The RPC clients let you communicate with the WorkSpaces Applications agent software running on a streaming instance. For information about how to compile the RPC client for your language, see the [Apache Thrift documentation](https://thrift.apache.org/docs/). After you compile the Thrift libraries for the language of your choice, build a Thrift client by using the Named Pipe transport. Use D56C0258-2173-48D5-B0E6-1EC85AC67893 as the pipe name.
 
 ## AppStreamServer.thrift
+<a name="appstream-server-thrift"></a>
 
 ```
-
 namespace netstd AppStream.ApplicationCatalogService.Model
 
 const string ServiceEndpoint = "D56C0258-2173-48D5-B0E6-1EC85AC67893";
@@ -87,11 +82,5 @@ service ApplicationCatalogService
     throws (1: AppStreamClientException ce, 2: AppStreamServerException se),
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-About the Dynamic Application Framework
-
-API Actions for Managing App Entitlement
 
 All content copied from https://docs.aws.amazon.com/.

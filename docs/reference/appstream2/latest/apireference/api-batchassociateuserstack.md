@@ -3,45 +3,43 @@ title: "BatchAssociateUserStack"
 ---
 
 # BatchAssociateUserStack
+<a name="API_BatchAssociateUserStack"></a>
 
 Associates the specified users with the specified stacks. Users in a user pool cannot be assigned to stacks with fleets that are joined to an Active Directory domain.
 
 ## Request Syntax
+<a name="API_BatchAssociateUserStack_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
    "UserStackAssociations": [
       {
-         "AuthenticationType": "string",
-         "SendEmailNotification": boolean,
-         "StackName": "string",
-         "UserName": "string"
+         "AuthenticationType": "{{string}}",
+         "SendEmailNotification": {{boolean}},
+         "StackName": "{{string}}",
+         "UserName": "{{string}}"
       }
    ]
 }
 ```
 
 ## Request Parameters
+<a name="API_BatchAssociateUserStack_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
 
-**[UserStackAssociations](#API_BatchAssociateUserStack_RequestSyntax)**
-
+ ** [UserStackAssociations](#API_BatchAssociateUserStack_RequestSyntax) **   <a name="WorkSpacesApplications-BatchAssociateUserStack-request-UserStackAssociations"></a>
 The list of UserStackAssociation objects.
-
-Type: Array of [UserStackAssociation](api-userstackassociation.md) objects
-
+Type: Array of [UserStackAssociation](API_UserStackAssociation.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 25 items.
-
 Required: Yes
 
 ## Response Syntax
+<a name="API_BatchAssociateUserStack_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "errors": [
       {
@@ -59,69 +57,46 @@ Required: Yes
 ```
 
 ## Response Elements
+<a name="API_BatchAssociateUserStack_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[errors](#API_BatchAssociateUserStack_ResponseSyntax)**
-
+ ** [errors](#API_BatchAssociateUserStack_ResponseSyntax) **   <a name="WorkSpacesApplications-BatchAssociateUserStack-response-errors"></a>
 The list of UserStackAssociationError objects.
-
-Type: Array of [UserStackAssociationError](api-userstackassociationerror.md) objects
+Type: Array of [UserStackAssociationError](API_UserStackAssociationError.md) objects
 
 ## Errors
+<a name="API_BatchAssociateUserStack_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidParameterCombinationException**
-
+ ** InvalidParameterCombinationException **
 Indicates an incorrect combination of parameters, or a missing parameter.
-
-**Message**
-
+ ** Message **
 The error message in the exception.
-
 HTTP Status Code: 400
 
-**OperationNotPermittedException**
-
+ ** OperationNotPermittedException **
 The attempted operation is not permitted.
-
-**Message**
-
+ ** Message **
 The error message in the exception.
-
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_BatchAssociateUserStack_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/appstream-2016-12-01/batchassociateuserstack.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appstream-2016-12-01/batchassociateuserstack.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssociateSoftwareToImageBuilder
-
-BatchDisassociateUserStack
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/appstream-2016-12-01/BatchAssociateUserStack)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appstream-2016-12-01/BatchAssociateUserStack)
 
 All content copied from https://docs.aws.amazon.com/.
