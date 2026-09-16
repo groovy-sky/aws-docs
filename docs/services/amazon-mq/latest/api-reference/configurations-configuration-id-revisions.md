@@ -3,85 +3,76 @@ title: "Configuration Revisions"
 ---
 
 # Configuration Revisions
+<a name="configurations-configuration-id-revisions"></a>
 
-This is a collection of configuration revisions. To keep track of the changes you
-make to your configuration, you can create configuration revisions. For more
-information, see [Configuration](../developer-guide/configuration.md) in the Amazon MQ Developer Guide.
+This is a collection of configuration revisions. To keep track of the changes you make to your configuration, you can create configuration revisions. For more information, see [Configuration](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configuration.html) in the Amazon MQ Developer Guide.
 
-###### Important
-
-Making changes to a configuration does not apply the changes to the broker
-immediately. To apply your changes, you must wait for the next maintenance window
-or reboot the broker.
+**Important**
+Making changes to a configuration does not apply the changes to the broker immediately. To apply your changes, you must wait for the next maintenance window or reboot the broker.
 
 ## URI
+<a name="configurations-configuration-id-revisions-url"></a>
 
-`/v1/configurations/configuration-id/revisions`
+`/v1/configurations/{{configuration-id}}/revisions`
 
 ## HTTP methods
+<a name="configurations-configuration-id-revisions-http-methods"></a>
 
 ### GET
+<a name="configurations-configuration-id-revisionsget"></a>
 
 **Operation ID:** `ListConfigurationRevisions`
 
 Returns a list of all revisions for the specified configuration.
 
-Path parametersNameTypeRequiredDescription`configuration-id`StringTrue
+**Path parameters**
 
-The unique ID that Amazon MQ generates for the configuration.
+| Name | Type | Required | Description |
+| --- |--- |--- |--- |
+| {{configuration-id}} | String | True | The unique ID that Amazon MQ generates for the configuration. |
 
-Query parametersNameTypeRequiredDescription`nextToken`StringFalse
+**Query parameters**
 
-The token that specifies the next page of results Amazon MQ should return. To
-request the first page, leave nextToken empty.
+| Name | Type | Required | Description |
+| --- |--- |--- |--- |
+| nextToken | String | False | The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty. |
+| maxResults | String | False | The maximum number of brokers that Amazon MQ can return per page (20 by default). This value must be an integer from 5 to 100. |
 
-`maxResults`StringFalse
+**Responses**
 
-The maximum number of brokers that Amazon MQ can return per page (20 by default).
-This value must be an integer from 5 to 100.
-
-ResponsesStatus codeResponse modelDescription`200``
-
-         ListConfigurationRevisionsOutput`
-
-HTTP Status Code 200: OK.
-
-`400``Error`
-
-HTTP Status Code 400: Bad request due to incorrect input. Correct your request and
-then retry it.
-
-`403``Error`
-
-HTTP Status Code 403: Access forbidden. Correct your credentials and then retry
-your request.
-
-`404``Error`
-
-HTTP Status Code 404: Resource not found due to incorrect input. Correct your
-request and then retry it.
-
-`500``Error`
-
-HTTP Status Code 500: Unexpected internal server error. Retrying your request
-might resolve the issue.
+| Status code | Response model | Description |
+| --- |--- |--- |
+| 200 |  ListConfigurationRevisionsOutput | HTTP Status Code 200: OK. |
+| 400 | Error | HTTP Status Code 400: Bad request due to incorrect input. Correct your request and then retry it. |
+| 403 | Error | HTTP Status Code 403: Access forbidden. Correct your credentials and then retry your request. |
+| 404 | Error | HTTP Status Code 404: Resource not found due to incorrect input. Correct your request and then retry it. |
+| 500 | Error | HTTP Status Code 500: Unexpected internal server error. Retrying your request might resolve the issue. |
 
 ### OPTIONS
+<a name="configurations-configuration-id-revisionsoptions"></a>
 
-Path parametersNameTypeRequiredDescription`configuration-id`StringTrue
+**Path parameters**
 
-The unique ID that Amazon MQ generates for the configuration.
+| Name | Type | Required | Description |
+| --- |--- |--- |--- |
+| {{configuration-id}} | String | True | The unique ID that Amazon MQ generates for the configuration. |
 
-ResponsesStatus codeResponse modelDescription`200`None
+**Responses**
 
-Default response for CORS method
+| Status code | Response model | Description |
+| --- |--- |--- |
+| 200 | None | Default response for CORS method |
 
 ## Schemas
+<a name="configurations-configuration-id-revisions-schemas"></a>
 
 ### Response bodies
+<a name="configurations-configuration-id-revisions-response-examples"></a>
 
-```json
+#### ListConfigurationRevisionsOutput schema
+<a name="configurations-configuration-id-revisions-response-body-listconfigurationrevisionsoutput-example"></a>
 
+```
 {
   "nextToken": "string",
   "maxResults": integer,
@@ -96,8 +87,10 @@ Default response for CORS method
 }
 ```
 
-```json
+#### Error schema
+<a name="configurations-configuration-id-revisions-response-body-error-example"></a>
 
+```
 {
   "errorAttribute": "string",
   "message": "string"
@@ -105,125 +98,57 @@ Default response for CORS method
 ```
 
 ## Properties
+<a name="configurations-configuration-id-revisions-properties"></a>
 
 ### ConfigurationRevision
+<a name="configurations-configuration-id-revisions-model-configurationrevision"></a>
 
 Returns information about the specified configuration revision.
 
-PropertyTypeRequiredDescription`created`
-
-string
-
-Format: date-time
-
-True
-
-Required. The date and time of the configuration revision.
-
-`description`
-
-string
-
-False
-
-The description of the configuration revision.
-
-`revision`
-
-integer
-
-True
-
-Required. The revision number of the configuration.
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| created | string<br />Format: date-time | True | Required. The date and time of the configuration revision. |
+| description | string | False | The description of the configuration revision. |
+| revision | integer | True | Required. The revision number of the configuration. |
 
 ### Error
+<a name="configurations-configuration-id-revisions-model-error"></a>
 
 Returns information about an error.
 
-PropertyTypeRequiredDescription`errorAttribute`
-
-string
-
-False
-
-The attribute which caused the error.
-
-`message`
-
-string
-
-False
-
-The explanation of the error.
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| errorAttribute | string | False | The attribute which caused the error. |
+| message | string | False | The explanation of the error. |
 
 ### ListConfigurationRevisionsOutput
+<a name="configurations-configuration-id-revisions-model-listconfigurationrevisionsoutput"></a>
 
 Returns a list of all revisions for the specified configuration.
 
-PropertyTypeRequiredDescription`configurationId`
-
-string
-
-False
-
-The unique ID that Amazon MQ generates for the configuration.
-
-`maxResults`
-
-integer
-
-False
-
-The maximum number of configuration revisions that can be returned per page (20 by
-default). This value must be an integer from 5 to 100.
-
-`nextToken`
-
-string
-
-False
-
-The token that specifies the next page of results Amazon MQ should return. To
-request the first page, leave nextToken empty.
-
-`revisions`
-
-Array of type ConfigurationRevision
-
-False
-
-The list of all revisions for the specified configuration.
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| configurationId | string | False | The unique ID that Amazon MQ generates for the configuration. |
+| maxResults | integer | False | The maximum number of configuration revisions that can be returned per page (20 by default). This value must be an integer from 5 to 100. |
+| nextToken | string | False | The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty. |
+| revisions | Array of type [ConfigurationRevision](#configurations-configuration-id-revisions-model-configurationrevision) | False | The list of all revisions for the specified configuration. |
 
 ## See also
+<a name="configurations-configuration-id-revisions-see-also"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs and references, see the following:
 
 ### ListConfigurationRevisions
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mq-2017-11-27/ListConfigurationRevisions)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mq-2017-11-27/ListConfigurationRevisions)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configuration Revision
-
-Configurations
+<a name="ListConfigurationRevisions-see-also"></a>
++ [AWS Command Line Interface V2](/goto/cli2/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for .NET V4](/goto/DotNetSDKV4/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for C\+\+](/goto/SdkForCpp/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for Go v2](/goto/SdkForGoV2/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for Java V2](/goto/SdkForJavaV2/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/ListConfigurationRevisions)
++ [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/ListConfigurationRevisions)
 
 All content copied from https://docs.aws.amazon.com/.

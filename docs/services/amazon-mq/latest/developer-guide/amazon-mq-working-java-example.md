@@ -3,75 +3,63 @@ title: "Working examples of using Java Message Service (JMS) with ActiveMQ"
 ---
 
 # Working examples of using Java Message Service (JMS) with ActiveMQ
+<a name="amazon-mq-working-java-example"></a>
 
 The following examples show how you can work with ActiveMQ programmatically:
-
-- The OpenWire example Java code connects to a broker, creates a queue, and
-sends and receives a message. For a detailed breakdown and explanation, see
-[Connecting a Java application to your broker](amazon-mq-connecting-application.md).
-
-- The MQTT example Java code connects to a broker, creates a topic, and publishes and receives a message.
-
-- The STOMP+WSS example Java code connects to a broker, creates a queue, and publishes and receives a message.
++ The OpenWire example Java code connects to a broker, creates a queue, and sends and receives a message. For a detailed breakdown and explanation, see [Connecting a Java application to your Amazon MQ broker](amazon-mq-connecting-application.md).
++ The MQTT example Java code connects to a broker, creates a topic, and publishes and receives a message.
++ The STOMP\+WSS example Java code connects to a broker, creates a queue, and publishes and receives a message.
 
 ## Prerequisites
+<a name="quick-start-prerequisites"></a>
 
 ### Enable VPC Attributes
+<a name="quick-start-enable-vpc-attributes"></a>
 
-To ensure that your broker is accessible within your VPC, you must enable the `enableDnsHostnames` and `enableDnsSupport`
-VPC attributes. For more information, see [DNS Support in your VPC](../../../vpc/latest/userguide/vpc-dns.md#vpc-dns-support) in the _Amazon VPC User Guide_.
+To ensure that your broker is accessible within your VPC, you must enable the `enableDnsHostnames` and `enableDnsSupport` VPC attributes. For more information, see [DNS Support in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support) in the *Amazon VPC User Guide*.
 
 ### Enable inbound Connections
+<a name="quick-start-allow-inbound-connections"></a>
 
-To work with Amazon MQ programmatically, you must use inbound connections.
+ To work with Amazon MQ programmatically, you must use inbound connections.
 
-1. Sign in to the [Amazon MQ console](https://console.aws.amazon.com/amazon-mq).
+1. Sign in to the [Amazon MQ console](https://console.aws.amazon.com/amazon-mq/).
 
-2. From the broker list, choose the name of your broker (for example, **MyBroker**).
+1. From the broker list, choose the name of your broker (for example, **MyBroker**).
 
-3. On the **`MyBroker`** page,
-    in the **Connections** section, note the addresses and
-    ports of the broker's web console URL and wire-level
-    protocols.
+1. On the **{{MyBroker}}** page, in the **Connections** section, note the addresses and ports of the broker's web console URL and wire-level protocols.
 
-4. In the **Details** section, under **Security and network**,
-    choose the name of your security group or ![](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-broker-details-link.png).
+1. In the **Details** section, under **Security and network**, choose the name of your security group or ![](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-broker-details-link.png).
 
-The **Security Groups** page of the EC2 Dashboard
-    is displayed.
+   The **Security Groups** page of the EC2 Dashboard is displayed.
 
-5. From the security group list, choose your security group.
+1. From the security group list, choose your security group.
 
-6. At the bottom of the page, choose **Inbound**, and then choose **Edit**.
+1. At the bottom of the page, choose **Inbound**, and then choose **Edit**.
 
-7. In the **Edit inbound rules** dialog box,
-    add a rule for every URL or endpoint that you want to be publicly accessible
-    (the following example shows how to do this for a broker web console).
-1. Choose **Add Rule**.
+1. In the **Edit inbound rules** dialog box, add a rule for every URL or endpoint that you want to be publicly accessible (the following example shows how to do this for a broker web console).
 
-2. For **Type**, select **Custom TCP**.
+   1. Choose **Add Rule**.
 
-3. For **Port Range**, type the web console port
-       ( `8162`).
+   1. For **Type**, select **Custom TCP**.
 
-4. For **Source**, leave **Custom** selected and then
-       type the IP address of the system that you want to be able to
-       access the web console (for example,
-       `192.0.2.1`).
+   1. For **Port Range**, type the web console port (`8162`).
 
-5. Choose **Save**.
+   1. For **Source**, leave **Custom** selected and then type the IP address of the system that you want to be able to access the web console (for example, `192.0.2.1`).
+
+   1. Choose **Save**.
 
       Your broker can now accept inbound connections.
 
 ### Add Java dependencies
+<a name="quick-start-java-dependencies"></a>
 
-OpenWire
+------
+#### [ OpenWire ]
 
-Add the `activemq-client.jar` and `activemq-pool.jar` packages to
-your Java class path. The following example shows these dependencies in a Maven project `pom.xml` file.
+Add the `activemq-client.jar` and `activemq-pool.jar` packages to your Java class path. The following example shows these dependencies in a Maven project `pom.xml` file.
 
-```xml
-
+```
 <dependencies>
     <dependency>
         <groupId>org.apache.activemq</groupId>
@@ -86,17 +74,14 @@ your Java class path. The following example shows these dependencies in a Maven 
 </dependencies>
 ```
 
-For more information about `activemq-client.jar`, see [Initial\
-Configuration](http://activemq.apache.org/initial-configuration.html) in the Apache ActiveMQ documentation.
+For more information about `activemq-client.jar`, see [Initial Configuration](https://activemq.apache.org/initial-configuration.html) in the Apache ActiveMQ documentation.
 
-MQTT
+------
+#### [ MQTT ]
 
-Add the `org.eclipse.paho.client.mqttv3.jar` package to
-your Java class path. The following example shows this dependency in
-a Maven project `pom.xml` file.
+Add the `org.eclipse.paho.client.mqttv3.jar` package to your Java class path. The following example shows this dependency in a Maven project `pom.xml` file.
 
-```xml
-
+```
 <dependencies>
                     <dependency>
                         <groupId>org.eclipse.paho</groupId>
@@ -106,31 +91,22 @@ a Maven project `pom.xml` file.
                     </dependencies>
 ```
 
-For more information about
-`org.eclipse.paho.client.mqttv3.jar`, see [Eclipse Paho\
-Java Client](https://www.eclipse.org/paho/clients/java).
+For more information about `org.eclipse.paho.client.mqttv3.jar`, see [Eclipse Paho Java Client](https://www.eclipse.org/paho/clients/java/).
 
-STOMP+WSS
+------
+#### [ STOMP\+WSS ]
 
 Add the following packages to your Java class path:
++ `spring-messaging.jar`
++ `spring-websocket.jar`
++ `javax.websocket-api.jar`
++ `jetty-all.jar`
++ `slf4j-simple.jar`
++ `jackson-databind.jar`
 
-- `spring-messaging.jar`
+The following example shows these dependencies in a Maven project `pom.xml` file.
 
-- `spring-websocket.jar`
-
-- `javax.websocket-api.jar`
-
-- `jetty-all.jar`
-
-- `slf4j-simple.jar`
-
-- `jackson-databind.jar`
-
-The following example shows these dependencies in a Maven project
-`pom.xml` file.
-
-```xml
-
+```
 <dependencies>
                     <dependency>
                         <groupId>org.springframework</groupId>
@@ -166,20 +142,20 @@ The following example shows these dependencies in a Maven project
                     </dependencies>
 ```
 
-For more information, see [STOMP Support](https://docs.spring.io/spring-integration/docs/5.0.5.RELEASE/reference/html/stomp.html) in the Spring Framework
-documentation.
+For more information, see [STOMP Support](https://docs.spring.io/spring-integration/docs/5.0.5.RELEASE/reference/html/stomp.html) in the Spring Framework documentation.
+
+------
 
 ## AmazonMQExample.java
+<a name="working-java-example"></a>
 
-###### Important
+**Important**
+In the following example code, producers and consumers run in a single thread. For production systems (or to test broker instance failover), make sure that your producers and consumers run on separate hosts or threads.
 
-In the following example code, producers and consumers run in a single thread.
-For production systems (or to test broker instance failover), make sure that your producers and consumers run on separate hosts or threads.
+------
+#### [ OpenWire ]
 
-OpenWire
-
-```java
-
+```
 /*
  * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -205,9 +181,9 @@ OpenWire
 
                     // Specify the connection parameters.
                     private final static String WIRE_LEVEL_ENDPOINT
-                            = "ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61617";
-                    private final static String ACTIVE_MQ_USERNAME = "MyUsername123";
-                    private final static String ACTIVE_MQ_PASSWORD = "MyPassword456";
+                            = "{{ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61617}}";
+                    private final static String ACTIVE_MQ_USERNAME = "{{MyUsername123}}";
+                    private final static String ACTIVE_MQ_PASSWORD = "{{MyPassword456}}";
 
                     public static void main(String[] args) throws JMSException {
                         final ActiveMQConnectionFactory connectionFactory =
@@ -311,10 +287,10 @@ OpenWire
                     }
 ```
 
-MQTT
+------
+#### [ MQTT ]
 
-```java
-
+```
 /*
  * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -337,9 +313,9 @@ MQTT
 
                     // Specify the connection parameters.
                     private final static String WIRE_LEVEL_ENDPOINT =
-                            "ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:8883";
-                    private final static String ACTIVE_MQ_USERNAME = "MyUsername123";
-                    private final static String ACTIVE_MQ_PASSWORD = "MyPassword456";
+                            "{{ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:8883}}";
+                    private final static String ACTIVE_MQ_USERNAME = "{{MyUsername123}}";
+                    private final static String ACTIVE_MQ_PASSWORD = "{{MyPassword456}}";
 
                     public static void main(String[] args) throws Exception {
                         new AmazonMQExampleMqtt().run();
@@ -396,10 +372,10 @@ MQTT
                     }
 ```
 
-STOMP+WSS
+------
+#### [ STOMP\+WSS ]
 
-```java
-
+```
 /*
  * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -430,9 +406,9 @@ STOMP+WSS
                     // Specify the connection parameters.
                     private final static String DESTINATION = "/queue";
                     private final static String WIRE_LEVEL_ENDPOINT =
-                            "wss://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61619";
-                    private final static String ACTIVE_MQ_USERNAME = "MyUsername123";
-                    private final static String ACTIVE_MQ_PASSWORD = "MyPassword456";
+                            "{{wss://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61619}}";
+                    private final static String ACTIVE_MQ_USERNAME = "{{MyUsername123}}";
+                    private final static String ACTIVE_MQ_PASSWORD = "{{MyPassword456}}";
 
                     public static void main(String[] args) throws Exception {
                         final AmazonMQExampleStompWss example = new AmazonMQExampleStompWss();
@@ -494,10 +470,6 @@ STOMP+WSS
                     }
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Delete an ActiveMQ broker user
-
-Version management
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,37 +3,26 @@ title: "Amazon MQ for ActiveMQ best practices"
 ---
 
 # Amazon MQ for ActiveMQ best practices
+<a name="best-practices-activemq"></a>
 
-Use this as a reference to quickly find recommendations for maximizing performance and minimizing throughput costs when working with
-ActiveMQ brokers on Amazon MQ.
+Use this as a reference to quickly find recommendations for maximizing performance and minimizing throughput costs when working with ActiveMQ brokers on Amazon MQ.
 
 ## Never Modify or Delete the Amazon MQ Elastic Network Interface
+<a name="never-modify-delete-elastic-network-interface"></a>
 
-When you first [create an\
-Amazon MQ broker](getting-started-activemq.md), Amazon MQ provisions an [elastic network\
-interface](../../../vpc/latest/userguide/vpc-elasticnetworkinterfaces.md) in the [Virtual Private Cloud (VPC)](../../../vpc/latest/userguide/vpc-introduction.md) under your account and, thus, requires a
-number of [EC2\
-permissions](security-api-authentication-authorization.md). The network interface allows your client (producer or
-consumer) to communicate with the Amazon MQ broker. The network interface is considered
-to be within the _service scope_ of Amazon MQ, despite being part of
-your account's VPC.
+When you first [create an Amazon MQ broker](getting-started-activemq.md), Amazon MQ provisions an [elastic network interface](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_ElasticNetworkInterfaces.html) in the [Virtual Private Cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Introduction.html) under your account and, thus, requires a number of [EC2 permissions](security-api-authentication-authorization.md). The network interface allows your client (producer or consumer) to communicate with the Amazon MQ broker. The network interface is considered to be within the *service scope* of Amazon MQ, despite being part of your account's VPC.
 
-###### Warning
+**Warning**
+You must not modify or delete this network interface. Modifying or deleting the network interface can cause a permanent loss of connection between your VPC and your broker.
 
-You must not modify or delete this network interface. Modifying or deleting
-the network interface can cause a permanent loss of connection between your VPC
-and your broker.
-
-![Diagram showing Client, Elastic Network Interface, and Amazon MQ Broker within a Customer VPC and service scope.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-network-configuration-architecture-vpc-elastic-network-interface.png)
+![Diagram showing Client, Elastic Network Interface, and Amazon MQ Broker within a Customer VPC and service scope.](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-network-configuration-architecture-vpc-elastic-network-interface.png)
 
 ## Always Use Connection Pooling
+<a name="always-use-connection-pooling"></a>
 
-In a scenario with a single producer and single consumer (such as the [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md)
-tutorial), you can use a single [`ActiveMQConnectionFactory`](http://activemq.apache.org/maven/apidocs/org/apache/activemq/ActiveMQConnectionFactory.html) class for every producer and
-consumer. For example:
+In a scenario with a single producer and single consumer (such as the [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md) tutorial), you can use a single `ActiveMQConnectionFactory` class for every producer and consumer. For more information, see [ActiveMQConnectionFactory](https://javadoc.io/doc/org.apache.activemq/activemq-client/latest/org/apache/activemq/ActiveMQConnectionFactory.html) on the javadoc.io website. For example:
 
-```java
-
+```
 // Create a connection factory.
 final ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(wireLevelEndpoint);
 
@@ -46,18 +35,12 @@ final Connection consumerConnection = connectionFactory.createConnection();
 consumerConnection.start();
 ```
 
-However, in more realistic scenarios with multiple producers and consumers, it can
-be costly and inefficient to create a large number of connections for multiple
-producers. In these scenarios, you should group multiple producer requests using the
-[`PooledConnectionFactory`](http://activemq.apache.org/maven/apidocs/org/apache/activemq/jms/pool/PooledConnectionFactory.html) class. For example:
+However, in more realistic scenarios with multiple producers and consumers, it can be costly and inefficient to create a large number of connections for multiple producers. In these scenarios, you should group multiple producer requests using the `PooledConnectionFactory` class. For more information, see [PooledConnectionFactory](https://javadoc.io/doc/org.apache.activemq/activemq-jms-pool/latest/org/apache/activemq/jms/pool/PooledConnectionFactory.html) on the javadoc.io website. For example:
 
-###### Note
+**Note**
+Message consumers should *never* use the `PooledConnectionFactory` class.
 
-Message consumers should _never_ use the
-`PooledConnectionFactory` class.
-
-```java
-
+```
 // Create a connection factory.
 final ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(wireLevelEndpoint);
 
@@ -76,182 +59,98 @@ producerConnection.start();
 ```
 
 ## Always Use the Failover Transport to Connect to Multiple Broker Endpoints
+<a name="always-use-failover-transport-connect-to-multiple-broker-endpoints"></a>
 
-If you need your application to connect to multiple broker endpoints—for example,
-when you use an [active/standby](amazon-mq-broker-architecture.md#active-standby-broker-deployment) deployment mode or when you [migrate from an on-premises message broker to\
-Amazon MQ](../migration-guide.md)—use the [Failover\
-Transport](http://activemq.apache.org/failover-transport-reference.html) to allow your consumers to randomly connect to either one. For
-example:
+If you need your application to connect to multiple broker endpoints—for example, when you use an [active/standby](amazon-mq-broker-architecture.md#active-standby-broker-deployment) deployment mode or when you [migrate from an on-premises message broker to Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/)—use the [Failover Transport](https://activemq.apache.org/components/classic/documentation/failover-transport-reference) to allow your consumers to randomly connect to either one. For example:
 
 ```
-
 failover:(ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61617,ssl://b-9876l5k4-32ji-109h-8gfe-7d65c4b132a1-2.mq.us-west-2.amazonaws.com:61617)?randomize=true
 ```
 
-###### Important
-
-Multi-availability zone brokers can experience failovers during maintenance windows and broker restarts. Use the Failover Transport to ensure your broker availability.
+**Important**
+ Multi-availability zone brokers can experience failovers during maintenance windows and broker restarts. Use the Failover Transport to ensure your broker availability.
 
 ## Avoid Using Message Selectors
+<a name="avoid-using-message-selectors"></a>
 
-It is possible to use [JMS\
-selectors](https://docs.oracle.com/cd/E19798-01/821-1841/bncer/index.html) to attach filters to topic subscriptions (to route messages to
-consumers based on their content). However, the use of JMS selectors fills up the
-Amazon MQ broker's filter buffer, preventing it from filtering messages.
+It is possible to use [JMS selectors](https://docs.oracle.com/cd/E19798-01/821-1841/bncer/index.html) to attach filters to topic subscriptions (to route messages to consumers based on their content). However, the use of JMS selectors fills up the Amazon MQ broker's filter buffer, preventing it from filtering messages.
 
-In general, avoid letting consumers route messages because, for optimal decoupling
-of consumers and producers, both the consumer and the producer should be
-ephemeral.
+In general, avoid letting consumers route messages because, for optimal decoupling of consumers and producers, both the consumer and the producer should be ephemeral.
 
 ## Prefer Virtual Destinations to Durable Subscriptions
+<a name="prefer-virtual-destinations-to-durable-subscriptions"></a>
 
-A [durable subscription](http://activemq.apache.org/how-do-durable-queues-and-topics-work.html) can help ensure that the consumer receives all
-messages published to a topic, for example, after a lost connection is restored.
-However, the use of durable subscriptions also precludes the use of competing
-consumers and might have performance issues at scale. Consider using [virtual\
-destinations](http://activemq.apache.org/virtual-destinations.html) instead.
+A [durable subscription](https://activemq.apache.org/components/classic/documentation/how-do-durable-queues-and-topics-work) can help ensure that the consumer receives all messages published to a topic, for example, after a lost connection is restored. However, the use of durable subscriptions also precludes the use of competing consumers and might have performance issues at scale. Consider using [virtual destinations](https://activemq.apache.org/components/classic/documentation/virtual-destinations) instead.
 
 ## If using Amazon VPC peering, avoid client IPs in CIDR range `10.0.0.0/16`
+<a name="best-practices-activemq-vpc-cidr-restriction"></a>
 
-If you are setting up Amazon VPC peering between on-premise infrastructure and your Amazon MQ broker, you must not configure client connections with IPs in CIDR range `10.0.0.0/16`.
+ If you are setting up Amazon VPC peering between on-premise infrastructure and your Amazon MQ broker, you must not configure client connections with IPs in CIDR range `10.0.0.0/16`.
 
 ## Disable Concurrent Store and Dispatch for Queues with Slow Consumers
+<a name="disable-concurrent-store-and-dispatch-queues-flag-slow-consumers"></a>
 
 By default, Amazon MQ optimizes for queues with fast consumers:
++ Consumers are considered *fast* if they are able to keep up with the rate of messages generated by producers.
++ Consumers are considered *slow* if a queue builds up a backlog of unacknowledged messages, potentially causing a decrease in producer throughput.
 
-- Consumers are considered _fast_ if they are able to
-keep up with the rate of messages generated by producers.
-
-- Consumers are considered _slow_ if a queue builds up a
-backlog of unacknowledged messages, potentially causing a decrease in
-producer throughput.
-
-To instruct Amazon MQ to optimize for queues with slow consumers, set the
-`concurrentStoreAndDispatchQueues` attribute to `false`.
-For an example configuration, see [concurrentStoreAndDispatchQueues](child-element-details.md#concurrentStoreAndDispatchQueues).
+To instruct Amazon MQ to optimize for queues with slow consumers, set the `concurrentStoreAndDispatchQueues` attribute to `false`. For an example configuration, see [`concurrentStoreAndDispatchQueues`](child-element-details.md#concurrentStoreAndDispatchQueues).
 
 ## Choose the Correct Broker Instance Type for the Best Throughput
+<a name="broker-instance-types-choosing"></a>
 
-The message throughput of a [broker instance\
-type](broker-instance-types.md) depends on your application's use case and the following
-factors:
-
-- Use of ActiveMQ in persistent mode
-
-- Message size
-
-- The number of producers and consumers
-
-- The number of destinations
+The message throughput of a [broker instance type](broker-instance-types.md) depends on your application's use case and the following factors:
++ Use of ActiveMQ in persistent mode
++ Message size
++ The number of producers and consumers
++ The number of destinations
 
 ### Understanding the relationship between message size, latency, and throughput
+<a name="broker-instance-types-message-size-latency-throughput"></a>
 
-Depending on your use case, a larger broker instance type might not
-necessarily improve system throughput. When ActiveMQ writes messages to durable
-storage, the size of your messages determines your system's limiting
-factor:
+Depending on your use case, a larger broker instance type might not necessarily improve system throughput. When ActiveMQ writes messages to durable storage, the size of your messages determines your system's limiting factor:
++ If your messages are smaller than 100 KB, persistent storage latency is the limiting factor.
++ If your messages are larger than 100 KB, persistent storage throughput is the limiting factor.
 
-- If your messages are smaller than 100 KB, persistent storage latency
-is the limiting factor.
+When you use ActiveMQ in persistent mode, writing to storage normally occurs when there are either few consumers or when the consumers are slow. In non-persistent mode, writing to storage also occurs with slow consumers if the heap memory of the broker instance is full.
 
-- If your messages are larger than 100 KB, persistent storage throughput
-is the limiting factor.
-
-When you use ActiveMQ in persistent mode, writing to storage normally occurs
-when there are either few consumers or when the consumers are slow. In
-non-persistent mode, writing to storage also occurs with slow consumers if the
-heap memory of the broker instance is full.
-
-To determine the best broker instance type for your application, we recommend
-testing different broker instance types. For more information, see [Broker instance types](broker-instance-types.md) and
-also [Measuring the Throughput for Amazon MQ using the JMS Benchmark](https://aws.amazon.com/blogs/compute/measuring-the-throughput-for-amazon-mq-using-the-jms-benchmark).
+To determine the best broker instance type for your application, we recommend testing different broker instance types. For more information, see [Amazon MQ for ActiveMQ broker instance types](broker-instance-types.md) and also [Measuring the Throughput for Amazon MQ using the JMS Benchmark](https://aws.amazon.com/blogs/compute/measuring-the-throughput-for-amazon-mq-using-the-jms-benchmark/).
 
 ### Use cases for larger broker instance types
+<a name="broker-instance-types-larger-use-cases"></a>
 
-There are three common use cases when larger broker instance types improve
-throughput:
-
-- **Non-persistent mode** – When
-your application is less sensitive to losing messages during [broker instance\
-failover](amazon-mq-broker-architecture.md#active-standby-broker-deployment) (for example, when broadcasting sports scores), you
-can often use ActiveMQ's non-persistent mode. In this mode, ActiveMQ
-writes messages to persistent storage only if the heap memory of the
-broker instance is full. Systems that use non-persistent mode can
-benefit from the higher amount of memory, faster CPU, and faster network
-available on larger broker instance types.
-
-- **Fast consumers** – When active
-consumers are available and the [concurrentStoreAndDispatchQueues](child-element-details.md#concurrentStoreAndDispatchQueues) flag is
-enabled, ActiveMQ allows messages to flow directly from producer to
-consumer without sending messages to storage (even in persistent mode).
-If your application can consume messages quickly (or if you can design
-your consumers to do this), your application can benefit from a larger
-broker instance type. To let your application consume messages more
-quickly, add consumer threads to your application instances or scale up
-your application instances vertically or horizontally.
-
-- **Batched transactions** – When
-you use persistent mode and send multiple messages per transaction, you
-can achieve an overall higher message throughput by using larger broker
-instance types. For more information, see [Should I Use Transactions?](http://activemq.apache.org/should-i-use-transactions.html) in the ActiveMQ
-documentation.
+There are three common use cases when larger broker instance types improve throughput:
++ **Non-persistent mode** – When your application is less sensitive to losing messages during [broker instance failover](amazon-mq-broker-architecture.md#active-standby-broker-deployment) (for example, when broadcasting sports scores), you can often use ActiveMQ's non-persistent mode. In this mode, ActiveMQ writes messages to persistent storage only if the heap memory of the broker instance is full. Systems that use non-persistent mode can benefit from the higher amount of memory, faster CPU, and faster network available on larger broker instance types.
++ **Fast consumers** – When active consumers are available and the [`concurrentStoreAndDispatchQueues`](child-element-details.md#concurrentStoreAndDispatchQueues) flag is enabled, ActiveMQ allows messages to flow directly from producer to consumer without sending messages to storage (even in persistent mode). If your application can consume messages quickly (or if you can design your consumers to do this), your application can benefit from a larger broker instance type. To let your application consume messages more quickly, add consumer threads to your application instances or scale up your application instances vertically or horizontally.
++ **Batched transactions** – When you use persistent mode and send multiple messages per transaction, you can achieve an overall higher message throughput by using larger broker instance types. For more information, see [Should I Use Transactions?](https://activemq.apache.org/components/classic/documentation/should-i-use-transactions) in the ActiveMQ documentation.
 
 ## Choose the correct broker storage type for the best throughput
+<a name="broker-storage-types-choosing"></a>
 
-To take advantage of high durability and replication across multiple Availability Zones, use Amazon EFS.
-To take advantage of low latency and high throughput, use Amazon EBS. For more information, see [Storage](broker-storage.md).
+To take advantage of high durability and replication across multiple Availability Zones, use Amazon EFS. To take advantage of low latency and high throughput, use Amazon EBS. For more information, see [Amazon MQ for ActiveMQ storage types](broker-storage.md).
 
 ## Configure Your Network of Brokers Correctly
+<a name="network-of-brokers-configure-correctly"></a>
 
-When you create a [network of brokers](network-of-brokers.md),
-configure it correctly for your application:
+When you create a [network of brokers](network-of-brokers.md), configure it correctly for your application:
++ **Enable persistent mode** – Because (relative to its peers) each broker instance acts like a producer or a consumer, networks of brokers don't provide distributed replication of messages. The first broker that acts as a consumer receives a message and persists it to storage. This broker sends an acknowledgement to the producer and forwards the message to the next broker. When the second broker acknowledges the persistence of the message, the first broker deletes the message.
 
-- **Enable persistent mode** – Because
-(relative to its peers) each broker instance acts like a producer or a
-consumer, networks of brokers don't provide distributed replication of
-messages. The first broker that acts as a consumer receives a message and
-persists it to storage. This broker sends an acknowledgement to the producer
-and forwards the message to the next broker. When the second broker
-acknowledges the persistence of the message, the first broker deletes the
-message.
-
-If persistent mode is disabled, the first broker acknowledges the producer
-without persisting the message to storage. For more information, see [Replicated Message Store](http://activemq.apache.org/replicated-message-store.html) and [What is the difference between persistent and non-persistent\
-delivery?](http://activemq.apache.org/what-is-the-difference-between-persistent-and-non-persistent-delivery.html) in the Apache ActiveMQ documentation.
-
-- **Don't disable advisory messages for broker**
-**instances** – For more information, see [Advisory\
-Message](http://activemq.apache.org/advisory-message.html) in the Apache ActiveMQ documentation.
-
-- **Don't use multicast broker discovery**
-– Amazon MQ doesn't support broker discovery using multicast. For more
-information, see [What\
-is the difference between discovery, multicast, and zeroconf?](http://activemq.apache.org/multicast-transport-reference.html) in
-the Apache ActiveMQ documentation.
+  If persistent mode is disabled, the first broker acknowledges the producer without persisting the message to storage. For more information, see [Replicated Message Store](https://activemq.apache.org/components/classic/documentation/replicated-message-store) and [What is the difference between persistent and non-persistent delivery?](https://activemq.apache.org/components/classic/documentation/what-is-the-difference-between-persistent-and-non-persistent-delivery) in the Apache ActiveMQ documentation.
++ **Don't disable advisory messages for broker instances** – For more information, see [Advisory Message](https://activemq.apache.org/components/classic/documentation/advisory-message) in the Apache ActiveMQ documentation.
++ **Don't use multicast broker discovery** – Amazon MQ doesn't support broker discovery using multicast. For more information, see [What is the difference between discovery, multicast, and zeroconf?](https://activemq.apache.org/components/classic/documentation/multicast-transport) in the Apache ActiveMQ documentation.
 
 ## Avoid slow restarts by recovering prepared XA transactions
+<a name="recover-xa-transactions"></a>
 
-ActiveMQ supports distributed (XA) transactions. Knowing how ActiveMQ processes XA
-transactions can help avoid slow recovery times for broker restarts and failovers in
-Amazon MQ
+ActiveMQ supports distributed (XA) transactions. Knowing how ActiveMQ processes XA transactions can help avoid slow recovery times for broker restarts and failovers in Amazon MQ
 
-Unresolved prepared XA transactions are replayed on every restart. If these remain
-unresolved, their number will grow over time, significantly increasing the time needed
-to start up the broker. This affects restart and failover time. You must resolve these
-transactions with a `commit()` or a `rollback()` so that
-performance doesn't degrade over time.
+Unresolved prepared XA transactions are replayed on every restart. If these remain unresolved, their number will grow over time, significantly increasing the time needed to start up the broker. This affects restart and failover time. You must resolve these transactions with a `commit()` or a `rollback()` so that performance doesn't degrade over time.
 
-To monitor your unresolved prepared XA transactions, you can use the
-`JournalFilesForFastRecovery` metric in Amazon CloudWatch Logs. If this number is
-increasing, or is consistently higher than `1`, you should recover your
-unresolved transactions with code similar to the following example. For more
-information, see [Quotas in Amazon MQ](amazon-mq-limits.md).
+To monitor your unresolved prepared XA transactions, you can use the `JournalFilesForFastRecovery` metric in Amazon CloudWatch Logs. If this number is increasing, or is consistently higher than `1`, you should recover your unresolved transactions with code similar to the following example. For more information, see [Quotas in Amazon MQ](amazon-mq-limits.md).
 
-The following example code walks through prepared XA transactions and closes them with
-a `rollback()`.
+The following example code walks through prepared XA transactions and closes them with a `rollback()`.
 
-```java
-
+```
 import org.apache.activemq.ActiveMQXAConnectionFactory;
 
 import javax.jms.XAConnection;
@@ -264,8 +163,8 @@ public class RecoverXaTransactions {
     final static String WIRE_LEVEL_ENDPOINT =
             "tcp://localhost:61616";;
     static {
-        final String activeMqUsername = "MyUsername123";
-        final String activeMqPassword = "MyPassword456";
+        final String activeMqUsername = "{{MyUsername123}}";
+        final String activeMqPassword = "{{MyPassword456}}";
         ACTIVE_MQ_CONNECTION_FACTORY = new ActiveMQXAConnectionFactory(activeMqUsername, activeMqPassword, WIRE_LEVEL_ENDPOINT);
         ACTIVE_MQ_CONNECTION_FACTORY.setUserName(activeMqUsername);
         ACTIVE_MQ_CONNECTION_FACTORY.setPassword(activeMqPassword);
@@ -288,14 +187,35 @@ public class RecoverXaTransactions {
 }
 ```
 
-In a real-world scenario, you could check your prepared XA transactions against your
-XA Transaction Manager. Then you can decide whether to handle each prepared transaction
-with a `rollback()` or a `commit()`.
+In a real-world scenario, you could check your prepared XA transactions against your XA Transaction Manager. Then you can decide whether to handle each prepared transaction with a `rollback()` or a `commit()`.
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+## Always Verify the Broker TLS Certificate Against Its Subject Alternative Names
+<a name="verify-broker-certificate-activemq"></a>
 
-Version management
+Amazon MQ brokers present a server certificate that identifies the broker by its fully qualified domain name (FQDN). Your client is responsible for verifying this certificate when it establishes a TLS connection.
 
-Amazon MQ for RabbitMQ
+**Example FQDNs:**
+
+```
+b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.ap-southeast-2.amazonaws.com
+b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-2.mq.ap-southeast-2.amazonaws.com
+```
+
+Every Amazon MQ for ActiveMQ broker instance has its own host name, which always carries an instance suffix. A single-instance broker has one host name, ending in `-1`. An active/standby deployment has two, ending in `-1` and `-2`. The broker certificate covers both names, so a client connecting through the Failover Transport verifies successfully against whichever endpoint it uses.
+
+Use the host names exactly as Amazon MQ advertises them, including the instance suffix. Verify each endpoint in your Failover Transport URI against the host name in that endpoint.
+
+We recommend that you configure your client to verify the broker certificate as described in [RFC 9525, Service Identity in TLS](https://www.rfc-editor.org/rfc/rfc9525.html). When your client connects to an Amazon MQ broker, it should do the following:
++ **Use the broker endpoint FQDN as the reference identifier.** Use the FQDN from the broker endpoint returned by the `DescribeBroker` operation, or shown on the broker details page in the Amazon MQ console. Do not derive the identifier from an IP address or from a DNS alias of your own.
++ **Verify the identifier against the `subjectAltName` extension.** Match the broker FQDN against the `dNSName` entries in the certificate `subjectAltName` (SAN) extension.
++ **Do not use the Common Name (CN).** The CN does not identify the broker, and it cannot contain the broker FQDN. Clients that match only the CN, or that require a specific value in the CN, might fail to connect.
+
+**Important**
+Do not disable certificate verification, and do not pin an individual broker certificate or a specific certificate subject. Amazon MQ rotates broker certificates, and the contents of the certificate subject can change. Clients that pin a certificate or a subject value might fail to connect after a certificate is rotated.
+
+**Note**
+Most TLS client libraries verify the broker FQDN against the `subjectAltName` extension by default when you supply the broker endpoint host name. If your client overrides the verification hostname, or supplies its own verification callback, make sure that it uses the broker FQDN and matches against `subjectAltName`.
+
+For more information about Amazon MQ broker certificates, including the certificate types that Amazon MQ issues and annotated examples of each, see [Amazon MQ broker TLS certificates](amazon-mq-certificates.md).
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,141 +3,98 @@ title: "Upgrading an Amazon MQ broker engine version"
 ---
 
 # Upgrading an Amazon MQ broker engine version
+<a name="upgrading-brokers"></a>
 
-Amazon MQ regularly provides new broker engine versions for all supported broker engine types. New engine versions
-include security patches, bug fixes, and other broker engine improvements.
+ Amazon MQ regularly provides new broker engine versions for all supported broker engine types. New engine versions include security patches, bug fixes, and other broker engine improvements.
 
-Amazon MQ organizes version numbers according to semantic versioning specification as
-`X.Y.Z`. In Amazon MQ implementations, `X` denotes the
-major version, `Y` represents the minor version, and `Z` denotes the patch version number. Amazon MQ supports
-two types of upgrades:
+ Amazon MQ organizes version numbers according to semantic versioning specification as `X.Y.Z`. In Amazon MQ implementations, `X` denotes the major version, `Y` represents the minor version, and `Z` denotes the patch version number. Amazon MQ supports two types of upgrades:
++ **Major version upgrade** – Occurs when the major engine version numbers change. For example, upgrading from RabbitMQ version **3**.13 to version **4**.2 is considered a major version upgrade.
++ **Minor version upgrade** – Occurs when only the minor engine version number changes. For example, upgrading from version 3.**11** to version 3.**12** is considered a minor version upgrade.
 
-- Major version upgrade – Occurs when the
-major engine version numbers change. For example, upgrading from RabbitMQ version **3**.13 to version **4**.2 is
-considered a major version upgrade.
-
-- Minor version upgrade – Occurs when only the
-minor engine version number changes. For example, upgrading from version
-3. **11** to version 3. **12** is considered a minor version upgrade.
-
-You can manually upgrade your broker at any time to the next supported major or minor version.
-Amazon MQ manages upgrade to the latest supported patch version for all brokers during the scheduled
-[maintenance window](maintaining-brokers.md).
-Both manual and automatic version upgrades occur during the scheduled maintenance window,
-or after you [reboot your broker](amazon-mq-rebooting-broker.md).
-Amazon MQ upgrades your broker to the next minor version when the current minor version reaches end of support.
+ You can manually upgrade your broker at any time to the next supported major or minor version. Amazon MQ manages upgrade to the latest supported patch version for all brokers during the scheduled [maintenance window](maintaining-brokers.md). Both manual and automatic version upgrades occur during the scheduled maintenance window, or after you [reboot your broker](amazon-mq-rebooting-broker.md). Amazon MQ upgrades your broker to the next minor version when the current minor version reaches end of support.
 
 ## Manually upgrading the engine version
+<a name="upgrading-brokers-manual-upgrades"></a>
 
 You can upgrade the engine version of a broker by using the AWS Management Console, the AWS CLI, or the Amazon MQ API.
 
-###### To upgrade the engine version of a broker by using the AWS Management Console
+### AWS Management Console
+<a name="upgrading-brokers-manual-upgrades-console"></a>
 
-1. On the broker details page, choose **Edit**.
+**To upgrade the engine version of a broker by using the AWS Management Console**
 
-2. Under **Specifications**, for **Broker engine version**
-    choose the new version number from the dropdown list.
+1.  On the broker details page, choose **Edit**.
 
-3. Scroll to the bottom of the page, and choose **Schedule modifications**.
+1.  Under **Specifications**, for **Broker engine version** choose the new version number from the dropdown list.
 
-4. On the **Schedule broker modifications** page, for **When to apply modifications**,
-    choose one of the following.
+1. Scroll to the bottom of the page, and choose **Schedule modifications**.
 
-- Choose **After the next reboot**, if you want Amazon MQ to complete the version upgrade
-during the next scheduled maintenance window.
+1.  On the **Schedule broker modifications** page, for **When to apply modifications**, choose one of the following.
+   +  Choose **After the next reboot**, if you want Amazon MQ to complete the version upgrade during the next scheduled maintenance window.
+   +  Choose **Immediately**, if you want to reboot the broker and upgrade the engine version immediately.
+**Important**
+Single instance brokers are offline while being rebooted. For cluster brokers, only one node is down at a time while the broker reboots.
 
-- Choose **Immediately**, if you want to reboot the broker and upgrade
-the engine version immediately.
+1.  Choose **Apply** to finish applying the changes.
 
-###### Important
+### AWS CLI
+<a name="upgrading-brokers-manual-upgrades-cli"></a>
 
-Single instance brokers are offline while being rebooted. For cluster brokers,
-only one node is down at a time while the broker reboots.
+**To upgrade the engine version of a broker by using the AWS CLI**
 
-5. Choose **Apply** to finish applying the changes.
+1.  Use the [update-broker](https://docs.aws.amazon.com/cli/latest/reference/mq/update-broker.html) CLI command and specify the following parameters, as shown in the example.
+   +  `--broker-id` – The unique ID that Amazon MQ generates for the broker. You can parse the ID from your broker ARN. For example, given the following ARN, `arn:aws:mq:us-east-2:123456789012:broker:MyBroker:b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9`, the broker ID would be `b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9`.
+   +  `--engine-version` – The engine version number for the broker engine to upgrade to.
 
-###### To upgrade the engine version of a broker by using the AWS CLI
+   ```
+   aws mq update-broker --broker-id {{broker-id}} --engine-version {{version-number}}
+   ```
 
-1. Use the [update-broker](../../../cli/latest/reference/mq/update-broker.md) CLI command
-    and specify the following parameters, as shown in the example.
+1.  (Optional) Use the [reboot-broker](https://docs.aws.amazon.com/cli/latest/reference/mq/reboot-broker.html) CLI command to reboot your broker if you want to upgrade the engine version immediately.
 
-- `--broker-id` – The unique ID that Amazon MQ generates for the broker.
-You can parse the ID from your broker ARN. For example, given the following ARN,
-`arn:aws:mq:us-east-2:123456789012:broker:MyBroker:b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9`, the broker ID would be `b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9`.
+   ```
+   aws mq reboot-broker --broker-id {{broker-id}}
+   ```
 
-- `--engine-version` – The engine version number for the broker engine to upgrade to.
+   If you do not want to reboot your broker and apply the changes immediately, Amazon MQ will upgrade the broker during the next scheduled maintenance window.
+**Important**
+Single instance brokers are offline while being rebooted. For cluster brokers, only one node is down at a time while the broker reboots.
 
-```sh
+### Amazon MQ API
+<a name="upgrading-brokers-manual-upgrades-api"></a>
 
-aws mq update-broker --broker-id broker-id --engine-version version-number
-```
+**To upgrade the engine version of a broker by using the Amazon MQ API**
 
-2. (Optional) Use the [reboot-broker](../../../cli/latest/reference/mq/reboot-broker.md) CLI command to
-    reboot your broker if you want to upgrade the engine version immediately.
+1.  Use the [UpdateBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#UpdateBroker) API operation. Specify `broker-id` as a path parameter. The following examples assumes a broker in the `us-west-2` region. For more information about available Amazon MQ endpoints, see [Amazon MQ endpoints and quotas.](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html#amazon-mq_region) in the *AWS General Reference*
 
-```sh
+   ```
+   PUT /v1/brokers/{{broker-id}} HTTP/1.1
+   Host: mq.us-west-2.amazonaws.com
+   Date: Mon, 7 June 2021 12:00:00 GMT
+   x-amz-date: Mon, 7 June 2021 12:00:00 GMT
+   Authorization: {{authorization-string}}
+   ```
 
-aws mq reboot-broker --broker-id broker-id
-```
+   Use `engineVersion` in the request payload to specify the version number for the broker to upgrade to.
 
-If you do not want to reboot your broker and apply the changes immediately, Amazon MQ will upgrade the broker during the next
-    scheduled maintenance window.
+   ```
+   {
+       "engineVersion": "{{engine-version-number}}"
+   }
+   ```
 
-###### Important
+1.  (Optional) Use the [RebootBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-reboot.html#RebootBroker) API operation to reboot your broker if you want to upgrade the engine version immediately. `broker-id` is specified as a path parameter.
 
-Single instance brokers are offline while being rebooted. For cluster brokers,
-only one node is down at a time while the broker reboots.
+   ```
+   POST /v1/brokers/{{broker-id}}/reboot-broker HTTP/1.1
+   Host: mq.us-west-2.amazonaws.com
+   Date: Mon, 7 June 2021 12:00:00 GMT
+   x-amz-date: Mon, 7 June 2021 12:00:00 GMT
+   Authorization: {{authorization-string}}
+   ```
 
-###### To upgrade the engine version of a broker by using the Amazon MQ API
-
-1. Use the [UpdateBroker](../api-reference/brokers-broker-id.md#UpdateBroker) API operation.
-    Specify `broker-id` as a path parameter. The following examples assumes a broker in the `us-west-2` region. For more information
-    about available Amazon MQ endpoints, see [Amazon MQ endpoints and quotas.](../../../../general/latest/gr/amazon-mq.md#amazon-mq_region)
-    in the _AWS General Reference_
-
-```http
-
-PUT /v1/brokers/broker-id HTTP/1.1
-Host: mq.us-west-2.amazonaws.com
-Date: Mon, 7 June 2021 12:00:00 GMT
-x-amz-date: Mon, 7 June 2021 12:00:00 GMT
-Authorization: authorization-string
-```
-
-Use `engineVersion` in the request payload to specify the version number for the broker to upgrade to.
-
-```json
-
-{
-       "engineVersion": "engine-version-number"
-}
-```
-
-2. (Optional) Use the [RebootBroker](../api-reference/brokers-broker-id-reboot.md#RebootBroker) API
-    operation to reboot your broker if you want to upgrade the engine version immediately. `broker-id` is specified as
-    a path parameter.
-
-```http
-
-POST /v1/brokers/broker-id/reboot-broker HTTP/1.1
-Host: mq.us-west-2.amazonaws.com
-Date: Mon, 7 June 2021 12:00:00 GMT
-x-amz-date: Mon, 7 June 2021 12:00:00 GMT
-Authorization: authorization-string
-```
-
-If you do not want to reboot your broker and apply the changes immediately, Amazon MQ will upgrade the broker during the next
-    scheduled maintenance window.
-
-###### Important
-
-Single instance brokers are offline while being rebooted. For cluster brokers,
-only one node is down at a time while the broker reboots.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Authentication and authorization
-
-Upgrading the instance type
+   If you do not want to reboot your broker and apply the changes immediately, Amazon MQ will upgrade the broker during the next scheduled maintenance window.
+**Important**
+Single instance brokers are offline while being rebooted. For cluster brokers, only one node is down at a time while the broker reboots.
 
 All content copied from https://docs.aws.amazon.com/.

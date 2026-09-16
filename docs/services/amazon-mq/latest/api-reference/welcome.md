@@ -3,44 +3,30 @@ title: "Welcome"
 ---
 
 # Welcome
+<a name="welcome"></a>
 
-Welcome to the Amazon MQ REST API reference. In this guide, you can find descriptions of REST
-resources, example requests, HTTP methods, schemas, parameters, and the errors that the
-service returns.
+Welcome to the Amazon MQ REST API reference. In this guide, you can find descriptions of REST resources, example requests, HTTP methods, schemas, parameters, and the errors that the service returns.
 
-Amazon MQ is a managed message broker service for [Apache\
-ActiveMQ](http://activemq.apache.org/) and [RabbitMQ](https://www.rabbitmq.com/) that makes it easy to set up and operate message brokers in the cloud.
-A message broker allows software applications and components to communicate using various
-programming languages, operating systems, and formal messaging protocols.
-Amazon MQ works with your existing applications and services without the need to manage,
-operate, or maintain your own messaging system.
+Amazon MQ is a managed message broker service for [Apache ActiveMQ](http://activemq.apache.org/) and [RabbitMQ](https://www.rabbitmq.com/) that makes it easy to set up and operate message brokers in the cloud. A message broker allows software applications and components to communicate using various programming languages, operating systems, and formal messaging protocols. Amazon MQ works with your existing applications and services without the need to manage, operate, or maintain your own messaging system.
 
-###### Topics
+**Topics**
++ [Example REST Request](#rest-reference-example)
++ [Example REST Response](#rest-reference-example)
 
-- [Example REST Request](#rest-reference-example)
-
-- [Example REST Response](#rest-reference-example)
-
-Additional Information
-
-- [Amazon MQ Product Page](http://aws.amazon.com/amazon-mq)
-
-- _[Amazon MQ Developer Guide](../developer-guide.md)_
-
-- [Amazon MQ in the\
-_AWS CLI Command Reference_](../../../cli/latest/reference/mq/index.md)
-
-- [Regions and Endpoints](../../../../general/latest/gr/rande.md#amazon-mq_region)
+**Additional Information**
++ [Amazon MQ Product Page](http://aws.amazon.com/amazon-mq/)
++ *[Amazon MQ Developer Guide](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/)*
++ [Amazon MQ in the *AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/mq/index.html)
++ [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region)
 
 This document was last published on July 7, 2021
 
 ## Example REST Request
+<a name="rest-reference-example"></a>
 
-The following is an example of an Amazon MQ REST request (and its headers) which creates a new
-Amazon MQ for ActiveMQ broker:
+The following is an example of an Amazon MQ REST request (and its headers) which creates a new Amazon MQ for ActiveMQ broker:
 
-```http
-
+```
 POST /v1/brokers HTTP/1.1
 Content-Type: application/json
 X-Amz-Date: 20171123T214525Z
@@ -79,11 +65,9 @@ Cache-Control: no-cache
 }
 ```
 
-The following is an example of an Amazon MQ REST request (and its headers) which creates a new
-Amazon MQ for RabbitMQ broker:
+The following is an example of an Amazon MQ REST request (and its headers) which creates a new Amazon MQ for RabbitMQ broker:
 
-```http
-
+```
 POST /v1/brokers HTTP/1.1
 Content-Type: application/json
 X-Amz-Date: 20171123T214525Z
@@ -118,12 +102,11 @@ Cache-Control: no-cache
 ```
 
 ## Example REST Response
+<a name="rest-reference-example"></a>
 
-The following is an example of an Amazon MQ REST response (and its headers) which acknowledges the
-creation of the new broker:
+The following is an example of an Amazon MQ REST response (and its headers) which acknowledges the creation of the new broker:
 
-```http
-
+```
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 250
@@ -140,9 +123,5 @@ X-Amz-Cf-Id: ABCa1D6b2-EcF3dG7e456_fGIgh7JKLMijNO_PQ8RSTUVWX-Y9k0ZA==
     "brokerArn": "arn:aws:mq:us-east-2:123456789012:broker:MyBroker:b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9"
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Resources
 
 All content copied from https://docs.aws.amazon.com/.
