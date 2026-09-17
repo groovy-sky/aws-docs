@@ -39,12 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The maximum number of vCPUs. To specify no maximum limit, omit this parameter.
 *Required*: No
 *Type*: Integer
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Min`  <a name="cfn-ec2-spotfleet-vcpucountrangerequest-min"></a>
 The minimum number of vCPUs. To specify no minimum limit, specify `0`.
 *Required*: No
 *Type*: Integer
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

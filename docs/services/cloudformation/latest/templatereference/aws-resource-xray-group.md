@@ -82,14 +82,14 @@ An array of key-value pairs to apply to this resource.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the group.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-xray-group-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-xray-group-return-values-fn--getatt-fn--getatt"></a>
@@ -145,8 +145,8 @@ Resources:
 
 ## See also
 <a name="aws-resource-xray-group--seealso"></a>
-+  [Configuring groups in the X-Ray console](https://docs.aws.amazon.com//xray/latest/devguide/xray-console-groups.html)
-+  [Configuring groups with the X-Ray API](https://docs.aws.amazon.com//xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-groups)
-+ [CreateGroup](https://docs.aws.amazon.com//xray/latest/api/API_CreateGroup.html) action in the X-Ray API Reference
++  [Configuring groups in the X-Ray console](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-groups.html)
++  [Configuring groups with the X-Ray API](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-groups)
++ [CreateGroup](https://docs.aws.amazon.com/xray/latest/api/API_CreateGroup.html) action in the X-Ray API Reference
 
 All content copied from https://docs.aws.amazon.com/.

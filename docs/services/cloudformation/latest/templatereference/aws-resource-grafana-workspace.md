@@ -37,6 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[RoleArn](#cfn-grafana-workspace-rolearn)" : {{String}},
       "[SamlConfiguration](#cfn-grafana-workspace-samlconfiguration)" : {{SamlConfiguration}},
       "[StackSetName](#cfn-grafana-workspace-stacksetname)" : {{String}},
+      "[Tags](#cfn-grafana-workspace-tags)" : {{[ TagsItems, ... ]}},
       "[VpcConfiguration](#cfn-grafana-workspace-vpcconfiguration)" : {{VpcConfiguration}}
     }
 }
@@ -70,6 +71,8 @@ Properties:
   [SamlConfiguration](#cfn-grafana-workspace-samlconfiguration): {{
     SamlConfiguration}}
   [StackSetName](#cfn-grafana-workspace-stacksetname): {{String}}
+  [Tags](#cfn-grafana-workspace-tags): {{
+    - TagsItems}}
   [VpcConfiguration](#cfn-grafana-workspace-vpcconfiguration): {{
     VpcConfiguration}}
 ```
@@ -195,6 +198,12 @@ The name of the AWS CloudFormation stack set that is used to generate IAM roles 
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Tags`  <a name="cfn-grafana-workspace-tags"></a>
+The list of tags associated with the workspace.
+*Required*: No
+*Type*: Array of [TagsItems](aws-properties-grafana-workspace-tagsitems.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `VpcConfiguration`  <a name="cfn-grafana-workspace-vpcconfiguration"></a>
 The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to.
 Connecting to a private VPC is not yet available in the Asia Pacific (Seoul) Region (ap-northeast-2).
@@ -212,14 +221,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `{ "Ref": "Id" }`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-grafana-workspace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-grafana-workspace-return-values-fn--getatt-fn--getatt"></a>

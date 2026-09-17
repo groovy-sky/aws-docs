@@ -20,7 +20,7 @@ A cluster placement group is a logical grouping of instances within a single Ava
 
 The following image shows instances that are placed into a cluster placement group.
 
-![A cluster placement group.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-cluster.png)
+![A cluster placement group.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-cluster.png)
 
 Cluster placement groups are recommended for applications that benefit from low network latency, high network throughput, or both. They are also recommended when the majority of the network traffic is between the instances in the group. To provide the lowest latency and the highest packet-per-second network performance for your placement group, choose an instance type that supports enhanced networking. For more information, see [Enhanced Networking](enhanced-networking.md).
 
@@ -34,7 +34,7 @@ If you try to add more instances to the placement group later, or if you try to 
 
 If you stop an instance in a placement group and then start it again, it still runs in the placement group. However, the start fails if there isn't enough capacity for the instance.
 
-If you receive a capacity error when launching an instance in a placement group that already has running instances, stop and start all of the instances in the placement group, and try the launch again. Starting the instances may migrate them to hardware that has capacity for all of the requested instances.
+If you receive a capacity error when launching an instance in a placement group that already has running instances, stop and start all of the instances in the placement group, and try the launch again. Starting the instances might migrate them to hardware that has capacity for all of the requested instances.
 
 **Rules and limitations**
 
@@ -49,6 +49,7 @@ The following rules apply to cluster placement groups:
   + Traffic to and from Amazon S3 buckets within the same Region over the public IP address space or through a VPC endpoint can use all available instance aggregate bandwidth.
 + You can launch multiple instance types into a cluster placement group. However, this reduces the likelihood that the required capacity will be available for your launch to succeed. We recommend using the same instance type for all instances in a cluster placement group.
 + We recommend that you reserve capacity explicitly in the cluster placement group by creating an [On-Demand Capacity Reservation in the cluster placement group](cr-cpg.md). Note that you can't reserve capacity using zonal Reserved Instances, as they can't reserve capacity explicitly in a placement group.
++ Capacity Blocks do not support placement groups. For more information, see [Capacity Blocks for ML](ec2-capacity-blocks.md).
 + Network traffic to the internet and over an Direct Connect connection to on-premises resources is limited to 5 Gbps for cluster placement groups.
 
 ## Partition placement groups
@@ -58,13 +59,13 @@ Partition placement groups help reduce the likelihood of correlated hardware fai
 
 The following image is a simple visual representation of a partition placement group in a single Availability Zone. It shows instances that are placed into a partition placement group with three partitions—**Partition 1**, **Partition 2**, and **Partition 3**. Each partition comprises multiple instances. The instances in a partition do not share racks with the instances in the other partitions, allowing you to contain the impact of a single hardware failure to only the associated partition.
 
-![A partition placement group with three partitions.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-partition.png)
+![A partition placement group with three partitions.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-partition.png)
 
 Partition placement groups can be used to deploy large distributed and replicated workloads, such as HDFS, HBase, and Cassandra, across distinct racks. When you launch instances into a partition placement group, Amazon EC2 tries to distribute the instances evenly across the number of partitions that you specify. You can also launch instances into a specific partition to have more control over where the instances are placed.
 
 A partition placement group can have partitions in multiple Availability Zones in the same Region. A partition placement group can have a maximum of seven partitions per Availability Zone. The number of instances that can be launched into a partition placement group is limited only by the limits of your account.
 
-In addition, partition placement groups offer visibility into the partitions — you can see which instances are in which partitions. You can share this information with topology-aware applications, such as HDFS, HBase, and Cassandra. These applications use this information to make intelligent data replication decisions for increasing data availability and durability.
+In addition, partition placement groups offer visibility into the partitions—you can see which instances are in which partitions. You can share this information with topology-aware applications, such as HDFS, HBase, and Cassandra. These applications use this information to make intelligent data replication decisions for increasing data availability and durability.
 
 If you start or launch an instance in a partition placement group and there is insufficient unique hardware to fulfill the request, the request fails. Amazon EC2 makes more distinct hardware available over time, so you can try your request again later.
 
@@ -81,27 +82,28 @@ The following rules apply to partition placement groups:
 
 A spread placement group is a group of instances that are each placed on distinct hardware.
 
-Spread placement groups are recommended for applications that have a small number of critical instances that should be kept separate from each other. Launching instances in a spread level placement group reduces the risk of simultaneous failures that might occur when instances share the same equipment. Spread level placement groups provide access to distinct hardware, and are therefore suitable for mixing instance types or launching instances over time.
+Spread placement groups are recommended for applications that have a small number of critical instances that should be kept separate from each other. Launching instances in a spread placement group reduces the risk of simultaneous failures that might occur when instances share the same equipment. Spread placement groups provide access to distinct hardware, and are therefore suitable for mixing instance types or launching instances over time.
 
-If you start or launch an instance in a spread placement group and there is insufficient unique hardware to fulfill the request, the request fails. Amazon EC2 makes more distinct hardware available over time, so you can try your request again later. Placement groups can spread instances across racks or hosts. Rack level spread placement groups can be used in AWS Regions and on AWS Outposts. Host level spread placement groups can be used with AWS Outposts only.
+If you start or launch an instance in a spread placement group and there is insufficient unique hardware to fulfill the request, the request fails. Amazon EC2 makes more distinct hardware available over time, so you can try your request again later.
 
-**Rack level spread placement groups**
-The following image shows seven instances in a single Availability Zone that are placed into a spread placement group. The seven instances are placed on seven different racks, each rack has its own network and power source.
+Spread placement groups can spread instances across racks or hosts. For more information, see [Placement groups on AWS Outposts](placement-groups-outpost.md).
 
-![A spread placement group.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-spread.png)
+The following image shows seven instances in a spread placement group in a single Availability Zone. Each instance is placed on a different rack, where each rack has its own network and power source.
 
-A rack level spread placement group can span multiple Availability Zones in the same Region. In a Region, a rack level spread placement group can have a maximum of seven running instances per Availability Zone per group. With Outposts, a rack level spread placement group can hold as many instances as you have racks in your Outpost deployment.
-
-**Host level spread placement groups**
-Host level spread placement groups are only available with AWS Outposts. A host spread level placement group can hold as many instances as you have hosts in your Outpost deployment. For more information, see [Placement groups on AWS Outposts](placement-groups-outpost.md).
+![A spread placement group.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-spread.png)
 
 **Rules and limitations**
 
 The following rules apply to spread placement groups:
-+ A rack spread placement group supports a maximum of seven running instances per Availability Zone. For example, in a Region with three Availability Zones, you can run a total of 21 instances in the group, with seven instances in each Availability Zone. If you try to start an eighth instance in the same Availability Zone and in the same spread placement group, the instance will not launch. If you need more than seven instances in an Availability Zone, we recommend that you use multiple spread placement groups. Using multiple spread placement groups does not provide guarantees about the spread of instances between groups, but it does help ensure the spread for each group, thus limiting the impact from certain classes of failures.
++ Rack-level spread placement groups are supported in AWS Regions and on AWS Outposts.
++ Host-level spread placement groups are only supported on AWS Outposts.
++ A rack-level spread placement group can span multiple Availability Zones in the same Region, but it supports a maximum of seven running instances in each Availability Zone.
+
+  For example, in a Region with three Availability Zones, you can run a total of 21 instances in a spread placement group, with seven instances in each Availability Zone. If you try to start an eighth instance in an Availability Zone that already has seven instances, the instance does not launch.
+
+  If you need more than seven instances in an Availability Zone, we recommend that you use multiple spread placement groups. Using multiple spread placement groups does not guarantee that instances are spread across groups, but it does ensure they are spread within each group, which limits the impact of certain classes of failures.
++ On AWS Outposts, a rack-level spread placement group can hold as many instances as you have racks in your Outpost deployment, and a host-level spread placement group can hold as many instances as you have hosts.
 + Spread placement groups are not supported for Dedicated Instances.
-+ Host level spread placement groups are only supported for placement groups on AWS Outposts. A host level spread placement group can hold as many instances as you have hosts in your Outpost deployment.
-+ In a Region, a rack level spread placement group can have a maximum of seven running instances per Availability Zone per group. With AWS Outposts, a rack level spread placement group can hold as many instances as you have racks in your Outpost deployment.
 + Capacity Reservations do not reserve capacity in a spread placement group.
 
 ## Precision time placement groups
@@ -123,7 +125,7 @@ The following rules apply to precision time placement groups:
 **Rules and limitations**
 + For the current list of supported instance families, see [Set the time reference on your EC2 instance to use the local Amazon Time Sync Service](configure-ec2-ntp.md).
 + If you start or launch an instance in a precision time placement group and there is insufficient hardware to provide access to the enhanced Amazon Time Sync Service, the request fails. Try again later or try a different Availability Zone.
-+ You cannot delete a precision time placement group that is a parent of a cluster placement group.
++ You can't delete a precision time placement group that is a parent of a cluster placement group.
 + There is no additional charge for using precision time placement groups.
 
 All content copied from https://docs.aws.amazon.com/.

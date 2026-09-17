@@ -23,8 +23,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[NetworkFunctionGroupName](#cfn-networkmanager-transitgatewayroutetableattachment-networkfunctiongroupname)" : {{String}},
       "[PeeringId](#cfn-networkmanager-transitgatewayroutetableattachment-peeringid)" : {{String}},
-      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
-      "[ProposedSegmentChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
       "[RoutingPolicyLabel](#cfn-networkmanager-transitgatewayroutetableattachment-routingpolicylabel)" : {{String}},
       "[Tags](#cfn-networkmanager-transitgatewayroutetableattachment-tags)" : {{[ Tag, ... ]}},
       "[TransitGatewayRouteTableArn](#cfn-networkmanager-transitgatewayroutetableattachment-transitgatewayroutetablearn)" : {{String}}
@@ -40,10 +38,6 @@ Type: AWS::NetworkManager::TransitGatewayRouteTableAttachment
 Properties:
   [NetworkFunctionGroupName](#cfn-networkmanager-transitgatewayroutetableattachment-networkfunctiongroupname): {{String}}
   [PeeringId](#cfn-networkmanager-transitgatewayroutetableattachment-peeringid): {{String}}
-  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange): {{
-    ProposedNetworkFunctionGroupChange}}
-  [ProposedSegmentChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange): {{
-    ProposedSegmentChange}}
   [RoutingPolicyLabel](#cfn-networkmanager-transitgatewayroutetableattachment-routingpolicylabel): {{String}}
   [Tags](#cfn-networkmanager-transitgatewayroutetableattachment-tags): {{
     - Tag}}
@@ -71,23 +65,11 @@ The ID of the transit gateway peering.
 *Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange"></a>
-Describes proposed changes to a network function group.
-*Required*: No
-*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`ProposedSegmentChange`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange"></a>
-This property is read-only. Values can't be assigned to it.
-*Required*: No
-*Type*: [ProposedSegmentChange](aws-properties-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `RoutingPolicyLabel`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-routingpolicylabel"></a>
 Property description not available.
 *Required*: No
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-tags"></a>
 The list of key-value pairs associated with the transit gateway route table attachment.
@@ -112,14 +94,14 @@ The ARN of the transit gateway attachment route table. For example, `"TransitGat
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the attachment ID of the transit gateway route table. For example: `attachment-12367e74104d31234`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-networkmanager-transitgatewayroutetableattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-networkmanager-transitgatewayroutetableattachment-return-values-fn--getatt-fn--getatt"></a>

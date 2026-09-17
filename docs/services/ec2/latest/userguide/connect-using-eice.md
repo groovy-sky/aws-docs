@@ -70,7 +70,7 @@ The following examples use [OpenSSH](https://www.openssh.com/). You can use any 
 
 **To allow only a single connection to an instance using SSH and the `open-tunnel` command**
 
-Use `ssh` and the [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command as follows. The `-o` proxy command encloses the `open-tunnel` command that creates the private tunnel to the instance.
+Use `ssh` and the [open-tunnel](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command as follows. The `-o` proxy command encloses the `open-tunnel` command that creates the private tunnel to the instance.
 
 ```
 ssh -i {{my-key-pair}}.pem {{ec2-user}}@{{i-1234567890abcdef0}} \
@@ -85,7 +85,7 @@ For:
 ### Multi-connection
 <a name="ssh-multi-connection"></a>
 
-To allow multiple connections to an instance, first run the [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command to start listening for new TCP connections, and then use `ssh` to create a new TCP connection and a private tunnel to your instance.
+To allow multiple connections to an instance, first run the [open-tunnel](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command to start listening for new TCP connections, and then use `ssh` to create a new TCP connection and a private tunnel to your instance.
 
 **To allow multiple connections to your instance using SSH and the `open-tunnel` command**
 
@@ -173,14 +173,14 @@ You can use Remote Desktop Protocol (RDP) over EC2 Instance Connect Endpoint to 
 
 1. In your **Downloads** folder, find the RDP desktop file that you downloaded, and drag it onto the RDP client window.
 
-1. Right-click the RDP desktop file and choose **Edit**.
+1. Open the context (right-click) menu for the RDP desktop file and choose **Edit**.
 
 1. In the **Edit PC** window, for **PC name** (the instance to connect to), enter `localhost:{{local-port}}`, where `{{local-port}}` uses the same value as you specified in Step 2, and then choose **Save**.
 
    Note that the following screenshot of the **Edit PC** window is from Microsoft Remote Desktop on a Mac. If you are using a Windows client, the window might be different.
-![The RDP client with localhost:5555 in the PC name field.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-instance-connect-endpoint-rdp.png)
+![The RDP client with localhost:5555 in the PC name field.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-instance-connect-endpoint-rdp.png)
 
-1. In the RDP client, right-click the PC (that you just configured) and choose **Connect** to connect to your instance.
+1. In the RDP client, open the context (right-click) menu for the PC (that you just configured) and choose **Connect** to connect to your instance.
 
 1. At the prompt, enter the decrypted password for the administrator account.
 
@@ -203,6 +203,6 @@ For more troubleshooting tips for Linux instances, see [Troubleshoot issues conn
 ### ErrorCode: AccessDeniedException
 <a name="troubleshoot-eice-2"></a>
 
-If you receive an `AccessDeniedException` error, and the `maxTunnelDuration` condition is specified in the IAM policy, be sure to specify the `--max-tunnel-duration` parameter when connecting to an instance. For more information about this parameter, see [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) in the *AWS CLI Command Reference*.
+If you receive an `AccessDeniedException` error, and the `maxTunnelDuration` condition is specified in the IAM policy, be sure to specify the `--max-tunnel-duration` parameter when connecting to an instance. For more information about this parameter, see [open-tunnel](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) in the *AWS CLI Command Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

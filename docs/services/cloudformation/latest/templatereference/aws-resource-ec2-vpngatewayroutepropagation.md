@@ -2,105 +2,94 @@
 title: "AWS::EC2::VPNGatewayRoutePropagation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPNGatewayRoutePropagation
+<a name="aws-resource-ec2-vpngatewayroutepropagation"></a>
 
-Enables a virtual private gateway (VGW) to propagate routes to the specified route table
-of a VPC.
+Enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
 
-If you reference a VPN gateway that is in the same template as your VPN gateway route
-propagation, you must explicitly declare a dependency on the VPN gateway attachment. The
-`AWS::EC2::VPNGatewayRoutePropagation` resource cannot use the VPN gateway
-until it has successfully attached to the VPC. Add a [DependsOn\
-Attribute](../userguide/aws-attribute-dependson.md) in the `AWS::EC2::VPNGatewayRoutePropagation` resource to
-explicitly declare a dependency on the VPN gateway attachment.
+If you reference a VPN gateway that is in the same template as your VPN gateway route propagation, you must explicitly declare a dependency on the VPN gateway attachment. The `AWS::EC2::VPNGatewayRoutePropagation` resource cannot use the VPN gateway until it has successfully attached to the VPC. Add a [ DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html) in the `AWS::EC2::VPNGatewayRoutePropagation` resource to explicitly declare a dependency on the VPN gateway attachment.
 
 ## Syntax
+<a name="aws-resource-ec2-vpngatewayroutepropagation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpngatewayroutepropagation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPNGatewayRoutePropagation",
   "Properties" : {
-      "RouteTableIds" : [ String, ... ],
-      "VpnGatewayId" : String
+      "[RouteTableIds](#cfn-ec2-vpngatewayroutepropagation-routetableids)" : {{[ String, ... ]}},
+      "[VpnGatewayId](#cfn-ec2-vpngatewayroutepropagation-vpngatewayid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpngatewayroutepropagation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPNGatewayRoutePropagation
 Properties:
-  RouteTableIds:
-    - String
-  VpnGatewayId: String
-
+  [RouteTableIds](#cfn-ec2-vpngatewayroutepropagation-routetableids): {{
+    - String}}
+  [VpnGatewayId](#cfn-ec2-vpngatewayroutepropagation-vpngatewayid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpngatewayroutepropagation-properties"></a>
 
-`RouteTableIds`
+`RouteTableIds`  <a name="cfn-ec2-vpngatewayroutepropagation-routetableids"></a>
+The ID of the route table. The routing table must be associated with the same VPC that the virtual private gateway is attached to.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ID of the route table. The routing table must be associated with the same VPC that
-the virtual private gateway is attached to.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpnGatewayId`
-
-The ID of the virtual private gateway that is attached to a VPC. The virtual private
-gateway must be attached to the same VPC that the routing tables are associated with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VpnGatewayId`  <a name="cfn-ec2-vpngatewayroutepropagation-vpngatewayid"></a>
+The ID of the virtual private gateway that is attached to a VPC. The virtual private gateway must be attached to the same VPC that the routing tables are associated with.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-vpngatewayroutepropagation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpngatewayroutepropagation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the VPN gateway.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-vpngatewayroutepropagation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-vpngatewayroutepropagation-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the VPN gateway.
 
 ## Examples
+<a name="aws-resource-ec2-vpngatewayroutepropagation--examples"></a>
 
 ### VPN gateway route propagation
+<a name="aws-resource-ec2-vpngatewayroutepropagation--examples--VPN_gateway_route_propagation"></a>
 
-The following example enables route propagation for the private route table named
-PrivateRouteTable .
+The following example enables route propagation for the private route table named PrivateRouteTable .
 
 #### JSON
+<a name="aws-resource-ec2-vpngatewayroutepropagation--examples--VPN_gateway_route_propagation--json"></a>
 
-```json
-
+```
 "myVPNGatewayRouteProp" : {
    "Type" : "AWS::EC2::VPNGatewayRoutePropagation",
    "Properties" : {
@@ -111,9 +100,9 @@ PrivateRouteTable .
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpngatewayroutepropagation--examples--VPN_gateway_route_propagation--yaml"></a>
 
-```yaml
-
+```
 myVPNGatewayRouteProp:
    Type: AWS::EC2::VPNGatewayRoutePropagation
    Properties:
@@ -123,14 +112,7 @@ myVPNGatewayRouteProp:
 ```
 
 ## See also
-
-- [EnableVgwRoutePropagation](../../../../reference/awsec2/latest/apireference/api-enablevgwroutepropagation.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+<a name="aws-resource-ec2-vpngatewayroutepropagation--seealso"></a>
++ [EnableVgwRoutePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVgwRoutePropagation.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

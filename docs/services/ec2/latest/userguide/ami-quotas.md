@@ -7,8 +7,6 @@ title: "AMI quotas in Amazon EC2"
 
 The following quotas apply to creating and sharing AMIs. The quotas apply per AWS Region.
 
-****
-
 | Quota name | Description | Default quota per Region |
 | --- | --- | --- |
 | AMIs | The maximum number of public and private AMIs allowed per Region. These include available, pending, and disabled AMIs, and AMIs in the Recycle Bin. | 50,000 |

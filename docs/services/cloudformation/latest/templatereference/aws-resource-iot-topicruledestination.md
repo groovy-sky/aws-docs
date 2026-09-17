@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::IoT::TopicRuleDestination",
   "Properties" : {
       "[HttpUrlProperties](#cfn-iot-topicruledestination-httpurlproperties)" : {{HttpUrlDestinationSummary}},
+      "[InfluxDBProperties](#cfn-iot-topicruledestination-influxdbproperties)" : {{InfluxDBDestinationProperties}},
       "[Status](#cfn-iot-topicruledestination-status)" : {{String}},
       "[VpcProperties](#cfn-iot-topicruledestination-vpcproperties)" : {{VpcDestinationProperties}}
     }
@@ -36,6 +37,8 @@ Type: AWS::IoT::TopicRuleDestination
 Properties:
   [HttpUrlProperties](#cfn-iot-topicruledestination-httpurlproperties): {{
     HttpUrlDestinationSummary}}
+  [InfluxDBProperties](#cfn-iot-topicruledestination-influxdbproperties): {{
+    InfluxDBDestinationProperties}}
   [Status](#cfn-iot-topicruledestination-status): {{String}}
   [VpcProperties](#cfn-iot-topicruledestination-vpcproperties): {{
     VpcDestinationProperties}}
@@ -48,6 +51,12 @@ Properties:
 Properties of the HTTP URL.
 *Required*: No
 *Type*: [HttpUrlDestinationSummary](aws-properties-iot-topicruledestination-httpurldestinationsummary.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`InfluxDBProperties`  <a name="cfn-iot-topicruledestination-influxdbproperties"></a>
+Property description not available.
+*Required*: No
+*Type*: [InfluxDBDestinationProperties](aws-properties-iot-topicruledestination-influxdbdestinationproperties.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Status`  <a name="cfn-iot-topicruledestination-status"></a>
@@ -84,7 +93,7 @@ A value similar to the following is returned:
 
  `a1234567b89c012d3e4fg567hij8k9l01mno1p23q45678901rs234567890t1u2`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-iot-topicruledestination-return-values-fn--getatt"></a>

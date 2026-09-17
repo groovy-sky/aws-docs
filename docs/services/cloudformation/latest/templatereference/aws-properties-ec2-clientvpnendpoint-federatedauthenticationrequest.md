@@ -2,64 +2,49 @@
 title: "AWS::EC2::ClientVpnEndpoint FederatedAuthenticationRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnEndpoint FederatedAuthenticationRequest
+<a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest"></a>
 
 The IAM SAML identity provider used for federated authentication.
 
 ## Syntax
+<a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "SAMLProviderArn" : String,
-  "SelfServiceSAMLProviderArn" : String
+  "[SAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-samlproviderarn)" : {{String}},
+  "[SelfServiceSAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-selfservicesamlproviderarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest-syntax.yaml"></a>
 
-```yaml
-
-  SAMLProviderArn: String
-  SelfServiceSAMLProviderArn: String
-
+```
+  [SAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-samlproviderarn): {{String}}
+  [SelfServiceSAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-selfservicesamlproviderarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest-properties"></a>
 
-`SAMLProviderArn`
-
+`SAMLProviderArn`  <a name="cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-samlproviderarn"></a>
 The Amazon Resource Name (ARN) of the IAM SAML identity provider.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SelfServiceSAMLProviderArn`
-
+`SelfServiceSAMLProviderArn`  <a name="cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-selfservicesamlproviderarn"></a>
 The Amazon Resource Name (ARN) of the IAM SAML identity provider for the self-service portal.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DirectoryServiceAuthenticationRequest
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

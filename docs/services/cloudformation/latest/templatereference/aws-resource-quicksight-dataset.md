@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::DataSet
 <a name="aws-resource-quicksight-dataset"></a>
 
-Creates a dataset. This operation doesn't support datasets that include uploaded files as a source.
+Creates a dataset.
 
 ## Syntax
 <a name="aws-resource-quicksight-dataset-syntax"></a>

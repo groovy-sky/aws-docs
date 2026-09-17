@@ -87,7 +87,7 @@ The list of virtual private cloud (VPC) interface endpoint objects. Users of the
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AgentAccessConfig`  <a name="cfn-appstream-stack-agentaccessconfig"></a>
-Property description not available.
+The agent access configuration of the stack, if agent access is enabled.
 *Required*: No
 *Type*: [AgentAccessConfig](aws-properties-appstream-stack-agentaccessconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

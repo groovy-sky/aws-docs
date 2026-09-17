@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::SecurityHub::HubV2",
   "Properties" : {
+      "[NetworkScanning](#cfn-securityhub-hubv2-networkscanning)" : {{NetworkScanning}},
       "[Tags](#cfn-securityhub-hubv2-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
@@ -32,12 +33,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::SecurityHub::HubV2
 Properties:
+  [NetworkScanning](#cfn-securityhub-hubv2-networkscanning): {{
+    NetworkScanning}}
   [Tags](#cfn-securityhub-hubv2-tags): {{
     {{Key}}: {{Value}}}}
 ```
 
 ## Properties
 <a name="aws-resource-securityhub-hubv2-properties"></a>
+
+`NetworkScanning`  <a name="cfn-securityhub-hubv2-networkscanning"></a>
+Property description not available.
+*Required*: No
+*Type*: [NetworkScanning](aws-properties-securityhub-hubv2-networkscanning.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-securityhub-hubv2-tags"></a>
 The tags to add to the hub V2 resource when you enable Security Hub.
@@ -56,14 +65,14 @@ The tags to add to the hub V2 resource when you enable Security Hub.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `HubV2Arn` for the `HubV2` resource created: `arn:aws:securityhub:region:123456789012:hubv2/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-securityhub-hubv2-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-securityhub-hubv2-return-values-fn--getatt-fn--getatt"></a>

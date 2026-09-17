@@ -22,6 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[AllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage)" : {{String}},
   "[Iops](#cfn-rds-dbinstance-additionalstoragevolume-iops)" : {{Integer}},
   "[MaxAllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-maxallocatedstorage)" : {{Integer}},
+  "[StorageOperationPercentProgress](#cfn-rds-dbinstance-additionalstoragevolume-storageoperationpercentprogress)" : {{Integer}},
+  "[StorageOperationStatus](#cfn-rds-dbinstance-additionalstoragevolume-storageoperationstatus)" : {{String}},
   "[StorageThroughput](#cfn-rds-dbinstance-additionalstoragevolume-storagethroughput)" : {{Integer}},
   "[StorageType](#cfn-rds-dbinstance-additionalstoragevolume-storagetype)" : {{String}},
   "[VolumeName](#cfn-rds-dbinstance-additionalstoragevolume-volumename)" : {{String}}
@@ -35,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [AllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage): {{String}}
   [Iops](#cfn-rds-dbinstance-additionalstoragevolume-iops): {{Integer}}
   [MaxAllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-maxallocatedstorage): {{Integer}}
+  [StorageOperationPercentProgress](#cfn-rds-dbinstance-additionalstoragevolume-storageoperationpercentprogress): {{Integer}}
+  [StorageOperationStatus](#cfn-rds-dbinstance-additionalstoragevolume-storageoperationstatus): {{String}}
   [StorageThroughput](#cfn-rds-dbinstance-additionalstoragevolume-storagethroughput): {{Integer}}
   [StorageType](#cfn-rds-dbinstance-additionalstoragevolume-storagetype): {{String}}
   [VolumeName](#cfn-rds-dbinstance-additionalstoragevolume-volumename): {{String}}
@@ -60,6 +64,18 @@ The number of I/O operations per second (IOPS) provisioned for the additional st
 The upper limit in gibibytes (GiB) to which RDS can automatically scale the storage of the additional storage volume.
 *Required*: No
 *Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StorageOperationPercentProgress`  <a name="cfn-rds-dbinstance-additionalstoragevolume-storageoperationpercentprogress"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StorageOperationStatus`  <a name="cfn-rds-dbinstance-additionalstoragevolume-storageoperationstatus"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StorageThroughput`  <a name="cfn-rds-dbinstance-additionalstoragevolume-storagethroughput"></a>

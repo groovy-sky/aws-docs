@@ -95,7 +95,7 @@ SageMaker applies these settings only to private spaces that the user creates in
 *Required*: No
 *Type*: Array of [CustomFileSystemConfig](aws-properties-sagemaker-userprofile-customfilesystemconfig.md)
 *Minimum*: `0`
-*Maximum*: `2`
+*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CustomPosixUserConfig`  <a name="cfn-sagemaker-userprofile-usersettings-customposixuserconfig"></a>

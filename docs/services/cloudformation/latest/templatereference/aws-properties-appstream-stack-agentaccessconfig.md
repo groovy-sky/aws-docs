@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::AppStream::Stack AgentAccessConfig
 <a name="aws-properties-appstream-stack-agentaccessconfig"></a>
 
-<a name="aws-properties-appstream-stack-agentaccessconfig-description"></a>The `AgentAccessConfig` property type specifies Property description not available. for an [AWS::AppStream::Stack](aws-resource-appstream-stack.md).
+The configuration for agent access on a stack. Agent access enables AI agents to interact with desktop applications during streaming sessions.
 
 ## Syntax
 <a name="aws-properties-appstream-stack-agentaccessconfig-syntax"></a>
@@ -45,39 +45,43 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-appstream-stack-agentaccessconfig-properties"></a>
 
 `S3BucketArn`  <a name="cfn-appstream-stack-agentaccessconfig-s3bucketarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots are stored. Required when ScreenshotsUploadEnabled is true.
 *Required*: No
 *Type*: String
+*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:s3:::[a-z0-9][a-z0-9.\-]{1,61}[a-z0-9]$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScreenImageFormat`  <a name="cfn-appstream-stack-agentaccessconfig-screenimageformat"></a>
-Property description not available.
+The image format for agent screen captures.
 *Required*: Yes
 *Type*: String
+*Allowed values*: `PNG | JPEG`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScreenResolution`  <a name="cfn-appstream-stack-agentaccessconfig-screenresolution"></a>
-Property description not available.
+The screen resolution for the agent streaming environment.
 *Required*: Yes
 *Type*: String
+*Allowed values*: `W_1280xH_720`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScreenshotsUploadEnabled`  <a name="cfn-appstream-stack-agentaccessconfig-screenshotsuploadenabled"></a>
-Property description not available.
+Indicates whether screenshot uploads to Amazon S3 are enabled for agent sessions.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Settings`  <a name="cfn-appstream-stack-agentaccessconfig-settings"></a>
-Property description not available.
+The list of agent access settings that define permissions for each agent action. You must specify at least one setting.
 *Required*: Yes
 *Type*: Array of [AgentAccessSetting](aws-properties-appstream-stack-agentaccesssetting.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UserControlMode`  <a name="cfn-appstream-stack-agentaccessconfig-usercontrolmode"></a>
-Property description not available.
+The user control mode for agent sessions. This setting determines how users can interact with agent sessions.
 *Required*: No
 *Type*: String
+*Allowed values*: `VIEW_ONLY | VIEW_STOP | DISABLED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

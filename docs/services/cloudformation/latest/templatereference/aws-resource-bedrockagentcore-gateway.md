@@ -36,7 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ProtocolConfiguration](#cfn-bedrockagentcore-gateway-protocolconfiguration)" : {{GatewayProtocolConfiguration}},
       "[ProtocolType](#cfn-bedrockagentcore-gateway-protocoltype)" : {{}},
       "[RoleArn](#cfn-bedrockagentcore-gateway-rolearn)" : {{String}},
-      "[Tags](#cfn-bedrockagentcore-gateway-tags)" : {{{{{Key}}: {{Value}}, ...}}}
+      "[Tags](#cfn-bedrockagentcore-gateway-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[WafConfiguration](#cfn-bedrockagentcore-gateway-wafconfiguration)" : {{WafConfiguration}}
     }
 }
 ```
@@ -65,6 +66,8 @@ Properties:
   [RoleArn](#cfn-bedrockagentcore-gateway-rolearn): {{String}}
   [Tags](#cfn-bedrockagentcore-gateway-tags): {{
     {{Key}}: {{Value}}}}
+  [WafConfiguration](#cfn-bedrockagentcore-gateway-wafconfiguration): {{
+    WafConfiguration}}
 ```
 
 ## Properties
@@ -110,7 +113,7 @@ A list of configuration settings for a gateway interceptor. Gateway interceptors
 The KMS key ARN for the gateway.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:[a-z0-9-]{1,20}:kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
+*Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -119,7 +122,7 @@ The KMS key ARN for the gateway.
 The name of the gateway.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^([0-9a-zA-Z][-]?){1,100}$`
+*Pattern*: `^([0-9a-zA-Z][-]?){1,48}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PolicyEngineConfiguration`  <a name="cfn-bedrockagentcore-gateway-policyengineconfiguration"></a>
@@ -144,7 +147,7 @@ The protocol type used by the gateway.
 The ARN of the IAM role that provides permissions for the gateway to access AWS services.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:[a-z0-9-]{1,20}:iam::([0-9]{12})?:role/.+$`
+*Pattern*: `^arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -158,6 +161,12 @@ The tags for the gateway.
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`WafConfiguration`  <a name="cfn-bedrockagentcore-gateway-wafconfiguration"></a>
+The AWS WAF configuration for the gateway. This configuration controls how the gateway behaves when the associated web ACL cannot be evaluated.
+*Required*: No
+*Type*: [WafConfiguration](aws-properties-bedrockagentcore-gateway-wafconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 ## Return values
 <a name="aws-resource-bedrockagentcore-gateway-return-values"></a>
 
@@ -168,14 +177,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `my-gateway-a1b2c3d4e5`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-bedrockagentcore-gateway-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-bedrockagentcore-gateway-return-values-fn--getatt-fn--getatt"></a>
@@ -200,5 +209,8 @@ The status reasons for the target status.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The date and time at which the target was updated.
+
+`WebAclArn`  <a name="WebAclArn-fn::getatt"></a>
+Property description not available.
 
 All content copied from https://docs.aws.amazon.com/.

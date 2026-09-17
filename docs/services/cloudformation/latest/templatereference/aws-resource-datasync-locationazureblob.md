@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AzureBlobType](#cfn-datasync-locationazureblob-azureblobtype)" : {{String}},
       "[CmkSecretConfig](#cfn-datasync-locationazureblob-cmksecretconfig)" : {{CmkSecretConfig}},
       "[CustomSecretConfig](#cfn-datasync-locationazureblob-customsecretconfig)" : {{CustomSecretConfig}},
+      "[FederatedIdentity](#cfn-datasync-locationazureblob-federatedidentity)" : {{AzureFederatedIdentityConfig}},
       "[Subdirectory](#cfn-datasync-locationazureblob-subdirectory)" : {{String}},
       "[Tags](#cfn-datasync-locationazureblob-tags)" : {{[ Tag, ... ]}}
     }
@@ -55,6 +56,8 @@ Properties:
     CmkSecretConfig}}
   [CustomSecretConfig](#cfn-datasync-locationazureblob-customsecretconfig): {{
     CustomSecretConfig}}
+  [FederatedIdentity](#cfn-datasync-locationazureblob-federatedidentity): {{
+    AzureFederatedIdentityConfig}}
   [Subdirectory](#cfn-datasync-locationazureblob-subdirectory): {{String}}
   [Tags](#cfn-datasync-locationazureblob-tags): {{
     - Tag}}
@@ -84,7 +87,7 @@ Specifies the access tier that you want your objects or files transferred into. 
 Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `SAS | NONE`
+*Allowed values*: `SAS | NONE | OIDC`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AzureBlobContainerUrl`  <a name="cfn-datasync-locationazureblob-azureblobcontainerurl"></a>
@@ -123,6 +126,12 @@ You can use either `CmkSecretConfig` or `CustomSecretConfig` to provide credenti
 *Type*: [CustomSecretConfig](aws-properties-datasync-locationazureblob-customsecretconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`FederatedIdentity`  <a name="cfn-datasync-locationazureblob-federatedidentity"></a>
+Property description not available.
+*Required*: No
+*Type*: [AzureFederatedIdentityConfig](aws-properties-datasync-locationazureblob-azurefederatedidentityconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Subdirectory`  <a name="cfn-datasync-locationazureblob-subdirectory"></a>
 Specifies path segments if you want to limit your transfer to a virtual directory in your container (for example, `/my/images`).
 *Required*: No
@@ -148,14 +157,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `arn:aws:datasync:us-east-2:111222333444:location/loc-07db7abfc326c50s3`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-datasync-locationazureblob-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-datasync-locationazureblob-return-values-fn--getatt-fn--getatt"></a>

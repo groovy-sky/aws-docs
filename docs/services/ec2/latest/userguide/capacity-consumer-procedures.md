@@ -28,7 +28,7 @@ Use the following procedures to view an interruptible Capacity Reservation.
 
 1. Choose **Capacity Reservations**.
 
-1. In the **Type** column, look for reservations marked as **Interruptible**.
+1. In the **Interruptible** column, look for reservations marked **Yes**.
 
 1. Note the reservation IDs for use in your instance launches.
 

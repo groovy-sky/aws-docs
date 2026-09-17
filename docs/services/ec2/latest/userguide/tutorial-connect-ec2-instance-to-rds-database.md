@@ -31,7 +31,7 @@ As context for why you'd want to configure a connection between your EC2 instanc
 
 The following diagram shows the resources that are created and the architectural configuration that results from completing all the steps in this tutorial.
 
-![Architecture of the EC2 instance and RDS database created in this tutorial.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-rds-tutorial-architecture.png)
+![Architecture of the EC2 instance and RDS database created in this tutorial.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-rds-tutorial-architecture.png)
 
 The diagram illustrates the following resources that you'll create:
 + You'll create an EC2 instance and an RDS database in the same AWS Region, VPC, and Availability Zone.
@@ -39,7 +39,7 @@ The diagram illustrates the following resources that you'll create:
 + You'll create the RDS database in a private subnet.
 
   When you use the RDS console to create the RDS database and automatically connect the EC2 instance, the VPC, DB subnet group, and public access settings for the database are automatically selected. The RDS database is automatically created in a private subnet within the same VPC as the EC2 instance.
-+ Internet users can connect to the EC2 instance by using SSH or HTTP/HTTPS via an Internet gateway.
++ Internet users can connect to the EC2 instance by using SSH or HTTP/HTTPS through an Internet gateway.
 + Internet users cannot connect directly to the RDS database; only the EC2 instance is connected to the RDS database.
 + When you use the automatic connection feature to allow traffic between the EC2 instance and the RDS database, the following security groups are automatically created and added:
   + Security group **ec2-rds-{{x}}** is created and added to the EC2 instance. It has one outbound rule that references the **rds-ec2-{{x}}** security group as its destination. This allows traffic from the EC2 instance to reach the RDS database with the **rds-ec2-{{x}}** security group.

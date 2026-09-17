@@ -20,12 +20,12 @@ To activate trusted access, you must be an administrator user in the management 
 1. Sign in to AWS as an administrator of the management account and open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
 
 1. From the navigation pane, choose **StackSets**. If trusted access is deactivated, a banner displays that prompts you to activate trusted access.
-![Activate trusted access banner.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/console-stacksets-enable-trusted-access-from-stacksets-list-new.png)
+![Activate trusted access banner.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/console-stacksets-enable-trusted-access-from-stacksets-list-new.png)
 
 1. Choose **Activate trusted access**.
 
    Trusted access is successfully activated when the following banner displays.
-![Trusted access is successfully activated banner.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/console-stackset-trusted-access-enabled-banner-new.png)
+![Trusted access is successfully activated banner.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/console-stackset-trusted-access-enabled-banner-new.png)
 **Note**
 Activate Organizations Access is the same as Enable Organizations Access, and Deactivate Organizations Access is the same as Disable Organizations Access. These terms have been updated based on marketing guidelines.
 
@@ -36,9 +36,9 @@ Before you can deactivate trusted access with AWS Organizations, you must deregi
 
 **Note**
 For information about using API operations instead of the console to activate or deactivate trusted access, see:
-[https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateOrganizationsAccess.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateOrganizationsAccess.html)
-[https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeactivateOrganizationsAccess.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeactivateOrganizationsAccess.html)
-[https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeOrganizationsAccess.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeOrganizationsAccess.html)
+[ActivateOrganizationsAccess](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateOrganizationsAccess.html)
+[DeactivateOrganizationsAccess](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeactivateOrganizationsAccess.html)
+[DescribeOrganizationsAccess](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeOrganizationsAccess.html)
 
 ## Service-linked roles
 <a name="stacksets-orgs-service-linked-roles"></a>

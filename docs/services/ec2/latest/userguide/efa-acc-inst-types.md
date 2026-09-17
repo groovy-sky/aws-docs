@@ -155,7 +155,7 @@ The following snippet shows an example with 3 network interfaces out of the poss
 ## EFA configuration for a P5 and P5e instances
 <a name="efa-for-p5"></a>
 
-`p5.48xlarge` and `p5e.48xlarge` instances support 32 network cards and have a total network bandwidth capacity of 3,200 Gbps, of which up to 800 Gbps can be utilized for IP network traffic. Because EFA and IP network traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other. This means that you can distribute the network bandwidth between EFA traffic and IP traffic in any combination, as long as the total bandwidth does not exceed 3,200 Gbps and IP bandwidth does not exceed 800 Gbps. For example, if you use 400 Gbps for IP bandwidth, you can achieve up to 2,800 Gbps of EFA bandwidth at the same time.
+`p5.48xlarge` and `p5e.48xlarge` instances support 32 network cards and have a total network bandwidth capacity of 3,200 Gbps, of which up to 800 Gbps can be used for IP network traffic. Because EFA and IP network traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other. This means that you can distribute the network bandwidth between EFA traffic and IP traffic in any combination, as long as the total bandwidth does not exceed 3,200 Gbps and IP bandwidth does not exceed 800 Gbps. For example, if you use 400 Gbps for IP bandwidth, you can achieve up to 2,800 Gbps of EFA bandwidth at the same time.
 
 **Use case 1: Save IP addresses and avoid potential Linux IP issues**
 
@@ -233,7 +233,7 @@ $ aws --region $REGION ec2 run-instances \
 ## EFA configuration for a P6-B200 instances
 <a name="efa-for-p6-b200"></a>
 
-P6-B200 instances have a total network bandwidth capacity of 3,200 Gbps, of which up to 1600 Gbps can be utilized for ENA. They have 8 GPUs and 8 network cards, where each network card supports up to 400 Gbps EFA bandwidth and 200 Gbps ENA bandwidth. Since EFA and ENA traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other.
+P6-B200 instances have a total network bandwidth capacity of 3,200 Gbps, of which up to 1600 Gbps can be used for ENA. They have 8 GPUs and 8 network cards, where each network card supports up to 400 Gbps EFA bandwidth and 200 Gbps ENA bandwidth. Since EFA and ENA traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other.
 
 **Use case 1: Save IP addresses**
 
@@ -254,7 +254,7 @@ This configuration consumes at least 8 private IP address per instance and suppo
 
 P6e-GB200 instances can be configured with up to 17 network cards. The following image shows the physical network interface card (NIC) layout for P6e-GB200 instances, along with the mapping of network card indexes (NCIs).
 
-![Physical network interface card (NIC) and network card index (NCI) mapping for P6e-GB200 instances.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/p6e.png)
+![Physical network interface card (NIC) and network card index (NCI) mapping for P6e-GB200 instances.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/p6e.png)
 
 The primary NCI (index 0) supports up to 100 Gbps of ENA bandwidth. NCIs with the following indexes support EFA-only network interfaces and 400 Gbps EFA bandwidth: [1, 3, 5, 7, 9, 11, 13, 15]. NCIs with the following indexes support up to 200 Gbps ENA or EFA bandwidth: [2, 4, 6, 8, 10, 12, 14, 16].
 
@@ -293,7 +293,7 @@ For example, the following configuration provides up to 1,600 Gbps of EFA bandwi
 
 P6-B300 instances have a total network bandwidth capacity of up to 6400 Gbps for EFA traffic, and up to 3870 Gbps for ENA traffic. They have 8 GPUs and 17 network cards, where the primary network card supports only an ENA network interface with up to 350 Gbps of bandwidth. The secondary network cards support up to 400 Gbps EFA and up to 220 Gbps of ENA bandwidth. Since EFA and ENA traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other.
 
-![Physical network interface card (NIC) and network card index (NCI) mapping for P6-B300 instances.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/p6-b300.png)
+![Physical network interface card (NIC) and network card index (NCI) mapping for P6-B300 instances.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/p6-b300.png)
 
 **Use case 1: Save IP addresses**
 

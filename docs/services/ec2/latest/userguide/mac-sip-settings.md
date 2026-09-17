@@ -200,7 +200,7 @@ The following is the contents of the `mac-credentials.json` file referenced in t
 {
   "internalDiskPassword":"internal-disk-admin_password",
   "rootVolumeUsername":"root-volume-admin_username",
-  "rootVolumepassword":"root-volume-admin_password"
+  "rootVolumePassword":"root-volume-admin_password"
 }
 ```
 

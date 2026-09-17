@@ -2,88 +2,94 @@
 title: "AWS::EC2::ClientVpnTargetNetworkAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnTargetNetworkAssociation
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation"></a>
 
-Specifies a target network to associate with a Client VPN endpoint. A target network is
-a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN
-endpoint. You can associate only one subnet in each Availability Zone. We recommend that
-you associate at least two subnets to provide Availability Zone redundancy.
+Specifies a target network to associate with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
 
 ## Syntax
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::ClientVpnTargetNetworkAssociation",
   "Properties" : {
-      "ClientVpnEndpointId" : String,
-      "SubnetId" : String
+      "[AvailabilityZone](#cfn-ec2-clientvpntargetnetworkassociation-availabilityzone)" : {{String}},
+      "[AvailabilityZoneId](#cfn-ec2-clientvpntargetnetworkassociation-availabilityzoneid)" : {{String}},
+      "[ClientVpnEndpointId](#cfn-ec2-clientvpntargetnetworkassociation-clientvpnendpointid)" : {{String}},
+      "[SubnetId](#cfn-ec2-clientvpntargetnetworkassociation-subnetid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::ClientVpnTargetNetworkAssociation
 Properties:
-  ClientVpnEndpointId: String
-  SubnetId: String
-
+  [AvailabilityZone](#cfn-ec2-clientvpntargetnetworkassociation-availabilityzone): {{String}}
+  [AvailabilityZoneId](#cfn-ec2-clientvpntargetnetworkassociation-availabilityzoneid): {{String}}
+  [ClientVpnEndpointId](#cfn-ec2-clientvpntargetnetworkassociation-clientvpnendpointid): {{String}}
+  [SubnetId](#cfn-ec2-clientvpntargetnetworkassociation-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation-properties"></a>
 
-`ClientVpnEndpointId`
+`AvailabilityZone`  <a name="cfn-ec2-clientvpntargetnetworkassociation-availabilityzone"></a>
+Describes Availability Zones, Local Zones, and Wavelength Zones.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`AvailabilityZoneId`  <a name="cfn-ec2-clientvpntargetnetworkassociation-availabilityzoneid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ClientVpnEndpointId`  <a name="cfn-ec2-clientvpntargetnetworkassociation-clientvpnendpointid"></a>
 The ID of the Client VPN endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetId`
-
-The ID of the subnet to associate with the Client VPN endpoint.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`SubnetId`  <a name="cfn-ec2-clientvpntargetnetworkassociation-subnetid"></a>
+The ID of the subnet to associate with the Client VPN endpoint. Required for VPC-based endpoints. For Transit Gateway-based endpoints, use `AvailabilityZone` or `AvailabilityZoneId` instead.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the association ID. For example:
-`cvpn-assoc-1234567890abcdef0`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the association ID. For example: `cvpn-assoc-1234567890abcdef0`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples"></a>
 
 ### Associate a target subnet with a client VPN endpoint
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples--Associate_a_target_subnet_with_a_client_VPN_endpoint"></a>
 
-The following example associates a target network with a client VPN
-endpoint.
+The following example associates a target network with a client VPN endpoint.
 
 #### YAML
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples--Associate_a_target_subnet_with_a_client_VPN_endpoint--yaml"></a>
 
-```yaml
-
+```
 myNetworkAssociation:
   Type: "AWS::EC2::ClientVpnTargetNetworkAssociation"
   Properties:
@@ -94,9 +100,9 @@ myNetworkAssociation:
 ```
 
 #### JSON
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples--Associate_a_target_subnet_with_a_client_VPN_endpoint--json"></a>
 
-```json
-
+```
 "myNetworkAssociation": {
     "Type": "AWS::EC2::ClientVpnTargetNetworkAssociation",
     "Properties": {
@@ -111,19 +117,8 @@ myNetworkAssociation:
 ```
 
 ## See also
-
-- [Getting Started\
-with Client VPN](../../../vpn/latest/clientvpn-admin/cvpn-getting-started.md) in the _AWS Client VPN_
-_Administrator Guide_
-
-- [Target\
-Networks](../../../vpn/latest/clientvpn-admin/cvpn-working-target.md) in the _AWS Client VPN Administrator_
-_Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::ClientVpnRoute
-
-AWS::EC2::CustomerGateway
+<a name="aws-resource-ec2-clientvpntargetnetworkassociation--seealso"></a>
++ [ Getting Started with Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html) in the *AWS Client VPN Administrator Guide*
++ [Target Networks](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-target.html) in the *AWS Client VPN Administrator Guide*
 
 All content copied from https://docs.aws.amazon.com/.

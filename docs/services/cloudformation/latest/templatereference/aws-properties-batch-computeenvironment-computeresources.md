@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AllocationStrategy](#cfn-batch-computeenvironment-computeresources-allocationstrategy)" : {{String}},
   "[BidPercentage](#cfn-batch-computeenvironment-computeresources-bidpercentage)" : {{Integer}},
+  "[CapacityTags](#cfn-batch-computeenvironment-computeresources-capacitytags)" : {{{{{Key}}: {{Value}}, ...}}},
   "[DesiredvCpus](#cfn-batch-computeenvironment-computeresources-desiredvcpus)" : {{Integer}},
   "[Ec2Configuration](#cfn-batch-computeenvironment-computeresources-ec2configuration)" : {{[ Ec2ConfigurationObject, ... ]}},
   "[Ec2KeyPair](#cfn-batch-computeenvironment-computeresources-ec2keypair)" : {{String}},
@@ -28,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[InstanceRole](#cfn-batch-computeenvironment-computeresources-instancerole)" : {{String}},
   "[InstanceTypes](#cfn-batch-computeenvironment-computeresources-instancetypes)" : {{[ String, ... ]}},
   "[LaunchTemplate](#cfn-batch-computeenvironment-computeresources-launchtemplate)" : {{LaunchTemplateSpecification}},
+  "[ManagedInstancesProvider](#cfn-batch-computeenvironment-computeresources-managedinstancesprovider)" : {{ManagedInstancesProvider}},
   "[MaxvCpus](#cfn-batch-computeenvironment-computeresources-maxvcpus)" : {{Integer}},
   "[MinvCpus](#cfn-batch-computeenvironment-computeresources-minvcpus)" : {{Integer}},
   "[PlacementGroup](#cfn-batch-computeenvironment-computeresources-placementgroup)" : {{String}},
@@ -47,6 +49,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AllocationStrategy](#cfn-batch-computeenvironment-computeresources-allocationstrategy): {{String}}
   [BidPercentage](#cfn-batch-computeenvironment-computeresources-bidpercentage): {{Integer}}
+  [CapacityTags](#cfn-batch-computeenvironment-computeresources-capacitytags): {{
+    {{Key}}: {{Value}}}}
   [DesiredvCpus](#cfn-batch-computeenvironment-computeresources-desiredvcpus): {{Integer}}
   [Ec2Configuration](#cfn-batch-computeenvironment-computeresources-ec2configuration): {{
     - Ec2ConfigurationObject}}
@@ -57,6 +61,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [LaunchTemplate](#cfn-batch-computeenvironment-computeresources-launchtemplate): {{
     LaunchTemplateSpecification}}
+  [ManagedInstancesProvider](#cfn-batch-computeenvironment-computeresources-managedinstancesprovider): {{
+    ManagedInstancesProvider}}
   [MaxvCpus](#cfn-batch-computeenvironment-computeresources-maxvcpus): {{Integer}}
   [MinvCpus](#cfn-batch-computeenvironment-computeresources-minvcpus): {{Integer}}
   [PlacementGroup](#cfn-batch-computeenvironment-computeresources-placementgroup): {{String}}
@@ -111,6 +117,14 @@ This parameter isn't applicable to jobs that are running on Fargate resources. D
 *Required*: No
 *Type*: Integer
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
+
+`CapacityTags`  <a name="cfn-batch-computeenvironment-computeresources-capacitytags"></a>
+The tags to apply to the Amazon ECS capacity provider and Amazon EC2 instances launched by the compute environment. These tags are separate from the compute environment resource tags (the top-level `tags` parameter). Use `capacityTags` for cost allocation and organization of the underlying infrastructure resources.
+This parameter is only valid for `ECS_MANAGED_INSTANCES` compute environments. You must have the `batch:SetCapacityTags` permission on the compute environment resource to use this parameter.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DesiredvCpus`  <a name="cfn-batch-computeenvironment-computeresources-desiredvcpus"></a>
 The desired number of vCPUS in the compute environment. AWS Batch modifies this value between the minimum and maximum values based on job queue demand.
@@ -180,6 +194,13 @@ This parameter isn't applicable to jobs running on Fargate resources, and should
 *Type*: [LaunchTemplateSpecification](aws-properties-batch-computeenvironment-launchtemplatespecification.md)
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
+`ManagedInstancesProvider`  <a name="cfn-batch-computeenvironment-computeresources-managedinstancesprovider"></a>
+The configuration for the Amazon ECS Managed Instances capacity provider. This parameter is required when `computeResources.type` is `ECS_MANAGED_INSTANCES` and must not be specified for other compute environment types.
+For more information, see [Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) in the *AWS Batch User Guide*.
+*Required*: No
+*Type*: [ManagedInstancesProvider](aws-properties-batch-computeenvironment-managedinstancesprovider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `MaxvCpus`  <a name="cfn-batch-computeenvironment-computeresources-maxvcpus"></a>
 The maximum number of Amazon EC2 vCPUs that an environment can reach.
 With any allocation strategy except `BEST_FIT` using On-Demand (`EC2`) compute resources, AWS Batch might need to exceed `maxvCpus` to meet your capacity requirements. In this event, AWS Batch never exceeds `maxvCpus` by more than a single instance.
@@ -229,7 +250,7 @@ The VPC subnets where the compute resources are launched. Fargate compute resour
 When updating a compute environment, changing the VPC subnets requires an infrastructure update of the compute environment. For more information, see [Updating compute environments](https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-environments.html) in the *AWS Batch User Guide*.
 AWS Batch on Amazon EC2 and AWS Batch on Amazon EKS support Local Zones. For more information, see [ Local Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-local-zones) in the *Amazon EC2 User Guide for Linux Instances*, [Amazon EKS and AWS Local Zones](https://docs.aws.amazon.com/eks/latest/userguide/local-zones.html) in the *Amazon EKS User Guide* and [ Amazon ECS clusters in Local Zones, Wavelength Zones, and AWS Outposts](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-regions-zones.html#clusters-local-zones) in the *Amazon ECS Developer Guide*.
 AWS Batch on Fargate doesn't currently support Local Zones.
-*Required*: Yes
+*Required*: No
 *Type*: Array of String
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
@@ -249,7 +270,7 @@ When updating compute environment, changing the type of a compute environment re
 When updating the type of a compute environment, changing between `EC2` and `SPOT` or between `FARGATE` and `FARGATE_SPOT` will initiate an infrastructure update, but if you switch between `EC2` and `FARGATE`, CloudFormation will create a new compute environment.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `EC2 | SPOT | FARGATE | FARGATE_SPOT`
+*Allowed values*: `EC2 | SPOT | FARGATE | FARGATE_SPOT | ECS_MANAGED_INSTANCES`
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `UpdateToLatestImageVersion`  <a name="cfn-batch-computeenvironment-computeresources-updatetolatestimageversion"></a>

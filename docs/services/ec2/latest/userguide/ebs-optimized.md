@@ -417,6 +417,7 @@ M8a, M8g, M8gd, M8i, M8id, M8i-flex, M9g, M9gd instance types support configurab
   <tr><td>mac2-m1ultra.metal 2</td><td colspan="2">10000</td><td colspan="2">1250.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac2-m2.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac2-m2pro.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
+  <tr><td>mac-m3ultra.metal 2</td><td colspan="2">10000</td><td colspan="2">1250.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac-m4.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac-m4pro.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac-m4max.metal 2</td><td colspan="2">10000</td><td colspan="2">1250.0</td><td colspan="2">55000</td></tr>
@@ -787,7 +788,7 @@ C8a, C8g, C8gd, C8i, C8id, C8i-flex, C9g, C9gd instance types support configurab
 <a name="current-memory-optimized"></a>
 
 **Note**
-R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i instance types support configurable bandwidth weightings. With these instance types, you can optimize an instance's bandwidth for either networking performance or Amazon EBS performance. The following table shows the default Amazon EBS bandwidth performance for these instance types. For more information, see [EC2 instance bandwidth weighting configuration](configure-bandwidth-weighting.md).
+R8a, R8g, R8gd, R8i, R8id, R8i-flex, R9g, R9gd, X8g, X8aedz, X8i instance types support configurable bandwidth weightings. With these instance types, you can optimize an instance's bandwidth for either networking performance or Amazon EBS performance. The following table shows the default Amazon EBS bandwidth performance for these instance types. For more information, see [EC2 instance bandwidth weighting configuration](configure-bandwidth-weighting.md).
 For maximum IOPS performance with U7i instances, we recommend that you use io2 BlockExpress volumes.
 
 <table>
@@ -1127,6 +1128,28 @@ For maximum IOPS performance with U7i instances, we recommend that you use io2 B
   <tr><td>r8idb.96xlarge 2</td><td colspan="2">300000</td><td colspan="2">37500.0</td><td colspan="2">1440000</td></tr>
   <tr><td>r8idb.metal-48xl 2</td><td colspan="2">150000</td><td colspan="2">18750.0</td><td colspan="2">720000</td></tr>
   <tr><td>r8idb.metal-96xl 2</td><td colspan="2">300000</td><td colspan="2">37500.0</td><td colspan="2">1440000</td></tr>
+  <tr><td>r9g.medium 1</td><td>380</td><td>12000</td><td>47.50</td><td>1500.00</td><td>2500</td><td>48000</td></tr>
+  <tr><td>r9g.large 1</td><td>760</td><td>12000</td><td>95.00</td><td>1500.00</td><td>3600</td><td>48000</td></tr>
+  <tr><td>r9g.xlarge 1</td><td>1500</td><td>12000</td><td>187.50</td><td>1500.00</td><td>6000</td><td>48000</td></tr>
+  <tr><td>r9g.2xlarge 1</td><td>3000</td><td>12000</td><td>375.00</td><td>1500.00</td><td>12000</td><td>48000</td></tr>
+  <tr><td>r9g.4xlarge 1</td><td>6000</td><td>12000</td><td>750.00</td><td>1500.00</td><td>24000</td><td>48000</td></tr>
+  <tr><td>r9g.8xlarge 2</td><td colspan="2">12000</td><td colspan="2">1500.0</td><td colspan="2">48000</td></tr>
+  <tr><td>r9g.12xlarge 2</td><td colspan="2">18000</td><td colspan="2">2250.0</td><td colspan="2">72000</td></tr>
+  <tr><td>r9g.16xlarge 2</td><td colspan="2">24000</td><td colspan="2">3000.0</td><td colspan="2">96000</td></tr>
+  <tr><td>r9g.24xlarge 2</td><td colspan="2">36000</td><td colspan="2">4500.0</td><td colspan="2">144000</td></tr>
+  <tr><td>r9g.48xlarge 2</td><td colspan="2">72000</td><td colspan="2">9000.0</td><td colspan="2">288000</td></tr>
+  <tr><td>r9g.metal-48xl 2</td><td colspan="2">72000</td><td colspan="2">9000.0</td><td colspan="2">288000</td></tr>
+  <tr><td>r9gd.medium 1</td><td>380</td><td>12000</td><td>47.50</td><td>1500.00</td><td>2500</td><td>48000</td></tr>
+  <tr><td>r9gd.large 1</td><td>760</td><td>12000</td><td>95.00</td><td>1500.00</td><td>3600</td><td>48000</td></tr>
+  <tr><td>r9gd.xlarge 1</td><td>1500</td><td>12000</td><td>187.50</td><td>1500.00</td><td>6000</td><td>48000</td></tr>
+  <tr><td>r9gd.2xlarge 1</td><td>3000</td><td>12000</td><td>375.00</td><td>1500.00</td><td>12000</td><td>48000</td></tr>
+  <tr><td>r9gd.4xlarge 1</td><td>6000</td><td>12000</td><td>750.00</td><td>1500.00</td><td>24000</td><td>48000</td></tr>
+  <tr><td>r9gd.8xlarge 2</td><td colspan="2">12000</td><td colspan="2">1500.0</td><td colspan="2">48000</td></tr>
+  <tr><td>r9gd.12xlarge 2</td><td colspan="2">18000</td><td colspan="2">2250.0</td><td colspan="2">72000</td></tr>
+  <tr><td>r9gd.16xlarge 2</td><td colspan="2">24000</td><td colspan="2">3000.0</td><td colspan="2">96000</td></tr>
+  <tr><td>r9gd.24xlarge 2</td><td colspan="2">36000</td><td colspan="2">4500.0</td><td colspan="2">144000</td></tr>
+  <tr><td>r9gd.48xlarge 2</td><td colspan="2">72000</td><td colspan="2">9000.0</td><td colspan="2">288000</td></tr>
+  <tr><td>r9gd.metal-48xl 2</td><td colspan="2">72000</td><td colspan="2">9000.0</td><td colspan="2">288000</td></tr>
   <tr><td>u-3tb1.56xlarge 2</td><td colspan="2">19000</td><td colspan="2">2375.0</td><td colspan="2">80000</td></tr>
   <tr><td>u-6tb1.56xlarge 2</td><td colspan="2">38000</td><td colspan="2">4750.0</td><td colspan="2">160000</td></tr>
   <tr><td>u-6tb1.112xlarge 2</td><td colspan="2">38000</td><td colspan="2">4750.0</td><td colspan="2">160000</td></tr>

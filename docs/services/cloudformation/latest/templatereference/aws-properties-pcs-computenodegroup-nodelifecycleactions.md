@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::PCS::ComputeNodeGroup NodeLifecycleActions
 <a name="aws-properties-pcs-computenodegroup-nodelifecycleactions"></a>
 
-<a name="aws-properties-pcs-computenodegroup-nodelifecycleactions-description"></a>The `NodeLifecycleActions` property type specifies Property description not available. for an [AWS::PCS::ComputeNodeGroup](aws-resource-pcs-computenodegroup.md).
+The lifecycle actions configured on a compute node group. Lifecycle actions define scripts that AWS PCS runs on compute nodes at specific stages of their lifecycle.
 
 ## Syntax
 <a name="aws-properties-pcs-computenodegroup-nodelifecycleactions-syntax"></a>
@@ -37,14 +37,16 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-pcs-computenodegroup-nodelifecycleactions-properties"></a>
 
 `ScriptCachingPolicy`  <a name="cfn-pcs-computenodegroup-nodelifecycleactions-scriptcachingpolicy"></a>
-Property description not available.
+The caching policy for node lifecycle scripts. The default value is `CACHE_ONCE`. Valid values:
++ `CACHE_ONCE` – Downloads each script once and reuses it on subsequent boots.
++ `REFRESH_ON_REBOOT` – Downloads each script on every boot.
 *Required*: No
 *Type*: String
 *Allowed values*: `CACHE_ONCE | REFRESH_ON_REBOOT`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Stages`  <a name="cfn-pcs-computenodegroup-nodelifecycleactions-stages"></a>
-Property description not available.
+The lifecycle stages where you configure scripts to run.
 *Required*: Yes
 *Type*: [NodeLifecycleStages](aws-properties-pcs-computenodegroup-nodelifecyclestages.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

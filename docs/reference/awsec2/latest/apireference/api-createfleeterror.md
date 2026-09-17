@@ -26,9 +26,9 @@ Type: [LaunchTemplateAndOverridesResponse](API_LaunchTemplateAndOverridesRespons
 Required: No
 
  ** lifecycle **
-Indicates if the instance that could not be launched was a Spot, On-Demand, Capacity Block, or Interruptible Capacity Reservation instance.
+Indicates if the instance that could not be launched was a Spot, On-Demand, Capacity Block for ML, or interruptible Capacity Reservation instance. If you are using `ReservedCapacityOptions` with `on-demand-capacity-reservation` in the `ReservationTypes` list, the value can also be `on-demand-capacity-reservation`.
 Type: String
-Valid Values: `spot | on-demand | interruptible-capacity-reservation`
+Valid Values: `spot | on-demand | interruptible-capacity-reservation | capacity-block`
 Required: No
 
 ## See Also

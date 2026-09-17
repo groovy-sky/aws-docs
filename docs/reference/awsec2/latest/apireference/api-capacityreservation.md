@@ -194,6 +194,12 @@ Length Constraints: Fixed length of 12.
 Pattern: `[0-9]{12}`
 Required: No
 
+ ** zeroSizePreference **
+ The zero-size preference configured for the interruptible Capacity Reservation. A value of `retain` keeps the interruptible Capacity Reservation active at zero capacity when you reduce its allocation to zero. A value of `default` cancels the interruptible Capacity Reservation when you reduce its allocation to zero.
+Type: String
+Valid Values: `retain | default`
+Required: No
+
 ## See Also
 <a name="API_CapacityReservation_SeeAlso"></a>
 

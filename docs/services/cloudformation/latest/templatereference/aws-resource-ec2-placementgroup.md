@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::EC2::PlacementGroup",
   "Properties" : {
+      "[ParentGroupId](#cfn-ec2-placementgroup-parentgroupid)" : {{String}},
       "[PartitionCount](#cfn-ec2-placementgroup-partitioncount)" : {{Integer}},
       "[SpreadLevel](#cfn-ec2-placementgroup-spreadlevel)" : {{String}},
       "[Strategy](#cfn-ec2-placementgroup-strategy)" : {{String}},
@@ -41,6 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::EC2::PlacementGroup
 Properties:
+  [ParentGroupId](#cfn-ec2-placementgroup-parentgroupid): {{String}}
   [PartitionCount](#cfn-ec2-placementgroup-partitioncount): {{Integer}}
   [SpreadLevel](#cfn-ec2-placementgroup-spreadlevel): {{String}}
   [Strategy](#cfn-ec2-placementgroup-strategy): {{String}}
@@ -50,6 +52,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-ec2-placementgroup-properties"></a>
+
+`ParentGroupId`  <a name="cfn-ec2-placementgroup-parentgroupid"></a>
+The ID of the parent placement group.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PartitionCount`  <a name="cfn-ec2-placementgroup-partitioncount"></a>
 The number of partitions. Valid only when **Strategy** is set to `partition`.
@@ -87,14 +95,14 @@ The tags to apply to the new placement group.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the placement group.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-ec2-placementgroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-ec2-placementgroup-return-values-fn--getatt-fn--getatt"></a>

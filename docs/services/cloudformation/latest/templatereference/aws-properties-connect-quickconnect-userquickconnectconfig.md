@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Resource Name (ARN) of the flow.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*$`
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*(:[a-zA-Z0-9-]+)?$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UserArn`  <a name="cfn-connect-quickconnect-userquickconnectconfig-userarn"></a>

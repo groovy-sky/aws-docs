@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::MWAAServerless::Workflow",
   "Properties" : {
+      "[Code](#cfn-mwaaserverless-workflow-code)" : {{Code}},
       "[DefinitionS3Location](#cfn-mwaaserverless-workflow-definitions3location)" : {{S3Location}},
       "[Description](#cfn-mwaaserverless-workflow-description)" : {{String}},
       "[EncryptionConfiguration](#cfn-mwaaserverless-workflow-encryptionconfiguration)" : {{EncryptionConfiguration}},
@@ -40,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::MWAAServerless::Workflow
 Properties:
+  [Code](#cfn-mwaaserverless-workflow-code): {{
+    Code}}
   [DefinitionS3Location](#cfn-mwaaserverless-workflow-definitions3location): {{
     S3Location}}
   [Description](#cfn-mwaaserverless-workflow-description): {{String}}
@@ -58,6 +61,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-mwaaserverless-workflow-properties"></a>
+
+`Code`  <a name="cfn-mwaaserverless-workflow-code"></a>
+Property description not available.
+*Required*: No
+*Type*: [Code](aws-properties-mwaaserverless-workflow-code.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DefinitionS3Location`  <a name="cfn-mwaaserverless-workflow-definitions3location"></a>
 The Amazon S3 location of the workflow definition file for this version.
@@ -135,17 +144,20 @@ The trigger mode for the workflow execution.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the workflow ARN.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-mwaaserverless-workflow-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-mwaaserverless-workflow-return-values-fn--getatt-fn--getatt"></a>
+
+`CodeSnapshottedAt`  <a name="CodeSnapshottedAt-fn::getatt"></a>
+Property description not available.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the workflow was created, in ISO 8601 date-time format.

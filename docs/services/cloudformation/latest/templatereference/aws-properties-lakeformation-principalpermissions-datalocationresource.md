@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Required*: Yes
 *Type*: String
 *Minimum*: `12`
-*Maximum*: `12`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ResourceArn`  <a name="cfn-lakeformation-principalpermissions-datalocationresource-resourcearn"></a>

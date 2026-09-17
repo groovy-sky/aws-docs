@@ -20,6 +20,6 @@ Alternatively, use one of the following methods to access the Amazon EC2 API, in
 +  [AWS Tools for PowerShell Cmdlet Reference - Amazon EC2 cmdlets](https://docs.aws.amazon.com/powershell/v5/reference/items/EC2_cmdlets.html)
 +  [AWS SDKs](https://builder.aws.com/build/tools)
 
-This document was last published on July 23, 2026.
+This document was last published on September 16, 2026.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -14,7 +14,7 @@ The following table highlights the differences between basic monitoring and deta
 | Monitoring type | Description | Charges |
 | --- | --- | --- |
 | Basic monitoring | Status check metrics are available in 1-minute periods. All other metrics are available in 5-minute periods. | No charge. |
-| Detailed monitoring | You can get metrics in 1-minute periods, provided you enable detailed monitoring for the instance.<br />Once you've enabled detailed monitoring, you can aggregate the data across groups of similar instances. | You are charged per metric that Amazon EC2 sends to CloudWatch. You are not charged for data storage. For more information, see Paid tier on the [Amazon CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/#Paid_tier). |
+| Detailed monitoring | You can get metrics in 1-minute periods, provided you enable detailed monitoring for the instance.<br />After you've enabled detailed monitoring, you can aggregate the data across groups of similar instances. | You are charged per metric that Amazon EC2 sends to CloudWatch. You are not charged for data storage. For more information, see Paid tier on the [Amazon CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/#Paid_tier). |
 
 **Topics**
 + [Required permissions](#iam-detailed-monitoring)
@@ -24,7 +24,7 @@ The following table highlights the differences between basic monitoring and deta
 ## Required permissions
 <a name="iam-detailed-monitoring"></a>
 
-To enable detailed monitoring for an instance, your user must have permission to use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html) API action. To turn off detailed monitoring for an instance, your user must have permission to use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html) API action.
+To enable detailed monitoring for an instance, your user must have permission to use the [MonitorInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html) API action. To turn off detailed monitoring for an instance, your user must have permission to use the [UnmonitorInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html) API action.
 
 ## Enable detailed monitoring at launch
 <a name="enable-detailed-monitoring"></a>

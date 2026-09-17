@@ -73,7 +73,7 @@ The following table lists the categories of instance metadata. Some of the categ
 |  network/interfaces/macs/{{mac}}/ipv4-associations/{{public-ip}}  | The private IPv4 addresses that are associated with each public IP address and assigned to that interface. | 2011-01-01 |
 | network/interfaces/macs/{{mac}}/ipv6s | The IPv6 addresses assigned to the interface. | 2016-06-30 |
 | network/interfaces/macs/{{mac}}/ipv6-prefix | The IPv6 prefix assigned to the network interface. |  |
-|  network/interfaces/macs/{{mac}}/local-hostname  | The private IPv4 DNS hostname of the instance. In cases where multiple network interfaces are present, this refers to the eth0 device (the device for which the device number is 0). If this is a IPv6-only instance, this is the resource-based name. For more information about IPBN and RBN, see [EC2 instance hostnames and domains](ec2-instance-naming.md). | 2007-01-19 |
+|  network/interfaces/macs/{{mac}}/local-hostname  | The private IPv4 DNS hostname of the network interface. This value is not set for interfaces with no IP addresses at all, such as EFA-only interfaces. If this is an IPv6-only interface, this is the resource-based name. For more information about IPBN and RBN, see [EC2 instance hostnames and domains](ec2-instance-naming.md). | 2007-01-19 |
 |  network/interfaces/macs/{{mac}}/local-ipv4s  | The private IPv4 addresses associated with the interface. If this is an IPv6-only network interface, this item is not set and results in an HTTP 404 response. | 2011-01-01 |
 |  network/interfaces/macs/{{mac}}/mac  | The instance's MAC address. | 2011-01-01 |
 |  network/interfaces/macs/{{mac}}/network-card  | The index of the network card. Some instance types support multiple network cards. | 2020-11-01 |
@@ -117,7 +117,7 @@ The following table lists the categories of dynamic data.
 | Category | Description | Version when category was released |
 | --- | --- | --- |
 | fws/instance-monitoring  | Value showing whether the customer has enabled detailed one-minute monitoring in CloudWatch. Valid values: enabled \| disabled | 2009-04-04 |
-| instance-identity/document  | JSON containing instance attributes, such as instance-id, private IP address, etc. See [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md).  | 2009-04-04 |
+| instance-identity/document  | JSON containing instance attributes, such as instance-id, private IP address, and more. See [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md).  | 2009-04-04 |
 | instance-identity/pkcs7  | Used to verify the document's authenticity and content against the signature. See [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md).  | 2009-04-04 |
 | instance-identity/signature  | Data that can be used by other parties to verify its origin and authenticity. See [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md).  | 2009-04-04 |
 

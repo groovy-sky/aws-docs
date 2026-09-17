@@ -121,7 +121,7 @@ To exclude accelerator-enabled instance types, set `Max` to `0`.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [AcceleratorCountRequest](aws-properties-ec2-spotfleet-acceleratorcountrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AcceleratorManufacturers`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-acceleratormanufacturers"></a>
 Indicates whether instance types must have accelerators by specific manufacturers.
@@ -134,7 +134,7 @@ Default: Any manufacturer
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `amazon-web-services | amd | habana | nvidia | xilinx`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AcceleratorNames`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-acceleratornames"></a>
 The accelerators that must be on the instance type.
@@ -161,14 +161,14 @@ Default: Any accelerator
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `a10g | a100 | h100 | inferentia | k520 | k80 | m60 | radeon-pro-v520 | t4 | t4g | vu9p | v100 | l40s | l4 | gaudi-hl-205 | inferentia2 | trainium | trainium2 | u30`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AcceleratorTotalMemoryMiB`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-acceleratortotalmemorymib"></a>
 The minimum and maximum amount of total accelerator memory, in MiB.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [AcceleratorTotalMemoryMiBRequest](aws-properties-ec2-spotfleet-acceleratortotalmemorymibrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AcceleratorTypes`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-acceleratortypes"></a>
 The accelerator types that must be on the instance type.
@@ -180,7 +180,7 @@ Default: Any accelerator type
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `gpu | fpga | inference | media`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AllowedInstanceTypes`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-allowedinstancetypes"></a>
 The instance types to apply your specified attributes against. All other instance types are ignored, even if they match your specified attributes.
@@ -192,7 +192,7 @@ Default: All instance types
 *Type*: Array of String
 *Minimum*: `1`
 *Maximum*: `30`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BareMetal`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-baremetal"></a>
 Indicates whether bare metal instance types must be included, excluded, or required.
@@ -203,20 +203,20 @@ Default: `excluded`
 *Required*: No
 *Type*: String
 *Allowed values*: `included | required | excluded`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BaselineEbsBandwidthMbps`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-baselineebsbandwidthmbps"></a>
 The minimum and maximum baseline bandwidth to Amazon EBS, in Mbps. For more information, see [Amazon EBS–optimized instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html) in the *Amazon EC2 User Guide*.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [BaselineEbsBandwidthMbpsRequest](aws-properties-ec2-spotfleet-baselineebsbandwidthmbpsrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BaselinePerformanceFactors`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-baselineperformancefactors"></a>
 The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application. Currently, this parameter only supports CPU performance as a baseline performance factor. For more information, see [Performance protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html#ec2fleet-abis-performance-protection) in the *Amazon EC2 User Guide*.
 *Required*: No
 *Type*: [BaselinePerformanceFactorsRequest](aws-properties-ec2-spotfleet-baselineperformancefactorsrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BurstablePerformance`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-burstableperformance"></a>
 Indicates whether burstable performance T instance types are included, excluded, or required. For more information, see [Burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html).
@@ -227,7 +227,7 @@ Default: `excluded`
 *Required*: No
 *Type*: String
 *Allowed values*: `included | required | excluded`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CpuManufacturers`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-cpumanufacturers"></a>
 The CPU manufacturers to include.
@@ -240,7 +240,7 @@ Default: Any manufacturer
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `intel | amd | amazon-web-services | apple`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExcludedInstanceTypes`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-excludedinstancetypes"></a>
 The instance types to exclude.
@@ -252,7 +252,7 @@ Default: No excluded instance types
 *Type*: Array of String
 *Minimum*: `1`
 *Maximum*: `30`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceGenerations`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-instancegenerations"></a>
 Indicates whether current or previous generation instance types are included. The current generation instance types are recommended for use. Current generation instance types are typically the latest two to three generations in each instance family. For more information, see [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon EC2 User Guide*.
@@ -262,7 +262,7 @@ Default: Current and previous generation instance types
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `current | previous`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LocalStorage`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-localstorage"></a>
 Indicates whether instance types with instance store volumes are included, excluded, or required. For more information, [Amazon EC2 instance store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) in the *Amazon EC2 User Guide*.
@@ -273,7 +273,7 @@ Default: `included`
 *Required*: No
 *Type*: String
 *Allowed values*: `included | required | excluded`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LocalStorageTypes`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-localstoragetypes"></a>
 The type of local storage that is required.
@@ -283,7 +283,7 @@ Default: `hdd` and `ssd`
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `hdd | ssd`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxSpotPriceAsPercentageOfOptimalOnDemandPrice`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-maxspotpriceaspercentageofoptimalondemandprice"></a>
 [Price protection] The price protection threshold for Spot Instances, as a percentage of an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. If no current generation C, M, or R instance type matches your attributes, then the identified price is from the lowest priced current generation instance types, and failing that, from the lowest priced previous generation instance types that match your attributes. When Amazon EC2 selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.
@@ -292,34 +292,34 @@ If you set `TargetCapacityUnitType` to `vcpu` or `memory-mib`, the price protect
 Only one of `SpotMaxPricePercentageOverLowestPrice` or `MaxSpotPriceAsPercentageOfOptimalOnDemandPrice` can be specified. If you don't specify either, Amazon EC2 will automatically apply optimal price protection to consistently select from a wide range of instance types. To indicate no price protection threshold for Spot Instances, meaning you want to consider all instance types that match your attributes, include one of these parameters and specify a high value, such as `999999`.
 *Required*: No
 *Type*: Integer
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MemoryGiBPerVCpu`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-memorygibpervcpu"></a>
 The minimum and maximum amount of memory per vCPU, in GiB.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [MemoryGiBPerVCpuRequest](aws-properties-ec2-spotfleet-memorygibpervcpurequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MemoryMiB`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-memorymib"></a>
 The minimum and maximum amount of memory, in MiB.
 *Required*: No
 *Type*: [MemoryMiBRequest](aws-properties-ec2-spotfleet-memorymibrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkBandwidthGbps`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-networkbandwidthgbps"></a>
 The minimum and maximum amount of baseline network bandwidth, in gigabits per second (Gbps). For more information, see [Amazon EC2 instance network bandwidth](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html) in the *Amazon EC2 User Guide*.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [NetworkBandwidthGbpsRequest](aws-properties-ec2-spotfleet-networkbandwidthgbpsrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkInterfaceCount`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-networkinterfacecount"></a>
 The minimum and maximum number of network interfaces.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [NetworkInterfaceCountRequest](aws-properties-ec2-spotfleet-networkinterfacecountrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OnDemandMaxPricePercentageOverLowestPrice`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-ondemandmaxpricepercentageoverlowestprice"></a>
 [Price protection] The price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon EC2 selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.
@@ -330,14 +330,14 @@ If you set `TargetCapacityUnitType` to `vcpu` or `memory-mib`, the price protect
 Default: `20`
 *Required*: No
 *Type*: Integer
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RequireEncryptionInTransit`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-requireencryptionintransit"></a>
 Specifies whether instance types must support encrypting in-transit traffic between instances. For more information, including the supported instance types, see [Encryption in transit](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/data-protection.html#encryption-transit) in the *Amazon EC2 User Guide*.
 Default: `false`
 *Required*: No
 *Type*: Boolean
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RequireHibernateSupport`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-requirehibernatesupport"></a>
 Indicates whether instance types must support hibernation for On-Demand Instances.
@@ -345,7 +345,7 @@ This parameter is not supported for [GetSpotPlacementScores](https://docs.aws.am
 Default: `false`
 *Required*: No
 *Type*: Boolean
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SpotMaxPricePercentageOverLowestPrice`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-spotmaxpricepercentageoverlowestprice"></a>
 [Price protection] The price protection threshold for Spot Instances, as a percentage higher than an identified Spot price. The identified Spot price is the Spot price of the lowest priced current generation C, M, or R instance type with your specified attributes. If no current generation C, M, or R instance type matches your attributes, then the identified Spot price is from the lowest priced current generation instance types, and failing that, from the lowest priced previous generation instance types that match your attributes. When Amazon EC2 selects instance types with your attributes, it will exclude instance types whose Spot price exceeds your specified threshold.
@@ -356,19 +356,19 @@ Only one of `SpotMaxPricePercentageOverLowestPrice` or `MaxSpotPriceAsPercentage
 Default: `100`
 *Required*: No
 *Type*: Integer
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TotalLocalStorageGB`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-totallocalstoragegb"></a>
 The minimum and maximum amount of total local storage, in GB.
 Default: No minimum or maximum limits
 *Required*: No
 *Type*: [TotalLocalStorageGBRequest](aws-properties-ec2-spotfleet-totallocalstoragegbrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VCpuCount`  <a name="cfn-ec2-spotfleet-instancerequirementsrequest-vcpucount"></a>
 The minimum and maximum number of vCPUs.
 *Required*: No
 *Type*: [VCpuCountRangeRequest](aws-properties-ec2-spotfleet-vcpucountrangerequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -43,7 +43,7 @@ The identifier for the Data Catalog where the location is registered with Data C
 *Required*: Yes
 *Type*: String
 *Minimum*: `12`
-*Maximum*: `12`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TagKey`  <a name="cfn-lakeformation-principalpermissions-lftagkeyresource-tagkey"></a>

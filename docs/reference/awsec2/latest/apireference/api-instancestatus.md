@@ -5,10 +5,15 @@ title: "InstanceStatus"
 # InstanceStatus
 <a name="API_InstanceStatus"></a>
 
-Describes the status of an instance.
+Describes the status of an instance, including system status, instance status, attached EBS status, and application status.
 
 ## Contents
 <a name="API_InstanceStatus_Contents"></a>
+
+ ** applicationStatus **
+Reports the application-level health status for the instance.
+Type: [ApplicationStatusSummary](API_ApplicationStatusSummary.md) object
+Required: No
 
  ** attachedEbsStatus **
 Reports impaired functionality that stems from an attached Amazon EBS volume that is unreachable and unable to complete I/O operations.

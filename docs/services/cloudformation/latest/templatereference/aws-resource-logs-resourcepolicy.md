@@ -46,7 +46,7 @@ The details of the policy. It must be formatted in JSON, and you must use backsl
 *Type*: Json
 *Pattern*: `[\u0009\u000A\u000D\u0020-\u00FF]+`
 *Minimum*: `1`
-*Maximum*: `5120`
+*Maximum*: `51200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PolicyName`  <a name="cfn-logs-resourcepolicy-policyname"></a>
@@ -66,7 +66,7 @@ The name of the resource policy.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `PolicyName` of the resource policy.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-logs-resourcepolicy--examples"></a>

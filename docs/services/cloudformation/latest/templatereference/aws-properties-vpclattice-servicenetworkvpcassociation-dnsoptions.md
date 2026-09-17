@@ -41,7 +41,7 @@ The preference for which private domains have a private hosted zone created for 
 *Required*: No
 *Type*: String
 *Allowed values*: `VERIFIED_DOMAINS_ONLY | ALL_DOMAINS | VERIFIED_DOMAINS_AND_SPECIFIED_DOMAINS | SPECIFIED_DOMAINS_ONLY`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PrivateDnsSpecifiedDomains`  <a name="cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednsspecifieddomains"></a>
 Indicates which of the private domains to create private hosted zones for and associate with the specified VPC. Only supported when private DNS is enabled and the private DNS preference is `VERIFIED_DOMAINS_AND_SPECIFIED_DOMAINS` or `SPECIFIED_DOMAINS_ONLY`.
@@ -49,6 +49,6 @@ Indicates which of the private domains to create private hosted zones for and as
 *Type*: Array of String
 *Minimum*: `1 | 1`
 *Maximum*: `255 | 10`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

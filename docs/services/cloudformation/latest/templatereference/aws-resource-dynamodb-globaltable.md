@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DynamoDB::GlobalTable
 <a name="aws-resource-dynamodb-globaltable"></a>
 
-The `AWS::DynamoDB::GlobalTable` resource enables you to create and manage a Version 2019.11.21 global table. This resource cannot be used to create or manage a Version 2017.11.29 global table. For more information, see [Global tables](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/GlobalTables.html).
+The `AWS::DynamoDB::GlobalTable` resource enables you to create and manage a Version 2019.11.21 global table. This resource cannot be used to create or manage a Version 2017.11.29 global table. For more information, see [Global tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html).
 
 **Important**
 You cannot convert a resource of type `AWS::DynamoDB::Table` into a resource of type `AWS::DynamoDB::GlobalTable` by changing its type in your template. **Doing so might result in the deletion of your DynamoDB table.**
@@ -86,6 +86,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[StreamSpecification](#cfn-dynamodb-globaltable-streamspecification)" : {{StreamSpecification}},
       "[TableName](#cfn-dynamodb-globaltable-tablename)" : {{String}},
       "[TimeToLiveSpecification](#cfn-dynamodb-globaltable-timetolivespecification)" : {{TimeToLiveSpecification}},
+      "[VectorIndexes](#cfn-dynamodb-globaltable-vectorindexes)" : {{[ VectorIndex, ... ]}},
       "[WarmThroughput](#cfn-dynamodb-globaltable-warmthroughput)" : {{WarmThroughput}},
       "[WriteOnDemandThroughputSettings](#cfn-dynamodb-globaltable-writeondemandthroughputsettings)" : {{WriteOnDemandThroughputSettings}},
       "[WriteProvisionedThroughputSettings](#cfn-dynamodb-globaltable-writeprovisionedthroughputsettings)" : {{WriteProvisionedThroughputSettings}}
@@ -125,6 +126,8 @@ Properties:
   [TableName](#cfn-dynamodb-globaltable-tablename): {{String}}
   [TimeToLiveSpecification](#cfn-dynamodb-globaltable-timetolivespecification): {{
     TimeToLiveSpecification}}
+  [VectorIndexes](#cfn-dynamodb-globaltable-vectorindexes): {{
+    - VectorIndex}}
   [WarmThroughput](#cfn-dynamodb-globaltable-warmthroughput): {{
     WarmThroughput}}
   [WriteOnDemandThroughputSettings](#cfn-dynamodb-globaltable-writeondemandthroughputsettings): {{
@@ -154,7 +157,7 @@ All replicas in your global table will have the same billing mode. If you use `P
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GlobalSecondaryIndexes`  <a name="cfn-dynamodb-globaltable-globalsecondaryindexes"></a>
-Global secondary indexes to be created on the global table. You can create up to 20 global secondary indexes. Each replica in your global table will have the same global secondary index settings. You can only create or delete one global secondary index in a single stack operation.
+Global secondary indexes to be created on the global table. You can create up to 20 global secondary indexes. Each replica in your global table will have the same global secondary index settings. In a single stack operation, you can create or delete one index. This index can be a global secondary index or a vector index, but not one of each. To change more indexes, use a separate stack operation for each.
 Since the backfilling of an index could take a long time, CloudFormation does not wait for the index to become active. If a stack operation rolls back, CloudFormation might not delete an index that has been added. In that case, you will need to delete the index manually.
 *Required*: No
 *Type*: Array of [GlobalSecondaryIndex](aws-properties-dynamodb-globaltable-globalsecondaryindex.md)
@@ -193,7 +196,7 @@ Specifies the consistency mode for a new global table.
 You can specify one of the following consistency modes:
 + `EVENTUAL`: Configures a new global table for multi-Region eventual consistency (MREC).
 + `STRONG`: Configures a new global table for multi-Region strong consistency (MRSC).
-If you don't specify this field, the global table consistency mode defaults to `EVENTUAL`. For more information about global tables consistency modes, see [ Consistency modes](https://docs.aws.amazon.com/V2globaltables_HowItWorks.html#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
+If you don't specify this field, the global table consistency mode defaults to `EVENTUAL`. For more information about global tables consistency modes, see [ Consistency modes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
 *Required*: No
 *Type*: String
 *Allowed values*: `EVENTUAL | STRONG`
@@ -249,6 +252,15 @@ Specifies the time to live (TTL) settings for the table. This setting will be ap
 *Type*: [TimeToLiveSpecification](aws-properties-dynamodb-globaltable-timetolivespecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`VectorIndexes`  <a name="cfn-dynamodb-globaltable-vectorindexes"></a>
+The vector indexes to create on the global table. Each vector index enables similarity search on a vector attribute.
+Vector indexes are supported only on tables that use on-demand capacity mode. To use vector indexes, you must set `BillingMode` to `PAY_PER_REQUEST`.
+In a single stack operation, you can create or delete one index. This index can be a global secondary index or a vector index, but not one of each. To change more indexes, use a separate stack operation for each.
+*Required*: No
+*Type*: Array of [VectorIndex](aws-properties-dynamodb-globaltable-vectorindex.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `WarmThroughput`  <a name="cfn-dynamodb-globaltable-warmthroughput"></a>
 Provides visibility into the number of read and write operations your table or secondary index can instantaneously support. The settings can be modified using the `UpdateTable` operation to meet the throughput requirements of an upcoming peak event.
 *Required*: No
@@ -275,14 +287,14 @@ Specifies an auto scaling policy for write capacity. This policy will be applied
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the table name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-dynamodb-globaltable-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-dynamodb-globaltable-return-values-fn--getatt-fn--getatt"></a>

@@ -17,7 +17,7 @@ The AWS Nitro System supports Credential Guard for Amazon Elastic Compute Cloud 
 ## Prerequisites
 <a name="credential-guard-prerequisites"></a>
 
-Your Windows instance must meet the following prerequisites to utilize Credential Guard.
+Your Windows instance must meet the following prerequisites to use Credential Guard.
 
 **Amazon Machine Images (AMIs)**
 The AMI must be preconfigured to enable NitroTPM and UEFI Secure Boot. For more information on supported AMIs, see [Requirements for using NitroTPM with Amazon EC2 instances](enable-nitrotpm-prerequisites.md).
@@ -52,7 +52,7 @@ Follow the steps to [launch an instance](ec2-launch-instance-wizard.md), specify
 #### [ AWS CLI ]
 
 **To launch an instance**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
 
 ```
 aws ec2 run-instances \
@@ -67,7 +67,7 @@ aws ec2 run-instances \
 #### [ PowerShell ]
 
 **To launch an instance**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
 
 ```
 New-EC2Instance `
@@ -85,7 +85,7 @@ New-EC2Instance `
 
 You can use the Local Group Policy Editor to disable memory integrity in supported scenarios. The following guidance can be applied for each configuration setting under **Virtualization Based Protection of Code Integrity**:
 + **Enabled without lock** – Modify the setting to **Disabled** to disable memory integrity.
-+ **Enabled with UEFI lock** – Memory integrity has been enabled with UEFI lock. Memory integrity can't be disabled once it has been enabled with UEFI lock. We recommend creating a new instance with memory integrity disabled and terminating the unsupported instance if it's not in use.
++ **Enabled with UEFI lock** – Memory integrity has been enabled with UEFI lock. Memory integrity can't be disabled after it has been enabled with UEFI lock. We recommend creating a new instance with memory integrity disabled and terminating the unsupported instance if it's not in use.
 
 **To disable memory integrity with the Local Group Policy Editor**
 
@@ -132,7 +132,7 @@ Administrator privileges are required to perform the following steps to turn on 
 The remaining policy settings are not required to enable Credential Guard and can be left as **Not Configured**.
 
    The following image displays the VBS settings configured as described previously:
-![Virtualization Based Security Group Policy Object settings with Turn On Virtualization Based Security enabled.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/vbs-credential-guard-gpo-enabled.png)
+![Virtualization Based Security Group Policy Object settings with Turn On Virtualization Based Security enabled.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/vbs-credential-guard-gpo-enabled.png)
 
 1. Reboot the instance to apply the settings.
 
@@ -155,6 +155,6 @@ You must first reboot the instance to finish applying the policy settings requir
 1. The Microsoft System Information tool lists the details for VBS configuration. Next to Virtualization-based security Services, confirm that **Credential Guard** appears as **Running**.
 
    The following image displays VBS is running as described previously:
-![An image of the Microsoft System Information Tool with the Virtualization-based security line showing a status of Running, confirming Credential Guard is running.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/vbs-credential-guard-msinfo32-enabled.png)
+![An image of the Microsoft System Information Tool with the Virtualization-based security line showing a status of Running, confirming Credential Guard is running.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/vbs-credential-guard-msinfo32-enabled.png)
 
 All content copied from https://docs.aws.amazon.com/.

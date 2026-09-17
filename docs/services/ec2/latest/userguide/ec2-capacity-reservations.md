@@ -11,7 +11,7 @@ You can create a Capacity Reservation at any time, and you can choose when it st
 + If you request a **Capacity Reservation for immediate use**, the Capacity Reservation becomes available for use immediately and there is no term commitment. You can modify the Capacity Reservation at any time, and you can cancel it at any time to release the reserved capacity and to stop incurring charges.
 + If you request a **future-dated Capacity Reservation**, you specify when you need the capacity and how long you commit to keeping it. At the specified future date, the Capacity Reservation becomes available for use and billing starts. During the commitment duration, you can't decrease the instance count or commitment duration below your initial commitment. You can cancel the Capacity Reservation, but a cancellation charge might apply depending on when you cancel. After the commitment duration elapses, you can modify the Capacity Reservation in any way or cancel it without charge.
 
-Capacity Reservations can only be used by instances that match their attributes. By default, Capacity Reservations automatically match new instances and running instances that have matching attributes (instance type, platform, Availability Zone, and tenancy). This means that any instance with matching attributes automatically runs in the Capacity Reservation. However, you can also target a Capacity Reservation for specific workloads. This allows you to explicitly control which instances are allowed to run in that reserved capacity. You can also specify that instances will only run in a Capacity Reservation or Capacity Reservation resource group.
+Capacity Reservations can only be used by instances that match their attributes. By default, Capacity Reservations automatically match new instances and running instances that have matching attributes (instance type, platform, Availability Zone, and tenancy). This means that any instance with matching attributes automatically runs in the Capacity Reservation. However, you can also target a Capacity Reservation for specific workloads. This allows you to explicitly control which instances are allowed to run in that reserved capacity. You can also specify that instances will only run in a Capacity Reservation or Capacity Reservation Resource Group.
 
 **Important**
 Future-dated Capacity Reservations are for helping you launch and cover incremental instances, and not to cover existing running instances. If you need to cover existing running instances, use Capacity Reservations that start immediately instead.
@@ -21,7 +21,6 @@ All supported Amazon EC2 instances with matching attributes, that is instance ty
 + Amazon ECS
 + Amazon EKS
 + Amazon EMR
-+ Amazon SageMaker AI
 + AWS Batch
 + AWS Elastic Beanstalk
 + AWS ParallelCluster
@@ -43,7 +42,6 @@ All supported Amazon EC2 instances with matching attributes, that is instance ty
 + [Split off capacity from an existing Capacity Reservation](capacity-reservations-split.md)
 + [Cancel a Capacity Reservation](capacity-reservations-release.md)
 + [Use Capacity Reservations with placement groups](cr-cpg.md)
-+ [Capacity Reservation groups](create-cr-group.md)
 + [Capacity Reservations in Local Zones](capacity-reservations-localzones.md)
 + [Capacity Reservations in Wavelength Zones](capacity-reservations-wavelengthzones.md)
 + [Capacity Reservations on AWS Outposts](capacity-reservations-outposts.md)
@@ -64,10 +62,10 @@ The following table highlights key differences between Capacity Reservations, Re
   <tr><th></th><th>Capacity Reservations</th><th>Zonal Reserved Instances</th><th>Regional Reserved Instances</th><th>Savings Plans</th></tr>
 </thead>
 <tbody>
-  <tr><td>Term</td><td>No commitment required for immediate-use Capacity Reservations. They can be created, modified, and canceled as needed.<br />With future-dated Capacity Reservations, you specify a commitment duration for which you commit to keeping the capacity in your account. You can cancel at any time; a cancellation charge might apply during the commitment duration.</td><td colspan="3">Requires a fixed one-year or three-year commitment</td></tr>
-  <tr><td>Capacity benefit</td><td colspan="2">Capacity reserved in a specific Availability Zone.</td><td colspan="2">No capacity reserved.</td></tr>
-  <tr><td>Billing discount</td><td>No billing discount. †</td><td colspan="3">Provides a billing discount.</td></tr>
-  <tr><td>Instance Limits</td><td>Your On-Demand Instance limits per Region apply.</td><td>Default is 20 per Availability Zone. You can request a limit increase.</td><td>Default is 20 per Region. You can request a limit increase.</td><td>No limit.</td></tr>
+  <tr><td><b>Term</b></td><td>No commitment required for immediate-use Capacity Reservations. They can be created, modified, and canceled as needed.<br />With future-dated Capacity Reservations, you specify a commitment duration for which you commit to keeping the capacity in your account. You can cancel at any time; a cancellation charge might apply during the commitment duration.</td><td colspan="3">Requires a fixed one-year or three-year commitment</td></tr>
+  <tr><td><b>Capacity benefit</b></td><td colspan="2">Capacity reserved in a specific Availability Zone.</td><td colspan="2">No capacity reserved.</td></tr>
+  <tr><td><b>Billing discount</b></td><td>No billing discount. †</td><td colspan="3">Provides a billing discount.</td></tr>
+  <tr><td><b>Instance Limits</b></td><td>Your On-Demand Instance limits per Region apply.</td><td>Default is 20 per Availability Zone. You can request a limit increase.</td><td>Default is 20 per Region. You can request a limit increase.</td><td>No limit.</td></tr>
 </tbody>
 </table>
 
@@ -142,16 +140,12 @@ The following is example output.
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet and check the value of `PlatformDetails`.
 
 ```
-Get-EC2Image `
-    -ImageId {{ami-0abcdef1234567890}} | `
-    Select PlatformDetails
+(Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).PlatformDetails
 ```
 
 The following is example output.
 
 ```
-PlatformDetails
----------------
 Linux/UNIX
 ```
 

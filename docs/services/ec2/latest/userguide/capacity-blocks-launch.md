@@ -29,7 +29,7 @@ If you terminate an instance running in the Capacity Block before the reservatio
 
 1. Expand **Advanced details**, and for **Purchasing option**, choose **Capacity Blocks**. Then do one of the following:
    + To launch the instances into a specific Capacity Block, for **Capacity Reservation** choose **Specify Capacity Reservation**, and then select the Capacity Block.
-   + (*UltraServers only*) To launch the instances into an UltraServer Capacity Block resource group, for **Capacity Reservation** choose **Specify Capacity Reservation resource group**, and then select the resource group.
+   + (*UltraServers only*) To launch the instances into an UltraServer Capacity Block Capacity Reservation Resource Group, for **Capacity Reservation** choose **Specify Capacity Reservation Resource Group**, and then select the Capacity Reservation Resource Group.
 
 1. Choose **Launch instance**.
 
@@ -52,7 +52,7 @@ aws ec2 run-instances \
 --capacity-reservation-specification CapacityReservationTarget={CapacityReservationId={{capacity_block_id}}}
 ```
 
-The following example launches an instance into an UltraServer Capacity Block resource group.
+The following example launches an instance into an UltraServer Capacity Block Capacity Reservation Resource Group.
 
 ```
 aws ec2 run-instances \
@@ -88,7 +88,7 @@ New-EC2Instance `
 -CapacityReservationTarget_CapacityReservationId {{capacity_block_id}}
 ```
 
-The following example launches an instance into an UltraServer Capacity Block resource group.
+The following example launches an instance into an UltraServer Capacity Block Capacity Reservation Resource Group.
 
 ```
 New-EC2Instance `

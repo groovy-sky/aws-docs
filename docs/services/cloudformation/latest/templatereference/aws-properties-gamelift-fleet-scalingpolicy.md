@@ -92,7 +92,7 @@ Name of the Amazon GameLift Servers-defined metric that is used to trigger a sca
 + **PercentIdleInstances** -- Percentage of the total number of active instances that are hosting zero game sessions.
 + **QueueDepth** -- Pending game session placement requests, in any queue, where the current fleet is the top-priority destination.
 + **WaitTime** -- Current wait time for pending game session placement requests, in any queue, where the current fleet is the top-priority destination.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Allowed values*: `ActivatingGameSessions | ActiveGameSessions | ActiveInstances | AvailableGameSessions | AvailablePlayerSessions | CurrentPlayerSessions | IdleInstances | PercentAvailableGameSessions | PercentIdleInstances | QueueDepth | WaitTime | ConcurrentActivatableGameSessions`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -109,7 +109,7 @@ A descriptive label that is associated with a fleet's scaling policy. Policy nam
 The type of scaling policy to create. For a target-based policy, set the parameter *MetricName* to 'PercentAvailableGameSessions' and specify a *TargetConfiguration*. For a rule-based policy set the following parameters: *MetricName*, *ComparisonOperator*, *Threshold*, *EvaluationPeriods*, *ScalingAdjustmentType*, and *ScalingAdjustment*.
 *Required*: No
 *Type*: String
-*Allowed values*: `RuleBased | TargetBased`
+*Allowed values*: `RuleBased | TargetBased | ManagedScaling`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScalingAdjustment`  <a name="cfn-gamelift-fleet-scalingpolicy-scalingadjustment"></a>

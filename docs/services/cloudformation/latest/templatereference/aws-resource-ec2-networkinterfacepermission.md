@@ -2,102 +2,87 @@
 title: "AWS::EC2::NetworkInterfacePermission"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInterfacePermission
+<a name="aws-resource-ec2-networkinterfacepermission"></a>
 
-Specifies a permission for the network interface, For example, you can grant an
-AWS-authorized account permission to attach the network interface
-to an instance in their account.
+Specifies a permission for the network interface, For example, you can grant an AWS-authorized account permission to attach the network interface to an instance in their account.
 
 ## Syntax
+<a name="aws-resource-ec2-networkinterfacepermission-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-networkinterfacepermission-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::NetworkInterfacePermission",
   "Properties" : {
-      "AwsAccountId" : String,
-      "NetworkInterfaceId" : String,
-      "Permission" : String
+      "[AwsAccountId](#cfn-ec2-networkinterfacepermission-awsaccountid)" : {{String}},
+      "[NetworkInterfaceId](#cfn-ec2-networkinterfacepermission-networkinterfaceid)" : {{String}},
+      "[Permission](#cfn-ec2-networkinterfacepermission-permission)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-networkinterfacepermission-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::NetworkInterfacePermission
 Properties:
-  AwsAccountId: String
-  NetworkInterfaceId: String
-  Permission: String
-
+  [AwsAccountId](#cfn-ec2-networkinterfacepermission-awsaccountid): {{String}}
+  [NetworkInterfaceId](#cfn-ec2-networkinterfacepermission-networkinterfaceid): {{String}}
+  [Permission](#cfn-ec2-networkinterfacepermission-permission): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-networkinterfacepermission-properties"></a>
 
-`AwsAccountId`
-
+`AwsAccountId`  <a name="cfn-ec2-networkinterfacepermission-awsaccountid"></a>
 The AWS account ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="cfn-ec2-networkinterfacepermission-networkinterfaceid"></a>
 The ID of the network interface.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Permission`
-
-The type of permission to grant: `INSTANCE-ATTACH` or
-`EIP-ASSOCIATE`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INSTANCE-ATTACH | EIP-ASSOCIATE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Permission`  <a name="cfn-ec2-networkinterfacepermission-permission"></a>
+The type of permission to grant: `INSTANCE-ATTACH` or `EIP-ASSOCIATE`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INSTANCE-ATTACH | EIP-ASSOCIATE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-networkinterfacepermission-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-networkinterfacepermission-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
-`eni-perm-055663b682ea24b48`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example: `eni-perm-055663b682ea24b48`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ec2-networkinterfacepermission--examples"></a>
 
 ### Grant INSTANCE-ATTACH permission
+<a name="aws-resource-ec2-networkinterfacepermission--examples--Grant_INSTANCE-ATTACH_permission"></a>
 
-The following example creates a permission ( `INSTANCE-ATTACH`) for a
-specified network interface and AWS account.
+The following example creates a permission (`INSTANCE-ATTACH`) for a specified network interface and AWS account.
 
 #### JSON
+<a name="aws-resource-ec2-networkinterfacepermission--examples--Grant_INSTANCE-ATTACH_permission--json"></a>
 
-```json
-
+```
 "MyNetworkInterfacePermission": {
    "Type": "AWS::EC2::NetworkInterfacePermission",
    "Properties": {
@@ -106,13 +91,12 @@ specified network interface and AWS account.
       "Permission": "INSTANCE-ATTACH"
    }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-ec2-networkinterfacepermission--examples--Grant_INSTANCE-ATTACH_permission--yaml"></a>
 
-```yaml
-
+```
    MyNetworkInterfacePermission:
       Type: AWS::EC2::NetworkInterfacePermission
       Properties:
@@ -120,11 +104,5 @@ specified network interface and AWS account.
          AwsAccountId: '11111111111'
          Permission: INSTANCE-ATTACH
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnaSrdUdpSpecification
-
-AWS::EC2::NetworkPerformanceMetricSubscription
 
 All content copied from https://docs.aws.amazon.com/.

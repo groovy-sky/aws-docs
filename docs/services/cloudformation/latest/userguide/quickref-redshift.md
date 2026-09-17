@@ -400,7 +400,7 @@ Outputs:
 ```
 
 ## See also
-<a name="w2aac11c41c72b7"></a>
+<a name="w2aac11c47c72b7"></a>
 
 [AWS::Redshift::Cluster](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-redshift-cluster.html)
 

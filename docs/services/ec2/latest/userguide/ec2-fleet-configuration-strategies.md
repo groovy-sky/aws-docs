@@ -7,8 +7,6 @@ title: "Configuration options for your EC2 Fleet or Spot Fleet"
 
 When planning your EC2 Fleet or Spot Fleet, we recommend that you consider the following options when deciding how to configure your fleet.
 
-****
-
 | Configuration option | Question | Documentation |
 | --- | --- | --- |
 | Fleet request type | Do you want a fleet that submits a one-time request for the desired target capacity, or a fleet that maintains target capacity over time? | [EC2 Fleet and Spot Fleet request types](ec2-fleet-request-type.md) |
@@ -19,5 +17,6 @@ When planning your EC2 Fleet or Spot Fleet, we recommend that you consider the f
 | Allocation strategies | Do you want to decide whether to optimize for available capacity, price, or instance types to use for the Spot Instances and On-Demand Instances in your fleet? | [Use allocation strategies to determine how EC2 Fleet or Spot Fleet fulfills Spot and On-Demand capacity](ec2-fleet-allocation-strategy.md) |
 | Capacity Rebalancing | Do you want your fleet to automatically replace at-risk Spot Instances? | [Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances](ec2-fleet-capacity-rebalance.md) |
 | On-Demand Capacity Reservation | Do you want to reserve capacity for the On-Demand Instances in your fleet? | [Use Capacity Reservations to reserve On-Demand capacity in EC2 Fleet](ec2-fleet-on-demand-capacity-reservations.md) |
+| Multiple Capacity Reservation types | Do you want to launch instances across multiple Capacity Reservation types – On-Demand Capacity Reservations, Capacity Blocks for ML, and interruptible Capacity Reservations – using a single Capacity Reservation Resource Group, and optionally fall back to On-Demand capacity? | [Tutorial: Configure your EC2 Fleet to launch instances into multiple Capacity Reservation types using a Capacity Reservation Resource Group](ec2-fleet-launch-instances-multiple-cr-types-walkthrough.md) |
 
 All content copied from https://docs.aws.amazon.com/.

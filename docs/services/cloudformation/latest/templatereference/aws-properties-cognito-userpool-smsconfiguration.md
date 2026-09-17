@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[EumsSms](#cfn-cognito-userpool-smsconfiguration-eumssms)" : {{EumsSmsConfiguration}},
   "[ExternalId](#cfn-cognito-userpool-smsconfiguration-externalid)" : {{String}},
   "[SnsCallerArn](#cfn-cognito-userpool-smsconfiguration-snscallerarn)" : {{String}},
   "[SnsRegion](#cfn-cognito-userpool-smsconfiguration-snsregion)" : {{String}}
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-cognito-userpool-smsconfiguration-syntax.yaml"></a>
 
 ```
+  [EumsSms](#cfn-cognito-userpool-smsconfiguration-eumssms): {{
+    EumsSmsConfiguration}}
   [ExternalId](#cfn-cognito-userpool-smsconfiguration-externalid): {{String}}
   [SnsCallerArn](#cfn-cognito-userpool-smsconfiguration-snscallerarn): {{String}}
   [SnsRegion](#cfn-cognito-userpool-smsconfiguration-snsregion): {{String}}
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-cognito-userpool-smsconfiguration-properties"></a>
+
+`EumsSms`  <a name="cfn-cognito-userpool-smsconfiguration-eumssms"></a>
+Property description not available.
+*Required*: No
+*Type*: [EumsSmsConfiguration](aws-properties-cognito-userpool-eumssmsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExternalId`  <a name="cfn-cognito-userpool-smsconfiguration-externalid"></a>
 The external ID provides additional security for your IAM role. You can use an `ExternalId` with the IAM role that you use with Amazon SNS to send SMS messages for your user pool. If you provide an `ExternalId`, your Amazon Cognito user pool includes it in the request to assume your IAM role. You can configure the role trust policy to require that Amazon Cognito, and any principal, provide the `ExternalID`. If you use the Amazon Cognito Management Console to create a role for SMS multi-factor authentication (MFA), Amazon Cognito creates a role with the required permissions and a trust policy that demonstrates use of the `ExternalId`.
@@ -50,8 +59,8 @@ For more information about the `ExternalId` of a role, see [How to use an extern
 The Amazon Resource Name (ARN) of the Amazon SNS caller. This is the ARN of the IAM role in your AWS account that Amazon Cognito will use to send SMS messages. SMS messages are subject to a [spending limit](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-email-phone-verification.html).
 *Required*: No
 *Type*: String
-*Pattern*: `arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?`
-*Minimum*: `20`
+*Pattern*: `(arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?)?`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

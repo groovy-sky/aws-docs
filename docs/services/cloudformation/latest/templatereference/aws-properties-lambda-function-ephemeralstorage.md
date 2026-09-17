@@ -38,7 +38,7 @@ The size of the function's `/tmp` directory.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `512`
-*Maximum*: `10240`
+*Maximum*: `32768`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

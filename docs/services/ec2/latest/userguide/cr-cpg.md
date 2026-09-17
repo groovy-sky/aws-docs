@@ -19,7 +19,7 @@ You can create Capacity Reservations in placement groups that use the following 
 + Precision Time
 
 **Note**
-Spread and Partition placement groups do not support Capacity Reservations.
+Spread and Partition placement groups do not support Capacity Reservations. Capacity Blocks do not support placement groups.
 
 For information about supported instance types, available Regions, and placement strategies, see [Placement groups for your Amazon EC2 instances](placement-groups.md).
 

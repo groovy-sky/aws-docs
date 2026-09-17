@@ -36,6 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[EvaluationCriteria](#cfn-cloudwatch-alarm-evaluationcriteria)" : {{EvaluationCriteria}},
       "[EvaluationInterval](#cfn-cloudwatch-alarm-evaluationinterval)" : {{Integer}},
       "[EvaluationPeriods](#cfn-cloudwatch-alarm-evaluationperiods)" : {{Integer}},
+      "[EvaluationWindow](#cfn-cloudwatch-alarm-evaluationwindow)" : {{EvaluationWindow}},
       "[ExtendedStatistic](#cfn-cloudwatch-alarm-extendedstatistic)" : {{String}},
       "[InsufficientDataActions](#cfn-cloudwatch-alarm-insufficientdataactions)" : {{[ String, ... ]}},
       "[MetricName](#cfn-cloudwatch-alarm-metricname)" : {{String}},
@@ -48,7 +49,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Threshold](#cfn-cloudwatch-alarm-threshold)" : {{Number}},
       "[ThresholdMetricId](#cfn-cloudwatch-alarm-thresholdmetricid)" : {{String}},
       "[TreatMissingData](#cfn-cloudwatch-alarm-treatmissingdata)" : {{String}},
-      "[Unit](#cfn-cloudwatch-alarm-unit)" : {{String}}
+      "[Unit](#cfn-cloudwatch-alarm-unit)" : {{String}},
+      "[WarmUpConfiguration](#cfn-cloudwatch-alarm-warmupconfiguration)" : {{WarmUpConfiguration}}
     }
 }
 ```
@@ -73,6 +75,8 @@ Properties:
     EvaluationCriteria}}
   [EvaluationInterval](#cfn-cloudwatch-alarm-evaluationinterval): {{Integer}}
   [EvaluationPeriods](#cfn-cloudwatch-alarm-evaluationperiods): {{Integer}}
+  [EvaluationWindow](#cfn-cloudwatch-alarm-evaluationwindow): {{
+    EvaluationWindow}}
   [ExtendedStatistic](#cfn-cloudwatch-alarm-extendedstatistic): {{String}}
   [InsufficientDataActions](#cfn-cloudwatch-alarm-insufficientdataactions): {{
     - String}}
@@ -90,6 +94,8 @@ Properties:
   [ThresholdMetricId](#cfn-cloudwatch-alarm-thresholdmetricid): {{String}}
   [TreatMissingData](#cfn-cloudwatch-alarm-treatmissingdata): {{String}}
   [Unit](#cfn-cloudwatch-alarm-unit): {{String}}
+  [WarmUpConfiguration](#cfn-cloudwatch-alarm-warmupconfiguration): {{
+    WarmUpConfiguration}}
 ```
 
 ## Properties
@@ -175,6 +181,12 @@ For more information, see [Evaluating an Alarm](https://docs.aws.amazon.com/Amaz
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EvaluationWindow`  <a name="cfn-cloudwatch-alarm-evaluationwindow"></a>
+The evaluation window that the alarm uses to select the range of metric data that it evaluates. This is either a sliding window or a wall clock window. For more information, see [Alarm evaluation windows](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-evaluation-window.html) in the *CloudWatch User Guide*.
+*Required*: No
+*Type*: [EvaluationWindow](aws-properties-cloudwatch-alarm-evaluationwindow.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExtendedStatistic`  <a name="cfn-cloudwatch-alarm-extendedstatistic"></a>
@@ -280,6 +292,13 @@ The unit of the metric associated with the alarm. Specify this only if you are c
 *Allowed values*: `Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`WarmUpConfiguration`  <a name="cfn-cloudwatch-alarm-warmupconfiguration"></a>
+The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. During the warm-up period, the alarm stays in `INSUFFICIENT_DATA` and does not perform alarm actions.
+For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
+*Required*: No
+*Type*: [WarmUpConfiguration](aws-properties-cloudwatch-alarm-warmupconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 ## Return values
 <a name="aws-resource-cloudwatch-alarm-return-values"></a>
 
@@ -288,14 +307,14 @@ The unit of the metric associated with the alarm. Specify this only if you are c
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the alarm name, such as `TestAlarm`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-cloudwatch-alarm-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-cloudwatch-alarm-return-values-fn--getatt-fn--getatt"></a>

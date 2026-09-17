@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AvailabilityZone](#cfn-mediaconnect-routeroutput-availabilityzone)" : {{String}},
       "[Configuration](#cfn-mediaconnect-routeroutput-configuration)" : {{RouterOutputConfiguration}},
+      "[FabricConfiguration](#cfn-mediaconnect-routeroutput-fabricconfiguration)" : {{FabricConfiguration}},
       "[MaintenanceConfiguration](#cfn-mediaconnect-routeroutput-maintenanceconfiguration)" : {{MaintenanceConfiguration}},
       "[MaximumBitrate](#cfn-mediaconnect-routeroutput-maximumbitrate)" : {{Integer}},
       "[Name](#cfn-mediaconnect-routeroutput-name)" : {{String}},
@@ -43,6 +44,8 @@ Properties:
   [AvailabilityZone](#cfn-mediaconnect-routeroutput-availabilityzone): {{String}}
   [Configuration](#cfn-mediaconnect-routeroutput-configuration): {{
     RouterOutputConfiguration}}
+  [FabricConfiguration](#cfn-mediaconnect-routeroutput-fabricconfiguration): {{
+    FabricConfiguration}}
   [MaintenanceConfiguration](#cfn-mediaconnect-routeroutput-maintenanceconfiguration): {{
     MaintenanceConfiguration}}
   [MaximumBitrate](#cfn-mediaconnect-routeroutput-maximumbitrate): {{Integer}}
@@ -67,6 +70,12 @@ The Availability Zone of the router output.
 The configuration settings for a router output.
 *Required*: Yes
 *Type*: [RouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-routeroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FabricConfiguration`  <a name="cfn-mediaconnect-routeroutput-fabricconfiguration"></a>
+The fabric configuration settings for the router output.
+*Required*: No
+*Type*: [FabricConfiguration](aws-properties-mediaconnect-routeroutput-fabricconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaintenanceConfiguration`  <a name="cfn-mediaconnect-routeroutput-maintenanceconfiguration"></a>
@@ -126,14 +135,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `{ "Ref": "arn:aws:mediaconnect:us-west-2:111122223333:routerOutput:56eb95d755a1" }`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-mediaconnect-routeroutput-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-mediaconnect-routeroutput-return-values-fn--getatt-fn--getatt"></a>

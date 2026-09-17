@@ -40,7 +40,7 @@ The idle session timeout for the AgentCore Runtime.
 *Required*: No
 *Type*: Integer
 *Minimum*: `60`
-*Maximum*: `28800`
+*Maximum*: `1209600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxLifetime`  <a name="cfn-bedrockagentcore-runtime-lifecycleconfiguration-maxlifetime"></a>
@@ -48,7 +48,7 @@ The maximum lifetime for the AgentCore Runtime.
 *Required*: No
 *Type*: Integer
 *Minimum*: `60`
-*Maximum*: `28800`
+*Maximum*: `1209600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

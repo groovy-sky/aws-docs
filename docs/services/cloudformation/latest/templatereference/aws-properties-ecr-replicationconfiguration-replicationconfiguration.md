@@ -39,7 +39,7 @@ An array of objects representing the replication destinations and repository fil
 *Required*: Yes
 *Type*: Array of [ReplicationRule](aws-properties-ecr-replicationconfiguration-replicationrule.md)
 *Minimum*: `0`
-*Maximum*: `10`
+*Maximum*: `25`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

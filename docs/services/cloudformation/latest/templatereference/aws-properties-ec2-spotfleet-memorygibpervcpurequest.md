@@ -39,12 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The maximum amount of memory per vCPU, in GiB. To specify no maximum limit, omit this parameter.
 *Required*: No
 *Type*: Number
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Min`  <a name="cfn-ec2-spotfleet-memorygibpervcpurequest-min"></a>
 The minimum amount of memory per vCPU, in GiB. To specify no minimum limit, omit this parameter.
 *Required*: No
 *Type*: Number
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

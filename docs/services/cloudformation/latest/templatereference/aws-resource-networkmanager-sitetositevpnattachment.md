@@ -23,8 +23,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[CoreNetworkId](#cfn-networkmanager-sitetositevpnattachment-corenetworkid)" : {{String}},
       "[NetworkFunctionGroupName](#cfn-networkmanager-sitetositevpnattachment-networkfunctiongroupname)" : {{String}},
-      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
-      "[ProposedSegmentChange](#cfn-networkmanager-sitetositevpnattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
       "[RoutingPolicyLabel](#cfn-networkmanager-sitetositevpnattachment-routingpolicylabel)" : {{String}},
       "[Tags](#cfn-networkmanager-sitetositevpnattachment-tags)" : {{[ Tag, ... ]}},
       "[VpnConnectionArn](#cfn-networkmanager-sitetositevpnattachment-vpnconnectionarn)" : {{String}}
@@ -40,10 +38,6 @@ Type: AWS::NetworkManager::SiteToSiteVpnAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-sitetositevpnattachment-corenetworkid): {{String}}
   [NetworkFunctionGroupName](#cfn-networkmanager-sitetositevpnattachment-networkfunctiongroupname): {{String}}
-  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange): {{
-    ProposedNetworkFunctionGroupChange}}
-  [ProposedSegmentChange](#cfn-networkmanager-sitetositevpnattachment-proposedsegmentchange): {{
-    ProposedSegmentChange}}
   [RoutingPolicyLabel](#cfn-networkmanager-sitetositevpnattachment-routingpolicylabel): {{String}}
   [Tags](#cfn-networkmanager-sitetositevpnattachment-tags): {{
     - Tag}}
@@ -68,23 +62,11 @@ The name of the network function group.
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange"></a>
-Describes proposed changes to a network function group.
-*Required*: No
-*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`ProposedSegmentChange`  <a name="cfn-networkmanager-sitetositevpnattachment-proposedsegmentchange"></a>
-Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.
-*Required*: No
-*Type*: [ProposedSegmentChange](aws-properties-networkmanager-sitetositevpnattachment-proposedsegmentchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `RoutingPolicyLabel`  <a name="cfn-networkmanager-sitetositevpnattachment-routingpolicylabel"></a>
 Property description not available.
 *Required*: No
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-networkmanager-sitetositevpnattachment-tags"></a>
 The tags associated with the Site-to-Site VPN attachment.
@@ -109,14 +91,14 @@ The ARN of the site-to-site VPN attachment.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `AttachmentId`. For example, `{ "Ref: "attachment-05467e74104d33861" }`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-networkmanager-sitetositevpnattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-networkmanager-sitetositevpnattachment-return-values-fn--getatt-fn--getatt"></a>

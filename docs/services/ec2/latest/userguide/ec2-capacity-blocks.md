@@ -31,7 +31,7 @@ You can reserve a Capacity Block with a reservation start time up to eight weeks
 + [View Capacity Blocks](capacity-blocks-view.md)
 + [Extend Capacity Blocks](capacity-blocks-extend.md)
 + [Share Capacity Blocks](capacity-blocks-share.md)
-+ [Create a resource group for UltraServer Capacity Blocks](cb-group.md)
++ [Create a Capacity Reservation Resource Group for UltraServer Capacity Blocks](cb-group.md)
 + [Monitor Capacity Blocks using EventBridge](capacity-blocks-monitor.md)
 + [Logging Capacity Blocks API calls with AWS CloudTrail](capacity-blocks-logging-using-cloudtrail.md)
 
@@ -46,19 +46,19 @@ Capacity Block sizes of 64 instances are not supported for all instance types in
 ### Instance Capacity Blocks
 <a name="capacity-blocks-instance-prerequisites"></a>
 
-| Instance type | US East (N. Virginia) us-east-1 | US East (Ohio) us-east-2 | US West (N. California) us-west-1 | US West (Oregon) us-west-2 | Europe (Stockholm) eu-north-1 | Europe (London) eu-west-2 | Europe (Spain) eu-south-2 | Asia Pacific (Tokyo) ap-northeast-1 | Asia Pacific (Seoul) ap-northeast-2 | Asia Pacific (Mumbai) ap-south-1 | Asia Pacific (Sydney) ap-southeast-2 | Asia Pacific (Jakarta) ap-southeast-3 | Asia Pacific (Melbourne) ap-southeast-4 | South America (São Paulo) sa-east-1 | AWS GovCloud (US-East) us-gov-east-1 | AWS GovCloud (US-West) us-gov-west-1 | US East (Atlanta) us-east-1-atl-2a | US West (Phoenix) us-west-2-phx-2a |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| p6-b300.48xlarge | ✓ |  |  | ✓ |  |  |  |  |  |  |  |  |  |  | ✓ |  | ✓ |  |
-| p6-b200.48xlarge | ✓ | ✓ |  | ✓ |  |  |  |  |  | ✓ |  |  |  |  | ✓ | ✓ |  |  |
-| p5.4xlarge | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ |  | ✓ | ✓ |  |  | ✓ |  |  |  |  |
-| p5.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  | ✓ | ✓ | ✓ |  | ✓ |  |  | ✓ |  |
-| p5e.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  | ✓ | ✓ | ✓ |  | ✓ |  |  |  | ✓ |
-| p5en.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |
-| p4d.24xlarge | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| p4de.24xlarge | ✓ |  |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| trn1.32xlarge | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  | ✓ |  |  |  |  |  |
-| trn2.3xlarge |  |  |  |  |  |  |  |  |  |  |  |  | ✓ | ✓ |  |  |  |  |
-| trn2.48xlarge |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Instance type | US East (N. Virginia) us-east-1 | US East (Ohio) us-east-2 | US West (N. California) us-west-1 | US West (Oregon) us-west-2 | Europe (Stockholm) eu-north-1 | Europe (London) eu-west-2 | Europe (Spain) eu-south-2 | Asia Pacific (Tokyo) ap-northeast-1 | Asia Pacific (Seoul) ap-northeast-2 | Asia Pacific (Mumbai) ap-south-1 | Asia Pacific (Hyderabad) ap-south-2 | Asia Pacific (Sydney) ap-southeast-2 | Asia Pacific (Jakarta) ap-southeast-3 | Asia Pacific (Melbourne) ap-southeast-4 | South America (São Paulo) sa-east-1 | AWS GovCloud (US-East) us-gov-east-1 | AWS GovCloud (US-West) us-gov-west-1 | US East (Atlanta) us-east-1-atl-2a | US West (Phoenix) us-west-2-phx-2a |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| p6-b300.48xlarge | ✓ |  |  | ✓ |  |  |  |  | ✓ |  | ✓ |  | ✓ |  |  | ✓ |  | ✓ |  |
+| p6-b200.48xlarge | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |
+| p5.4xlarge | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ |  | ✓ |  | ✓ |  |  | ✓ |  |  |  |  |
+| p5.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ |  |  | ✓ |  |
+| p5e.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ |  |  |  | ✓ |
+| p5en.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  | ✓ |  |
+| p4d.24xlarge | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| p4de.24xlarge | ✓ |  |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| trn1.32xlarge | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  | ✓ |  | ✓ |  | ✓ |  |  |  |  |  |
+| trn2.3xlarge |  |  |  |  |  |  |  |  |  |  |  |  |  | ✓ | ✓ |  |  |  |  |
+| trn2.48xlarge |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ### UltraServer Capacity Blocks
 <a name="capacity-blocks-ultraserver-prerequisites"></a>
@@ -82,7 +82,7 @@ Capacity Blocks for ML currently support instances and UltraServers with default
 <a name="capacity-blocks-considerations"></a>
 
 Before you use Capacity Blocks, consider the following details and limitations.
-+ If we detect impairment impacting an UltraServer Capacity Block, we will notify you but generally will not take action to terminate your instances on the Capacity Block. This is to minimize unintended disruption to your workloads. You can continue using the UltraServer Capacity Block as is after receiving this notification or request remediation by terminating all instances on the capacity block and submitting an AWS support case. After we receive your support case, we will notify you when we have completed remediation and you can relaunch instances onto your UltraServer Capacity Block.
++ If impairment is detected on an UltraServer Capacity Block, you are notified but generally your instances are not terminated on the Capacity Block. This is to minimize unintended disruption to your workloads. You can continue using the UltraServer Capacity Block as is after receiving this notification or request remediation by terminating all instances on the capacity block and submitting an AWS support case. After your support case is received, you are notified when remediation is complete and you can relaunch instances onto your UltraServer Capacity Block.
 + For `P6e-GB200` UltraServer Capacity Blocks, you must terminate your instances at least 60 minutes before the Capacity Block end time.
 +  To purchase and use Capacity Blocks in Local Zones, you must be opted in to the Local Zone.
 + Each Capacity Block can have up to 64 instances, and you can have up to 256 instances across Capacity Blocks.
@@ -93,7 +93,8 @@ Before you use Capacity Blocks, consider the following details and limitations.
 + Capacity Block cancellations aren't allowed.
 + UltraServer Capacity Blocks can't be shared across AWS accounts or within your AWS Organization.
 + Capacity Block can't be [moved](capacity-reservations-move.md) or [split](capacity-reservations-split.md).
-+ Only UltraServer Capacity Blocks can be used with resource groups. Instance Capacity Blocks can't be used with resource groups. For more information, see [Create a resource group for UltraServer Capacity Blocks](cb-group.md).
++ You can add both UltraServer Capacity Blocks and instance Capacity Blocks to a Capacity Reservation Resource Group. For more information, see [Capacity Reservation Resource Groups](cr-groups.md).
++ Capacity Blocks do not support placement groups. You can't specify a placement group when you launch instances into a Capacity Block, whether you target the Capacity Block by its reservation ID or through a Capacity Reservation Resource Group.
 + The total number of instances that can be reserved in Capacity Blocks across all accounts in your AWS Organization can't exceed 256 instances on a particular date.
 + To use a Capacity Block, instances must specifically target the reservation ID.
 + Instances in a Capacity Block don't count against your On-Demand Instances limits.

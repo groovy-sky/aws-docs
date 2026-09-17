@@ -511,6 +511,18 @@ The following instance types support ENA Express.
 | r8idb.96xlarge | x86\_64 |
 | r8idb.metal-48xl | x86\_64 |
 | r8idb.metal-96xl | x86\_64 |
+| r9g.8xlarge | arm64 |
+| r9g.12xlarge | arm64 |
+| r9g.16xlarge | arm64 |
+| r9g.24xlarge | arm64 |
+| r9g.48xlarge | arm64 |
+| r9g.metal-48xl | arm64 |
+| r9gd.8xlarge | arm64 |
+| r9gd.12xlarge | arm64 |
+| r9gd.16xlarge | arm64 |
+| r9gd.24xlarge | arm64 |
+| r9gd.48xlarge | arm64 |
+| r9gd.metal-48xl | arm64 |
 | u7i-6tb.112xlarge | x86\_64 |
 | u7i-8tb.112xlarge | x86\_64 |
 | u7i-12tb.224xlarge | x86\_64 |
@@ -634,7 +646,7 @@ The ENA driver for the Amazon Linux distribution disables byte queue limits by d
 + **TCP autocorking** – Checks whether TCP autocorking is disabled. Disabling autocorking can reduce latency for certain ENA Express TCP traffic patterns, such as request-response workloads. This might result in a minimal increase in packet processing overhead.
 + **TX queue size and Large LLQ** – Verifies that the transmit queue size for the network interface is large enough for optimal performance. The script also checks whether the ENA module parameter explicitly disables the Large Low Latency Queue (Large LLQ) feature, as it can reduce the available TX queue depth. For more information about Large LLQ and its impact on TX queue size, see [Large Low Latency Queue (Large LLQ)](https://github.com/amzn/amzn-drivers/tree/master/kernel/linux/ena#large-low-latency-queue-large-llq) on GitHub.
 + **RX queue size** – Checks that the receive ring buffer for the network interface is large enough to handle incoming traffic efficiently and avoid packet drops under load.
-+ **TCP and network socket buffer sizes** – Validates that the TCP receive and send buffer maximum sizes, as well as the core network socket buffer defaults and maximums, are large enough to sustain high throughput. These settings are important in environments with increased network latency, where you need larger buffers to utilize the connection.
++ **TCP and network socket buffer sizes** – Validates that the TCP receive and send buffer maximum sizes, as well as the core network socket buffer defaults and maximums, are large enough to sustain high throughput. These settings are important in environments with increased network latency, where you need larger buffers to use the connection.
 + **TCP congestion control** – Verifies that the TCP congestion control configuration is optimized for use with ENA Express in environments with increased network latency.
 
 The script also reports additional diagnostic information, including the ENA driver version, ENA SRD statistics, interrupt moderation settings, queue configuration, and socket buffer sizes. This information can be useful for troubleshooting ENA Express performance issues.

@@ -33,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DomainName](#cfn-opensearchservice-domain-domainname)" : {{String}},
       "[EBSOptions](#cfn-opensearchservice-domain-ebsoptions)" : {{EBSOptions}},
       "[EncryptionAtRestOptions](#cfn-opensearchservice-domain-encryptionatrestoptions)" : {{EncryptionAtRestOptions}},
+      "[EngineMode](#cfn-opensearchservice-domain-enginemode)" : {{String}},
       "[EngineVersion](#cfn-opensearchservice-domain-engineversion)" : {{String}},
       "[IdentityCenterOptions](#cfn-opensearchservice-domain-identitycenteroptions)" : {{IdentityCenterOptions}},
       "[IPAddressType](#cfn-opensearchservice-domain-ipaddresstype)" : {{String}},
@@ -43,6 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[SnapshotOptions](#cfn-opensearchservice-domain-snapshotoptions)" : {{SnapshotOptions}},
       "[SoftwareUpdateOptions](#cfn-opensearchservice-domain-softwareupdateoptions)" : {{SoftwareUpdateOptions}},
       "[Tags](#cfn-opensearchservice-domain-tags)" : {{[ Tag, ... ]}},
+      "[UseCase](#cfn-opensearchservice-domain-usecase)" : {{String}},
       "[VPCOptions](#cfn-opensearchservice-domain-vpcoptions)" : {{VPCOptions}}
     }
 }
@@ -76,6 +78,7 @@ Properties:
     EBSOptions}}
   [EncryptionAtRestOptions](#cfn-opensearchservice-domain-encryptionatrestoptions): {{
     EncryptionAtRestOptions}}
+  [EngineMode](#cfn-opensearchservice-domain-enginemode): {{String}}
   [EngineVersion](#cfn-opensearchservice-domain-engineversion): {{String}}
   [IdentityCenterOptions](#cfn-opensearchservice-domain-identitycenteroptions): {{
     IdentityCenterOptions}}
@@ -93,6 +96,7 @@ Properties:
     SoftwareUpdateOptions}}
   [Tags](#cfn-opensearchservice-domain-tags): {{
     - Tag}}
+  [UseCase](#cfn-opensearchservice-domain-usecase): {{String}}
   [VPCOptions](#cfn-opensearchservice-domain-vpcoptions): {{
     VPCOptions}}
 ```
@@ -177,6 +181,13 @@ If no encryption at rest options were initially specified in the template, updat
 *Type*: [EncryptionAtRestOptions](aws-properties-opensearchservice-domain-encryptionatrestoptions.md)
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
+`EngineMode`  <a name="cfn-opensearchservice-domain-enginemode"></a>
+The engine mode for the domain.
+*Required*: No
+*Type*: String
+*Allowed values*: `GENERAL | OPTIMIZED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `EngineVersion`  <a name="cfn-opensearchservice-domain-engineversion"></a>
 The version of OpenSearch to use. The value must be in the format `OpenSearch_X.Y` or `Elasticsearch_X.Y`. If not specified, the latest version of OpenSearch is used. For information about the versions that OpenSearch Service supports, see [Supported versions of OpenSearch and Elasticsearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html#choosing-version) in the *Amazon OpenSearch Service Developer Guide*.
 If you set the [EnableVersionUpgrade](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html#cfn-attributes-updatepolicy-upgradeopensearchdomain) update policy to `true`, you can update `EngineVersion` without interruption. When `EnableVersionUpgrade` is set to `false`, or is not specified, updating `EngineVersion` results in [replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement).
@@ -239,6 +250,13 @@ Service software update options for the domain.
 An arbitrary set of tags (key–value pairs) to associate with the OpenSearch Service domain.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-opensearchservice-domain-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`UseCase`  <a name="cfn-opensearchservice-domain-usecase"></a>
+The primary use case for the domain.
+*Required*: No
+*Type*: String
+*Allowed values*: `SEARCH | VECTOR | OBSERVABILITY | MIXED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VPCOptions`  <a name="cfn-opensearchservice-domain-vpcoptions"></a>

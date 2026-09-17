@@ -77,7 +77,8 @@ A description of the data provider. Descriptions can have up to 31 characters. A
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Engine`  <a name="cfn-dms-dataprovider-engine"></a>
-The type of database engine for the data provider. Valid values include `"aurora"`, `"aurora-postgresql"`, `"mysql"`, `"oracle"`, `"postgres"`, `"sqlserver"`, `redshift`, `mariadb`, `mongodb`, `db2`, `db2-zos`, `docdb`, and `sybase`. A value of `"aurora"` represents Amazon Aurora MySQL-Compatible Edition.
+The type of database engine for the data provider.
+Valid values: `aurora`, `aurora-postgresql`, `db2`, `db2-zos`, `docdb`, `mariadb`, `mongodb`, `mysql`, `oracle`, `postgres`, `redshift`, `sqlserver`, and `sybase`. A value of `aurora` represents Amazon Aurora MySQL-Compatible Edition.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `aurora | aurora_postgresql | mysql | oracle | postgres | sqlserver | redshift | mariadb | mongodb | docdb | db2 | db2_zos | sybase`
@@ -109,14 +110,14 @@ Property description not available.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-dms-dataprovider-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-dms-dataprovider-return-values-fn--getatt-fn--getatt"></a>

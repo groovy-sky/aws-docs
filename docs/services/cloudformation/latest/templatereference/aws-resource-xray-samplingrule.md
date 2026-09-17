@@ -12,7 +12,7 @@ Use the `AWS::XRay::SamplingRule` resource to specify a sampling rule, which con
 **Note**
 `SamplingRule.Version` can only be set when creating a sampling rule. Updating the version will cause the update to fail.
 
-Services retrieve rules with [GetSamplingRules](https://docs.aws.amazon.com//xray/latest/api/API_GetSamplingRules.html), and evaluate each rule in ascending order of *priority* for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with [GetSamplingTargets](https://docs.aws.amazon.com//xray/latest/api/API_GetSamplingTargets.html) to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
+Services retrieve rules with [GetSamplingRules](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.html), and evaluate each rule in ascending order of *priority* for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with [GetSamplingTargets](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.html) to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
 
 ## Syntax
 <a name="aws-resource-xray-samplingrule-syntax"></a>
@@ -67,14 +67,14 @@ An array of key-value pairs to apply to this resource.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the sampling rule.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-xray-samplingrule-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-xray-samplingrule-return-values-fn--getatt-fn--getatt"></a>
@@ -203,8 +203,8 @@ Resources:
 
 ## See also
 <a name="aws-resource-xray-samplingrule--seealso"></a>
-+  [Configuring sampling rules in the X-Ray console](https://docs.aws.amazon.com//xray/latest/devguide/xray-console-sampling.html)
-+  [Using sampling rules with the X-Ray API](https://docs.aws.amazon.com//xray/latest/devguide/xray-api-sampling.html)
-+ [CreateSamplingRule](https://docs.aws.amazon.com//xray/latest/api/API_CreateSamplingRule.html) action in the X-Ray API Reference
++  [Configuring sampling rules in the X-Ray console](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-sampling.html)
++  [Using sampling rules with the X-Ray API](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-sampling.html)
++ [CreateSamplingRule](https://docs.aws.amazon.com/xray/latest/api/API_CreateSamplingRule.html) action in the X-Ray API Reference
 
 All content copied from https://docs.aws.amazon.com/.

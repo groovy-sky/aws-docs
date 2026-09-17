@@ -45,7 +45,7 @@ The identifier for the Data Catalog. The Data Catalog is the persistent metadata
 *Required*: Yes
 *Type*: String
 *Minimum*: `12`
-*Maximum*: `12`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Expression`  <a name="cfn-lakeformation-principalpermissions-lftagpolicyresource-expression"></a>

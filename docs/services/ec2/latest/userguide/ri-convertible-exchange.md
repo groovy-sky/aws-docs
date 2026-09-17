@@ -51,7 +51,7 @@ If the total value (hourly price \* number of remaining hours) of the new Conver
 
 Exchanging Convertible Reserved Instances is free. However, you might be required to pay a true-up cost, which is a prorated upfront cost of the difference between the Convertible Reserved Instances that you had and the new Convertible Reserved Instances that you receive from the exchange.
 
-Each Convertible Reserved Instance has a list value. This list value is compared to the list value of the Convertible Reserved Instances that you want in order to determine how many instance reservations you can receive from the exchange.
+Each Convertible Reserved Instance has a list value. This list value is compared to the list value of the Convertible Reserved Instances that you want to determine how many instance reservations you can receive from the exchange.
 
 For example: You have 1 x $35-list value Convertible Reserved Instance that you want to exchange for a new instance type with a list value of $10.
 
@@ -100,7 +100,7 @@ In this example, you have a `t2.micro` Convertible Reserved Instance with four i
 
 1. Exchange one of the new `t2.micro` Convertible Reserved Instances for an `m4.xlarge` Convertible Reserved Instance.
 
-![Modifying and exchange Reserved Instances.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-split-cri-multiple.png)
+![Modifying and exchange Reserved Instances.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-split-cri-multiple.png)
 
 **Example: Convertible Reserved Instance with a single instance**
 In this example, you have a `t2.large` Convertible Reserved Instance. To change it to a smaller `t2.medium` instance and a `m3.medium` instance:
@@ -109,7 +109,7 @@ In this example, you have a `t2.large` Convertible Reserved Instance. To change 
 
 1. Exchange one of the new `t2.medium` Convertible Reserved Instances for an `m3.medium` Convertible Reserved Instance.
 
-![Modify and exchange Reserved Instances.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-split-cri-single.png)
+![Modify and exchange Reserved Instances.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-split-cri-single.png)
 
 For more information, see [Support for modifying instance sizes](ri-modifying.md#ri-modification-instancemove) and [Submit exchange requests](#ri-exchange-process).
 

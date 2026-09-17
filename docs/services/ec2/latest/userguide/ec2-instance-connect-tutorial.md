@@ -61,7 +61,7 @@ You'll create a policy that is configured as follows:
 ------
 
 **Important**
-The IAM policy created in this tutorial is a highly permissive policy; it allows you to connect to any instance using any AMI username. We're using this highly permissive policy to keep the tutorial simple and focused on the specific configurations that this tutorial is teaching. However, in a production environment, we recommend that your IAM policy is configured to provide [least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege). For example IAM policies, see [Grant IAM permissions for EC2 Instance Connect](ec2-instance-connect-configure-IAM-role.md).
+The IAM policy created in this tutorial is a highly permissive policy; it allows you to connect to any instance using any AMI username. This tutorial uses this highly permissive policy to keep the tutorial simple and focused on the specific configurations that this tutorial is teaching. However, in a production environment, we recommend that your IAM policy is configured to provide [least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege). For example IAM policies, see [Grant IAM permissions for EC2 Instance Connect](ec2-instance-connect-configure-IAM-role.md).
 
 **To create and attach an IAM policy that allows you to use EC2 Instance Connect to connect to your instances**
 
@@ -110,12 +110,12 @@ The IAM policy created in this tutorial is a highly permissive policy; it allows
 ### View an animation: Create an IAM policy
 <a name="eic-tut1-task1-animation1"></a>
 
-![Creating an IAM policy in the IAM console.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/eic-tut1-task1-create-iam-policy.gif)
+![Creating an IAM policy in the IAM console.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/eic-tut1-task1-create-iam-policy.gif)
 
 ### View an animation: Attach an IAM policy
 <a name="eic-tut1-task1-animation2"></a>
 
-![Attaching an IAM policy to an IAM identity.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/eic-tut1-task1-attach-iam-policy.gif)
+![Attaching an IAM policy to an IAM identity.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/eic-tut1-task1-attach-iam-policy.gif)
 
 ## Task 2: Allow inbound traffic from the EC2 Instance Connect service to your instance
 <a name="eic-tut1-task2"></a>
@@ -161,12 +161,12 @@ You'll create a security group that allows inbound SSH traffic on port 22 from t
 ### View an animation: Create the security group
 <a name="eic-tut1-task2-animation"></a>
 
-![Configuring a security group for the EIC endpoint.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/tut1-task2-eic-security-group.gif)
+![Configuring a security group for the EIC endpoint.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/tut1-task2-eic-security-group.gif)
 
 ## Task 3: Launch your instance
 <a name="eic-tut1-task3"></a>
 
-When you launch an instance, you must specify an AMI that contains the information required to launch the instance. You can choose to launch an instance with or without EC2 Instance Connect pre-installed. In this task, we specify an AMI that comes pre-installed with EC2 Instance Connect.
+When you launch an instance, you must specify an AMI that contains the information required to launch the instance. You can choose to launch an instance with or without EC2 Instance Connect pre-installed. In this task, you specify an AMI that comes pre-installed with EC2 Instance Connect.
 
 If you launch your instance without EC2 Instance Connect pre-installed, and you want to use EC2 Instance Connect to connect to your instance, you'll need to perform additional configuration steps. These steps are outside the scope of this tutorial.
 
@@ -205,7 +205,7 @@ To use EC2 Instance Connect in the Amazon EC2 console to connect to an instance,
 ### View an animation: Launch your instance
 <a name="eic-tut1-task3-animation"></a>
 
-![Launching an instance with EC2 Instance Connect pre-installed.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/tut1-task3-launch-an-instance.gif)
+![Launching an instance with EC2 Instance Connect pre-installed.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/tut1-task3-launch-an-instance.gif)
 
 ## Task 4: Connect to your instance
 <a name="eic-tut1-task4"></a>
@@ -241,6 +241,6 @@ Use the following steps to connect to your instance. To view an animation of the
 ### View an animation: Connect to your instance
 <a name="eic-tut1-task4-animation"></a>
 
-![Connecting to an instance using EC2 Instance Connect.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/eic-tut1-task4-connect.gif)
+![Connecting to an instance using EC2 Instance Connect.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/eic-tut1-task4-connect.gif)
 
 All content copied from https://docs.aws.amazon.com/.

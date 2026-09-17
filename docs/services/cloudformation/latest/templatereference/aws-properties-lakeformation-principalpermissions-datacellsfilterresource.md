@@ -60,7 +60,7 @@ The ID of the catalog to which the table belongs.
 *Required*: Yes
 *Type*: String
 *Minimum*: `12`
-*Maximum*: `12`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TableName`  <a name="cfn-lakeformation-principalpermissions-datacellsfilterresource-tablename"></a>

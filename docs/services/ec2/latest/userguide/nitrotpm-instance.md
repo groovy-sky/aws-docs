@@ -5,7 +5,7 @@ title: "Enable or stop using NitroTPM on an Amazon EC2 instance"
 # Enable or stop using NitroTPM on an Amazon EC2 instance
 <a name="nitrotpm-instance"></a>
 
-You can enable an Amazon EC2 instance for NitroTPM only at launch. Once an instance is enabled for NitroTPM, you can't disable it. If you no longer need to use NitroTPM, you must configure the operating system to stop using it.
+You can enable an Amazon EC2 instance for NitroTPM only at launch. After an instance is enabled for NitroTPM, you can't disable it. If you no longer need to use NitroTPM, you must configure the operating system to stop using it.
 
 **Topics**
 + [Launch an instance with NitroTPM enabled](#launch-instance-with-nitrotpm)

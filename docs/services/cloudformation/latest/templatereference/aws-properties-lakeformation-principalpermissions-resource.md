@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[Catalog](#cfn-lakeformation-principalpermissions-resource-catalog)" : {{Json}},
+  "[Catalog](#cfn-lakeformation-principalpermissions-resource-catalog)" : {{CatalogResource}},
   "[Database](#cfn-lakeformation-principalpermissions-resource-database)" : {{DatabaseResource}},
   "[DataCellsFilter](#cfn-lakeformation-principalpermissions-resource-datacellsfilter)" : {{DataCellsFilterResource}},
   "[DataLocation](#cfn-lakeformation-principalpermissions-resource-datalocation)" : {{DataLocationResource}},
@@ -34,7 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lakeformation-principalpermissions-resource-syntax.yaml"></a>
 
 ```
-  [Catalog](#cfn-lakeformation-principalpermissions-resource-catalog): {{Json}}
+  [Catalog](#cfn-lakeformation-principalpermissions-resource-catalog): {{
+    CatalogResource}}
   [Database](#cfn-lakeformation-principalpermissions-resource-database): {{
     DatabaseResource}}
   [DataCellsFilter](#cfn-lakeformation-principalpermissions-resource-datacellsfilter): {{
@@ -57,7 +58,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `Catalog`  <a name="cfn-lakeformation-principalpermissions-resource-catalog"></a>
 The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment.
 *Required*: No
-*Type*: Json
+*Type*: [CatalogResource](aws-properties-lakeformation-principalpermissions-catalogresource.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Database`  <a name="cfn-lakeformation-principalpermissions-resource-database"></a>

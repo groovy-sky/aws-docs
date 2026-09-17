@@ -23,12 +23,16 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AsyncInferenceConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig)" : {{AsyncInferenceConfig}},
       "[DataCaptureConfig](#cfn-sagemaker-endpointconfig-datacaptureconfig)" : {{DataCaptureConfig}},
+      "[EnableNetworkIsolation](#cfn-sagemaker-endpointconfig-enablenetworkisolation)" : {{Boolean}},
       "[EndpointConfigName](#cfn-sagemaker-endpointconfig-endpointconfigname)" : {{String}},
+      "[ExecutionRoleArn](#cfn-sagemaker-endpointconfig-executionrolearn)" : {{String}},
       "[ExplainerConfig](#cfn-sagemaker-endpointconfig-explainerconfig)" : {{ExplainerConfig}},
       "[KmsKeyId](#cfn-sagemaker-endpointconfig-kmskeyid)" : {{String}},
+      "[MetricsConfig](#cfn-sagemaker-endpointconfig-metricsconfig)" : {{MetricsConfig}},
       "[ProductionVariants](#cfn-sagemaker-endpointconfig-productionvariants)" : {{[ ProductionVariant, ... ]}},
       "[ShadowProductionVariants](#cfn-sagemaker-endpointconfig-shadowproductionvariants)" : {{[ ProductionVariant, ... ]}},
-      "[Tags](#cfn-sagemaker-endpointconfig-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-sagemaker-endpointconfig-tags)" : {{[ Tag, ... ]}},
+      "[VpcConfig](#cfn-sagemaker-endpointconfig-vpcconfig)" : {{VpcConfig}}
     }
 }
 ```
@@ -43,16 +47,22 @@ Properties:
     AsyncInferenceConfig}}
   [DataCaptureConfig](#cfn-sagemaker-endpointconfig-datacaptureconfig): {{
     DataCaptureConfig}}
+  [EnableNetworkIsolation](#cfn-sagemaker-endpointconfig-enablenetworkisolation): {{Boolean}}
   [EndpointConfigName](#cfn-sagemaker-endpointconfig-endpointconfigname): {{String}}
+  [ExecutionRoleArn](#cfn-sagemaker-endpointconfig-executionrolearn): {{String}}
   [ExplainerConfig](#cfn-sagemaker-endpointconfig-explainerconfig): {{
     ExplainerConfig}}
   [KmsKeyId](#cfn-sagemaker-endpointconfig-kmskeyid): {{String}}
+  [MetricsConfig](#cfn-sagemaker-endpointconfig-metricsconfig): {{
+    MetricsConfig}}
   [ProductionVariants](#cfn-sagemaker-endpointconfig-productionvariants): {{
     - ProductionVariant}}
   [ShadowProductionVariants](#cfn-sagemaker-endpointconfig-shadowproductionvariants): {{
     - ProductionVariant}}
   [Tags](#cfn-sagemaker-endpointconfig-tags): {{
     - Tag}}
+  [VpcConfig](#cfn-sagemaker-endpointconfig-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
@@ -70,13 +80,24 @@ Specifies how to capture endpoint data for model monitor. The data capture confi
 *Type*: [DataCaptureConfig](aws-properties-sagemaker-endpointconfig-datacaptureconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`EnableNetworkIsolation`  <a name="cfn-sagemaker-endpointconfig-enablenetworkisolation"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `EndpointConfigName`  <a name="cfn-sagemaker-endpointconfig-endpointconfigname"></a>
 The name of the endpoint configuration.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-*Minimum*: `0`
+*Minimum*: `1`
 *Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ExecutionRoleArn`  <a name="cfn-sagemaker-endpointconfig-executionrolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ExplainerConfig`  <a name="cfn-sagemaker-endpointconfig-explainerconfig"></a>
@@ -91,7 +112,7 @@ The Amazon Resource Name (ARN) of an AWS Key Management Service key that Amazon 
 + Key ARN: `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`
 + Alias name: `alias/ExampleAlias`
 + Alias name ARN: `arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias`
-The KMS key policy must grant permission to the IAM role that you specify in your `CreateEndpoint`, `UpdateEndpoint` requests. For more information, refer to the AWS Key Management Service section [Using Key Policies in AWS KMS ](https://docs.aws.amazon.com//kms/latest/developerguide/key-policies.html)
+The KMS key policy must grant permission to the IAM role that you specify in your `CreateEndpoint`, `UpdateEndpoint` requests. For more information, refer to the AWS Key Management Service section [Using Key Policies in AWS KMS ](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
 Certain Nitro-based instances include local storage, dependent on the instance type. Local storage volumes are encrypted using a hardware module on the instance. You can't request a `KmsKeyId` when using an instance type with local storage. If any of the models that you specify in the `ProductionVariants` parameter use nitro-based instances with local storage, do not specify a value for the `KmsKeyId` parameter. If you specify a value for `KmsKeyId` when using any nitro-based instances with local storage, the call to `CreateEndpointConfig` fails.
 For a list of instance types that support local instance storage, see [Instance Store Volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#instance-store-volumes).
 For more information about local instance storage encryption, see [SSD Instance Store Volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ssd-instance-store.html).
@@ -100,6 +121,12 @@ For more information about local instance storage encryption, see [SSD Instance 
 *Pattern*: `[a-zA-Z0-9:/_-]*`
 *Minimum*: `0`
 *Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`MetricsConfig`  <a name="cfn-sagemaker-endpointconfig-metricsconfig"></a>
+The configuration for Utilization metrics.
+*Required*: No
+*Type*: [MetricsConfig](aws-properties-sagemaker-endpointconfig-metricsconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ProductionVariants`  <a name="cfn-sagemaker-endpointconfig-productionvariants"></a>
@@ -127,6 +154,12 @@ For more information, see [Resource Tag](https://docs.aws.amazon.com/AWSCloudFor
 *Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`VpcConfig`  <a name="cfn-sagemaker-endpointconfig-vpcconfig"></a>
+Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC. For more information, see [Give SageMaker Access to Resources in your Amazon VPC](https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
+*Required*: No
+*Type*: [VpcConfig](aws-properties-sagemaker-endpointconfig-vpcconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 ## Return values
 <a name="aws-resource-sagemaker-endpointconfig-return-values"></a>
 
@@ -135,17 +168,20 @@ For more information, see [Resource Tag](https://docs.aws.amazon.com/AWSCloudFor
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the endpoint configuration, such as `arn:aws:sagemaker:us-west-2:01234567>8901:endpoint-config/myendpointconfig`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-sagemaker-endpointconfig-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-sagemaker-endpointconfig-return-values-fn--getatt-fn--getatt"></a>
+
+`EndpointConfigArn`  <a name="EndpointConfigArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the endpoint configuration.
 
 `EndpointConfigName`  <a name="EndpointConfigName-fn::getatt"></a>
 The name of the endpoint configuration, such as `MyEndpointConfiguration`.

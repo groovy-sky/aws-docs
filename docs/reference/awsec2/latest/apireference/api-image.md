@@ -114,6 +114,11 @@ Type: String
 Valid Values: `v2.0`
 Required: No
 
+ ** instanceTypeSpecification **
+The instance type specification for the AMI, which defines which instance types are compatible with this image.
+Type: [InstanceTypeSpecification](API_InstanceTypeSpecification.md) object
+Required: No
+
  ** isPublic **
 Indicates whether the image has public launch permissions. The value is `true` if this image has public launch permissions or `false` if it has only implicit and explicit launch permissions.
 Type: Boolean

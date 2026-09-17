@@ -56,7 +56,7 @@ The instances distribution.
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `LaunchTemplate`  <a name="cfn-autoscaling-autoscalinggroup-mixedinstancespolicy-launchtemplate"></a>
-One or more launch templates and the instance types (overrides) that are used to launch EC2 instances to fulfill On-Demand and Spot capacities.
+One or more launch templates and the instance types (overrides) that are used to launch EC2 instances to fulfill the configured capacities.
 *Required*: Yes
 *Type*: [LaunchTemplate](aws-properties-autoscaling-autoscalinggroup-launchtemplate.md)
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

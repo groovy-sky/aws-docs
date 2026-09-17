@@ -116,7 +116,7 @@ Default: `PublicIpv4`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PreSharedKeyStorage`  <a name="cfn-ec2-vpnconnection-presharedkeystorage"></a>
-Describes the storage location for an instance store-backed AMI.
+Specifies the storage mode for the pre-shared key (PSK). Valid values are `Standard` (stored in the AWS Site-to-Site VPN service) or `SecretsManager` (stored in AWS Secrets Manager).
 *Required*: No
 *Type*: String
 *Allowed values*: `Standard | SecretsManager`
@@ -212,14 +212,14 @@ The tunnel options for the VPN connection.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the VPN connection.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-ec2-vpnconnection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-ec2-vpnconnection-return-values-fn--getatt-fn--getatt"></a>

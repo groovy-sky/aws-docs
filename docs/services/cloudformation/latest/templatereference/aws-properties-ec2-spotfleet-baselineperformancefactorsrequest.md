@@ -40,6 +40,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 The CPU performance to consider, using an instance family as the baseline reference.
 *Required*: No
 *Type*: [CpuPerformanceFactorRequest](aws-properties-ec2-spotfleet-cpuperformancefactorrequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

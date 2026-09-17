@@ -79,7 +79,7 @@ This field can have one of the following values:
 The signing protocol of the origin access control, which determines how CloudFront signs (authenticates) requests. The only valid value is `sigv4`.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(sigv4)$`
+*Pattern*: `^(sigv4|sigv4a)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

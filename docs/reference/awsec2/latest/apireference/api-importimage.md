@@ -6,7 +6,7 @@ title: "ImportImage"
 <a name="API_ImportImage"></a>
 
 **Note**
-To import your virtual machines (VMs) with a console-based experience, you can use the *Import virtual machine images to AWS * template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
+To import your virtual machines (VMs) with a console-based experience, you can use the *Import virtual machine images to AWS * template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [* AWS Migration Hub Orchestrator User Guide*](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
 
 Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).
 
@@ -205,7 +205,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ImportImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ImportImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ImportImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ImportImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ImportImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportImage)
 
 All content copied from https://docs.aws.amazon.com/.

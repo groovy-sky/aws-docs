@@ -11,7 +11,7 @@ An organization is an entity that you create to consolidate and centrally manage
 
 When you share an AMI with an organization or an OU, all of the children accounts gain access to the AMI. For example, in the following diagram, the AMI is shared with a top-level OU (indicated by the arrow at the number **1**). All of the OUs and accounts that are nested underneath that top-level OU (indicated by the dotted line at number **2**) also have access to the AMI. The accounts in the organization and OU outside the dotted line (indicated by the number **3**) do not have access to the AMI because they are not children of the OU that the AMI is shared with.
 
-![The AMI is shared with an OU, and all children OUs and accounts get access to the AMI.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ami-share-with-orgs-and-ous.png)
+![The AMI is shared with an OU, and all children OUs and accounts get access to the AMI.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ami-share-with-orgs-and-ous.png)
 
 **Topics**
 + [Considerations](#considerations-org-ou)
@@ -26,7 +26,7 @@ Consider the following when sharing AMIs with specific organizations or organiza
 + **Ownership** – To share an AMI, your AWS account must own the AMI.
 + **Sharing limits** – The AMI owner can share an AMI with any organization or OU, including organizations and OUs that they’re not a member of.
 
-  For the maximum number of entities to which an AMI can be shared within a Region, see the [Amazon EC2 service quotas](https://docs.aws.amazon.com//general/latest/gr/ec2-service.html#limits_ec2).
+  For the maximum number of entities to which an AMI can be shared within a Region, see the [Amazon EC2 service quotas](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html#limits_ec2).
 + **Tags** – You can't share user-defined tags (tags that you attach to an AMI). When you share an AMI, your user-defined tags are not available to any AWS account in an organization or OU with which the AMI is shared.
 + **ARN format** – When you specify an organization or OU in a command, make sure to use the correct ARN format. You'll get an error if you specify only the ID, for example, if you specify only `o-123example` or `ou-1234-5example`.
 

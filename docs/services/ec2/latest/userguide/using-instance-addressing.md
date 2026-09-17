@@ -119,7 +119,7 @@ When your instance receives an IPv6 address during launch, the address is associ
 
 An IPv6 address persists when you stop and start, or hibernate and start, your instance, and is released when you terminate your instance. You cannot reassign an IPv6 address while it's assigned to another network interface—you must first unassign it.
 
-You can control whether instances are reachable via their IPv6 addresses by controlling the routing for your subnet or by using security group and network ACL rules. For more information, see [Internetwork traffic privacy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *Amazon VPC User Guide*.
+You can control whether instances are reachable through their IPv6 addresses by controlling the routing for your subnet or by using security group and network ACL rules. For more information, see [Internetwork traffic privacy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *Amazon VPC User Guide*.
 
 For more information about reserved IPv6 address ranges, see [IANA IPv6 Special-Purpose Address Registry](http://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) and [RFC4291](https://tools.ietf.org/html/rfc4291).
 
@@ -156,16 +156,18 @@ When you create an EC2 instance, AWS creates a hostname for that instance. For m
 ## Link-local addresses
 <a name="link-local-addresses"></a>
 
-Link-local addresses are well-known, non-routable IP addresses. Amazon EC2 uses addresses from the link-local address space to provide services that are accessible only from an EC2 instance. These services do not run on the instance, they run on the underlying host. When you access the link-local addresses for these services, you're communicating with either the Xen hypervisor or the Nitro controller.
+Amazon EC2 reserves specific IPv4 link-local addresses for services that are accessible only from an EC2 instance. These services run on the underlying host, not on the instance. When you access the reserved link-local addresses for these services, you're communicating with either the Xen hypervisor or the Nitro controller. The underlying host handles traffic to these reserved addresses instead of forwarding it according to customer-configured routes. Security groups and network ACLs do not filter this traffic.
+
+AWS does not reserve every IPv4 address in `169.254.0.0/16`. Traffic to a non-reserved address in this range follows the applicable VPC route. Your security groups and network ACLs can filter this traffic.
 
 **Link-local address ranges**
 + IPv4 – 169.254.0.0/16 (169.254.0.0 to 169.254.255.255)
 + IPv6 – fe80::/10
 
 **Services that you access using link-local addresses**
-+ [Instance Metadata Service](instancedata-data-retrieval.md)
-+ [Amazon Route 53 Resolver](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#AmazonDNS) (also known as the Amazon DNS server)
-+ [Amazon Time Sync Service](set-time.md)
++ [Instance Metadata Service](instancedata-data-retrieval.md) – `169.254.169.254`
++ [Amazon Route 53 Resolver](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#AmazonDNS) (also known as the Amazon DNS server) – `169.254.169.253`
++ [Amazon Time Sync Service](set-time.md) – `169.254.169.123`
 + [AWS KMS servers](common-messages.md#activate-windows)
 
 All content copied from https://docs.aws.amazon.com/.

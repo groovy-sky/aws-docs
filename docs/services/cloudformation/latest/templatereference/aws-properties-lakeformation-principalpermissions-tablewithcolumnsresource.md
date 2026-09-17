@@ -50,7 +50,7 @@ The identifier for the Data Catalog where the location is registered with AWS La
 *Required*: Yes
 *Type*: String
 *Minimum*: `12`
-*Maximum*: `12`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ColumnNames`  <a name="cfn-lakeformation-principalpermissions-tablewithcolumnsresource-columnnames"></a>

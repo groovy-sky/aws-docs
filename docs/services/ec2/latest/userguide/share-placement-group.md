@@ -52,9 +52,9 @@ To specify the location of your Dedicated Hosts relative to your accounts, you m
 
 To share a placement group, you must add it to a resource share. A resource share is an AWS RAM resource that lets you share your resources across AWS accounts. A resource share specifies the resources to share, and the consumers with whom they are shared.
 
-If you are part of an organization in AWS Organizations sharing within your organization is enabled, consumers in your organization are granted access to the shared placement group.
+If you are part of an organization in AWS Organizations, sharing within your organization is enabled, and consumers in your organization are granted access to the shared placement group.
 
-If the placement group is shared with an AWS account outside of your organization, the AWS account owner will receive an invitation to join the resource share. They can access the shared placement group after accepting the invitation.
+If the placement group is shared with an AWS account outside of your organization, the AWS account owner receives an invitation to join the resource share. They can access the shared placement group after accepting the invitation.
 
 You can share a placement group across AWS accounts using AWS Resource Access Manager. For more information, see [Creating a resource share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-create.html) in the *AWS RAM User Guide*.
 

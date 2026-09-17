@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::PCS::ComputeNodeGroup ScriptSource
 <a name="aws-properties-pcs-computenodegroup-scriptsource"></a>
 
-<a name="aws-properties-pcs-computenodegroup-scriptsource-description"></a>The `ScriptSource` property type specifies Property description not available. for an [AWS::PCS::ComputeNodeGroup](aws-resource-pcs-computenodegroup.md).
+The source location and integrity information for a node lifecycle script.
 
 ## Syntax
 <a name="aws-properties-pcs-computenodegroup-scriptsource-syntax"></a>
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-pcs-computenodegroup-scriptsource-properties"></a>
 
 `Checksum`  <a name="cfn-pcs-computenodegroup-scriptsource-checksum"></a>
-Property description not available.
+The SHA-256 checksum of the script content, as a 64-character hexadecimal string. This value is optional. When specified, AWS PCS uses this value to verify the integrity of the downloaded script.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-fA-F0-9]{64}$`
@@ -47,14 +47,14 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `S3VersionId`  <a name="cfn-pcs-computenodegroup-scriptsource-s3versionid"></a>
-Property description not available.
+The Amazon S3 version ID of the script. Use this value to pin the script to a specific version in a versioned Amazon S3 bucket. This value is only valid when `scriptLocation` is an Amazon S3 URI.
 *Required*: No
 *Type*: String
 *Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScriptLocation`  <a name="cfn-pcs-computenodegroup-scriptsource-scriptlocation"></a>
-Property description not available.
+The location of the script. Specify either an Amazon S3 URI in the format `s3://bucket-name/key` or an HTTPS URL.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(s3://[a-z0-9][a-z0-9.-]{1,61}[a-z0-9]/.+|https://.+)$`

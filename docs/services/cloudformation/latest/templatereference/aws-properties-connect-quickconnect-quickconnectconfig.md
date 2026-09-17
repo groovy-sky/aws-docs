@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[FlowConfig](#cfn-connect-quickconnect-quickconnectconfig-flowconfig)" : {{FlowQuickConnectConfig}},
   "[PhoneConfig](#cfn-connect-quickconnect-quickconnectconfig-phoneconfig)" : {{PhoneNumberQuickConnectConfig}},
   "[QueueConfig](#cfn-connect-quickconnect-quickconnectconfig-queueconfig)" : {{QueueQuickConnectConfig}},
   "[QuickConnectType](#cfn-connect-quickconnect-quickconnectconfig-quickconnecttype)" : {{String}},
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-quickconnect-quickconnectconfig-syntax.yaml"></a>
 
 ```
+  [FlowConfig](#cfn-connect-quickconnect-quickconnectconfig-flowconfig): {{
+    FlowQuickConnectConfig}}
   [PhoneConfig](#cfn-connect-quickconnect-quickconnectconfig-phoneconfig): {{
     PhoneNumberQuickConnectConfig}}
   [QueueConfig](#cfn-connect-quickconnect-quickconnectconfig-queueconfig): {{
@@ -41,6 +44,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-connect-quickconnect-quickconnectconfig-properties"></a>
+
+`FlowConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig-flowconfig"></a>
+ Flow configuration for quick connect setup.
+*Required*: No
+*Type*: [FlowQuickConnectConfig](aws-properties-connect-quickconnect-flowquickconnectconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PhoneConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig-phoneconfig"></a>
 The phone configuration. This is required only if QuickConnectType is PHONE\_NUMBER.
@@ -58,7 +67,7 @@ The queue configuration. This is required only if QuickConnectType is QUEUE.
 The type of quick connect. In the Connect Customer console, when you create a quick connect, you are prompted to assign one of the following types: Agent (USER), External (PHONE\_NUMBER), or Queue (QUEUE).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `PHONE_NUMBER | QUEUE | USER`
+*Allowed values*: `PHONE_NUMBER | QUEUE | USER | FLOW`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UserConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig-userconfig"></a>

@@ -37,6 +37,12 @@ Required: Yes
 Type: Array of [TagSpecification](API_TagSpecification.md) objects
 Required: No
 
+ **ZeroSizePreference**
+ Specifies the behavior for the interruptible Capacity Reservation when you reduce its allocation to zero instances. Specify `retain` to keep the interruptible Capacity Reservation active at zero capacity so that you can allocate instances to it again later. Specify `default` to cancel the interruptible Capacity Reservation and return the capacity to your source Capacity Reservation. The default value is `default`.
+Type: String
+Valid Values: `retain | default`
+Required: No
+
 ## Response Elements
 <a name="API_CreateInterruptibleCapacityReservationAllocation_ResponseElements"></a>
 
@@ -81,7 +87,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateInterruptibleCapacityReservationAllocation)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateInterruptibleCapacityReservationAllocation)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateInterruptibleCapacityReservationAllocation)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateInterruptibleCapacityReservationAllocation)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateInterruptibleCapacityReservationAllocation)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateInterruptibleCapacityReservationAllocation)
 
 All content copied from https://docs.aws.amazon.com/.

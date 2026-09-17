@@ -5,7 +5,7 @@ title: "How Reserved Instance discounts are applied"
 # How Reserved Instance discounts are applied
 <a name="apply_ri"></a>
 
-Reserved Instances are not physical instances, but rather a billing discount that is applied to the running On-Demand Instances in your account. The On-Demand Instances must match certain specifications of the Reserved Instances in order to benefit from the billing discount.
+Reserved Instances are not physical instances, but rather a billing discount that is applied to the running On-Demand Instances in your account. The On-Demand Instances must match certain specifications of the Reserved Instances to benefit from the billing discount.
 
 If you purchase a Reserved Instance and you already have a running On-Demand Instance that matches the specifications of the Reserved Instance, the billing discount is applied immediately and automatically. You do not have to restart your instances. If you do not have an eligible running On-Demand Instance, launch an On-Demand Instance with the same specifications as your Reserved Instance. For more information, see [Use your Reserved Instances](using-reserved-instances.md).
 
@@ -22,7 +22,7 @@ The offering class (Standard or Convertible) of the Reserved Instance does not a
 
 A Reserved Instance that is purchased to reserve capacity in a specific Availability Zone is called a zonal Reserved Instance.
 + The Reserved Instance discount applies to matching instance usage in that Availability Zone.
-+ The attributes (tenancy, platform, Availability Zone, instance type, and instance size) of the running instances must match that of the Reserved Instances.
++ The attributes (tenancy, platform, Availability Zone, instance family, and instance size) of the running instances must match that of the Reserved Instances.
 
 For example, if you purchase two `c4.xlarge` default tenancy Linux/Unix Standard Reserved Instances for Availability Zone us-east-1a, then up to two `c4.xlarge` default tenancy Linux/Unix instances running in the Availability Zone us-east-1a can benefit from the Reserved Instance discount.
 
@@ -81,11 +81,11 @@ The following table lists the different sizes within an instance family, and the
 
 For example, a `t2.medium` instance has a normalization factor of 2. If you purchase a `t2.medium` default tenancy Amazon Linux/Unix Reserved Instance in the US East (N. Virginia) and you have two running `t2.small` instances in your account in that Region, the billing benefit is applied in full to both instances.
 
-![Applying a Regional Reserved Instance.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-instance-flex-full.png)
+![Applying a Regional Reserved Instance.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-instance-flex-full.png)
 
 Or, if you have one `t2.large` instance running in your account in the US East (N. Virginia) Region, the billing benefit is applied to 50% of the usage of the instance.
 
-![Applying a Regional Reserved Instance.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-instance-flex-partial.png)
+![Applying a Regional Reserved Instance.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ri-instance-flex-partial.png)
 
 The normalization factor is also applied when modifying Reserved Instances. For more information, see [Modify Reserved Instances](ri-modifying.md).
 

@@ -32,7 +32,7 @@ In Unlimited mode, if the instance bursts above baseline CPU utilization, then t
 The following key concepts and definitions are applicable to burstable performance instances.
 
 **CPU utilization**
-CPU utilization is the percentage of allocated EC2 compute units that are currently in use on the instance. This metric measures the percentage of allocated CPU cycles that are being utilized on an instance. The CPU Utilization CloudWatch metric shows CPU usage per instance and not CPU usage per core. The baseline CPU specification of an instance is also based on the CPU usage per instance. To measure CPU utilization using the AWS Management Console or the AWS CLI, see [Get statistics for a specific instance](US_SingleMetricPerInstance.md).
+CPU utilization is the percentage of allocated EC2 compute units that are currently in use on the instance. This metric measures the percentage of allocated CPU cycles that are being used on an instance. The CPU Utilization CloudWatch metric shows CPU usage per instance and not CPU usage per core. The baseline CPU specification of an instance is also based on the CPU usage per instance. To measure CPU utilization using the AWS Management Console or the AWS CLI, see [Get statistics for a specific instance](US_SingleMetricPerInstance.md).
 
 **CPU credit**
 A unit of vCPU-time.
@@ -42,7 +42,7 @@ Examples:
 1 CPU credit = 2 vCPU \* 25% utilization \* 2 minutes
 
 **Baseline utilization**
-The baseline utilization is the level at which the CPU can be utilized for a net credit balance of zero, when the number of CPU credits being earned matches the number of CPU credits being used. Baseline utilization is also known as the baseline. Baseline utilization is expressed as a percentage of vCPU utilization, which is calculated as follows: Baseline utilization % = (number of credits earned/number of vCPUs)/60 minutes.
+The baseline utilization is the level at which the CPU can be used for a net credit balance of zero, when the number of CPU credits being earned matches the number of CPU credits being used. Baseline utilization is also known as the baseline. Baseline utilization is expressed as a percentage of vCPU utilization, which is calculated as follows: Baseline utilization % = (number of credits earned/number of vCPUs)/60 minutes.
 For the baseline utilization of each burstable performance instance type, see the [credit table](#burstable-performance-instances-credit-table).
 
 **Earned credits**
@@ -81,18 +81,16 @@ Credit configuration mode, which allows an instance to burst above the baseline 
 
 The following table summarizes the key credit differences between the burstable instance types.
 
-****
-
 <table>
 <thead>
   <tr><th>Type</th><th>Type of CPU credits supported</th><th>Credit configuration modes</th><th>Accrued CPU credits lifespan between instance starts and stops</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">Latest generation</td></tr>
+  <tr><td colspan="4"><b>Latest generation</b></td></tr>
   <tr><td>T4g</td><td>Earned credits, Accrued credits, Spent credits, Surplus credits (Unlimited mode only)</td><td>Standard, Unlimited (default)</td><td>7 days (credits persist for 7 days after an instance stops)</td></tr>
   <tr><td>T3a</td><td>Earned credits, Accrued credits, Spent credits, Surplus credits (Unlimited mode only)</td><td>Standard, Unlimited (default)</td><td>7 days (credits persist for 7 days after an instance stops)</td></tr>
   <tr><td>T3</td><td>Earned credits, Accrued credits, Spent credits, Surplus credits (Unlimited mode only)</td><td>Standard, Unlimited (default)</td><td>7 days (credits persist for 7 days after an instance stops)</td></tr>
-  <tr><td colspan="4">Previous generation</td></tr>
+  <tr><td colspan="4"><b>Previous generation</b></td></tr>
   <tr><td>T2</td><td>Earned credits, Accrued credits, Spent credits, Launch credits (Standard mode only), Surplus credits (Unlimited mode only)</td><td>Standard (default), Unlimited</td><td>0 days (credits are lost when an instance stops)</td></tr>
 </tbody>
 </table>
@@ -144,7 +142,7 @@ The following table lists the burstable performance instance types, the rate at 
 | t4g.xlarge | 96 | 2304 | 4 | 40%\*\* |
 | t4g.2xlarge | 192 | 4608 | 8 | 40%\*\* |
 
-|  |
+| Notes |
 | --- |
 | \* The number of credits that can be accrued is equivalent to the number of credits that can be earned in a 24-hour period. |
 | \*\* The percentage baseline utilization in the table is per vCPU. In CloudWatch, CPU utilization is shown per vCPU. For example, the CPU utilization for a `t3.large` instance operating at the baseline level is shown as 30% in CloudWatch CPU metrics. For information about how to calculate the baseline utilization, see [Baseline utilization](#baseline_performance). |
@@ -160,7 +158,7 @@ The number of CPU credits earned per hour is determined by the instance size. Fo
 
 While earned credits never expire on a running instance, there is a limit to the number of earned credits that an instance can accrue. The limit is determined by the CPU credit balance limit. After the limit is reached, any new credits that are earned are discarded, as indicated by the following image. The full bucket indicates the CPU credit balance limit, and the spillover indicates the newly earned credits that exceed the limit.
 
-![New credits earned are discarded once the limit is exceeded.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-t3-bucket.png)
+![New credits earned are discarded after the limit is exceeded.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-t3-bucket.png)
 
 The CPU credit balance limit differs for each instance size. For example, a `t3.micro` instance can accrue a maximum of 288 earned CPU credits in the CPU credit balance. The preceding table lists the maximum number of earned credits that each instance can accrue.
 
@@ -182,7 +180,7 @@ For more information, see `CPUCreditBalance` in the [CloudWatch metrics table](b
 ## Baseline utilization
 <a name="baseline_performance"></a>
 
-The *baseline utilization* is the level at which the CPU can be utilized for a net credit balance of zero, when the number of CPU credits being earned matches the number of CPU credits being used. Baseline utilization is also known as *the baseline*.
+The *baseline utilization* is the level at which the CPU can be used for a net credit balance of zero, when the number of CPU credits being earned matches the number of CPU credits being used. Baseline utilization is also known as *the baseline*.
 
 Baseline utilization is expressed as a percentage of vCPU utilization, which is calculated as follows:
 
@@ -196,6 +194,6 @@ A `t3.large` instance, with 2 vCPUs, earns 36 credits per hour, resulting in a b
 
 The following graph provides an example of a `t3.large` with an average CPU utilization below the baseline.
 
-![A graph of a t3.large instance with an average CPU utilization below baseline.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/baseline-utilization.png)
+![A graph of a t3.large instance with an average CPU utilization below baseline.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/baseline-utilization.png)
 
 All content copied from https://docs.aws.amazon.com/.

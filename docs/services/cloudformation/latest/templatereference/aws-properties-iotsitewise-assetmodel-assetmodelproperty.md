@@ -50,6 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `DataType`  <a name="cfn-iotsitewise-assetmodel-assetmodelproperty-datatype"></a>
 The data type of the asset model property.
+The `VIDEO`, `ANNOTATION`, and `JSON` data types aren't supported for asset model properties. These types are used only by time series that store data for datasets in a workspace.
 If you specify `STRUCT`, you must also specify `dataTypeSpec` to identify the type of the structure for this property.
 *Required*: Yes
 *Type*: String

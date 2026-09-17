@@ -14,15 +14,26 @@ Open **Device Manager** and view **Network Adapters**. Check whether the PV driv
 + Citrix PV Ethernet Adapter
 + Red Hat PV NIC Driver
 
-**System requirements**
-Be sure to check the `readme.txt` file in the download for system requirements.
-
 **Topics**
++ [System requirements for the AWS PV driver package](#aws-pv-requirements)
 + [Upgrade Windows Server instances (AWS PV upgrade) with Distributor](#aws-pv-upgrade-distributor)
 + [Upgrade Windows Server instances (AWS PV upgrade) manually](#aws-pv-upgrade)
 + [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc)
 + [Upgrade Windows Server 2008 and 2008 R2 instances (Red Hat to Citrix PV upgrade)](#win2008-citrix-upgrade)
 + [Upgrade your Citrix Xen guest agent service](#citrix-pv-guest-agent-upgrade)
+
+## System requirements for the AWS PV driver package
+<a name="aws-pv-requirements"></a>
+
+The following requirements apply to the AWS PV driver package whether you install it through Systems Manager or manually.
++ A version of Windows Server that the package version supports. Older versions of Windows Server require an earlier package version. For the package version to use with your operating system, see [Paravirtual drivers for Windows instances](xen-drivers-overview.md).
++ The minimum .NET Framework version required by the package installer, as the following table shows.
+
+| AWS PV driver package version | Minimum .NET Framework version |
+| --- | --- |
+| Latest | 4.7.2 |
+| 8.4.3 | 4.5 |
+| 8.3.5 | 4.5 |
 
 ## Upgrade Windows Server instances (AWS PV upgrade) with Distributor
 <a name="aws-pv-upgrade-distributor"></a>
@@ -34,7 +45,7 @@ If your instance is a domain controller, see [Upgrade a domain controller (AWS P
 
 1. We recommend that you create a backup in case you need to roll back your changes.
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
    1. When you stop an instance, the data on any instance store volumes is erased. Before you stop an instance, verify that you've copied any data that you need from your instance store volumes to persistent storage, such as Amazon EBS or Amazon S3.
 
@@ -79,8 +90,6 @@ If you previously applied a static IP address or DNS configuration to the networ
 
 Use the following procedure to perform an in-place upgrade of AWS PV drivers, or to upgrade from Citrix PV drivers to AWS PV drivers on Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2022. This upgrade is not available for Red Hat drivers, or for other versions of Windows Server.
 
-Some older versions of Windows Server can't use the latest drivers. To verify which driver version to use for your operating system, see the driver version table in the [Paravirtual drivers for Windows instances](xen-drivers-overview.md) page.
-
 **Important**
 If your instance is a domain controller, see [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc). The upgrade process for domain controller instances is different than standard editions of Windows.
 
@@ -88,7 +97,7 @@ If your instance is a domain controller, see [Upgrade a domain controller (AWS P
 
 1. We recommend that you create a backup in case you need to roll back your changes.
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
    1. When you stop an instance, the data on any instance store volumes is erased. Before you stop an instance, verify that you've copied any data that you need from your instance store volumes to persistent storage, such as Amazon EBS or Amazon S3.
 
@@ -209,7 +218,7 @@ Before you start upgrading your Red Hat drivers to Citrix PV drivers, make sure 
   Windows PowerShell 3.0 is bundled in the Windows Management Framework (WMF) version 3.0 install package. If you need to install Windows PowerShell 3.0, see [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) in the Microsoft Download Center.
 + Back up your important information on the instance, or create an AMI from the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
   If you create an AMI, make sure that you do the following:
   + Write down your password.
@@ -224,14 +233,14 @@ Instead of creating the AMI from the Amazon EC2 console, you can use Systems Man
 
 1. Extract the contents of the upgrade package to a location of your choice.
 
-1. Double-click the **Upgrade.bat** file. If you get a security warning, choose **Run**.
+1. Open the **Upgrade.bat** file. If you get a security warning, choose **Run**.
 
 1. In the **Upgrade Drivers** dialog box, review the information and choose **Yes** if you are ready to start the upgrade.
 
 1. In the **Red Hat Paravirtualized Xen Drivers for Windows uninstaller** dialog box, choose **Yes** to remove the Red Hat software. Your instance will be rebooted.
 **Note**
 If you do not see the uninstaller dialog box, choose **Red Hat Paravirtualize** in the Windows taskbar.
-![Red Hat Paravirtualized in taskbar.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2003-citrix-taskbar.png)
+![Red Hat Paravirtualized in taskbar.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2003-citrix-taskbar.png)
 
 1. Check that the instance has rebooted and is ready to be used.
 
@@ -240,14 +249,14 @@ If you do not see the uninstaller dialog box, choose **Red Hat Paravirtualize** 
    1. On the **Instances** page, select **Actions**, then **Monitor and troubleshoot**, and then choose **Get system log**.
 
    1. The upgrade operations should have restarted the server 3 or 4 times. You can see this in the log file by the number of times `Windows is Ready to use` is displayed.
-![Windows system log.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2008-sys-log.png)
+![Windows system log.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2008-sys-log.png)
 
 1. Connect to your instance and log in as the local administrator.
 
 1. Close the **Red Hat Paravirtualized Xen Drivers for Windows uninstaller** dialog box.
 
 1. Confirm that the installation is complete. Navigate to the `Citrix-WIN_PV` folder that you extracted earlier, open the `PVUpgrade.log` file, and then check for the text `INSTALLATION IS COMPLETE`.
-![PVUpgrade log file.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2008-pvupgrade-log.png)
+![PVUpgrade log file.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2008-pvupgrade-log.png)
 
 ## Upgrade your Citrix Xen guest agent service
 <a name="citrix-pv-guest-agent-upgrade"></a>
@@ -260,7 +269,7 @@ For Windows Server 2008 R2 and later, we recommend you upgrade to AWS PV drivers
 Before you start upgrading your drivers, make sure you back up your important information on the instance, or create an AMI from the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
 If you create an AMI, make sure you do the following:
 + Do not enable the Sysprep tool in the EC2Config service.
@@ -275,7 +284,7 @@ If you create an AMI, make sure you do the following:
 
 1. Extract the contents of the upgrade package to a location of your choice.
 
-1. Double-click the **Upgrade.bat** file. If you get a security warning, choose **Run**.
+1. Open the **Upgrade.bat** file. If you get a security warning, choose **Run**.
 
 1. In the **Upgrade Drivers** dialog box, review the information and choose **Yes** if you are ready to start the upgrade.
 

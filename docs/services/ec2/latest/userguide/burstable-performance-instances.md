@@ -7,7 +7,7 @@ title: "Burstable performance instances"
 
 Many general purpose workloads are on average not busy, and do not require a high level of sustained CPU performance. The following graph illustrates the CPU utilization for many common workloads that customers run in the AWS Cloud today.
 
-![Graph showing common workloads with average CPU utilization at or below baseline with occasional spikes.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/CPU-common-workloads.png)
+![Graph showing common workloads with average CPU utilization at or below baseline with occasional spikes.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/CPU-common-workloads.png)
 
 These low-to-moderate CPU utilization workloads lead to wastage of CPU cycles and, as a result, you pay for more than you use. To overcome this, you can leverage the low-cost burstable general purpose instances, which are the T instances.
 
@@ -25,18 +25,16 @@ The T4g instance types are the latest generation of burstable instances. They pr
 
 The following table summarizes the key differences between the burstable instance types.
 
-****
-
 <table>
 <thead>
   <tr><th>Type</th><th>Description</th><th>Processor family</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">Latest generation</td></tr>
+  <tr><td colspan="3"><b>Latest generation</b></td></tr>
   <tr><td>T4g</td><td>Lowest cost EC2 instance type with up to 40% higher price/performance and 20% lower costs vs T3</td><td>AWS Graviton2 processors with Arm Neoverse N1 cores</td></tr>
   <tr><td>T3a</td><td>Lowest cost x86-based instances with 10% lower costs vs T3 instances</td><td>AMD 1st gen EPYC processors</td></tr>
   <tr><td>T3</td><td>Best peak price/performance for x86 workloads with up to 30% lower price/performance vs previous generation T2 instances</td><td>Intel Xeon Scalable (Skylake, Cascade Lake processors)</td></tr>
-  <tr><td colspan="3">Previous generation</td></tr>
+  <tr><td colspan="3"><b>Previous generation</b></td></tr>
   <tr><td>T2</td><td>Previous generation burstable instances</td><td>Intel Xeon processors</td></tr>
 </tbody>
 </table>

@@ -33,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[OriginEndpointName](#cfn-mediapackagev2-originendpoint-originendpointname)" : {{String}},
       "[Segment](#cfn-mediapackagev2-originendpoint-segment)" : {{Segment}},
       "[StartoverWindowSeconds](#cfn-mediapackagev2-originendpoint-startoverwindowseconds)" : {{Integer}},
+      "[StreamNameOutputMode](#cfn-mediapackagev2-originendpoint-streamnameoutputmode)" : {{String}},
       "[Tags](#cfn-mediapackagev2-originendpoint-tags)" : {{[ Tag, ... ]}},
       "[UriSeparator](#cfn-mediapackagev2-originendpoint-uriseparator)" : {{String}}
     }
@@ -63,6 +64,7 @@ Properties:
   [Segment](#cfn-mediapackagev2-originendpoint-segment): {{
     Segment}}
   [StartoverWindowSeconds](#cfn-mediapackagev2-originendpoint-startoverwindowseconds): {{Integer}}
+  [StreamNameOutputMode](#cfn-mediapackagev2-originendpoint-streamnameoutputmode): {{String}}
   [Tags](#cfn-mediapackagev2-originendpoint-tags): {{
     - Tag}}
   [UriSeparator](#cfn-mediapackagev2-originendpoint-uriseparator): {{String}}
@@ -157,6 +159,13 @@ The size of the window (in seconds) to specify a window of the live stream that'
 *Maximum*: `1209600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`StreamNameOutputMode`  <a name="cfn-mediapackagev2-originendpoint-streamnameoutputmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `INDEX | PASSTHROUGH_NAME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Tags`  <a name="cfn-mediapackagev2-originendpoint-tags"></a>
 The tags associated with the origin endpoint.
 *Required*: No
@@ -178,7 +187,7 @@ The separator character used in generated URIs for this origin endpoint.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`arn:aws:mediapackagev2:region:AccountId:ChannelGroup/ChannelGroupName/Channel/ChannelName/OriginEndpoint/OriginEndpointName`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-mediapackagev2-originendpoint-return-values-fn--getatt"></a>

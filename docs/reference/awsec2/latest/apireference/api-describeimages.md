@@ -48,6 +48,7 @@ The filters.
 +  `block-device-mapping.volume-size` - The volume size of the Amazon EBS volume, in GiB.
 +  `block-device-mapping.volume-type` - The volume type of the Amazon EBS volume (`io1` \| `io2` \| `gp2` \| `gp3` \| `sc1 `\| `st1` \| `standard`).
 +  `block-device-mapping.encrypted` - A Boolean that indicates whether the Amazon EBS volume is encrypted.
++  `boot-mode` – The boot mode of the image (`legacy-bios` \| `uefi` \| `uefi-preferred`).
 +  `creation-date` - The time when the image was created, in the ISO 8601 format in the UTC time zone (YYYY-MM-DDThh:mm:ss.sssZ), for example, `2021-09-29T11:04:43.305Z`. You can use a wildcard (`*`), for example, `2021-09-29T*`, which matches an entire day.
 +  `description` - The description of the image (provided during image creation).
 +  `ena-support` - A Boolean that indicates whether enhanced networking with ENA is enabled.
@@ -61,6 +62,8 @@ The filters.
 +  `image-watermark.watermark-creation-time` - The date and time the watermark was attached to the AMI, in the ISO 8601 format in the UTC time zone (` YYYY-MM-DDTHH:MM:SS.ssssss+HH:MM `). You can use a wildcard (`*`), for example, `2021-09-29T*`, which matches an entire day.
 +  `image-watermark.watermark-key` - The watermark identifier, in `accountId:watermarkName` format (for example, `123456789012:approvedAmi`).
 +  `image-type` - The image type (`machine` \| `kernel` \| `ramdisk`).
++  `instance-type-specification.supported-instance-type` – The instance types that are compatible with the AMI, as specified by the AMI owner. Values can be individual instance types (for example, `t3.micro`) or wildcard patterns that match multiple instance types (for example, `t3.*`).
++  `instance-type-specification.unsupported-instance-type` – The instance types that are not compatible with the AMI, as specified by the AMI owner. Values can be individual instance types (for example, `t3.micro`) or wildcard patterns that match multiple instance types (for example, `t3.*`).
 +  `is-public` - A Boolean that indicates whether the image is public.
 +  `kernel-id` - The kernel ID.
 +  `manifest-location` - The location of the image manifest.
@@ -173,7 +176,7 @@ https://ec2.amazonaws.com/?Action=DescribeImages
       <platformDetails>Red Hat Enterprise Linux</platformDetails>
       <enaSupport>true</enaSupport>
       <hypervisor>xen</hypervisor>
-      <state>available</state>
+      <imageState>available</imageState>
       <sriovNetSupport>simple</sriovNetSupport>
       <imageId>ami-1234567890EXAMPLE</imageId>
       <usageOperation>RunInstances:0010</usageOperation>
@@ -321,7 +324,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeImages)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeImages)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeImages)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeImages)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeImages)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeImages)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -78,6 +78,9 @@ For other scenarios, see [Security group rules for different use cases](security
 
    1. Choose **Save rules**.
 
+**Important**
+The self-referencing inbound and outbound rules (allowing all traffic to and from the security group itself) are mandatory for EFA to function. Without these rules, EFA traffic between instances will be blocked.
+
 ## Step 2: Launch a temporary instance
 <a name="efa-start-tempinstance"></a>
 
@@ -156,7 +159,7 @@ Some operating systems might not be supported with Intel MPI. If you are using I
    You can also get the latest version by replacing the version number with `latest` in the preceding command.
 
    ```
-   $ curl -O https://efa-installer.amazonaws.com/aws-efa-installer-1.49.0.tar.gz
+   $ curl -O https://efa-installer.amazonaws.com/aws-efa-installer-1.50.0.tar.gz
    ```
 
 1. (*Optional*) Verify the authenticity and integrity of the EFA tarball (`.tar.gz`) file.
@@ -184,7 +187,7 @@ Alternatively, if you prefer to verify the tarball file by using an MD5 or SHA25
    1. Download the signature file and verify the signature of the EFA tarball file.
 
       ```
-      $ wget https://efa-installer.amazonaws.com/aws-efa-installer-1.49.0.tar.gz.sig && gpg --verify ./aws-efa-installer-1.49.0.tar.gz.sig
+      $ wget https://efa-installer.amazonaws.com/aws-efa-installer-1.50.0.tar.gz.sig && gpg --verify ./aws-efa-installer-1.50.0.tar.gz.sig
       ```
 
       The following shows example output.
@@ -202,7 +205,7 @@ Alternatively, if you prefer to verify the tarball file by using an MD5 or SHA25
 1. Extract the files from the compressed `.tar.gz` file and navigate into the extracted directory.
 
    ```
-   $ tar -xf aws-efa-installer-1.49.0.tar.gz && cd aws-efa-installer
+   $ tar -xf aws-efa-installer-1.50.0.tar.gz && cd aws-efa-installer
    ```
 
 1. (*Optional*) Verify individual package signatures during installation.
@@ -566,7 +569,7 @@ After you have installed the required software components, you create an AMI tha
 
 1. In the navigation pane, choose **AMIs**.
 
-1. Locate the AMI tht you created in the list. Wait for the status to change from `pending` to `available` before continuing to the next step.
+1. Locate the AMI that you created in the list. Wait for the status to change from `pending` to `available` before continuing to the next step.
 
 ## Step 10: Launch EFA-enabled instances into a cluster placement group
 <a name="efa-start-instances"></a>

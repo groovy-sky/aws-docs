@@ -26,7 +26,7 @@ The AMI creation process is different for Amazon S3-backed AMIs. For more inform
 
 The following diagram summarizes the process for creating an Amazon EBS-backed AMI from a running EC2 instance: Start with an existing AMI, launch an instance, customize it, create a new AMI from it, and finally launch an instance of your new AMI. The numbers in the diagram match the numbers in the description that follows.
 
-![Workflow for creating an AMI from an instance.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/running-instance.png)
+![Workflow for creating an AMI from an instance.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/running-instance.png)
 
 **1 – AMI \#1: Start with an existing AMI**
 Find an existing AMI that is similar to the AMI that you'd like to create. This can be an AMI you have obtained from the AWS Marketplace, an AMI that you have created using [VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html), or any other AMI that you can access. You'll customize this AMI for your needs.
@@ -84,7 +84,7 @@ If this option is disabled, your instance isn't an Amazon EBS-backed instance.
    1. For **Image description**, enter an optional description of the image, up to 255 characters.
 
    1. For **Reboot instance**, either keep the checkbox selected (the default), or clear it.
-      + If **Reboot instance** is selected, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state.
+      + If **Reboot instance** is selected, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, to ensure a consistent state.
       + If **Reboot instance** is cleared, when Amazon EC2 creates the new AMI, it does not shut down and reboot the instance.
 **Warning**
 If you clear **Reboot instance**, we can't guarantee the file system integrity of the created image.
@@ -111,7 +111,11 @@ All snapshots of the instance’s volumes must be in the same location. Verify t
       + To tag the AMI and the snapshots with the *same* tags, choose **Tag image and snapshots together**. The same tags are applied to the AMI and every snapshot that is created.
       + To tag the AMI and the snapshots with *different* tags, choose **Tag image and snapshots separately**. Different tags are applied to the AMI and the snapshots that are created. However, all the snapshots get the same tags; you can't tag each snapshot with a different tag.
 
-      To add a tag, choose **Add tag**, and enter the key and value for the tag. Repeat for each tag.
+   1. **Boot mode override** – To create an AMI that only supports UEFI boot mode, choose `uefi`. Otherwise, keep the default so that the AMI inherits the boot mode of the instance.
+**Note**
+ This option works only if the current instance boot mode is UEFI. For more information, see [Set the boot mode of an Amazon EC2 AMI](set-ami-boot-mode.md).
+
+   1. To add a tag, choose **Add tag**, and enter the key and value for the tag. Repeat for each tag.
 
    1. When you're ready to create your AMI, choose **Create image**.
 

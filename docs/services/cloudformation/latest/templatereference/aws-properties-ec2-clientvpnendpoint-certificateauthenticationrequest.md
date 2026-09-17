@@ -2,53 +2,41 @@
 title: "AWS::EC2::ClientVpnEndpoint CertificateAuthenticationRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnEndpoint CertificateAuthenticationRequest
+<a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest"></a>
 
 Information about the client certificate to be used for authentication.
 
 ## Syntax
+<a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientRootCertificateChainArn" : String
+  "[ClientRootCertificateChainArn](#cfn-ec2-clientvpnendpoint-certificateauthenticationrequest-clientrootcertificatechainarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest-syntax.yaml"></a>
 
-```yaml
-
-  ClientRootCertificateChainArn: String
-
+```
+  [ClientRootCertificateChainArn](#cfn-ec2-clientvpnendpoint-certificateauthenticationrequest-clientrootcertificatechainarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest-properties"></a>
 
-`ClientRootCertificateChainArn`
-
-The ARN of the client certificate. The certificate must be signed by a certificate
-authority (CA) and it must be provisioned in AWS Certificate Manager (ACM).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::ClientVpnEndpoint
-
-ClientAuthenticationRequest
+`ClientRootCertificateChainArn`  <a name="cfn-ec2-clientvpnendpoint-certificateauthenticationrequest-clientrootcertificatechainarn"></a>
+The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM).
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -90,7 +90,7 @@ Required: No
 
  **ResourceId.N**
 The IDs of the resources to monitor. For example, if the resource type is `VPC`, specify the IDs of the VPCs.
-Constraints: Maximum of 25 for transit gateway resource types. Maximum of 1000 for the other resource types.
+Constraints: Maximum of 25 for transit gateway resource types. Maximum of 300 for the other resource types.
 Type: Array of strings
 Required: Yes
 
@@ -227,7 +227,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateFlowLogs)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateFlowLogs)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateFlowLogs)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateFlowLogs)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateFlowLogs)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateFlowLogs)
 
 All content copied from https://docs.aws.amazon.com/.

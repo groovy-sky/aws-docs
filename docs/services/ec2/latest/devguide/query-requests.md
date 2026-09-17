@@ -34,7 +34,7 @@ The following optional parameters can be included in your request:
 + **DryRun**: Checks whether you have the required permissions for the action, without actually making the request. If you have the required permissions, the request returns `DryRunOperation`; otherwise, it returns `UnauthorizedOperation`.
 + **SecurityToken**: The temporary security token obtained through a call to AWS Security Token Service.
 
-For more information about common parameters for API requests, see [Common query parameters](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/CommonParameters.html).
+For more information about common parameters for API requests, see [Common query parameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CommonParameters.html).
 
 The following is an example request that launches instances:
 
@@ -67,7 +67,7 @@ The first line specifies the endpoint of the request. After the endpoint is a qu
 
 The `Action` parameter indicates the action to perform. For a complete list of actions, see [Actions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/query-apis.html). The remaining lines specify additional parameters for the request.
 
-In the example Query requests we present in the Amazon EC2 API documentation, we omit the headers, [common required parameters](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/CommonParameters.html), and authentication parameters to make it easier for you to focus on the parameters for the action. We replace them with the `&AUTHPARAMS` literal string to remind you that you must include these parameters in your request; for example:
+In the example Query requests we present in the Amazon EC2 API documentation, we omit the headers, [common required parameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CommonParameters.html), and authentication parameters to make it easier for you to focus on the parameters for the action. We replace them with the `&AUTHPARAMS` literal string to remind you that you must include these parameters in your request; for example:
 
 ```
 https://ec2.amazonaws.com/?Action=RunInstances
@@ -168,7 +168,7 @@ For more information, see [Pagination](https://docs.aws.amazon.com/ec2/latest/de
 ## Preventing requests over HTTP
 <a name="prevent-http-requests"></a>
 
-If your workload does not require you to use HTTP, we recommend that you avoid using it to prevent transmitting and receiving unencrypted data, and to use HTTPS instead. You can use the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global IAM condition key in your IAM policies to prevent users from sending requests over HTTP.
+If your workload does not require you to use HTTP, we recommend that you avoid using it to prevent transmitting and receiving unencrypted data, and to use HTTPS instead. You can use the [`aws:SecureTransport`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global IAM condition key in your IAM policies to prevent users from sending requests over HTTP.
 
 The following example policy prevents users from sending requests over HTTP.
 

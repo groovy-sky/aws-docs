@@ -5,7 +5,7 @@ title: "Split a template into reusable pieces using nested stacks"
 # Split a template into reusable pieces using nested stacks
 <a name="using-cfn-nested-stacks"></a>
 
-As your infrastructure grows, you might find yourself repeatedly creating identical resource configurations across multiple templates. To avoid this redundancy, you can separate these common configurations into dedicated templates. Then, you can use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html) resource in other templates to reference these dedicated templates, creating nested stacks.
+As your infrastructure grows, you might find yourself repeatedly creating identical resource configurations across multiple templates. To avoid this redundancy, you can separate these common configurations into dedicated templates. Then, you can use the [AWS::CloudFormation::Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html) resource in other templates to reference these dedicated templates, creating nested stacks.
 
 For example, suppose you have a load balancer configuration that you use for most of your stacks. Instead of copying and pasting the same configurations into your templates, you can create a dedicated template for the load balancer. Then, you can reference this template from within other templates that require the same load balancer configuration.
 
@@ -14,7 +14,7 @@ Nested stacks can themselves contain other nested stacks, resulting in a hierarc
 + For stack B, stack A is both the parent stack, and the root stack.
 + For stack D, stack C is the parent stack; while for stack C, stack B is the parent stack.
 
-![Nested stacks, which are created as part of another stack, have an immediate parent stack, and the top-level root stack.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cfn-console-nested-stacks.png)
+![Nested stacks, which are created as part of another stack, have an immediate parent stack, and the top-level root stack.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cfn-console-nested-stacks.png)
 
 **Topics**
 + [Before and after example of splitting a template](#create-nested-stack-template)
@@ -98,7 +98,7 @@ The following example shows the format of the nested stack template.
 ### Step 2: Create a template for the top-level stack on your local system
 <a name="create-a-nested-stack-parent-template"></a>
 
-The following example shows the format of the top-level stack template and the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html) resource that references the stack you created in the previous step.
+The following example shows the format of the top-level stack template and the [AWS::CloudFormation::Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html) resource that references the stack you created in the previous step.
 
 #### YAML
 <a name="nested-stack-parent-example.yaml"></a>
@@ -125,7 +125,7 @@ The following example shows the format of the top-level stack template and the [
 **Note**
 When working with templates locally, the AWS CLI **package** command can help you prepare templates for deployment. It automatically handles the upload of local artifacts to Amazon S3 (including `TemplateURL`) and generates a new template file with updated references to these S3 locations. For more information, see [Upload local artifacts to an S3 bucket with the AWS CLI](using-cfn-cli-package.md).
 
-Next, you can use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) command to upload the nested template to an Amazon S3 bucket.
+Next, you can use the [package](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) command to upload the nested template to an Amazon S3 bucket.
 
 ```
 aws cloudformation package \
@@ -158,7 +158,7 @@ Outputs:
       - Outputs.LambdaArn
 ```
 
-After you run the **package** command, you can deploy the processed template using the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) command. For nested stacks that contain IAM resources, you must acknowledge IAM capabilities by including the `--capabilities` option.
+After you run the **package** command, you can deploy the processed template using the [deploy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) command. For nested stacks that contain IAM resources, you must acknowledge IAM capabilities by including the `--capabilities` option.
 
 ```
 aws cloudformation deploy \

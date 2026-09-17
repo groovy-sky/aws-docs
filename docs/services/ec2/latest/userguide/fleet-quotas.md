@@ -11,8 +11,6 @@ The usual Amazon EC2 quotas apply to instances launched by an EC2 Fleet or a Spo
 
 In addition, your AWS account has the following quotas related to EC2 Fleet and Spot Fleet:
 
-****
-
 | Quota description | Quota |
 | --- | --- |
 | The number of EC2 Fleets and Spot Fleets per Region of type maintain and request in the active, deleted\_running, and cancelled\_running states | 1,000 ¹ ² ³ |
@@ -21,6 +19,7 @@ In addition, your AWS account has the following quotas related to EC2 Fleet and 
 | The number of Spot capacity pools (unique combination of instance type and subnet) for EC2 Fleets of type instant | Unlimited |
 | The size of the user data in a launch specification | 16 KB ² |
 | The target capacity per EC2 Fleet or Spot Fleet | 10,000 |
+| The number of Capacity Reservations per EC2 Fleet request when using ReservedCapacityOptions | 5,000 ² |
 | The target capacity across all EC2 Fleets and Spot Fleets in a Region | 100,000 ¹ |
 | An EC2 Fleet request or a Spot Fleet request can't span Regions. |  |
 | An EC2 Fleet request or a Spot Fleet request can't span different subnets from the same Availability Zone. |  |

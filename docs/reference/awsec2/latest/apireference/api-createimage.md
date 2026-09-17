@@ -12,6 +12,7 @@ If you customized your instance with instance store volumes or Amazon EBS volume
 The location of the source instance determines where you can create the snapshots of the AMI:
 + If the source instance is in a Region, you must create the snapshots in the same Region as the instance.
 + If the source instance is in a Local Zone, you can create the snapshots in the same Local Zone or in its parent Region.
++ If the source instance is on an Outpost that supports local snapshots, you can create the snapshots on the same Outpost or in the parent Region of that Outpost. In this case, you must use the `SnapshotLocation` parameter to specify where to create the snapshots.
 
 For more information, see [Create an Amazon EBS-backed AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html) in the *Amazon Elastic Compute Cloud User Guide*.
 
@@ -27,6 +28,15 @@ When using the CreateImage action:
 + You can't modify the encryption status of existing volumes or snapshots. To create an AMI with volumes or snapshots that have a different encryption status (for example, where the source volume and snapshots are unencrypted, and you want to create an AMI with encrypted volumes or snapshots), copy the image instead.
 + The only option that can be changed for existing mappings or snapshots is `DeleteOnTermination`.
 Type: Array of [BlockDeviceMapping](API_BlockDeviceMapping.md) objects
+Required: No
+
+ **BootModeOverride**
+The boot mode of the new image, which overrides the default boot mode. By default, if you do not specify this parameter, the new image inherits the `boot-mode` from the source instance.
+A value of `uefi` indicates that the image only supports UEFI boot mode. You can specify this parameter only if the `current-instance-boot-mode` of the source instance is `uefi`. To find the `boot-mode` or `current-instance-boot-mode` of an instance, see [DescribeInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html).
+The operating system contained in the AMI must be configured to support the specified boot mode.
+For more information, see [Instance launch behavior with Amazon EC2 boot modes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html) in the *Amazon EC2 User Guide*.
+Type: String
+Valid Values: `uefi`
 Required: No
 
  **Description**
@@ -59,11 +69,13 @@ Type: Boolean
 Required: No
 
  **SnapshotLocation**
-Only supported for instances in Local Zones. If the source instance is not in a Local Zone, omit this parameter.
+Only supported for instances in Local Zones and for instances on Outposts that support local snapshots. If the source instance is not in one of these locations, omit this parameter.
 The Amazon S3 location where the snapshots will be stored.
-+ To create local snapshots in the same Local Zone as the source instance, specify `local`.
-+ To create regional snapshots in the parent Region of the Local Zone, specify `regional` or omit this parameter.
-Default: `regional`
++ To create local snapshots in the same Local Zone or on the same Outpost as the source instance, specify `local`.
++ To create regional snapshots in the parent Region of the Local Zone or Outpost, specify `regional`.
+If the source instance is in a Local Zone and you omit this parameter, regional snapshots are created in the parent Region of the Local Zone.
+If the source instance is on an Outpost that supports local snapshots, this parameter is required. If you omit it, the request fails with an `InvalidParameterValue` error.
+Default: `regional` (for instances in Local Zones only)
 Type: String
 Valid Values: `regional | local`
 Required: No
@@ -193,7 +205,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateImage)
 
 All content copied from https://docs.aws.amazon.com/.

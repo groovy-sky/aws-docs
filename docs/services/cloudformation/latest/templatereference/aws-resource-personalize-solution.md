@@ -32,7 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[PerformAutoML](#cfn-personalize-solution-performautoml)" : {{Boolean}},
       "[PerformHPO](#cfn-personalize-solution-performhpo)" : {{Boolean}},
       "[RecipeArn](#cfn-personalize-solution-recipearn)" : {{String}},
-      "[SolutionConfig](#cfn-personalize-solution-solutionconfig)" : {{SolutionConfig}}
+      "[SolutionConfig](#cfn-personalize-solution-solutionconfig)" : {{SolutionConfig}},
+      "[Tags](#cfn-personalize-solution-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -51,6 +52,8 @@ Properties:
   [RecipeArn](#cfn-personalize-solution-recipearn): {{String}}
   [SolutionConfig](#cfn-personalize-solution-solutionconfig): {{
     SolutionConfig}}
+  [Tags](#cfn-personalize-solution-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -107,6 +110,14 @@ Describes the configuration properties for the solution.
 *Type*: [SolutionConfig](aws-properties-personalize-solution-solutionconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`Tags`  <a name="cfn-personalize-solution-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-personalize-solution-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 ## Return values
 <a name="aws-resource-personalize-solution-return-values"></a>
 
@@ -115,14 +126,14 @@ Describes the configuration properties for the solution.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the resource.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-personalize-solution-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-personalize-solution-return-values-fn--getatt-fn--getatt"></a>

@@ -37,6 +37,12 @@ Required: No
 Type: Integer
 Required: No
 
+ ** zeroSizePreference **
+ Specifies how Amazon EC2 handles the interruptible Capacity Reservation when you reduce its allocation to zero instances. A value of `retain` keeps the interruptible Capacity Reservation active at zero capacity so that you can allocate instances to it again later. A value of `default` cancels the interruptible Capacity Reservation and returns the capacity to your source Capacity Reservation.
+Type: String
+Valid Values: `retain | default`
+Required: No
+
 ## See Also
 <a name="API_InterruptibleCapacityAllocation_SeeAlso"></a>
 

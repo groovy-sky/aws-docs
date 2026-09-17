@@ -13,7 +13,7 @@ Describes the market (purchasing) option for the instances.
  ** MarketType **
 The market type.
 Type: String
-Valid Values: `spot | capacity-block | interruptible-capacity-reservation`
+Valid Values: `spot | capacity-block | interruptible-capacity-reservation | on-demand`
 Required: No
 
  ** SpotOptions **

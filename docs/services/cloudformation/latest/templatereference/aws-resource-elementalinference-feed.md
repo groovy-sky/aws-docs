@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::ElementalInference::Feed",
   "Properties" : {
+      "[AccessRoleArn](#cfn-elementalinference-feed-accessrolearn)" : {{String}},
       "[Name](#cfn-elementalinference-feed-name)" : {{String}},
       "[Outputs](#cfn-elementalinference-feed-outputs)" : {{[ GetOutput, ... ]}},
       "[Tags](#cfn-elementalinference-feed-tags)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::ElementalInference::Feed
 Properties:
+  [AccessRoleArn](#cfn-elementalinference-feed-accessrolearn): {{String}}
   [Name](#cfn-elementalinference-feed-name): {{String}}
   [Outputs](#cfn-elementalinference-feed-outputs): {{
     - GetOutput}}
@@ -43,6 +45,15 @@ Properties:
 
 ## Properties
 <a name="aws-resource-elementalinference-feed-properties"></a>
+
+`AccessRoleArn`  <a name="cfn-elementalinference-feed-accessrolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:iam::[0-9]{12}:role/.+$`
+*Minimum*: `32`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-elementalinference-feed-name"></a>
 A name for the feed.
@@ -75,14 +86,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `{"Ref":"abcdefghijklmnopqrst"}`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-elementalinference-feed-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-elementalinference-feed-return-values-fn--getatt-fn--getatt"></a>

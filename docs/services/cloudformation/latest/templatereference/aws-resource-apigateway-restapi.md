@@ -40,7 +40,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Parameters](#cfn-apigateway-restapi-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
       "[Policy](#cfn-apigateway-restapi-policy)" : {{Json}},
       "[SecurityPolicy](#cfn-apigateway-restapi-securitypolicy)" : {{String}},
-      "[Tags](#cfn-apigateway-restapi-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-apigateway-restapi-tags)" : {{[ Tag, ... ]}},
+      "[Version](#cfn-apigateway-restapi-version)" : {{String}}
     }
 }
 ```
@@ -73,6 +74,7 @@ Properties:
   [SecurityPolicy](#cfn-apigateway-restapi-securitypolicy): {{String}}
   [Tags](#cfn-apigateway-restapi-tags): {{
     - Tag}}
+  [Version](#cfn-apigateway-restapi-version): {{String}}
 ```
 
 ## Properties
@@ -186,6 +188,12 @@ The key-value map of strings. The valid character set is [a-zA-Z\+-=.\_:/]. The 
 *Type*: Array of [Tag](aws-properties-apigateway-restapi-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Version`  <a name="cfn-apigateway-restapi-version"></a>
+A version identifier for the API.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 ## Return values
 <a name="aws-resource-apigateway-restapi-return-values"></a>
 
@@ -194,14 +202,14 @@ The key-value map of strings. The valid character set is [a-zA-Z\+-=.\_:/]. The 
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `RestApi` ID, such as `a1bcdef2gh`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-apigateway-restapi-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-apigateway-restapi-return-values-fn--getatt-fn--getatt"></a>

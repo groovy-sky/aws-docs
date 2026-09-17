@@ -2,66 +2,50 @@
 title: "AWS::EC2::ClientVpnEndpoint TagSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnEndpoint TagSpecification
+<a name="aws-properties-ec2-clientvpnendpoint-tagspecification"></a>
 
 Specifies the tags to apply to the Client VPN endpoint.
 
 ## Syntax
+<a name="aws-properties-ec2-clientvpnendpoint-tagspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-clientvpnendpoint-tagspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceType" : String,
-  "Tags" : [ Tag, ... ]
+  "[ResourceType](#cfn-ec2-clientvpnendpoint-tagspecification-resourcetype)" : {{String}},
+  "[Tags](#cfn-ec2-clientvpnendpoint-tagspecification-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-clientvpnendpoint-tagspecification-syntax.yaml"></a>
 
-```yaml
-
-  ResourceType: String
-  Tags:
-    - Tag
-
+```
+  [ResourceType](#cfn-ec2-clientvpnendpoint-tagspecification-resourcetype): {{String}}
+  [Tags](#cfn-ec2-clientvpnendpoint-tagspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-clientvpnendpoint-tagspecification-properties"></a>
 
-`ResourceType`
+`ResourceType`  <a name="cfn-ec2-clientvpnendpoint-tagspecification-resourcetype"></a>
+The type of resource to tag. To tag a Client VPN endpoint, `ResourceType` must be `client-vpn-endpoint`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The type of resource to tag. To tag a Client VPN endpoint, `ResourceType`
-must be `client-vpn-endpoint`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-clientvpnendpoint-tagspecification-tags"></a>
 The tags to apply to the resource.
-
-_Required_: Yes
-
-_Type_: Array of [Tag](aws-properties-ec2-clientvpnendpoint-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::ClientVpnRoute
+*Required*: Yes
+*Type*: Array of [Tag](aws-properties-ec2-clientvpnendpoint-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

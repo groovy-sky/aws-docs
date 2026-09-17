@@ -2,119 +2,92 @@
 title: "AWS::EC2::ClientVpnRoute"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnRoute
+<a name="aws-resource-ec2-clientvpnroute"></a>
 
-Specifies a network route to add to a Client VPN endpoint. Each Client VPN endpoint has
-a route table that describes the available destination network routes. Each route in the
-route table specifies the path for traffic to specific resources or networks.
+Specifies a network route to add to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traffic to specific resources or networks.
 
-A target network association must be created before you can specify a route. If you're
-setting up all the components of a Client VPN endpoint at the same time, you must use the
-[DependsOn\
-Attribute](../userguide/aws-attribute-dependson.md) to declare a dependency on the
-`AWS::EC2::ClientVpnTargetNetworkAssociation` resource.
+A target network association must be created before you can specify a route. If you're setting up all the components of a Client VPN endpoint at the same time, you must use the [DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html) to declare a dependency on the `AWS::EC2::ClientVpnTargetNetworkAssociation` resource.
 
 ## Syntax
+<a name="aws-resource-ec2-clientvpnroute-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-clientvpnroute-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::ClientVpnRoute",
   "Properties" : {
-      "ClientVpnEndpointId" : String,
-      "Description" : String,
-      "DestinationCidrBlock" : String,
-      "TargetVpcSubnetId" : String
+      "[ClientVpnEndpointId](#cfn-ec2-clientvpnroute-clientvpnendpointid)" : {{String}},
+      "[Description](#cfn-ec2-clientvpnroute-description)" : {{String}},
+      "[DestinationCidrBlock](#cfn-ec2-clientvpnroute-destinationcidrblock)" : {{String}},
+      "[TargetVpcSubnetId](#cfn-ec2-clientvpnroute-targetvpcsubnetid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-clientvpnroute-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::ClientVpnRoute
 Properties:
-  ClientVpnEndpointId: String
-  Description: String
-  DestinationCidrBlock: String
-  TargetVpcSubnetId: String
-
+  [ClientVpnEndpointId](#cfn-ec2-clientvpnroute-clientvpnendpointid): {{String}}
+  [Description](#cfn-ec2-clientvpnroute-description): {{String}}
+  [DestinationCidrBlock](#cfn-ec2-clientvpnroute-destinationcidrblock): {{String}}
+  [TargetVpcSubnetId](#cfn-ec2-clientvpnroute-targetvpcsubnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-clientvpnroute-properties"></a>
 
-`ClientVpnEndpointId`
-
+`ClientVpnEndpointId`  <a name="cfn-ec2-clientvpnroute-clientvpnendpointid"></a>
 The ID of the Client VPN endpoint to which to add the route.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-ec2-clientvpnroute-description"></a>
 A brief description of the route.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationCidrBlock`
-
+`DestinationCidrBlock`  <a name="cfn-ec2-clientvpnroute-destinationcidrblock"></a>
 The IPv4 address range, in CIDR notation, of the route destination. For example:
++ To add a route for Internet access, enter `0.0.0.0/0`
++ To add a route for a peered VPC, enter the peered VPC's IPv4 CIDR range
++ To add a route for an on-premises network, enter the AWS Site-to-Site VPN connection's IPv4 CIDR range
++ To add a route for the local network, enter the client CIDR range
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- To add a route for Internet access, enter `0.0.0.0/0`
-
-- To add a route for a peered VPC, enter the peered VPC's IPv4 CIDR range
-
-- To add a route for an on-premises network, enter the AWS Site-to-Site VPN connection's IPv4 CIDR range
-
-- To add a route for the local network, enter the client CIDR range
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TargetVpcSubnetId`
-
-The ID of the subnet through which you want to route traffic. The specified subnet must be
-an existing target network of the Client VPN endpoint.
-
+`TargetVpcSubnetId`  <a name="cfn-ec2-clientvpnroute-targetvpcsubnetid"></a>
+The ID of the subnet through which you want to route traffic. The specified subnet must be an existing target network of the Client VPN endpoint.
 Alternatively, if you're adding a route for the local network, specify `local`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+This parameter is required for VPC-based Client VPN endpoints. For Transit Gateway-based endpoints, this parameter is not required.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-resource-ec2-clientvpnroute--examples"></a>
 
 ### Add a route to a client VPN endpoint
+<a name="aws-resource-ec2-clientvpnroute--examples--Add_a_route_to_a_client_VPN_endpoint"></a>
 
-The following example adds a route for internet access to a client VPN
-endpoint.
+The following example adds a route for internet access to a client VPN endpoint.
 
 #### YAML
+<a name="aws-resource-ec2-clientvpnroute--examples--Add_a_route_to_a_client_VPN_endpoint--yaml"></a>
 
-```yaml
-
+```
 myRoute:
   Type: "AWS::EC2::ClientVpnRoute"
   Properties:
@@ -127,9 +100,9 @@ myRoute:
 ```
 
 #### JSON
+<a name="aws-resource-ec2-clientvpnroute--examples--Add_a_route_to_a_client_VPN_endpoint--json"></a>
 
-```json
-
+```
 "myRoute": {
     "Type": "AWS::EC2::ClientVpnRoute",
     "Properties": {
@@ -146,18 +119,8 @@ myRoute:
 ```
 
 ## See also
-
-- [Getting Started with\
-Client VPN](../../../vpn/latest/clientvpn-admin/cvpn-getting-started.md) in the _AWS Client VPN Administrator_
-_Guide_
-
-- [Routes](../../../vpn/latest/clientvpn-admin/cvpn-working-routes.md) in the
-_AWS Client VPN Administrator Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagSpecification
-
-AWS::EC2::ClientVpnTargetNetworkAssociation
+<a name="aws-resource-ec2-clientvpnroute--seealso"></a>
++ [Getting Started with Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html) in the *AWS Client VPN Administrator Guide*
++ [Routes](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-routes.html) in the *AWS Client VPN Administrator Guide*
 
 All content copied from https://docs.aws.amazon.com/.

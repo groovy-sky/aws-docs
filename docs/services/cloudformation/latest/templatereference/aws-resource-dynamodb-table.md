@@ -46,6 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[TableName](#cfn-dynamodb-table-tablename)" : {{String}},
       "[Tags](#cfn-dynamodb-table-tags)" : {{[ Tag, ... ]}},
       "[TimeToLiveSpecification](#cfn-dynamodb-table-timetolivespecification)" : {{TimeToLiveSpecification}},
+      "[VectorIndexes](#cfn-dynamodb-table-vectorindexes)" : {{[ VectorIndex, ... ]}},
       "[WarmThroughput](#cfn-dynamodb-table-warmthroughput)" : {{WarmThroughput}}
     }
 }
@@ -91,6 +92,8 @@ Properties:
     - Tag}}
   [TimeToLiveSpecification](#cfn-dynamodb-table-timetolivespecification): {{
     TimeToLiveSpecification}}
+  [VectorIndexes](#cfn-dynamodb-table-vectorindexes): {{
+    - VectorIndex}}
   [WarmThroughput](#cfn-dynamodb-table-warmthroughput): {{
     WarmThroughput}}
 ```
@@ -101,7 +104,7 @@ Properties:
 `AttributeDefinitions`  <a name="cfn-dynamodb-table-attributedefinitions"></a>
 A list of attributes that describe the key schema for the table and indexes.
 This property is required to create a DynamoDB table.
-Update requires: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt). Replacement if you edit an existing AttributeDefinition.
+You can add an `AttributeDefinition` without interruption. Changing the type of an existing `AttributeDefinition` requires replacement of the table.
 *Required*: Conditional
 *Type*: Array of [AttributeDefinition](aws-properties-dynamodb-table-attributedefinition.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -135,7 +138,7 @@ If you update a table to include a new global secondary index, AWS CloudFormatio
 If you add or delete an index during an update, we recommend that you don't update any other resources. If your stack fails to update and is rolled back while adding a new index, you must manually delete the index.
 Updates are not supported. The following are exceptions:
 + If you update either the contributor insights specification or the provisioned throughput values of global secondary indexes, you can update the table without interruption.
-+ You can delete or add one global secondary index without interruption. If you do both in the same update (for example, by changing the index's logical ID), the update fails.
++ You can create or delete one index without interruption. This index can be a global secondary index or a vector index, but not one of each. If you change more than one index in the same update, the update fails.
 *Required*: No
 *Type*: Array of [GlobalSecondaryIndex](aws-properties-dynamodb-table-globalsecondaryindex.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -235,6 +238,15 @@ For detailed information about the limits in DynamoDB, see [Limits in Amazon Dyn
 *Type*: [TimeToLiveSpecification](aws-properties-dynamodb-table-timetolivespecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`VectorIndexes`  <a name="cfn-dynamodb-table-vectorindexes"></a>
+The vector indexes to create on the table. Each vector index enables similarity search on a vector attribute.
+Vector indexes are supported only on tables that use on-demand capacity mode. To use vector indexes, you must set `BillingMode` to `PAY_PER_REQUEST`.
+In a single stack operation, you can create or delete one index. This index can be a global secondary index or a vector index, but not one of each. To change more indexes, use a separate stack operation for each.
+*Required*: No
+*Type*: Array of [VectorIndex](aws-properties-dynamodb-table-vectorindex.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `WarmThroughput`  <a name="cfn-dynamodb-table-warmthroughput"></a>
 Represents the warm throughput (in read units per second and write units per second) for creating a table.
 *Required*: No
@@ -253,14 +265,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the resource with the logical ID `myDynamoDBTable`, `Ref` will return the DynamoDB table name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-dynamodb-table-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-dynamodb-table-return-values-fn--getatt-fn--getatt"></a>

@@ -73,7 +73,7 @@ The name of the resource-based policy. Must be unique within a specific AWS acco
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the policy name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-xray-resourcepolicy--examples"></a>
@@ -169,8 +169,8 @@ Resources:
 
 ## See also
 <a name="aws-resource-xray-resourcepolicy--seealso"></a>
-+  [X-Ray resource-based policies](https://docs.aws.amazon.com//xray/latest/devguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)
-+  [Identity-based policies and resource-based policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
-+ [PutResourcePolicy](https://docs.aws.amazon.com//xray/latest/api/API_PutResourcePolicy.html) action in the X-Ray API Reference
++  [X-Ray resource-based policies](https://docs.aws.amazon.com/xray/latest/devguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)
++  [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
++ [PutResourcePolicy](https://docs.aws.amazon.com/xray/latest/api/API_PutResourcePolicy.html) action in the X-Ray API Reference
 
 All content copied from https://docs.aws.amazon.com/.

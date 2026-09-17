@@ -39,6 +39,6 @@ Specify an instance family to use as the baseline reference for CPU performance.
 Currently, only one instance family can be specified in the list.
 *Required*: No
 *Type*: Array of [PerformanceFactorReferenceRequest](aws-properties-ec2-spotfleet-performancefactorreferencerequest.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

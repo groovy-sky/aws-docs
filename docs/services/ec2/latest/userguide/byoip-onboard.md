@@ -162,7 +162,7 @@ It can take up to a day to deprovision an address range.
 
 1. Validate the self-signed x.509 key pair
 
-   Validate that the certificate has been uploaded and is valid via the whois command.
+   Validate that the certificate has been uploaded and is valid through the whois command.
 
    For ARIN, use `whois -h whois.arin.net r + {{2001:0DB8:6172::/48}}` to look up the RDAP record for your address range. Check the `Public Comments` section for the `NetRange` (network range) in the command output. The certificate should be added in the `Public Comments` section for the address range.
 
@@ -277,7 +277,7 @@ It can take up to a day to deprovision an address range.
 
 1. Validate the creation of a ROA object
 
-   Validate the successful creation of the ROA objects using the RIPEstat Data API. Be sure to test your address range against the Amazon ASNs 16509 and 14618, plus the ASNs that are currently authorized to advertise the address range.
+   Validate the successful creation of the ROA objects using the RIPEstat Data API. Be sure to test your address range against the Amazon ASNs 16509 and 14618, plus the ASNs that are currently authorized to advertise the address range. For the AWS GovCloud (US) Regions, test against ASN 8987. For the AWS European Sovereign Cloud, test against ASNs 16509 and 214101.
 
    You can inspect the ROA objects from different Amazon ASNs with your address range by using the following command:
 

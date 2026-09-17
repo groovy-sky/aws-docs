@@ -86,8 +86,8 @@ You can monitor the progress and status of the stack creation on the **Events** 
 
 **To create a stack using the command line**
 You can use one of the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) (AWS CLI)
-+ [https://docs.aws.amazon.com/powershell/latest/reference/items/New-CFNStack.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-CFNStack.html) (AWS Tools for Windows PowerShell)
++ [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) (AWS CLI)
++ [New-CFNStack](https://docs.aws.amazon.com/powershell/latest/reference/items/New-CFNStack.html) (AWS Tools for Windows PowerShell)
 
 For examples of using the command line to create a stack, see [Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell](service_code_examples.md).
 
@@ -106,6 +106,7 @@ After stack creation, adding, updating, or removing stack-level tags will initia
 
 **Permissions**  <a name="configure-stack-options-permissions"></a>
 An existing IAM service role that CloudFormation can assume. Instead of using your account credentials, CloudFormation uses the role's credentials to create your stack. For more information, see [CloudFormation service role](using-iam-servicerole.md).
+If role manager is enabled in your account, CloudFormation attaches a service role for you, and the service role selection described here is replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 **Stack failure options**  <a name="configure-stack-options-rollback"></a>
 Specifies the provision failure options for all stack deployments and change set operations. For more information, see [Choose how to handle failures when provisioning resources](stack-failure-options.md).

@@ -46,7 +46,19 @@ This section shows you how to set up permissions to allow all users and groups o
 
 By structuring permissions in this manner, users don't pass an administration role when creating or updating a StackSet.
 
-![Any user in the administrator account can then create any StackSet in target accounts after setting up a trust relationship.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stacksets_perms_master_target.png)
+**Important**
+Even when you don't specify the `AdministrationRoleARN` parameter, the IAM principal calling `CreateStackSet` or `UpdateStackSet` must have `iam:PassRole` permission for the **AWSCloudFormationStackSetAdministrationRole** role. CloudFormation requires this permission to use the default administration role on your behalf.
+The following example policy grants the required permission:
+
+```
+{
+    "Effect": "Allow",
+    "Action": "iam:PassRole",
+    "Resource": "arn:aws:iam::{{account-id}}:role/AWSCloudFormationStackSetAdministrationRole"
+}
+```
+
+![Any user in the administrator account can then create any StackSet in target accounts after setting up a trust relationship.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stacksets_perms_master_target.png)
 
 ------
 #### [ Administrator account ]
@@ -202,7 +214,7 @@ Use customized administration roles to control which users and groups can perfor
 
 For example, you can create Role A and Role B within your administrator account. You can give Role A permissions to access target account 1 through account 8. You can give Role B permissions to access target account 9 through account 16.
 
-![A trust relationship between a customized administration role and target accounts that allows users to create a StackSet.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stacksets_perms_admin_target.png)
+![A trust relationship between a customized administration role and target accounts that allows users to create a StackSet.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stacksets_perms_admin_target.png)
 
 Setting up the necessary permissions involves defining a customized administration role, creating a service role for the target account, and granting users permission to pass the customized administration role when performing StackSet operations.
 
@@ -369,7 +381,7 @@ Use customized execution roles to control which stack resources users and groups
 
 For example you can create customized administration roles A, B, and C in the administrator account. Users and groups with permission to use Role A can create StackSets containing the stack resources specifically listed in customized execution role X, but not those in roles Y or Z, or resource not included in any execution role.
 
-![A trust relationship between a custom admin role and custom execution role in target accounts, allowing users to create a StackSet.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stacksets_perms_admin_execution.png)
+![A trust relationship between a custom admin role and custom execution role in target accounts, allowing users to create a StackSet.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stacksets_perms_admin_execution.png)
 
 When updating a StackSet, the user must explicitly specify a customized administration role, even if it's the same customized administration role used with this StackSet previously. CloudFormation performs the update using the customized administration role specified, so long as the user has permissions to perform operations on that StackSet.
 
@@ -465,7 +477,7 @@ In addition, you can set up permissions for which user and groups can perform sp
 
 The confused deputy problem is a security issue where an entity that doesn't have permission to perform an action can coerce a more-privileged entity to perform the action. In AWS, cross-service impersonation can result in the confused deputy problem. Cross-service impersonation can occur when one service (the *calling service*) calls another service (the *called service*). The calling service can be manipulated to use its permissions to act on another customer's resources in a way it shouldn't otherwise have permission to access. To prevent this, AWS provides tools that help you protect your data for all services with service principals that have been given access to resources in your account.
 
-We recommend using the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) global condition context keys in resource policies to limit the permissions that CloudFormation StackSets gives another service to the resource. If you use both global condition context keys, the `aws:SourceAccount` value and the account in the `aws:SourceArn` value must use the same account ID when used in the same policy statement.
+We recommend using the [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [aws:SourceAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) global condition context keys in resource policies to limit the permissions that CloudFormation StackSets gives another service to the resource. If you use both global condition context keys, the `aws:SourceAccount` value and the account in the `aws:SourceArn` value must use the same account ID when used in the same policy statement.
 
 The most effective way to protect against the confused deputy problem is to use the `aws:SourceArn` global condition context key with the full ARN of the resource. If you don't know the full ARN of the resource or if you are specifying multiple resources, use the `aws:SourceArn` global context condition key with wildcards (`*`) for the unknown portions of the ARN. For example, `arn:aws:{{cloudformation}}::{{123456789012}}:*`. Whenever possible, use `aws:SourceArn`, because it's more specific. Use `aws:SourceAccount` only when you can't determine the correct ARN or ARN pattern.
 

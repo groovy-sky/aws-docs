@@ -2,72 +2,51 @@
 title: "AWS::EC2::ClientVpnEndpoint ClientLoginBannerOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnEndpoint ClientLoginBannerOptions
+<a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions"></a>
 
-Options for enabling a customizable text banner that will be displayed on
-AWS provided clients when a VPN session is established.
+Options for enabling a customizable text banner that will be displayed on AWS provided clients when a VPN session is established.
 
 ## Syntax
+<a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "BannerText" : String,
-  "Enabled" : Boolean
+  "[BannerText](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-bannertext)" : {{String}},
+  "[Enabled](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions-syntax.yaml"></a>
 
-```yaml
-
-  BannerText: String
-  Enabled: Boolean
-
+```
+  [BannerText](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-bannertext): {{String}}
+  [Enabled](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions-properties"></a>
 
-`BannerText`
+`BannerText`  <a name="cfn-ec2-clientvpnendpoint-clientloginbanneroptions-bannertext"></a>
+Customizable text that will be displayed in a banner on AWS provided clients when a VPN session is established. UTF-8 encoded characters only. Maximum of 1400 characters.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Customizable text that will be displayed in a banner on AWS provided
-clients when a VPN session is established. UTF-8 encoded characters only. Maximum of
-1400 characters.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-Enable or disable a customizable text banner that will be displayed on
-AWS provided clients when a VPN session is established.
-
+`Enabled`  <a name="cfn-ec2-clientvpnendpoint-clientloginbanneroptions-enabled"></a>
+Enable or disable a customizable text banner that will be displayed on AWS provided clients when a VPN session is established.
 Valid values: `true | false`
-
 Default value: `false`
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClientConnectOptions
-
-ClientRouteEnforcementOptions
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

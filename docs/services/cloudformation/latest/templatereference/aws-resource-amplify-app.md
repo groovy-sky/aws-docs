@@ -87,7 +87,7 @@ Existing Amplify apps deployed from a GitHub repository using OAuth continue to 
 *Required*: No
 *Type*: String
 *Minimum*: `1`
-*Maximum*: `255`
+*Maximum*: `4096`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AutoBranchCreationConfig`  <a name="cfn-amplify-app-autobranchcreationconfig"></a>
@@ -196,7 +196,7 @@ Existing Amplify apps deployed from a GitHub repository using OAuth continue to 
 *Required*: No
 *Type*: String
 *Pattern*: `(?s).*`
-*Maximum*: `1000`
+*Maximum*: `4096`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Platform`  <a name="cfn-amplify-app-platform"></a>
@@ -228,7 +228,7 @@ The tag for an Amplify app.
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-amplify-app-return-values-fn--getatt-fn--getatt"></a>

@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CodeRepositories](#cfn-sagemaker-userprofile-jupyterlabappsettings-coderepositories)" : {{[ CodeRepository, ... ]}},
   "[CustomImages](#cfn-sagemaker-userprofile-jupyterlabappsettings-customimages)" : {{[ CustomImage, ... ]}},
   "[DefaultResourceSpec](#cfn-sagemaker-userprofile-jupyterlabappsettings-defaultresourcespec)" : {{ResourceSpec}},
+  "[EmrSettings](#cfn-sagemaker-userprofile-jupyterlabappsettings-emrsettings)" : {{EmrSettings}},
   "[LifecycleConfigArns](#cfn-sagemaker-userprofile-jupyterlabappsettings-lifecycleconfigarns)" : {{[ String, ... ]}}
 }
 ```
@@ -41,6 +42,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - CustomImage}}
   [DefaultResourceSpec](#cfn-sagemaker-userprofile-jupyterlabappsettings-defaultresourcespec): {{
     ResourceSpec}}
+  [EmrSettings](#cfn-sagemaker-userprofile-jupyterlabappsettings-emrsettings): {{
+    EmrSettings}}
   [LifecycleConfigArns](#cfn-sagemaker-userprofile-jupyterlabappsettings-lifecycleconfigarns): {{
     - String}}
 ```
@@ -82,6 +85,12 @@ A list of custom SageMaker images that are configured to run as a JupyterLab app
 The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the JupyterLab app.
 *Required*: No
 *Type*: [ResourceSpec](aws-properties-sagemaker-userprofile-resourcespec.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EmrSettings`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-emrsettings"></a>
+The configuration parameters that specify the IAM roles assumed by the execution role of SageMaker (assumable roles) and the cluster instances or job execution environments (execution roles or runtime roles) to manage and access resources required for running Amazon EMR clusters or Amazon EMR Serverless applications.
+*Required*: No
+*Type*: [EmrSettings](aws-properties-sagemaker-userprofile-emrsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LifecycleConfigArns`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-lifecycleconfigarns"></a>

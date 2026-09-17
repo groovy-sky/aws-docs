@@ -113,6 +113,10 @@ The following instance types support multiple network cards. For information abo
 | hpc7a.48xlarge | 2 |
 | hpc7a.96xlarge | 2 |
 | hpc8a.96xlarge | 2 |
+| i7ie.48xlarge | 2 |
+| i7ie.metal-48xl | 2 |
+| i8ge.48xlarge | 2 |
+| i8ge.metal-48xl | 2 |
 | m6idn.32xlarge | 2 |
 | m6idn.metal | 2 |
 | m6in.32xlarge | 2 |

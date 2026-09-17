@@ -9,7 +9,7 @@ A key pair, consisting of a public key and a private key, is a set of security c
 
 Amazon EC2 stores the public key on your instance, and you store the private key, as shown in the following diagram. It's important that you store your private key in a secure place because anyone who possesses your private key can connect to your instances that use the key pair.
 
-![A key pair consists of a private key for your computer and a public key for your instance.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-key-pair.png)
+![A key pair consists of a private key for your computer and a public key for your instance.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-key-pair.png)
 
 When you launch an instance, you can [specify a key pair](ec2-instance-launch-parameters.md#liw-key-pair), so that you can connect to your instance using a method that requires a key pair. Depending on how you manage your security, you can specify the same key pair for all your instances or you can specify different key pairs.
 
@@ -20,7 +20,7 @@ For more information about connecting to your EC2 instance, see [Connect to your
 **Important**
 Because Amazon EC2 doesn't keep a copy of your private key, there is no way to recover a private key if you lose it. However, there can still be a way to connect to instances for which you've lost the private key. For more information, see [I've lost my private key. How can I connect to my instance?](TroubleshootingInstancesConnecting.md#replacing-lost-key-pair)
 
-As an alternative to key pairs, you can use [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) to connect to your instance with an interactive one-click browser-based shell or the AWS Command Line Interface (AWS CLI).
+As an alternative to key pairs, you can use [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) to connect to your instance with an interactive browser-based shell or the AWS Command Line Interface (AWS CLI).
 
 **Topics**
 + [Create a key pair for your Amazon EC2 instance](create-key-pairs.md)

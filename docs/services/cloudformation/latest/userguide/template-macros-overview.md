@@ -9,7 +9,7 @@ There are two major steps to processing templates using macros: creating the mac
 
 To create a macro definition, you must create the following:
 + A Lambda function to perform the template processing. This Lambda function accepts either a snippet or an entire template, and any additional parameters that you define. It returns the processed template snippet or the entire template as a response.
-+ A resource of type [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-macro.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-macro.html), which enables users to call the Lambda function from within CloudFormation templates. This resource specifies the ARN of the Lambda function to invoke for this macro, and additional optional properties to assist with debugging. To create this resource within an account, author a template that includes the `AWS::CloudFormation::Macro` resource, and then create either a stack or stack set with self-managed permissions from the template. CloudFormation StackSets doesn't currently support creating or updating stack sets with service-managed permissions from templates that reference macros.
++ A resource of type [AWS::CloudFormation::Macro](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-macro.html), which enables users to call the Lambda function from within CloudFormation templates. This resource specifies the ARN of the Lambda function to invoke for this macro, and additional optional properties to assist with debugging. To create this resource within an account, author a template that includes the `AWS::CloudFormation::Macro` resource, and then create either a stack or stack set with self-managed permissions from the template. CloudFormation StackSets doesn't currently support creating or updating stack sets with service-managed permissions from templates that reference macros.
 
 To use a macro, reference the macro in your template:
 + To process a section, or part, of a template, reference the macro in an `Fn::Transform` function located relative to the template content you want to transform. When using `Fn::Transform`, you can also pass any specified parameters it requires.
@@ -19,7 +19,7 @@ Next, you typically create a change set and then execute it. (Processing macros 
 
 After all macros in the template have been called, CloudFormation generates a change set that includes the processed template content. After you review the change set, execute it to apply the changes.
 
-![Use the Fn::Transform intrinsic function or the Transform section of the template, to pass the template contents and associated parameters to the macro's underlying Lambda function, which returns the processed template contents.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/template-macro-use.png)
+![Use the Fn::Transform intrinsic function or the Transform section of the template, to pass the template contents and associated parameters to the macro's underlying Lambda function, which returns the processed template contents.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/template-macro-use.png)
 
 ## How to create stacks directly
 <a name="template-macros-change-sets"></a>
@@ -30,7 +30,7 @@ A macro can add IAM resources to your template. For these resources, CloudFormat
 
 To create or update a stack directly from a processed template without first reviewing the proposed changes in a change set, specify the `CAPABILITY_AUTO_EXPAND` capability during a `CreateStack` or `UpdateStack` request. You should only create stacks directly from a stack template that contains macros if you know what processing the macro performs. You can't use change sets with stack set macros; you must update your stack set directly.
 
-For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) or [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStack.html) in the *AWS CloudFormation API Reference*.
+For more information, see [CreateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) or [UpdateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStack.html) in the *AWS CloudFormation API Reference*.
 
 **Important**
 If your stack set template references one or more macros, you must create the stack set directly from the processed template, without first reviewing the resulting changes in a change set. Processing macros can add multiple resources that you might not be aware of. Before you create or update a stack set from a template that references macros directly, be sure that you know what processing the macros performs.
@@ -57,7 +57,7 @@ When working with macros, keep in mind the following notes and limitations:
 
 You can use macros only in the account in which they were created as a resource. The name of the macro must be unique within a given account. However, you can make the same functionality available in multiple accounts by enabling cross-account access on the underlying Lambda function, and then creating macro definitions referencing that function in multiple accounts. In the example below, three accounts contain macro definitions that each point to the same Lambda function.
 
-![By allowing cross-account access on the Lambda function, AWS enables you to create macros in multiple accounts that reference that function.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/template-macro-accounts.png)
+![By allowing cross-account access on the Lambda function, AWS enables you to create macros in multiple accounts that reference that function.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/template-macro-accounts.png)
 
 To create a macro definition, the user must have permissions to create a stack or stack set within the specified account.
 
