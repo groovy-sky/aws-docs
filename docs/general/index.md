@@ -67,6 +67,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/chime-sdk/?icmpid=docs\_homepage\_busapp](../reference/chime-sdk.md)
 - [/connect-decisions/?icmpid=docs\_homepage\_busapp](../services/connect-decisions/index.md)
 - [/connecthealth/?icmpid=docs\_homepage\_busapp](../services/connecthealth/index.md)
+- [/talent/?icmpid=docs\_homepage\_busapp](../services/talent/index.md)
 - [/end-user-messaging/?icmpid=docs\_homepage\_busapp](../services/end-user-messaging/index.md)
 - [/sms-voice/?icmpid=docs\_homepage\_busapp](../services/sms-voice/index.md)
 - [/pinpoint/?icmpid=docs\_homepage\_busapp](../services/pinpoint/index.md)
